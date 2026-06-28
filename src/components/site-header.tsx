@@ -22,12 +22,6 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <a
-            href="#newsletter"
-            className="ml-2 rounded-md border border-accent/40 bg-accent/10 px-3 py-1.5 font-medium text-accent-soft transition-colors hover:bg-accent/20"
-          >
-            Subscribe
-          </a>
         </nav>
       </div>
     </header>

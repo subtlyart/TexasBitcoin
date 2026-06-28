@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Newsletter } from "@/components/newsletter";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -276,10 +275,6 @@ export default function HistoryPage() {
           </ol>
         </div>
       </article>
-
-      <div className="py-12">
-        <Newsletter />
-      </div>
     </>
   );
 }

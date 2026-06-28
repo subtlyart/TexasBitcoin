@@ -1,8 +1,9 @@
 import { LoneStar } from "./lone-star";
 
-// Owned distribution channel — captured from day one. Wire the action to an
-// email provider (Buttondown / ConvertKit / Resend) before launch; for now it
-// is a non-functional placeholder that does not post anywhere.
+// PARKED (back burner) — not currently rendered anywhere. Newsletter is
+// deferred until planned. When ready, drop <Newsletter /> back into the
+// homepage / cornerstone and wire the form to an email provider
+// (Buttondown / ConvertKit / Resend). Until then this component is unused.
 export function Newsletter() {
   return (
     <section

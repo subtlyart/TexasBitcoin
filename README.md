@@ -43,7 +43,7 @@ npm run build    # production build
 
 ## Pre-launch checklist
 
-- [ ] Connect the newsletter form (`src/components/newsletter.tsx`) to an email provider.
+- [ ] Newsletter is **parked** (`src/components/newsletter.tsx`, not rendered). When planned, re-add `<Newsletter />` and wire to an email provider.
 - [ ] Add a contact channel on `/about`.
 - [ ] Add OG/Twitter share image and favicon.
 - [ ] Verify all legislative facts once more against primary sources before publishing.

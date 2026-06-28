@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ArrowRight, Zap, Scale, Layers, Cpu } from "lucide-react";
-import { Newsletter } from "@/components/newsletter";
 import { LoneStar } from "@/components/lone-star";
 
 const layers = [
@@ -62,17 +61,17 @@ export default function Home() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
             <a
-              href="#newsletter"
+              href="#coverage"
               className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 font-medium text-foreground transition-colors hover:border-accent/50 hover:text-accent-soft"
             >
-              Get the weekly brief
+              See what we cover
             </a>
           </div>
         </div>
       </section>
 
       {/* The layered thesis */}
-      <section className="mx-auto max-w-6xl px-5 py-20">
+      <section id="coverage" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-20">
         <div className="max-w-2xl">
           <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
             One stack, anchored in Texas
@@ -124,10 +123,6 @@ export default function Home() {
           </span>
         </Link>
       </section>
-
-      <div className="py-12">
-        <Newsletter />
-      </div>
     </>
   );
 }
