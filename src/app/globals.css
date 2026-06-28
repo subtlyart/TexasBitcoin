@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0c0b09;
+  --surface: #131210;
+  --surface-2: #1b1916;
+  --foreground: #f3eee3;
+  --muted: #a59f91;
+  --muted-2: #756f63;
+  --border: #2a2722;
+  --accent: #f7931a;
+  --accent-soft: #ffb454;
+  --star: #d8b06a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-star: var(--star);
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent);
+  color: #1a1206;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Editorial prose for the cornerstone article */
+.prose-tx {
+  color: var(--foreground);
+  font-size: 1.075rem;
+  line-height: 1.75;
+}
+.prose-tx p {
+  margin: 1.15rem 0;
+  color: #e4dfd3;
+}
+.prose-tx h2 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 2.75rem 0 0.5rem;
+  color: var(--foreground);
+}
+.prose-tx h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 2rem 0 0.4rem;
+  color: var(--foreground);
+}
+.prose-tx a {
+  color: var(--accent-soft);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+.prose-tx a:hover {
+  text-decoration-color: var(--accent);
+}
+.prose-tx strong {
+  color: #fbf7ee;
+  font-weight: 600;
+}
+.prose-tx ul {
+  margin: 1.1rem 0;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+.prose-tx ul li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin: 0.5rem 0;
+  color: #e4dfd3;
+}
+.prose-tx ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  transform: rotate(45deg);
+}
+.prose-tx blockquote {
+  border-left: 2px solid var(--accent);
+  padding-left: 1.1rem;
+  margin: 1.5rem 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #efe9dc;
+}
+.prose-tx sup a {
+  text-decoration: none;
+  font-size: 0.7em;
+  padding: 0 1px;
+}
