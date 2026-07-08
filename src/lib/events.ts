@@ -38,6 +38,12 @@ export interface Conference {
   blurb: string;
 }
 
+export interface Resource {
+  name: string;
+  url: string;
+  blurb: string;
+}
+
 export const meetups: Meetup[] = [
   // Austin metro
   {
@@ -104,6 +110,15 @@ export const meetups: Meetup[] = [
     focus: "Meetups across Dallas & Fort Worth for Bitcoiners.",
     bitcoinOnly: true,
   },
+  {
+    name: "Frisco Bitcoin (Orange-Pill Group)",
+    metro: "Dallas–Fort Worth",
+    cadence: "Weekly",
+    url: "https://www.meetup.com/frisco-bitcoin-orange-pill-group/",
+    platform: "Meetup",
+    focus: "Weekly Bitcoin lunch at Steak 'n Shake on Preston Rd, Frisco — learn and network over a meal.",
+    bitcoinOnly: true,
+  },
   // Houston
   {
     name: "Houston Bitcoin Meetup Group",
@@ -159,5 +174,14 @@ export const conferences: Conference[] = [
     url: "https://www.txbitcoinfoundation.org/event-details/texas-blockchain-summit",
     blurb:
       "Austin gathering that has featured U.S. senators and Texas legislators on Bitcoin and digital-asset policy. Check the site for dates.",
+  },
+];
+
+export const resources: Resource[] = [
+  {
+    name: "BTC Map",
+    url: "https://btcmap.org/",
+    blurb:
+      "Open, community-maintained map of businesses that accept Bitcoin — and local Bitcoin communities — worldwide. A great way to find what's near you across Texas.",
   },
 ];
