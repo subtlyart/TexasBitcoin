@@ -219,7 +219,7 @@ export default function EventsPage() {
               Listings are free, and we link straight to you.
             </p>
             <a
-              href="mailto:texasbitcoin.com@gmail.com?subject=Texas%20Bitcoin%20event%20submission"
+              href="mailto:texasbitcoin@protonmail.com?subject=Texas%20Bitcoin%20event%20submission"
               className="mt-5 inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 font-semibold text-[#1a1206] transition-colors hover:bg-accent-soft"
             >
               Submit an event
