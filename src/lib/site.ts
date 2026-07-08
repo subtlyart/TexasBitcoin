@@ -12,6 +12,7 @@ export const site = {
 
 export const nav = [
   { label: "History", href: "/history-of-bitcoin-in-texas" },
+  { label: "Events", href: "/events" },
   { label: "About", href: "/about" },
   { label: "Disclosures", href: "/disclaimer" },
 ];

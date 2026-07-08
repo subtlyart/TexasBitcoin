@@ -28,6 +28,11 @@ export function SiteFooter() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/events" className="hover:text-accent-soft">
+                    Texas Bitcoin Events
+                  </Link>
+                </li>
+                <li>
                   <Link href="/about" className="hover:text-accent-soft">
                     About &amp; Editorial Standards
                   </Link>

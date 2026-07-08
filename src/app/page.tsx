@@ -123,6 +123,31 @@ export default function Home() {
           </span>
         </Link>
       </section>
+
+      {/* Events teaser */}
+      <section className="mx-auto max-w-6xl px-5 pb-8">
+        <Link
+          href="/events"
+          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent/40 sm:flex-row sm:items-center"
+        >
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+              Community
+            </p>
+            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+              Every Texas Bitcoin meetup &amp; conference
+            </h2>
+            <p className="mt-2 max-w-xl text-muted">
+              A free, open directory across Austin, Dallas–Fort Worth, Houston,
+              and San Antonio — linked straight to the organizer, no login wall.
+            </p>
+          </div>
+          <span className="inline-flex shrink-0 items-center gap-2 font-medium text-accent-soft">
+            Browse events
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </span>
+        </Link>
+      </section>
     </>
   );
 }
