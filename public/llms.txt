@@ -1,0 +1,16 @@
+# TexasBitcoin
+
+> The authority on Bitcoin in Texas: the energy and mining base layer, the money law, and the programmable-money frontier being built on top. An independent research and reference publication — every datable claim is sourced to primary documents or reputable journalism. Not financial, investment, legal, or tax advice.
+
+## Core reference
+
+- [The History of Bitcoin in Texas](https://texasbitcoin.com/history-of-bitcoin-in-texas): The definitive, sourced account — from Supervisory Memorandum 1037 (2014) through the mining migration to Rockdale (2021), ERCOT demand response, and the Texas Strategic Bitcoin Reserve (SB 21, 2025). 21 cited sources.
+
+## Directories
+
+- [Texas Bitcoin Events](https://texasbitcoin.com/events): Free, open directory of Bitcoin meetups and conferences across Austin, Dallas–Fort Worth, Houston, and San Antonio, linked directly to organizers.
+
+## About
+
+- [About & Editorial Standards](https://texasbitcoin.com/about): Who we are, how claims are sourced, independence and disclosure policy.
+- [Disclosures](https://texasbitcoin.com/disclaimer): Full disclaimers and disclosures.

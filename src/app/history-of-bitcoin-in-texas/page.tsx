@@ -37,6 +37,32 @@ const sources = [
   { id: "s17", label: "U.S. Attorney's Office, N.D. Tex. — 'Doctor Bitcoin' Pleads Guilty to Illegal Cash-to-Crypto Scheme (June 2021)", url: "https://www.justice.gov/usao-ndtx/pr/doctor-bitcoin-pleads-guilty-illegal-cash-crypto-scheme" },
   { id: "s18", label: "Cointelegraph — 'Doctor Bitcoin' sentenced to federal prison, warns P2P traders (2022)", url: "https://cointelegraph.com/news/bitcoiner-sentenced-to-federal-prison-warns-users-involved-in-otc-trading" },
   { id: "s19", label: "Bitcoin Magazine — Doctor Bitcoin, Jailed For Selling P2P, Warns Others They'll Be Next", url: "https://bitcoinmagazine.com/culture/doctor-bitcoin-jailed-for-selling" },
+  { id: "s20", label: "Riot Platforms — August 2023 Production and Operations Update (SEC filing)", url: "https://www.sec.gov/Archives/edgar/data/1167419/000155837023015517/riot-20230906xex99d1.htm" },
+  { id: "s21", label: "CNBC — Texas paid Riot $31.7 million to shut down during August heat wave (Sept 2023)", url: "https://www.cnbc.com/2023/09/06/texas-paid-bitcoin-miner-riot-31point7-million-to-shut-down-in-august.html" },
+];
+
+// FAQ — rendered on-page and mirrored 1:1 in FAQPage JSON-LD (never schema-only).
+const faqs = [
+  {
+    q: "Is Bitcoin mining legal in Texas?",
+    a: "Yes. Bitcoin mining is legal in Texas and requires no state mining license. Large miners enroll with ERCOT as flexible, interruptible load and are paid to power down when the grid is stressed. A 2023 bill to cap that participation, Senate Bill 1751, passed the Texas Senate but died in a House committee.",
+  },
+  {
+    q: "Does Texas have a Strategic Bitcoin Reserve?",
+    a: "Yes. Senate Bill 21, signed by Governor Greg Abbott in June 2025, made Texas the first state with a standalone, publicly funded Strategic Bitcoin Reserve. It is managed by the Texas Comptroller outside the state treasury and may hold digital assets averaging at least $500 billion in market capitalization over two years — a bar only Bitcoin clears.",
+  },
+  {
+    q: "Do you need a license to buy or sell Bitcoin in Texas?",
+    a: "Under Texas law, no — Supervisory Memorandum 1037 (2014) holds that Bitcoin is not 'money' under the Texas Money Services Act, so crypto-to-crypto exchanges and selling your own bitcoin do not by themselves require a state money-transmission license. Federal law is separate: a business converting cash to bitcoin for customers must register with FinCEN as a money services business.",
+  },
+  {
+    q: "Why did Bitcoin miners move to Texas?",
+    a: "Cheap deregulated power on the ERCOT grid, industrial infrastructure left by plants like Rockdale's Alcoa aluminum smelter, and demand-response programs that pay miners to curtail. The migration accelerated after China banned Bitcoin mining in May 2021, sending displaced hashrate to the cheapest willing grid in the country.",
+  },
+  {
+    q: "What is the largest Bitcoin mine in Texas?",
+    a: "Riot's Rockdale facility in Milam County — the former Whinstone site, acquired by Riot in May 2021 for roughly $651 million — grew into the largest single Bitcoin mining operation in North America.",
+  },
 ];
 
 function C({ n }: { n: number }) {
@@ -59,6 +85,18 @@ export default function HistoryPage() {
     author: { "@type": "Organization", name: site.name },
     publisher: { "@type": "Organization", name: site.name },
     mainEntityOfPage: `${site.url}/history-of-bitcoin-in-texas`,
+    datePublished: "2026-06-28",
+    dateModified: "2026-07-12",
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
   };
 
   return (
@@ -66,6 +104,10 @@ export default function HistoryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       <article className="mx-auto max-w-3xl px-5 py-16">
@@ -88,7 +130,61 @@ export default function HistoryPage() {
             and a state reserve law turned Texas into the capital of hard money —
             and the proving ground for what comes next.
           </p>
+          <p className="mt-4 text-sm text-muted-2">
+            By {site.name} · Published June 28, 2026 · Updated July 12, 2026
+          </p>
         </header>
+
+        {/* Direct Answer — self-contained, extractable */}
+        <div className="mt-8 rounded-xl border border-accent/30 bg-surface p-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+            The short answer
+          </p>
+          <p className="mt-3 leading-relaxed">
+            Texas became the capital of Bitcoin through three moves: a 2014
+            Texas Department of Banking memo holding that Bitcoin is not
+            &ldquo;money&rdquo; and so needs no state license to sell; the 2021
+            migration of mining to cheap ERCOT power after China&apos;s mining
+            ban; and Senate Bill 21 in 2025, which made Texas the first state
+            with a publicly funded Strategic Bitcoin Reserve.
+          </p>
+        </div>
+
+        {/* Key facts — one claim per sentence, each dated and sourced */}
+        <div className="mt-6 rounded-xl border border-border bg-surface p-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+            Key facts
+          </p>
+          <ul className="mt-3 space-y-2.5 text-sm leading-relaxed text-muted">
+            <li>
+              On April 3, 2014, Texas issued Supervisory Memorandum 1037 — among
+              the first formal state positions that Bitcoin is not
+              &ldquo;money&rdquo; under money-transmission law.<C n={1} />
+            </li>
+            <li>
+              In May 2021, Riot acquired the Whinstone site in Rockdale, Texas
+              for roughly $651 million — the largest single Bitcoin mine in
+              North America.<C n={6} />
+            </li>
+            <li>
+              After China&apos;s May 2021 mining ban idled over half the global
+              network, Bitcoin&apos;s hashrate hit a new all-time high by
+              December 2021 — much of it relocated to Texas.<C n={4} />
+              <C n={8} />
+            </li>
+            <li>
+              In August 2023, Riot earned $31.7 million in ERCOT power credits
+              for curtailing during the Texas heat wave — more than triple the
+              ~$8.9 million value of the 333 bitcoin it mined that month.
+              <C n={20} /><C n={21} />
+            </li>
+            <li>
+              In June 2025, Senate Bill 21 made Texas the first state with a
+              standalone, publicly funded Strategic Bitcoin Reserve.<C n={13} />
+              <C n={14} />
+            </li>
+          </ul>
+        </div>
 
         <div className="prose-tx mt-10">
           <p>
@@ -220,6 +316,18 @@ export default function HistoryPage() {
             the industry&apos;s welcome.
           </p>
           <p>
+            The pitch paid, literally. In August 2023, during a record heat
+            wave, Riot curtailed its Rockdale operation by more than 95% at
+            peak-demand hours and earned <strong>$31.7 million</strong> in
+            power credits from ERCOT — $24.2 million in curtailment credits and
+            $7.4 million from demand response — more than triple the roughly
+            $8.9 million value of the 333 bitcoin it mined that month.
+            <C n={20} /><C n={21} /> For one summer month, the largest Bitcoin
+            mine in North America made more money stabilizing the Texas grid
+            than mining Bitcoin on it. No other jurisdiction on earth has
+            produced that sentence.
+          </p>
+          <p>
             But Texas friendliness has a ceiling, and 2023 found it. Senate Bill
             1751 proposed to cap miners&apos; demand-response participation at
             10%, strip their tax abatements, and require large operators to
@@ -282,6 +390,14 @@ export default function HistoryPage() {
             about &ldquo;crypto&rdquo; in the abstract, but a place where the
             ledger meets the grid, and the law meets the future.
           </p>
+
+          <h2 id="faq">Frequently asked questions</h2>
+          {faqs.map((f) => (
+            <div key={f.q}>
+              <h3>{f.q}</h3>
+              <p>{f.a}</p>
+            </div>
+          ))}
 
           <h2 id="sources">Sources</h2>
           <p className="text-sm text-muted">

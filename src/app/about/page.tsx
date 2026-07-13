@@ -75,8 +75,11 @@ export default function AboutPage() {
 
         <h2>Contact &amp; corrections</h2>
         <p>
-          Story tips, data, and corrections are welcome. A contact channel will
-          be published here at launch.
+          Story tips, data, and corrections are welcome — write to{" "}
+          <a href="mailto:texasbitcoin@protonmail.com">
+            texasbitcoin@protonmail.com
+          </a>
+          . If you find an error, we will fix it and note the change.
         </p>
       </div>
     </article>
