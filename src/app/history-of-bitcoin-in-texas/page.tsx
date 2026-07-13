@@ -34,6 +34,9 @@ const sources = [
   { id: "s14", label: "The Block — Abbott signs strategic Bitcoin reserve bill (June 2025)", url: "https://www.theblock.co/post/359089/texas-governor-greg-abbott-signs-strategic-bitcoin-reserve-bill-into-law" },
   { id: "s15", label: "Texas Legislature — HB 1056 (89R) bill analysis", url: "https://capitol.texas.gov/tlodocs/89R/analysis/html/HB01056S.htm" },
   { id: "s16", label: "CBS19 — Texas Senate approves gold-backed digital currency bill", url: "https://www.cbs19.tv/article/news/local/texas-senate-advances-gold-bill/501-143ce992-afb1-4b6a-a41a-e6d899441da1" },
+  { id: "s17", label: "U.S. Attorney's Office, N.D. Tex. — 'Doctor Bitcoin' Pleads Guilty to Illegal Cash-to-Crypto Scheme (June 2021)", url: "https://www.justice.gov/usao-ndtx/pr/doctor-bitcoin-pleads-guilty-illegal-cash-crypto-scheme" },
+  { id: "s18", label: "Cointelegraph — 'Doctor Bitcoin' sentenced to federal prison, warns P2P traders (2022)", url: "https://cointelegraph.com/news/bitcoiner-sentenced-to-federal-prison-warns-users-involved-in-otc-trading" },
+  { id: "s19", label: "Bitcoin Magazine — Doctor Bitcoin, Jailed For Selling P2P, Warns Others They'll Be Next", url: "https://bitcoinmagazine.com/culture/doctor-bitcoin-jailed-for-selling" },
 ];
 
 function C({ n }: { n: number }) {
@@ -131,6 +134,33 @@ export default function HistoryPage() {
             itself does.<C n={3} /> Texas drew its regulatory line exactly where
             the technology&apos;s own architecture does.
           </p>
+          <p>
+            The seam has two edges, and one of Dallas&apos;s earliest Bitcoin
+            educators found the other one. <strong>Mark Alexander Hopkins</strong>{" "}
+            had been in Bitcoin since 2011, when a friend paid for his dinner in
+            freshly mined coin. As &ldquo;Doctor Bitcoin,&rdquo; a teaching
+            persona he wore online and around north Dallas, he became an early
+            channel of knowledge transfer for the technology — selling
+            personally mined bitcoin peer-to-peer as much to bring people into
+            the network as to profit from it.<C n={19} /> Under Texas law — and,
+            by his account, on the assurance of Texas lawmakers he consulted —
+            none of that required a license.<C n={19} />
+          </p>
+          <p>
+            Federal law read it differently. Hopkins had never registered with
+            FinCEN as a money services business, and when one customer&apos;s
+            funds were traced to a lottery scam, what the government charged was
+            the licensure itself: in June 2021 he pleaded guilty in the Northern
+            District of Texas to a single count of operating an unlicensed
+            money-transmitting business — a registration offense, not fraud.
+            <C n={17} /> He served federal time, and came out doing what he had
+            always done: educating — warning peer-to-peer traders that, as the
+            statute is currently interpreted, a state&apos;s clarity is not the
+            whole map, and pushing for the federal law to change.<C n={18} />{" "}
+            His case sharpened the memo rather than contradicting it:
+            Supervisory Memorandum 1037 defines what Texas asks of you — it has
+            never defined what Washington does.
+          </p>
 
           <h2>The cypherpunk base layer</h2>
           <p>
@@ -171,9 +201,9 @@ export default function HistoryPage() {
           </p>
           <p>
             The coordination layer arrived alongside the machines. The{" "}
-            <strong>Texas Blockchain Council</strong>, founded in 2019 by Lee
-            Bratcher, organized the industry&apos;s lobbying with an explicit
-            goal: make Texas the jurisdiction of choice for Bitcoin.<C n={9} />{" "}
+            <strong>Texas Blockchain Council</strong>, founded in 2019,
+            organized the industry&apos;s lobbying with an explicit goal: make
+            Texas the jurisdiction of choice for Bitcoin.<C n={9} />{" "}
             Politicians obliged, and the state comptroller was soon publishing
             primers on the industry it was courting.<C n={10} />
           </p>
