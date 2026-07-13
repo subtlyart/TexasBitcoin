@@ -10,9 +10,9 @@ export const site = {
     "A research and reference publication. Not financial, investment, legal, or tax advice. We do not custody, transmit, or facilitate transactions in any digital asset.",
 };
 
+// Header nav carries content only; trust pages (About, Disclosures) live in
+// the footer so they stay one scroll away without competing for attention.
 export const nav = [
   { label: "History", href: "/history-of-bitcoin-in-texas" },
   { label: "Events", href: "/events" },
-  { label: "About", href: "/about" },
-  { label: "Disclosures", href: "/disclaimer" },
 ];
