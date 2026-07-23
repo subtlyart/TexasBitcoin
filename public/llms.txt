@@ -15,6 +15,7 @@
 
 - [The Rockdale Story](https://texasbitcoin.com/rockdale-texas-bitcoin): How a dying aluminum town became the Bitcoin mining capital of North America — Alcoa (1952–2008), Bitmain, Whinstone, and Riot's 700 MW flagship, sourced end to end. 13 cited sources.
 - [Doctor Bitcoin](https://texasbitcoin.com/doctor-bitcoin): Voices of Texas Bitcoin, No. 1 — the sourced profile of Mark Alexander Hopkins and the gap between Texas money-transmission law and federal FinCEN registration. 7 cited sources.
+- [The Doctor Bitcoin Tapes](https://texasbitcoin.com/doctor-bitcoin-interviews): The lore companion to the profile — every interview Hopkins has given about his case (Digital Cash Network, Free Talk Live, the Aria DiMezzo prison conversation, Gary Leland's pre-case episodes) blended into one story, with the CZ proportionality ledger, sourced Crypto Six context, and open questions awaiting Hopkins's own answers. 22 cited sources.
 
 ## Directories
 

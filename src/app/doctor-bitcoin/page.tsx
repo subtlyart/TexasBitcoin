@@ -272,7 +272,7 @@ export default function DoctorBitcoinPage() {
             plainly: &ldquo;This defendant ignored federal law and allowed
             fraudsters to use Bitcoin to operate under the radar of law
             enforcement.&rdquo;<C n={5} /> Hopkins, for his part, told Bitcoin
-            Magazine that federal agents had raided his home in October 2019,
+            Magazine that federal agents had raided his home on October 23,
             and that he took the plea because &ldquo;my family comes
             first.&rdquo;<C n={7} />
           </p>
@@ -359,6 +359,20 @@ export default function DoctorBitcoinPage() {
             it is the frontier&apos;s actual terrain. The Texas scene absorbed
             the lesson, kept building — and the sharpest advocate for fixing
             the federal seam is the man who fell into it.
+          </p>
+
+          <h2>Hear him tell it</h2>
+          <p>
+            This profile is built from the public record — but Hopkins has
+            told the story himself, at length, on the record. We&apos;ve
+            mapped every substantial interview he has given about the case —
+            the 51-minute Digital Cash Network sit-down, the Free Talk Live
+            appearance, and the federal-prison conversation with Aria DiMezzo
+            — blended into one story in{" "}
+            <Link href="/doctor-bitcoin-interviews">
+              The Doctor Bitcoin Tapes
+            </Link>
+            .
           </p>
 
           <h2>About this series: Voices of Texas Bitcoin</h2>
