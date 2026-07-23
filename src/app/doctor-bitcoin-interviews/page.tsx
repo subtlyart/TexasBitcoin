@@ -43,30 +43,6 @@ const sources = [
   { id: "s22", label: "Cointelegraph — 'Doctor Bitcoin' sentenced to federal prison, warns P2P traders (2022)", url: "https://cointelegraph.com/news/bitcoiner-sentenced-to-federal-prison-warns-users-involved-in-otc-trading" },
 ];
 
-// FAQ — rendered on-page and mirrored 1:1 in FAQPage JSON-LD (never schema-only).
-const faqs = [
-  {
-    q: "What is the best Doctor Bitcoin interview about his case?",
-    a: "The fullest single telling is the Digital Cash Network interview with Joël Valenzuela, published April 25, 2023 — a 51-minute video in which Mark Hopkins walks through how he started trading peer-to-peer, his prosecution, who he believes federal enforcement targets, and how much reform states can deliver versus Washington.",
-  },
-  {
-    q: "Where can I listen to Doctor Bitcoin tell his own story?",
-    a: "Four places, all linked on this page: the Digital Cash Network video interview (April 2023), a Free Talk Live appearance (May 2, 2023), Free Talk Cast #35 with Aria DiMezzo on life inside and after federal prison (April 2025), and earlier pre-case conversations with Gary Leland's podcasts.",
-  },
-  {
-    q: "Was Doctor Bitcoin convicted of fraud?",
-    a: "No. Mark Hopkins pleaded guilty in June 2021 to one count of operating an unlicensed money transmitting business under 18 U.S.C. § 1960 — a registration offense. The government never charged him with fraud, and no victim of his own conduct is named in his charge. The fraud in the case record belongs to a customer's Nigerian lottery scam, not to Hopkins.",
-  },
-  {
-    q: "How does Hopkins's sentence compare to CZ's?",
-    a: "Mark Hopkins served federal prison time for an unregistered peer-to-peer bitcoin business. Changpeng 'CZ' Zhao, Binance's founder, pleaded guilty to Bank Secrecy Act failures at global scale, was sentenced to four months in April 2024 as Binance paid $4.3 billion, and was pardoned on October 23, 2025. The disparity is central to the proportionality debate Hopkins now voices.",
-  },
-  {
-    q: "What connects Mark Hopkins, Ian Freeman, and Aria DiMezzo?",
-    a: "One statute: 18 U.S.C. § 1960, which criminalizes operating an unlicensed or unregistered money transmitting business. All three sold bitcoin peer-to-peer and were federally prosecuted around that law — which is why Hopkins's most substantial interviews about his Texas case live in the Free Talk Live orbit of New Hampshire.",
-  },
-];
-
 function C({ n }: { n: number }) {
   return (
     <sup>
@@ -143,16 +119,6 @@ export default function DoctorBitcoinTapesPage() {
     })),
   };
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
-
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -175,7 +141,7 @@ export default function DoctorBitcoinTapesPage() {
 
   return (
     <>
-      {[articleJsonLd, itemListJsonLd, faqJsonLd, breadcrumbJsonLd].map(
+      {[articleJsonLd, itemListJsonLd, breadcrumbJsonLd].map(
         (schema, i) => (
           <script
             key={i}
@@ -434,45 +400,8 @@ export default function DoctorBitcoinTapesPage() {
             <C n={18} /> and the brainpower podcast.<C n={19} /> One tape is
             missing: Hopkins remembers a case-era conversation with Gary
             Leland that no index we searched contains. If it exists, we want
-            it. Doctor — that&apos;s question one.
+            it.
           </p>
-
-          <h2>Open questions for the Doctor</h2>
-          <p>
-            Hopkins pointed us to these tapes himself, and he has offered
-            TexasBitcoin what none of them fully deliver: the from-the-hip
-            afterthoughts. This page will hold his answers, attributed and
-            unedited, as they come. On the record, Doctor, whenever
-            you&apos;re ready:
-          </p>
-          <ul>
-            <li>
-              The missing Leland tape — where is it, and what did we not get
-              to hear?
-            </li>
-            <li>
-              October 23rd — settle the year for the record. And what do you
-              make of sharing the date with CZ&apos;s pardon?
-            </li>
-            <li>
-              What does every tape get wrong — the question no interviewer
-              has thought to ask?
-            </li>
-            <li>
-              The strategy reflection: knowing everything you know now, what
-              would 2019 Mark have done differently — and what would he have
-              done exactly the same?
-            </li>
-            <li>
-              The generational handoff: a kid in a Dallas coffeehouse accepts
-              their first bitcoin across a table this year. What do they need
-              to know that no statute will ever teach them?
-            </li>
-            <li>
-              And the one from Beaumont: what did prison change that the
-              tapes haven&apos;t said yet?
-            </li>
-          </ul>
           <p>
             The scene that produced Doctor Bitcoin — the meetups, the
             educators, the builders — is still out there compounding, and
@@ -485,14 +414,6 @@ export default function DoctorBitcoinTapesPage() {
             <Link href="/doctor-bitcoin">the profile</Link> holds the record.
             The next tape belongs to us — and it&apos;s coming.
           </p>
-
-          <h2 id="faq">Frequently asked questions</h2>
-          {faqs.map((f) => (
-            <div key={f.q}>
-              <h3>{f.q}</h3>
-              <p>{f.a}</p>
-            </div>
-          ))}
 
           <h2 id="sources">Sources</h2>
           <p className="text-sm text-muted">
