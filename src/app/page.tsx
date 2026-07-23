@@ -124,6 +124,95 @@ export default function Home() {
         </Link>
       </section>
 
+      {/* Mining map teaser */}
+      <section className="mx-auto max-w-6xl px-5 pb-8">
+        <Link
+          href="/bitcoin-mining-map-texas"
+          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent/40 sm:flex-row sm:items-center"
+        >
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+              Data asset · Interactive
+            </p>
+            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+              The Texas Bitcoin Mining Map
+            </h2>
+            <p className="mt-2 max-w-xl text-muted">
+              Every major mine in the state — mapped, sized, and sourced. Drag
+              the timeline from 2019 and watch gigawatts bloom across Texas,
+              from Rockdale&apos;s 700 MW flagship to the sites now feeding AI.
+            </p>
+          </div>
+          <span className="inline-flex shrink-0 items-center gap-2 font-medium text-accent-soft">
+            Explore the map
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </span>
+        </Link>
+      </section>
+
+      {/* Stories & the law */}
+      <section className="mx-auto max-w-6xl px-5 pb-8">
+        <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-3">
+          <Link
+            href="/rockdale-texas-bitcoin"
+            className="group bg-surface p-7 transition-colors hover:bg-surface-2"
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+              Story · Milam County
+            </p>
+            <h3 className="mt-2 font-display text-xl font-semibold leading-snug">
+              The Rockdale Story
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted">
+              A dying aluminum town, an idle smelter&apos;s wires, and the 700
+              MW flagship that gave Rockdale its second industrial life.
+            </p>
+            <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent-soft">
+              Read the story
+              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </span>
+          </Link>
+          <Link
+            href="/doctor-bitcoin"
+            className="group bg-surface p-7 transition-colors hover:bg-surface-2"
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+              Voices of Texas Bitcoin · No. 1
+            </p>
+            <h3 className="mt-2 font-display text-xl font-semibold leading-snug">
+              Doctor Bitcoin
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted">
+              Mark Hopkins and the federal line Texas never drew — the case
+              that taught every P2P trader where the seam runs.
+            </p>
+            <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent-soft">
+              Read the profile
+              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </span>
+          </Link>
+          <Link
+            href="/texas-bitcoin-law-timeline"
+            className="group bg-surface p-7 transition-colors hover:bg-surface-2"
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+              Interactive · The money law
+            </p>
+            <h3 className="mt-2 font-display text-xl font-semibold leading-snug">
+              The Texas Bitcoin Law Timeline
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted">
+              Every law, memo, and failed bill from the 2014 &ldquo;not
+              money&rdquo; memo to the 2025 Strategic Bitcoin Reserve.
+            </p>
+            <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent-soft">
+              Scroll the timeline
+              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </span>
+          </Link>
+        </div>
+      </section>
+
       {/* Events teaser */}
       <section className="mx-auto max-w-6xl px-5 pb-8">
         <Link

@@ -14,5 +14,7 @@ export const site = {
 // the footer so they stay one scroll away without competing for attention.
 export const nav = [
   { label: "History", href: "/history-of-bitcoin-in-texas" },
+  { label: "Mining Map", href: "/bitcoin-mining-map-texas" },
+  { label: "Law", href: "/texas-bitcoin-law-timeline" },
   { label: "Events", href: "/events" },
 ];

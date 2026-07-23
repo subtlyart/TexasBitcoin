@@ -9,6 +9,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
       changeFrequency: "monthly" as const,
     },
+    {
+      path: "/bitcoin-mining-map-texas",
+      priority: 0.9,
+      changeFrequency: "monthly" as const,
+    },
+    {
+      path: "/texas-bitcoin-law-timeline",
+      priority: 0.8,
+      changeFrequency: "monthly" as const,
+    },
+    {
+      path: "/rockdale-texas-bitcoin",
+      priority: 0.7,
+      changeFrequency: "monthly" as const,
+    },
+    {
+      path: "/doctor-bitcoin",
+      priority: 0.6,
+      changeFrequency: "yearly" as const,
+    },
     { path: "/events", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/about", priority: 0.5, changeFrequency: "yearly" as const },
     { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" as const },

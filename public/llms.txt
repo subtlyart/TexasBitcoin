@@ -6,6 +6,16 @@
 
 - [The History of Bitcoin in Texas](https://texasbitcoin.com/history-of-bitcoin-in-texas): The definitive, sourced account — from Supervisory Memorandum 1037 (2014) through the mining migration to Rockdale (2021), ERCOT demand response, and the Texas Strategic Bitcoin Reserve (SB 21, 2025). 21 cited sources.
 
+## Data assets
+
+- [Texas Bitcoin Mining Map](https://texasbitcoin.com/bitcoin-mining-map-texas): Interactive, sourced map and dataset of every major industrial Bitcoin mine in Texas — operator, capacity, year online, and AI/HPC conversions. CC BY 4.0, 19 cited sources.
+- [Texas Bitcoin Law Timeline](https://texasbitcoin.com/texas-bitcoin-law-timeline): Interactive timeline of every Bitcoin law, memo, and failed bill in Texas — Supervisory Memorandum 1037 (2014) through SB 21's Strategic Bitcoin Reserve and HB 1056 (2025), each verified against capitol.texas.gov or dob.texas.gov. 22 cited sources.
+
+## Stories
+
+- [The Rockdale Story](https://texasbitcoin.com/rockdale-texas-bitcoin): How a dying aluminum town became the Bitcoin mining capital of North America — Alcoa (1952–2008), Bitmain, Whinstone, and Riot's 700 MW flagship, sourced end to end. 13 cited sources.
+- [Doctor Bitcoin](https://texasbitcoin.com/doctor-bitcoin): Voices of Texas Bitcoin, No. 1 — the sourced profile of Mark Alexander Hopkins and the gap between Texas money-transmission law and federal FinCEN registration. 7 cited sources.
+
 ## Directories
 
 - [Texas Bitcoin Events](https://texasbitcoin.com/events): Free, open directory of Bitcoin meetups and conferences across Austin, Dallas–Fort Worth, Houston, and San Antonio, linked directly to organizers.

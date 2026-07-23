@@ -86,7 +86,7 @@ export default function HistoryPage() {
     publisher: { "@type": "Organization", name: site.name },
     mainEntityOfPage: `${site.url}/history-of-bitcoin-in-texas`,
     datePublished: "2026-06-28",
-    dateModified: "2026-07-12",
+    dateModified: "2026-07-22",
   };
 
   const faqJsonLd = {
@@ -131,7 +131,7 @@ export default function HistoryPage() {
             and the proving ground for what comes next.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published June 28, 2026 · Updated July 12, 2026
+            By {site.name} · Published June 28, 2026 · Updated July 22, 2026
           </p>
         </header>
 
@@ -255,7 +255,9 @@ export default function HistoryPage() {
             whole map, and pushing for the federal law to change.<C n={18} />{" "}
             His case sharpened the memo rather than contradicting it:
             Supervisory Memorandum 1037 defines what Texas asks of you — it has
-            never defined what Washington does.
+            never defined what Washington does. Hopkins&apos;s full story, told
+            straight from the record, opens our{" "}
+            <Link href="/doctor-bitcoin">Voices of Texas Bitcoin series</Link>.
           </p>
 
           <h2>The cypherpunk base layer</h2>
@@ -293,7 +295,14 @@ export default function HistoryPage() {
             <C n={5} /> Rockdale filled with operators; the network&apos;s
             hashrate not only recovered but hit an all-time high by December of
             the same year.<C n={8} /> By late 2021 the town hosted multiple
-            industrial-scale mines.<C n={7} />
+            industrial-scale mines.<C n={7} /> The full arc of that town — from
+            Alcoa&apos;s crucibles to 700 MW of hashrate — is told in{" "}
+            <Link href="/rockdale-texas-bitcoin">the Rockdale story</Link>, and
+            every major Texas mine is plotted on{" "}
+            <Link href="/bitcoin-mining-map-texas">
+              the Texas Bitcoin mining map
+            </Link>
+            .
           </p>
           <p>
             The coordination layer arrived alongside the machines. The{" "}
@@ -337,6 +346,11 @@ export default function HistoryPage() {
             law.<C n={12} /> The episode is the honest counterweight to the
             boosterism: Texas welcomes mining as a grid asset, but is wary of it
             as a subsidy. The friendliness is real, and it is conditional.
+            Every bill, memo, and failed vote in this arc sits on{" "}
+            <Link href="/texas-bitcoin-law-timeline">
+              the Texas Bitcoin law timeline
+            </Link>
+            .
           </p>
 
           <h2>2025: The money future, in two directions at once</h2>
