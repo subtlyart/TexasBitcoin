@@ -20,6 +20,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
     },
     {
+      path: "/texas-bitcoin-case-tracker",
+      priority: 0.8,
+      changeFrequency: "daily" as const,
+    },
+    {
       path: "/rockdale-texas-bitcoin",
       priority: 0.7,
       changeFrequency: "monthly" as const,

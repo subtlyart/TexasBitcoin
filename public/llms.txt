@@ -10,6 +10,7 @@
 
 - [Texas Bitcoin Mining Map](https://texasbitcoin.com/bitcoin-mining-map-texas): Interactive, sourced map and dataset of every major industrial Bitcoin mine in Texas — operator, capacity, year online, and AI/HPC conversions. CC BY 4.0, 19 cited sources.
 - [Texas Bitcoin Law Timeline](https://texasbitcoin.com/texas-bitcoin-law-timeline): Interactive timeline of every Bitcoin law, memo, and failed bill in Texas — Supervisory Memorandum 1037 (2014) through SB 21's Strategic Bitcoin Reserve and HB 1056 (2025), each verified against capitol.texas.gov or dob.texas.gov. 22 cited sources.
+- [Texas Bitcoin Case Tracker](https://texasbitcoin.com/texas-bitcoin-case-tracker): Living, filterable dataset of every federal 18 U.S.C. § 1960 (unlicensed money transmission) and crypto prosecution announced in Texas's four federal districts — built nightly from public DOJ press releases, every case linked to its primary source. CC BY-SA 4.0.
 
 ## Stories
 

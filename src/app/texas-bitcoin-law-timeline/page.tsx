@@ -211,7 +211,12 @@ export default function LawTimelinePage() {
               the history of Bitcoin in Texas
             </Link>
             , our cornerstone account of how the 2014 memo set everything else
-            in motion.
+            in motion. To watch that federal map get enforced in practice, see{" "}
+            <Link href="/texas-bitcoin-case-tracker">
+              the Texas Bitcoin case tracker
+            </Link>{" "}
+            — every § 1960 and crypto prosecution announced in Texas&apos;s
+            four federal districts, rebuilt nightly from the DOJ record.
           </p>
 
           <h2>How did Texas law make room for Bitcoin?</h2>
