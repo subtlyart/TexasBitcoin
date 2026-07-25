@@ -194,7 +194,13 @@ export default function LawTimelinePage() {
           <h2>Is Bitcoin legal in Texas?</h2>
           <p>
             Yes — Bitcoin is legal to buy, sell, hold, and mine in Texas, and
-            it always has been. The clearest statement is the oldest document
+            it always has been. The full legal-status reference — licensing,
+            custody, legal tender, taxes, and the federal seam in one place —
+            is{" "}
+            <Link href="/what-texas-law-says-about-bitcoin">
+              what Texas law actually says about Bitcoin
+            </Link>
+            . The clearest statement is the oldest document
             on this timeline: <strong>Supervisory Memorandum 1037</strong>,
             issued by the Texas Department of Banking on April 3, 2014, which
             holds that cryptocurrency is not &ldquo;money&rdquo; under the

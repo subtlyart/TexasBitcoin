@@ -25,6 +25,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily" as const,
     },
     {
+      path: "/what-texas-law-says-about-bitcoin",
+      priority: 0.8,
+      changeFrequency: "monthly" as const,
+    },
+    {
       path: "/rockdale-texas-bitcoin",
       priority: 0.7,
       changeFrequency: "monthly" as const,
