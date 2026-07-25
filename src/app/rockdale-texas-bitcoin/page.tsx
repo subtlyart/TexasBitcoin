@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { SeamMark } from "@/components/seam-mark";
 
 export const metadata: Metadata = {
   title:
@@ -486,6 +487,7 @@ export default function RockdalePage() {
             developed mining capacity — and Rockdale, twice now, has been the
             town that
             finds out first.
+            <SeamMark to="/the-seam" step={4} />
           </p>
 
           <h2 id="faq">Frequently asked questions</h2>

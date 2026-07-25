@@ -202,6 +202,27 @@ export default function EventsPage() {
             </a>
           ))}
         </div>
+        {/* Ambient context — the seam runs under the community layer too. */}
+        <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-2">
+          Every room on this list sits downstream of the same two currents:
+          the{" "}
+          <Link
+            href="/bitcoin-mining-map-texas"
+            className="underline decoration-accent/30 underline-offset-2 transition-colors hover:text-accent-soft"
+          >
+            grid that made Texas the mining capital of the world
+          </Link>{" "}
+          and the{" "}
+          <Link
+            href="/texas-bitcoin-law-timeline"
+            className="underline decoration-accent/30 underline-offset-2 transition-colors hover:text-accent-soft"
+          >
+            money law that decided a bitcoiner needs no permission to sell
+            what&apos;s theirs
+          </Link>
+          . The meetups came after both — people gather where the ground is
+          already favorable.
+        </p>
       </section>
 
       {/* Submit CTA */}

@@ -9,6 +9,7 @@ import {
   miningSources,
 } from "@/lib/mining-sites";
 import { MiningMap } from "@/components/mining-map";
+import { SeamMark } from "@/components/seam-mark";
 
 export const metadata: Metadata = {
   title: "Texas Bitcoin Mining Map — Every Major Mine, Mapped",
@@ -304,6 +305,7 @@ export default function MiningMapPage() {
             <Link href="/about">the about page</Link>. Looking for the people
             behind the machines? Start with{" "}
             <Link href="/events">Texas Bitcoin meetups and conferences</Link>.
+            <SeamMark to="/rockdale-texas-bitcoin" step={3} />
           </p>
         </div>
 

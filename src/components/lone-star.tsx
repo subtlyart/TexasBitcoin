@@ -1,9 +1,16 @@
 // Lone Star mark — Texas motif rendered as a five-point star with a Bitcoin-orange fill.
-export function LoneStar({ className = "" }: { className?: string }) {
+export function LoneStar({
+  className = "",
+  style,
+}: {
+  className?: string;
+  style?: React.CSSProperties;
+}) {
   return (
     <svg
       viewBox="0 0 24 24"
       className={className}
+      style={style}
       fill="currentColor"
       aria-hidden="true"
     >

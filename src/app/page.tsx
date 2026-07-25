@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Zap, Scale, Layers, Cpu } from "lucide-react";
 import { LoneStar } from "@/components/lone-star";
+import { SeamMark } from "@/components/seam-mark";
 
 const layers = [
   {
@@ -51,6 +52,7 @@ export default function Home() {
             North America — and the financial — the money law, a state reserve,
             and programmable money built on the hardest base layer. We tell that
             story end to end, sourced and plainly.
+            <SeamMark to="/texas-bitcoin-law-timeline" step={0} />
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Link

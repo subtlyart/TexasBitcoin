@@ -10,6 +10,7 @@ import {
   trackerStats,
 } from "@/lib/case-tracker";
 import { CaseTracker } from "@/components/case-tracker";
+import { SeamMark } from "@/components/seam-mark";
 
 const pageUrl = `${site.url}/texas-bitcoin-case-tracker`;
 
@@ -226,6 +227,7 @@ export default function CaseTrackerPage() {
               the Texas Bitcoin law timeline
             </Link>
             .
+            <SeamMark to="/bitcoin-mining-map-texas" step={2} />
           </p>
 
           <h2>How is this tracker built?</h2>

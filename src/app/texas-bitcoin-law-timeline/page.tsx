@@ -3,6 +3,7 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { LAW_LAST_VERIFIED, lawMilestones, lawSources } from "@/lib/law-timeline";
 import { LawTimeline } from "@/components/law-timeline";
+import { SeamMark } from "@/components/seam-mark";
 
 export const metadata: Metadata = {
   title: "The Texas Bitcoin Law Timeline — Every Law, Sourced",
@@ -217,6 +218,7 @@ export default function LawTimelinePage() {
             </Link>{" "}
             — every § 1960 and crypto prosecution announced in Texas&apos;s
             four federal districts, rebuilt nightly from the DOJ record.
+            <SeamMark to="/texas-bitcoin-case-tracker" step={1} />
           </p>
 
           <h2>How did Texas law make room for Bitcoin?</h2>
