@@ -31,7 +31,12 @@ export default function AboutPage() {
           stablecoins and smart contracts specifically as layers that{" "}
           <strong>settle to Bitcoin</strong> — not as an excuse to drift into
           generic multi-chain or token coverage. The point is depth on a narrow
-          subject, not breadth on a shallow one.
+          subject, not breadth on a shallow one. One exception, kept
+          deliberately off the main halls:{" "}
+          <a href="/texas-crypto-archive">the Archive</a> records the wider
+          Texas digital-asset story — the developers, tokens, and venture
+          capital — because a reference publication owes the record more than
+          its thesis.
         </p>
 
         <h2>What we are not</h2>

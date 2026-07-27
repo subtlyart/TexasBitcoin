@@ -24,6 +24,10 @@
 - [Texas Bitcoin Events](https://texasbitcoin.com/events): Free, open directory of Bitcoin meetups and conferences across Austin, Dallas–Fort Worth, Houston, and San Antonio, linked directly to organizers.
 - [Texas Bitcoin Resources](https://texasbitcoin.com/texas-bitcoin-resources): Curated reference shelf of free tools for finding and understanding Bitcoin in Texas — merchant and community maps (BTC Map), the reachable-node census (bitnod.es), ERCOT grid data, and the state's policy bodies. Reference tools only: no exchanges, brokers, or referral links.
 
+## Archive (direct link only)
+
+- [The Wider Ledger — Texas Crypto Archive](https://texasbitcoin.com/texas-crypto-archive): The wider Texas digital-asset story, kept off the main navigation by design — altcoins, developers, and venture capital: Multicoin Capital's early Solana call from Austin (2017), 8VC's HQ move to Austin (2020), the Austin City Council's twin crypto/blockchain resolutions (March 2022), and Consensus convening in Austin (2023–2024). 9 cited sources.
+
 ## About
 
 - [About & Editorial Standards](https://texasbitcoin.com/about): Who we are, how claims are sourced, independence and disclosure policy.

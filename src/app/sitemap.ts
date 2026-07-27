@@ -50,6 +50,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
       changeFrequency: "monthly" as const,
     },
+    {
+      // Direct-link only: indexed but never linked from the shell nav.
+      path: "/texas-crypto-archive",
+      priority: 0.5,
+      changeFrequency: "monthly" as const,
+    },
     { path: "/about", priority: 0.5, changeFrequency: "yearly" as const },
     { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" as const },
   ];
