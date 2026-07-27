@@ -39,7 +39,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-5 pb-20 pt-20 sm:pt-28">
           <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-accent">
             <LoneStar className="h-3.5 w-3.5" />
-            The authority on Bitcoin in Texas
+            Howdy, folks — the authority on Bitcoin in Texas
           </p>
           <h1 className="mt-5 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
             Where Bitcoin meets the{" "}
@@ -51,7 +51,7 @@ export default function Home() {
             at once: the physical — energy, the grid, and the largest mines in
             North America — and the financial — the money law, a state reserve,
             and programmable money built on the hardest base layer. We tell that
-            story end to end, sourced and plainly.
+            whole story end to end — sourced, and plain as day.
             <SeamMark to="/texas-bitcoin-law-timeline" step={0} />
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -66,7 +66,7 @@ export default function Home() {
               href="#coverage"
               className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 font-medium text-foreground transition-colors hover:border-accent/50 hover:text-accent-soft"
             >
-              See what we cover
+              Have a look around
             </a>
           </div>
         </div>
@@ -79,9 +79,10 @@ export default function Home() {
             One stack, anchored in Texas
           </h2>
           <p className="mt-4 text-muted">
-            We don&apos;t flatten everything into &ldquo;crypto.&rdquo; We follow the
-            stack — from the cypherpunk base to the programmable frontier — and
-            let the ground truth of Texas keep it honest.
+            We don&apos;t flatten everything into &ldquo;crypto.&rdquo; We walk the
+            stack like a fence line — post by post, from the cypherpunk base to
+            the programmable frontier — and let the ground truth of Texas keep
+            it honest.
           </p>
         </div>
         <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
@@ -231,6 +232,7 @@ export default function Home() {
             <p className="mt-2 max-w-xl text-muted">
               A free, open directory across Austin, Dallas–Fort Worth, Houston,
               and San Antonio — linked straight to the organizer, no login wall.
+              Come say howdy in person.
             </p>
           </div>
           <span className="inline-flex shrink-0 items-center gap-2 font-medium text-accent-soft">
@@ -238,6 +240,19 @@ export default function Home() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </span>
         </Link>
+      </section>
+
+      {/* Sign-off — Big Tex tips his hat */}
+      <section className="mx-auto max-w-6xl px-5 pb-16 pt-10">
+        <div className="flex flex-col items-center gap-3 text-center">
+          <LoneStar className="h-5 w-5 text-accent" />
+          <p className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+            This is Bitcoin country.
+          </p>
+          <p className="text-sm text-muted">
+            Y&apos;all come back now — we keep the record fresh.
+          </p>
+        </div>
       </section>
     </>
   );
