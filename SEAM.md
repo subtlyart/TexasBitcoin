@@ -8,8 +8,9 @@ Discovery is the product.*
 A site-wide hidden layer that turns the existing editorial thread — "the
 seam" between state law, federal law, the grid, and the money — into a
 walkable trail. It backgrounds the mining and law verticals (per editorial
-direction: **no prominent nav links**; context lives in body copy) and
-rewards attentive readers with a terminal lore page.
+direction: **no nav links** — as of July 2026 both are out of the header
+nav in `src/lib/site.ts`; context lives in body copy) and rewards attentive
+readers with a terminal lore page.
 
 Two mechanisms:
 

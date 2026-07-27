@@ -12,9 +12,11 @@ export const site = {
 
 // Header nav carries content only; trust pages (About, Disclosures) live in
 // the footer so they stay one scroll away without competing for attention.
+//
+// The mining and law verticals are deliberately absent from this nav (see
+// SEAM.md): they stay fully indexed and reachable from body copy, but they
+// do not claim a structural "section of the site" slot in the chrome.
 export const nav = [
   { label: "History", href: "/history-of-bitcoin-in-texas" },
-  { label: "Mining Map", href: "/bitcoin-mining-map-texas" },
-  { label: "Law", href: "/texas-bitcoin-law-timeline" },
   { label: "Events", href: "/events" },
 ];
