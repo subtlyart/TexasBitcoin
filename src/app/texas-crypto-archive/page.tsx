@@ -29,6 +29,16 @@ const sources = [
   { id: "s7", label: "Crunchbase — Multicoin Capital (founded 2017, Austin)", url: "https://www.crunchbase.com/organization/multicoin-capital" },
   { id: "s8", label: "The Block — Multicoin founder Kyle Samani steps back, will continue to advocate for Solana (Feb 2026)", url: "https://www.theblock.co/post/388561/multicoin-founder-kyle-samani-steps-back-vc-firm-continue-advocate-solana" },
   { id: "s9", label: "CoinDesk — Multicoin co-founder Kyle Samani steps down after nearly a decade (Feb 2026)", url: "https://www.coindesk.com/business/2026/02/04/multicoin-co-founder-kyle-samani-steps-down-after-nearly-a-decade-to-pursue-other-areas-of-tech" },
+  { id: "s10", label: "U.S. House hearing — Paul Snow, Factom, written testimony (March 16, 2016)", url: "https://www.congress.gov/114/meeting/house/104677/witnesses/HHRG-114-IF17-TTF-SnowP-20160316.pdf" },
+  { id: "s11", label: "CoinCentral — What Is Factom? (protocol anchored into Bitcoin)", url: "https://coincentral.com/factom-beginner-guide/" },
+  { id: "s12", label: "CoinDesk — Factom Inc. files for Chapter 11 bankruptcy (June 2020)", url: "https://www.coindesk.com/markets/2020/06/19/blockchain-company-factom-inc-files-for-chapter-11-bankruptcy" },
+  { id: "s13", label: "The Bitcoin Forum — Paul Snow AMA: architect of Factom, chair of the Texas Bitcoin Conference", url: "https://forum.bitcoin.com/ama-ask-me-anything/i-am-paul-snow-the-architect-of-factom-and-chair-of-the-texas-bitcoin-conference-ask-me-anything-t4026.html" },
+  { id: "s14", label: "Wikipedia — Hedera (Swirlds founded 2015; mainnet August 2018)", url: "https://en.wikipedia.org/wiki/Hedera_(distributed_ledger)" },
+  { id: "s15", label: "Dallas Innovates — Hedera Hashgraph moves global HQ to Richardson's Telecom Corridor", url: "https://dallasinnovates.com/hedera-hashgraph-moving-global-headquarters-to-richardsons-3400-at-cityline/" },
+  { id: "s16", label: "Dallas Innovates — Hedera to open-source its hashgraph code", url: "https://dallasinnovates.com/hedera-will-open-source-its-hashgraph-code-to-capitalize-on-growing-demand-for-public-dlt/" },
+  { id: "s17", label: "ATX DAO — official site (founded October 2021)", url: "https://www.atxdao.com/" },
+  { id: "s18", label: "GlobeNewswire — ATX DAO brings 'Here We Go' NFT mural to life during Consensus (June 2022)", url: "https://www.globenewswire.com/en/news-release/2022/06/07/2458224/0/en/ATX-DAO-Partners-With-Artist-ER-HOPE-Campaign-and-Native-Hostel-During-Consensus-Keep-Austin-Web3-Event-at-Empire-Control-Room-Garage-to-Help-Bring-Local-NFT-Mural-to-Life.html" },
+  { id: "s19", label: "Disruption Banking — Making Austin a crypto hub with ATX DAO (March 2023)", url: "https://www.disruptionbanking.com/2023/03/10/making-austin-a-crypto-hub-with-atx-dao/" },
 ];
 
 function C({ n }: { n: number }) {
@@ -51,6 +61,14 @@ const faqs = [
     a: "By the record, yes. 8VC relocated its headquarters from San Francisco to Austin in 2020, the Austin City Council passed two crypto and blockchain resolutions unanimously in March 2022, CoinDesk's Consensus — the industry's largest gathering — was held in Austin in 2023 and 2024, and Multicoin Capital, one of crypto's most influential venture firms, has been Austin-based since 2017.",
   },
   {
+    q: "What was Factom?",
+    a: "Factom was an Austin-founded (November 2014) data-provenance protocol led by Paul Snow that anchored its ledger into Bitcoin's proof-of-work, so Bitcoin's hashpower secured Factom's history. It earned a Department of Homeland Security grant and Congressional testimony before Factom Inc. filed for Chapter 11 in June 2020 — though the protocol itself kept running without the company.",
+  },
+  {
+    q: "Was Hedera founded in Texas?",
+    a: "Yes. Hashgraph, the consensus algorithm behind Hedera, was invented by Dallas-area computer scientist Leemon Baird, who co-founded Swirlds with Mance Harmon in 2015. Hedera launched its mainnet in August 2018 and placed its global headquarters in Richardson's Telecom Corridor, north of Dallas.",
+  },
+  {
     q: "What is Multicoin Capital?",
     a: "An Austin-based, thesis-driven digital-asset venture firm founded in 2017 by Kyle Samani and Tushar Jain. It led an early Solana fundraise — buying SOL around $0.04 — and backed Helium before either was widely known, making it one of the most consequential venture calls made from Texas.",
   },
@@ -67,7 +85,7 @@ export default function ArchivePage() {
     publisher: { "@type": "Organization", name: site.name },
     mainEntityOfPage: `${site.url}/texas-crypto-archive`,
     datePublished: "2026-07-13",
-    dateModified: "2026-07-13",
+    dateModified: "2026-07-27",
   };
 
   const faqJsonLd = {
@@ -115,7 +133,7 @@ export default function ArchivePage() {
             every claim sourced.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published July 13, 2026 · Updated July 13, 2026
+            By {site.name} · Published July 13, 2026 · Updated July 27, 2026
           </p>
         </header>
 
@@ -148,6 +166,47 @@ export default function ArchivePage() {
             blurs. So it lives here: off the main halls, on the record.
           </p>
 
+          <h2>2014: The Austin project that anchored to Bitcoin</h2>
+          <p>
+            Texas&apos;s first great token experiment bowed to the base layer.{" "}
+            <strong>Factom</strong>, founded in Austin on November 7, 2014 by{" "}
+            <strong>Paul Snow</strong> — who also chaired the Texas Bitcoin
+            Conference — and a team including David Johnston and Peter Kirby,
+            built a data-provenance layer with its own token whose entire
+            history was <strong>anchored into Bitcoin&apos;s proof-of-work</strong>,
+            so the hashpower securing the hardest money also secured
+            Factom&apos;s ledger.<C n={11} /><C n={13} /> The idea traveled
+            far for its era: a U.S. Department of Homeland Security grant, and
+            Snow testifying on blockchain technology before a U.S. House
+            subcommittee in March 2016.<C n={10} /> The honest ending belongs
+            in the record too: Factom Inc. filed for Chapter 11 in June 2020,
+            unable to cover roughly $7.5 million in debts — while the protocol
+            itself, trustless by design, kept running without the company.
+            <C n={12} /> Of all the altcoin architectures of its generation,
+            Austin&apos;s bet was the one that treated Bitcoin as bedrock.
+          </p>
+
+          <h2>2015: A new consensus, born in the Telecom Corridor</h2>
+          <p>
+            Not every Texas experiment deferred to Bitcoin — the boldest one
+            proposed a different physics entirely. <strong>Leemon Baird</strong>,
+            a Dallas-area mathematician and computer scientist, invented{" "}
+            <strong>hashgraph</strong> — a gossip-based, asynchronous
+            Byzantine-fault-tolerant consensus that dispensed with blocks and
+            mining altogether — and co-founded <strong>Swirlds</strong> with
+            Mance Harmon in 2015 to build it.<C n={14} /> The public network it
+            spawned, <strong>Hedera</strong>, launched its mainnet in August
+            2018 and planted its global headquarters in Richardson&apos;s
+            Telecom Corridor — the same North Dallas ground that built the
+            telecom era.<C n={15} /> The experiment ran against the grain of
+            the open-source ethos at first — patented algorithm, a governing
+            council of corporations instead of miners — and the record shows
+            the correction, too: Hedera later open-sourced the hashgraph code.
+            <C n={16} /> Agree or not with the design, a genuinely novel
+            consensus algorithm entered the world from Texas, and its community
+            has defended it with a devotion any chain would envy.
+          </p>
+
           <h2>2017: The venture call heard from Austin</h2>
           <p>
             Before the migration made it fashionable, <strong>Multicoin
@@ -172,6 +231,24 @@ export default function ArchivePage() {
             firm wasn&apos;t a crypto fund, but the move mattered to crypto: the
             developers and the capital that token projects draw on were now
             raising, hiring, and building in Austin.
+          </p>
+
+          <h2>2021: The DAO that adopted a city</h2>
+          <p>
+            In October 2021, a group of Austin crypto builders organized{" "}
+            <strong>ATX DAO</strong> around a mission with no hedge in it: make
+            Austin the crypto capital of the world.<C n={17} /> What makes it
+            an experiment worth archiving is the direction it pointed the
+            technology — outward, at a real city. The DAO testified before the
+            Austin City Council and the state legislature, walked legislators
+            through the technology, and put crypto&apos;s money where the
+            culture is: commissioning &ldquo;Here We Go,&rdquo; a downtown
+            mural by the artist ER unveiled in June 2022 at Native Bar &amp;
+            Café, and running an artist residency that taught local creators to
+            mint their own work.<C n={18} /><C n={19} /> When the City Council
+            passed its crypto resolutions in March 2022, the ground had been
+            worked by neighbors, not lobbyists — a decentralized organization
+            practicing the oldest Texas technology there is: showing up.
           </p>
 
           <h2>2022: The city says yes</h2>
@@ -199,9 +276,8 @@ export default function ArchivePage() {
           <h2>The shelf keeps filling</h2>
           <p>
             This archive is a living room, not a finished one. On the docket:
-            the Texas Ethereum and Solana developer scenes, the token projects
-            that rose and fell from Texas addresses, where the venture capital
-            went next — and the through-line back to the base layer, because
+            the Texas Ethereum and Solana developer scenes, where the venture
+            capital went next — and the through-line back to the base layer, because
             every one of these stories eventually touches the money law and the
             grid that the front of this site documents.
           </p>

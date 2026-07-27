@@ -26,7 +26,7 @@
 
 ## Archive (direct link only)
 
-- [The Wider Ledger — Texas Crypto Archive](https://texasbitcoin.com/texas-crypto-archive): The wider Texas digital-asset story, kept off the main navigation by design — altcoins, developers, and venture capital: Multicoin Capital's early Solana call from Austin (2017), 8VC's HQ move to Austin (2020), the Austin City Council's twin crypto/blockchain resolutions (March 2022), and Consensus convening in Austin (2023–2024). 9 cited sources.
+- [The Wider Ledger — Texas Crypto Archive](https://texasbitcoin.com/texas-crypto-archive): The wider Texas digital-asset story, kept off the main navigation by design — altcoins, developers, and venture capital: Factom's Bitcoin-anchored data layer from Austin (2014), hashgraph/Hedera born in Richardson's Telecom Corridor (2015), Multicoin Capital's early Solana call (2017), 8VC's HQ move to Austin (2020), ATX DAO's civic experiment (2021), the Austin City Council's twin crypto/blockchain resolutions (March 2022), and Consensus convening in Austin (2023–2024). 19 cited sources.
 
 ## About
 
