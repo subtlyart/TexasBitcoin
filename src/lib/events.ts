@@ -38,11 +38,9 @@ export interface Conference {
   blurb: string;
 }
 
-export interface Resource {
-  name: string;
-  url: string;
-  blurb: string;
-}
+// NOTE: The resources shelf moved to `src/lib/resources.ts` and its own page
+// at /texas-bitcoin-resources — it was never event data, and it had outgrown
+// a footnote on this page.
 
 export const meetups: Meetup[] = [
   // Austin metro
@@ -177,11 +175,3 @@ export const conferences: Conference[] = [
   },
 ];
 
-export const resources: Resource[] = [
-  {
-    name: "BTC Map",
-    url: "https://btcmap.org/",
-    blurb:
-      "Open, community-maintained map of businesses that accept Bitcoin — and local Bitcoin communities — worldwide. A great way to find what's near you across Texas.",
-  },
-];

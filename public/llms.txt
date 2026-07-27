@@ -22,6 +22,7 @@
 ## Directories
 
 - [Texas Bitcoin Events](https://texasbitcoin.com/events): Free, open directory of Bitcoin meetups and conferences across Austin, Dallas–Fort Worth, Houston, and San Antonio, linked directly to organizers.
+- [Texas Bitcoin Resources](https://texasbitcoin.com/texas-bitcoin-resources): Curated reference shelf of free tools for finding and understanding Bitcoin in Texas — merchant and community maps (BTC Map), the reachable-node census (bitnod.es), ERCOT grid data, and the state's policy bodies. Reference tools only: no exchanges, brokers, or referral links.
 
 ## About
 

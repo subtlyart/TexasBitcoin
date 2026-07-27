@@ -45,6 +45,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
     },
     { path: "/events", priority: 0.8, changeFrequency: "weekly" as const },
+    {
+      path: "/texas-bitcoin-resources",
+      priority: 0.7,
+      changeFrequency: "monthly" as const,
+    },
     { path: "/about", priority: 0.5, changeFrequency: "yearly" as const },
     { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" as const },
   ];

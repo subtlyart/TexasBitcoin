@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, MapPin, CalendarDays, Compass } from "lucide-react";
+import { ArrowUpRight, MapPin, CalendarDays } from "lucide-react";
 import { site } from "@/lib/site";
 import { LoneStar } from "@/components/lone-star";
 import {
   meetups,
   conferences,
-  resources,
   METROS,
   LAST_VERIFIED,
   type Meetup,
@@ -174,36 +173,9 @@ export default function EventsPage() {
         </div>
       </section>
 
-      {/* Resources */}
+      {/* Ambient context — the seam runs under the community layer too. */}
       <section className="mx-auto max-w-6xl px-5 pb-8">
-        <div className="flex items-center gap-2 text-accent">
-          <Compass className="h-5 w-5" strokeWidth={1.5} />
-          <h2 className="font-display text-2xl font-semibold tracking-tight text-foreground">
-            Resources
-          </h2>
-        </div>
-        <p className="mt-2 max-w-2xl text-sm text-muted">
-          Beyond events — tools for finding Bitcoin in the wild across Texas.
-        </p>
-        <div className="mt-6 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
-          {resources.map((r) => (
-            <a
-              key={r.name}
-              href={r.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex flex-col bg-surface p-6 transition-colors hover:bg-surface-2"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <h3 className="font-display text-lg font-semibold">{r.name}</h3>
-                <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-muted-2 transition-colors group-hover:text-accent" />
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{r.blurb}</p>
-            </a>
-          ))}
-        </div>
-        {/* Ambient context — the seam runs under the community layer too. */}
-        <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-2">
+        <p className="max-w-2xl text-sm leading-relaxed text-muted-2">
           Every room on this list sits downstream of the same two currents:
           the{" "}
           <Link
@@ -222,6 +194,17 @@ export default function EventsPage() {
           </Link>
           . The meetups came after both — people gather where the ground is
           already favorable.
+        </p>
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-2">
+          Looking for Bitcoin between meetups? The{" "}
+          <Link
+            href="/texas-bitcoin-resources"
+            className="underline decoration-accent/30 underline-offset-2 transition-colors hover:text-accent-soft"
+          >
+            resources shelf
+          </Link>{" "}
+          collects the free tools for finding it in the wild across Texas —
+          merchant maps, the node census, and the grid data underneath it all.
         </p>
       </section>
 
