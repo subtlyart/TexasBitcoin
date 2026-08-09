@@ -19,8 +19,31 @@ export type TrackerStats = {
   generated_at: string;
 };
 
-export const trackerStats: TrackerStats = rawData.stats;
-export const trackedCases: TrackedCase[] = rawData.cases;
+// Editorial exclusions. The pipeline (project1960) casts a deliberately wide
+// net over the DOJ press-release archive; a handful of matches get tagged with
+// the "cryptocurrency" theme but fall below this tracker's bar of a genuine
+// § 1960 or cryptocurrency prosecution. We drop them here, at the site layer,
+// so the raw dataset stays the pipeline's untouched source of truth and a
+// nightly re-sync can't silently reintroduce them. Re-verify against the linked
+// DOJ release before adding to — or removing from — this set.
+const EXCLUDED_DOJ_URLS = new Set<string>([
+  // Tax-evasion sentence (W.D. Tex.): no crypto nexus in the DOJ summary, no
+  // statutes extracted, and $0 forfeiture — a false positive on the crypto theme.
+  "https://www.justice.gov/opa/pr/expatriated-hedge-fund-manager-sentenced-prison-tax-evasion",
+]);
+
+export const trackedCases: TrackedCase[] = rawData.cases.filter(
+  (c) => !EXCLUDED_DOJ_URLS.has(c.doj_url),
+);
+
+// Page figures derive from the filtered set so every number is self-consistent.
+// The excluded case carries $0 forfeiture in an already-active district, so the
+// pipeline's forfeiture and district-count totals still hold; only the case
+// count changes.
+export const trackerStats: TrackerStats = {
+  ...rawData.stats,
+  case_count: trackedCases.length,
+};
 
 // "Southern District of Texas" -> "Southern Texas" for badges and filters.
 export function shortDistrict(district: string): string {

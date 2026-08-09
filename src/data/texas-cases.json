@@ -1,11 +1,31 @@
 {
   "stats": {
-    "case_count": 147,
+    "case_count": 148,
     "total_forfeitures_usd": 254565850.44,
     "districts_active": 4,
-    "generated_at": "2026-07-24T22:39:17Z"
+    "generated_at": "2026-08-03T23:56:11Z"
   },
   "cases": [
+    {
+      "id": "64c565e5-4756-43d5-8234-5fbcaaab4342",
+      "title": "Expatriated Hedge Fund Manager Sentenced to Prison for Tax Evasion",
+      "date": "2026-07-27",
+      "district": "Western District of Texas",
+      "summary": "<p>A Cayman resident who renounced his U.S. citizenship was sentenced today to 37 months in prison for tax evasion.</p>",
+      "statutes": [],
+      "forfeiture_usd": 0,
+      "themes": [
+        "cryptocurrency",
+        "expatriation_and_renunciation_of_citizenship",
+        "false_statements_and_documents",
+        "foreign_bank_accounts_and_undisclosed_assets",
+        "fraud_enforcement",
+        "international_law_enforcement_reach",
+        "real_estate_transactions",
+        "tax_evasion"
+      ],
+      "doj_url": "https://www.justice.gov/opa/pr/expatriated-hedge-fund-manager-sentenced-prison-tax-evasion"
+    },
     {
       "id": "a85e132c-32a3-4e3c-a3d8-dc058b7ab813",
       "title": "Final Defendant Sentenced to Prison in Multimillion Dollar Tax Refund Fraud Scheme",

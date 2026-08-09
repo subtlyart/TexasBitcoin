@@ -1,68 +1,33 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
+import { trackerDerived } from "@/lib/case-tracker";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // Real per-page modification dates. A truthful freshness signal beats
+  // stamping every route with the current build time (which teaches crawlers
+  // to ignore the field). Bump a page's date here when its content materially
+  // changes; the case tracker inherits its dataset's generation date.
   const routes = [
-    { path: "/", priority: 1, changeFrequency: "weekly" as const },
-    {
-      path: "/history-of-bitcoin-in-texas",
-      priority: 0.9,
-      changeFrequency: "monthly" as const,
-    },
-    {
-      path: "/bitcoin-mining-map-texas",
-      priority: 0.9,
-      changeFrequency: "monthly" as const,
-    },
-    {
-      path: "/texas-bitcoin-law-timeline",
-      priority: 0.8,
-      changeFrequency: "monthly" as const,
-    },
-    {
-      path: "/texas-bitcoin-case-tracker",
-      priority: 0.8,
-      changeFrequency: "daily" as const,
-    },
-    {
-      path: "/what-texas-law-says-about-bitcoin",
-      priority: 0.8,
-      changeFrequency: "monthly" as const,
-    },
-    {
-      path: "/rockdale-texas-bitcoin",
-      priority: 0.7,
-      changeFrequency: "monthly" as const,
-    },
-    {
-      path: "/doctor-bitcoin",
-      priority: 0.6,
-      changeFrequency: "yearly" as const,
-    },
-    {
-      path: "/doctor-bitcoin-interviews",
-      priority: 0.6,
-      changeFrequency: "monthly" as const,
-    },
-    { path: "/events", priority: 0.8, changeFrequency: "weekly" as const },
-    {
-      path: "/texas-bitcoin-resources",
-      priority: 0.7,
-      changeFrequency: "monthly" as const,
-    },
-    {
-      // Direct-link only: indexed but never linked from the shell nav.
-      path: "/texas-crypto-archive",
-      priority: 0.5,
-      changeFrequency: "monthly" as const,
-    },
-    { path: "/about", priority: 0.5, changeFrequency: "yearly" as const },
-    { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" as const },
+    { path: "/", priority: 1, changeFrequency: "weekly" as const, lastMod: "2026-08-09" },
+    { path: "/history-of-bitcoin-in-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-08-09" },
+    { path: "/bitcoin-mining-map-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-07-22" },
+    { path: "/texas-bitcoin-law-timeline", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-09" },
+    { path: "/texas-bitcoin-case-tracker", priority: 0.8, changeFrequency: "daily" as const, lastMod: trackerDerived.lastUpdated },
+    { path: "/what-texas-law-says-about-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-07-25" },
+    { path: "/rockdale-texas-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-07-22" },
+    { path: "/doctor-bitcoin", priority: 0.6, changeFrequency: "yearly" as const, lastMod: "2026-07-22" },
+    { path: "/doctor-bitcoin-interviews", priority: 0.6, changeFrequency: "monthly" as const, lastMod: "2026-07-22" },
+    { path: "/events", priority: 0.8, changeFrequency: "weekly" as const, lastMod: "2026-07-27" },
+    { path: "/texas-bitcoin-resources", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-07-27" },
+    // Direct-link only: indexed but never linked from the shell nav.
+    { path: "/texas-crypto-archive", priority: 0.5, changeFrequency: "monthly" as const, lastMod: "2026-07-27" },
+    { path: "/about", priority: 0.5, changeFrequency: "yearly" as const, lastMod: "2026-07-22" },
+    { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" as const, lastMod: "2026-07-22" },
   ];
 
   return routes.map((r) => ({
     url: `${site.url}${r.path}`,
-    lastModified: new Date(),
+    lastModified: new Date(r.lastMod),
     changeFrequency: r.changeFrequency,
     priority: r.priority,
   }));
