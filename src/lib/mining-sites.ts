@@ -8,7 +8,7 @@
 //
 // Dataset verified July 2026. Re-verify quarterly with the cornerstone.
 
-export const MAP_LAST_VERIFIED = "July 22, 2026";
+export const MAP_LAST_VERIFIED = "August 9, 2026";
 
 export type SiteStatus = "mining" | "hybrid" | "ai" | "historic";
 
@@ -66,6 +66,11 @@ export const miningSources: MiningSource[] = [
   { id: 17, label: "CNBC — Texas paid Riot $31.7 million to shut down during August 2023 heat wave", url: "https://www.cnbc.com/2023/09/06/texas-paid-bitcoin-miner-riot-31point7-million-to-shut-down-in-august.html" },
   { id: 18, label: "Baxtel — MARA Granbury, TX data center profile (~300 MW)", url: "https://baxtel.com/data-center/marathon-digital-granbury-tx" },
   { id: 19, label: "CoinGeek — ERCOT's large-load interconnection queue reaches ~226 GW, dominated by AI data centers (2026)", url: "https://coingeek.com/ercots-queue-creates-challenges-for-texas-btc-miners/" },
+  { id: 20, label: "The Block — Texas orders an audit of all data centers in ERCOT's interconnection queue; 'Batch Zero' paused, queue ~474 GW, ~90% data centers (August 4, 2026)", url: "https://www.theblock.co/news/ecosystems/2026-08-04-bernstein-texas-data-center-audit-410545" },
+  { id: 21, label: "Hut 8 — Fully Commercializes 1 GW Beacon Point AI Data Center Campus (Nueces County) with two 15-year, 352 MW leases; $19.6B base-term value (2026)", url: "https://www.prnewswire.com/news-releases/hut-8-fully-commercializes-1-gw-beacon-point-ai-data-center-campus-with-second-352-mw-it-lease-bringing-campus-level-base-term-contract-value-to-19-6-billion-302829514.html" },
+  { id: 22, label: "MARA (via StockTitan) — 8-K: agreement with HIF to acquire a Matagorda County powered-land site, up to 2 GW, milestone payments up to $600M (July 2026)", url: "https://www.stocktitan.net/news/MARA/mara-signs-agreement-with-hif-to-acquire-strategic-powered-land-site-nqvuby8e4d46.html" },
+  { id: 23, label: "Cipher Mining — Form 8-K: Barber Lake (Mitchell County) 300 MW site leased to Fluidstack, ~$3B, Google backstop (2025)", url: "https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_8k.htm" },
+  { id: 24, label: "Bitdeer Technologies Group — September 2025 Production and Operations Update (AI/HPC conversion pipeline, including the Rockdale campus)", url: "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-september-2025-production-and-operations" },
 ];
 
 export const miningSites: MiningSite[] = [

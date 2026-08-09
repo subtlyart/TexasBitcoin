@@ -46,6 +46,10 @@ const faqs = [
     q: "Do Bitcoin mines strain the Texas grid?",
     a: "Large miners enroll with ERCOT as interruptible load and are paid to shut off during scarcity. In August 2023, Riot earned $31.7 million in power credits for curtailing during the heat wave. The real local friction has been noise, not power: MARA's Granbury mine faces nuisance lawsuits from neighbors over its cooling fans.",
   },
+  {
+    q: "What is the Texas data-center queue freeze?",
+    a: "On August 4, 2026, Governor Abbott directed the Public Utility Commission and ERCOT to audit every data-center project in the state's interconnection queue, and ERCOT paused its 'Batch Zero' classification of large new loads. Data-center requests had reached roughly 90% of a 474 GW queue. The practical effect is to make already-approved power — including the Bitcoin miners' — more valuable.",
+  },
 ];
 
 function C({ n }: { n: number }) {
@@ -79,7 +83,7 @@ export default function MiningMapPage() {
       "year online",
       "status",
     ],
-    dateModified: "2026-07-22",
+    dateModified: "2026-08-09",
   };
 
   const articleJsonLd = {
@@ -92,7 +96,7 @@ export default function MiningMapPage() {
     publisher: { "@type": "Organization", name: site.name },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-22",
-    dateModified: "2026-07-22",
+    dateModified: "2026-08-09",
   };
 
   const faqJsonLd = {
@@ -203,6 +207,11 @@ export default function MiningMapPage() {
               In August 2023, ERCOT paid Riot $31.7 million in power credits to
               curtail mining during the Texas heat wave.<C n={17} />
             </li>
+            <li>
+              By August 2026, ERCOT&apos;s interconnection queue had reached
+              about 474 GW — roughly 90% data centers — and the state ordered an
+              audit that paused new large-load classifications.<C n={20} />
+            </li>
           </ul>
         </div>
 
@@ -273,11 +282,50 @@ export default function MiningMapPage() {
             Scientific is converting its Denton campus in a $6.1 billion
             buildout.<C n={13} /><C n={14} /> Cipher&apos;s brand-new Black
             Pearl site leased straight to Amazon.<C n={10} /> ERCOT&apos;s
-            interconnection queue now holds roughly 226 GW of requests, most of
-            it AI.<C n={19} /> This is not Bitcoin losing to AI — it&apos;s the
+            interconnection queue swelled from roughly 226 GW in early 2026 to
+            about 474 GW by that August — most of it AI — enough to force the
+            state&apos;s hand.<C n={19} /><C n={20} /> This is not Bitcoin losing
+            to AI — it&apos;s the
             infrastructure Bitcoin built becoming the on-ramp for the next
             compute frontier, while mining stays the anchor tenant at sites
             like Rockdale.
+          </p>
+
+          <h2>What did Texas&apos;s August 2026 data-center audit change?</h2>
+          <p>
+            On August 4, 2026, Governor Greg Abbott ordered the Public Utility
+            Commission and ERCOT to audit every data-center project in the
+            state&apos;s interconnection queue, and ERCOT paused &ldquo;Batch
+            Zero,&rdquo; the first classification of its largest new loads.
+            <C n={20} /> The queue had swelled to roughly 474 gigawatts of
+            requests — about 90% of it data centers — a figure no grid can
+            physically build, so the audit is Texas sorting the real projects
+            from the speculative ones. For the sites already on this map, that
+            reframes the whole board: an ERCOT-approved interconnection stops
+            being paperwork and becomes the moat. As Bernstein put it,
+            &ldquo;if MWs are scarce, it makes sense to earn more per MW&rdquo;
+            — and the operators with power already in hand, Riot&apos;s 700 MW
+            at Rockdale and its approved gigawatt at Corsicana among them, are
+            the ones holding it.<C n={20} />
+          </p>
+          <p>
+            What the audit is now screening is a Texas land-grab for
+            miner-built AI capacity. Hut 8 has fully contracted its 1-gigawatt{" "}
+            <strong>Beacon Point</strong> campus in Nueces County to a single
+            high-grade tenant — reported to be Nvidia — across two 15-year, 352
+            MW leases worth $19.6 billion.<C n={21} /> Cipher leased the
+            entirety of its 300 MW <strong>Barber Lake</strong> site in Mitchell
+            County to Fluidstack in a roughly $3 billion deal that Google agreed
+            to backstop.<C n={23} /> MARA signed to acquire a{" "}
+            <strong>Matagorda County</strong> site carrying up to 2 GW of power
+            for a campus that will blend high-performance computing with
+            flexible Bitcoin mining, paying out as milestones — grid
+            authorization among them — are met.<C n={22} /> Even Bitdeer has
+            flagged its Rockdale campus as a candidate for AI/HPC conversion in
+            its operations updates.<C n={24} /> This is why we keep the mining
+            map and the grid in the same frame: the machines Bitcoin installed
+            are why Texas is now the front line of the AI power crunch — and why
+            the state just hit pause to take inventory.
           </p>
 
           <h2>The counterweight: Granbury&apos;s noise fight</h2>
