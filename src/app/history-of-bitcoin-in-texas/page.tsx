@@ -39,6 +39,8 @@ const sources = [
   { id: "s19", label: "Bitcoin Magazine — Doctor Bitcoin, Jailed For Selling P2P, Warns Others They'll Be Next", url: "https://bitcoinmagazine.com/culture/doctor-bitcoin-jailed-for-selling" },
   { id: "s20", label: "Riot Platforms — August 2023 Production and Operations Update (SEC filing)", url: "https://www.sec.gov/Archives/edgar/data/1167419/000155837023015517/riot-20230906xex99d1.htm" },
   { id: "s21", label: "CNBC — Texas paid Riot $31.7 million to shut down during August heat wave (Sept 2023)", url: "https://www.cnbc.com/2023/09/06/texas-paid-bitcoin-miner-riot-31point7-million-to-shut-down-in-august.html" },
+  { id: "s22", label: "The Bond Buyer — Texas makes first purchase for state's Bitcoin reserve: ~$5M in the iShares Bitcoin Trust, November 20, 2025 (placeholder)", url: "https://www.bondbuyer.com/news/texas-makes-first-purchase-for-states-bitcoin-reserve" },
+  { id: "s23", label: "Texas Comptroller — Acting Comptroller Kelly Hancock Names Strategic Bitcoin Reserve Advisory Committee Members (May 28, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260528-acting-texas-comptroller-kelly-hancock-names-strategic-bitcoin-reserve-advisory-committee-members-1778774749224" },
 ];
 
 // FAQ — rendered on-page and mirrored 1:1 in FAQPage JSON-LD (never schema-only).
@@ -49,7 +51,7 @@ const faqs = [
   },
   {
     q: "Does Texas have a Strategic Bitcoin Reserve?",
-    a: "Yes. Senate Bill 21, signed by Governor Greg Abbott in June 2025, made Texas the first state with a standalone, publicly funded Strategic Bitcoin Reserve. It is managed by the Texas Comptroller outside the state treasury and may hold digital assets averaging at least $500 billion in market capitalization over two years — a bar only Bitcoin clears.",
+    a: "Yes, and it is funded. Senate Bill 21, signed by Governor Greg Abbott in June 2025, made Texas the first state with a standalone, publicly funded Strategic Bitcoin Reserve, managed by the Texas Comptroller outside the state treasury and limited to digital assets averaging at least $500 billion in market capitalization over two years — a bar only Bitcoin clears. The Comptroller made the first purchase on November 20, 2025 (about $5 million via a spot Bitcoin ETF, as a placeholder) and in May 2026 named an advisory committee and opened a custody RFP to move into directly held Bitcoin.",
   },
   {
     q: "Do you need a license to buy or sell Bitcoin in Texas?",
@@ -86,7 +88,7 @@ export default function HistoryPage() {
     publisher: { "@type": "Organization", name: site.name },
     mainEntityOfPage: `${site.url}/history-of-bitcoin-in-texas`,
     datePublished: "2026-06-28",
-    dateModified: "2026-07-22",
+    dateModified: "2026-08-09",
   };
 
   const faqJsonLd = {
@@ -131,7 +133,7 @@ export default function HistoryPage() {
             and the proving ground for what comes next.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published June 28, 2026 · Updated July 22, 2026
+            By {site.name} · Published June 28, 2026 · Updated August 9, 2026
           </p>
         </header>
 
@@ -146,7 +148,8 @@ export default function HistoryPage() {
             &ldquo;money&rdquo; and so needs no state license to sell; the 2021
             migration of mining to cheap ERCOT power after China&apos;s mining
             ban; and Senate Bill 21 in 2025, which made Texas the first state
-            with a publicly funded Strategic Bitcoin Reserve.
+            with a publicly funded Strategic Bitcoin Reserve — funded with its
+            first purchase that November.
           </p>
         </div>
 
@@ -182,6 +185,11 @@ export default function HistoryPage() {
               In June 2025, Senate Bill 21 made Texas the first state with a
               standalone, publicly funded Strategic Bitcoin Reserve.<C n={13} />
               <C n={14} />
+            </li>
+            <li>
+              On November 20, 2025, the reserve made its first purchase — about
+              $5 million in a spot Bitcoin ETF, held as a placeholder while the
+              state contracts a Bitcoin custodian.<C n={22} />
             </li>
           </ul>
         </div>
@@ -376,6 +384,21 @@ export default function HistoryPage() {
             <C n={15} /><C n={16} /> Hard money in two flavors — the digital-native
             kind secured by proof-of-work, and the ancient kind secured by metal
             in a vault — both written into Texas law within weeks of each other.
+          </p>
+          <p>
+            By late 2025, the reserve stopped being theoretical. On November 20,
+            2025, the Comptroller&apos;s office made its first purchase — about
+            $5 million in shares of the iShares Bitcoin Trust, a spot Bitcoin
+            ETF, described as a temporary placeholder until a dedicated custodian
+            is contracted.<C n={22} /> In May 2026, Acting Comptroller Kelly
+            Hancock named the reserve&apos;s advisory committee — among them
+            Cormint CEO Jamie McAvity, SMU law professor Carla Reyes, and
+            CleanSpark CFO Gary Vecchiarelli — and opened a request for proposals
+            for the custody and liquidity partner that will move the state from
+            an ETF proxy into directly held Bitcoin.<C n={23} /> The distance
+            from the 2014 memo is the whole arc in one line: Texas went from
+            ruling that Bitcoin is not money to buying it for the state&apos;s
+            own account.
           </p>
 
           <h2>The frontier: programmable money on the hardest base</h2>

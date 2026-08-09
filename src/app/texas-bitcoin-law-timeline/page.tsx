@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Does Texas have a Strategic Bitcoin Reserve?",
-    a: "Yes. Senate Bill 21, signed by Governor Greg Abbott on June 20, 2025 and effective immediately, created the Texas Strategic Bitcoin Reserve — the first standalone, publicly funded state Bitcoin reserve. The Texas Comptroller manages it outside the state treasury, and its $500 billion market-cap floor means only Bitcoin currently qualifies.",
+    a: "Yes — and as of late 2025 it is funded. Senate Bill 21, signed by Governor Greg Abbott on June 20, 2025 and effective immediately, created the Texas Strategic Bitcoin Reserve — the first standalone, publicly funded state Bitcoin reserve, managed by the Texas Comptroller outside the state treasury with a $500 billion market-cap floor that only Bitcoin currently clears. The Comptroller made the reserve's first purchase on November 20, 2025 — about $5 million in a spot Bitcoin ETF, held as a placeholder — and in May 2026 named an advisory committee and opened a custody RFP to move into directly held Bitcoin.",
   },
   {
     q: "What is the Texas proof-of-reserves law?",
@@ -70,7 +70,7 @@ export default function LawTimelinePage() {
     publisher: { "@type": "Organization", name: site.name },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-22",
-    dateModified: "2026-07-22",
+    dateModified: "2026-08-09",
   };
 
   const faqJsonLd = {
@@ -129,7 +129,7 @@ export default function LawTimelinePage() {
             against the primary record.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published July 22, 2026 · Updated July 22, 2026
+            By {site.name} · Published July 22, 2026 · Updated August 9, 2026
           </p>
         </header>
 
@@ -181,6 +181,12 @@ export default function LawTimelinePage() {
               effective immediately — making Texas the first state with a
               standalone, publicly funded Strategic Bitcoin Reserve.<C n={1} />
               <C n={21} />
+            </li>
+            <li>
+              The reserve made its first purchase on November 20, 2025 — about
+              $5 million in a spot Bitcoin ETF, held as a placeholder — and by
+              May 2026 had an advisory committee and an open custody RFP to move
+              into directly held Bitcoin.<C n={23} /><C n={24} />
             </li>
           </ul>
         </div>
@@ -309,6 +315,20 @@ export default function LawTimelinePage() {
             Texas spent them moving from &ldquo;Bitcoin is not money&rdquo; to
             Bitcoin as a reserve asset of the state itself.
           </p>
+          <p>
+            And the reserve is no longer only on paper. On November 20, 2025,
+            the Comptroller&apos;s office made its first purchase — roughly $5
+            million in shares of the iShares Bitcoin Trust, bought at $51.8694 a
+            share with Bitcoin near $91,300 — and called the ETF position a
+            temporary placeholder until a dedicated custodian is in place.
+            <C n={23} /> In May 2026, Acting Comptroller Kelly Hancock named the
+            reserve&apos;s advisory committee — including Cormint&apos;s Jamie
+            McAvity, SMU law professor Carla Reyes, and CleanSpark CFO Gary
+            Vecchiarelli — and opened a request for proposals for the custody and
+            liquidity partner that will carry the state from an ETF proxy into
+            directly held Bitcoin.<C n={24} /> The statute has become a standing
+            order at the trading desk.
+          </p>
 
           <h2>Does Texas have its own digital currency?</h2>
           <p>
@@ -333,10 +353,10 @@ export default function LawTimelinePage() {
             since 2021 has moved Bitcoin law further than the one before —
             recognition in 2021, protection in 2023, reserve in 2025 — and the
             90th Legislature convenes in January 2027 with live questions
-            queued: how the reserve accumulates, how the Bullion
-            Depository&apos;s transactional currency launches by its May 2027
-            deadline, and how a grid absorbing AI data centers treats its
-            original flexible load. The frontier framing matters here: none of
+            queued: how quickly the reserve accumulates now that its first
+            position is on the books, how the Bullion Depository&apos;s
+            transactional currency launches by its May 2027 deadline, and how a
+            grid absorbing AI data centers treats its original flexible load. The frontier framing matters here: none of
             these are threats to the record above — they are its next entries.
             We re-verify this timeline after every session, the same cadence as{" "}
             <Link href="/bitcoin-mining-map-texas">

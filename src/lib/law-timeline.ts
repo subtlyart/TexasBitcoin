@@ -9,15 +9,21 @@
 // Dataset verified July 2026. Re-verify after every regular session (odd
 // years) and any special session that touches money or digital-asset law.
 
-export const LAW_LAST_VERIFIED = "July 22, 2026";
+export const LAW_LAST_VERIFIED = "August 9, 2026";
 
-export type MilestoneOutcome = "adopted" | "enacted" | "died" | "guidance";
+export type MilestoneOutcome =
+  | "adopted"
+  | "enacted"
+  | "died"
+  | "guidance"
+  | "action";
 
 export const OUTCOME_LABELS: Record<MilestoneOutcome, string> = {
   adopted: "Adopted",
   enacted: "Signed into law",
   died: "Died in committee",
   guidance: "Regulator guidance",
+  action: "Implementation",
 };
 
 export interface LawSource {
@@ -67,6 +73,8 @@ export const lawSources: LawSource[] = [
   { id: 20, label: "PR Newswire — Texas passes proof-of-reserves legislation (HB 1666, May 2023)", url: "https://www.prnewswire.com/news-releases/texas-passes-proof-of-reserves-legislation-301827948.html" },
   { id: 21, label: "Hunton — Texas establishes Strategic Bitcoin Reserve (SB 21)", url: "https://www.hunton.com/blockchain-legal-resource/texas-establishes-strategic-bitcoin-reserve" },
   { id: 22, label: "The Block — Governor Greg Abbott signs strategic Bitcoin reserve bill into law (June 2025)", url: "https://www.theblock.co/post/359089/texas-governor-greg-abbott-signs-strategic-bitcoin-reserve-bill-into-law" },
+  { id: 23, label: "The Bond Buyer — Texas makes first purchase for state's Bitcoin reserve: ~$5M in the iShares Bitcoin Trust, November 20, 2025, held as a placeholder", url: "https://www.bondbuyer.com/news/texas-makes-first-purchase-for-states-bitcoin-reserve" },
+  { id: 24, label: "Texas Comptroller — Acting Comptroller Kelly Hancock Names Strategic Bitcoin Reserve Advisory Committee Members (May 28, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260528-acting-texas-comptroller-kelly-hancock-names-strategic-bitcoin-reserve-advisory-committee-members-1778774749224" },
 ];
 
 export const lawMilestones: LawMilestone[] = [
@@ -179,5 +187,27 @@ export const lawMilestones: LawMilestone[] = [
       "Signed June 22, 2025, House Bill 1056 recognizes gold and silver specie as Texas legal tender and directs a transactional currency backed by metal held in the Texas Bullion Depository. The act takes effect May 1, 2027, except Section 2116.101, which takes effect September 1, 2026.",
     outcome: "enacted",
     sourceIds: [2, 9],
+  },
+  {
+    id: "reserve-first-buy",
+    date: "2025-11-20",
+    dateLabel: "November 20, 2025",
+    title: "The reserve makes its first purchase",
+    actor: "Texas Comptroller",
+    summary:
+      "On November 20, 2025, the Comptroller's office made the Strategic Bitcoin Reserve's first purchase — roughly $5 million in shares of the iShares Bitcoin Trust (a spot Bitcoin ETF), bought at $51.8694 per share with Bitcoin near $91,300. The office described the ETF position as a temporary placeholder until a dedicated cryptocurrency custodian is contracted.",
+    outcome: "action",
+    sourceIds: [23],
+  },
+  {
+    id: "reserve-committee",
+    date: "2026-05-28",
+    dateLabel: "May 28, 2026",
+    title: "Advisory committee named; custody RFP opens",
+    actor: "Texas Comptroller",
+    summary:
+      "On May 28, 2026, Acting Comptroller Kelly Hancock named the reserve's advisory committee — Laurie Dotter, Cormint CEO Jamie McAvity, SMU law professor Carla Reyes, and CleanSpark CFO Gary Vecchiarelli — as the office issued a request for proposals for a firm to provide custody and liquidity services and move the reserve from its ETF placeholder into directly held Bitcoin.",
+    outcome: "action",
+    sourceIds: [24],
   },
 ];

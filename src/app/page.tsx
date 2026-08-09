@@ -20,7 +20,7 @@ const layers = [
     icon: Scale,
     kicker: "The money law",
     title: "Where Texas drew the line",
-    body: "From the 2014 Supervisory Memo that said Bitcoin isn't 'money,' to a state Strategic Bitcoin Reserve and a gold-backed digital currency in 2025 — Texas keeps defining the rules.",
+    body: "From the 2014 Supervisory Memo that said Bitcoin isn't 'money,' to a now-funded state Strategic Bitcoin Reserve and a gold-backed digital currency — Texas keeps defining the rules.",
   },
   {
     icon: Layers,

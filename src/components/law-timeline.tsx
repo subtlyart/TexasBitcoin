@@ -13,10 +13,12 @@ const OUTCOME_COLORS: Record<MilestoneOutcome, string> = {
   adopted: "var(--accent-soft)",
   guidance: "var(--star)",
   died: "#a0554b", // muted brick — a failure, stated plainly, not shouted
+  action: "#6f9e6a", // muted sage — the law moving from statute into practice
 };
 
 const LEGEND_ORDER: MilestoneOutcome[] = [
   "enacted",
+  "action",
   "guidance",
   "died",
   "adopted",
