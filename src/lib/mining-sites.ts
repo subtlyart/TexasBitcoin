@@ -10,12 +10,13 @@
 
 export const MAP_LAST_VERIFIED = "August 9, 2026";
 
-export type SiteStatus = "mining" | "hybrid" | "ai" | "historic";
+export type SiteStatus = "mining" | "hybrid" | "ai" | "announced" | "historic";
 
 export const STATUS_LABELS: Record<SiteStatus, string> = {
   mining: "Bitcoin mining",
   hybrid: "Mining + AI/HPC pivot underway",
-  ai: "Converted to AI/HPC",
+  ai: "AI/HPC data center",
+  announced: "Announced / in development",
   historic: "Historic site",
 };
 
@@ -36,9 +37,15 @@ export interface MiningSite {
   mw: number;
   /** Human caveat — what the number actually is. */
   mwLabel: string;
-  /** Year the site first mined Bitcoin. */
+  /**
+   * Year the site first came online — for a mine, the year it first mined
+   * Bitcoin; for an AI-native or announced campus, the year it enters (or is
+   * expected to enter) service. Drives the timeline scrubber.
+   */
   yearOnline: number;
   status: SiteStatus;
+  /** True for campuses purpose-built for AI that never mined Bitcoin. */
+  aiNative?: boolean;
   /** Year the AI/HPC pivot began, for hybrid/ai sites. */
   pivotYear?: number;
   story: string;
@@ -228,21 +235,81 @@ export const miningSites: MiningSite[] = [
       "The Peter Thiel-backed pioneer. In February 2020 — before Riot, before the China ban — Layer1 was mining in liquid-cooled containers off its own 100 MW West Texas substation and selling power back to the grid when prices spiked. The playbook everyone else later ran.",
     sourceIds: [15, 16],
   },
+  // --- The AI frontier: miner-built campuses that never mined Bitcoin -------
+  // Kept distinct (aiNative / announced) so they read as the next step of the
+  // Texas arc, not as operating mines. Excluded from the developed-capacity
+  // headline below; capacity here is contracted/approved, not yet built out.
+  {
+    id: "hut8-beacon-point",
+    name: "Hut 8 Beacon Point",
+    operator: "Hut 8",
+    location: "Nueces County",
+    lat: 27.78,
+    lng: -97.66,
+    mw: 1000,
+    mwLabel: "1 GW campus · 704 MW leased",
+    yearOnline: 2026,
+    status: "ai",
+    aiNative: true,
+    story:
+      "Not a converted mine but Hut 8's purpose-built answer to the AI turn. The 1 GW campus is fully contracted across two 15-year, 352 MW leases — base-term value $19.6 billion — to a single high-grade tenant reported to be Nvidia, built to Nvidia's DSX reference design on interconnection secured with AEP Texas. The clearest sign that a Texas grid connection is now the prize.",
+    sourceIds: [21],
+  },
+  {
+    id: "cipher-barber-lake",
+    name: "Cipher Barber Lake",
+    operator: "Cipher Mining",
+    location: "Colorado City · Mitchell County",
+    lat: 32.41,
+    lng: -100.87,
+    mw: 300,
+    mwLabel: "300 MW · leased to Fluidstack",
+    yearOnline: 2026,
+    status: "ai",
+    aiNative: true,
+    story:
+      "Cipher built Barber Lake straight for AI. The entire 300 MW site is leased to Fluidstack under a roughly $3 billion, ten-year deal that Google agreed to backstop, with power slated to start flowing in October 2026. It never mined a block — the West Texas mining playbook, applied to GPUs.",
+    sourceIds: [23],
+  },
+  {
+    id: "mara-matagorda",
+    name: "MARA Matagorda",
+    operator: "MARA Holdings",
+    location: "Matagorda County",
+    lat: 28.72,
+    lng: -96.0,
+    mw: 2000,
+    mwLabel: "up to 2 GW · phased 2027–28",
+    yearOnline: 2027,
+    status: "announced",
+    story:
+      "MARA's coastal megasite-in-waiting. In July 2026 it signed to acquire a 1,200-acre Matagorda County site from HIF carrying up to 2 GW of power, paid in milestones — land, permits, and grid authorization among them — for a campus blending high-performance computing with flexible Bitcoin mining. Initial power is targeted for late 2027, making it exactly the kind of speculative gigawatt the August 2026 queue audit exists to test.",
+    sourceIds: [22],
+  },
 ];
 
-/** MW developed/operating today across tracked sites (uses live AI-load for converted sites). */
+// The AI-frontier campuses (aiNative or announced) are mapped and told, but
+// they're not operating mines — keep them out of the developed/approved
+// headlines so those figures keep describing the working mining backbone.
+function isOperatingMine(s: MiningSite): boolean {
+  return s.status !== "historic" && s.status !== "announced" && !s.aiNative;
+}
+
+/** MW developed/operating today across operating mines (uses live AI-load for converted sites). */
 export const developedMw = miningSites.reduce((sum, s) => {
   if (s.id === "galaxy-helios") return sum + 133; // delivered, not approved
-  if (s.status === "historic") return sum;
+  if (!isOperatingMine(s)) return sum;
   return sum + s.mw;
 }, 0);
 
-/** MW including ERCOT-approved expansion headroom at tracked sites. */
+/** MW including ERCOT-approved expansion headroom at operating tracked sites. */
 export const approvedMw = miningSites.reduce((sum, s) => {
   if (s.id === "riot-corsicana") return sum + 1000;
-  if (s.status === "historic") return sum;
+  if (!isOperatingMine(s)) return sum;
   return sum + s.mw;
 }, 0);
 
 export const YEAR_MIN = 2019;
-export const YEAR_MAX = 2026;
+// 2027 reaches the announced coastal megasite (MARA Matagorda's first power);
+// the map defaults to the present and treats the final year as the horizon.
+export const YEAR_MAX = 2027;

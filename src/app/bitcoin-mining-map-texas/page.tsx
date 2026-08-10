@@ -173,7 +173,8 @@ export default function MiningMapPage() {
             Riot&apos;s Corsicana campus, MARA&apos;s Granbury mine, and Hut
             8&apos;s 280 MW King Mountain site. Several former Bitcoin mines,
             led by Galaxy&apos;s Helios campus, are now converting to AI data
-            centers.
+            centers, and the same operators are building AI-native campuses like
+            Hut 8&apos;s 1 GW Beacon Point beside them.
           </p>
         </div>
 
@@ -223,11 +224,13 @@ export default function MiningMapPage() {
         <div className="prose-tx mt-10">
           <h2>What does this map show?</h2>
           <p>
-            This map tracks the ten most consequential industrial Bitcoin
-            mining sites in Texas — roughly{" "}
+            This map tracks {miningSites.length} of the most consequential
+            industrial sites in Texas&apos;s Bitcoin-and-AI power story — the
+            operating mines, roughly{" "}
             <strong>{Math.round(developedMw / 100) / 10} GW of developed
-            capacity</strong>, and more than 4 GW counting ERCOT-approved
-            expansion. Every capacity figure is the operator&apos;s own
+            capacity</strong> and more than 4 GW counting ERCOT-approved
+            expansion, plus the miner-built AI campuses now rising beside them.
+            Every capacity figure is the operator&apos;s own
             published number or reputable trade-press reporting, cited below.
             Smaller and off-grid operations — including the flare-gas miners of
             the Permian Basin — aren&apos;t pinned here, so treat this as the

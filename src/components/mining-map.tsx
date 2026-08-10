@@ -61,12 +61,16 @@ const STATUS_COLORS: Record<SiteStatus, string> = {
   mining: "#f7931a",
   hybrid: "#ffb454",
   ai: "#6fc7b4",
+  announced: "#8b93c9", // periwinkle — planned, not yet built
   historic: "#756f63",
 };
 
 /** Status as of a given map year — sites pivot color the year the GPUs arrive. */
 function statusAt(site: MiningSite, year: number): SiteStatus {
   if (site.status === "historic") return "historic";
+  if (site.status === "announced") return "announced";
+  // AI-native campuses never mined — they show their status from the start.
+  if (site.aiNative) return site.status;
   if (site.pivotYear && year >= site.pivotYear) return site.status;
   return "mining";
 }
@@ -76,7 +80,8 @@ function pinRadius(mw: number) {
 }
 
 export function MiningMap() {
-  const [year, setYear] = useState(YEAR_MAX);
+  // Default to the present; the final scrubber year reveals announced sites.
+  const [year, setYear] = useState(2026);
   const [playing, setPlaying] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>("riot-rockdale");
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -150,7 +155,7 @@ export function MiningMap() {
       <svg
         viewBox="0 0 700 675"
         role="img"
-        aria-label={`Map of Texas showing industrial Bitcoin mining sites online by ${year}`}
+        aria-label={`Map of Texas showing industrial Bitcoin mining and AI sites online or announced by ${year}`}
         className="mt-4 w-full"
       >
         <path
@@ -182,7 +187,9 @@ export function MiningMap() {
         {miningSites.map((site) => {
           const [x, y] = px(site.lat, site.lng);
           const on = site.yearOnline <= year;
-          const color = STATUS_COLORS[statusAt(site, year)];
+          const st = statusAt(site, year);
+          const color = STATUS_COLORS[st];
+          const isAnnounced = st === "announced";
           const r = pinRadius(site.mw);
           const isSelected = selectedId === site.id;
           return (
@@ -212,9 +219,10 @@ export function MiningMap() {
                 cy={y}
                 r={r}
                 fill={color}
-                fillOpacity="0.28"
+                fillOpacity={isAnnounced ? 0.14 : 0.28}
                 stroke={color}
                 strokeWidth="1.5"
+                strokeDasharray={isAnnounced ? "4 2.5" : undefined}
                 tabIndex={on ? 0 : -1}
                 role="button"
                 aria-label={`${site.name}, ${site.mwLabel}, online ${site.yearOnline}`}
