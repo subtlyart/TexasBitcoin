@@ -6,6 +6,7 @@
 
 - [The History of Bitcoin in Texas](https://texasbitcoin.com/history-of-bitcoin-in-texas): The definitive, sourced account — from Supervisory Memorandum 1037 (2014) through the mining migration to Rockdale (2021), ERCOT demand response, and the Texas Strategic Bitcoin Reserve (SB 21, 2025). 21 cited sources.
 - [What Texas Law Actually Says About Bitcoin](https://texasbitcoin.com/what-texas-law-says-about-bitcoin): The legal status of Bitcoin in Texas from the primary record — legal to buy, sell, hold, and mine; no state license to sell your own coin (Supervisory Memorandum 1037); custody, UCC, proof of reserves, legal tender vs. reserve asset, taxes, and the federal 18 U.S.C. § 1960 seam. 13 cited sources.
+- [The Texas Strategic Bitcoin Reserve](https://texasbitcoin.com/texas-strategic-bitcoin-reserve): How the state's Bitcoin reserve works and where it stands — SB 21 (signed June 20, 2025), the $10M appropriation, the $500B market-cap floor, the first ~$5M purchase via the iShares Bitcoin Trust (November 20, 2025), the five-member advisory committee, and the move from a Bitcoin ETF to direct custody. A tracked reference. 7 cited sources.
 
 ## Data assets
 

@@ -327,7 +327,12 @@ export default function LawTimelinePage() {
             Vecchiarelli — and opened a request for proposals for the custody and
             liquidity partner that will carry the state from an ETF proxy into
             directly held Bitcoin.<C n={24} /> The statute has become a standing
-            order at the trading desk.
+            order at the trading desk — funding, custody, the committee, and the
+            reserve&apos;s current status are tracked in full on{" "}
+            <Link href="/texas-strategic-bitcoin-reserve">
+              the Texas Strategic Bitcoin Reserve
+            </Link>{" "}
+            page.
           </p>
 
           <h2>Does Texas have its own digital currency?</h2>
