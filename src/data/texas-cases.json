@@ -1,11 +1,29 @@
 {
   "stats": {
-    "case_count": 148,
-    "total_forfeitures_usd": 254565850.44,
+    "case_count": 153,
+    "total_forfeitures_usd": 255275850.44,
     "districts_active": 4,
-    "generated_at": "2026-08-03T23:56:11Z"
+    "generated_at": "2026-08-18T00:51:58Z"
   },
   "cases": [
+    {
+      "id": "9fbd9ec2-b396-4d8d-8075-ae3119492e4e",
+      "title": "Number one dark web dealer of Oxycodone sentenced to over 13 years in federal prison",
+      "date": "2026-08-13",
+      "district": "Northern District of Texas",
+      "summary": "<p>U.S. Attorney for the Northern District of Texas, Ryan Raybould, announced today that Samad Hamid Castro, 41, from New Jersey, was sentenced to 164 months in prison for the illicit distribution of Oxycodone to the Northern District of Texas and elsewhere. Castro pleaded guilty to distribution of a controlled substance on April 1.</p>",
+      "statutes": [],
+      "forfeiture_usd": 710000.0,
+      "themes": [
+        "cryptocurrency_and_asset_forfeiture",
+        "dark_web_drug_trafficking",
+        "federal_prosecution_and_sentencing",
+        "interagency_law_enforcement_cooperation",
+        "mail_system_exploitation",
+        "opioid_crisis_and_oxycodone_distribution"
+      ],
+      "doj_url": "https://www.justice.gov/usao-ndtx/pr/number-one-dark-web-dealer-oxycodone-sentenced-over-13-years-federal-prison"
+    },
     {
       "id": "64c565e5-4756-43d5-8234-5fbcaaab4342",
       "title": "Expatriated Hedge Fund Manager Sentenced to Prison for Tax Evasion",
@@ -357,6 +375,25 @@
         "tax_refund_fraud"
       ],
       "doj_url": "https://www.justice.gov/usao-ndtx/pr/four-family-members-convicted-multimillion-dollar-tax-refund-fraud-scheme"
+    },
+    {
+      "id": "ec02d590-d623-4d8c-9fec-bf301e630acf",
+      "title": "Cedar Park Man Arrested, Charged with Defrauding Investors",
+      "date": "2025-12-05",
+      "district": "Western District of Texas",
+      "summary": "<p>Daniel Vincent Attridge, of Cedar Park, was arrested and charged with five counts of wire fraud.</p>",
+      "statutes": [],
+      "forfeiture_usd": 0,
+      "themes": [
+        "cryptocurrency_and_commodities_trading",
+        "high-interest_loan_agreements",
+        "investment_fraud",
+        "law_enforcement_investigation",
+        "ponzi-style_scheme",
+        "victim_reporting_and_fraud_prevention",
+        "wire_fraud"
+      ],
+      "doj_url": "https://www.justice.gov/usao-wdtx/pr/cedar-park-man-arrested-charged-defrauding-investors"
     },
     {
       "id": "2663ff08-5d7a-4808-a164-1bb6c04c01f4",
@@ -1688,6 +1725,25 @@
       "doj_url": "https://www.justice.gov/usao-sdtx/pr/darknet-drug-distributor-sent-prison"
     },
     {
+      "id": "77dbbacd-5c84-43ab-8d38-8205df2d54d5",
+      "title": "Man Sentenced to Statutory Maximum of 20 Years in Federal Prison for Receipt of Child Pornography",
+      "date": "2022-06-30",
+      "district": "Northern District of Texas",
+      "summary": "Sentenced to the statutory maximum of 20 years in federal prison for receipt of child pornography.",
+      "statutes": [],
+      "forfeiture_usd": 0,
+      "themes": [
+        "border_enforcement",
+        "child_pornography",
+        "child_sexual_abuse",
+        "cryptocurrency",
+        "dark_web",
+        "digital_forensics",
+        "interagency_cooperation"
+      ],
+      "doj_url": "https://www.justice.gov/usao-ndtx/pr/man-sentenced-statutory-maximum-20-years-federal-prison-receipt-child-pornography"
+    },
+    {
       "id": "43f9f3bc-098b-4542-8050-aa511bb45bd0",
       "title": "Houston area unlicensed cryptocurrency business results in conviction",
       "date": "2022-06-01",
@@ -2573,6 +2629,24 @@
       "doj_url": "https://www.justice.gov/usao-sdtx/pr/multiple-sentences-imposed-massive-synthetic-narcotics-distribution-network"
     },
     {
+      "id": "b3b5287c-ac19-4389-920c-8a3c738cd837",
+      "title": "Former Employee Sentenced for Wire Fraud",
+      "date": "2018-08-16",
+      "district": "Southern District of Texas",
+      "summary": "27 months in federal prison, $552,651.00 in restitution, and three years of supervised release",
+      "statutes": [],
+      "forfeiture_usd": 0,
+      "themes": [
+        "cryptocurrency",
+        "cybercrime",
+        "extortion",
+        "insider_threat",
+        "international_cooperation",
+        "wire_fraud"
+      ],
+      "doj_url": "https://www.justice.gov/usao-sdtx/pr/former-employee-sentenced-wire-fraud"
+    },
+    {
       "id": "18f6a26a-86c7-4b2f-897a-58bd42c7159a",
       "title": "More Than $13 Million Forfeited Against Multiple Individuals in Car Nationalization Business",
       "date": "2018-05-02",
@@ -2590,6 +2664,24 @@
         "unlicensed_money_transmitting_business"
       ],
       "doj_url": "https://www.justice.gov/usao-sdtx/pr/more-13-million-forfeited-against-multiple-individuals-car-nationalization-business"
+    },
+    {
+      "id": "3c831f70-7c19-4b45-986d-ece9759991ad",
+      "title": "Former Employee Pleads Guilty to Wire Fraud",
+      "date": "2018-04-16",
+      "district": "Southern District of Texas",
+      "summary": "<p>A 28-year-old former employee of BP America Inc. has admitted he attempted to extort money from the company</p>",
+      "statutes": [],
+      "forfeiture_usd": 0,
+      "themes": [
+        "cryptocurrency",
+        "cybercrime",
+        "data_privacy_and_personal_information_theft",
+        "extortion",
+        "international_cooperation",
+        "wire_fraud"
+      ],
+      "doj_url": "https://www.justice.gov/usao-sdtx/pr/former-employee-pleads-guilty-wire-fraud"
     },
     {
       "id": "a8f15585-4c39-4417-8bba-da29bb7a8ec2",
