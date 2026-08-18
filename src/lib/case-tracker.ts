@@ -97,3 +97,75 @@ export const trackerDerived = (() => {
     lastUpdated: trackerStats.generated_at.slice(0, 10),
   };
 })();
+
+// --- Per-case page slugs -----------------------------------------------------
+// Slug = the final segment of the DOJ press-release URL: descriptive of the
+// case/conduct (not a person), stable, and SEO-legible. A few releases are
+// cross-posted by two USAO offices and share that final segment; we keep the
+// lowest-id case's slug clean and suffix the rest with an id fragment, so an
+// existing case's URL never shifts as the dataset grows. Lives here (not in
+// case-detail) so it needs only the small index dataset, keeping the slug map
+// out of the client bundle's detail payload.
+function baseSlug(dojUrl: string): string {
+  const clean = dojUrl.replace(/[?#].*$/, "").replace(/\/+$/, "");
+  return clean.slice(clean.lastIndexOf("/") + 1);
+}
+
+const idToSlug = new Map<string, string>();
+const slugToId = new Map<string, string>();
+{
+  const groups = new Map<string, TrackedCase[]>();
+  for (const c of trackedCases) {
+    const b = baseSlug(c.doj_url);
+    const g = groups.get(b);
+    if (g) g.push(c);
+    else groups.set(b, [c]);
+  }
+  for (const [base, group] of groups) {
+    group
+      .slice()
+      .sort((a, b) => a.id.localeCompare(b.id))
+      .forEach((c, i) => {
+        const slug = i === 0 ? base : `${base}-${c.id.slice(0, 8)}`;
+        idToSlug.set(c.id, slug);
+        slugToId.set(slug, c.id);
+      });
+  }
+}
+
+export function slugForCase(c: TrackedCase): string {
+  return idToSlug.get(c.id) ?? baseSlug(c.doj_url);
+}
+
+export function caseIdForSlug(slug: string): string | undefined {
+  return slugToId.get(slug);
+}
+
+export function allCaseSlugs(): string[] {
+  return [...slugToId.keys()];
+}
+
+export type TrackedCaseWithSlug = TrackedCase & { slug: string };
+
+export const trackedCasesWithSlug: TrackedCaseWithSlug[] = trackedCases.map(
+  (c) => ({ ...c, slug: slugForCase(c) }),
+);
+
+// --- District hubs -----------------------------------------------------------
+export const DISTRICTS = [
+  { name: "Northern District of Texas", slug: "northern", short: "Northern", cities: "Dallas and Fort Worth" },
+  { name: "Southern District of Texas", slug: "southern", short: "Southern", cities: "Houston, Corpus Christi, and the Gulf Coast" },
+  { name: "Eastern District of Texas", slug: "eastern", short: "Eastern", cities: "Sherman, Plano, Tyler, and Beaumont" },
+  { name: "Western District of Texas", slug: "western", short: "Western", cities: "Austin, San Antonio, El Paso, and Waco" },
+] as const;
+
+export function districtSlug(district: string): string {
+  return (
+    DISTRICTS.find((d) => d.name === district)?.slug ??
+    district.toLowerCase().replace(/[^a-z]+/g, "-")
+  );
+}
+
+export function districtBySlug(slug: string) {
+  return DISTRICTS.find((d) => d.slug === slug);
+}

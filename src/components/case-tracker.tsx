@@ -1,12 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import {
   formatDate,
   formatUsd,
   shortDistrict,
   themeLabel,
-  type TrackedCase,
+  type TrackedCaseWithSlug,
 } from "@/lib/case-tracker";
 
 /**
@@ -16,7 +17,7 @@ import {
  * (filters default to "all"), so the page reads completely without
  * JavaScript. Filtering only ever hides rows client-side.
  */
-export function CaseTracker({ cases }: { cases: TrackedCase[] }) {
+export function CaseTracker({ cases }: { cases: TrackedCaseWithSlug[] }) {
   const [district, setDistrict] = useState("");
   const [year, setYear] = useState("");
   const [theme, setTheme] = useState("");
@@ -120,14 +121,12 @@ export function CaseTracker({ cases }: { cases: TrackedCase[] }) {
           <article key={c.id} className="py-5">
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1.5">
               <h3 className="font-semibold leading-snug">
-                <a
-                  href={c.doj_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href={`/texas-bitcoin-case-tracker/${c.slug}`}
                   className="hover:text-accent-soft"
                 >
                   {c.title}
-                </a>
+                </Link>
               </h3>
               <span className="text-xs whitespace-nowrap text-muted-2">
                 {formatDate(c.date)}

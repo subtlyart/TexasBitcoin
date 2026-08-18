@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
-import { trackerDerived } from "@/lib/case-tracker";
+import { DISTRICTS, trackerDerived } from "@/lib/case-tracker";
+import { indexedCasePages } from "@/lib/case-detail";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Real per-page modification dates. A truthful freshness signal beats
@@ -26,10 +27,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" as const, lastMod: "2026-07-22" },
   ];
 
-  return routes.map((r) => ({
+  const staticEntries = routes.map((r) => ({
     url: `${site.url}${r.path}`,
     lastModified: new Date(r.lastMod),
     changeFrequency: r.changeFrequency,
     priority: r.priority,
   }));
+
+  // District hubs — inherit the dataset's generation date, like the tracker.
+  const districtEntries = DISTRICTS.map((d) => ({
+    url: `${site.url}/texas-bitcoin-case-tracker/district/${d.slug}`,
+    lastModified: new Date(trackerDerived.lastUpdated),
+    changeFrequency: "weekly" as const,
+    priority: 0.5,
+  }));
+
+  // Per-case pages — only the search-indexed (adjudicated) ones; each carries
+  // its DOJ announcement date as a truthful lastModified.
+  const caseEntries = indexedCasePages().map((c) => ({
+    url: `${site.url}/texas-bitcoin-case-tracker/${c.slug}`,
+    lastModified: new Date(c.date ?? trackerDerived.lastUpdated),
+    changeFrequency: "yearly" as const,
+    priority: 0.4,
+  }));
+
+  return [...staticEntries, ...districtEntries, ...caseEntries];
 }

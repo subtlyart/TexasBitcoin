@@ -3,7 +3,7 @@
     "case_count": 153,
     "total_forfeitures_usd": 255275850.44,
     "districts_active": 4,
-    "generated_at": "2026-08-18T00:51:58Z"
+    "generated_at": "2026-08-18T21:07:01Z"
   },
   "cases": [
     {
@@ -11,7 +11,7 @@
       "title": "Number one dark web dealer of Oxycodone sentenced to over 13 years in federal prison",
       "date": "2026-08-13",
       "district": "Northern District of Texas",
-      "summary": "<p>U.S. Attorney for the Northern District of Texas, Ryan Raybould, announced today that Samad Hamid Castro, 41, from New Jersey, was sentenced to 164 months in prison for the illicit distribution of Oxycodone to the Northern District of Texas and elsewhere. Castro pleaded guilty to distribution of a controlled substance on April 1.</p>",
+      "summary": "U.S. Attorney for the Northern District of Texas, Ryan Raybould, announced today that Samad Hamid Castro, 41, from New Jersey, was sentenced to 164 months in prison for the illicit distribution of Oxycodone to the Northern District of Texas and elsewhere. Castro pleaded guilty to distribution of a controlled substance on April 1.",
       "statutes": [],
       "forfeiture_usd": 710000.0,
       "themes": [
@@ -29,7 +29,7 @@
       "title": "Expatriated Hedge Fund Manager Sentenced to Prison for Tax Evasion",
       "date": "2026-07-27",
       "district": "Western District of Texas",
-      "summary": "<p>A Cayman resident who renounced his U.S. citizenship was sentenced today to 37 months in prison for tax evasion.</p>",
+      "summary": "A Cayman resident who renounced his U.S. citizenship was sentenced today to 37 months in prison for tax evasion.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -49,7 +49,7 @@
       "title": "Final Defendant Sentenced to Prison in Multimillion Dollar Tax Refund Fraud Scheme",
       "date": "2026-06-02",
       "district": "Northern District of Texas",
-      "summary": "<p>A fourth family member was sentenced to 90 months in prison on May 28 following a jury trial that resulted in convictions of four men for a multimillion-dollar tax refund fraud scheme.</p>",
+      "summary": "A fourth family member was sentenced to 90 months in prison on May 28 following a jury trial that resulted in convictions of four men for a multimillion-dollar tax refund fraud scheme.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -69,7 +69,7 @@
       "title": "Nigerian national admits to role in email scam",
       "date": "2026-05-12",
       "district": "Southern District of Texas",
-      "summary": "<p>A 34-year-old foreign national who resided in Houston has pleaded guilty to illegal money transmission</p>",
+      "summary": "A 34-year-old foreign national who resided in Houston has pleaded guilty to illegal money transmission",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -86,7 +86,7 @@
       "title": "Hedge Fund Manager Pleads Guilty to Tax Evasion in Austin",
       "date": "2026-04-20",
       "district": "Western District of Texas",
-      "summary": "<p>Justin Ryan Schmidt, a Cayman national who renounced his U.S. citizenship, pleaded guilty to evading payment of more than $1.5 million of federal income tax liabilities</p>",
+      "summary": "Justin Ryan Schmidt, a Cayman national who renounced his U.S. citizenship, pleaded guilty to evading payment of more than $1.5 million of federal income tax liabilities",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -104,7 +104,7 @@
       "title": "Drug trafficking leader gets 20 years in Homeland Security Task Force effort",
       "date": "2026-04-03",
       "district": "Southern District of Texas",
-      "summary": "<p>A 33-year-old Houston man has been sentenced for his role in the distribution of multiple narcotics</p>",
+      "summary": "A 33-year-old Houston man has been sentenced for his role in the distribution of multiple narcotics",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -124,7 +124,7 @@
       "title": "Three Men Sentenced to Prison in Multimillion Dollar Tax Refund Fraud Scheme",
       "date": "2026-03-27",
       "district": "Northern District of Texas",
-      "summary": "<p>Three family members were sentenced today to prison following a jury trial that resulted in convictions for their roles in a multimillion-dollar tax refund fraud scheme.</p>",
+      "summary": "Three family members were sentenced today to prison following a jury trial that resulted in convictions for their roles in a multimillion-dollar tax refund fraud scheme.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -144,7 +144,7 @@
       "title": "Three Men Sentenced to Prison in Multimillion Dollar Tax Refund Fraud Scheme",
       "date": "2026-03-26",
       "district": "Northern District of Texas",
-      "summary": "<p>Three family members were sentenced today to prison following a jury trial that resulted in convictions for their roles in a multimillion-dollar tax refund fraud scheme.</p>",
+      "summary": "Three family members were sentenced today to prison following a jury trial that resulted in convictions for their roles in a multimillion-dollar tax refund fraud scheme.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -165,7 +165,7 @@
       "title": "Armenian Man Extradited to U.S. Faces Charges for Role in Infostealing Malware Scheme",
       "date": "2026-03-25",
       "district": "Western District of Texas",
-      "summary": "<p>Hambardzum Minasyan was extradited to the U.S. where he faces criminal charges related to his alleged role in an infostealer scheme</p>",
+      "summary": "Hambardzum Minasyan was extradited to the U.S. where he faces criminal charges related to his alleged role in an infostealer scheme",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -185,7 +185,7 @@
       "title": "Nigerian citizen sentenced for his role in a multimillion-dollar wire fraud scheme",
       "date": "2026-03-24",
       "district": "Southern District of Texas",
-      "summary": "<p>A 26-year-old man who was in the United States on a Green Card has been sentenced for laundering fraud proceeds through an unlicensed money transmitting business</p>",
+      "summary": "A 26-year-old man who was in the United States on a Green Card has been sentenced for laundering fraud proceeds through an unlicensed money transmitting business",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -205,7 +205,7 @@
       "title": "Waxahachie Man Sentenced to 70 Months in Federal Prison for $1.7M SIM Card Swapping Fraud Scheme",
       "date": "2026-02-27",
       "district": "Northern District of Texas",
-      "summary": "<p>A Waxahachie man who coordinated a SIM card-swapping fraud scheme was sentenced today to 70 months in federal prison.</p>",
+      "summary": "A Waxahachie man who coordinated a SIM card-swapping fraud scheme was sentenced today to 70 months in federal prison.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -224,7 +224,7 @@
       "title": "Hedge Fund Manager Indicted on Tax Fraud Charges",
       "date": "2026-02-24",
       "district": "Western District of Texas",
-      "summary": "<p>An indictment was unsealed today in the Western District of Texas charging a Cayman national who renounced his U.S. citizenship with tax evasion, filing false returns and willfully failing to file tax forms disclosing foreign assets.</p>",
+      "summary": "An indictment was unsealed today in the Western District of Texas charging a Cayman national who renounced his U.S. citizenship with tax evasion, filing false returns and willfully failing to file tax forms disclosing foreign assets.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -242,7 +242,7 @@
       "title": "Chinese National sentenced for role in pig butchering scheme",
       "date": "2026-02-19",
       "district": "Eastern District of Texas",
-      "summary": "<p>A Chinese national has been sentenced to federal prison for his role in a scheme to launder the proceeds of cryptocurrency investment scams and other fraudulent schemes involving millions of dollars in victim funds, announced Eastern District of Texas U.S. Attorney Jay R. Combs.</p>",
+      "summary": "A Chinese national has been sentenced to federal prison for his role in a scheme to launder the proceeds of cryptocurrency investment scams and other fraudulent schemes involving millions of dollars in victim funds, announced Eastern District of Texas U.S. Attorney Jay R. Combs.",
       "statutes": [],
       "forfeiture_usd": 2300000.0,
       "themes": [
@@ -261,7 +261,7 @@
       "title": "Start spreading the news: New York-licensed attorney and accomplice sentenced in large-scale interstate email scam scheme",
       "date": "2026-02-09",
       "district": "Southern District of Texas",
-      "summary": "<p>A man and woman have been ordered to federal prison for their respective roles in an identity theft and business email compromise (BEC) scam</p>",
+      "summary": "A man and woman have been ordered to federal prison for their respective roles in an identity theft and business email compromise (BEC) scam",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -283,7 +283,7 @@
       "title": "SDTX recovers nearly $150 million for victims and the American taxpayer in 2025",
       "date": "2026-02-02",
       "district": "Southern District of Texas",
-      "summary": "<p>A total of $148,149,674.47 has been collected in combined criminal, civil and asset forfeiture actions in calendar year 2025</p>",
+      "summary": "A total of $148,149,674.47 has been collected in combined criminal, civil and asset forfeiture actions in calendar year 2025",
       "statutes": [],
       "forfeiture_usd": 45644063.0,
       "themes": [
@@ -302,7 +302,7 @@
       "title": "37 Mexican Nationals Wanted for Serious Crimes Transferred to the United States from Mexico, Including Leaders of Foreign Terrorist Organizations",
       "date": "2026-01-21",
       "district": "Southern District of Texas",
-      "summary": "<p>The United States announced today that yesterday evening it took into custody 37 fugitives from Mexico facing a range of federal criminal charges around the country, including charges relating to narcoterrorism, providing material support to a foreign terrorist organization, firearms trafficking, human smuggling, money laundering, and various drug trafficking offenses, including conspiracy to traffic methamphetamine, fentanyl, and cocaine.</p>",
+      "summary": "The United States announced today that yesterday evening it took into custody 37 fugitives from Mexico facing a range of federal criminal charges around the country, including charges relating to narcoterrorism, providing material support to a foreign terrorist organization, firearms trafficking, human smuggling, money laundering, and various drug trafficking offenses, including conspiracy to traffic methamphetamine, fentanyl, and cocaine.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -324,7 +324,7 @@
       "title": "Alleged ISIS Sympathizer Who Attempted to Provide Bomb Materials Federally Charged With International Terrorism Offense",
       "date": "2025-12-29",
       "district": "Northern District of Texas",
-      "summary": "<p>An alleged ISIS sympathizer has been federally charged with an international terrorism offense after providing bomb components and money to individuals he believed were acting on behalf of a designated foreign terrorist organization.</p>",
+      "summary": "An alleged ISIS sympathizer has been federally charged with an international terrorism offense after providing bomb components and money to individuals he believed were acting on behalf of a designated foreign terrorist organization.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -343,7 +343,7 @@
       "title": "Texas Man Charged with Providing Bomb Components and Funding to Individuals He Believed Were Involved with Foreign Terrorist Organization",
       "date": "2025-12-29",
       "district": "Northern District of Texas",
-      "summary": "<p>An alleged ISIS sympathizer has been federally charged with an international terrorism offense after providing bomb components and money to individuals he believed were acting on behalf of a designated foreign terrorist organization.</p>",
+      "summary": "An alleged ISIS sympathizer has been federally charged with an international terrorism offense after providing bomb components and money to individuals he believed were acting on behalf of a designated foreign terrorist organization.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -362,7 +362,7 @@
       "title": "Four Family Members Convicted of Multimillion-Dollar Tax Refund Fraud Scheme",
       "date": "2025-12-12",
       "district": "Northern District of Texas",
-      "summary": "<p>A jury in Fort Worth, Texas convicted four family members yesterday of participating in a multimillion-dollar tax refund fraud scheme.</p>",
+      "summary": "A jury in Fort Worth, Texas convicted four family members yesterday of participating in a multimillion-dollar tax refund fraud scheme.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -381,7 +381,7 @@
       "title": "Cedar Park Man Arrested, Charged with Defrauding Investors",
       "date": "2025-12-05",
       "district": "Western District of Texas",
-      "summary": "<p>Daniel Vincent Attridge, of Cedar Park, was arrested and charged with five counts of wire fraud.</p>",
+      "summary": "Daniel Vincent Attridge, of Cedar Park, was arrested and charged with five counts of wire fraud.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -400,7 +400,7 @@
       "title": "North Texas Man Convicted of Conspiracy and Wire Fraud in Cryptocurrency Mining Scheme",
       "date": "2025-11-19",
       "district": "Northern District of Texas",
-      "summary": "<p>A federal jury in Fort Worth convicted Caleb Ward, founder of Geosyn Mining, LLC, on Monday this week of a multi-million-dollar cryptocurrency mining investment fraud that victimized dozens of clients across the United States.</p>",
+      "summary": "A federal jury in Fort Worth convicted Caleb Ward, founder of Geosyn Mining, LLC, on Monday this week of a multi-million-dollar cryptocurrency mining investment fraud that victimized dozens of clients across the United States.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -418,7 +418,7 @@
       "title": "Deer Park resident sentenced for running unlicensed financial scheme involving $2.3 million check",
       "date": "2025-11-12",
       "district": "Southern District of Texas",
-      "summary": "<p>A 66-year-old man has been ordered to federal prison for operating an illegal money transmitting business</p>",
+      "summary": "A 66-year-old man has been ordered to federal prison for operating an illegal money transmitting business",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -437,7 +437,7 @@
       "title": "Texas resident sentenced for role in crypto-Ponzi scheme",
       "date": "2025-11-03",
       "district": "Southern District of Texas",
-      "summary": "<p>A 45-year-old Houston man ordered to federal prison for running a fraudulent investment scheme</p>",
+      "summary": "A 45-year-old Houston man ordered to federal prison for running a fraudulent investment scheme",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -454,7 +454,7 @@
       "title": "Multimillion-dollar unlicensed money transmitter sent to prison",
       "date": "2025-10-16",
       "district": "Southern District of Texas",
-      "summary": "<p>A 56-year-old Iraqi citizen who resided in Richmond has been sentenced following his conviction of unlicensed money remitting</p>",
+      "summary": "A 56-year-old Iraqi citizen who resided in Richmond has been sentenced following his conviction of unlicensed money remitting",
       "statutes": [],
       "forfeiture_usd": 282000.0,
       "themes": [
@@ -473,7 +473,7 @@
       "title": "Two plead guilty in large-scale interstate email scam scheme",
       "date": "2025-09-25",
       "district": "Southern District of Texas",
-      "summary": "<p>A Houston man and woman have pleaded guilty to their respective roles in an identity theft and business email compromise scam (BEC)</p>",
+      "summary": "A Houston man and woman have pleaded guilty to their respective roles in an identity theft and business email compromise scam (BEC)",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -493,7 +493,7 @@
       "title": "Montana man sentenced to 10 years in federal prison for engaging in a cryptocurrency money laundering conspiracy",
       "date": "2025-09-18",
       "district": "Eastern District of Texas",
-      "summary": "<p>A Montana man was sentenced to 10 years in federal prison for his role in a cryptocurrency money laundering conspiracy in the Eastern District of Texas, announced Acting U.S. Attorney Jay R. Combs.</p>",
+      "summary": "A Montana man was sentenced to 10 years in federal prison for his role in a cryptocurrency money laundering conspiracy in the Eastern District of Texas, announced Acting U.S. Attorney Jay R. Combs.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -513,7 +513,7 @@
       "title": "Debtor Who Led Crypto Investment Scheme Denied Bankruptcy Discharge",
       "date": "2025-09-10",
       "district": "Southern District of Texas",
-      "summary": "<p>The U.S. Trustee Program (USTP) obtained a judgment denying a bankruptcy discharge of more than $12.5 million to a Texas man who concealed assets and lied in his bankruptcy case to evade his creditors, including investors in his cryptocurrency Ponzi scheme.</p>",
+      "summary": "The U.S. Trustee Program (USTP) obtained a judgment denying a bankruptcy discharge of more than $12.5 million to a Texas man who concealed assets and lied in his bankruptcy case to evade his creditors, including investors in his cryptocurrency Ponzi scheme.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -531,7 +531,7 @@
       "title": "Justice Department Announces Seizure of Over $2.8 Million in Cryptocurrency, Cash, and other Assets",
       "date": "2025-08-14",
       "district": "Northern District of Texas",
-      "summary": "<p>The Department of Justice unsealed six warrants yesterday in the U.S. District Courts for the Eastern District of Virginia, the Central District of California, and the Northern District of Texas authorizing the seizure of over $2.8 million in cryptocurrency, $70,000 in cash, and a luxury vehicle.</p>",
+      "summary": "The Department of Justice unsealed six warrants yesterday in the U.S. District Courts for the Eastern District of Virginia, the Central District of California, and the Northern District of Texas authorizing the seizure of over $2.8 million in cryptocurrency, $70,000 in cash, and a luxury vehicle.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -551,7 +551,7 @@
       "title": "Justice Department Announces Seizure of Over $2.8 Million in Cryptocurrency, Cash, and Other Assets",
       "date": "2025-08-14",
       "district": "Northern District of Texas",
-      "summary": "<p>The Department of Justice unsealed six warrants yesterday in the U.S. District Courts for the Northern District of Texas, the Eastern District of Virginia, and the Central District of California, authorizing the seizure of over $2.8 million in cryptocurrency, $70,000 in cash, and a luxury vehicle.</p>",
+      "summary": "The Department of Justice unsealed six warrants yesterday in the U.S. District Courts for the Northern District of Texas, the Eastern District of Virginia, and the Central District of California, authorizing the seizure of over $2.8 million in cryptocurrency, $70,000 in cash, and a luxury vehicle.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -572,7 +572,7 @@
       "title": "Texas resident pleads guilty in crypto-Ponzi scheme",
       "date": "2025-08-04",
       "district": "Southern District of Texas",
-      "summary": "<p>A 45-year-old Houston man has admitted to running a fraudulent investment scheme</p>",
+      "summary": "A 45-year-old Houston man has admitted to running a fraudulent investment scheme",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -590,7 +590,7 @@
       "title": "United States files a civil complaint in the Northern District of Texas seeking the forfeiture of over $1.7 million worth of cryptocurrency seized by Dallas FBI",
       "date": "2025-07-28",
       "district": "Northern District of Texas",
-      "summary": "<p>On Thursday, July 24, 2025, the United States filed a civil complaint in the Northern District of Texas seeking the forfeiture of over $1.7 million worth of cryptocurrency seized by Dallas FBI in mid-April 2025.</p>",
+      "summary": "On Thursday, July 24, 2025, the United States filed a civil complaint in the Northern District of Texas seeking the forfeiture of over $1.7 million worth of cryptocurrency seized by Dallas FBI in mid-April 2025.",
       "statutes": [],
       "forfeiture_usd": 1700000.0,
       "themes": [
@@ -607,7 +607,7 @@
       "title": "California man gets maximum sentence for laundering proceeds from email fraud scheme",
       "date": "2025-07-22",
       "district": "Southern District of Texas",
-      "summary": "<p>A San Fernando, California, man has been ordered to federal prison for operating an illegal money transmitting business</p>",
+      "summary": "A San Fernando, California, man has been ordered to federal prison for operating an illegal money transmitting business",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -625,7 +625,7 @@
       "title": "Four Individuals Charged in Northern District of Texas with Health Care Fraud Schemes Totaling over $210 Million as part of National Takedown",
       "date": "2025-07-01",
       "district": "Northern District of Texas",
-      "summary": "<p>The Justice Department today announced the results of its 2025 National Health Care Fraud Takedown, which resulted in criminal charges against 324 defendants, including 96 doctors, nurse practitioners, pharmacists, and other licensed medical professionals, in 50 federal districts and 12 State Attorneys General’s Offices across the United States, for their alleged participation in various health care fraud schemes involving over $14.6 billion in intended loss.</p>",
+      "summary": "The Justice Department today announced the results of its 2025 National Health Care Fraud Takedown, which resulted in criminal charges against 324 defendants, including 96 doctors, nurse practitioners, pharmacists, and other licensed medical professionals, in 50 federal districts and 12 State Attorneys General’s Offices across the United States, for their alleged participation in various health care fraud schemes involving over $14.6 billion in intended loss.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -652,7 +652,7 @@
       "title": "Four Family Members Charged in Multimillion-Dollar Tax Refund Fraud Scheme",
       "date": "2025-07-01",
       "district": "Northern District of Texas",
-      "summary": "<p>A federal grand jury in Fort Worth, Texas, returned an indictment on June 11, unsealed yesterday, charging four family members with conspiracy to defraud the United States by filing tax returns that sought millions of dollars in false refunds.</p>",
+      "summary": "A federal grand jury in Fort Worth, Texas, returned an indictment on June 11, unsealed yesterday, charging four family members with conspiracy to defraud the United States by filing tax returns that sought millions of dollars in false refunds.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -671,7 +671,7 @@
       "title": "Four Family Members Charged in Multimillion-Dollar Tax Refund Fraud Scheme",
       "date": "2025-07-01",
       "district": "Northern District of Texas",
-      "summary": "<p>A federal grand jury in Fort Worth, Texas, returned an indictment on June 11, unsealed yesterday, charging four family members with conspiracy to defraud the United States by filing tax returns that sought millions of dollars in false refunds.</p>",
+      "summary": "A federal grand jury in Fort Worth, Texas, returned an indictment on June 11, unsealed yesterday, charging four family members with conspiracy to defraud the United States by filing tax returns that sought millions of dollars in false refunds.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -691,7 +691,7 @@
       "title": "Justice Department Seizes Domains Behind Major Information-Stealing Malware Operation",
       "date": "2025-05-21",
       "district": "Northern District of Texas",
-      "summary": "<p>The Justice Department announced today the unsealing of two warrants authorizing the seizure of five internet domains used by malicious cyber actors to operate the LummaC2 information-stealing malware service.&nbsp;</p>",
+      "summary": "The Justice Department announced today the unsealing of two warrants authorizing the seizure of five internet domains used by malicious cyber actors to operate the LummaC2 information-stealing malware service.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -711,7 +711,7 @@
       "title": "Harlingen couple guilty in multimillion-dollar Medicare fraud scheme",
       "date": "2025-04-29",
       "district": "Southern District of Texas",
-      "summary": "<p>&nbsp;The operators of a durable medical equipment (DME) company have pleaded guilty to defrauding Medicare</p>",
+      "summary": "The operators of a durable medical equipment (DME) company have pleaded guilty to defrauding Medicare",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -729,7 +729,7 @@
       "title": "Final sentence imposed in multimillion-dollar money laundering conspiracy",
       "date": "2025-04-08",
       "district": "Southern District of Texas",
-      "summary": "<p>A 49-year-old naturalized citizen from Arlington has been ordered to prison for unlicensed money transmitting and money laundering</p>",
+      "summary": "A 49-year-old naturalized citizen from Arlington has been ordered to prison for unlicensed money transmitting and money laundering",
       "statutes": [],
       "forfeiture_usd": 580649.52,
       "themes": [
@@ -748,7 +748,7 @@
       "title": "California man sentenced in cryptocurrency money laundering conspiracy",
       "date": "2025-03-13",
       "district": "Eastern District of Texas",
-      "summary": "<p>A California man has been sentenced to federal prison for his role in a cryptocurrency money laundering conspiracy in the Eastern District of Texas, announced Acting U.S. Attorney Abe McGlothin, Jr.</p><p>&nbsp;</p>",
+      "summary": "A California man has been sentenced to federal prison for his role in a cryptocurrency money laundering conspiracy in the Eastern District of Texas, announced Acting U.S. Attorney Abe McGlothin, Jr.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -766,7 +766,7 @@
       "title": "Montana man convicted in cryptocurrency money laundering conspiracy",
       "date": "2025-02-27",
       "district": "Eastern District of Texas",
-      "summary": "<p>A Montana man was found guilty of a cryptocurrency money laundering conspiracy, announced Acting U.S. Attorney Abe McGlothin, Jr.</p><p>&nbsp;</p>",
+      "summary": "A Montana man was found guilty of a cryptocurrency money laundering conspiracy, announced Acting U.S. Attorney Abe McGlothin, Jr.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -784,7 +784,7 @@
       "title": "Out of state man pleads guilty to laundering email scam proceeds",
       "date": "2025-02-06",
       "district": "Southern District of Texas",
-      "summary": "<p>A California man has admitted to operating an illegal money transmitting business</p>",
+      "summary": "A California man has admitted to operating an illegal money transmitting business",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -801,7 +801,7 @@
       "title": "Foreign national sentenced for racketeering and drug trafficking conspiracy  in the Eastern District of Texas",
       "date": "2025-01-15",
       "district": "Eastern District of Texas",
-      "summary": "<p>A Romanian national convicted of plotting to traffic hundreds of kilograms of cocaine from the United States in a scheme that also included money laundering, arms trafficking, and an attempt to assassinate rival gang members, was sentenced to 25 years in federal prison in the Eastern District of Texas, announced U.S. Attorney Damien M. Diggs.</p><p>&nbsp;</p>",
+      "summary": "A Romanian national convicted of plotting to traffic hundreds of kilograms of cocaine from the United States in a scheme that also included money laundering, arms trafficking, and an attempt to assassinate rival gang members, was sentenced to 25 years in federal prison in the Eastern District of Texas, announced U.S. Attorney Damien M. Diggs.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -822,7 +822,7 @@
       "title": "Ukrainian National Sentenced to Federal Prison in “Raccoon Infostealer” Cybercrime Case",
       "date": "2024-12-18",
       "district": "Western District of Texas",
-      "summary": "<p>Ukrainian national Mark Sokolovsky was sentenced in Austin to 60 months in federal prison for one count of conspiracy to commit computer intrusion after he conspired to operate the Raccoon Infostealer as a malware-as-a-service or “MaaS.”</p>",
+      "summary": "Ukrainian national Mark Sokolovsky was sentenced in Austin to 60 months in federal prison for one count of conspiracy to commit computer intrusion after he conspired to operate the Raccoon Infostealer as a malware-as-a-service or “MaaS.”",
       "statutes": [],
       "forfeiture_usd": 23975.0,
       "themes": [
@@ -842,7 +842,7 @@
       "title": "Couple sentenced for laundering millions in drug proceeds using virtual currency",
       "date": "2024-12-12",
       "district": "Southern District of Texas",
-      "summary": "<p>A Houston resident and his naturalized wife from Vietnam have received prison sentences for unlicensed money transmitting and money laundering</p>",
+      "summary": "A Houston resident and his naturalized wife from Vietnam have received prison sentences for unlicensed money transmitting and money laundering",
       "statutes": [],
       "forfeiture_usd": 486198.0,
       "themes": [
@@ -862,7 +862,7 @@
       "title": "U.S. Joins International Action Against RedLine and META Infostealers",
       "date": "2024-10-29",
       "district": "Western District of Texas",
-      "summary": "<p>In a joint disruption effort with EuroJust and other partners, the DOJ unsealed a warrant issued in the Western District of Texas that authorized law enforcement to seize two domains used by RedLine and META for command and control, along with a complaint charging Maxim Rudometov, one of the developers and administrators of RedLine Infostealer.</p>",
+      "summary": "In a joint disruption effort with EuroJust and other partners, the DOJ unsealed a warrant issued in the Western District of Texas that authorized law enforcement to seize two domains used by RedLine and META for command and control, along with a complaint charging Maxim Rudometov, one of the developers and administrators of RedLine Infostealer.",
       "statutes": [
         "18 U.S.C. § 1029",
         "18 U.S.C. § 1030",
@@ -889,7 +889,7 @@
       "title": "Man Sentenced to 60 Years After Sexually Assaulting Toddlers, Hiding Videos Inside Fake Calculator App",
       "date": "2024-10-18",
       "district": "Northern District of Texas",
-      "summary": "<p>A 25-year-old man who hid photos of himself raping preschool-aged children inside what appeared to be a calculator app on his phone has been sentenced to 60 years in federal prison.&nbsp;</p>",
+      "summary": "A 25-year-old man who hid photos of himself raping preschool-aged children inside what appeared to be a calculator app on his phone has been sentenced to 60 years in federal prison.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -908,7 +908,7 @@
       "title": "Ukrainian National Pleads Guilty to “Raccoon Infostealer” Cybercrime",
       "date": "2024-10-07",
       "district": "Western District of Texas",
-      "summary": "<p>Mark Sokolovsky, a Ukrainian national extradited to the U.S. in February, pleaded guilty in federal court in Austin to one count of conspiracy to commit computer intrusion</p>",
+      "summary": "Mark Sokolovsky, a Ukrainian national extradited to the U.S. in February, pleaded guilty in federal court in Austin to one count of conspiracy to commit computer intrusion",
       "statutes": [],
       "forfeiture_usd": 23975.0,
       "themes": [
@@ -929,7 +929,7 @@
       "title": "Texas Man Who Allegedly Imported Switches Charged With Gun Crime",
       "date": "2024-06-26",
       "district": "Northern District of Texas",
-      "summary": "<p>A Rockwall man who allegedly imported Glock switches from China has been charged with a firearm crime.&nbsp;</p>",
+      "summary": "A Rockwall man who allegedly imported Glock switches from China has been charged with a firearm crime.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -949,7 +949,7 @@
       "title": "South Texan imprisoned in cryptocurrency purchase and child pornography download",
       "date": "2024-06-25",
       "district": "Southern District of Texas",
-      "summary": "<p>A 32-year-old Edcouch resident has been sentenced for receiving child pornography</p>",
+      "summary": "A 32-year-old Edcouch resident has been sentenced for receiving child pornography",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -967,7 +967,7 @@
       "title": "U.S. Attorney Jaime Esparza Recognizes World Elder Abuse Awareness Day",
       "date": "2024-06-14",
       "district": "Western District of Texas",
-      "summary": "<p>SAN ANTONIO – U.S. Attorney Jaime Esparza for the Western District of Texas, joined national, state, local, and tribal leaders today in recognizing World Elder Abuse Awareness Day (WEAAD).",
+      "summary": "SAN ANTONIO – U.S. Attorney Jaime Esparza for the Western District of Texas, joined national, state, local, and tribal leaders today in recognizing World Elder Abuse Awareness Day (WEAAD).",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -987,7 +987,7 @@
       "title": "911 S5 Botnet Dismantled and Its Administrator Arrested in Coordinated International Operation",
       "date": "2024-05-29",
       "district": "Eastern District of Texas",
-      "summary": "<p>A court-authorized international law enforcement operation led by the U.S. Justice Department disrupted a botnet used to commit cyber attacks, large-scale fraud, child exploitation, harassment, bomb threats, and export violations.</p>",
+      "summary": "A court-authorized international law enforcement operation led by the U.S. Justice Department disrupted a botnet used to commit cyber attacks, large-scale fraud, child exploitation, harassment, bomb threats, and export violations.",
       "statutes": [],
       "forfeiture_usd": 129000000.0,
       "themes": [
@@ -1013,7 +1013,7 @@
       "title": "Chinese national charged in “pig butchering” scheme",
       "date": "2024-05-21",
       "district": "Eastern District of Texas",
-      "summary": "<p>A Chinese national has been charged with participating in a scheme to launder the proceeds of cryptocurrency investment scams and other fraudulent schemes involving millions of dollars in victim funds in the Eastern District of Texas, announced U.S. Attorney Damien M. Diggs.</p>\n\n<p>&nbsp;</p>",
+      "summary": "A Chinese national has been charged with participating in a scheme to launder the proceeds of cryptocurrency investment scams and other fraudulent schemes involving millions of dollars in victim funds in the Eastern District of Texas, announced U.S. Attorney Damien M. Diggs.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1033,7 +1033,7 @@
       "title": "Woman Sentenced to 9 Years in Dark Web Murder-for-Hire Plot",
       "date": "2024-05-09",
       "district": "Northern District of Texas",
-      "summary": "<p>A Bedford woman who attempted to hire a hitman to kill her boyfriend’s lover was sentenced today to nine years in federal prison.&nbsp;</p>",
+      "summary": "A Bedford woman who attempted to hire a hitman to kill her boyfriend’s lover was sentenced today to nine years in federal prison.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1050,7 +1050,7 @@
       "title": "Sodinokibi/REvil Affiliate Sentenced for Role in $700M Ransomware Scheme",
       "date": "2024-05-01",
       "district": "Northern District of Texas",
-      "summary": "<p>A Ukrainian national was sentenced today to 13 years and seven months in prison and ordered to pay over $16 million in restitution for his role in conducting more than 2,500 ransomware attacks and demanding over $700 million in ransom payments.&nbsp;</p>",
+      "summary": "A Ukrainian national was sentenced today to 13 years and seven months in prison and ordered to pay over $16 million in restitution for his role in conducting more than 2,500 ransomware attacks and demanding over $700 million in ransom payments.",
       "statutes": [],
       "forfeiture_usd": 6100000.0,
       "themes": [
@@ -1070,7 +1070,7 @@
       "title": "Sodinokibi/REvil Affiliate Sentenced for Role in $700M Ransomware Scheme",
       "date": "2024-05-01",
       "district": "Northern District of Texas",
-      "summary": "<p>A Ukrainian national was sentenced today to 13 years and seven months in prison and ordered to pay over $16 million in restitution for his role in conducting over 2,500 ransomware attacks and demanding over $700 million in ransom payments.</p>",
+      "summary": "A Ukrainian national was sentenced today to 13 years and seven months in prison and ordered to pay over $16 million in restitution for his role in conducting over 2,500 ransomware attacks and demanding over $700 million in ransom payments.",
       "statutes": [],
       "forfeiture_usd": 6100000.0,
       "themes": [
@@ -1089,7 +1089,7 @@
       "title": "Multimillion-dollar unlicensed money transmitter convicted",
       "date": "2024-04-23",
       "district": "Southern District of Texas",
-      "summary": "<p>A federal jury has returned a guilty verdict against an Iraqi citizen who resided in Richmond for operating a money transmitting business without a license</p>",
+      "summary": "A federal jury has returned a guilty verdict against an Iraqi citizen who resided in Richmond for operating a money transmitting business without a license",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1106,7 +1106,7 @@
       "title": "Florida woman convicted in cryptocurrency money laundering scheme",
       "date": "2024-04-11",
       "district": "Eastern District of Texas",
-      "summary": "<p>A Jacksonville, Florida woman has pleaded guilty to federal money laundering violations in the Eastern District of Texas, announced U.S. Attorney Damien M. Diggs.</p>",
+      "summary": "A Jacksonville, Florida woman has pleaded guilty to federal money laundering violations in the Eastern District of Texas, announced U.S. Attorney Damien M. Diggs.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1124,7 +1124,7 @@
       "title": "California man convicted in cryptocurrency money laundering conspiracy  and for importing controlled substances",
       "date": "2024-03-26",
       "district": "Eastern District of Texas",
-      "summary": "<p>A San Francisco, California man has pleaded guilty to federal violations in the Eastern District of Texas, announced U.S. Attorney Damien M. Diggs.</p>\n\n<p>&nbsp;</p>",
+      "summary": "A San Francisco, California man has pleaded guilty to federal violations in the Eastern District of Texas, announced U.S. Attorney Damien M. Diggs.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1142,7 +1142,7 @@
       "title": "Ukrainian National Extradited to U.S. for Alleged Cybercrimes",
       "date": "2024-02-15",
       "district": "Western District of Texas",
-      "summary": "<p>AUSTIN, Texas – A Ukrainian national was extradited to the United States from the Netherlands after being indicted for crimes related to fraud, money laundering and aggravated identity theft.",
+      "summary": "AUSTIN, Texas – A Ukrainian national was extradited to the United States from the Netherlands after being indicted for crimes related to fraud, money laundering and aggravated identity theft.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1182,7 +1182,7 @@
       "title": "Brothers get significant sentences for manufacturing deadly fentanyl-laced pills disguised as pain meds",
       "date": "2024-02-07",
       "district": "Southern District of Texas",
-      "summary": "<p>Two Corpus Christi brothers have been ordered to federal prison for manufacturing and distributing tens of thousands of fentanyl-laced pills disguised as legitimate pharmaceutical-grade pain medications</p>",
+      "summary": "Two Corpus Christi brothers have been ordered to federal prison for manufacturing and distributing tens of thousands of fentanyl-laced pills disguised as legitimate pharmaceutical-grade pain medications",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1204,7 +1204,7 @@
       "title": "Sugar Land resident sent to prison for Bitstamp cryptocurrency fraud scheme",
       "date": "2024-01-18",
       "district": "Southern District of Texas",
-      "summary": "<p>A 37-year-old man has been sentenced for aggravated identity theft in connection with a scheme to fraudulently obtain and launder more than $500,000</p>",
+      "summary": "A 37-year-old man has been sentenced for aggravated identity theft in connection with a scheme to fraudulently obtain and launder more than $500,000",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1221,7 +1221,7 @@
       "title": "Dallas County individuals indicted in investment fraud and money laundering scheme",
       "date": "2023-12-19",
       "district": "Eastern District of Texas",
-      "summary": "<p>Three individuals have been indicted for federal violations in the Eastern District of Texas, announced U.S. Attorney Damien M. Diggs today.&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>",
+      "summary": "Three individuals have been indicted for federal violations in the Eastern District of Texas, announced U.S. Attorney Damien M. Diggs today.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1257,7 +1257,7 @@
       "title": "Foreign National Convicted of Racketeering and Drug Trafficking Conspiracy",
       "date": "2023-11-17",
       "district": "Eastern District of Texas",
-      "summary": "<p>A federal jury in Beaumont, Texas, convicted a Romanian national today for plotting to traffic hundreds of kilograms of cocaine from the United States in a scheme that also included money laundering, arms trafficking, and an attempt to assassinate rival gang members.",
+      "summary": "A federal jury in Beaumont, Texas, convicted a Romanian national today for plotting to traffic hundreds of kilograms of cocaine from the United States in a scheme that also included money laundering, arms trafficking, and an attempt to assassinate rival gang members.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1277,7 +1277,7 @@
       "title": "Leader of $70M Cryptocurrency and Binary Options Fraud Schemes Extradited to the U.S.",
       "date": "2023-11-03",
       "district": "Northern District of Texas",
-      "summary": "<p>A Serbian man has been extradited to the United States, where he faces charges in two separate federal indictments in the Northern District of Texas and Eastern District of New York for his alleged participation in coordinated cryptocurrency and binary options schemes.</p>",
+      "summary": "A Serbian man has been extradited to the United States, where he faces charges in two separate federal indictments in the Northern District of Texas and Eastern District of New York for his alleged participation in coordinated cryptocurrency and binary options schemes.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1317,7 +1317,7 @@
       "title": "Suburban man convicted of Bitstamp cryptocurrency fraud scheme",
       "date": "2023-10-12",
       "district": "Southern District of Texas",
-      "summary": "<p>A 37-year-old Sugarland resident has pleaded guilty to aggravated identity theft in connection with a scheme to fraudulently obtain and launder more than $500,000</p>",
+      "summary": "A 37-year-old Sugarland resident has pleaded guilty to aggravated identity theft in connection with a scheme to fraudulently obtain and launder more than $500,000",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1333,7 +1333,7 @@
       "title": "Physician and Two Pharmacists Charged for $170M Fraud Scheme",
       "date": "2023-09-26",
       "district": "Southern District of Texas",
-      "summary": "<p>A 13-count indictment was unsealed today charging two pharmacists and a physician for their roles in a multimillion-dollar health care fraud, kickback, and money laundering scheme.</p>",
+      "summary": "A 13-count indictment was unsealed today charging two pharmacists and a physician for their roles in a multimillion-dollar health care fraud, kickback, and money laundering scheme.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1351,7 +1351,7 @@
       "title": "Physician and two pharmacists charged for $170M fraud scheme",
       "date": "2023-09-26",
       "district": "Southern District of Texas",
-      "summary": "<p>A 13-count indictment was unsealed today charging two pharmacists and a physician for their roles in a multimillion-dollar health care fraud, kickback and money laundering scheme.</p>",
+      "summary": "A 13-count indictment was unsealed today charging two pharmacists and a physician for their roles in a multimillion-dollar health care fraud, kickback and money laundering scheme.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1369,7 +1369,7 @@
       "title": "Harlingen business operators charged in multi-million dollar power wheelchair fraud scheme",
       "date": "2023-08-30",
       "district": "Southern District of Texas",
-      "summary": "<p>The operators of a durable medical equipment company have been charged with defrauding Medicare</p>",
+      "summary": "The operators of a durable medical equipment company have been charged with defrauding Medicare",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1387,7 +1387,7 @@
       "title": "Dual citizen gets max for laundering romance scam proceeds",
       "date": "2023-07-28",
       "district": "Southern District of Texas",
-      "summary": "<p>A 39-year-old man who holds citizenship in the United States and Ghana has been sent to prison for operating an illegal money transmitting business</p>",
+      "summary": "A 39-year-old man who holds citizenship in the United States and Ghana has been sent to prison for operating an illegal money transmitting business",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1407,7 +1407,7 @@
       "title": "Darknet Fentanyl Dealer Convicted At Trial",
       "date": "2023-06-15",
       "district": "Northern District of Texas",
-      "summary": "<p>A darknet fentanyl dealer who used the moniker “Fent4U” was found guilty yesterday of multiple drug crimes and possession of child pornography.</p>",
+      "summary": "A darknet fentanyl dealer who used the moniker “Fent4U” was found guilty yesterday of multiple drug crimes and possession of child pornography.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1427,7 +1427,7 @@
       "title": "Dual citizen admits to laundering romance scam proceeds",
       "date": "2023-04-27",
       "district": "Southern District of Texas",
-      "summary": "<p>A 39-year-old man who holds citizenship in the United States and Ghana has pleaded guilty to operating an illegal money transmitting business</p>",
+      "summary": "A 39-year-old man who holds citizenship in the United States and Ghana has pleaded guilty to operating an illegal money transmitting business",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1446,7 +1446,7 @@
       "title": "Coindawg Founder Arrested For Laundering Proceeds Of Fraudulently Obtained Small Business Administration Loans",
       "date": "2023-03-23",
       "district": "Eastern District of Texas",
-      "summary": "<p>Damian Williams, the United States Attorney for the Southern District of New York, and Ivan J.",
+      "summary": "Damian Williams, the United States Attorney for the Southern District of New York, and Ivan J.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1465,7 +1465,7 @@
       "title": "Financial Advisor, Financial Planner, NBA Agent, And Previously Convicted Fraudster Charged With Schemes To Defraud Professional Basketball Players",
       "date": "2023-03-23",
       "district": "Southern District of Texas",
-      "summary": "<p>Damian Williams, the United States Attorney for the Southern District of New York, and Michael J.",
+      "summary": "Damian Williams, the United States Attorney for the Southern District of New York, and Michael J.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1506,7 +1506,7 @@
       "title": "Virginia Woman Sentenced in Cryptocurrency Money Laundering Conspiracy",
       "date": "2023-02-21",
       "district": "Eastern District of Texas",
-      "summary": "<p>A Virginia woman has been sentenced to federal prison for her role in a cryptocurrency money laundering conspiracy in the Eastern District of Texas, announced U.S. Attorney Brit Featherston.</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>",
+      "summary": "A Virginia woman has been sentenced to federal prison for her role in a cryptocurrency money laundering conspiracy in the Eastern District of Texas, announced U.S. Attorney Brit Featherston.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1527,7 +1527,7 @@
       "title": "El Paso Man Pleads Guilty to Operating Ponzi Scheme Disguised as Crypto Investment Firm",
       "date": "2023-01-17",
       "district": "Western District of Texas",
-      "summary": "<p>EL PASO, Texas – An El Paso man pleaded guilty in federal court here last week to five counts of wire fraud.",
+      "summary": "EL PASO, Texas – An El Paso man pleaded guilty in federal court here last week to five counts of wire fraud.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1546,7 +1546,7 @@
       "title": "Suburban man indicted for complex fraud and crypto money laundering scheme",
       "date": "2022-12-02",
       "district": "Southern District of Texas",
-      "summary": "<p>A 36-year-old Sugar Land resident has been taken into custody on charges he fraudulently obtained and laundered more than $500,000</p>",
+      "summary": "A 36-year-old Sugar Land resident has been taken into custody on charges he fraudulently obtained and laundered more than $500,000",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1563,7 +1563,7 @@
       "title": "Eastern District of Texas Announces Multi-Year Investigation into  Transnational Cryptocurrency Money Laundering Networks",
       "date": "2022-11-30",
       "district": "Eastern District of Texas",
-      "summary": "<p>TYLER, Texas – According to court documents unsealed today, 21 individuals have been charged for their roles in transnational money laundering networks, including those that laundered millions of dollars stolen from United States fraud victims through romance scams, business email compromises, technical support schemes, and other fraud schemes.</p>",
+      "summary": "TYLER, Texas – According to court documents unsealed today, 21 individuals have been charged for their roles in transnational money laundering networks, including those that laundered millions of dollars stolen from United States fraud victims through romance scams, business email compromises, technical support schemes, and other fraud schemes.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1583,7 +1583,7 @@
       "title": "Two Indicted in Cryptocurrency Money Laundering Conspiracy",
       "date": "2022-11-18",
       "district": "Eastern District of Texas",
-      "summary": "<p>TYLER, Texas – A Nevada man and a South Carolina man have been indicted in a cryptocurrency money laundering conspiracy in the Eastern District of Texas, announced U.S. Attorney Brit Featherston.</p> <p>Randall V. Rule, 71, of Reno, NV, and Gregory C.",
+      "summary": "TYLER, Texas – A Nevada man and a South Carolina man have been indicted in a cryptocurrency money laundering conspiracy in the Eastern District of Texas, announced U.S. Attorney Brit Featherston. Randall V. Rule, 71, of Reno, NV, and Gregory C.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1601,7 +1601,7 @@
       "title": "CityXGuide Owner Sentenced to 8+ Years in Prison for Reckless Disregard of Sex Trafficking, Racketeering Conspiracy",
       "date": "2022-11-14",
       "district": "Northern District of Texas",
-      "summary": "<p>The owner of CityXGuide.com was sentenced today to more than eight years in federal prison and ordered to forfeit more than $15 million in assets.</p>",
+      "summary": "The owner of CityXGuide.com was sentenced today to more than eight years in federal prison and ordered to forfeit more than $15 million in assets.",
       "statutes": [],
       "forfeiture_usd": 18000000.0,
       "themes": [
@@ -1622,7 +1622,7 @@
       "title": "Owner of Cryptocurrency Company Charged with  COVID-19 Paycheck Protection Program Fraud",
       "date": "2022-11-09",
       "district": "Northern District of Texas",
-      "summary": "<p>A Dallas man who allegedly devised a scheme to defraud a pandemic-era financial program out of hundreds of thousands of dollars has been federally charged.</p>",
+      "summary": "A Dallas man who allegedly devised a scheme to defraud a pandemic-era financial program out of hundreds of thousands of dollars has been federally charged.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1640,7 +1640,7 @@
       "title": "Florida Woman Indicted in Cryptocurrency Money Laundering Scheme",
       "date": "2022-10-31",
       "district": "Eastern District of Texas",
-      "summary": "<p>TYLER, Texas – A 37-year-old Florida woman has been indicted in a cryptocurrency money laundering scheme in the Eastern District of Texas, announced U.S. Attorney Brit Featherston.",
+      "summary": "TYLER, Texas – A 37-year-old Florida woman has been indicted in a cryptocurrency money laundering scheme in the Eastern District of Texas, announced U.S. Attorney Brit Featherston.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1658,7 +1658,7 @@
       "title": "Newly Unsealed Indictment Charges Ukrainian National with International Cybercrime Operation",
       "date": "2022-10-25",
       "district": "Western District of Texas",
-      "summary": "<table style=\"border: rgb(0, 0, 0); border-image: none; border-collapse: collapse;\" width=\"652\"> <tbody> <tr> <td style=\"border: rgb(0, 0, 0); border-image: none;\" valign=\"top\"> <p>AUSTIN – A newly unsealed federal grand jury indictment charges Mark Sokolovsky, 26, a Ukrainian na",
+      "summary": "AUSTIN – A newly unsealed federal grand jury indictment charges Mark Sokolovsky, 26, a Ukrainian national, for his alleged role in an international cybercrime operation known as Raccoon Infostealer, which infected millions of computers around the world with malware.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1679,7 +1679,7 @@
       "title": "San Antonio Pair Plead Guilty to SIM Swap Scheme",
       "date": "2022-10-12",
       "district": "Western District of Texas",
-      "summary": "<p>SAN ANTONIO – A San Antonio man pleaded guilty yesterday to one count of conspiracy to commit wire fraud and computer fraud for a scheme utilizing Subscriber Identity Module (SIM) swapping.",
+      "summary": "SAN ANTONIO – A San Antonio man pleaded guilty yesterday to one count of conspiracy to commit wire fraud and computer fraud for a scheme utilizing Subscriber Identity Module (SIM) swapping.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1695,7 +1695,7 @@
       "title": "California Man Indicted in Cryptocurrency Money Laundering Conspiracy",
       "date": "2022-10-07",
       "district": "Eastern District of Texas",
-      "summary": "<p>TYLER, Texas – A San Francisco, CA man has been indicted for federal violations in the Eastern District of Texas, announced U.S. Attorney Brit Featherston today.",
+      "summary": "TYLER, Texas – A San Francisco, CA man has been indicted for federal violations in the Eastern District of Texas, announced U.S. Attorney Brit Featherston today.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1712,7 +1712,7 @@
       "title": "Darknet drug distributor sent to prison",
       "date": "2022-09-23",
       "district": "Southern District of Texas",
-      "summary": "<p>A 42-year-old man residing in Houston has been ordered to federal prison following his conviction of conspiracy to distribute cocaine as a Darknet vendor</p>",
+      "summary": "A 42-year-old man residing in Houston has been ordered to federal prison following his conviction of conspiracy to distribute cocaine as a Darknet vendor",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1748,7 +1748,7 @@
       "title": "Houston area unlicensed cryptocurrency business results in conviction",
       "date": "2022-06-01",
       "district": "Southern District of Texas",
-      "summary": "<p>A 49-year-old out-of-state man has pleaded guilty to running an unlicensed money transmitting business</p>",
+      "summary": "A 49-year-old out-of-state man has pleaded guilty to running an unlicensed money transmitting business",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1764,7 +1764,7 @@
       "title": "U.S. Marshals, FBI Urge Public to Report Phone Scams",
       "date": "2022-05-10",
       "district": "Eastern District of Texas",
-      "summary": "<table style=\"border-collapse:collapse; border:undefined\"> <tbody> <tr> <td valign=\"top\"> <p>TYLER – The U.S. Marshals and the FBI are alerting the public of several nationwide imposter scams involving individuals claiming to be U.S.",
+      "summary": "TYLER – The U.S. Marshals and the FBI are alerting the public of several nationwide imposter scams involving individuals claiming to be U.S. marshals, court officers, or other law enforcement officials.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1784,7 +1784,7 @@
       "title": "Texas Man and Arkansas Woman Arrested for Running Illegal Money Transmitting Business",
       "date": "2022-04-28",
       "district": "Northern District of Texas",
-      "summary": "<p>BOSTON – A Texas man and an Arkansas woman were arrested today in connection with allegedly operating a money transmitting business that laundered the proceeds of online investment fraud schemes.</p>",
+      "summary": "BOSTON – A Texas man and an Arkansas woman were arrested today in connection with allegedly operating a money transmitting business that laundered the proceeds of online investment fraud schemes.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1822,7 +1822,7 @@
       "title": "Founders of Crypto ICO Sentenced to Combined 8 Years in Prison for Tax Evasion After Raising $24 Million from Investors",
       "date": "2022-03-10",
       "district": "Northern District of Texas",
-      "summary": "<p>The owners of a cryptocurrency company have been sentenced to a combined 8 years in federal prison for tax evasion.</p>",
+      "summary": "The owners of a cryptocurrency company have been sentenced to a combined 8 years in federal prison for tax evasion.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1841,7 +1841,7 @@
       "title": "Two Indicted in East Texas Cryptocurrency Money Laundering Scheme",
       "date": "2022-03-10",
       "district": "Eastern District of Texas",
-      "summary": "<p>TYLER, Texas –A 75-year-old woman and a 33-year-old man have been indicted for their roles in a cryptocurrency money laundering scheme in the Eastern District of Texas, announced U.S. Attorney Brit Featherston.",
+      "summary": "TYLER, Texas –A 75-year-old woman and a 33-year-old man have been indicted for their roles in a cryptocurrency money laundering scheme in the Eastern District of Texas, announced U.S. Attorney Brit Featherston.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1860,7 +1860,7 @@
       "title": "Sodinokibi/REvil Ransomware Defendant Extradited to United States and Arraigned in Texas",
       "date": "2022-03-09",
       "district": "Northern District of Texas",
-      "summary": "<p>A man charged with conducting ransomware attacks against multiple victims, including the July 2021 attack against Kaseya, made his initial appearance and was arraigned today in the Northern District of Texas.</p>",
+      "summary": "A man charged with conducting ransomware attacks against multiple victims, including the July 2021 attack against Kaseya, made his initial appearance and was arraigned today in the Northern District of Texas.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1898,7 +1898,7 @@
       "title": "Chinese Citizen Charged with Massive Anabolic Steroid and Fentanyl Precursor Chemical Distribution Scheme",
       "date": "2021-12-14",
       "district": "Northern District of Texas",
-      "summary": "<p>The U.S. Attorney’s Office for the Northern District of Texas has filed federal charges against one of the world’s largest alleged anabolic steroid producers, U.S. Attorney&nbsp;Chad E. Meacham&nbsp;announced today.",
+      "summary": "The U.S. Attorney’s Office for the Northern District of Texas has filed federal charges against one of the world’s largest alleged anabolic steroid producers, U.S. Attorney Chad E. Meacham announced today.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1917,7 +1917,7 @@
       "title": "Ukrainian Arrested and Charged with Ransomware Attack on Kaseya",
       "date": "2021-11-08",
       "district": "Northern District of Texas",
-      "summary": "<p>The Justice Department announced today recent actions taken against two foreign nationals charged with deploying Sodinokibi/REvil ransomware to attack businesses and government entities in the United States, amnounced Attorney General Merrick Garland, Deputy Attorney General L",
+      "summary": "The Justice Department announced today recent actions taken against two foreign nationals charged with deploying Sodinokibi/REvil ransomware to attack businesses and government entities in the United States, amnounced Attorney General Merrick Garland, Deputy Attorney General Lisa",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1938,7 +1938,7 @@
       "title": "Ukrainian Arrested and Charged with Ransomware Attack on Kaseya",
       "date": "2021-11-08",
       "district": "Northern District of Texas",
-      "summary": "<p>Today, the Justice Department announced recent actions taken against two foreign nationals charged with deploying Sodinokibi/REvil ransomware to attack businesses and government entities in the United States.</p>",
+      "summary": "Today, the Justice Department announced recent actions taken against two foreign nationals charged with deploying Sodinokibi/REvil ransomware to attack businesses and government entities in the United States.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1960,7 +1960,7 @@
       "title": "Five individuals charged in multi-million dollar money laundering conspiracy",
       "date": "2021-11-04",
       "district": "Southern District of Texas",
-      "summary": "<p>A fifth individual has surrendered to authorities in relation to a multi-year, multi-million dollar money laundering conspiracy</p>",
+      "summary": "A fifth individual has surrendered to authorities in relation to a multi-year, multi-million dollar money laundering conspiracy",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1977,7 +1977,7 @@
       "title": "Founders of Crypto ICO Plead Guilty to Tax Evasion After Raising $24 Million from Investors",
       "date": "2021-10-12",
       "district": "Northern District of Texas",
-      "summary": "<p>The owners of the cryptocurrency company Bitqyck have pleaded guilty to tax evasion.</p>",
+      "summary": "The owners of the cryptocurrency company Bitqyck have pleaded guilty to tax evasion.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -1997,7 +1997,7 @@
       "title": "Acting U.S. Attorney Prerak Shah Announces Departure",
       "date": "2021-09-22",
       "district": "Northern District of Texas",
-      "summary": "<p>Acting United States Attorney for the Northern District of Texas Prerak Shah announced today that he will be resigning from the Justice Department effective October 1.</p>",
+      "summary": "Acting United States Attorney for the Northern District of Texas Prerak Shah announced today that he will be resigning from the Justice Department effective October 1.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2018,7 +2018,7 @@
       "title": "Florida Man Guilty in Transnational East Texas Call Center Fraud Scheme",
       "date": "2021-09-03",
       "district": "Eastern District of Texas",
-      "summary": "<p>TYLER, Texas – A Pensacola, Florida man has pleaded guilty to federal violations in the Eastern District of Texas, announced Acting U.S. Attorney Nicholas J. Ganjei today.&nbsp;</p> <p>Perry Lewis Crenshaw, Jr.",
+      "summary": "TYLER, Texas – A Pensacola, Florida man has pleaded guilty to federal violations in the Eastern District of Texas, announced Acting U.S. Attorney Nicholas J. Ganjei today. Perry Lewis Crenshaw, Jr., 27, pleaded guilty to conspiracy to commit money laundering today before U.S.",
       "statutes": [],
       "forfeiture_usd": 32112.5,
       "themes": [
@@ -2038,7 +2038,7 @@
       "title": "Three Guilty in Transnational East Texas Call Center Fraud Scheme",
       "date": "2021-08-26",
       "district": "Eastern District of Texas",
-      "summary": "<p>TYLER, Texas – Three former Texans now living in Louisiana have pleaded guilty to federal violations in the Eastern District of Texas, announced Acting U.S. Attorney Nicholas J. Ganjei today.",
+      "summary": "TYLER, Texas – Three former Texans now living in Louisiana have pleaded guilty to federal violations in the Eastern District of Texas, announced Acting U.S. Attorney Nicholas J. Ganjei today.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2057,7 +2057,7 @@
       "title": "Cryptocurrency CEO Sentenced to Five Years in $4 Million Crypto Scheme",
       "date": "2021-08-25",
       "district": "Northern District of Texas",
-      "summary": "<p>The inventor of cryptocurrency AriseCoin was sentenced today to five years in federal prison for duping investors out of more than $4 million.</p>",
+      "summary": "The inventor of cryptocurrency AriseCoin was sentenced today to five years in federal prison for duping investors out of more than $4 million.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2076,7 +2076,7 @@
       "title": "Darkweb Drug Trafficker Arrested in Operation DisrupTor Sentenced to 6.5 Years in Prison",
       "date": "2021-07-08",
       "district": "Northern District of Texas",
-      "summary": "<p>A darkweb cocaine and heroin trafficker has been sentenced to 6 ½ years in federal prison for drug conspiracy.</p>",
+      "summary": "A darkweb cocaine and heroin trafficker has been sentenced to 6 ½ years in federal prison for drug conspiracy.",
       "statutes": [],
       "forfeiture_usd": 50000.0,
       "themes": [
@@ -2095,7 +2095,7 @@
       "title": "‘Doctor Bitcoin’ Pleads Guilty to Illegal Cash-to-Crypto Scheme",
       "date": "2021-06-29",
       "district": "Northern District of Texas",
-      "summary": "<p>A Richardson man who calls himself “Doctor Bitcoin” has pleaded guilty to illegally operating a cash-to-cryptocurrency conversion business.</p>",
+      "summary": "A Richardson man who calls himself “Doctor Bitcoin” has pleaded guilty to illegally operating a cash-to-cryptocurrency conversion business.",
       "statutes": [
         "18 U.S.C. § 1960"
       ],
@@ -2135,7 +2135,7 @@
       "title": "Fugitive narcotics trafficker apprehended",
       "date": "2021-04-22",
       "district": "Southern District of Texas",
-      "summary": "<p>A 33-year-old Brownsville resident has been taken into custody after being on the run from law enforcement for the past year</p>",
+      "summary": "A 33-year-old Brownsville resident has been taken into custody after being on the run from law enforcement for the past year",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2153,7 +2153,7 @@
       "title": "John David McAfee And Executive Adviser Of His Cryptocurrency Team Indicted In Manhattan Federal Court For Fraud And Money Laundering Conspiracy Crimes",
       "date": "2021-03-05",
       "district": "Northern District of Texas",
-      "summary": "<p>Audrey Strauss, the United States Attorney for the Southern District of New York, and William F. Sweeney Jr.",
+      "summary": "Audrey Strauss, the United States Attorney for the Southern District of New York, and William F. Sweeney Jr.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2174,7 +2174,7 @@
       "title": "U.S. Attorney’s Office Reminds East Texans to Beware of Social Security Scam Calls",
       "date": "2021-03-04",
       "district": "Eastern District of Texas",
-      "summary": "<p>“For the past year, we have seen a steady increase in Social Security-related scam calls,” said Acting U.S. Attorney Nicholas J. Ganjei.  “The financial exploitation of older Americans will not be tolerated.  We are partnering with the Social Security Administration Office of the Inspector General to spread the word about these scams.  We encourage anyone who receives such calls to hang up.”</p>",
+      "summary": "“For the past year, we have seen a steady increase in Social Security-related scam calls,” said Acting U.S. Attorney Nicholas J. Ganjei. “The financial exploitation of older Americans will not be tolerated. We are partnering with the Social Security Administration Office of the Inspector General to spread the word about these scams. We encourage anyone who receives such calls to hang up.”",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2192,7 +2192,7 @@
       "title": "Serbian Man Extradited to U.S., Charged with $70 Million Fraud  in North Texas",
       "date": "2021-02-05",
       "district": "Northern District of Texas",
-      "summary": "<p>A Serbian man has been extradited from Serbia to the United States to face allegations that he and others duped investors out of more than $70 million.</p>",
+      "summary": "A Serbian man has been extradited from Serbia to the United States to face allegations that he and others duped investors out of more than $70 million.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2211,7 +2211,7 @@
       "title": "Darkweb Drug Trafficker Arrested in Operation DisrupTor Pleads Guilty",
       "date": "2020-12-17",
       "district": "Northern District of Texas",
-      "summary": "<p>A darkweb cocaine and heroin trafficker has pleaded guilty to drug conspiracy.</p>",
+      "summary": "A darkweb cocaine and heroin trafficker has pleaded guilty to drug conspiracy.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2230,7 +2230,7 @@
       "title": "Protecting the Greatest Generation: U.S. Attorney for the Eastern District of Texas Sets Forth Strategy for War Against Transnational Elder Fraud",
       "date": "2020-12-15",
       "district": "Eastern District of Texas",
-      "summary": "<p>United States Attorney Stephen J. Cox addresses the North Texas Crime Commission (NTCC) today via a Zoom meeting for their regular monthly meeting.</p>",
+      "summary": "United States Attorney Stephen J. Cox addresses the North Texas Crime Commission (NTCC) today via a Zoom meeting for their regular monthly meeting.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2251,7 +2251,7 @@
       "title": "Costa Rican Living in El Paso Indicted for Fraudulent Lottery Scheme --  Stole more than One Million Dollars from Unsuspecting Individuals",
       "date": "2020-10-23",
       "district": "Western District of Texas",
-      "summary": "<p>In El Paso, the federal grand jury indicted 39-year-old Allan Francisco Castrillo Bastos, a citizen of Costa Rica residing in El Paso, in connection with a scheme to steal over $1 million from dozens of unsuspecting individuals who believed they had won the lottery and had to ",
+      "summary": "In El Paso, the federal grand jury indicted 39-year-old Allan Francisco Castrillo Bastos, a citizen of Costa Rica residing in El Paso, in connection with a scheme to steal over $1 million from dozens of unsuspecting individuals who believed they had won the lottery and had to pay",
       "statutes": [],
       "forfeiture_usd": 1219357.42,
       "themes": [
@@ -2272,7 +2272,7 @@
       "title": "International Law Enforcement Operation Targeting Opioid Traffickers on the Darknet Results in over 170 Arrests Worldwide and the Seizure of Weapons, Drugs and over $6.5 Million",
       "date": "2020-09-22",
       "district": "Northern District of Texas",
-      "summary": "<p>Today, the Department of Justice, through the Joint Criminal Opioid and Darknet Enforcement (JCODE) team joined Europol to announce the results of Operation DisrupTor, a coordinated international effort to disrupt opioid trafficking on the Darknet. The operation, which was conducted across the United States and Europe, demonstrates the continued partnership between JCODE and Europol against the illegal sale of drugs and other illicit goods and services.  Operation DisrupTor builds on the success of last year’s Operation SaboTor and the coordinated law enforcement takedown of the Wall Street Market, one of the largest illegal online markets on the dark web.</p>",
+      "summary": "Today, the Department of Justice, through the Joint Criminal Opioid and Darknet Enforcement (JCODE) team joined Europol to announce the results of Operation DisrupTor, a coordinated international effort to disrupt opioid trafficking on the Darknet. The operation, which was conducted across the United States and Europe, demonstrates the continued partnership between JCODE and Europol against the illegal sale of drugs and other illicit goods and services. Operation DisrupTor builds on the success of last year’s Operation SaboTor and the coordinated law enforcement takedown of the Wall Street Market, one of the largest illegal online markets on the dark web.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2293,7 +2293,7 @@
       "title": "NDTX Charges Alleged DarkWeb Drug Trafficker Arrested in DOJ Operation DisrupTor",
       "date": "2020-09-22",
       "district": "Northern District of Texas",
-      "summary": "<p>Today, the Department of Justice, through the Joint Criminal Opioid and Darknet Enforcement (JCODE) team, joined Europol to announce the results of Operation DisrupTor, a coordinated international effort to disrupt opioid trafficking on the Darknet.",
+      "summary": "Today, the Department of Justice, through the Joint Criminal Opioid and Darknet Enforcement (JCODE) team, joined Europol to announce the results of Operation DisrupTor, a coordinated international effort to disrupt opioid trafficking on the Darknet.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2314,7 +2314,7 @@
       "title": "Operators Of Global Cryptocurrency Ponzi Scheme And Attorney Charged With Fraud And Money Laundering",
       "date": "2020-08-18",
       "district": "Eastern District of Texas",
-      "summary": "<p>Audrey Strauss, Acting United States Attorney for the Southern District of New York,&nbsp; and Peter C.",
+      "summary": "Audrey Strauss, Acting United States Attorney for the Southern District of New York, and Peter C.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2335,7 +2335,7 @@
       "title": "Two Texas Women Plead Guilty to Conspiracy Charges in Transnational Elder Fraud Scheme",
       "date": "2020-08-07",
       "district": "Eastern District of Texas",
-      "summary": "<p>Pamela Sue Hannan, 67, of Sherman, Texas, and Pamela Sue Jennings, 68, of Houston, Texas, pleaded guilty to conspiring with foreign co-conspirators to operate an unlicensed money transmitting business on August 6, 2020 before U.S. Magistrate Judge K. Nicole Mitchell.</p>",
+      "summary": "Pamela Sue Hannan, 67, of Sherman, Texas, and Pamela Sue Jennings, 68, of Houston, Texas, pleaded guilty to conspiring with foreign co-conspirators to operate an unlicensed money transmitting business on August 6, 2020 before U.S. Magistrate Judge K. Nicole Mitchell.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2354,7 +2354,7 @@
       "title": "Six Charged in Transnational Money Laundering Operation Involving Elder Fraud",
       "date": "2020-07-31",
       "district": "Eastern District of Texas",
-      "summary": "<p>A federal grand jury returned the two-count indictment on June 18, 2020, charging a money laundering conspiracy and operation of an unlicensed money transmitting business.</p>",
+      "summary": "A federal grand jury returned the two-count indictment on June 18, 2020, charging a money laundering conspiracy and operation of an unlicensed money transmitting business.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2374,7 +2374,7 @@
       "title": "Texas Man Charged with COVID Relief Fraud",
       "date": "2020-07-14",
       "district": "Southern District of Texas",
-      "summary": "<p>A Texas man has been taken into custody on allegations he fraudulently obtained more than $1.1 million in Paycheck Protection Program (PPP) loans, announced Acting Assistant Attorney General Brian C. Rabbitt of the Justice Department’s Criminal Division and U.S. Attorney Ryan K. Patrick for the Southern District of Texas.</p>",
+      "summary": "A Texas man has been taken into custody on allegations he fraudulently obtained more than $1.1 million in Paycheck Protection Program (PPP) loans, announced Acting Assistant Attorney General Brian C. Rabbitt of the Justice Department’s Criminal Division and U.S. Attorney Ryan K. Patrick for the Southern District of Texas.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2393,7 +2393,7 @@
       "title": "Another Houston man charged with COVID relief fraud",
       "date": "2020-07-14",
       "district": "Southern District of Texas",
-      "summary": "<p>A local man has been taken into custody on allegations he fraudulently obtained more than $1.1 million in Paycheck Protection Program (PPP) loans.</p>",
+      "summary": "A local man has been taken into custody on allegations he fraudulently obtained more than $1.1 million in Paycheck Protection Program (PPP) loans.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2411,7 +2411,7 @@
       "title": "U.S. Attorney’s Office Shuts Down Website Promoting Prostitution and Sex Trafficking, Indicts Owner",
       "date": "2020-06-19",
       "district": "Northern District of Texas",
-      "summary": "<p>The website CityXGuide.com — a leading source of online advertisements for prostitution and sex trafficking that users described as “taking over from where Backpage left off” — has been seized and its owner charged in a 28-count federal indictment.</p>",
+      "summary": "The website CityXGuide.com — a leading source of online advertisements for prostitution and sex trafficking that users described as “taking over from where Backpage left off” — has been seized and its owner charged in a 28-count federal indictment.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2432,7 +2432,7 @@
       "title": "Federal Grand Jury in Austin Indicts Nigerian Citizen for Victimizing Previous Fraud Victims",
       "date": "2019-12-18",
       "district": "Western District of Texas",
-      "summary": "<p>A federal grand jury in Austin indicted a Nigerian citizen for masquerading as a representative of the Texas State Securities Board to steal money from victims of a previous fraud scheme, announced U.S. Attorney John F.",
+      "summary": "A federal grand jury in Austin indicted a Nigerian citizen for masquerading as a representative of the Texas State Securities Board to steal money from victims of a previous fraud scheme, announced U.S. Attorney John F.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2473,7 +2473,7 @@
       "title": "DARKNET FENTANYL DEALER INDICTED IN NATIONWIDE UNDERCOVER OPERATION TARGETING DARKNET VENDORS WHO WERE SELLING TO THOUSANDS OF U.S. RESIDENTS",
       "date": "2019-05-31",
       "district": "Northern District of Texas",
-      "summary": "<p>WASHINGTON – Yesterday, the U.S. Attorney for the Northern District of Texas announced the indictment of a darknet drug dealer who has been indicted for leveraging Bitcoin’s apparent anonymity to sell fentanyl online.",
+      "summary": "WASHINGTON – Yesterday, the U.S. Attorney for the Northern District of Texas announced the indictment of a darknet drug dealer who has been indicted for leveraging Bitcoin’s apparent anonymity to sell fentanyl online.",
       "statutes": [],
       "forfeiture_usd": 13265000.0,
       "themes": [
@@ -2493,7 +2493,7 @@
       "title": "Darknet Fentanyl Dealer Indicted in Nationwide Undercover Operation Targeting Darknet Vendors Who were Selling to Thousands of U.S. Residents",
       "date": "2019-05-30",
       "district": "Northern District of Texas",
-      "summary": "<p>Yesterday, the U.S. Attorney for the Northern District of Texas announced the indictment of a darknet drug dealer who has been indicted for leveraging Bitcoin’s apparent anonymity to sell fentanyl online. The charges against him are the result of the first nationwide undercover operation targeting darknet vendors that the Justice Department announced in June 2018.</p>",
+      "summary": "Yesterday, the U.S. Attorney for the Northern District of Texas announced the indictment of a darknet drug dealer who has been indicted for leveraging Bitcoin’s apparent anonymity to sell fentanyl online. The charges against him are the result of the first nationwide undercover operation targeting darknet vendors that the Justice Department announced in June 2018.",
       "statutes": [],
       "forfeiture_usd": 13265000.0,
       "themes": [
@@ -2514,7 +2514,7 @@
       "title": "Darknet Fentanyl Dealer Indicted for Selling Deadly Drug for Bitcoin",
       "date": "2019-05-28",
       "district": "Northern District of Texas",
-      "summary": "<p>A darknet drug dealer has been indicted for leveraging bitcoin’s apparent anonymity to sell fentanyl online.</p>",
+      "summary": "A darknet drug dealer has been indicted for leveraging bitcoin’s apparent anonymity to sell fentanyl online.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2550,7 +2550,7 @@
       "title": "Cryptocurrency CEO Pleads Guilty to Securities Fraud  in $4 Million Crypto Scheme",
       "date": "2019-03-20",
       "district": "Northern District of Texas",
-      "summary": "<p>The inventor of cryptocurrency AriseCoin pleaded guilty today to duping investors out of more than $4 million. Jared Rice&#039;s case case is one of the first in which an individual has pleaded guilty to securities fraud involving a cryptocurrency in U.S. federal court.</p>",
+      "summary": "The inventor of cryptocurrency AriseCoin pleaded guilty today to duping investors out of more than $4 million. Jared Rice's case case is one of the first in which an individual has pleaded guilty to securities fraud involving a cryptocurrency in U.S. federal court.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2567,7 +2567,7 @@
       "title": "USAO NDTX Roundup -- 11/29/1",
       "date": "2018-11-29",
       "district": "Northern District of Texas",
-      "summary": "<p>In this week&#039;s NDTX roundup: Six defendants were sentenced for their role in a cocaine distribution ring... and a federal escapee pleaded guilty to fleeing federal custody.</p>",
+      "summary": "In this week's NDTX roundup: Six defendants were sentenced for their role in a cocaine distribution ring... and a federal escapee pleaded guilty to fleeing federal custody.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2589,7 +2589,7 @@
       "title": "Cryptocurrency CEO Indicted After Defrauding Investors of $4 Million",
       "date": "2018-11-28",
       "district": "Northern District of Texas",
-      "summary": "<p>AriseBank CEO Jared Rice, Sr. was arrested by the FBI on Wednesday, charged with duping hundreds of investors out of more than $4 million in a cryptocurrency scheme</p>",
+      "summary": "AriseBank CEO Jared Rice, Sr. was arrested by the FBI on Wednesday, charged with duping hundreds of investors out of more than $4 million in a cryptocurrency scheme",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2610,7 +2610,7 @@
       "title": "Multiple Sentences Imposed in Massive Synthetic Narcotics Distribution Network",
       "date": "2018-11-28",
       "district": "Southern District of Texas",
-      "summary": "<p>The five leaders and eight other co-conspirators have been sentenced for their roles in one of the largest synthetic cannabinoids distribution networks in the United States</p>",
+      "summary": "The five leaders and eight other co-conspirators have been sentenced for their roles in one of the largest synthetic cannabinoids distribution networks in the United States",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2651,7 +2651,7 @@
       "title": "More Than $13 Million Forfeited Against Multiple Individuals in Car Nationalization Business",
       "date": "2018-05-02",
       "district": "Southern District of Texas",
-      "summary": "<p>Seven people have been ordered to forfeit more than $13 million following their convictions related to a car nationalization business</p>",
+      "summary": "Seven people have been ordered to forfeit more than $13 million following their convictions related to a car nationalization business",
       "statutes": [],
       "forfeiture_usd": 12600000.0,
       "themes": [
@@ -2670,7 +2670,7 @@
       "title": "Former Employee Pleads Guilty to Wire Fraud",
       "date": "2018-04-16",
       "district": "Southern District of Texas",
-      "summary": "<p>A 28-year-old former employee of BP America Inc. has admitted he attempted to extort money from the company</p>",
+      "summary": "A 28-year-old former employee of BP America Inc. has admitted he attempted to extort money from the company",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2688,7 +2688,7 @@
       "title": "Operator Of Bitcoin Investment Platform Charged With Perjury And Obstruction Of Justice",
       "date": "2018-02-21",
       "district": "Northern District of Texas",
-      "summary": "<p>Geoffrey S. Berman, the United States Attorney for the Southern District of New York, and William F. Sweeney Jr., Assistant Director-in-Charge of the New York Field Office of the Federal Bureau of Investigation (“FBI”), announced that JON E.",
+      "summary": "Geoffrey S. Berman, the United States Attorney for the Southern District of New York, and William F. Sweeney Jr., Assistant Director-in-Charge of the New York Field Office of the Federal Bureau of Investigation (“FBI”), announced that JON E.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2744,7 +2744,7 @@
       "title": "Lubbock Fentanyl Distributor Pleads Guilty",
       "date": "2017-02-15",
       "district": "Northern District of Texas",
-      "summary": "<p style=\"margin: 0in 0in 0pt; text-align: left;\"><strong>LUBBOCK, </strong><span><span>Texas — Sidney Caleb Lanier, 36, of Lubbock, Texas, pleaded guilty this morning before U.S. Magistrate Judge D. Gordon Bryant Jr.",
+      "summary": "LUBBOCK, Texas — Sidney Caleb Lanier, 36, of Lubbock, Texas, pleaded guilty this morning before U.S. Magistrate Judge D. Gordon Bryant Jr. to one count of conspiracy to distribute and possess with intent to distribute fentanyl, announced U.S.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2762,7 +2762,7 @@
       "title": "UH Professor Convicted in Relation to Massive Synthetic Narcotics Case",
       "date": "2016-12-21",
       "district": "Southern District of Texas",
-      "summary": "<p>A 37-year-old resident of Sugar Land has entered a guilty plea to aiding and abetting an unlicensed money transmitting business</p>",
+      "summary": "A 37-year-old resident of Sugar Land has entered a guilty plea to aiding and abetting an unlicensed money transmitting business",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2780,7 +2780,7 @@
       "title": "Former Tamaulipas Governor Indicted in Money Laundering Scheme with Brother-in-Law",
       "date": "2015-06-19",
       "district": "Southern District of Texas",
-      "summary": "<p>CORPUS CHRISTI, Texas – An indictment has been officially unsealed charging Eugenio Hernandez Flores, the former governor of Tamaulipas, Mexico, with conspiring to launder monetary instruments and aiding and abetting the operation of an unlicensed money transmitting business, ",
+      "summary": "CORPUS CHRISTI, Texas – An indictment has been officially unsealed charging Eugenio Hernandez Flores, the former governor of Tamaulipas, Mexico, with conspiring to launder monetary instruments and aiding and abetting the operation of an unlicensed money transmitting business, ann",
       "statutes": [],
       "forfeiture_usd": 2000000.0,
       "themes": [
@@ -2817,7 +2817,7 @@
       "title": "Manhattan U.S. Attorney And FBI Assistant Director Announce Securities And Wire Fraud Charges Against Texas Man For Running Bitcoin Ponzi Scheme",
       "date": "2014-11-06",
       "district": "Eastern District of Texas",
-      "summary": "<p>Preet Bharara, the United States Attorney for the Southern District of New York, and George Venizelos, the Assistant Director-in-Charge of the New York Field Office of the Federal Bureau of Investigation (“FBI”), announced today that TRENDON SHAVERS, a/k/a “pirateat40,” was ar",
+      "summary": "Preet Bharara, the United States Attorney for the Southern District of New York, and George Venizelos, the Assistant Director-in-Charge of the New York Field Office of the Federal Bureau of Investigation (“FBI”), announced today that TRENDON SHAVERS, a/k/a “pirateat40,” was arres",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2836,7 +2836,7 @@
       "title": "Brownsville Man Pleads Guilty To Money Laundering Conspiracy",
       "date": "2014-05-16",
       "district": "Southern District of Texas",
-      "summary": "<div id=\"content\"> <div class=\"contentSub\"> <div></div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <d",
+      "summary": "BROWNSVILLE, Texas – Oscar J.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2855,7 +2855,7 @@
       "title": "Cartel Money Laundering Cell Arrested",
       "date": "2013-10-28",
       "district": "Southern District of Texas",
-      "summary": "<div id=\"content\"> <div class=\"contentSub\"> <div></div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <p>BROWNSVILLE, Texas – Law enforcement officials have a",
+      "summary": "BROWNSVILLE, Texas – Law enforcement officials have arrested a total of nine individuals alleging they violated the laws of the United States by moving money undetected through the United States banking system from Florida to Texas into Mexico, announced United States Attorney Ke",
       "statutes": [],
       "forfeiture_usd": 1893170.0,
       "themes": [
@@ -2875,7 +2875,7 @@
       "title": "Houston Man Sentenced for $20 Million ‘Black Market Peso Exchange’ Scheme",
       "date": "2013-09-11",
       "district": "Southern District of Texas",
-      "summary": "<p>One of the leaders of a criminal conspiracy that laundered more than $20 million through “shell” business bank accounts was sentenced today to 151 months in prison.</p>",
+      "summary": "One of the leaders of a criminal conspiracy that laundered more than $20 million through “shell” business bank accounts was sentenced today to 151 months in prison.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2911,7 +2911,7 @@
       "title": "Five Convicted In Relation To $20+ Million ‘Black Market Peso Exchange’ Scheme",
       "date": "2013-02-12",
       "district": "Southern District of Texas",
-      "summary": "<div id=\"content\"> <div class=\"contentSub\"> <div></div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <div> <p>HOUSTON – One of the leaders of an organization that laundered more than $20 million through “shell” business bank accounts h",
+      "summary": "HOUSTON – One of the leaders of an organization that laundered more than $20 million through “shell” business bank accounts has just entered a guilty plea in federal court in Houston, United States Attorney Kenneth Magidson announced today along with Assistant Attorney General La",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [
@@ -2929,7 +2929,7 @@
       "title": "Leader of Professional Money Laundering Ring Pleads Guilty in Texas",
       "date": "2013-02-12",
       "district": "Southern District of Texas",
-      "summary": "<p>One of the leaders of an organization that laundered more than $20 million through “shell” business bank accounts pleaded guilty today in federal court in Houston.</p>",
+      "summary": "One of the leaders of an organization that laundered more than $20 million through “shell” business bank accounts pleaded guilty today in federal court in Houston.",
       "statutes": [],
       "forfeiture_usd": 0,
       "themes": [

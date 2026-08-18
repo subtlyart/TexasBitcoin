@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import {
+  DISTRICTS,
   formatDate,
   formatUsd,
   shortDistrict,
   trackedCases,
+  trackedCasesWithSlug,
   trackerDerived,
   trackerStats,
 } from "@/lib/case-tracker";
@@ -15,8 +17,8 @@ import { SeamMark } from "@/components/seam-mark";
 const pageUrl = `${site.url}/texas-bitcoin-case-tracker`;
 
 export const metadata: Metadata = {
-  title: "Texas Bitcoin Case Tracker — Every Federal § 1960 & Crypto Prosecution",
-  description: `The living dataset of federal money-transmission (18 U.S.C. § 1960) and crypto prosecutions in Texas's four federal districts — ${trackerStats.case_count} cases and ${formatUsd(trackerStats.total_forfeitures_usd)} in forfeitures, built from public DOJ press releases and updated nightly.`,
+  title: "Texas Bitcoin Case Tracker — § 1960 Cases",
+  description: `Every federal § 1960 and crypto prosecution in Texas's four federal districts — ${trackerStats.case_count} cases from public DOJ releases, updated nightly.`,
   alternates: { canonical: pageUrl },
   openGraph: {
     type: "article",
@@ -56,8 +58,8 @@ export default function CaseTrackerPage() {
     "@type": "Article",
     headline: "Texas Bitcoin Case Tracker",
     description: `The living dataset of federal § 1960 and crypto prosecutions in Texas — ${trackerStats.case_count} cases from public DOJ press releases, updated nightly.`,
-    author: { "@type": "Organization", name: site.name },
-    publisher: { "@type": "Organization", name: site.name },
+    author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
+    publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-24",
     dateModified: trackerDerived.lastUpdated,
@@ -140,7 +142,7 @@ export default function CaseTrackerPage() {
             tracks what the law says, this page tracks how it gets enforced.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published July 24, 2026 · Data generated{" "}
+            By {site.name} · Published July 24, 2026 · Updated{" "}
             {formatDate(trackerDerived.lastUpdated)}
           </p>
         </header>
@@ -195,12 +197,47 @@ export default function CaseTrackerPage() {
 
         {/* The tracker */}
         <section className="mt-10" aria-label="Case tracker">
-          <CaseTracker cases={trackedCases} />
+          <h2 className="mb-6 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+            The tracked cases
+          </h2>
+          <CaseTracker cases={trackedCasesWithSlug} />
           <p className="mt-4 text-xs leading-relaxed text-muted-2">
-            Case details reflect DOJ announcements, which describe allegations
-            and outcomes as of publication. Defendants are presumed innocent
-            unless and until proven guilty. Nothing here is legal advice.
+            Case titles open a full case page built from the DOJ record;
+            details reflect DOJ announcements, which describe allegations and
+            outcomes as of publication. Defendants are presumed innocent unless
+            and until proven guilty. Nothing here is legal advice.
           </p>
+        </section>
+
+        {/* Browse by district */}
+        <section className="mt-10" aria-label="Browse by district">
+          <h2 className="mb-4 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+            Browse by federal district
+          </h2>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            {DISTRICTS.map((d) => {
+              const count = trackedCases.filter(
+                (c) => c.district === d.name
+              ).length;
+              return (
+                <Link
+                  key={d.slug}
+                  href={`/texas-bitcoin-case-tracker/district/${d.slug}`}
+                  className="rounded-xl border border-border bg-surface p-4 transition-colors hover:border-accent/40"
+                >
+                  <p className="font-display text-lg font-semibold">
+                    {d.short}
+                  </p>
+                  <p className="mt-1 text-xs leading-snug text-muted-2">
+                    {d.cities}
+                  </p>
+                  <p className="mt-2 text-sm text-accent-soft">
+                    {count} case{count === 1 ? "" : "s"} →
+                  </p>
+                </Link>
+              );
+            })}
+          </div>
         </section>
 
         <div className="prose-tx mt-12">
