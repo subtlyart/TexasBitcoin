@@ -8,9 +8,9 @@ const pageUrl = `${site.url}/what-texas-law-says-about-bitcoin`;
 // the H1 carries the brand register. That split is deliberate — see
 // CONTENT-TEMPLATE and the headline-register editorial rule.
 export const metadata: Metadata = {
-  title: "What Texas Law Actually Says About Bitcoin — Legal Status, Licensing & the Seam",
+  title: "What Texas Law Actually Says About Bitcoin",
   description:
-    "Is Bitcoin legal in Texas? Yes — legal to buy, sell, hold, and mine, with no state license needed to sell your own coin. Here is what the statutes, memos, and federal seam actually say, sourced to the primary record.",
+    "Is Bitcoin legal in Texas? Yes — to buy, sell, hold, and mine, with no state license to sell your own coin. What the statutes and the § 1960 seam say.",
   alternates: { canonical: pageUrl },
   openGraph: {
     type: "article",
@@ -78,8 +78,8 @@ export default function TexasLawPage() {
     headline: "What Texas Law Actually Says About Bitcoin",
     description:
       "The legal status of Bitcoin in Texas from the primary record: state licensing, custody, legal tender, taxes, mining, and the federal § 1960 seam.",
-    author: { "@type": "Organization", name: site.name },
-    publisher: { "@type": "Organization", name: site.name },
+    author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
+    publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-25",
     dateModified: "2026-07-25",
@@ -278,7 +278,7 @@ export default function TexasLawPage() {
             and silver specie under <strong>HB 1056</strong> (signed June 22,
             2025).<C n={9} /> Bitcoin holds the arguably stronger position:{" "}
             <strong>SB 21</strong> (signed June 20, 2025, effective
-            immediately) created the Texas Strategic Bitcoin Reserve, managed
+            immediately) created the <Link href="/texas-strategic-bitcoin-reserve">Texas Strategic Bitcoin Reserve</Link>, managed
             by the Comptroller outside the state treasury and restricted by a
             $500 billion market-cap floor that only Bitcoin clears.<C n={8} />{" "}
             In the same June, Texas wrote both hard-money traditions into law

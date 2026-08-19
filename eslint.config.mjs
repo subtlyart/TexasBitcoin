@@ -10,6 +10,9 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  // Never lint generated build output or vendored deps — bare `eslint` (unlike
+  // `next lint`) does not exclude these by default.
+  { ignores: [".next/**", "node_modules/**", "out/**", "build/**", "next-env.d.ts"] },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 

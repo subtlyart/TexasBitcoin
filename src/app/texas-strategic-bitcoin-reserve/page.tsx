@@ -11,9 +11,9 @@ import {
 const pageUrl = `${site.url}/texas-strategic-bitcoin-reserve`;
 
 export const metadata: Metadata = {
-  title: "The Texas Strategic Bitcoin Reserve — Tracked & Sourced",
+  title: "The Texas Strategic Bitcoin Reserve",
   description:
-    "How the Texas Strategic Bitcoin Reserve works and where it stands: SB 21, the $10M appropriation, the $500B market-cap floor, the first ~$5M purchase in November 2025, and the move from a Bitcoin ETF to direct custody.",
+    "How the Texas Strategic Bitcoin Reserve works and where it stands — SB 21, the $10M appropriation, the $500B floor, and the road to direct custody.",
   alternates: { canonical: pageUrl },
   openGraph: {
     type: "article",
@@ -65,8 +65,8 @@ export default function ReservePage() {
     headline: "The Texas Strategic Bitcoin Reserve",
     description:
       "How Texas's state Bitcoin reserve works and where it stands — SB 21, funding, the $500B market-cap floor, the first purchase, and the move to direct custody.",
-    author: { "@type": "Organization", name: site.name },
-    publisher: { "@type": "Organization", name: site.name },
+    author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
+    publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-09",
     dateModified: "2026-08-09",

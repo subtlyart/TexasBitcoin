@@ -23,7 +23,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: "Bitcoin in Texas — Mining, Law & the State Reserve",
     template: `%s · ${site.name}`,
   },
   description: site.description,
@@ -57,16 +57,36 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const orgJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: site.name,
-    url: site.url,
-    description: site.description,
-    knowsAbout: [
-      "Bitcoin",
-      "Bitcoin mining",
-      "ERCOT",
-      "Texas cryptocurrency regulation",
-      "Stablecoins",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${site.url}/#organization`,
+        name: site.name,
+        url: site.url,
+        description: site.description,
+        logo: {
+          "@type": "ImageObject",
+          url: site.logo,
+          width: 512,
+          height: 512,
+        },
+        knowsAbout: [
+          "Bitcoin",
+          "Bitcoin mining",
+          "ERCOT",
+          "Texas cryptocurrency regulation",
+          "Stablecoins",
+        ],
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${site.url}/#website`,
+        url: site.url,
+        name: site.name,
+        description: site.description,
+        publisher: { "@id": `${site.url}/#organization` },
+        inLanguage: "en-US",
+      },
     ],
   };
 

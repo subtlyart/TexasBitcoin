@@ -6,9 +6,9 @@ import { LawTimeline } from "@/components/law-timeline";
 import { SeamMark } from "@/components/seam-mark";
 
 export const metadata: Metadata = {
-  title: "The Texas Bitcoin Law Timeline — Every Law, Sourced",
+  title: "The Texas Bitcoin Law Timeline",
   description:
-    "The interactive timeline of Bitcoin law in Texas: from Supervisory Memorandum 1037 in 2014 to the Strategic Bitcoin Reserve in 2025 — every bill, memo, and vote verified against the primary record.",
+    "The interactive timeline of Bitcoin law in Texas — from the 2014 'not money' memo to the 2025 Strategic Bitcoin Reserve, every bill and memo verified.",
   alternates: { canonical: `${site.url}/texas-bitcoin-law-timeline` },
   openGraph: {
     type: "article",
@@ -66,8 +66,8 @@ export default function LawTimelinePage() {
     headline: "The Texas Bitcoin Law Timeline",
     description:
       "The interactive, sourced timeline of Bitcoin law in Texas — every bill, memo, and failed vote from Supervisory Memorandum 1037 (2014) to the Strategic Bitcoin Reserve (2025).",
-    author: { "@type": "Organization", name: site.name },
-    publisher: { "@type": "Organization", name: site.name },
+    author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
+    publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-22",
     dateModified: "2026-08-09",
@@ -193,6 +193,9 @@ export default function LawTimelinePage() {
 
         {/* The timeline */}
         <div className="mt-10">
+          <h2 className="mb-6 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+            The law timeline, year by year
+          </h2>
           <LawTimeline />
         </div>
 

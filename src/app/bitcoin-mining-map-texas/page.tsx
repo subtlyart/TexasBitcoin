@@ -12,9 +12,9 @@ import { MiningMap } from "@/components/mining-map";
 import { SeamMark } from "@/components/seam-mark";
 
 export const metadata: Metadata = {
-  title: "Texas Bitcoin Mining Map — Every Major Mine, Mapped",
+  title: "Texas Bitcoin Mining Map — Every Major Mine",
   description:
-    "The interactive map of industrial Bitcoin mining in Texas: Riot Rockdale, Corsicana, MARA Granbury, King Mountain, and the West Texas sites now converting to AI — every capacity figure sourced.",
+    "The interactive, sourced map of industrial Bitcoin mining in Texas — Riot Rockdale, Corsicana, MARA Granbury, and the West Texas sites now turning to AI.",
   alternates: { canonical: `${site.url}/bitcoin-mining-map-texas` },
   openGraph: {
     type: "article",
@@ -92,8 +92,8 @@ export default function MiningMapPage() {
     headline: "Texas Bitcoin Mining Map — Every Major Mine, Mapped",
     description:
       "The interactive, sourced map of industrial Bitcoin mining in Texas, from Rockdale's 700 MW flagship to the former mines becoming AI data centers.",
-    author: { "@type": "Organization", name: site.name },
-    publisher: { "@type": "Organization", name: site.name },
+    author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
+    publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-22",
     dateModified: "2026-08-09",

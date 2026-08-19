@@ -6,7 +6,7 @@ import { LoneStar } from "@/components/lone-star";
 export const metadata: Metadata = {
   title: "The Wider Ledger — Texas Crypto Archive",
   description:
-    "The direct-link archive of the wider Texas digital-asset story: the altcoins, the developers, and the venture capital — from 8VC's 2020 move to Austin through Multicoin's Solana call and Consensus coming to town. Sourced end to end.",
+    "The wider Texas digital-asset story beyond Bitcoin — Factom, Hedera, Multicoin, 8VC, ATX DAO, and Consensus in Austin: developers, tokens, and VC.",
   alternates: { canonical: `${site.url}/texas-crypto-archive` },
   openGraph: {
     type: "article",
@@ -81,8 +81,8 @@ export default function ArchivePage() {
     headline: "The Wider Ledger — Texas Crypto Archive",
     description:
       "The wider Texas digital-asset story — altcoins, developers, and venture capital — sourced and on the record.",
-    author: { "@type": "Organization", name: site.name },
-    publisher: { "@type": "Organization", name: site.name },
+    author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
+    publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: `${site.url}/texas-crypto-archive`,
     datePublished: "2026-07-13",
     dateModified: "2026-07-27",
@@ -98,6 +98,20 @@ export default function ArchivePage() {
     })),
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "The Wider Ledger — Texas Crypto Archive",
+        item: `${site.url}/texas-crypto-archive`,
+      },
+    ],
+  };
+
   return (
     <>
       <script
@@ -107,6 +121,10 @@ export default function ArchivePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       <article className="mx-auto max-w-3xl px-5 py-16">
@@ -151,6 +169,46 @@ export default function ArchivePage() {
             Multicoin Capital made one of venture&apos;s great token calls,
             backing Solana at roughly $0.04.
           </p>
+        </div>
+
+        {/* Key facts — one claim per sentence, each dated and sourced */}
+        <div className="mt-6 rounded-xl border border-border bg-surface p-6">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+            Key facts
+          </p>
+          <ul className="mt-3 space-y-2.5 text-sm leading-relaxed text-muted">
+            <li>
+              Factom, a data-provenance protocol whose ledger was anchored into
+              Bitcoin&apos;s proof-of-work, was founded in Austin on November 7,
+              2014.<C n={11} /><C n={13} />
+            </li>
+            <li>
+              Hashgraph, a novel consensus algorithm invented by Dallas-area
+              scientist Leemon Baird, was built by Swirlds (co-founded 2015) and
+              became the Hedera network, headquartered in Richardson.
+              <C n={14} /><C n={15} />
+            </li>
+            <li>
+              Multicoin Capital, founded in Austin in 2017, made one of
+              venture&apos;s great token calls — backing the Solana protocol at
+              roughly $0.04 per SOL.<C n={7} /><C n={8} />
+            </li>
+            <li>
+              Venture firm 8VC moved its headquarters from San Francisco to
+              Austin in 2020, bringing one of the country&apos;s largest funds
+              to Texas.<C n={1} /><C n={2} />
+            </li>
+            <li>
+              The Austin City Council passed two crypto and blockchain
+              resolutions in a single session in March 2022, both unanimously.
+              <C n={3} /><C n={4} />
+            </li>
+            <li>
+              CoinDesk&apos;s Consensus, the industry&apos;s largest conference,
+              convened in Austin in April 2023 — drawing 15,000 attendees — and
+              returned in May 2024.<C n={5} /><C n={6} />
+            </li>
+          </ul>
         </div>
 
         <div className="prose-tx mt-10">
@@ -278,8 +336,10 @@ export default function ArchivePage() {
             This archive is a living room, not a finished one. On the docket:
             the Texas Ethereum and Solana developer scenes, where the venture
             capital went next — and the through-line back to the base layer, because
-            every one of these stories eventually touches the money law and the
-            grid that the front of this site documents.
+            every one of these stories eventually touches{" "}
+            <Link href="/texas-bitcoin-law-timeline">the money law</Link> and the{" "}
+            <Link href="/bitcoin-mining-map-texas">grid</Link> that the front of
+            this site documents.
           </p>
 
           <h2 id="faq">Frequently asked questions</h2>

@@ -2,6 +2,8 @@ export const site = {
   name: "TexasBitcoin",
   domain: "texasbitcoin.com",
   url: "https://texasbitcoin.com",
+  // Brand logo (dynamic image route) — referenced by Organization/publisher JSON-LD.
+  logo: "https://texasbitcoin.com/logo",
   tagline: "Where Bitcoin meets the physical world — and the financial future.",
   description:
     "The authority on Bitcoin in Texas: the energy and mining base layer, the money law, and the programmable-money frontier being built on top.",

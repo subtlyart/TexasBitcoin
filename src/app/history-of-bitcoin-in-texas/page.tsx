@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "The History of Bitcoin in Texas",
   description:
-    "How a 2014 banking memo, China's mining ban, an old aluminum smelter, and a 2025 state Bitcoin reserve made Texas the center of gravity for hard money — sourced end to end.",
+    "How a 2014 banking memo, China's mining ban, an idled aluminum smelter, and a 2025 state reserve made Texas the capital of Bitcoin — sourced.",
   alternates: { canonical: `${site.url}/history-of-bitcoin-in-texas` },
   openGraph: {
     type: "article",
@@ -84,8 +84,8 @@ export default function HistoryPage() {
     headline: "The History of Bitcoin in Texas",
     description:
       "The definitive, sourced account of how Texas became the center of gravity for Bitcoin — from the 2014 Supervisory Memo to the 2025 Strategic Bitcoin Reserve.",
-    author: { "@type": "Organization", name: site.name },
-    publisher: { "@type": "Organization", name: site.name },
+    author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
+    publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: `${site.url}/history-of-bitcoin-in-texas`,
     datePublished: "2026-06-28",
     dateModified: "2026-08-09",
@@ -101,6 +101,20 @@ export default function HistoryPage() {
     })),
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "The History of Bitcoin in Texas",
+        item: `${site.url}/history-of-bitcoin-in-texas`,
+      },
+    ],
+  };
+
   return (
     <>
       <script
@@ -110,6 +124,10 @@ export default function HistoryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       <article className="mx-auto max-w-3xl px-5 py-16">
@@ -366,7 +384,7 @@ export default function HistoryPage() {
             If 2021 was the physical chapter, 2025 was the financial one — and it
             broke in two directions in the same season. In June 2025, Governor
             Greg Abbott signed <strong>Senate Bill 21</strong>, creating the{" "}
-            <strong>Texas Strategic Bitcoin Reserve</strong>: a state-held reserve
+            <Link href="/texas-strategic-bitcoin-reserve"><strong>Texas Strategic Bitcoin Reserve</strong></Link>: a state-held reserve
             sitting outside the treasury, managed by the Comptroller, able to
             hold Bitcoin or any digital asset averaging at least $500 billion in
             market capitalization over two years — a threshold only Bitcoin
