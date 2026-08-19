@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/bitcoin-mining-map-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-08-09" },
     { path: "/texas-bitcoin-law-timeline", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-09" },
     { path: "/texas-strategic-bitcoin-reserve", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-09" },
+    { path: "/elon-musk-bitcoin-energy", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-19" },
     { path: "/texas-bitcoin-case-tracker", priority: 0.8, changeFrequency: "daily" as const, lastMod: trackerDerived.lastUpdated },
     { path: "/what-texas-law-says-about-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-07-25" },
     { path: "/rockdale-texas-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-07-22" },

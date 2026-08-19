@@ -169,6 +169,33 @@ export default function Home() {
         </Link>
       </section>
 
+      {/* Musk / energy feature */}
+      <section className="mx-auto max-w-6xl px-5 pb-8">
+        <Link
+          href="/elon-musk-bitcoin-energy"
+          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent/40 sm:flex-row sm:items-center"
+        >
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+              Feature · Energy &amp; the grid
+            </p>
+            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+              Elon Musk, Tesla &amp; the Bitcoin Energy Question
+            </h2>
+            <p className="mt-2 max-w-xl text-muted">
+              The man who called Bitcoin mining a fossil-fuel problem in 2021
+              built the biggest new load in tech. From Tesla&apos;s $1.5B
+              treasury bet to xAI&apos;s gigawatts - the reversal, and how it
+              lands on the Texas grid. Sourced to the SEC filings.
+            </p>
+          </div>
+          <span className="inline-flex shrink-0 items-center gap-2 font-medium text-accent-soft">
+            Read the feature
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </span>
+        </Link>
+      </section>
+
       {/* Stories & the law */}
       <section className="mx-auto max-w-6xl px-5 pb-8">
         <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-3">
