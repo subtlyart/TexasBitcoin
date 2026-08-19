@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Zap, Scale, Layers, Cpu } from "lucide-react";
 import { LoneStar } from "@/components/lone-star";
 import { SeamMark } from "@/components/seam-mark";
+import { site } from "@/lib/site";
 
 const layers = [
   {
@@ -31,8 +32,23 @@ const layers = [
 ];
 
 export default function Home() {
+  const webPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${site.url}/#webpage`,
+    url: site.url,
+    name: `${site.name} — ${site.tagline}`,
+    description: site.description,
+    isPartOf: { "@id": `${site.url}/#website` },
+    about: { "@id": `${site.url}/#organization` },
+    inLanguage: "en-US",
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+      />
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
         <LoneStar className="pointer-events-none absolute -right-20 -top-24 h-[26rem] w-[26rem] text-accent/[0.05]" />
@@ -240,6 +256,39 @@ export default function Home() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </span>
         </Link>
+      </section>
+
+      {/* Reference desk — quiet links to the deeper record */}
+      <section className="mx-auto max-w-6xl px-5 pb-8">
+        <div className="rounded-2xl border border-border bg-surface p-6 text-sm text-muted">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+            The reference desk
+          </p>
+          <p className="mt-2 leading-relaxed">
+            Straight to the record:{" "}
+            <Link
+              href="/what-texas-law-says-about-bitcoin"
+              className="text-foreground underline decoration-accent/30 underline-offset-4 hover:text-accent-soft"
+            >
+              what Texas law actually says about Bitcoin
+            </Link>
+            , the{" "}
+            <Link
+              href="/texas-strategic-bitcoin-reserve"
+              className="text-foreground underline decoration-accent/30 underline-offset-4 hover:text-accent-soft"
+            >
+              Texas Strategic Bitcoin Reserve
+            </Link>
+            , and the{" "}
+            <Link
+              href="/texas-bitcoin-case-tracker"
+              className="text-foreground underline decoration-accent/30 underline-offset-4 hover:text-accent-soft"
+            >
+              federal § 1960 case tracker
+            </Link>
+            .
+          </p>
+        </div>
       </section>
 
       {/* Sign-off — Big Tex tips his hat */}

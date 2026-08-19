@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "Texas Bitcoin Events — Meetups & Conferences",
   description:
-    "The open, free directory of Bitcoin meetups and conferences across Texas — Austin, Dallas–Fort Worth, Houston, and San Antonio. We link you straight to the organizer, no login wall.",
+    "A free, open directory of Bitcoin meetups and conferences across Texas — Austin, Dallas–Fort Worth, Houston, and San Antonio, linked to the organizer.",
   alternates: { canonical: `${site.url}/events` },
   openGraph: {
     type: "website",

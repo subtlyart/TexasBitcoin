@@ -3,9 +3,9 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "The Doctor Bitcoin Tapes — The Lore of Mark Hopkins, In His Own Words",
+  title: "The Doctor Bitcoin Tapes — Mark Hopkins",
   description:
-    "The blended story of Mark 'Doctor Bitcoin' Hopkins, drawn from every interview he's given: the educator, the raid, the paperwork crime, the prison conversations — and the open questions only he can answer.",
+    "Mark 'Doctor Bitcoin' Hopkins, blended from every interview he's given — the educator, the raid, the paperwork crime, and questions only he can answer.",
   alternates: { canonical: `${site.url}/doctor-bitcoin-interviews` },
   openGraph: {
     type: "article",
@@ -91,8 +91,8 @@ export default function DoctorBitcoinTapesPage() {
     headline: "The Doctor Bitcoin Tapes — The Lore of Mark Hopkins, In His Own Words",
     description:
       "The blended story of Mark 'Doctor Bitcoin' Hopkins, drawn from every interview he's given about his case — and the open questions only he can answer.",
-    author: { "@type": "Organization", name: site.name },
-    publisher: { "@type": "Organization", name: site.name },
+    author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
+    publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-22",
     dateModified: "2026-07-22",

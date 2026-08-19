@@ -4,10 +4,9 @@ import { site } from "@/lib/site";
 import { SeamMark } from "@/components/seam-mark";
 
 export const metadata: Metadata = {
-  title:
-    "The Rockdale Story: How a Dying Aluminum Town Became the Bitcoin Mining Capital of North America",
+  title: "Rockdale: From Alcoa Smelter to Bitcoin Mine",
   description:
-    "Alcoa's smelter powered Rockdale, Texas for 56 years — then 2008 hollowed it out. How Bitmain, Whinstone, and Riot's ~$651M deal turned the same land into a 700 MW Bitcoin flagship.",
+    "Alcoa's smelter powered Rockdale, Texas for 56 years; 2008 hollowed it out. How Bitmain, Whinstone, and Riot turned the land into a 700 MW Bitcoin mine.",
   alternates: { canonical: `${site.url}/rockdale-texas-bitcoin` },
   openGraph: {
     type: "article",
@@ -178,8 +177,8 @@ export default function RockdalePage() {
       "The Rockdale Story: How a Dying Aluminum Town Became the Bitcoin Mining Capital of North America",
     description:
       "The sourced story of Rockdale, Texas: Alcoa's smelter era, the 2008 curtailment, Bitmain's arrival, Whinstone's build, Riot's ~$651 million acquisition, and the 700 MW flagship today.",
-    author: { "@type": "Organization", name: site.name },
-    publisher: { "@type": "Organization", name: site.name },
+    author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
+    publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-22",
     dateModified: "2026-07-22",

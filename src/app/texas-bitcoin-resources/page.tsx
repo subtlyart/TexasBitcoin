@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "Texas Bitcoin Resources — Tools, Maps & Data",
   description:
-    "A curated reference shelf for Bitcoin in Texas: merchant and community maps, the node census, ERCOT grid data, and the policy bodies that shape state law. Free tools, linked straight to the source.",
+    "A curated shelf of free tools for Bitcoin in Texas — merchant maps, the node census, ERCOT grid data, and the policy bodies that shape state law.",
   alternates: { canonical: `${site.url}/texas-bitcoin-resources` },
   openGraph: {
     type: "website",

@@ -3,9 +3,9 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Doctor Bitcoin: Mark Hopkins and the Federal Line Texas Never Drew",
+  title: "Doctor Bitcoin: The Mark Hopkins Case",
   description:
-    "The sourced story of Mark Alexander Hopkins, the North Texas P2P trader prosecuted under federal law that Texas law never required — and what his case taught every Texas bitcoiner.",
+    "The sourced story of Mark Hopkins, the North Texas trader prosecuted under federal law Texas never required — and what his case taught P2P bitcoiners.",
   alternates: { canonical: `${site.url}/doctor-bitcoin` },
   openGraph: {
     type: "article",
@@ -68,8 +68,8 @@ export default function DoctorBitcoinPage() {
     headline: "Doctor Bitcoin: Mark Hopkins and the Federal Line Texas Never Drew",
     description:
       "The sourced profile of Mark Alexander Hopkins, the North Texas P2P trader federally prosecuted for unlicensed money transmission — and what his case taught Texas bitcoiners about the gap between state and federal law.",
-    author: { "@type": "Organization", name: site.name },
-    publisher: { "@type": "Organization", name: site.name },
+    author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
+    publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: `${site.url}/doctor-bitcoin`,
     datePublished: "2026-07-22",
     dateModified: "2026-07-22",
