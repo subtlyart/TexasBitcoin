@@ -5,7 +5,6 @@ import {
   DISTRICTS,
   formatDate,
   formatUsd,
-  shortDistrict,
   trackedCases,
   trackedCasesWithSlug,
   trackerDerived,
