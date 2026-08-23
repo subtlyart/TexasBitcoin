@@ -42,10 +42,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     title: `${c.title} — Texas § 1960 Case`,
     description,
     alternates: { canonical: url },
-    // Charge-only cases stay reachable and useful on-site but are kept out of
-    // the search index, so a page keyed to a case never becomes the top result
-    // about a person who has not been convicted.
-    robots: posture.adjudicated ? undefined : { index: false, follow: true },
+    // Every real case is indexed — charge-only pages included — while keeping
+    // the presumption-of-innocence framing below. Only non-case items (PSAs,
+    // awareness days, personnel notices) are held out of the search index.
+    robots: posture.indexable ? undefined : { index: false, follow: true },
     openGraph: { type: "article", title: c.title, description, url },
   };
 }

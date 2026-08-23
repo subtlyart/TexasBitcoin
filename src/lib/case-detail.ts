@@ -104,13 +104,15 @@ export function getCaseBySlug(
 }
 
 // --- Editorial posture -------------------------------------------------------
-// Drives both the on-page framing and whether the page is search-indexed.
-// Only genuinely adjudicated cases (a plea, conviction, or sentence in the DOJ
-// record) are indexed; a charge-only case stays reachable and useful on-site
-// but carries robots:noindex, so a page keyed to it never becomes the top
-// search result about a person who has not been convicted. When the record is
-// silent we err to non-adjudicated (do not index).
-export type Posture = { label: string; adjudicated: boolean };
+// `adjudicated` drives the on-page framing: a plea/conviction/sentence is stated
+// as settled fact, while a charge-only case is framed as an unproven allegation.
+// `indexable` drives robots + sitemap inclusion and is deliberately DECOUPLED
+// from adjudication — charged cases are real prosecutions worth surfacing in
+// search, so they are indexed while still carrying the presumption-of-innocence
+// framing. Only the fallthrough "Announced" bucket (no charge, plea, conviction,
+// or sentence language — in practice non-case items like PSAs, awareness days,
+// and personnel notices) is held out of the search index.
+export type Posture = { label: string; adjudicated: boolean; indexable: boolean };
 
 const SENTENCED_RE = /sentenc/i;
 const CONVICTED_RE = /convict|found guilty|jury (?:verdict|convict)/i;
@@ -127,11 +129,15 @@ export function casePosture(detail: CaseDetail): Posture {
     .filter(Boolean)
     .join(" ; ");
 
-  if (SENTENCED_RE.test(hay)) return { label: "Sentenced", adjudicated: true };
-  if (CONVICTED_RE.test(hay)) return { label: "Convicted", adjudicated: true };
-  if (PLEA_RE.test(hay)) return { label: "Guilty plea", adjudicated: true };
-  if (CHARGED_RE.test(hay)) return { label: "Charged", adjudicated: false };
-  return { label: "Announced", adjudicated: false };
+  if (SENTENCED_RE.test(hay))
+    return { label: "Sentenced", adjudicated: true, indexable: true };
+  if (CONVICTED_RE.test(hay))
+    return { label: "Convicted", adjudicated: true, indexable: true };
+  if (PLEA_RE.test(hay))
+    return { label: "Guilty plea", adjudicated: true, indexable: true };
+  if (CHARGED_RE.test(hay))
+    return { label: "Charged", adjudicated: false, indexable: true };
+  return { label: "Announced", adjudicated: false, indexable: false };
 }
 
 // Defendants only, in a stable order, for the page's "who" section.
@@ -148,10 +154,11 @@ export function officials(detail: CaseDetail): Participant[] {
   );
 }
 
-// Case pages that are search-indexed (adjudicated only), for the sitemap.
-// noindex charge-only pages are deliberately excluded.
+// Case pages that are search-indexed — every real case (adjudicated and
+// charge-only alike), for the sitemap. Only the non-case "Announced" bucket is
+// excluded; see casePosture above.
 export function indexedCasePages(): { slug: string; date: string | null }[] {
   return trackedCasesWithSlug
-    .filter((c) => casePosture(detailById[c.id] ?? EMPTY_DETAIL).adjudicated)
+    .filter((c) => casePosture(detailById[c.id] ?? EMPTY_DETAIL).indexable)
     .map((c) => ({ slug: c.slug, date: c.date }));
 }

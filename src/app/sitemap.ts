@@ -43,8 +43,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  // Per-case pages — only the search-indexed (adjudicated) ones; each carries
-  // its DOJ announcement date as a truthful lastModified.
+  // Per-case pages — every search-indexed case (adjudicated and charge-only
+  // alike; only non-case announcements are excluded). Each carries its DOJ
+  // announcement date as a truthful lastModified.
   const caseEntries = indexedCasePages().map((c) => ({
     url: `${site.url}/texas-bitcoin-case-tracker/${c.slug}`,
     lastModified: new Date(c.date ?? trackerDerived.lastUpdated),
