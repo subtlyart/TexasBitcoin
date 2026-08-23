@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T21:07:01Z",
+  "generated_at": "2026-08-23T19:58:49Z",
   "cases": {
     "9fbd9ec2-b396-4d8d-8075-ae3119492e4e": {
       "metadata": {
@@ -30564,7 +30564,32 @@
           "status": null
         }
       ],
-      "agencies": [],
+      "agencies": [
+        {
+          "agency_name": "Homeland Security Investigations",
+          "abbreviation": "HSI",
+          "role": "investigation",
+          "office_location": "San Antonio",
+          "agents_mentioned": "Janice Ayala",
+          "contribution": "Investigated the international money laundering conspiracy involving drug smuggling proceeds laundered through bank accounts and moved to the Gulf Cartel in Mexico."
+        },
+        {
+          "agency_name": "United States Attorney's Office",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": null,
+          "agents_mentioned": "Kenneth Magidson, Karen Betancourt, Joseph Leonard",
+          "contribution": "Prosecuted the case; U.S. Attorney Kenneth Magidson announced the sentencing and Assistant U.S. Attorneys Karen Betancourt and Joseph Leonard prosecuted the case."
+        },
+        {
+          "agency_name": "U.S. Bureau of Prisons",
+          "abbreviation": null,
+          "role": "custody",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Will hold the defendant in a facility to be determined pending transfer."
+        }
+      ],
       "charges": [
         {
           "charge_description": "Conspiracy to commit international money laundering",
@@ -30605,7 +30630,17 @@
           "status": "ordered"
         }
       ],
-      "quotes": []
+      "quotes": [
+        {
+          "quote_text": "HSI special agents often investigate complex financial schemes in order to disrupt and dismantle the ongoing operations of transnational criminal organizations. These investigations deprive the organizations from enjoying the fruits of their illicit crimes while preventing them from furthering the ongoing criminal enterprise. HSI will continue to aggressively investigate schemes that jeopardize the integrity of our financial system.",
+          "speaker_name": "Janice Ayala",
+          "speaker_title": "Special Agent in Charge of Homeland Security Investigations (HSI) in San Antonio",
+          "speaker_organization": "Homeland Security Investigations (HSI)",
+          "quote_type": "statement",
+          "context": "Commenting on the sentencing of Oscar J. Aguilar for international money laundering conspiracy",
+          "significance": "Highlights the role and mission of HSI in investigating financial crimes linked to transnational criminal organizations and underscores the agency's commitment to disrupting such schemes."
+        }
+      ]
     },
     "9971c39f-0ee4-485d-8f98-968495e3688f": {
       "metadata": {
@@ -30890,7 +30925,24 @@
           "status": null
         }
       ],
-      "agencies": [],
+      "agencies": [
+        {
+          "agency_name": "Homeland Security Investigations",
+          "abbreviation": "HSI",
+          "role": "investigation",
+          "office_location": "San Antonio",
+          "agents_mentioned": "Janice Ayala",
+          "contribution": "Investigated the complex financial money laundering scheme to disrupt and dismantle the transnational criminal organization"
+        },
+        {
+          "agency_name": "United States Attorney's Office",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": null,
+          "agents_mentioned": "Kenneth Magidson, Karen Betancourt, Joseph Leonard",
+          "contribution": "Prosecuted the case; announcement made by U.S. Attorney Kenneth Magidson and case prosecuted by Assistant U.S. Attorneys Karen Betancourt and Joseph Leonard"
+        }
+      ],
       "charges": [
         {
           "charge_description": "Conspiracy to commit international money laundering",
@@ -30940,7 +30992,17 @@
           "status": "pending"
         }
       ],
-      "quotes": []
+      "quotes": [
+        {
+          "quote_text": "HSI Special Agents often investigate complex financial schemes in order to disrupt and dismantle the ongoing operations of transnational criminal organization. These investigations deprive the organizations from enjoying the benefits of these illicit proceeds, and prevent them from furthering the efforts of the ongoing criminal enterprise. We will continue to aggressively investigate fraudulent financial schemes that put in jeopardy the integrity of our financial system.",
+          "speaker_name": "Janice Ayala",
+          "speaker_title": "Special Agent in Charge of Homeland Security Investigations (HSI) in San Antonio",
+          "speaker_organization": "Homeland Security Investigations (HSI)",
+          "quote_type": "statement",
+          "context": "Statement made in the press release regarding the investigation of the money laundering conspiracy",
+          "significance": "This quote highlights the role of HSI in investigating financial crimes tied to transnational criminal organizations and emphasizes the agency's commitment to disrupting illicit financial operations."
+        }
+      ]
     },
     "6723b9b1-165e-45e9-8578-5635406f6ea4": {
       "metadata": {
@@ -31096,7 +31158,64 @@
           "status": null
         }
       ],
-      "agencies": [],
+      "agencies": [
+        {
+          "agency_name": "Homeland Security Investigations",
+          "abbreviation": "HSI",
+          "role": "investigation, arrest",
+          "office_location": "San Antonio",
+          "agents_mentioned": "Janice Ayala",
+          "contribution": "Led the year-long investigation through its Financial Crimes Group; arrested nine individuals in the money laundering cell"
+        },
+        {
+          "agency_name": "United States Attorney's Office",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": null,
+          "agents_mentioned": "Kenneth Magidson, Karen Betancourt",
+          "contribution": "Prosecuting the case; announced the arrests"
+        },
+        {
+          "agency_name": "U.S. Marshals Service",
+          "abbreviation": null,
+          "role": "investigation assistance",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Assisted in the investigation"
+        },
+        {
+          "agency_name": "Border Patrol",
+          "abbreviation": null,
+          "role": "investigation assistance",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Assisted in the investigation"
+        },
+        {
+          "agency_name": "Cameron County District Attorney's Office",
+          "abbreviation": null,
+          "role": "investigation assistance",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Assisted in the investigation"
+        },
+        {
+          "agency_name": "Cameron County Sheriff's Office",
+          "abbreviation": null,
+          "role": "investigation assistance",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Assisted in the investigation"
+        },
+        {
+          "agency_name": "Brownsville Police Department",
+          "abbreviation": null,
+          "role": "investigation assistance",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Assisted in the investigation"
+        }
+      ],
       "charges": [
         {
           "charge_description": "Conspiracy",
@@ -31425,7 +31544,26 @@
           "status": "pending"
         }
       ],
-      "quotes": []
+      "quotes": [
+        {
+          "quote_text": "Those individuals arrested today are members of a money laundering organization that allegedly orchestrated the movement of millions of dollars in illicit proceeds in an attempt to circumvent law enforcement and reap their illicit gains abroad,",
+          "speaker_name": "Janice Ayala",
+          "speaker_title": "Special Agent in Charge",
+          "speaker_organization": "Homeland Security Investigations (HSI), San Antonio",
+          "quote_type": "statement",
+          "context": "Announcing the arrests of the money laundering cell members",
+          "significance": "Characterizes the scale and nature of the alleged criminal operation, emphasizing the movement of millions in illicit proceeds"
+        },
+        {
+          "quote_text": "HSI is dedicated to dismantling suspected transnational criminal organizations, seizing their assets and severing their financial life line.",
+          "speaker_name": "Janice Ayala",
+          "speaker_title": "Special Agent in Charge",
+          "speaker_organization": "Homeland Security Investigations (HSI), San Antonio",
+          "quote_type": "statement",
+          "context": "Announcing the arrests of the money laundering cell members",
+          "significance": "Highlights HSI's mission and strategic focus on disrupting the financial operations of transnational criminal organizations"
+        }
+      ]
     },
     "80e71ec1-53b3-41d2-bc3f-b9f39fb14ee2": {
       "metadata": {
@@ -31742,7 +31880,48 @@
           "status": null
         }
       ],
-      "agencies": [],
+      "agencies": [
+        {
+          "agency_name": "Drug Enforcement Administration",
+          "abbreviation": "DEA",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Investigated the Black Market Peso Exchange money laundering scheme"
+        },
+        {
+          "agency_name": "Internal Revenue Service – Criminal Investigation",
+          "abbreviation": "IRS-CI",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Investigated the Black Market Peso Exchange money laundering scheme"
+        },
+        {
+          "agency_name": "United States Attorney's Office, Southern District of Texas",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": "Southern District of Texas",
+          "agents_mentioned": "Kenneth Magidson, Ted Imperato",
+          "contribution": "Prosecuted the case; U.S. Attorney Kenneth Magidson announced the sentences and Assistant U.S. Attorney Ted Imperato prosecuted"
+        },
+        {
+          "agency_name": "United States Department of Justice, Criminal Division",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": "Money Laundering and Bank Integrity Unit, Asset Forfeiture and Money Laundering Section",
+          "agents_mentioned": "Mythili Raman, Keith Liddle",
+          "contribution": "Acting Assistant Attorney General Mythili Raman announced the sentences; Trial Attorney Keith Liddle prosecuted the case"
+        },
+        {
+          "agency_name": "United States Bureau of Prisons",
+          "abbreviation": null,
+          "role": "incarceration",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Facility to which defendants were ordered to surrender to serve prison sentences"
+        }
+      ],
       "charges": [
         {
           "charge_description": "Conspiracy to commit money laundering",
@@ -31943,7 +32122,40 @@
           "status": null
         }
       ],
-      "agencies": [],
+      "agencies": [
+        {
+          "agency_name": "Drug Enforcement Administration",
+          "abbreviation": "DEA",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Investigated the Black Market Peso Exchange money laundering scheme"
+        },
+        {
+          "agency_name": "Internal Revenue Service – Criminal Investigation",
+          "abbreviation": "IRS-CI",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Investigated the Black Market Peso Exchange money laundering scheme"
+        },
+        {
+          "agency_name": "United States Attorney's Office, Southern District of Texas",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": "Southern District of Texas",
+          "agents_mentioned": "Kenneth Magidson, Ted Imperato",
+          "contribution": "Prosecuted the case; announced the guilty pleas"
+        },
+        {
+          "agency_name": "U.S. Department of Justice, Criminal Division, Money Laundering and Bank Integrity Unit",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": null,
+          "agents_mentioned": "Lanny A. Breuer, Keith Liddle",
+          "contribution": "Prosecuted the case; announced the guilty pleas"
+        }
+      ],
       "charges": [
         {
           "charge_description": "Conspiracy to commit money laundering",
