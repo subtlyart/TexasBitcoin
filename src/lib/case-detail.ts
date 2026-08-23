@@ -106,13 +106,8 @@ export function getCaseBySlug(
 // --- Editorial posture -------------------------------------------------------
 // `adjudicated` drives the on-page framing: a plea/conviction/sentence is stated
 // as settled fact, while a charge-only case is framed as an unproven allegation.
-// `indexable` drives robots + sitemap inclusion and is deliberately DECOUPLED
-// from adjudication — charged cases are real prosecutions worth surfacing in
-// search, so they are indexed while still carrying the presumption-of-innocence
-// framing. Only the fallthrough "Announced" bucket (no charge, plea, conviction,
-// or sentence language — in practice non-case items like PSAs, awareness days,
-// and personnel notices) is held out of the search index.
-export type Posture = { label: string; adjudicated: boolean; indexable: boolean };
+// Search indexing is a separate decision — see isCaseIndexable() below.
+export type Posture = { label: string; adjudicated: boolean };
 
 const SENTENCED_RE = /sentenc/i;
 const CONVICTED_RE = /convict|found guilty|jury (?:verdict|convict)/i;
@@ -129,15 +124,40 @@ export function casePosture(detail: CaseDetail): Posture {
     .filter(Boolean)
     .join(" ; ");
 
-  if (SENTENCED_RE.test(hay))
-    return { label: "Sentenced", adjudicated: true, indexable: true };
-  if (CONVICTED_RE.test(hay))
-    return { label: "Convicted", adjudicated: true, indexable: true };
-  if (PLEA_RE.test(hay))
-    return { label: "Guilty plea", adjudicated: true, indexable: true };
-  if (CHARGED_RE.test(hay))
-    return { label: "Charged", adjudicated: false, indexable: true };
-  return { label: "Announced", adjudicated: false, indexable: false };
+  if (SENTENCED_RE.test(hay)) return { label: "Sentenced", adjudicated: true };
+  if (CONVICTED_RE.test(hay)) return { label: "Convicted", adjudicated: true };
+  if (PLEA_RE.test(hay)) return { label: "Guilty plea", adjudicated: true };
+  if (CHARGED_RE.test(hay)) return { label: "Charged", adjudicated: false };
+  return { label: "Announced", adjudicated: false };
+}
+
+// A small curated set of "Announced"-posture DOJ releases that are nonetheless
+// genuine crypto enforcement actions worth indexing: real seizures that carry
+// no case-level forfeiture figure (e.g. a domain seizure), which no automatic
+// signal can safely tell apart from a strategy memo that merely *mentions* a
+// seizure. Mirrors EXCLUDED_DOJ_URLS in case-tracker — an explicit, auditable
+// editorial override at the site layer. Re-verify against the DOJ release
+// before adding.
+const INDEXED_ANNOUNCEMENT_DOJ_URLS = new Set<string>([
+  // Domains seized to dismantle the LummaC2 information-stealing malware
+  // operation: two infrastructure seizures, no dollar forfeiture attributed.
+  "https://www.justice.gov/opa/pr/justice-department-seizes-domains-behind-major-information-stealing-malware-operation",
+]);
+
+// Search-index decision for a case page — used by both the robots directive and
+// the sitemap. Adjudicated and charge-only cases are always indexed. A
+// fallthrough "Announced" release is indexed only when it is a genuine asset
+// action: a case-level forfeiture amount or cited statutes, or an allowlisted
+// seizure. Non-case announcements (PSAs, awareness days, personnel notices,
+// strategy memos) stay out — even one whose text recaps other cases' dollar
+// figures, since those are never attributed to the announcement's own case.
+export function isCaseIndexable(c: TrackedCase, detail: CaseDetail): boolean {
+  if (casePosture(detail).label !== "Announced") return true;
+  return (
+    c.forfeiture_usd > 0 ||
+    c.statutes.length > 0 ||
+    INDEXED_ANNOUNCEMENT_DOJ_URLS.has(c.doj_url)
+  );
 }
 
 // Defendants only, in a stable order, for the page's "who" section.
@@ -154,11 +174,10 @@ export function officials(detail: CaseDetail): Participant[] {
   );
 }
 
-// Case pages that are search-indexed — every real case (adjudicated and
-// charge-only alike), for the sitemap. Only the non-case "Announced" bucket is
-// excluded; see casePosture above.
+// Case pages that are search-indexed, for the sitemap: every real case, keyed
+// off isCaseIndexable. Only non-case announcements are excluded.
 export function indexedCasePages(): { slug: string; date: string | null }[] {
   return trackedCasesWithSlug
-    .filter((c) => casePosture(detailById[c.id] ?? EMPTY_DETAIL).indexable)
+    .filter((c) => isCaseIndexable(c, detailById[c.id] ?? EMPTY_DETAIL))
     .map((c) => ({ slug: c.slug, date: c.date }));
 }

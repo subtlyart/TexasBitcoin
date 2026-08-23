@@ -14,6 +14,7 @@ import {
   casePosture,
   defendants,
   getCaseBySlug,
+  isCaseIndexable,
   officials,
   type Participant,
 } from "@/lib/case-detail";
@@ -42,10 +43,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     title: `${c.title} — Texas § 1960 Case`,
     description,
     alternates: { canonical: url },
-    // Every real case is indexed — charge-only pages included — while keeping
-    // the presumption-of-innocence framing below. Only non-case items (PSAs,
-    // awareness days, personnel notices) are held out of the search index.
-    robots: posture.indexable ? undefined : { index: false, follow: true },
+    // Every real case is indexed — charge-only pages included, plus genuine
+    // asset-seizure announcements — while keeping the presumption-of-innocence
+    // framing below. Only non-case items (PSAs, awareness days, personnel
+    // notices, strategy memos) are held out of the search index.
+    robots: isCaseIndexable(c, detail) ? undefined : { index: false, follow: true },
     openGraph: { type: "article", title: c.title, description, url },
   };
 }
