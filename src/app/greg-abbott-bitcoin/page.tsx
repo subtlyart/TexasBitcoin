@@ -363,8 +363,11 @@ export default function GregAbbottBitcoinPage() {
             is the thesis maturing. The 2021 recruitment pitch was that miners
             would make the grid stronger and cheaper for Texans; the 2026
             directive holds the industry to exactly that pitch as
-            gigawatt-scale AI and mining load queues up. A governor who wanted
-            the mines gone has tools far blunter than a cost-allocation memo.
+            gigawatt-scale AI and mining load queues up — the same concern
+            Lieutenant Governor Dan Patrick had pressed since 2023, told in{" "}
+            <Link href="/dan-patrick-bitcoin">Dan Patrick and Bitcoin</Link>.
+            A governor who wanted the mines gone has tools far blunter than a
+            cost-allocation memo.
             What Abbott ordered instead is the frontier growing its
             institutions — the same story the reserve tells on the asset side.
           </p>
