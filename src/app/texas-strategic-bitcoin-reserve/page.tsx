@@ -334,7 +334,8 @@ export default function ReservePage() {
             reserve, and must publish <strong>biennial reports</strong> on its
             value and administration.<C n={2} /> A five-member advisory committee
             guides that work, and it is complete: on{" "}
-            <strong>May 28, 2026</strong>, Acting Comptroller Kelly Hancock —
+            <strong>May 28, 2026</strong>, Acting Comptroller{" "}
+            <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link> —
             who chairs the committee himself — named the four outside seats:
             Laurie Dotter, Cormint CEO Jamie McAvity, SMU law professor Carla
             Reyes, and CleanSpark CFO Gary Vecchiarelli — a bench that pairs
