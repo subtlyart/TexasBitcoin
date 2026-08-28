@@ -13,18 +13,18 @@ const pageUrl = `${site.url}/greg-abbott-bitcoin`;
 export const metadata: Metadata = {
   title: "Greg Abbott and Bitcoin: The Governor Who Took It First",
   description:
-    "Greg Abbott's Bitcoin record, sourced: the 2014 campaign that took bitcoin donations before any state owned the asset, the 2021 legal foundation (HB 4474, HB 1576), the post-Uri miners-as-grid-asset thesis, the SB 21 signature creating the Texas Strategic Bitcoin Reserve — and the 2026 directive making large loads pay their own way.",
+    "Greg Abbott's Bitcoin record, sourced: the 2014 campaign that took bitcoin donations before any state owned the asset, the 2021 legal foundation (HB 4474, HB 1576), the post-Uri miners-as-grid-asset thesis, the SB 21 signature creating the Texas Strategic Bitcoin Reserve - and the 2026 directive making large loads pay their own way.",
   alternates: { canonical: pageUrl },
   openGraph: {
     type: "article",
     title: "Greg Abbott and Bitcoin: The Governor Who Took It First",
     description:
-      "From a 2014 campaign accepting bitcoin donations to the 2025 signature creating the nation's first funded state Bitcoin reserve — and the 2026 ratepayer directive that shows the thesis maturing. The sourced twelve-year arc.",
+      "From a 2014 campaign accepting bitcoin donations to the 2025 signature creating the nation's first funded state Bitcoin reserve - and the 2026 ratepayer directive that shows the thesis maturing. The sourced twelve-year arc.",
     url: pageUrl,
   },
 };
 
-// FAQ — rendered on-page and mirrored 1:1 in FAQPage JSON-LD (never schema-only).
+// FAQ - rendered on-page and mirrored 1:1 in FAQPage JSON-LD (never schema-only).
 const faqs = [
   {
     q: "Is Greg Abbott pro-Bitcoin?",
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "Did Greg Abbott sign the Texas Bitcoin reserve into law?",
-    a: "Yes. Governor Greg Abbott signed Senate Bill 21 on June 20, 2025, effective immediately, creating the Texas Strategic Bitcoin Reserve — the nation's first standalone, publicly funded state Bitcoin reserve. The same day he signed House Bill 4488, which shields the reserve from being swept into the state's general revenue fund.",
+    a: "Yes. Governor Greg Abbott signed Senate Bill 21 on June 20, 2025, effective immediately, creating the Texas Strategic Bitcoin Reserve - the nation's first standalone, publicly funded state Bitcoin reserve. The same day he signed House Bill 4488, which shields the reserve from being swept into the state's general revenue fund.",
   },
   {
     q: "Did Greg Abbott's campaign really accept bitcoin in 2014?",
@@ -40,11 +40,11 @@ const faqs = [
   },
   {
     q: "Why does Greg Abbott want Bitcoin miners in Texas?",
-    a: "Abbott's thesis, formed after Winter Storm Uri in 2021, is that Bitcoin miners are controllable load: they buy huge amounts of power when it is abundant — financing new generation — and can shut off within minutes when the grid is stressed, handing that power back to homes. He gathered crypto executives in Austin in fall 2021 to recruit exactly that behavior.",
+    a: "Abbott's thesis, formed after Winter Storm Uri in 2021, is that Bitcoin miners are controllable load: they buy huge amounts of power when it is abundant - financing new generation - and can shut off within minutes when the grid is stressed, handing that power back to homes. He gathered crypto executives in Austin in fall 2021 to recruit exactly that behavior.",
   },
   {
     q: "Has Greg Abbott turned against Bitcoin mining?",
-    a: "No — the record shows a shift in emphasis, not position. On June 10, 2026, Abbott directed the Public Utility Commission and ERCOT to make data centers, including industrial-scale Bitcoin mines, fully fund their own electric infrastructure costs rather than pass them to residential ratepayers. The directive disciplines the industry's growth; it does not restrict mining itself.",
+    a: "No - the record shows a shift in emphasis, not position. On June 10, 2026, Abbott directed the Public Utility Commission and ERCOT to make data centers, including industrial-scale Bitcoin mines, fully fund their own electric infrastructure costs rather than pass them to residential ratepayers. The directive disciplines the industry's growth; it does not restrict mining itself.",
   },
   {
     q: "What Bitcoin laws has Greg Abbott signed?",
@@ -76,7 +76,7 @@ export default function GregAbbottBitcoinPage() {
     "@type": "Article",
     headline: "Greg Abbott and Bitcoin: The Governor Who Took It First",
     description:
-      "Greg Abbott's Bitcoin record, sourced: the 2014 campaign that took bitcoin donations, the 2021 legal foundation, the post-Uri miners-as-grid-asset thesis, the SB 21 signature — and the 2026 ratepayer directive.",
+      "Greg Abbott's Bitcoin record, sourced: the 2014 campaign that took bitcoin donations, the 2021 legal foundation, the post-Uri miners-as-grid-asset thesis, the SB 21 signature - and the 2026 ratepayer directive.",
     author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
@@ -152,7 +152,7 @@ export default function GregAbbottBitcoinPage() {
           </p>
         </header>
 
-        {/* Direct Answer — self-contained, extractable */}
+        {/* Direct Answer - self-contained, extractable */}
         <div className="mt-8 rounded-xl border border-accent/30 bg-surface p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
             The short answer
@@ -163,12 +163,12 @@ export default function GregAbbottBitcoinPage() {
             starting April 17, 2014, he signed the 2021 laws writing virtual
             currency into the Texas commercial code, recruited Bitcoin miners
             as grid assets after Winter Storm Uri, and on June 20, 2025 signed
-            Senate Bill 21 creating the Texas Strategic Bitcoin Reserve — the
+            Senate Bill 21 creating the Texas Strategic Bitcoin Reserve - the
             nation&apos;s first funded state Bitcoin reserve.
           </p>
         </div>
 
-        {/* Key facts — one claim per sentence, each dated and sourced */}
+        {/* Key facts - one claim per sentence, each dated and sourced */}
         <div className="mt-6 rounded-xl border border-border bg-surface p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
             Key facts
@@ -209,7 +209,7 @@ export default function GregAbbottBitcoinPage() {
           </ul>
         </div>
 
-        {/* Timeline — the arc, in order */}
+        {/* Timeline - the arc, in order */}
         <section className="mt-10">
           <div className="flex items-baseline justify-between gap-3">
             <h2 className="font-display text-2xl font-semibold tracking-tight">
@@ -262,7 +262,7 @@ export default function GregAbbottBitcoinPage() {
         <div className="prose-tx mt-12">
           <h2>Is Greg Abbott pro-Bitcoin?</h2>
           <p>
-            Yes — and the distinguishing fact is not the enthusiasm but the
+            Yes - and the distinguishing fact is not the enthusiasm but the
             date. On April 17, 2014, Abbott&apos;s campaign for governor
             announced it would accept bitcoin as in-kind contributions,
             reported on campaign finance filings like any other donation.
@@ -272,21 +272,21 @@ export default function GregAbbottBitcoinPage() {
             team,&rdquo; Abbott said.<C n={2} /> Bitcoin traded around $500
             that spring; the campaign collected a modest ~$2,000 worth, joining
             a tiny early-adopter cohort of American politicians.<C n={15} />
-            <C n={14} /> The sum was a rounding error. The signal — a statewide
+            <C n={14} /> The sum was a rounding error. The signal - a statewide
             Texas official putting the asset on his own books, eleven years
-            before he put it on the state&apos;s — was not.
+            before he put it on the state&apos;s - was not.
           </p>
 
           <h2>What Bitcoin laws has Greg Abbott signed?</h2>
           <p>
             The 2021 session laid the legal foundation, and Abbott endorsed it
-            before it reached his desk — &ldquo;Count me in as a crypto law
+            before it reached his desk - &ldquo;Count me in as a crypto law
             proposal supporter,&rdquo; he tweeted in March 2021, pointing to
             the Texas Bullion Depository as precedent for the state leading on
             hard assets.<C n={3} /> That June he signed{" "}
             <strong>House Bill 4474</strong>, which wrote virtual currency into
-            the Texas Uniform Commercial Code — defining control, ownership
-            rights, and how disputes over digital assets resolve — and{" "}
+            the Texas Uniform Commercial Code - defining control, ownership
+            rights, and how disputes over digital assets resolve - and{" "}
             <strong>House Bill 1576</strong>, creating a statewide blockchain
             working group, both effective September 1, 2021.<C n={4} />
             <C n={5} /> The UCC change sounds dry and is anything but: it is
@@ -311,7 +311,7 @@ export default function GregAbbottBitcoinPage() {
             2021 Abbott gathered dozens of cryptocurrency dealmakers in Austin
             around the thesis that miners are{" "}
             <em>
-              controllable load — buyers of last resort for abundant power who
+              controllable load - buyers of last resort for abundant power who
               can shut off within minutes when the grid is stressed
             </em>
             , financing new generation in good hours and handing electricity
@@ -327,15 +327,15 @@ export default function GregAbbottBitcoinPage() {
 
           <h2>Did Abbott sign the Texas Strategic Bitcoin Reserve?</h2>
           <p>
-            Yes — the signature the whole arc was pointing toward. On{" "}
+            Yes - the signature the whole arc was pointing toward. On{" "}
             <strong>June 20, 2025</strong>, Abbott signed Senate Bill 21,
             effective immediately, creating the Texas Strategic Bitcoin
             Reserve: a fund held outside the treasury, managed by the
             Comptroller, restricted to assets averaging $500 billion in market
-            cap over 24 months — a bar only Bitcoin clears.<C n={9} />
+            cap over 24 months - a bar only Bitcoin clears.<C n={9} />
             <C n={10} /> The same day he signed House Bill 4488, which shields
             the reserve from the routine sweeps that pull idle balances into
-            general revenue — the quiet companion bill that makes the loud one
+            general revenue - the quiet companion bill that makes the loud one
             durable.<C n={11} /> The candidate who took bitcoin donations in
             2014 became the governor who put Bitcoin on the state balance
             sheet. The reserve&apos;s full mechanics and current status live on{" "}
@@ -349,8 +349,8 @@ export default function GregAbbottBitcoinPage() {
           <p>
             The record has a second act, and this site keeps it in view. On{" "}
             <strong>June 10, 2026</strong>, Abbott directed the Public Utility
-            Commission and ERCOT to require data centers — the category that
-            includes the industrial-scale Bitcoin mines he recruited — to fully
+            Commission and ERCOT to require data centers - the category that
+            includes the industrial-scale Bitcoin mines he recruited - to fully
             fund their own electric infrastructure costs rather than pass them
             to residential ratepayers, ordering a joint protective-actions
             memorandum by July 17, 2026 and PUC action on residential
@@ -363,24 +363,24 @@ export default function GregAbbottBitcoinPage() {
             is the thesis maturing. The 2021 recruitment pitch was that miners
             would make the grid stronger and cheaper for Texans; the 2026
             directive holds the industry to exactly that pitch as
-            gigawatt-scale AI and mining load queues up — the same concern
+            gigawatt-scale AI and mining load queues up - the same concern
             Lieutenant Governor Dan Patrick had pressed since 2023, told in{" "}
             <Link href="/dan-patrick-bitcoin">Dan Patrick and Bitcoin</Link>.
             A governor who wanted the mines gone has tools far blunter than a
             cost-allocation memo.
             What Abbott ordered instead is the frontier growing its
-            institutions — the same story the reserve tells on the asset side.
+            institutions - the same story the reserve tells on the asset side.
           </p>
 
           <h2>Where does Greg Abbott&apos;s Bitcoin record stand today?</h2>
           <p>
-            As of August 2026: every major Bitcoin statute in Texas — the UCC
-            recognition, the working group, the reserve, the sweep shield —
+            As of August 2026: every major Bitcoin statute in Texas - the UCC
+            recognition, the working group, the reserve, the sweep shield  - 
             carries Abbott&apos;s signature; the reserve he signed holds $10
             million and is moving from an ETF placeholder to direct custody;
             and his open item is the ratepayer directive&apos;s rulemaking now
             working through the PUC and ERCOT. The next chapter belongs to the
-            90th Legislature, convening January 2027 — and, on current form,
+            90th Legislature, convening January 2027 - and, on current form,
             to the same pen.
           </p>
         </div>
