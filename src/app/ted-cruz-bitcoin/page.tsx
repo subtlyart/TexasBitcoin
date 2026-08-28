@@ -417,7 +417,9 @@ export default function TedCruzBitcoinPage() {
             </Link>
             . Cruz&apos;s record is the Washington counterpart to that story -
             the seam where the state&apos;s energy base layer meets federal
-            law.
+            law - and its Austin counterpart is the governor who signed every
+            piece of it, told in{" "}
+            <Link href="/greg-abbott-bitcoin">Greg Abbott and Bitcoin</Link>.
           </p>
         </div>
 
