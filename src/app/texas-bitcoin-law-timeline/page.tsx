@@ -297,7 +297,13 @@ export default function LawTimelinePage() {
             episode marks the real boundary of Texas friendliness: the state
             embraces miners as flexible grid assets, but a majority of its
             senators were willing to cap the subsidy — and only the House kept
-            the cap from becoming law.
+            the cap from becoming law. The 89th session&apos;s full roster of
+            failures — the right-to-transact amendment, the kiosk stalemate,
+            the reserve designs not chosen — is kept in{" "}
+            <Link href="/texas-bitcoin-bills-that-died">
+              the dead file: Texas Bitcoin bills that didn&apos;t become law
+            </Link>
+            .
           </p>
 
           <h2>What is the Texas Strategic Bitcoin Reserve?</h2>
