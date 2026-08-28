@@ -28,15 +28,15 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Does Texas own Bitcoin?",
-    a: "Yes, though indirectly so far. On November 20, 2025, the Comptroller's office deployed about $5 million into the iShares Bitcoin Trust — a spot Bitcoin ETF — as an explicit placeholder. A custody-and-liquidity RFP that closed in June 2026 will move the state from that ETF proxy into directly held Bitcoin.",
+    a: "Yes, though indirectly so far. The reserve holds $10 million in the iShares Bitcoin Trust — a spot Bitcoin ETF — as an explicit placeholder, a position begun with a ~$5 million purchase on November 20, 2025 and built to the full appropriation by May 2026. A custody contract targeted for late August 2026 will move the state from that ETF proxy into directly held Bitcoin.",
   },
   {
     q: "How much money is in the Texas Bitcoin Reserve?",
-    a: "The Legislature appropriated $10 million for the reserve (a $21 million Senate rider was trimmed to $10 million). The first purchase, in November 2025, deployed roughly $5 million into a spot Bitcoin ETF. SB 21 also lets the reserve grow through open-market purchases, forks, and airdrops.",
+    a: "The Legislature appropriated $10 million for the reserve (a $21 million Senate rider was trimmed to $10 million), and the full amount is now deployed into a spot Bitcoin ETF, beginning with a roughly $5 million purchase in November 2025. SB 21 also lets the reserve grow through open-market purchases, forks, and airdrops.",
   },
   {
     q: "Who manages the Texas Strategic Bitcoin Reserve?",
-    a: "The Texas Comptroller of Public Accounts manages the reserve, holding it outside the state treasury. A five-member advisory committee guides administration; four members were named on May 28, 2026. The Comptroller must publish biennial reports on the fund's value and management.",
+    a: "The Texas Comptroller of Public Accounts manages the reserve, holding it outside the state treasury. A five-member advisory committee guides administration — the Comptroller chairs it, joined by four outside experts named on May 28, 2026. The Comptroller must publish biennial reports on the fund's value and management.",
   },
   {
     q: "What can the Texas reserve hold besides Bitcoin?",
@@ -69,7 +69,7 @@ export default function ReservePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-09",
-    dateModified: "2026-08-09",
+    dateModified: "2026-08-28",
   };
 
   const faqJsonLd = {
@@ -142,9 +142,10 @@ export default function ReservePage() {
             created by Senate Bill 21, signed June 20, 2025. The Comptroller
             manages it outside the treasury and may hold only digital assets
             averaging at least $500 billion in market cap over 24 months — a bar
-            only Bitcoin clears. The Legislature appropriated $10 million, and
-            the reserve made its first purchase — about $5 million via a spot
-            Bitcoin ETF, as a placeholder — on November 20, 2025.
+            only Bitcoin clears. The Legislature appropriated $10 million, all of
+            it now deployed into a spot Bitcoin ETF as a placeholder — a position
+            begun November 20, 2025 — with a custody contract targeted for late
+            August 2026 to convert it to directly held Bitcoin.
           </p>
         </div>
 
@@ -173,9 +174,13 @@ export default function ReservePage() {
               <C n={4} />
             </li>
             <li>
-              On May 28, 2026, the Comptroller named four members of the
-              five-seat advisory committee and opened a custody-and-liquidity
-              RFP.<C n={5} />
+              The ETF position has reached the full $10 million appropriation,
+              per the custody RFP filed in May 2026.<C n={8} /><C n={9} />
+            </li>
+            <li>
+              On May 28, 2026, the Comptroller completed the five-seat advisory
+              committee and opened a custody-and-liquidity RFP; contract
+              execution is targeted for late August 2026.<C n={5} /><C n={9} />
             </li>
           </ul>
         </div>
@@ -282,11 +287,14 @@ export default function ReservePage() {
             Comptroller&apos;s office bought roughly $5 million of the{" "}
             <strong>iShares Bitcoin Trust</strong> — a spot Bitcoin ETF — at
             $51.8694 a share, with Bitcoin near $91,300, and described the
-            position as a temporary placeholder.<C n={4} /> The state deliberately
-            started with an ETF to establish a position while it built the
-            plumbing to hold the asset itself. That plumbing is the custody
-            question below — and it is the difference between owning a claim on
-            Bitcoin and owning the keys.
+            position as a temporary placeholder.<C n={4} /> By the time the
+            custody RFP was filed in May 2026, the position had grown to the
+            full <strong>$10 million appropriation</strong>, all of it in
+            IBIT.<C n={8} /><C n={9} /> The state deliberately started with an
+            ETF to establish a position while it built the plumbing to hold the
+            asset itself. That plumbing is the custody question below — and it
+            is the difference between owning a claim on Bitcoin and owning the
+            keys.
           </p>
 
           <h2>How is the reserve funded?</h2>
@@ -324,13 +332,15 @@ export default function ReservePage() {
             The <strong>Texas Comptroller of Public Accounts</strong> manages the
             reserve, and must publish <strong>biennial reports</strong> on its
             value and administration.<C n={2} /> A five-member advisory committee
-            guides that work; on <strong>May 28, 2026</strong>, Acting
-            Comptroller Kelly Hancock named four of the seats — Laurie Dotter,
-            Cormint CEO Jamie McAvity, SMU law professor Carla Reyes, and
-            CleanSpark CFO Gary Vecchiarelli — a bench that pairs institutional
-            investment experience with people who mine and account for Bitcoin
-            for a living.<C n={5} /> The same announcement opened the request for
-            proposals for the custody-and-liquidity partner.<C n={5} />
+            guides that work, and it is complete: on{" "}
+            <strong>May 28, 2026</strong>, Acting Comptroller Kelly Hancock —
+            who chairs the committee himself — named the four outside seats:
+            Laurie Dotter, Cormint CEO Jamie McAvity, SMU law professor Carla
+            Reyes, and CleanSpark CFO Gary Vecchiarelli — a bench that pairs
+            institutional investment experience with people who mine and account
+            for Bitcoin for a living.<C n={5} /> The same announcement opened the
+            request for proposals for the custody-and-liquidity partner.
+            <C n={5} />
           </p>
 
           <h2>How does Texas compare to other states?</h2>
@@ -348,11 +358,13 @@ export default function ReservePage() {
 
           <h2>What comes next for the reserve?</h2>
           <p>
-            The near-term story is <strong>custody</strong>. The RFP for a
-            custody-and-liquidity firm closed June 15, 2026, and the selected
-            partner will retire the ETF placeholder for Bitcoin the state holds
-            directly — the move from a claim to the keys.<C n={4} /><C n={5} />{" "}
-            After that come the questions this page will keep tracking: how
+            The near-term story is <strong>custody</strong> — and it is at the
+            wire. The RFP for a custody-and-liquidity firm closed June 15, 2026,
+            with <strong>contract execution targeted for late August 2026</strong>;
+            the selected partner will retire the $10 million ETF placeholder for
+            Bitcoin held directly in the name of the State of Texas — the move
+            from a claim to the keys.<C n={8} /><C n={9} /> After that come the
+            questions this page will keep tracking: who the custodian is, how
             quickly the $10 million (and any future appropriation) converts to
             coin, what the first biennial report shows, and whether the 90th
             Legislature, convening January 2027, adds to the fund. None of these

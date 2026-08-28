@@ -8,7 +8,7 @@
 // Re-verify whenever the Comptroller acts, reports, or names the fifth committee
 // member — and bump RESERVE_LAST_VERIFIED and the page's dateModified together.
 
-export const RESERVE_LAST_VERIFIED = "August 9, 2026";
+export const RESERVE_LAST_VERIFIED = "August 28, 2026";
 
 export interface ReserveSource {
   id: number;
@@ -26,6 +26,8 @@ export const reserveSources: ReserveSource[] = [
   { id: 5, label: "Texas Comptroller — Acting Comptroller Kelly Hancock Names Strategic Bitcoin Reserve Advisory Committee Members (May 28, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260528-acting-texas-comptroller-kelly-hancock-names-strategic-bitcoin-reserve-advisory-committee-members-1778774749224" },
   { id: 6, label: "Texas Comptroller — Manual of Accounts: Strategic Bitcoin Reserve fund (Fund 1018, Fiscal 2026)", url: "https://fmcpa.cpa.state.tx.us/fiscalmoa/fund.jsp?num=1018" },
   { id: 7, label: "Texas Policy Research — Texas House Approves SB 21 (context on the $10M appropriation)", url: "https://www.texaspolicyresearch.com/texas-house-approves-sb-21-paving-way-for-state-run-bitcoin-reserve/" },
+  { id: 8, label: "Texas SmartBuy ESBD — RFP 908-26-1778WS: custody and liquidity services for the Texas Strategic Bitcoin Reserve", url: "https://www.txsmartbuy.gov/esbd/908-26-1778WS" },
+  { id: 9, label: "Crypto Briefing — Texas plans to shift $10M Bitcoin holdings from IBIT to direct custody; bids due June 15, 2026, contract execution targeted for late August", url: "https://cryptobriefing.com/texas-expands-bitcoin-strategic-reserve/" },
 ];
 
 // Current status — the scannable "where the reserve stands today" panel. Each
@@ -41,9 +43,10 @@ export const reserveStatus: ReserveStatusRow[] = [
   { label: "Manager", value: "Texas Comptroller of Public Accounts, holding the fund outside the state treasury", sourceIds: [2] },
   { label: "Appropriation", value: "$10 million from the Legislature (a $21M Senate rider was trimmed to $10M)", sourceIds: [7] },
   { label: "Eligibility floor", value: "Digital assets averaging ≥ $500B market cap over 24 months — only Bitcoin qualifies today", sourceIds: [2] },
-  { label: "First purchase", value: "~$5 million into the iShares Bitcoin Trust (a spot BTC ETF) on November 20, 2025 — an explicit placeholder", sourceIds: [4] },
-  { label: "Custody", value: "Custody-and-liquidity RFP closed June 15, 2026; transition from the ETF proxy to directly held Bitcoin underway", sourceIds: [4, 5] },
-  { label: "Advisory committee", value: "Five-member committee — four named May 28, 2026: Laurie Dotter, Jamie McAvity (Cormint), Carla Reyes (SMU), Gary Vecchiarelli (CleanSpark)", sourceIds: [5] },
+  { label: "First purchase", value: "~$5 million into the iShares Bitcoin Trust on November 20, 2025", sourceIds: [4] },
+  { label: "Current holdings", value: "$10 million in the iShares Bitcoin Trust (a spot BTC ETF) — the full appropriation deployed, held as an explicit placeholder", sourceIds: [8, 9] },
+  { label: "Custody", value: "Custody-and-liquidity RFP 908-26-1778WS closed June 15, 2026; contract execution targeted for late August 2026, moving the $10M from the ETF proxy to directly held Bitcoin", sourceIds: [8, 9] },
+  { label: "Advisory committee", value: "Complete — Comptroller Kelly Hancock chairs, joined May 28, 2026 by Laurie Dotter, Jamie McAvity (Cormint), Carla Reyes (SMU), Gary Vecchiarelli (CleanSpark)", sourceIds: [5] },
   { label: "Reporting", value: "Comptroller must publish biennial reports on the fund's value and management", sourceIds: [2] },
 ];
 
@@ -79,19 +82,28 @@ export const reserveTimeline: ReserveEvent[] = [
   {
     date: "2026-05-28",
     dateLabel: "May 28, 2026",
-    title: "Advisory committee named; custody RFP opens",
+    title: "Committee complete; custody RFP opens — holdings at $10M",
     detail:
-      "Acting Comptroller Kelly Hancock names four members of the five-seat advisory committee and the office issues a request for proposals for the custody and liquidity partner that will move the state into directly held Bitcoin.",
+      "Acting Comptroller Kelly Hancock completes the five-seat advisory committee — Hancock chairing, joined by Laurie Dotter, Jamie McAvity, Carla Reyes, and Gary Vecchiarelli — and the office issues the custody-and-liquidity RFP. The filing confirms the reserve's ETF position has reached the full $10 million appropriation.",
     done: true,
-    sourceIds: [5],
+    sourceIds: [5, 8, 9],
   },
   {
     date: "2026-06-15",
     dateLabel: "June 15, 2026",
-    title: "Custody RFP closes — direct custody ahead",
+    title: "Custody RFP closes",
     detail:
-      "Proposals for the custody-and-liquidity mandate are due; the selected firm will securely acquire, hold, and report the state's Bitcoin, retiring the ETF placeholder for coin the state controls.",
+      "Proposals for the custody-and-liquidity mandate come due. The selected firm will securely acquire, hold, and report the state's Bitcoin in the name of the State of Texas, retiring the ETF placeholder for coin the state controls.",
+    done: true,
+    sourceIds: [8, 9],
+  },
+  {
+    date: "2026-08-31",
+    dateLabel: "Late August 2026",
+    title: "Custody contract execution — the move to the keys",
+    detail:
+      "The RFP targets contract execution for late August 2026. Once the custodian is under contract, the $10 million IBIT placeholder converts to directly held Bitcoin — the moment the reserve stops holding a claim and starts holding the asset.",
     done: false,
-    sourceIds: [4, 5],
+    sourceIds: [8, 9],
   },
 ];
