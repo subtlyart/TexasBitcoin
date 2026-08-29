@@ -240,6 +240,16 @@ export default function CaseTrackerPage() {
         </section>
 
         <div className="prose-tx mt-12">
+          <p>
+            The rows above are the record; the reading of them - the
+            acceleration curve, the forfeiture spikes, the charge mix, the
+            district map - lives in{" "}
+            <Link href="/texas-crypto-enforcement-report">
+              the enforcement report
+            </Link>
+            , recomputed from this dataset on every refresh.
+          </p>
+
           <h2>What is 18 U.S.C. § 1960?</h2>
           <p>
             Section 1960 of Title 18 makes it a federal crime to operate an{" "}
