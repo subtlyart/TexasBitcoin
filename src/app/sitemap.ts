@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/dan-patrick-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-28" },
     { path: "/kelly-hancock-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-28" },
     { path: "/texas-bitcoin-bills-that-died", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-08-28" },
+    { path: "/invest-in-texas-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-bitcoin-case-tracker", priority: 0.8, changeFrequency: "daily" as const, lastMod: trackerDerived.lastUpdated },
     { path: "/texas-crypto-enforcement-report", priority: 0.7, changeFrequency: "weekly" as const, lastMod: trackerDerived.lastUpdated },
     { path: "/what-texas-law-says-about-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-07-25" },

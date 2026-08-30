@@ -36,6 +36,7 @@
 ## Directories
 
 - [Texas Bitcoin Events](https://texasbitcoin.com/events): Free, open directory of Bitcoin meetups and conferences across Austin, Dallas–Fort Worth, Houston, and San Antonio, linked directly to organizers.
+- [The Exposure Map](https://texasbitcoin.com/invest-in-texas-bitcoin): Reference map of every route into the Texas Bitcoin economy — public mining equities with Texas operations (Riot, Core Scientific, Cipher, Galaxy, Bitdeer, MARA, Hut 8), Bitcoin itself and the state's own ETF-then-custody sequence, the Strategic Bitcoin Reserve (closed to private money under SB 21's enrolled text), the Texas Bitcoin bond that doesn't exist, accredited-only venture funds, and the Texas Stock Exchange. Research and reference only — no recommendations, no exchange or broker links, not financial advice. 18 cited sources.
 - [Texas Bitcoin Resources](https://texasbitcoin.com/texas-bitcoin-resources): Curated reference shelf of free tools for finding and understanding Bitcoin in Texas — merchant and community maps (BTC Map), the reachable-node census (bitnod.es), ERCOT grid data, and the state's policy bodies. Reference tools only: no exchanges, brokers, or referral links.
 
 ## Archive (direct link only)

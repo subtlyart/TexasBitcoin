@@ -371,7 +371,11 @@ export default function ReservePage() {
             coin, what the first biennial report shows, and whether the 90th
             Legislature, convening January 2027, adds to the fund. None of these
             are threats to the record above — they are its next entries, and we
-            update this page against the primary record as they land.
+            update this page against the primary record as they land. One
+            question the statute settles now: the reserve takes no private
+            money — a reader looking for their own route into the Texas
+            Bitcoin economy will find every door mapped in{" "}
+            <Link href="/invest-in-texas-bitcoin">the Exposure Map</Link>.
           </p>
         </div>
 
