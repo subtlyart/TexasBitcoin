@@ -107,7 +107,7 @@ export const hancockTimeline: HancockEvent[] = [
     dateLabel: "May 28, 2026",
     title: "The committee and the custody RFP",
     detail:
-      "Hancock names the four outside members of the advisory committee he chairs - Laurie Dotter, Jamie McAvity, Carla Reyes, Gary Vecchiarelli - and issues the custody-and-liquidity RFP to move the reserve's now-$10 million IBIT position into directly held Bitcoin. Bids close June 15; contract execution is targeted for late August 2026.",
+      "Hancock names the four outside members of the advisory committee he chairs - Laurie Dotter, Jamie McAvity, Carla Reyes, Gary Vecchiarelli - and issues the custody-and-liquidity RFP to move the reserve's now-$10 million IBIT position into directly held Bitcoin. Bids close July 10 (extended from June 15); contract execution is targeted for late August 2026.",
     kind: "execution",
     sourceIds: [5, 6, 7, 8],
   },

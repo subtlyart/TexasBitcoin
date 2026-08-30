@@ -69,7 +69,7 @@ export default function ReservePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-09",
-    dateModified: "2026-08-28",
+    dateModified: "2026-08-30",
   };
 
   const faqJsonLd = {
@@ -361,17 +361,23 @@ export default function ReservePage() {
           <h2>What comes next for the reserve?</h2>
           <p>
             The near-term story is <strong>custody</strong> — and it is at the
-            wire. The RFP for a custody-and-liquidity firm closed June 15, 2026,
-            with <strong>contract execution targeted for late August 2026</strong>;
+            wire. The RFP for a custody-and-liquidity firm closed July 10, 2026
+            (extended from June 15), with{" "}
+            <strong>contract execution targeted for late August 2026</strong>;
             the selected partner will retire the $10 million ETF placeholder for
             Bitcoin held directly in the name of the State of Texas — the move
-            from a claim to the keys.<C n={8} /><C n={9} /> After that come the
-            questions this page will keep tracking: who the custodian is, how
-            quickly the $10 million (and any future appropriation) converts to
-            coin, what the first biennial report shows, and whether the 90th
-            Legislature, convening January 2027, adds to the fund. None of these
-            are threats to the record above — they are its next entries, and we
-            update this page against the primary record as they land.
+            from a claim to the keys.<C n={8} /><C n={9} /> That handoff now has
+            its own living record:{" "}
+            <Link href="/who-holds-the-texas-bitcoin-reserve">
+              who holds the Texas Bitcoin reserve
+            </Link>{" "}
+            tracks the custodian search, the 60-day conversion clock, and the
+            coming public holdings website. After that come the questions both
+            pages keep tracking: what the first biennial report shows, and
+            whether the 90th Legislature, convening January 2027, adds to the
+            fund. None of these are threats to the record above — they are its
+            next entries, and we update against the primary record as they
+            land.
           </p>
         </div>
 

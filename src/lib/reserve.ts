@@ -8,7 +8,7 @@
 // Re-verify whenever the Comptroller acts, reports, or names the fifth committee
 // member — and bump RESERVE_LAST_VERIFIED and the page's dateModified together.
 
-export const RESERVE_LAST_VERIFIED = "August 28, 2026";
+export const RESERVE_LAST_VERIFIED = "August 30, 2026";
 
 export interface ReserveSource {
   id: number;
@@ -45,7 +45,7 @@ export const reserveStatus: ReserveStatusRow[] = [
   { label: "Eligibility floor", value: "Digital assets averaging ≥ $500B market cap over 24 months — only Bitcoin qualifies today", sourceIds: [2] },
   { label: "First purchase", value: "~$5 million into the iShares Bitcoin Trust on November 20, 2025", sourceIds: [4] },
   { label: "Current holdings", value: "$10 million in the iShares Bitcoin Trust (a spot BTC ETF) — the full appropriation deployed, held as an explicit placeholder", sourceIds: [8, 9] },
-  { label: "Custody", value: "Custody-and-liquidity RFP 908-26-1778WS closed June 15, 2026; contract execution targeted for late August 2026, moving the $10M from the ETF proxy to directly held Bitcoin", sourceIds: [8, 9] },
+  { label: "Custody", value: "No custodian named as of August 30, 2026. RFP 908-26-1778WS closed July 10, 2026 (extended from June 15); contract execution targeted for late August 2026, moving the $10M from the ETF proxy to directly held Bitcoin", sourceIds: [8, 9] },
   { label: "Advisory committee", value: "Complete — Comptroller Kelly Hancock chairs, joined May 28, 2026 by Laurie Dotter, Jamie McAvity (Cormint), Carla Reyes (SMU), Gary Vecchiarelli (CleanSpark)", sourceIds: [5] },
   { label: "Reporting", value: "Comptroller must publish biennial reports on the fund's value and management", sourceIds: [2] },
 ];
@@ -89,11 +89,11 @@ export const reserveTimeline: ReserveEvent[] = [
     sourceIds: [5, 8, 9],
   },
   {
-    date: "2026-06-15",
-    dateLabel: "June 15, 2026",
+    date: "2026-07-10",
+    dateLabel: "July 10, 2026",
     title: "Custody RFP closes",
     detail:
-      "Proposals for the custody-and-liquidity mandate come due. The selected firm will securely acquire, hold, and report the state's Bitcoin in the name of the State of Texas, retiring the ETF placeholder for coin the state controls.",
+      "Proposals for the custody-and-liquidity mandate come due — the deadline, first set for June 15, was extended to July 10 on the ESBD. The selected firm will securely acquire, hold, and report the state's Bitcoin in the name of the State of Texas, retiring the ETF placeholder for coin the state controls.",
     done: true,
     sourceIds: [8, 9],
   },
