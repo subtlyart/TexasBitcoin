@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/events", priority: 0.8, changeFrequency: "weekly" as const, lastMod: "2026-07-27" },
     { path: "/texas-bitcoin-resources", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-07-27" },
     // Direct-link only: indexed but never linked from the shell nav.
-    { path: "/texas-crypto-archive", priority: 0.5, changeFrequency: "monthly" as const, lastMod: "2026-07-27" },
+    { path: "/texas-crypto-archive", priority: 0.5, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/about", priority: 0.5, changeFrequency: "yearly" as const, lastMod: "2026-07-22" },
     { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" as const, lastMod: "2026-07-22" },
   ];

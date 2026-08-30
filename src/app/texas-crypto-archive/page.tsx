@@ -39,6 +39,16 @@ const sources = [
   { id: "s17", label: "ATX DAO — official site (founded October 2021)", url: "https://www.atxdao.com/" },
   { id: "s18", label: "GlobeNewswire — ATX DAO brings 'Here We Go' NFT mural to life during Consensus (June 2022)", url: "https://www.globenewswire.com/en/news-release/2022/06/07/2458224/0/en/ATX-DAO-Partners-With-Artist-ER-HOPE-Campaign-and-Native-Hostel-During-Consensus-Keep-Austin-Web3-Event-at-Empire-Control-Room-Garage-to-Help-Bring-Local-NFT-Mural-to-Life.html" },
   { id: "s19", label: "Disruption Banking — Making Austin a crypto hub with ATX DAO (March 2023)", url: "https://www.disruptionbanking.com/2023/03/10/making-austin-a-crypto-hub-with-atx-dao/" },
+  { id: "s20", label: "Crypto Events — ETH Austin 2022, hosted by Dystopia Labs and Ethereum Austin", url: "https://cryptoevents.global/eth-austin-2022/" },
+  { id: "s21", label: "Meetup — Ethereum Austin ('Ethereum is turning 10!', July 30, 2025)", url: "https://www.meetup.com/austin-ethereum-meetup/events/307661745/" },
+  { id: "s22", label: "Solana — Austin Hacker House (official event page)", url: "https://solana.com/events/austin-hacker-house" },
+  { id: "s23", label: "Forbes — Solana bets on Hacker Houses to launch its network ahead (May 2023)", url: "https://www.forbes.com/sites/digital-assets/2023/05/12/in-an-industry-where-network-is-king-solana-bets-on-hacker-houses-to-launch-them-ahead/" },
+  { id: "s24", label: "CoinDesk — Decentralized wireless project Helium begins move to Solana blockchain (April 18, 2023)", url: "https://www.coindesk.com/tech/2023/04/18/decentralized-wireless-project-helium-begins-move-to-solana-blockchain" },
+  { id: "s25", label: "TechCrunch — Facebook investor Jim Breyer picks Austin as Breyer Capital's second home (September 2020)", url: "https://techcrunch.com/2020/09/14/facebook-investor-jim-breyer-picks-austin-as-breyer-capitals-second-home" },
+  { id: "s26", label: "TechCrunch — Jim Breyer on leaving Silicon Valley for Austin in early 2020 (April 2022)", url: "https://techcrunch.com/2022/04/06/billionaire-investor-jim-breyer-left-silicon-valley-for-austin-in-early-2020-heres-why-he-loves-it/" },
+  { id: "s27", label: "Fortune — Crypto venture firms enjoy banner years; Multicoin posts 56% annual growth (April 2025)", url: "https://fortune.com/crypto/2025/04/07/paradigm-multicoin-electric-haun-pantera-polychain-aums-crypto-vc/" },
+  { id: "s28", label: "BetaKit — Consensus crypto conference coming to Toronto in 2025 (Austin convention-center renovation)", url: "https://betakit.com/consensus-crypto-conference-coming-to-toronto-in-2025/" },
+  { id: "s29", label: "Multicoin Capital — official site (thesis: DeFi, DePIN, infrastructure, AI x crypto)", url: "https://multicoin.capital/" },
 ];
 
 function C({ n }: { n: number }) {
@@ -69,6 +79,14 @@ const faqs = [
     a: "Yes. Hashgraph, the consensus algorithm behind Hedera, was invented by Dallas-area computer scientist Leemon Baird, who co-founded Swirlds with Mance Harmon in 2015. Hedera launched its mainnet in August 2018 and placed its global headquarters in Richardson's Telecom Corridor, north of Dallas.",
   },
   {
+    q: "Does Texas have Ethereum and Solana developer communities?",
+    a: "Yes. Ethereum Austin has run a standing meetup for years - it marked Ethereum's tenth birthday in July 2025 - and co-hosted the ETH Austin conferences with Dystopia Labs in 2022 and 2023. On the Solana side, the Solana Foundation brought its Hacker House developer residency to Austin during Consensus week in April 2023, the same week Helium - the Multicoin-backed wireless network - completed one of the largest layer-1 migrations ever, onto Solana.",
+  },
+  {
+    q: "Where did the crypto venture capital go next?",
+    a: "It stayed and broadened. Breyer Capital, whose founder Jim Breyer was early into Coinbase and Circle, opened its second home in Austin in 2020. Multicoin Capital's assets under management grew 56% in 2024 to nearly $600 million, and its thesis widened from tokens into DePIN and AI-x-crypto - the same compute rotation the miners made on the grid. The conference calendar moved on (Consensus left for Toronto in 2025), but the capital did not.",
+  },
+  {
     q: "What is Multicoin Capital?",
     a: "An Austin-based, thesis-driven digital-asset venture firm founded in 2017 by Kyle Samani and Tushar Jain. It led an early Solana fundraise — buying SOL around $0.04 — and backed Helium before either was widely known, making it one of the most consequential venture calls made from Texas.",
   },
@@ -85,7 +103,7 @@ export default function ArchivePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: `${site.url}/texas-crypto-archive`,
     datePublished: "2026-07-13",
-    dateModified: "2026-07-27",
+    dateModified: "2026-08-30",
   };
 
   const faqJsonLd = {
@@ -151,7 +169,7 @@ export default function ArchivePage() {
             every claim sourced.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published July 13, 2026 · Updated July 27, 2026
+            By {site.name} · Published July 13, 2026 · Updated August 30, 2026
           </p>
         </header>
 
@@ -207,6 +225,17 @@ export default function ArchivePage() {
               CoinDesk&apos;s Consensus, the industry&apos;s largest conference,
               convened in Austin in April 2023 — drawing 15,000 attendees — and
               returned in May 2024.<C n={5} /><C n={6} />
+            </li>
+            <li>
+              The Solana Foundation brought its Hacker House developer
+              residency to Austin during Consensus week in April 2023 - the
+              same month Helium completed its migration onto Solana.
+              <C n={22} /><C n={24} />
+            </li>
+            <li>
+              Multicoin Capital&apos;s assets under management grew 56% in 2024,
+              to nearly $600 million - among the strongest years of any crypto
+              venture firm.<C n={27} />
             </li>
           </ul>
         </div>
@@ -321,6 +350,30 @@ export default function ArchivePage() {
             conversation had traveled from the 2014 banking memo.
           </p>
 
+          <h2>2022–2023: The builders show up</h2>
+          <p>
+            Capital and resolutions are the visible layer; underneath them sat
+            working developer scenes for both of the big smart-contract
+            ecosystems. On the Ethereum side, <strong>Ethereum Austin</strong>{" "}
+            has kept a standing meetup running for years - still going strong
+            enough to throw Ethereum a tenth-birthday party in July
+            2025<C n={21} /> - and co-hosted the <strong>ETH Austin</strong>{" "}
+            conference with Dystopia Labs, gathering Ethereum builders from
+            across the Southwest in 2022 and again in 2023.<C n={20} /> On the
+            Solana side, the Solana Foundation - which had made in-person{" "}
+            <strong>Hacker Houses</strong> its signature developer-recruitment
+            play, a world tour of free co-working residencies<C n={23} /> -
+            brought one to Austin during Consensus week in April
+            2023.<C n={22} /> That same month carried the scene&apos;s most
+            concrete technical milestone: <strong>Helium</strong>, the
+            decentralized wireless network Multicoin had backed early,
+            completed one of the largest layer-1 migrations ever attempted,
+            moving its network of hundreds of thousands of hotspots onto
+            Solana on April 18, 2023.<C n={24} /> The Texas thread runs clean
+            through it: an Austin fund&apos;s two defining bets - Solana and
+            Helium - converged into one stack.
+          </p>
+
           <h2>2023–2024: The industry comes to town</h2>
           <p>
             <strong>Consensus</strong>, CoinDesk&apos;s flagship and the
@@ -331,11 +384,36 @@ export default function ArchivePage() {
             center of the crypto industry&apos;s calendar was a Texas zip code.
           </p>
 
+          <h2>2024–2026: Where the capital went next</h2>
+          <p>
+            The honest entry first: the conference left. After two years in
+            Austin, Consensus moved to Toronto for May 2025 - CoinDesk cited
+            the multi-year renovation of the Austin Convention Center - and
+            then to Miami for 2026.<C n={28} /> But the capital is a better
+            measure than the calendar, and the capital stayed.{" "}
+            <strong>Breyer Capital</strong> - whose founder Jim Breyer, the
+            early Facebook backer, counts Coinbase and Circle among his early
+            crypto exposure - had opened its second home in Austin in
+            2020, with Breyer himself relocating that year.<C n={25} />
+            <C n={26} /> And <strong>Multicoin</strong> posted its strongest
+            stretch yet from Austin: assets under management up 56% in 2024,
+            to nearly $600 million, among the best years of any crypto venture
+            firm<C n={27} /> - even as co-founder Kyle Samani stepped back
+            from day-to-day investing in February 2026.<C n={9} /> Watch where
+            the thesis went: the firm&apos;s stated focus now spans DePIN -
+            token networks that build physical infrastructure - and the
+            AI-x-crypto seam.<C n={29} /> That is the same rotation the
+            miners made on the grid: the front of this site documents Bitcoin
+            miners converting megawatts to AI compute, and the venture desks
+            in Austin rotated their theses the same direction in the same
+            years. Different stack, same Texas trade - energy, infrastructure,
+            and compute finding whichever ledger pays.
+          </p>
+
           <h2>The shelf keeps filling</h2>
           <p>
-            This archive is a living room, not a finished one. On the docket:
-            the Texas Ethereum and Solana developer scenes, where the venture
-            capital went next — and the through-line back to the base layer, because
+            This archive is a living room, not a finished one. Still on the
+            docket: the through-line back to the base layer, because
             every one of these stories eventually touches{" "}
             <Link href="/texas-bitcoin-law-timeline">the money law</Link> and the{" "}
             <Link href="/bitcoin-mining-map-texas">grid</Link> that the front of
