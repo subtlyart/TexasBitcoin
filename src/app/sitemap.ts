@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/bitcoin-estate-planning-texas", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-gold-vs-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-bitcoin-miners-ai-pivot", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
+    { path: "/texas-bitcoin-bills-2027", priority: 0.7, changeFrequency: "weekly" as const, lastMod: "2026-08-30" },
     { path: "/texas-crypto-archive", priority: 0.5, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/about", priority: 0.5, changeFrequency: "yearly" as const, lastMod: "2026-07-22" },
     { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" as const, lastMod: "2026-07-22" },
