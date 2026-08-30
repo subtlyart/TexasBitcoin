@@ -8,7 +8,7 @@
 //
 // Dataset verified July 2026. Re-verify quarterly with the cornerstone.
 
-export const MAP_LAST_VERIFIED = "August 9, 2026";
+export const MAP_LAST_VERIFIED = "August 30, 2026";
 
 export type SiteStatus = "mining" | "hybrid" | "ai" | "announced" | "historic";
 
@@ -78,6 +78,8 @@ export const miningSources: MiningSource[] = [
   { id: 22, label: "MARA (via StockTitan) — 8-K: agreement with HIF to acquire a Matagorda County powered-land site, up to 2 GW, milestone payments up to $600M (July 2026)", url: "https://www.stocktitan.net/news/MARA/mara-signs-agreement-with-hif-to-acquire-strategic-powered-land-site-nqvuby8e4d46.html" },
   { id: 23, label: "Cipher Mining — Form 8-K: Barber Lake (Mitchell County) 300 MW site leased to Fluidstack, ~$3B, Google backstop (2025)", url: "https://www.sec.gov/Archives/edgar/data/1819989/000095010325012168/dp234624_8k.htm" },
   { id: 24, label: "Bitdeer Technologies Group — September 2025 Production and Operations Update (AI/HPC conversion pipeline, including the Rockdale campus)", url: "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-september-2025-production-and-operations" },
+  { id: 25, label: "Riot Platforms — Q2 2026 results (August 10, 2026): 20-year, 191 MW Rockdale data center lease with a leading frontier AI lab, $9.1B initial term (~$16.1B with extensions); AMD signed January 16, 2026 as first tenant, 50 MW contracted; 1,587 BTC mined in Q2", url: "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/" },
+  { id: 26, label: "Blockspace — Riot's full 1 GW Corsicana campus under a non-binding LOI to a single tenant; analysts (KBW) identify the Rockdale frontier-lab tenant as Anthropic (August 2026)", url: "https://blockspace.media/insight/riot-corsicana-loi-756mw-ai-data-center/" },
 ];
 
 export const miningSites: MiningSite[] = [
@@ -89,12 +91,13 @@ export const miningSites: MiningSite[] = [
     lat: 30.655,
     lng: -97.001,
     mw: 700,
-    mwLabel: "700 MW developed",
+    mwLabel: "700 MW developed · 241 MW IT contracted",
     yearOnline: 2020,
-    status: "mining",
+    status: "hybrid",
+    pivotYear: 2026,
     story:
-      "The flagship. Built by Whinstone on the grounds of Alcoa's shuttered aluminum smelter, acquired by Riot in May 2021 for roughly $651 million, and expanded to 700 MW — the largest single Bitcoin mining facility in North America by developed capacity.",
-    sourceIds: [1, 3],
+      "The flagship, now living its own third act. Built by Whinstone on the grounds of Alcoa's shuttered aluminum smelter, acquired by Riot in May 2021 for roughly $651 million, and expanded to 700 MW — the largest single Bitcoin mine in North America. In 2026 the AI turn reached it: AMD signed as first data-center tenant in January (50 MW contracted), and on August 10 Riot announced a 20-year, 191 MW lease with a leading frontier AI lab worth $9.1 billion over the initial term. The mine still hashes while the campus converts.",
+    sourceIds: [1, 3, 25],
   },
   {
     id: "bitdeer-rockdale",
@@ -124,8 +127,8 @@ export const miningSites: MiningSite[] = [
     status: "hybrid",
     pivotYear: 2025,
     story:
-      "Riot's second Texas gigasite, with a full gigawatt approved by ERCOT. 400 MW mines Bitcoin today; in 2025 Riot halted further mining expansion to evaluate AI/HPC uses for the remaining 600 MW.",
-    sourceIds: [2],
+      "Riot's second Texas gigasite, with a full gigawatt approved by ERCOT. 400 MW mines Bitcoin today; in 2025 Riot halted further mining expansion to evaluate AI/HPC uses for the remaining 600 MW, and by August 2026 the entire campus was reported under a non-binding letter of intent to a single AI tenant.",
+    sourceIds: [2, 26],
   },
   {
     id: "mara-granbury",

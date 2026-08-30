@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     { path: "/", priority: 1, changeFrequency: "weekly" as const, lastMod: "2026-08-09" },
     { path: "/history-of-bitcoin-in-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-08-09" },
-    { path: "/bitcoin-mining-map-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-08-09" },
+    { path: "/bitcoin-mining-map-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-bitcoin-law-timeline", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-09" },
     { path: "/texas-strategic-bitcoin-reserve", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/who-holds-the-texas-bitcoin-reserve", priority: 0.8, changeFrequency: "weekly" as const, lastMod: "2026-08-30" },
