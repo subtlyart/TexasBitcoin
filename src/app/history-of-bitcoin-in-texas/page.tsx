@@ -41,6 +41,7 @@ const sources = [
   { id: "s21", label: "CNBC — Texas paid Riot $31.7 million to shut down during August heat wave (Sept 2023)", url: "https://www.cnbc.com/2023/09/06/texas-paid-bitcoin-miner-riot-31point7-million-to-shut-down-in-august.html" },
   { id: "s22", label: "The Bond Buyer — Texas makes first purchase for state's Bitcoin reserve: ~$5M in the iShares Bitcoin Trust, November 20, 2025 (placeholder)", url: "https://www.bondbuyer.com/news/texas-makes-first-purchase-for-states-bitcoin-reserve" },
   { id: "s23", label: "Texas Comptroller — Acting Comptroller Kelly Hancock Names Strategic Bitcoin Reserve Advisory Committee Members (May 28, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260528-acting-texas-comptroller-kelly-hancock-names-strategic-bitcoin-reserve-advisory-committee-members-1778774749224" },
+  { id: "s24", label: "Texas Comptroller — Don Huffines Sworn in as Texas Comptroller, Refuses Salary, Calls for Property Tax Relief (August 1, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260801-don-huffines-sworn-in-as-texas-comptroller-refuses-salary-calls-for-property-tax-relief-1785512488796" },
 ];
 
 // FAQ — rendered on-page and mirrored 1:1 in FAQPage JSON-LD (never schema-only).
@@ -88,7 +89,7 @@ export default function HistoryPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: `${site.url}/history-of-bitcoin-in-texas`,
     datePublished: "2026-06-28",
-    dateModified: "2026-08-09",
+    dateModified: "2026-09-01",
   };
 
   const faqJsonLd = {
@@ -151,7 +152,7 @@ export default function HistoryPage() {
             and the proving ground for what comes next.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published June 28, 2026 · Updated August 9, 2026
+            By {site.name} · Published June 28, 2026 · Updated September 1, 2026
           </p>
         </header>
 
@@ -413,8 +414,12 @@ export default function HistoryPage() {
             Cormint CEO Jamie McAvity, SMU law professor Carla Reyes, and
             CleanSpark CFO Gary Vecchiarelli — and opened a request for proposals
             for the custody and liquidity partner that will move the state from
-            an ETF proxy into directly held Bitcoin.<C n={23} /> The distance
-            from the 2014 memo is the whole arc in one line: Texas went from
+            an ETF proxy into directly held Bitcoin.<C n={23} /> On August 1,
+            2026, Don Huffines — who had proposed a state Bitcoin reserve in
+            his 2022 campaign for governor — was sworn in as Comptroller after
+            Hancock&apos;s resignation, inheriting the reserve with its
+            custodian still unnamed.<C n={24} /> The distance from the 2014
+            memo is the whole arc in one line: Texas went from
             ruling that Bitcoin is not money to buying it for the state&apos;s
             own account.
           </p>

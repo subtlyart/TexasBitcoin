@@ -9,7 +9,7 @@
 // Dataset verified July 2026. Re-verify after every regular session (odd
 // years) and any special session that touches money or digital-asset law.
 
-export const LAW_LAST_VERIFIED = "August 9, 2026";
+export const LAW_LAST_VERIFIED = "September 1, 2026";
 
 export type MilestoneOutcome =
   | "adopted"
@@ -74,7 +74,8 @@ export const lawSources: LawSource[] = [
   { id: 21, label: "Hunton — Texas establishes Strategic Bitcoin Reserve (SB 21)", url: "https://www.hunton.com/blockchain-legal-resource/texas-establishes-strategic-bitcoin-reserve" },
   { id: 22, label: "The Block — Governor Greg Abbott signs strategic Bitcoin reserve bill into law (June 2025)", url: "https://www.theblock.co/post/359089/texas-governor-greg-abbott-signs-strategic-bitcoin-reserve-bill-into-law" },
   { id: 23, label: "The Bond Buyer — Texas makes first purchase for state's Bitcoin reserve: ~$5M in the iShares Bitcoin Trust, November 20, 2025, held as a placeholder", url: "https://www.bondbuyer.com/news/texas-makes-first-purchase-for-states-bitcoin-reserve" },
-  { id: 24, label: "Texas Comptroller — Acting Comptroller Kelly Hancock Names Strategic Bitcoin Reserve Advisory Committee Members (May 28, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260528-acting-texas-comptroller-kelly-hancock-names-strategic-bitcoin-reserve-advisory-committee-members-1778774749224" },
+  { id: 24, label: "Texas Comptroller — Acting Comptroller Kelly Hancock Names Strategic Bitcoin Reserve Advisory Committee Members (May 28, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260528-acting-texas-comptroller-kelly-hancock-names-strategic-bitcoin-reserve-advisory-committee-members-1778774749224" },  { id: 25, label: "Texas Comptroller — Don Huffines Sworn in as Texas Comptroller, Refuses Salary, Calls for Property Tax Relief (August 1, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260801-don-huffines-sworn-in-as-texas-comptroller-refuses-salary-calls-for-property-tax-relief-1785512488796" },
+  { id: 26, label: "Texas Tribune — Acting Comptroller Kelly Hancock to step down as Texas CFO; Abbott appoints Don Huffines (July 1, 2026)", url: "https://www.texastribune.org/2026/07/01/texas-comptroller-kelly-hancock-resigns-greg-abbott-don-huffines/" },
 ];
 
 export const lawMilestones: LawMilestone[] = [
@@ -209,5 +210,16 @@ export const lawMilestones: LawMilestone[] = [
       "On May 28, 2026, Acting Comptroller Kelly Hancock named the reserve's advisory committee — Laurie Dotter, Cormint CEO Jamie McAvity, SMU law professor Carla Reyes, and CleanSpark CFO Gary Vecchiarelli — as the office issued a request for proposals for a firm to provide custody and liquidity services and move the reserve from its ETF placeholder into directly held Bitcoin.",
     outcome: "action",
     sourceIds: [24],
+  },
+  {
+    id: "comptroller-handoff",
+    date: "2026-08-01",
+    dateLabel: "August 1, 2026",
+    title: "The reserve changes hands: Huffines sworn in as Comptroller",
+    actor: "Governor Abbott / Texas Comptroller",
+    summary:
+      "On August 1, 2026, Don Huffines was sworn in as Texas Comptroller after Governor Abbott appointed him on July 2 to the term Kelly Hancock resigned effective July 31. Under SB 21 the comptroller has custody of the Strategic Bitcoin Reserve and sits on its advisory committee, so the $10 million position and the pending custody award passed to Huffines with the office.",
+    outcome: "action",
+    sourceIds: [25, 26],
   },
 ];

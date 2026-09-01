@@ -77,7 +77,7 @@ export default function DeadBillsPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-28",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-01",
     about: [
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Thing", name: "Texas Legislature" },
@@ -366,10 +366,11 @@ export default function DeadBillsPage() {
             draft agenda. Kiosk regulation returns with two one-chamber
             majorities and a $57-million-a-year reason.<C n={10} /> HJR 175
             returns five votes from a ballot line. The reserve - by then
-            expected to hold directly custodied Bitcoin, with a new
-            comptroller inheriting it, told in{" "}
-            <Link href="/kelly-hancock-bitcoin">
-              Kelly Hancock and Bitcoin
+            expected to hold directly custodied Bitcoin, now in the hands of a
+            comptroller who proposed a state Bitcoin reserve back in 2022,
+            told in{" "}
+            <Link href="/don-huffines-bitcoin">
+              Don Huffines and Bitcoin
             </Link>{" "}
             - invites exactly the expansions the dead designs drafted: a
             larger appropriation, a donation channel, local-government

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Who is the custodian of the Texas Bitcoin reserve?",
-    a: "No custodian has been named yet. As of August 30, 2026, the Texas Comptroller's custody-and-liquidity RFP (908-26-1778WS) shows no award, and contract execution was targeted for late August 2026. Until a contract executes, the reserve's $10 million sits in the iShares Bitcoin Trust, where BlackRock's ETF custodian holds the underlying coin.",
+    a: "No custodian has been named yet. As of September 1, 2026, the Texas Comptroller's custody-and-liquidity RFP (908-26-1778WS) shows no award, and the late-August 2026 target for contract execution has passed. Until a contract executes, the reserve's $10 million sits in the iShares Bitcoin Trust, where BlackRock's ETF custodian holds the underlying coin.",
   },
   {
     q: "Does Texas hold its own Bitcoin keys?",
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "Who legally controls the Texas Strategic Bitcoin Reserve?",
-    a: "The Texas Comptroller of Public Accounts manages the reserve as a dedicated fund (Fund 1018) held outside the state treasury, guided by a five-member advisory committee the Comptroller chairs. The custody procurement runs through the Comptroller on behalf of the Texas Treasury Safekeeping Trust Company, the state's investment arm.",
+    a: "The Texas Comptroller of Public Accounts manages the reserve as a dedicated fund (Fund 1018) held outside the state treasury, guided by a five-member advisory committee the Comptroller chairs. Since August 1, 2026 that Comptroller is Don Huffines, appointed after Kelly Hancock resigned. The custody procurement runs through the Comptroller on behalf of the Texas Treasury Safekeeping Trust Company, the state's investment arm.",
   },
   {
     q: "How will the public see what the reserve holds?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "When does the Texas reserve convert its ETF to real Bitcoin?",
-    a: "Within 60 days of the custody contract executing. The procurement targeted execution for late August 2026, so on that schedule the $10 million iShares Bitcoin Trust position would convert to directly held Bitcoin by roughly late October 2026. No award had been posted as of August 30, 2026, so the clock has not started.",
+    a: "Within 60 days of the custody contract executing. The procurement targeted execution for late August 2026, so on that schedule the $10 million iShares Bitcoin Trust position would convert to directly held Bitcoin by roughly late October 2026. No award had been posted as of September 1, 2026, so the clock has not started.",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function CustodyPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-30",
-    dateModified: "2026-08-30",
+    dateModified: "2026-09-01",
   };
 
   const faqJsonLd = {
@@ -328,8 +328,9 @@ export default function CustodyPage() {
             <strong>July 10, 2026</strong> (the deadline was extended from the
             original June 15), and the state targeted{" "}
             <strong>contract execution for late August 2026</strong>.
-            <C n={1} /><C n={4} /> As of August 30, the ESBD lists the
-            solicitation as closed with no award posted, and the
+            <C n={1} /><C n={4} /> As of September 1, the target window has
+            closed: the ESBD lists the solicitation as closed with no award
+            posted, and the
             Comptroller&apos;s office has issued no custodian announcement
             since the May 28 release that opened the search.<C n={1} /><C n={2} />{" "}
             None of that is a red flag – state procurement routinely runs to
@@ -342,7 +343,7 @@ export default function CustodyPage() {
           <h2>Who decides, and who watches the decision?</h2>
           <p>
             The <strong>Comptroller</strong> runs the fund and the
-            procurement; a transition sits underneath the process. Acting
+            procurement – and the Comptroller changed mid-procurement. Acting
             Comptroller <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link>{" "}
             opened the custody search on May 28, 2026 – the same day he
             completed the reserve&apos;s five-member{" "}
@@ -351,8 +352,14 @@ export default function CustodyPage() {
             pairs institutional investment experience (Laurie Dotter) with
             people who mine, teach, and account for Bitcoin for a living
             (Cormint&apos;s Jamie McAvity, SMU law professor Carla Reyes,
-            CleanSpark&apos;s Gary Vecchiarelli).<C n={2} /> Statute adds the
-            second layer of watching: SB 21 requires{" "}
+            CleanSpark&apos;s Gary Vecchiarelli).<C n={2} /> Hancock resigned
+            effective July 31, 2026, and{" "}
+            <Link href="/don-huffines-bitcoin">Don Huffines</Link> – who put a
+            state Bitcoin reserve in his 2022 campaign platform for governor –
+            was sworn in on August 1; under SB 21 custody of the reserve and
+            the comptroller&apos;s committee seat pass with the office, so the
+            award is his to sign.<C n={10} /><C n={11} /><C n={12} /> Statute
+            adds the second layer of watching: SB 21 requires{" "}
             <strong>biennial public reports</strong> on the fund&apos;s value
             and administration, and the reserve lives as its own line – Fund
             1018 – in the Comptroller&apos;s manual of accounts.<C n={6} /><C n={9} /><C n={8} />
@@ -364,7 +371,8 @@ export default function CustodyPage() {
             <strong>60-day conversion window</strong>: the custodian must
             retire the $10 million IBIT placeholder for directly held Bitcoin
             within 60 days of execution – on the late-August target, that
-            lands the conversion by roughly late October 2026.<C n={3} /> The
+            would have landed the conversion by roughly late October 2026, and
+            every week without an award pushes it back.<C n={3} /> The
             second is transparency: the RFP requires a{" "}
             <strong>dedicated public website</strong> showing the
             reserve&apos;s holdings and valuations, which would make Texas the

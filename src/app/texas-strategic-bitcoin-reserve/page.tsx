@@ -69,7 +69,7 @@ export default function ReservePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-09",
-    dateModified: "2026-08-30",
+    dateModified: "2026-09-01",
   };
 
   const faqJsonLd = {
@@ -334,15 +334,19 @@ export default function ReservePage() {
             reserve, and must publish <strong>biennial reports</strong> on its
             value and administration.<C n={2} /> A five-member advisory committee
             guides that work, and it is complete: on{" "}
-            <strong>May 28, 2026</strong>, Acting Comptroller{" "}
-            <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link> —
-            who chairs the committee himself — named the four outside seats:
+            <strong>May 28, 2026</strong>, then-Acting Comptroller{" "}
+            <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link> — the
+            comptroller sits on the committee by office — named the four outside seats:
             Laurie Dotter, Cormint CEO Jamie McAvity, SMU law professor Carla
             Reyes, and CleanSpark CFO Gary Vecchiarelli — a bench that pairs
             institutional investment experience with people who mine and account
             for Bitcoin for a living.<C n={5} /> The same announcement opened the
             request for proposals for the custody-and-liquidity partner.
-            <C n={5} />
+            <C n={5} /> The office itself changed hands on August 1, 2026,
+            when <Link href="/don-huffines-bitcoin">Don Huffines</Link> was
+            sworn in after Hancock&apos;s resignation; custody of the reserve,
+            the committee seat, and the pending custody award passed with it.
+            <C n={10} />
           </p>
 
           <h2>How does Texas compare to other states?</h2>

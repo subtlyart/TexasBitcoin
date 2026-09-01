@@ -13,13 +13,13 @@ const pageUrl = `${site.url}/kelly-hancock-bitcoin`;
 export const metadata: Metadata = {
   title: "Kelly Hancock: The Man Who Bought Texas Its Bitcoin",
   description:
-    "Kelly Hancock's Bitcoin record, sourced: the acting Texas Comptroller who executed the state's first Bitcoin purchase (Nov 20, 2025), built the $10M reserve position, named the advisory committee, and ran the custody RFP - then lost the March 2026 primary to Don Huffines and became a lame duck finishing the transition for a successor to inherit.",
+    "Kelly Hancock's Bitcoin record, sourced: the acting Texas Comptroller who executed the state's first Bitcoin purchase (Nov 20, 2025), built the $10M reserve position, named the advisory committee, and ran the custody RFP - then lost the March 2026 primary to Don Huffines, resigned effective July 31, 2026, and handed the reserve to the man who beat him with the custodian still unnamed.",
   alternates: { canonical: pageUrl },
   openGraph: {
     type: "article",
     title: "Kelly Hancock: The Man Who Bought Texas Its Bitcoin",
     description:
-      "Abbott signed the reserve, Patrick prioritized it - Hancock is the man who actually bought the Bitcoin. The execution record of the acting comptroller, including the primary defeat that made him a lame-duck steward.",
+      "Abbott signed the reserve, Patrick prioritized it - Hancock is the man who actually bought the Bitcoin. The execution record of the acting comptroller (July 2025 – July 2026), including the primary defeat and the resignation that handed the reserve to Don Huffines.",
     url: pageUrl,
   },
 };
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Who is Kelly Hancock?",
-    a: "Kelly Hancock is the acting Texas Comptroller of Public Accounts - the state's chief financial officer and, under Senate Bill 21, the manager of the Texas Strategic Bitcoin Reserve. A former state legislator (Texas House 2007–2013, Senate District 9 2013–2025), he joined the Comptroller's office in June 2025 and became acting comptroller on July 1, 2025, when Glenn Hegar left to lead the Texas A&M System.",
+    a: "Kelly Hancock was the acting Texas Comptroller of Public Accounts from July 1, 2025 to July 31, 2026 - the state's chief financial officer and, under Senate Bill 21, the manager of the Texas Strategic Bitcoin Reserve. A former state legislator (Texas House 2007–2013, Senate District 9 2013–2025), he joined the Comptroller's office in June 2025, became acting comptroller when Glenn Hegar left to lead the Texas A&M System, and resigned after losing the 2026 primary. Don Huffines succeeded him on August 1, 2026.",
   },
   {
     q: "Did Kelly Hancock buy Bitcoin for Texas?",
@@ -36,15 +36,15 @@ const faqs = [
   },
   {
     q: "What has Kelly Hancock done with the Texas Bitcoin Reserve?",
-    a: "Everything operational so far: the first purchase (November 20, 2025), building the position to the full $10 million appropriation, naming the four outside members of the advisory committee he chairs (May 28, 2026), and issuing the custody-and-liquidity RFP that will convert the ETF placeholder into directly held Bitcoin, with contract execution targeted for late August 2026.",
+    a: "Everything operational so far: the first purchase (November 20, 2025), building the position to the full $10 million appropriation, naming the four outside members of the advisory committee he chairs (May 28, 2026), and issuing the custody-and-liquidity RFP meant to convert the ETF placeholder into directly held Bitcoin. The contract execution it targeted for late August 2026 had not happened when he left office on July 31, 2026.",
   },
   {
     q: "Did Kelly Hancock win the comptroller election?",
-    a: "No. Hancock lost the March 3, 2026 Republican primary to former state senator Don Huffines, who won outright with about 58% of the vote to Hancock's roughly 23% after a late Trump endorsement - overriding Governor Abbott's $2.6 million in ads backing Hancock. Hancock serves as acting comptroller until the winner of the November 2026 general election (Huffines vs. Democrat Sarah Eckhardt) takes office in January 2027.",
+    a: "No. Hancock lost the March 3, 2026 Republican primary to former state senator Don Huffines, who won outright with about 58% of the vote to Hancock's roughly 23% after a late Trump endorsement - overriding Governor Abbott's $2.6 million in ads backing Hancock. Hancock announced his resignation on July 1, 2026, effective July 31; Governor Abbott appointed Huffines to the unexpired term, and Huffines was sworn in on August 1, 2026.",
   },
   {
-    q: "Who will manage the Texas Bitcoin Reserve after Hancock?",
-    a: "Whoever wins the November 2026 general election for comptroller - Republican Don Huffines or Democrat Sarah Eckhardt - inherits the reserve when the new term begins in January 2027. By then the custody transition Hancock ran is expected to be complete, meaning the next comptroller likely inherits directly held Bitcoin rather than an ETF placeholder.",
+    q: "Who manages the Texas Bitcoin Reserve after Hancock?",
+    a: "Don Huffines, sworn in as Texas Comptroller on August 1, 2026 after Governor Abbott appointed him to Hancock's unexpired term. Under Senate Bill 21, custody of the reserve and the comptroller's seat on its advisory committee pass with the office. Huffines inherited the $10 million ETF position with the custodian still unnamed, and faces Democrat Sarah Eckhardt on November 3, 2026 for the full term.",
   },
 ];
 
@@ -71,12 +71,12 @@ export default function KellyHancockBitcoinPage() {
     "@type": "Article",
     headline: "Kelly Hancock: The Man Who Bought Texas Its Bitcoin",
     description:
-      "The execution record of the acting Texas Comptroller: the first state Bitcoin purchase (Nov 20, 2025), the $10M position, the advisory committee, the custody RFP - and the primary defeat that made him a lame-duck steward.",
+      "The execution record of the acting Texas Comptroller: the first state Bitcoin purchase (Nov 20, 2025), the $10M position, the advisory committee, the custody RFP, the primary defeat - and the July 2026 resignation that handed the reserve to Don Huffines with the custodian still unnamed.",
     author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-28",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-01",
     about: [
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Kelly Hancock" },
@@ -140,8 +140,8 @@ export default function KellyHancockBitcoinPage() {
             the first state Bitcoin purchase in American history is a man most
             of the country has never heard of. This is the execution record of
             Kelly Hancock: the trade, the committee, the custody transition –
-            and the primary defeat that means he is building it all for
-            someone else to inherit.
+            and the primary defeat and resignation that handed it all,
+            mid-transition, to the man who beat him.
           </p>
           <p className="mt-4 text-sm text-muted-2">
             By {site.name} · Published August 28, 2026 · Updated{" "}
@@ -155,14 +155,15 @@ export default function KellyHancockBitcoinPage() {
             The short answer
           </p>
           <p className="mt-3 leading-relaxed">
-            Kelly Hancock is the acting Texas Comptroller who operates the
-            Texas Strategic Bitcoin Reserve. His office made the first state
-            Bitcoin purchase in U.S. history on November 20, 2025 - about $5
-            million via a spot Bitcoin ETF - built the position to the full
-            $10 million appropriation, named the reserve&apos;s advisory
-            committee, and ran the custody RFP. He lost the March 3, 2026
-            Republican primary to Don Huffines and serves until a successor
-            takes office in January 2027.
+            Kelly Hancock was the acting Texas Comptroller who operated the
+            Texas Strategic Bitcoin Reserve from July 1, 2025 to July 31,
+            2026. His office made the first state Bitcoin purchase in U.S.
+            history on November 20, 2025 - about $5 million via a spot
+            Bitcoin ETF - built the position to the full $10 million
+            appropriation, named the reserve&apos;s advisory committee, and
+            ran the custody RFP. He lost the March 3, 2026 Republican primary
+            to Don Huffines, resigned, and handed Huffines the reserve on
+            August 1, 2026 with the custodian still unnamed.
           </p>
         </div>
 
@@ -199,6 +200,12 @@ export default function KellyHancockBitcoinPage() {
               comptroller to Don Huffines, roughly 58% to 23%, after a late
               Trump endorsement overrode Governor Abbott&apos;s $2.6 million
               in supporting ads.<C n={13} /><C n={15} />
+            </li>
+            <li>
+              Hancock resigned effective July 31, 2026, one year after taking
+              office; Don Huffines was sworn in as his successor on August 1,
+              2026 and inherited the reserve with no custodian named.
+              <C n={16} /><C n={18} />
             </li>
           </ul>
         </div>
@@ -302,15 +309,17 @@ export default function KellyHancockBitcoinPage() {
             hard - when to buy, what venue, how to custody a bearer asset in a
             state government, how to stand up controls that survive an
             administration change - to the Comptroller of Public Accounts.
-            <C n={5} /> Every precedent Hancock set is one the next
-            comptroller, and the next state to copy Texas, will work from: the
+            <C n={5} /> Every precedent Hancock set is one his successor,
+            Don Huffines, and the next state to copy Texas will work from: the
             ETF-first entry, the committee bench drawn from mining and
             institutional finance, custody in the state&apos;s own name. The
             reserve&apos;s political authors are chronicled in{" "}
             <Link href="/greg-abbott-bitcoin">Greg Abbott and Bitcoin</Link>{" "}
             and{" "}
             <Link href="/dan-patrick-bitcoin">Dan Patrick and Bitcoin</Link>;
-            Hancock&apos;s page is what execution looked like.
+            Hancock&apos;s page is what execution looked like, and{" "}
+            <Link href="/don-huffines-bitcoin">Don Huffines and Bitcoin</Link>{" "}
+            is what inheriting it looks like.
           </p>
 
           <h2>The honest counterweight: the lame-duck steward</h2>
@@ -323,31 +332,41 @@ export default function KellyHancockBitcoinPage() {
             Hancock&apos;s roughly 23%, after a late Trump endorsement
             overrode Governor Abbott&apos;s $2.6 million in ads backing
             Hancock.<C n={13} /><C n={14} /><C n={15} /> Every reserve
-            decision since - the committee, the RFP, the custody contract now
-            at the wire - has been made by a lame duck.
+            decision from then until his July 31, 2026 exit - the committee,
+            the RFP, the evaluation of the bids - was made by a lame duck.
           </p>
           <p>
             The fair reading cuts the other way too. A steward with no
             election to win has no incentive to time trades for headlines, and
             finishing the custody transition before the handoff is exactly
-            what an orderly office does: the winner of the November 2026
-            general - Huffines or Democrat Sarah Eckhardt - will likely
-            inherit directly held Bitcoin rather than a half-built program.
-            <C n={14} /><C n={10} /> Institutions that survive their founders
+            what an orderly office does. Here the record is mixed: Hancock
+            resigned on July 1, effective July 31 - four months after the
+            primary - and the custody contract targeted for late August had
+            not executed when Huffines took the oath on August 1, so the
+            successor inherited a seated committee, a closed solicitation,
+            and an ETF placeholder rather than coin in the state&apos;s name.
+            <C n={16} /><C n={17} /><C n={18} /> Institutions that survive their founders
             are the whole point of writing a reserve into statute rather than
             leaving it to personality.
           </p>
 
           <h2>Where does the Hancock record stand today?</h2>
           <p>
-            As of August 2026: the custody contract his RFP targeted for late
-            August is the open item - the move that converts the $10 million
-            ETF placeholder into coin the state controls; the advisory
-            committee he chairs is seated; and the clock runs toward January
-            2027, when a new comptroller inherits the reserve. Hancock&apos;s
-            Bitcoin legacy will be measured by a strange standard for a
-            politician: whether the thing he built transfers so cleanly that
-            nobody notices the handoff.
+            As of September 1, 2026: closed. Hancock left office on July 31,
+            2026, one year to the day after taking it, with the first state
+            Bitcoin purchase, the full $10 million position, a seated
+            advisory committee, and a closed custody solicitation to his name
+            - and no custodian.<C n={16} /><C n={18} /> The award he targeted
+            for late August is now{" "}
+            <Link href="/don-huffines-bitcoin">Don Huffines</Link>&apos;s to
+            make, tracked on{" "}
+            <Link href="/who-holds-the-texas-bitcoin-reserve">
+              the custody watch
+            </Link>
+            . Hancock&apos;s Bitcoin legacy will be measured by a strange
+            standard for a politician: whether the thing he built transfers
+            so cleanly that nobody notices the handoff. The structure
+            transferred on the day. The substance is still in procurement.
           </p>
         </div>
 

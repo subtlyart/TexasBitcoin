@@ -10,7 +10,7 @@
 // and the page's dateModified together. The reserve page's status panel links
 // here; keep the two consistent.
 
-export const CUSTODY_LAST_VERIFIED = "August 30, 2026";
+export const CUSTODY_LAST_VERIFIED = "September 1, 2026";
 
 export interface CustodySource {
   id: number;
@@ -28,6 +28,9 @@ export const custodySources: CustodySource[] = [
   { id: 7, label: "The Bond Buyer — Texas makes first purchase for state's Bitcoin reserve: ~$5M in the iShares Bitcoin Trust, November 20, 2025, held as a placeholder", url: "https://www.bondbuyer.com/news/texas-makes-first-purchase-for-states-bitcoin-reserve" },
   { id: 8, label: "Texas Comptroller — Manual of Accounts: Strategic Bitcoin Reserve fund (Fund 1018, Fiscal 2026)", url: "https://fmcpa.cpa.state.tx.us/fiscalmoa/fund.jsp?num=1018" },
   { id: 9, label: "Texas Legislature Online — SB 21 (89R) bill history: signed June 20, 2025, effective immediately", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB21" },
+  { id: 10, label: "Texas Comptroller — Don Huffines Sworn in as Texas Comptroller, Refuses Salary, Calls for Property Tax Relief (August 1, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260801-don-huffines-sworn-in-as-texas-comptroller-refuses-salary-calls-for-property-tax-relief-1785512488796" },
+  { id: 11, label: "Texas Tribune — Acting Comptroller Kelly Hancock to step down as Texas CFO: resignation effective end of July 2026; Abbott appoints Don Huffines (July 1, 2026)", url: "https://www.texastribune.org/2026/07/01/texas-comptroller-kelly-hancock-resigns-greg-abbott-don-huffines/" },
+  { id: 12, label: "Texas Legislature Online — SB 21 (89R) enrolled text: § 403.703 (the comptroller has custody of the reserve), § 403.707 (the comptroller sits on the advisory committee)", url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00021F.htm" },
 ];
 
 // The custody watch — the scannable "who holds what, right now" panel.
@@ -38,12 +41,13 @@ export interface CustodyStatusRow {
 }
 
 export const custodyStatus: CustodyStatusRow[] = [
-  { label: "Custodian", value: "Not yet named. As of August 30, 2026, no award is posted on the ESBD and the Comptroller has made no custodian announcement.", sourceIds: [1] },
+  { label: "Custodian", value: "Not yet named. As of September 1, 2026, the late-August execution target has passed, no award is posted on the ESBD, and the Comptroller has made no custodian announcement.", sourceIds: [1] },
+  { label: "Who signs", value: "Comptroller Don Huffines, sworn in August 1, 2026 after Kelly Hancock – who opened the search – resigned effective July 31. Under SB 21, custody of the reserve and the comptroller's committee seat pass with the office", sourceIds: [10, 11, 12] },
   { label: "What Texas holds", value: "$10 million in the iShares Bitcoin Trust (IBIT), a spot Bitcoin ETF – a claim on Bitcoin held by BlackRock's custodian, not coin in the state's name", sourceIds: [4, 7] },
   { label: "Legal owner of the fund", value: "The Strategic Bitcoin Reserve (Fund 1018), managed by the Texas Comptroller outside the state treasury", sourceIds: [6, 8] },
   { label: "Contracting entity", value: "The Comptroller of Public Accounts, on behalf of the Texas Treasury Safekeeping Trust Company – the state's investment arm", sourceIds: [1, 5] },
   { label: "Procurement", value: "RFP 908-26-1778WS posted May 7, 2026; the response deadline, first set for June 15, closed July 10, 2026", sourceIds: [1, 2] },
-  { label: "Execution target", value: "Contract execution targeted for late August 2026 – the window this page is watching", sourceIds: [4] },
+  { label: "Execution target", value: "Contract execution was targeted for late August 2026; the window closed with no award, and the contract now executes under Comptroller Huffines", sourceIds: [4, 10] },
   { label: "Conversion clock", value: "Once under contract, the custodian has 60 days to move the $10 million from IBIT into directly held Bitcoin", sourceIds: [3] },
   { label: "Public reporting", value: "The custodian must build a public website showing the reserve's holdings and valuations; the Comptroller must publish biennial reports", sourceIds: [3, 5, 6] },
 ];
@@ -142,11 +146,20 @@ export const custodyTimeline: CustodyEvent[] = [
     sourceIds: [1],
   },
   {
+    date: "2026-08-01",
+    dateLabel: "August 1, 2026",
+    title: "The desk changes hands",
+    detail:
+      "Don Huffines is sworn in as Comptroller after Kelly Hancock's July 31 resignation. Under SB 21, custody of the reserve – and the authority to award the custody contract – passes with the office. The solicitation is still under evaluation.",
+    done: true,
+    sourceIds: [10, 11, 12],
+  },
+  {
     date: "2026-08-31",
     dateLabel: "Late August 2026",
     title: "Contract execution — the target window",
     detail:
-      "The procurement targets contract execution for late August 2026. As of August 30, no award is posted on the ESBD and no custodian has been announced. This is the entry we update next.",
+      "The procurement targeted contract execution for late August 2026. The window closed: as of September 1, no award is posted on the ESBD and no custodian has been announced. This is the entry we update next.",
     done: false,
     sourceIds: [1, 4],
   },

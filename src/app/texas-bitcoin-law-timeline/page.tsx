@@ -70,7 +70,7 @@ export default function LawTimelinePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-22",
-    dateModified: "2026-08-09",
+    dateModified: "2026-09-01",
   };
 
   const faqJsonLd = {
@@ -129,7 +129,7 @@ export default function LawTimelinePage() {
             against the primary record.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published July 22, 2026 · Updated August 9, 2026
+            By {site.name} · Published July 22, 2026 · Updated September 1, 2026
           </p>
         </header>
 
@@ -335,8 +335,10 @@ export default function LawTimelinePage() {
             McAvity, SMU law professor Carla Reyes, and CleanSpark CFO Gary
             Vecchiarelli — and opened a request for proposals for the custody and
             liquidity partner that will carry the state from an ETF proxy into
-            directly held Bitcoin.<C n={24} /> The statute has become a standing
-            order at the trading desk — funding, custody, the committee, and the
+            directly held Bitcoin.<C n={24} /> On August 1, 2026, Don Huffines
+            was sworn in as Comptroller after Hancock&apos;s resignation,
+            inheriting the reserve with its custodian still unnamed.<C n={25} />{" "}
+            The statute has become a standing order at the trading desk — funding, custody, the committee, and the
             reserve&apos;s current status are tracked in full on{" "}
             <Link href="/texas-strategic-bitcoin-reserve">
               the Texas Strategic Bitcoin Reserve

@@ -8,7 +8,7 @@
 // Re-verify whenever the Comptroller acts, reports, or names the fifth committee
 // member — and bump RESERVE_LAST_VERIFIED and the page's dateModified together.
 
-export const RESERVE_LAST_VERIFIED = "August 30, 2026";
+export const RESERVE_LAST_VERIFIED = "September 1, 2026";
 
 export interface ReserveSource {
   id: number;
@@ -28,6 +28,7 @@ export const reserveSources: ReserveSource[] = [
   { id: 7, label: "Texas Policy Research — Texas House Approves SB 21 (context on the $10M appropriation)", url: "https://www.texaspolicyresearch.com/texas-house-approves-sb-21-paving-way-for-state-run-bitcoin-reserve/" },
   { id: 8, label: "Texas SmartBuy ESBD — RFP 908-26-1778WS: custody and liquidity services for the Texas Strategic Bitcoin Reserve", url: "https://www.txsmartbuy.gov/esbd/908-26-1778WS" },
   { id: 9, label: "Crypto Briefing — Texas plans to shift $10M Bitcoin holdings from IBIT to direct custody; bids due June 15, 2026, contract execution targeted for late August", url: "https://cryptobriefing.com/texas-expands-bitcoin-strategic-reserve/" },
+  { id: 10, label: "Texas Comptroller — Don Huffines Sworn in as Texas Comptroller, Refuses Salary, Calls for Property Tax Relief (August 1, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260801-don-huffines-sworn-in-as-texas-comptroller-refuses-salary-calls-for-property-tax-relief-1785512488796" },
 ];
 
 // Current status — the scannable "where the reserve stands today" panel. Each
@@ -40,13 +41,13 @@ export interface ReserveStatusRow {
 
 export const reserveStatus: ReserveStatusRow[] = [
   { label: "Enabling law", value: "Senate Bill 21, 89th Legislature — signed June 20, 2025, effective immediately", sourceIds: [1, 3] },
-  { label: "Manager", value: "Texas Comptroller of Public Accounts, holding the fund outside the state treasury", sourceIds: [2] },
+  { label: "Manager", value: "Texas Comptroller of Public Accounts — Don Huffines since August 1, 2026 — holding the fund outside the state treasury", sourceIds: [2, 10] },
   { label: "Appropriation", value: "$10 million from the Legislature (a $21M Senate rider was trimmed to $10M)", sourceIds: [7] },
   { label: "Eligibility floor", value: "Digital assets averaging ≥ $500B market cap over 24 months — only Bitcoin qualifies today", sourceIds: [2] },
   { label: "First purchase", value: "~$5 million into the iShares Bitcoin Trust on November 20, 2025", sourceIds: [4] },
   { label: "Current holdings", value: "$10 million in the iShares Bitcoin Trust (a spot BTC ETF) — the full appropriation deployed, held as an explicit placeholder", sourceIds: [8, 9] },
-  { label: "Custody", value: "No custodian named as of August 30, 2026. RFP 908-26-1778WS closed July 10, 2026 (extended from June 15); contract execution targeted for late August 2026, moving the $10M from the ETF proxy to directly held Bitcoin", sourceIds: [8, 9] },
-  { label: "Advisory committee", value: "Complete — Comptroller Kelly Hancock chairs, joined May 28, 2026 by Laurie Dotter, Jamie McAvity (Cormint), Carla Reyes (SMU), Gary Vecchiarelli (CleanSpark)", sourceIds: [5] },
+  { label: "Custody", value: "No custodian named as of September 1, 2026. RFP 908-26-1778WS closed July 10, 2026 (extended from June 15); the late-August execution target passed with no award, so the contract moving the $10M from the ETF proxy to directly held Bitcoin now executes under Comptroller Huffines", sourceIds: [8, 9, 10] },
+  { label: "Advisory committee", value: "Complete — the Comptroller chairs by office (Kelly Hancock to July 31, 2026; Don Huffines since August 1), joined May 28, 2026 by Laurie Dotter, Jamie McAvity (Cormint), Carla Reyes (SMU), Gary Vecchiarelli (CleanSpark)", sourceIds: [5, 10] },
   { label: "Reporting", value: "Comptroller must publish biennial reports on the fund's value and management", sourceIds: [2] },
 ];
 
@@ -102,7 +103,7 @@ export const reserveTimeline: ReserveEvent[] = [
     dateLabel: "Late August 2026",
     title: "Custody contract execution — the move to the keys",
     detail:
-      "The RFP targets contract execution for late August 2026. Once the custodian is under contract, the $10 million IBIT placeholder converts to directly held Bitcoin — the moment the reserve stops holding a claim and starts holding the asset.",
+      "The RFP targeted contract execution for late August 2026; the window passed with no award as of September 1, and the contract now executes under Comptroller Don Huffines, sworn in August 1. Once the custodian is under contract, the $10 million IBIT placeholder converts to directly held Bitcoin — the moment the reserve stops holding a claim and starts holding the asset.",
     done: false,
     sourceIds: [8, 9],
   },

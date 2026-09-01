@@ -6,17 +6,16 @@
 // Hancock is the executor of the people cluster: Abbott signed the reserve,
 // Patrick prioritized it, Schwertner authored it - Hancock is the man who
 // actually buys, holds, and reports the state's Bitcoin. The honest
-// counterweight: he is an unelected acting official making first-of-their-
-// kind investment decisions - and, since losing the March 3, 2026 primary
-// to Don Huffines, a lame duck executing the custody transition for a
-// successor to inherit.
+// counterweight: he was an unelected acting official making first-of-their-
+// kind investment decisions - and, after losing the March 3, 2026 primary
+// to Don Huffines, a lame duck who resigned effective July 31, 2026 with the
+// custody transition unfinished. Huffines inherited the reserve August 1.
 //
-// Verified August 2026. Re-verify when the custody contract executes
-// (targeted late August 2026), when the custodian is named, and after the
-// November 2026 general (Huffines vs. Eckhardt) decides who inherits the
-// reserve in January 2027.
+// Verified September 1, 2026. Hancock's record is closed; re-verify only if
+// the custodian award or the first SB 21 report re-characterizes what he
+// left behind. The successor's record lives in huffines.ts.
 
-export const HANCOCK_LAST_VERIFIED = "August 28, 2026";
+export const HANCOCK_LAST_VERIFIED = "September 1, 2026";
 
 export interface HancockSource {
   id: number;
@@ -42,6 +41,9 @@ export const hancockSources: HancockSource[] = [
   { id: 13, label: "Texas Tribune - Don Huffines defeats Christi Craddick and Kelly Hancock in the GOP primary for comptroller (March 3, 2026)", url: "https://www.texastribune.org/2026/03/03/don-huffines-christi-craddick-kelly-hancock-texas-gop-primary-comptroller/" },
   { id: 14, label: "Houston Chronicle - Don Huffines wins Texas Republican comptroller race, will face Sarah Eckhardt (March 2026)", url: "https://www.houstonchronicle.com/politics/election/2026/article/comptroller-primary-results-21329222.php" },
   { id: 15, label: "The Texan - Don Huffines Secures Strong Win in Republican Comptroller Primary (~58% to Hancock's ~23%, no runoff)", url: "https://thetexan.news/elections/2026/don-huffines-secures-strong-win-in-republican-comptroller-primary/article_db7b1cff-dde2-4125-a7e1-c11dfdea9e7b.html" },
+  { id: 16, label: "Texas Tribune - Acting Comptroller Kelly Hancock to step down as Texas CFO: resignation submitted July 1, 2026, effective end of July (July 1, 2026)", url: "https://www.texastribune.org/2026/07/01/texas-comptroller-kelly-hancock-resigns-greg-abbott-don-huffines/" },
+  { id: 17, label: "The Texan - Abbott Appoints Comptroller Candidate Don Huffines to Fill Outgoing Hancock's Unexpired Term (July 2, 2026)", url: "https://thetexan.news/state/texas-state-news/abbott-appoints-comptroller-candidate-don-huffines-to-fill-outgoing-hancocks-unexpired-term/article_6ae16818-e965-4319-8f0a-2524476ade36.html" },
+  { id: 18, label: "Texas Comptroller - Don Huffines Sworn in as Texas Comptroller, Refuses Salary, Calls for Property Tax Relief (August 1, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260801-don-huffines-sworn-in-as-texas-comptroller-refuses-salary-calls-for-property-tax-relief-1785512488796" },
 ];
 
 export type HancockTimelineKind = "path" | "office" | "execution" | "verdict";
@@ -98,7 +100,7 @@ export const hancockTimeline: HancockEvent[] = [
     dateLabel: "March 3, 2026",
     title: "The verdict: Hancock loses the primary he was appointed into",
     detail:
-      "Don Huffines wins the Republican primary for comptroller outright with about 58% to Hancock's roughly 23%, powered by a late Trump endorsement that overrode Governor Abbott's $2.6 million in ads backing Hancock. Hancock serves out the term as a lame duck - still executing the reserve's custody transition for a successor to inherit in January 2027.",
+      "Don Huffines wins the Republican primary for comptroller outright with about 58% to Hancock's roughly 23%, powered by a late Trump endorsement that overrode Governor Abbott's $2.6 million in ads backing Hancock. Hancock stays on as a lame duck, still running the reserve's custody transition - for four more months, as it turns out.",
     kind: "verdict",
     sourceIds: [13, 14, 15],
   },
@@ -110,5 +112,23 @@ export const hancockTimeline: HancockEvent[] = [
       "Hancock names the four outside members of the advisory committee he chairs - Laurie Dotter, Jamie McAvity, Carla Reyes, Gary Vecchiarelli - and issues the custody-and-liquidity RFP to move the reserve's now-$10 million IBIT position into directly held Bitcoin. Bids close July 10 (extended from June 15); contract execution is targeted for late August 2026.",
     kind: "execution",
     sourceIds: [5, 6, 7, 8],
+  },
+  {
+    date: "2026-07-01",
+    dateLabel: "July 1, 2026",
+    title: "The exit: Hancock resigns, Abbott appoints the man who beat him",
+    detail:
+      "Four months after the primary, Hancock submits his resignation effective July 31, 2026 - one year to the day after becoming acting comptroller - citing the completed rollout of the $1 billion Texas Education Freedom Accounts program. The next day Governor Abbott appoints Don Huffines to the unexpired term.",
+    kind: "verdict",
+    sourceIds: [16, 17],
+  },
+  {
+    date: "2026-08-01",
+    dateLabel: "August 1, 2026",
+    title: "The handoff - custodian unnamed",
+    detail:
+      "Huffines is sworn in and the reserve passes with the office: the $10 million ETF placeholder, the seated committee, and a custody solicitation still under evaluation. The clean transfer an orderly office promises is delivered in structure, not yet in substance - the award Hancock targeted for late August does not execute before he leaves.",
+    kind: "verdict",
+    sourceIds: [18, 7],
   },
 ];
