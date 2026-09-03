@@ -269,7 +269,7 @@ function SniLineageFigure() {
 function SniMempoolFigure() {
   return (
     <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
-<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" ariaLabel="The Mempool by year">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" aria-label="The Mempool by year">
 <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE MEMPOOL · 76 ESSAYS BY YEAR, 2012–2024</text>
 <rect x="28" y="42" width="10" height="10" rx="2" fill="var(--star)"/>
 <text x="42" y="51" fontSize="10.5" fill="var(--muted)">Krawisz</text>
@@ -353,7 +353,7 @@ function SniMempoolFigure() {
 function SniRelaunchFigure() {
   return (
     <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
-<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" ariaLabel="The relaunch, March 2024 to February 2025">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" aria-label="The relaunch, March 2024 to February 2025">
 <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">GOING INSTITUTIONAL · MARCH 2024 → FEBRUARY 2025</text>
 <line x1="66" x2="690" y1="150" y2="150" stroke="var(--accent)" strokeWidth="2"/>
 <line x1="690" x2="724" y1="150" y2="150" stroke="var(--accent)" strokeWidth="2" strokeDasharray="4 4"/>
@@ -429,7 +429,7 @@ function SniRelaunchFigure() {
 function SniSatoshiFigure() {
   return (
     <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
-<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" ariaLabel="Satoshi's public record by month, October 2008 to December 2010">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" aria-label="Satoshi's public record by month, October 2008 to December 2010">
 <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE COMPLETE SATOSHI · 543 FORUM POSTS AND 39 LIST EMAILS, BY MONTH</text>
 <rect x="600" y="44" width="10" height="10" rx="2" fill="var(--accent)"/><text x="614" y="53" fontSize="10.5" fill="var(--muted)">forum posts</text>
 <rect x="700" y="44" width="10" height="10" rx="2" fill="var(--star)"/><text x="714" y="53" fontSize="10.5" fill="var(--muted)">list emails</text>
