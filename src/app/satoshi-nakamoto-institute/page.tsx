@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     q: "Why did Daniel Krawisz leave the Nakamoto Institute?",
-    a: "Over the block-size war. His last Institute essay ran January 8, 2017; by August 2017 he was publicly favoring forks over Bitcoin Core's development model, and he later became a Bitcoin SV advocate. In 2020 he said he had lost the allies he started the Institute with because they 'bought into core ideas,' and that 'BTC betrayed me.' The Institute still hosts all thirty of his essays.",
+    a: "Over the block-size war. His last Institute essay ran January 8, 2017; by August 2017 he was publicly favoring forks over Bitcoin Core's development model, and he later became a Bitcoin SV advocate. In 2020 he said he had lost the allies he started the Institute with because they 'bought into core ideas,' and that 'BTC betrayed me.' The Institute still hosts all thirty-four of his essays.",
   },
   {
     q: "Is the Satoshi Nakamoto Institute still active?",
@@ -259,6 +259,234 @@ function SniLineageFigure() {
         Bitcoin-only worldview; then the line forks – one founder out to BSV,
         the Institute into a 501(c)(3). Every node is sourced in the article
         below.
+      </figcaption>
+    </figure>
+  );
+}
+
+// Three data figures, generated from the same counts the article cites
+// (Mempool index, newsletter archive, Complete Satoshi index; Sept 2026).
+function SniMempoolFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" ariaLabel="The Mempool by year">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE MEMPOOL · 76 ESSAYS BY YEAR, 2012–2024</text>
+<rect x="28" y="42" width="10" height="10" rx="2" fill="var(--star)"/>
+<text x="42" y="51" fontSize="10.5" fill="var(--muted)">Krawisz</text>
+<rect x="100.69999999999999" y="42" width="10" height="10" rx="2" fill="var(--accent-soft)"/>
+<text x="114.69999999999999" y="51" fontSize="10.5" fill="var(--muted)">Rochard · Goldstein</text>
+<rect x="246.59999999999997" y="42" width="10" height="10" rx="2" fill="var(--accent)"/>
+<text x="260.59999999999997" y="51" fontSize="10.5" fill="var(--muted)">Parker Lewis</text>
+<rect x="349.79999999999995" y="42" width="10" height="10" rx="2" fill="var(--muted-2)"/>
+<text x="363.79999999999995" y="51" fontSize="10.5" fill="var(--muted)">Everyone else</text>
+<line x1="64" x2="796" y1="182.9" y2="182.9" stroke="var(--border)" strokeWidth="1"/>
+<text x="56" y="186.9" fontSize="10" textAnchor="end" fill="var(--muted-2)">10</text>
+<line x1="64" x2="796" y1="119.8" y2="119.8" stroke="var(--border)" strokeWidth="1"/>
+<text x="56" y="123.8" fontSize="10" textAnchor="end" fill="var(--muted-2)">20</text>
+<line x1="64" x2="796" y1="246" y2="246" stroke="var(--muted-2)" strokeWidth="1"/>
+<rect x="75.2" y="239.7" width="34" height="6.3" fill="var(--accent-soft)"/>
+<rect x="75.2" y="233.4" width="34" height="6.3" fill="var(--muted-2)"/>
+<text x="92.2" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2012</text>
+<text x="92.2" y="227.4" fontSize="10.5" textAnchor="middle" fill="var(--muted)">2</text>
+<rect x="131.5" y="195.5" width="34" height="50.5" fill="var(--star)"/>
+<rect x="131.5" y="176.6" width="34" height="18.9" fill="var(--accent-soft)"/>
+<rect x="131.5" y="170.3" width="34" height="6.3" fill="var(--muted-2)"/>
+<text x="148.5" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2013</text>
+<text x="148.5" y="164.3" fontSize="10.5" textAnchor="middle" fill="var(--muted)">12</text>
+<rect x="187.8" y="119.8" width="34" height="126.2" fill="var(--star)"/>
+<rect x="187.8" y="100.9" width="34" height="18.9" fill="var(--accent-soft)"/>
+<rect x="187.8" y="82.0" width="34" height="18.9" fill="var(--muted-2)"/>
+<text x="204.8" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2014</text>
+<text x="204.8" y="76.0" fontSize="10.5" textAnchor="middle" fill="var(--muted)">26</text>
+<rect x="244.1" y="233.4" width="34" height="12.6" fill="var(--star)"/>
+<rect x="244.1" y="227.1" width="34" height="6.3" fill="var(--muted-2)"/>
+<text x="261.1" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2015</text>
+<text x="261.1" y="221.1" fontSize="10.5" textAnchor="middle" fill="var(--muted)">3</text>
+<rect x="300.4" y="227.1" width="34" height="18.9" fill="var(--star)"/>
+<rect x="300.4" y="220.8" width="34" height="6.3" fill="var(--muted-2)"/>
+<text x="317.4" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2016</text>
+<text x="317.4" y="214.8" fontSize="10.5" textAnchor="middle" fill="var(--muted)">4</text>
+<rect x="356.7" y="239.7" width="34" height="6.3" fill="var(--star)"/>
+<rect x="356.7" y="220.8" width="34" height="18.9" fill="var(--muted-2)"/>
+<text x="373.7" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2017</text>
+<text x="373.7" y="214.8" fontSize="10.5" textAnchor="middle" fill="var(--muted)">4</text>
+<rect x="413.0" y="239.7" width="34" height="6.3" fill="var(--accent-soft)"/>
+<rect x="413.0" y="227.1" width="34" height="12.6" fill="var(--muted-2)"/>
+<text x="430.0" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2018</text>
+<text x="430.0" y="221.1" fontSize="10.5" textAnchor="middle" fill="var(--muted)">3</text>
+<rect x="469.3" y="176.6" width="34" height="69.4" fill="var(--accent)"/>
+<rect x="469.3" y="170.3" width="34" height="6.3" fill="var(--muted-2)"/>
+<text x="486.3" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2019</text>
+<text x="486.3" y="164.3" fontSize="10.5" textAnchor="middle" fill="var(--muted)">12</text>
+<rect x="525.6" y="214.5" width="34" height="31.5" fill="var(--accent)"/>
+<text x="542.6" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2020</text>
+<text x="542.6" y="208.5" fontSize="10.5" textAnchor="middle" fill="var(--muted)">5</text>
+<rect x="581.9" y="239.7" width="34" height="6.3" fill="var(--muted-2)"/>
+<text x="598.9" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2021</text>
+<text x="598.9" y="233.7" fontSize="10.5" textAnchor="middle" fill="var(--muted)">1</text>
+<rect x="638.2" y="239.7" width="34" height="6.3" fill="var(--accent-soft)"/>
+<rect x="638.2" y="233.4" width="34" height="6.3" fill="var(--muted-2)"/>
+<text x="655.2" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2022</text>
+<text x="655.2" y="227.4" fontSize="10.5" textAnchor="middle" fill="var(--muted)">2</text>
+<rect x="694.5" y="239.7" width="34" height="6.3" fill="var(--accent-soft)"/>
+<text x="711.5" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2023</text>
+<text x="711.5" y="233.7" fontSize="10.5" textAnchor="middle" fill="var(--muted)">1</text>
+<rect x="750.8" y="239.7" width="34" height="6.3" fill="var(--accent-soft)"/>
+<text x="767.8" y="262" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2024</text>
+<text x="767.8" y="233.7" fontSize="10.5" textAnchor="middle" fill="var(--muted)">1</text>
+<text x="234.76923076923077" y="86" fontSize="11.5" fontWeight="600" textAnchor="start" fill="var(--foreground)">The canon year: 26 essays, 20 of them Krawisz</text>
+<text x="460.3076923076923" y="150" fontSize="11" fontWeight="400" textAnchor="end" fill="var(--muted)">2015–2018: the quiet years</text>
+<text x="460.3076923076923" y="164" fontSize="10.5" fontWeight="400" textAnchor="end" fill="var(--muted-2)">14 essays in four years; Krawisz&apos;s last, Jan 2017</text>
+<text x="516.3076923076924" y="112" fontSize="11.5" fontWeight="600" textAnchor="start" fill="var(--foreground)">Parker Lewis&apos;s 16-part</text>
+<text x="516.3076923076924" y="128" fontSize="11" fontWeight="400" textAnchor="start" fill="var(--muted)">Gradually, Then Suddenly (2019–20)</text>
+<text x="711.5384615384615" y="190" fontSize="10.5" fontWeight="400" textAnchor="middle" fill="var(--muted-2)">2021–24: one or two a year;</text>
+<text x="711.5384615384615" y="204" fontSize="10.5" fontWeight="400" textAnchor="middle" fill="var(--muted-2)">the work moves to the archive</text>
+<text x="405.0" y="290" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">essays by publication year · counted from the Mempool index, September 2026</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The Mempool by year. Seventy-six essays over thirteen years, and the shape of the story is in the bars: the 2014 canon year, the 2015–2018 trough after the director of research fell silent, the 2019–2020 rise when Parker Lewis published his sixteen-part series on the shelf, then the archival years before the 2024 relaunch. Counted from the Institute&apos;s index, September 2026.
+      </figcaption>
+    </figure>
+  );
+}
+
+function SniRelaunchFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" ariaLabel="The relaunch, March 2024 to February 2025">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">GOING INSTITUTIONAL · MARCH 2024 → FEBRUARY 2025</text>
+<line x1="66" x2="690" y1="150" y2="150" stroke="var(--accent)" strokeWidth="2"/>
+<line x1="690" x2="724" y1="150" y2="150" stroke="var(--accent)" strokeWidth="2" strokeDasharray="4 4"/>
+<text x="726" y="142" fontSize="10" fill="var(--muted-2)">→ Jan 2026</text>
+<text x="726" y="155" fontSize="10" fill="var(--muted-2)">annual dinner</text>
+<line x1="66.0" x2="66.0" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<text x="66.0" y="168" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Mar 2024</text>
+<line x1="119.0" x2="119.0" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<line x1="170.3" x2="170.3" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<line x1="223.3" x2="223.3" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<text x="223.3" y="168" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Jun 2024</text>
+<line x1="274.6" x2="274.6" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<line x1="327.6" x2="327.6" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<line x1="380.6" x2="380.6" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<text x="380.6" y="168" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Sep 2024</text>
+<line x1="431.9" x2="431.9" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<line x1="484.8" x2="484.8" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<line x1="536.1" x2="536.1" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<text x="536.1" y="168" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Dec 2024</text>
+<line x1="589.1" x2="589.1" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<line x1="642.1" x2="642.1" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<line x1="690.0" x2="690.0" y1="146" y2="154" stroke="var(--muted-2)" strokeWidth="1"/>
+<text x="690.0" y="168" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Mar 2025</text>
+<line x1="71.1" x2="71.1" y1="144" y2="80" stroke="var(--muted-2)" strokeWidth="1"/>
+<circle cx="71.1" cy="150" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="71.1" y="46" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Going institutional</text>
+<text x="71.1" y="59" fontSize="10" textAnchor="middle" fill="var(--muted-2)">a Texas 501(c)(3) public charity</text>
+<text x="71.1" y="72" fontSize="10" textAnchor="middle" fill="var(--accent)">Mar 4, 2024</text>
+<line x1="144.6" x2="144.6" y1="156" y2="220" stroke="var(--muted-2)" strokeWidth="1"/>
+<circle cx="144.6" cy="150" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="144.6" y="242" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Redesign fundraiser</text>
+<text x="144.6" y="255" fontSize="10" textAnchor="middle" fill="var(--muted-2)">opens</text>
+<text x="144.6" y="228" fontSize="10" textAnchor="middle" fill="var(--accent)">Apr 16, 2024</text>
+<line x1="168.6" x2="168.6" y1="144" y2="128" stroke="var(--muted-2)" strokeWidth="1"/>
+<circle cx="168.6" cy="150" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="168.6" y="94" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Translation community</text>
+<text x="168.6" y="107" fontSize="10" textAnchor="middle" fill="var(--muted-2)">15+ languages</text>
+<text x="168.6" y="120" fontSize="10" textAnchor="middle" fill="var(--accent)">Apr 30, 2024</text>
+<line x1="214.7" x2="214.7" y1="156" y2="172" stroke="var(--muted-2)" strokeWidth="1"/>
+<circle cx="214.7" cy="150" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="214.7" y="194" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">21 million sats</text>
+<text x="214.7" y="207" fontSize="10" textAnchor="middle" fill="var(--muted-2)">redesign fund closes</text>
+<text x="214.7" y="180" fontSize="10" textAnchor="middle" fill="var(--accent)">May 27, 2024</text>
+<line x1="281.4" x2="281.4" y1="144" y2="80" stroke="var(--muted-2)" strokeWidth="1"/>
+<circle cx="281.4" cy="150" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="281.4" y="46" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">OpenSats</text>
+<text x="281.4" y="59" fontSize="10" textAnchor="middle" fill="var(--muted-2)">Education Initiative grant</text>
+<text x="281.4" y="72" fontSize="10" textAnchor="middle" fill="var(--accent)">Jul 5, 2024</text>
+<line x1="317.3" x2="317.3" y1="156" y2="220" stroke="var(--muted-2)" strokeWidth="1"/>
+<circle cx="317.3" cy="150" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="317.3" y="242" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">The new SNI</text>
+<text x="317.3" y="255" fontSize="10" textAnchor="middle" fill="var(--muted-2)">“Gradually, Then Suddenly”</text>
+<text x="317.3" y="228" fontSize="10" textAnchor="middle" fill="var(--accent)">Jul 26, 2024</text>
+<line x1="351.5" x2="351.5" y1="144" y2="128" stroke="var(--muted-2)" strokeWidth="1"/>
+<circle cx="351.5" cy="150" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="351.5" y="94" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">P2P Research emails</text>
+<text x="351.5" y="107" fontSize="10" textAnchor="middle" fill="var(--muted-2)">added to the archive</text>
+<text x="351.5" y="120" fontSize="10" textAnchor="middle" fill="var(--accent)">Aug 15, 2024</text>
+<line x1="660.9" x2="660.9" y1="156" y2="172" stroke="var(--muted-2)" strokeWidth="1"/>
+<circle cx="660.9" cy="150" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="660.9" y="194" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">The Reorg</text>
+<text x="660.9" y="207" fontSize="10" textAnchor="middle" fill="var(--muted-2)">podcast: re-reading the archive</text>
+<text x="660.9" y="180" fontSize="10" textAnchor="middle" fill="var(--accent)">Feb 12, 2025</text>
+<text x="405.0" y="292" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">dated from the Institute’s newsletter archive · to scale by month</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        Going institutional. Eleven months from a newsletter post announcing tax-exempt status to a podcast re-reading the archive, with the redesign fund, the translation community, the OpenSats grant, and the new site in between. Dated from the Institute&apos;s own newsletter archive; drawn to scale by month.
+      </figcaption>
+    </figure>
+  );
+}
+
+function SniSatoshiFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" ariaLabel="Satoshi's public record by month, October 2008 to December 2010">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE COMPLETE SATOSHI · 543 FORUM POSTS AND 39 LIST EMAILS, BY MONTH</text>
+<rect x="600" y="44" width="10" height="10" rx="2" fill="var(--accent)"/><text x="614" y="53" fontSize="10.5" fill="var(--muted)">forum posts</text>
+<rect x="700" y="44" width="10" height="10" rx="2" fill="var(--star)"/><text x="714" y="53" fontSize="10.5" fill="var(--muted)">list emails</text>
+<line x1="64" x2="672" y1="179.8" y2="179.8" stroke="var(--border)" strokeWidth="1"/>
+<text x="56" y="183.8" fontSize="10" textAnchor="end" fill="var(--muted-2)">50</text>
+<line x1="64" x2="672" y1="123.5" y2="123.5" stroke="var(--border)" strokeWidth="1"/>
+<text x="56" y="127.5" fontSize="10" textAnchor="end" fill="var(--muted-2)">100</text>
+<line x1="64" x2="672" y1="236" y2="236" stroke="var(--muted-2)" strokeWidth="1"/>
+<rect x="67.4" y="234.5" width="15.8" height="1.5" fill="var(--star)"/>
+<line x1="64.0" x2="64.0" y1="236" y2="242" stroke="var(--muted-2)"/>
+<text x="68.0" y="254" fontSize="10.5" fill="var(--muted-2)">2008</text>
+<rect x="89.9" y="220.2" width="15.8" height="15.8" fill="var(--star)"/>
+<rect x="112.4" y="234.5" width="15.8" height="1.5" fill="var(--star)"/>
+<rect x="134.9" y="227.0" width="15.8" height="9.0" fill="var(--star)"/>
+<line x1="131.6" x2="131.6" y1="236" y2="242" stroke="var(--muted-2)"/>
+<text x="135.6" y="254" fontSize="10.5" fill="var(--muted-2)">2009</text>
+<rect x="157.5" y="232.6" width="15.8" height="3.4" fill="var(--accent)"/>
+<rect x="157.5" y="224.8" width="15.8" height="7.9" fill="var(--star)"/>
+<rect x="180.0" y="234.5" width="15.8" height="1.5" fill="var(--star)"/>
+<rect x="337.6" y="234.5" width="15.8" height="1.5" fill="var(--star)"/>
+<rect x="360.1" y="224.8" width="15.8" height="11.2" fill="var(--accent)"/>
+<rect x="382.6" y="221.4" width="15.8" height="14.6" fill="var(--accent)"/>
+<rect x="382.6" y="219.9" width="15.8" height="1.5" fill="var(--star)"/>
+<rect x="405.2" y="223.6" width="15.8" height="12.4" fill="var(--accent)"/>
+<line x1="401.8" x2="401.8" y1="236" y2="242" stroke="var(--muted-2)"/>
+<text x="405.8" y="254" fontSize="10.5" fill="var(--muted-2)">2010</text>
+<rect x="427.7" y="182.0" width="15.8" height="54.0" fill="var(--accent)"/>
+<rect x="450.2" y="223.6" width="15.8" height="12.4" fill="var(--accent)"/>
+<rect x="495.2" y="218.0" width="15.8" height="18.0" fill="var(--accent)"/>
+<rect x="517.7" y="183.1" width="15.8" height="52.9" fill="var(--accent)"/>
+<rect x="540.3" y="74.0" width="15.8" height="162.0" fill="var(--accent)"/>
+<rect x="540.3" y="71.8" width="15.8" height="2.2" fill="var(--star)"/>
+<rect x="562.8" y="92.0" width="15.8" height="144.0" fill="var(--accent)"/>
+<rect x="562.8" y="90.5" width="15.8" height="1.5" fill="var(--star)"/>
+<rect x="585.3" y="193.2" width="15.8" height="42.8" fill="var(--accent)"/>
+<rect x="607.8" y="203.4" width="15.8" height="32.6" fill="var(--accent)"/>
+<rect x="630.3" y="211.2" width="15.8" height="24.8" fill="var(--accent)"/>
+<rect x="652.9" y="211.2" width="15.8" height="24.8" fill="var(--accent)"/>
+<rect x="652.9" y="209.0" width="15.8" height="2.2" fill="var(--star)"/>
+<text x="103.8" y="120" fontSize="11.5" fontWeight="600" textAnchor="start" fill="var(--foreground)" fontFamily="var(--font-display)">Oct 31, 2008</text>
+<text x="103.8" y="134" fontSize="10" fontWeight="400" textAnchor="start" fill="var(--muted-2)">the whitepaper email; a month of</text>
+<text x="103.8" y="146" fontSize="10" fontWeight="400" textAnchor="start" fill="var(--muted-2)">argument on the cryptography list</text>
+<text x="148.8" y="176" fontSize="11.5" fontWeight="600" textAnchor="start" fill="var(--foreground)" fontFamily="var(--font-display)">Jan 2009</text>
+<text x="148.8" y="190" fontSize="10" fontWeight="400" textAnchor="start" fill="var(--muted-2)">genesis block; v0.1 released</text>
+<text x="368.0" y="204" fontSize="11.5" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Nov 2009</text>
+<text x="368.0" y="218" fontSize="10" fontWeight="400" textAnchor="middle" fill="var(--muted-2)">the forum opens</text>
+<text x="513.6" y="66" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Summer 2010 · 272 posts in two months</text>
+<text x="513.6" y="80" fontSize="10" fontWeight="400" textAnchor="end" fill="var(--muted-2)">exchanges, Slashdot, the first GPU miners;</text>
+<text x="513.6" y="92" fontSize="10" fontWeight="400" textAnchor="end" fill="var(--muted-2)">the peak is July: 144 posts</text>
+<text x="676.7" y="176" fontSize="11.5" fontWeight="600" textAnchor="start" fill="var(--foreground)" fontFamily="var(--font-display)">Dec 12, 2010</text>
+<text x="676.7" y="190" fontSize="10" fontWeight="400" textAnchor="start" fill="var(--muted-2)">the last forum post;</text>
+<text x="676.7" y="202" fontSize="10" fontWeight="400" textAnchor="start" fill="var(--muted-2)">one more in March 2014:</text>
+<text x="676.7" y="214" fontSize="10" fontWeight="400" textAnchor="start" fill="var(--muted-2)">“I am not Dorian Nakamoto”</text>
+<text x="405.0" y="292" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">counted from the Complete Satoshi index, September 2026 · the whitepaper, the code, and private correspondence are archived separately</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        What the archive holds, by month. Every public word: 39 mailing-list emails from the whitepaper announcement on October 31, 2008, and 543 forum posts from February 2009 to the last on December 12, 2010, with the busy summer of 2010 at the center. Counted from the Complete Satoshi index, September 2026.
       </figcaption>
     </figure>
   );
@@ -508,10 +736,15 @@ export default function SatoshiNakamotoInstitutePage() {
               the Ross Ulbricht page
             </Link>
             .<C n={6} /> The Mempool then became the shelf the next
-            generation published on: Parker Lewis&apos;s 2020 essays,
-            Gigi&apos;s &ldquo;Bitcoin is Time&rdquo; in 2021, and
-            Goldstein&apos;s own return in 2022 and 2023.<C n={8} />
+            generation published on: all sixteen parts of Parker
+            Lewis&apos;s &ldquo;Gradually, Then Suddenly&rdquo; in 2019 and
+            2020, Ross Ulbricht&apos;s &ldquo;Bitcoin Equals Freedom&rdquo; in
+            2019, Gigi&apos;s &ldquo;Bitcoin is Time&rdquo; in 2021, and
+            Goldstein&apos;s own return in 2022 and 2023 – seventy-six essays
+            in all, counted in September 2026.<C n={8} />
           </p>
+
+          <SniMempoolFigure />
 
           <h2>What does the archive actually hold?</h2>
           <p>
@@ -536,11 +769,14 @@ export default function SatoshiNakamotoInstitutePage() {
             .
           </p>
 
+          <SniSatoshiFigure />
+
           <h2>The honest counterweight: the co-founder who left, and the years nobody was home</h2>
           <p>
             The Institute&apos;s most prolific author ended up on the other
-            side of its central argument. Krawisz wrote thirty of the
-            Mempool&apos;s essays; the last ran on January 8, 2017.<C n={6} />{" "}
+            side of its central argument. Krawisz wrote thirty-four of the
+            Mempool&apos;s seventy-six essays; the last ran on January 8,
+            2017.<C n={6} /><C n={8} />{" "}
             Seven months later, with Bitcoin Cash forking off, he told
             Bitcoin.com &ldquo;I don&apos;t like altcoins, but I like
             forks&rdquo; – forks put investors, not developers, in
@@ -565,8 +801,8 @@ export default function SatoshiNakamotoInstitutePage() {
           <p>
             The fair reading is that all three are the record working as
             designed. The Institute did not delete Krawisz when he left; his
-            thirty essays are online with the rest, which is what an archive
-            is for.<C n={6} /> The dormant years still produced the shelf
+            thirty-four essays are online with the rest, which is what an
+            archive is for.<C n={6} /> The dormant years still produced the shelf
             Parker Lewis and Gigi published on.<C n={8} /> And a state reserve
             is a speculative attack by another name – a treasury borrowing
             against the dollar to hold the harder asset – which is closer to
@@ -596,6 +832,8 @@ export default function SatoshiNakamotoInstitutePage() {
             2024 revenue was about $138,000; the first annual dinner was
             announced for early 2026.<C n={17} /><C n={14} />
           </p>
+
+          <SniRelaunchFigure />
 
           <h2>Where does the Institute stand in the Texas story?</h2>
           <p>
