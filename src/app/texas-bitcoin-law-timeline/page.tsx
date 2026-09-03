@@ -309,8 +309,9 @@ export default function LawTimelinePage() {
           <h2>What is the Texas Strategic Bitcoin Reserve?</h2>
           <p>
             The Texas Strategic Bitcoin Reserve is a state-owned Bitcoin fund
-            created by <strong>Senate Bill 21</strong>, authored by Senator
-            Charles Schwertner and signed by Governor Greg Abbott on June 20,
+            created by <strong>Senate Bill 21</strong>, authored by{" "}
+            <Link href="/charles-schwertner-bitcoin">Senator Charles Schwertner</Link>{" "}
+            and signed by Governor Greg Abbott on June 20,
             2025, effective immediately.<C n={1} /><C n={21} /> It made Texas
             the first state to establish a standalone, publicly funded Bitcoin
             reserve — held outside the state treasury, managed by the Texas

@@ -320,8 +320,9 @@ export default function DeadBillsPage() {
 
           <h2>What were the reserve designs Texas didn&apos;t choose?</h2>
           <p>
-            Three, and the differences are instructive. Senator
-            Schwertner&apos;s SB 778 was the opening draft - filed January
+            Three, and the differences are instructive. Senator{" "}
+            <Link href="/charles-schwertner-bitcoin">Schwertner</Link>&apos;s
+            SB 778 was the opening draft - filed January
             14, 2025, appropriation included - and died the procedural death
             of a bill superseded by its own successor, SB 21.<C n={1} />
             <C n={13} /> Representative Capriglione&apos;s HB 1598 was the

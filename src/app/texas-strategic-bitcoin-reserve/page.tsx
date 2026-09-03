@@ -264,8 +264,9 @@ export default function ReservePage() {
           <h2>What is the Texas Strategic Bitcoin Reserve?</h2>
           <p>
             It is a state-owned Bitcoin fund created by{" "}
-            <strong>Senate Bill 21</strong>, authored by Senator Charles
-            Schwertner and signed by{" "}
+            <strong>Senate Bill 21</strong>, authored by{" "}
+            <Link href="/charles-schwertner-bitcoin">Senator Charles Schwertner</Link>{" "}
+            and signed by{" "}
             <Link href="/greg-abbott-bitcoin">Governor Greg Abbott</Link> on
             June 20, 2025, effective immediately.<C n={1} /><C n={3} /> Its defining trait is
             structural: the reserve sits <em>outside</em> the state treasury,

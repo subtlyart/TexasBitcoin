@@ -135,7 +135,9 @@ export default function KellyHancockBitcoinPage() {
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Governor Abbott signed the reserve. Lieutenant Governor Patrick
-            prioritized it. Senator Schwertner wrote it. But statutes
+            prioritized it.{" "}
+            <Link href="/charles-schwertner-bitcoin">Senator Schwertner</Link>{" "}
+            wrote it. But statutes
             don&apos;t buy Bitcoin – comptrollers do, and the one who executed
             the first state Bitcoin purchase in American history is a man most
             of the country has never heard of. This is the execution record of

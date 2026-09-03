@@ -316,7 +316,9 @@ export default function DonHuffinesBitcoinPage() {
             <Link href="/texas-strategic-bitcoin-reserve">
               Senate Bill 21
             </Link>{" "}
-            – signed June 20, 2025 – did not exist. The candidate who finished
+            – authored by{" "}
+            <Link href="/charles-schwertner-bitcoin">Charles Schwertner</Link>{" "}
+            and signed June 20, 2025 – did not exist. The candidate who finished
             third proposed the thing the Legislature later built, and the
             Legislature built it in a form he can now operate. The rest of the
             plan aged less well: legal tender is a lane Article I, Section 10

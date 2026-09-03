@@ -76,7 +76,7 @@ export default function DanPatrickBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-28",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-01",
     about: [
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Dan Patrick" },
@@ -311,8 +311,9 @@ export default function DanPatrickBitcoinPage() {
 
           <h2>What was Patrick&apos;s role in the Texas Bitcoin Reserve?</h2>
           <p>
-            Prioritizer, floor manager, and closer. The reserve was authored
-            by Senator Charles Schwertner, but it moved because Patrick put it
+            Prioritizer, floor manager, and closer. The reserve was authored by{" "}
+            <Link href="/charles-schwertner-bitcoin">Senator Charles Schwertner</Link>,
+            but it moved because Patrick put it
             among his session priorities and onto the Top 40 list that
             organizes the Senate&apos;s calendar.<C n={9} /><C n={2} /> His
             March 6, 2025 statement framed the stakes nationally - President
