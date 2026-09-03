@@ -82,7 +82,7 @@ export default function TedCruzBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-28",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-01",
     about: [
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Ted Cruz" },
@@ -274,7 +274,10 @@ export default function TedCruzBitcoinPage() {
             invested in it, but he &ldquo;didn&apos;t understand it very
             much,&rdquo; and he joked that Peter Thiel - a major backer of his
             2012 presidential run and an early Bitcoin investor - never told
-            him about it.<C n={26} /> Five years later the same senator chairs
+            him about it.<C n={26} /> The questioner was Austin Bitcoin
+            educator{" "}
+            <Link href="/jimmy-song-bitcoin">Jimmy Song</Link>, whose own
+            record is on this site. Five years later the same senator chairs
             the committee that oversees digital-asset market structure, holds a
             CBDC ban on the books, and discloses six figures of bitcoin in
             personal holdings.<C n={8} /><C n={25} /> There is no reversal in

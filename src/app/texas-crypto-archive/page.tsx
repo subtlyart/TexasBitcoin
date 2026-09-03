@@ -103,7 +103,7 @@ export default function ArchivePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: `${site.url}/texas-crypto-archive`,
     datePublished: "2026-07-13",
-    dateModified: "2026-08-30",
+    dateModified: "2026-09-01",
   };
 
   const faqJsonLd = {
@@ -169,7 +169,7 @@ export default function ArchivePage() {
             every claim sourced.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published July 13, 2026 · Updated August 30, 2026
+            By {site.name} · Published July 13, 2026 · Updated September 1, 2026
           </p>
         </header>
 
@@ -371,7 +371,12 @@ export default function ArchivePage() {
             moving its network of hundreds of thousands of hotspots onto
             Solana on April 18, 2023.<C n={24} /> The Texas thread runs clean
             through it: an Austin fund&apos;s two defining bets - Solana and
-            Helium - converged into one stack.
+            Helium - converged into one stack. The Bitcoin-only counterpart
+            to all of it lived in the same city the whole time:{" "}
+            <Link href="/jimmy-song-bitcoin">Jimmy Song</Link>, the
+            Programming Bitcoin author who taught the protocol at UT Austin
+            in 2019 and greeted Consensus&apos;s 2022 arrival by calling the
+            week &ldquo;altcoin scammer central.&rdquo;
           </p>
 
           <h2>2023–2024: The industry comes to town</h2>
