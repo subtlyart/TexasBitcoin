@@ -65,6 +65,205 @@ function C({ n }: { n: number }) {
   );
 }
 
+// One original visual: the lineage and the room. The Library's canon
+// converges on an Austin reading group; the room emits the three 2014
+// essays; the line then forks - one founder out to BSV, the Institute
+// into a 501(c)(3). Server-rendered inline SVG, CSS-only animation,
+// disabled under prefers-reduced-motion.
+const LIBRARY: { y: number; who: string; what: string; satoshi?: boolean }[] = [
+  { y: 62, who: "Chaum 1982", what: "blind signatures" },
+  { y: 92, who: "May 1988", what: "crypto-anarchist manifesto" },
+  { y: 122, who: "Hughes 1993", what: "cypherpunk manifesto" },
+  { y: 152, who: "Szabo 1994–2005", what: "smart contracts, Bit Gold" },
+  { y: 182, who: "Dai 1998", what: "b-money" },
+  { y: 212, who: "Back 2002", what: "hashcash" },
+  { y: 242, who: "Finney 2004", what: "reusable proofs of work" },
+  { y: 272, who: "Satoshi 2008", what: "the whitepaper", satoshi: true },
+];
+const CANON: { y: number; title: string; date: string }[] = [
+  { y: 104, title: "Hyperbitcoinization", date: "Krawisz · March 29, 2014" },
+  { y: 166, title: "Speculative Attack", date: "Rochard · July 4, 2014" },
+  { y: 228, title: "Everyone's a Scammer", date: "Goldstein · September 11, 2014" },
+];
+
+function SniLineageFigure() {
+  // Geometry (viewBox 810 x 384): library labels right-aligned to x=278,
+  // their dots at x=290; the room spans x=370..532; canon dots at x=626.
+  const dotL = 290;
+  const boxL = 370;
+  const boxR = 532;
+  const boxMid = 166;
+  const boxCx = (boxL + boxR) / 2;
+  const dotR = 626;
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+      <svg
+        viewBox="0 0 810 384"
+        role="img"
+        aria-labelledby="sni-fig-title sni-fig-desc"
+        className="h-auto w-full min-w-[660px]"
+      >
+        <title id="sni-fig-title">The lineage and the room</title>
+        <desc id="sni-fig-desc">
+          Eight works from the Institute&apos;s Library, from Chaum in 1982 to
+          the Bitcoin whitepaper in 2008, converge on a box labeled Austin:
+          the Satoshi Nakamoto Institute, founded November 2013 out of a
+          University of Texas reading group. From the box, three lines run
+          to the 2014 essays: Hyperbitcoinization, Speculative Attack, and
+          Everyone&apos;s a Scammer. Below the box the line forks: a dashed
+          branch to the schism, Krawisz to Bitcoin Cash and BSV, and a solid
+          branch to the relaunch as a 501(c)(3) in 2024.
+        </desc>
+        <style>{`
+          .sni-flow {
+            stroke-dasharray: 600;
+            stroke-dashoffset: 600;
+            animation: sni-draw 2s ease-out forwards;
+          }
+          .sni-flow.in { animation-delay: 0.2s; }
+          .sni-flow.out { animation-delay: 1.1s; }
+          .sni-flow.fork { animation-delay: 1.9s; }
+          @keyframes sni-draw { to { stroke-dashoffset: 0; } }
+          @media (prefers-reduced-motion: reduce) {
+            .sni-flow { animation: none; stroke-dashoffset: 0; }
+          }
+        `}</style>
+
+        {/* Column headers */}
+        <text x="28" y="34" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">
+          THE LIBRARY · 1982–2008
+        </text>
+        <text x={boxL} y="34" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">
+          THE ROOM · 2013
+        </text>
+        <text x={dotR} y="34" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">
+          THE CANON · 2014
+        </text>
+
+        {/* Upstream: the library converges on the room */}
+        {LIBRARY.map((n) => (
+          <g key={n.who}>
+            <path
+              className="sni-flow in"
+              d={`M${dotL},${n.y} C${dotL + 40},${n.y} ${boxL - 30},${boxMid} ${boxL},${boxMid}`}
+              fill="none"
+              stroke={n.satoshi ? "var(--accent)" : "var(--muted-2)"}
+              strokeWidth={n.satoshi ? 2 : 1.25}
+              strokeOpacity={n.satoshi ? 0.9 : 0.6}
+            />
+            <circle
+              cx={dotL}
+              cy={n.y}
+              r={n.satoshi ? 5 : 3.5}
+              fill={n.satoshi ? "var(--accent)" : "var(--muted)"}
+              stroke="var(--surface)"
+              strokeWidth="2"
+            />
+            <text x={dotL - 12} y={n.y + 4} fontSize="12" textAnchor="end">
+              <tspan fill="var(--muted-2)">{n.what} · </tspan>
+              <tspan fill={n.satoshi ? "var(--accent)" : "var(--foreground)"} fontWeight="600">
+                {n.who}
+              </tspan>
+            </text>
+          </g>
+        ))}
+
+        {/* The room */}
+        <rect
+          x={boxL}
+          y="108"
+          width={boxR - boxL}
+          height="116"
+          rx="12"
+          fill="var(--surface-2)"
+          stroke="var(--accent)"
+          strokeWidth="1.5"
+        />
+        <text x={boxCx} y="132" fontSize="11" fontWeight="600" letterSpacing="2" textAnchor="middle" fill="var(--accent)">
+          AUSTIN
+        </text>
+        <text x={boxCx} y="157" fontSize="16" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">
+          Satoshi Nakamoto
+        </text>
+        <text x={boxCx} y="176" fontSize="16" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">
+          Institute
+        </text>
+        <text x={boxCx} y="197" fontSize="11" textAnchor="middle" fill="var(--muted)">
+          Nov 2013 · a UT reading group
+        </text>
+        <text x={boxCx} y="213" fontSize="11" textAnchor="middle" fill="var(--muted-2)">
+          Goldstein · Krawisz · Rochard
+        </text>
+
+        {/* Downstream: the room emits the canon */}
+        {CANON.map((c) => (
+          <g key={c.title}>
+            <path
+              className="sni-flow out"
+              d={`M${boxR},${boxMid} C${boxR + 50},${boxMid} ${dotR - 40},${c.y} ${dotR},${c.y}`}
+              fill="none"
+              stroke="var(--accent)"
+              strokeWidth="2"
+              strokeOpacity="0.9"
+            />
+            <circle cx={dotR} cy={c.y} r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2" />
+            <text x={dotR + 12} y={c.y - 2} fontSize="14" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">
+              {c.title}
+            </text>
+            <text x={dotR + 12} y={c.y + 14} fontSize="11" fill="var(--muted-2)">
+              {c.date}
+            </text>
+          </g>
+        ))}
+
+        {/* The fork below the room */}
+        <path
+          className="sni-flow fork"
+          d={`M${boxL + 40},224 C${boxL + 40},272 ${boxL},326 ${dotL},326`}
+          fill="none"
+          stroke="var(--muted-2)"
+          strokeWidth="1.5"
+          strokeDasharray="5 5"
+        />
+        <circle cx={dotL} cy="326" r="4" fill="var(--muted-2)" stroke="var(--surface)" strokeWidth="2" />
+        <text x={dotL - 12} y="330" fontSize="12" textAnchor="end">
+          <tspan fill="var(--muted)" fontWeight="600">The schism</tspan>
+        </text>
+        <text x={dotL - 12} y="346" fontSize="11" textAnchor="end" fill="var(--muted-2)">
+          Krawisz out · 2017 forks · BSV by 2020
+        </text>
+
+        <path
+          className="sni-flow fork"
+          d={`M${boxR - 40},224 C${boxR - 40},272 ${boxR},326 ${dotR},326`}
+          fill="none"
+          stroke="var(--accent)"
+          strokeWidth="2"
+        />
+        <circle cx={dotR} cy="326" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2" />
+        <text x={dotR + 12} y="330" fontSize="12">
+          <tspan fill="var(--accent)" fontWeight="600">The relaunch</tspan>
+        </text>
+        <text x={dotR + 12} y="346" fontSize="11" fill="var(--muted-2)">
+          501(c)(3) · OpenSats · 2024
+        </text>
+
+        <text x={boxCx} y="374" fontSize="11" textAnchor="middle" fill="var(--muted-2)">
+          reads left to right, then down · not to scale
+        </text>
+      </svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The lineage and the room. The Library&apos;s canon – Chaum to Satoshi
+        – converges on an Austin reading group that became the Institute in
+        November 2013; the room emits the three 2014 essays that named the
+        Bitcoin-only worldview; then the line forks – one founder out to BSV,
+        the Institute into a 501(c)(3). Every node is sourced in the article
+        below.
+      </figcaption>
+    </figure>
+  );
+}
+
 export default function SatoshiNakamotoInstitutePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -208,6 +407,8 @@ export default function SatoshiNakamotoInstitutePage() {
             </li>
           </ul>
         </div>
+
+        <SniLineageFigure />
 
         {/* Timeline - the arc, in order */}
         <section className="mt-10">
