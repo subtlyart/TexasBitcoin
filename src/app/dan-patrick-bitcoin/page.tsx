@@ -322,9 +322,14 @@ export default function DanPatrickBitcoinPage() {
             Texas claim inside that race: he had &ldquo;promised to make a
             Texas Bitcoin Reserve a priority to solidify Texas&apos;
             leadership in the digital age.&rdquo;<C n={1} /> Governor Abbott
-            signed SB 21 on June 20, 2025.<C n={10} /> The fund&apos;s
-            mechanics and current status - the $10 million, the custody
-            transition, the advisory committee - live on{" "}
+            signed SB 21 on June 20, 2025.<C n={10} /> Execution then passed
+            to the comptroller&apos;s desk:{" "}
+            <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link> made the
+            first purchase in November 2025, and{" "}
+            <Link href="/don-huffines-bitcoin">Don Huffines</Link> has held
+            the reserve since August 1, 2026. The fund&apos;s mechanics and
+            current status - the $10 million, the custody transition, the
+            advisory committee - live on{" "}
             <Link href="/texas-strategic-bitcoin-reserve">
               the Texas Strategic Bitcoin Reserve reference
             </Link>

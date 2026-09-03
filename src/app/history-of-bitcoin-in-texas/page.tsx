@@ -424,6 +424,27 @@ export default function HistoryPage() {
             own account.
           </p>
 
+          <h2>The people behind the record</h2>
+          <p>
+            Every chapter above has a name attached, and each has its own
+            sourced page:{" "}
+            <Link href="/greg-abbott-bitcoin">Greg Abbott</Link>, the governor
+            who recruited the mines and signed the reserve;{" "}
+            <Link href="/dan-patrick-bitcoin">Dan Patrick</Link>, the
+            lieutenant governor who prioritized the asset and braked the load;{" "}
+            <Link href="/charles-schwertner-bitcoin">Charles Schwertner</Link>,
+            the senator who wrote Senate Bill 21;{" "}
+            <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link>, the
+            comptroller who bought the state its first Bitcoin;{" "}
+            <Link href="/don-huffines-bitcoin">Don Huffines</Link>, the
+            comptroller who holds it now;{" "}
+            <Link href="/ted-cruz-bitcoin">Ted Cruz</Link>, the U.S. senator
+            who led the 2021 floor fight and wrote the CBDC ban into law; and{" "}
+            <Link href="/jimmy-song-bitcoin">Jimmy Song</Link>, the Austin
+            developer who taught a generation of engineers to build the
+            protocol from scratch.
+          </p>
+
           <h2>The frontier: programmable money on the hardest base</h2>
           <p>
             The next chapter is already being drafted, and it resolves the

@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/elon-musk-bitcoin-energy", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-19" },
     { path: "/ross-ulbricht-silk-road-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-23" },
     { path: "/ted-cruz-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
-    { path: "/greg-abbott-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-28" },
+    { path: "/greg-abbott-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/dan-patrick-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/kelly-hancock-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/don-huffines-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },

@@ -13,7 +13,7 @@
 // (ordered by July 17, 2026) produces rules, and when the 90th Legislature
 // convenes January 2027.
 
-export const ABBOTT_LAST_VERIFIED = "August 28, 2026";
+export const ABBOTT_LAST_VERIFIED = "September 1, 2026";
 
 export interface AbbottSource {
   id: number;

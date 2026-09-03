@@ -81,7 +81,7 @@ export default function GregAbbottBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-28",
-    dateModified: "2026-08-28",
+    dateModified: "2026-09-01",
     about: [
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Greg Abbott" },
@@ -338,7 +338,14 @@ export default function GregAbbottBitcoinPage() {
             general revenue - the quiet companion bill that makes the loud one
             durable.<C n={11} /> The candidate who took bitcoin donations in
             2014 became the governor who put Bitcoin on the state balance
-            sheet. The reserve&apos;s full mechanics and current status live on{" "}
+            sheet. The author is on{" "}
+            <Link href="/charles-schwertner-bitcoin">Charles Schwertner and Bitcoin</Link>;
+            the desk that executes it on{" "}
+            <Link href="/kelly-hancock-bitcoin">Kelly Hancock and Bitcoin</Link>{" "}
+            - the comptroller who made the first purchase - and{" "}
+            <Link href="/don-huffines-bitcoin">Don Huffines and Bitcoin</Link>,
+            the comptroller who has held it since August 2026. The
+            reserve&apos;s full mechanics and current status live on{" "}
             <Link href="/texas-strategic-bitcoin-reserve">
               the Texas Strategic Bitcoin Reserve reference
             </Link>

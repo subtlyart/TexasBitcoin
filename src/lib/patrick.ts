@@ -13,7 +13,7 @@
 // Verified August 2026. Re-verify when the 90th Legislature's priorities
 // land (January 2027) - grid-cost legislation touching miners is likely.
 
-export const PATRICK_LAST_VERIFIED = "August 28, 2026";
+export const PATRICK_LAST_VERIFIED = "September 1, 2026";
 
 export interface PatrickSource {
   id: number;
