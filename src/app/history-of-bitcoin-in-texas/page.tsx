@@ -297,7 +297,12 @@ export default function HistoryPage() {
             Texas&apos;s contribution was to take the part of that vision that
             touches the physical world most directly — the energy and the
             machines — and give it the cheapest, most willing home in the
-            country.
+            country. The lineage itself is kept in Austin: the{" "}
+            <Link href="/satoshi-nakamoto-institute">Satoshi Nakamoto Institute</Link>,
+            founded in November 2013 out of a University of Texas reading
+            group, archives every word of Satoshi&apos;s and the cypherpunk
+            canon behind it — and wrote the essays that coined
+            &ldquo;hyperbitcoinization.&rdquo;
           </p>
 
           <h2>2021: The great migration to Rockdale</h2>

@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/don-huffines-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/jimmy-song-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/charles-schwertner-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
+    { path: "/satoshi-nakamoto-institute", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/texas-bitcoin-bills-that-died", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/invest-in-texas-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-bitcoin-case-tracker", priority: 0.8, changeFrequency: "daily" as const, lastMod: trackerDerived.lastUpdated },

@@ -279,6 +279,8 @@ export default function JimmySongBitcoinPage() {
             2018.<C n={2} /><C n={12} /> He works from Austin, and the
             city&apos;s builder scene – chronicled in{" "}
             <Link href="/texas-crypto-archive">the Texas crypto archive</Link>{" "}
+            and anchored by{" "}
+            <Link href="/satoshi-nakamoto-institute">the Satoshi Nakamoto Institute</Link>{" "}
             – is where his classroom and his arguments both happen.
             <C n={2} /><C n={20} />
           </p>
