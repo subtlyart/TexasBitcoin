@@ -78,6 +78,247 @@ function C({ n }: { n: number }) {
   );
 }
 
+// history-figs:start
+// Five figures, one per chapter, generated from the counts and dates the
+// chapters cite (Sept 2026). Server-rendered SVG, site tokens, no client JS.
+function HistoryStackFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 490" role="img" aria-label="The Texas Bitcoin stack: base, law, energy, money future">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE STACK · HOW TEXAS BECAME THE CENTER OF GRAVITY, LAYER BY LAYER</text>
+<rect x="28" y="52" width="754" height="94" rx="10" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25" strokeOpacity="0.8"/>
+<rect x="28" y="52" width="6" height="94" rx="3" fill="var(--accent)"/>
+<text x="46" y="74" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE MONEY FUTURE · 2025 →</text>
+<text x="46" y="92" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Hard money in two flavors, and rails that settle back to Bitcoin</text>
+<text x="46" y="114" fontSize="11" fontWeight="600" fill="var(--accent)">SB 21</text>
+<text x="46" y="129" fontSize="10.5" fill="var(--muted-2)">Strategic Bitcoin Reserve · Jun 20, 2025</text>
+<text x="294" y="114" fontSize="11" fontWeight="600" fill="var(--accent)">HB 1056</text>
+<text x="294" y="129" fontSize="10.5" fill="var(--muted-2)">gold and silver, digital · Jun 22, 2025</text>
+<text x="542" y="114" fontSize="11" fontWeight="600" fill="var(--accent)">Lightning · Taproot Assets</text>
+<text x="542" y="129" fontSize="10.5" fill="var(--muted-2)">dollars on Bitcoin&apos;s settlement</text>
+<rect x="28" y="154" width="754" height="94" rx="10" fill="var(--surface-2)" stroke="var(--accent-soft)" strokeWidth="1.25" strokeOpacity="0.8"/>
+<rect x="28" y="154" width="6" height="94" rx="3" fill="var(--accent-soft)"/>
+<text x="46" y="176" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent-soft)">THE ENERGY · 2019 →</text>
+<text x="46" y="194" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">The machines came for the cheapest, most willing grid in the country</text>
+<text x="46" y="216" fontSize="11" fontWeight="600" fill="var(--accent-soft)">Rockdale</text>
+<text x="46" y="231" fontSize="10.5" fill="var(--muted-2)">Alcoa&apos;s smelter → 700 MW of hashrate</text>
+<text x="294" y="216" fontSize="11" fontWeight="600" fill="var(--accent-soft)">May 21, 2021</text>
+<text x="294" y="231" fontSize="10.5" fill="var(--muted-2)">China bans mining; the hashrate moves</text>
+<text x="542" y="216" fontSize="11" fontWeight="600" fill="var(--accent-soft)">Aug 2023</text>
+<text x="542" y="231" fontSize="10.5" fill="var(--muted-2)">Riot paid $31.7M to power down</text>
+<rect x="28" y="256" width="754" height="94" rx="10" fill="var(--surface-2)" stroke="var(--star)" strokeWidth="1.25" strokeOpacity="0.8"/>
+<rect x="28" y="256" width="6" height="94" rx="3" fill="var(--star)"/>
+<text x="46" y="278" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--star)">THE LAW · 2014 →</text>
+<text x="46" y="296" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">A regulator&apos;s line drawn where the technology&apos;s own architecture is</text>
+<text x="46" y="318" fontSize="11" fontWeight="600" fill="var(--star)">Memo 1037</text>
+<text x="46" y="333" fontSize="10.5" fill="var(--muted-2)">Bitcoin is not “money” · Apr 3, 2014</text>
+<text x="294" y="318" fontSize="11" fontWeight="600" fill="var(--star)">2021</text>
+<text x="294" y="333" fontSize="10.5" fill="var(--muted-2)">banks may custody; Bitcoin enters the UCC</text>
+<text x="542" y="318" fontSize="11" fontWeight="600" fill="var(--star)">2023</text>
+<text x="542" y="333" fontSize="10.5" fill="var(--muted-2)">Money Services Modernization Act</text>
+<rect x="28" y="358" width="754" height="94" rx="10" fill="var(--surface-2)" stroke="var(--muted)" strokeWidth="1.25" strokeOpacity="0.8"/>
+<rect x="28" y="358" width="6" height="94" rx="3" fill="var(--muted)"/>
+<text x="46" y="380" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--muted)">THE BASE · 1982 →</text>
+<text x="46" y="398" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">The cypherpunk protocol: proof-of-work, trustless settlement, your own keys</text>
+<text x="46" y="420" fontSize="11" fontWeight="600" fill="var(--muted)">Chaum → Satoshi</text>
+<text x="46" y="435" fontSize="10.5" fill="var(--muted-2)">the lineage, archived in Austin</text>
+<text x="294" y="420" fontSize="11" fontWeight="600" fill="var(--muted)">SNI</text>
+<text x="294" y="435" fontSize="10.5" fill="var(--muted-2)">a UT reading group, Nov 2013</text>
+<text x="542" y="420" fontSize="11" fontWeight="600" fill="var(--muted)">the network</text>
+<text x="542" y="435" fontSize="10.5" fill="var(--muted-2)">settles without a trusted intermediary</text>
+<text x="405.0" y="480" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">read from the bottom up · each layer made room for the one above it</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The stack, read from the bottom up. The cypherpunk base layer; the 2014 memo that drew Texas&apos;s regulatory line where the protocol&apos;s own architecture is; the energy chapter that brought the machines; and the money future now being written on top, in two directions at once. Every date is sourced in the chapters below.
+      </figcaption>
+    </figure>
+  );
+}
+
+function HistorySeamFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 330" role="img" aria-label="Supervisory Memorandum 1037: what sits outside and inside the Texas Money Services Act">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE SEAM · SUPERVISORY MEMORANDUM 1037, APRIL 3, 2014</text>
+<line x1="405.0" x2="405.0" y1="52" y2="232" stroke="var(--accent)" strokeWidth="2" strokeDasharray="6 5"/>
+<rect x="347.0" y="132" width="116" height="22" rx="11" fill="var(--surface)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="405.0" y="147" fontSize="10.5" fontWeight="600" letterSpacing="1.5" textAnchor="middle" fill="var(--accent)">THE SEAM</text>
+<rect x="28" y="52" width="305.0" height="180" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="44" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--star)">OUTSIDE THE MONEY SERVICES ACT</text>
+<circle cx="50" cy="100" r="3.5" fill="var(--star)"/>
+<text x="62" y="104" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Bitcoin itself</text>
+<text x="62" y="118" fontSize="10.5" fill="var(--muted-2)">not legal tender issued by a government</text>
+<circle cx="50" cy="140" r="3.5" fill="var(--star)"/>
+<text x="62" y="144" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Crypto for crypto</text>
+<text x="62" y="158" fontSize="10.5" fill="var(--muted-2)">no transmitter license for coin-to-coin</text>
+<circle cx="50" cy="180" r="3.5" fill="var(--star)"/>
+<text x="62" y="184" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Selling your own coin</text>
+<text x="62" y="198" fontSize="10.5" fill="var(--muted-2)">a business or person selling what it holds</text>
+<rect x="477.0" y="52" width="305.0" height="180" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="493.0" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">INSIDE IT</text>
+<circle cx="499.0" cy="100" r="3.5" fill="var(--accent)"/>
+<text x="511.0" y="104" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Fiat in a transmitting capacity</text>
+<text x="511.0" y="118" fontSize="10.5" fill="var(--muted-2)">sovereign currency moving for a third party</text>
+<circle cx="499.0" cy="140" r="3.5" fill="var(--accent)"/>
+<text x="511.0" y="144" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Stablecoins redeemable for dollars</text>
+<text x="511.0" y="158" fontSize="10.5" fill="var(--muted-2)">closer scrutiny · the 2019 and 2025 revisions</text>
+<circle cx="499.0" cy="180" r="3.5" fill="var(--accent)"/>
+<text x="511.0" y="184" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">A federal edge the memo never drew</text>
+<text x="511.0" y="198" fontSize="10.5" fill="var(--muted-2)">FinCEN registration is Washington’s question</text>
+<text x="28" y="262" fontSize="12" fill="var(--muted)">The line runs where the technology’s own architecture does: the base-layer asset outside, fiat-redeemable instruments inside.</text>
+<text x="28" y="280" fontSize="12" fill="var(--muted)">New York drew a custom regime instead – the 2015 BitLicense – and drove businesses out. Texas drew a distinction and left the door open.</text>
+<text x="405.0" y="320" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas Department of Banking, Supervisory Memorandum 1037 (2014; revised 2019, 2025) · schematic, not legal advice</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The seam. Supervisory Memorandum 1037 put the base-layer asset outside the Money Services Act and fiat-redeemable instruments inside it, and every Texas ruling since has sharpened the same line. The memo defines what Texas asks of you; it never defined what Washington does, which is the edge Doctor Bitcoin found.
+      </figcaption>
+    </figure>
+  );
+}
+
+function HistoryMegawattsFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 400" role="img" aria-label="Texas mining capacity by year online, the thirteen mapped sites">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE MIGRATION IN MEGAWATTS · NEW CAPACITY BY YEAR ONLINE, THE 13 MAPPED SITES</text>
+<rect x="28" y="42" width="10" height="10" rx="2" fill="var(--accent)" stroke="none"/>
+<text x="42" y="51" fontSize="10.5" fill="var(--muted)">still mining</text>
+<rect x="131.2" y="42" width="10" height="10" rx="2" fill="var(--accent-soft)" stroke="none"/>
+<text x="145.2" y="51" fontSize="10.5" fill="var(--muted)">mining + AI pivot</text>
+<rect x="264.9" y="42" width="10" height="10" rx="2" fill="var(--muted)" stroke="none"/>
+<text x="278.9" y="51" fontSize="10.5" fill="var(--muted)">now AI/HPC</text>
+<rect x="355.9" y="42" width="10" height="10" rx="2" fill="var(--muted-2)" stroke="none"/>
+<text x="369.9" y="51" fontSize="10.5" fill="var(--muted)">historic</text>
+<rect x="434.7" y="42" width="10" height="10" rx="2" fill="var(--border)" stroke="var(--muted-2)"/>
+<text x="448.7" y="51" fontSize="10.5" fill="var(--muted)">announced</text>
+<line x1="64" x2="790" y1="278.3" y2="278.3" stroke="var(--border)"/>
+<text x="56" y="282.3" fontSize="10" textAnchor="end" fill="var(--muted-2)">500</text>
+<line x1="64" x2="790" y1="240.5" y2="240.5" stroke="var(--border)"/>
+<text x="56" y="244.5" fontSize="10" textAnchor="end" fill="var(--muted-2)">1,000</text>
+<line x1="64" x2="790" y1="202.8" y2="202.8" stroke="var(--border)"/>
+<text x="56" y="206.8" fontSize="10" textAnchor="end" fill="var(--muted-2)">1,500</text>
+<line x1="64" x2="790" y1="165.1" y2="165.1" stroke="var(--border)"/>
+<text x="56" y="169.1" fontSize="10" textAnchor="end" fill="var(--muted-2)">2,000</text>
+<line x1="64" x2="790" y1="316" y2="316" stroke="var(--muted-2)"/>
+<rect x="84.3" y="303.2" width="40" height="12.8" fill="var(--accent)"/>
+<text x="104.3" y="332" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2019</text>
+<text x="104.3" y="297.2" fontSize="10.5" textAnchor="middle" fill="var(--muted)">170 MW</text>
+<text x="104.3" y="346" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">170</text>
+<rect x="165.0" y="263.2" width="40" height="52.8" fill="var(--accent-soft)"/>
+<rect x="165.0" y="255.6" width="40" height="7.5" fill="var(--muted-2)"/>
+<text x="185.0" y="332" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2020</text>
+<text x="185.0" y="249.6" fontSize="10.5" textAnchor="middle" fill="var(--muted)">800 MW</text>
+<text x="185.0" y="346" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">970</text>
+<text x="265.7" y="332" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2021</text>
+<text x="265.7" y="346" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">970</text>
+<rect x="326.3" y="256.6" width="40" height="59.4" fill="var(--accent)"/>
+<rect x="326.3" y="176.6" width="40" height="80.0" fill="var(--muted)"/>
+<text x="346.3" y="332" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2022</text>
+<text x="346.3" y="170.6" fontSize="10.5" textAnchor="middle" fill="var(--muted)">1,847 MW</text>
+<text x="346.3" y="346" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2,817</text>
+<text x="427.0" y="332" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2023</text>
+<text x="427.0" y="346" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2,817</text>
+<rect x="487.7" y="285.8" width="40" height="30.2" fill="var(--accent-soft)"/>
+<text x="507.7" y="332" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2024</text>
+<text x="507.7" y="279.8" fontSize="10.5" textAnchor="middle" fill="var(--muted)">400 MW</text>
+<text x="507.7" y="346" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">3,217</text>
+<rect x="568.3" y="293.4" width="40" height="22.6" fill="var(--accent-soft)"/>
+<text x="588.3" y="332" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2025</text>
+<text x="588.3" y="287.4" fontSize="10.5" textAnchor="middle" fill="var(--muted)">300 MW</text>
+<text x="588.3" y="346" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">3,517</text>
+<rect x="649.0" y="217.9" width="40" height="98.1" fill="var(--muted)"/>
+<text x="669.0" y="332" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2026</text>
+<text x="669.0" y="211.9" fontSize="10.5" textAnchor="middle" fill="var(--muted)">1,300 MW</text>
+<text x="669.0" y="346" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">4,817</text>
+<rect x="729.7" y="165.1" width="40" height="150.9" fill="var(--border)" stroke="var(--muted-2)" strokeDasharray="3 3"/>
+<text x="749.7" y="332" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">2027</text>
+<text x="749.7" y="159.1" fontSize="10.5" textAnchor="middle" fill="var(--muted)">2,000 MW</text>
+<text x="749.7" y="346" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">6,817</text>
+<text x="56" y="346" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">cumulative</text>
+<line x1="265.7" x2="265.7" y1="92" y2="316" stroke="var(--accent)" strokeDasharray="4 4"/>
+<text x="265.7" y="84" fontSize="11" fontWeight="600" textAnchor="middle" fill="var(--accent)">May 21, 2021: China bans mining</text>
+<text x="275.7" y="108" fontSize="10.5" fill="var(--muted)">2022: the post-ban buildout – 1,847 MW</text>
+<text x="275.7" y="122" fontSize="10.5" fill="var(--muted-2)">Helios, Granbury, King Mountain, Denton, Odessa</text>
+<text x="641.0" y="164" fontSize="10.5" textAnchor="end" fill="var(--muted)">2026 →: the AI turn</text>
+<text x="641.0" y="178" fontSize="10.5" textAnchor="end" fill="var(--muted-2)">Beacon Point, Barber Lake; Matagorda announced</text>
+<rect x="536" y="58" width="244" height="86" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+<text x="546" y="72" fontSize="9.5" fontWeight="600" letterSpacing="1.5" fill="var(--accent)">GLOBAL HASHRATE 2021 · EH/s</text>
+<polyline points="548.0,102.1 568.0,99.4 588.0,96.9 608.0,98.0 628.0,91.4 648.0,121.9 668.0,125.3 688.0,115.5 708.0,110.6 728.0,104.5 748.0,92.0 768.0,89.2" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinejoin="round"/>
+<circle cx="628.0" cy="91.4" r="3" fill="var(--accent)" stroke="var(--surface)" strokeWidth="1.5"/>
+<text x="628.0" y="84.4" fontSize="9.5" textAnchor="middle" fill="var(--muted)">May · 174</text>
+<circle cx="668.0" cy="125.3" r="3" fill="var(--accent)" stroke="var(--surface)" strokeWidth="1.5"/>
+<text x="675.0" y="129.3" fontSize="9.5" textAnchor="start" fill="var(--muted)">Jul · 99</text>
+<circle cx="768.0" cy="89.2" r="3" fill="var(--accent)" stroke="var(--surface)" strokeWidth="1.5"/>
+<text x="772.0" y="82.2" fontSize="9.5" textAnchor="end" fill="var(--muted)">Dec · 179</text>
+<text x="546" y="138" fontSize="9" fill="var(--muted-2)">−43% in two months; a new high by December</text>
+<text x="405.0" y="392" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">capacity as built or contracted, colored by each site’s status in 2026 · from the Texas Bitcoin mining map · not hashrate</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The migration in megawatts. The thirteen sites on the Texas mining map by the year each came online: Rockdale before the ban, the 1,847-megawatt buildout of 2022 after it, and the gigawatt-scale AI campuses of 2026 and beyond, colored by what each site is doing today. Capacity as built or contracted, not hashrate.
+      </figcaption>
+    </figure>
+  );
+}
+
+function HistoryCurtailmentFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 250" role="img" aria-label="Riot Rockdale, August 2023: power credits versus bitcoin mined">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">AUGUST 2023 AT ROCKDALE · WHAT THE LARGEST MINE IN NORTH AMERICA EARNED, AND FROM WHOM</text>
+<text x="236" y="89" fontSize="13" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Power credits from ERCOT</text>
+<rect x="250" y="72" width="500.0" height="26" rx="4" fill="var(--accent)"/>
+<text x="260" y="89" fontSize="12" fontWeight="600" fill="var(--surface)">$31.7M · $24.2M curtailment + $7.4M demand response</text>
+<text x="236" y="141" fontSize="13" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Bitcoin mined</text>
+<rect x="250" y="124" width="140.4" height="26" rx="4" fill="var(--star)"/>
+<text x="400.4" y="141" fontSize="12" fill="var(--muted)">$8.9M · 333 BTC</text>
+<text x="250" y="188" fontSize="12" fill="var(--muted)">Riot curtailed Rockdale by more than 95% at peak-demand hours through a record heat wave –</text>
+<text x="250" y="206" fontSize="12" fill="var(--muted)">and was paid 3.6× what its bitcoin was worth to do it.</text>
+<text x="405.0" y="240" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Riot Platforms, August 2023 production update (SEC filing); CNBC, Sept 6, 2023 · bars to scale</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        August 2023 at Rockdale, to scale. Curtailment credits and demand-response payments from ERCOT against the value of the bitcoin mined that month. For one summer, the largest Bitcoin mine in North America made more money stabilizing the Texas grid than mining on it.
+      </figcaption>
+    </figure>
+  );
+}
+
+function HistoryTwoDirectionsFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" aria-label="June 2025: the Bitcoin reserve and the gold-backed currency, side by side">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">TWO DIRECTIONS, ONE JUNE · HARD MONEY IN TWO FLAVORS, SIGNED TWO DAYS APART</text>
+<rect x="28" y="52" width="370" height="196" rx="10" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="44" y="78" fontSize="15" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Senate Bill 21 · the Strategic Bitcoin Reserve</text>
+<text x="44" y="96" fontSize="10.5" fill="var(--accent)" fontWeight="600">signed June 20, 2025 · effective immediately</text>
+<circle cx="50" cy="118" r="3" fill="var(--accent)"/>
+<text x="62" y="122" fontSize="11.5" fill="var(--muted)">a fund outside the treasury, custody with the Comptroller</text>
+<circle cx="50" cy="144" r="3" fill="var(--accent)"/>
+<text x="62" y="148" fontSize="11.5" fill="var(--muted)">only assets averaging $500B market cap over 24 months</text>
+<circle cx="50" cy="170" r="3" fill="var(--accent)"/>
+<text x="62" y="174" fontSize="11.5" fill="var(--muted)">$10 million appropriated; first purchase Nov 20, 2025</text>
+<circle cx="50" cy="196" r="3" fill="var(--accent)"/>
+<text x="62" y="200" fontSize="11.5" fill="var(--muted)">shielded from fund sweeps; a biennial public report</text>
+<rect x="412" y="52" width="370" height="196" rx="10" fill="var(--surface-2)" stroke="var(--star)" strokeWidth="1.25"/>
+<text x="428" y="78" fontSize="15" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">House Bill 1056 · gold and silver, digital</text>
+<text x="428" y="96" fontSize="10.5" fill="var(--star)" fontWeight="600">signed June 22, 2025 · tender from Sept 1, 2026</text>
+<circle cx="434" cy="118" r="3" fill="var(--star)"/>
+<text x="446" y="122" fontSize="11.5" fill="var(--muted)">specie as legal tender – the Article I, Section 10 lane</text>
+<circle cx="434" cy="144" r="3" fill="var(--star)"/>
+<text x="446" y="148" fontSize="11.5" fill="var(--muted)">backed by metal in the Texas Bullion Depository</text>
+<circle cx="434" cy="170" r="3" fill="var(--star)"/>
+<text x="446" y="174" fontSize="11.5" fill="var(--muted)">spendable by card or app; system targeted for 2027</text>
+<circle cx="434" cy="196" r="3" fill="var(--star)"/>
+<text x="446" y="200" fontSize="11.5" fill="var(--muted)">use is voluntary: no one must accept it</text>
+<text x="405.0" y="276" fontSize="12" textAnchor="middle" fill="var(--muted)">The state that ruled in 2014 that Bitcoin is not money now holds it as a reserve – and made gold spendable again beside it.</text>
+<text x="405.0" y="292" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas Legislature Online, SB 21 and HB 1056 (89R) · mechanics on the reserve and gold pages</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        Two directions, one June. The Strategic Bitcoin Reserve and the gold-and-silver tender law, signed two days apart in June 2025: proof-of-work hard money the state buys, and metal-backed hard money Texans can spend. Both are written into statute; both are tracked on their own pages.
+      </figcaption>
+    </figure>
+  );
+}
+// history-figs:end
 export default function HistoryPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -224,6 +465,8 @@ export default function HistoryPage() {
             machines, and the financial future now being built on top.
           </p>
 
+          <HistoryStackFigure />
+
           <h2>2014: The memo that said Bitcoin isn&apos;t money</h2>
           <p>
             The story starts not with miners but with lawyers. On April 3, 2014,
@@ -287,6 +530,8 @@ export default function HistoryPage() {
             <Link href="/doctor-bitcoin">Voices of Texas Bitcoin series</Link>.
           </p>
 
+          <HistorySeamFigure />
+
           <h2>The cypherpunk base layer</h2>
           <p>
             It is worth naming what that memo was, in effect, protecting. Bitcoin
@@ -345,6 +590,8 @@ export default function HistoryPage() {
             primers on the industry it was courting.<C n={10} />
           </p>
 
+          <HistoryMegawattsFigure />
+
           <h2>The grid: friendly, but not unconditionally</h2>
           <p>
             What truly distinguishes Texas is that mining collides with the power
@@ -384,6 +631,8 @@ export default function HistoryPage() {
             </Link>
             .
           </p>
+
+          <HistoryCurtailmentFigure />
 
           <h2>2025: The money future, in two directions at once</h2>
           <p>
@@ -428,6 +677,8 @@ export default function HistoryPage() {
             ruling that Bitcoin is not money to buying it for the state&apos;s
             own account.
           </p>
+
+          <HistoryTwoDirectionsFigure />
 
           <h2>The people behind the record</h2>
           <p>
