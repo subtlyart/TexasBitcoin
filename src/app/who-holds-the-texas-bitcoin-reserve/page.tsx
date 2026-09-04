@@ -59,6 +59,236 @@ function C({ n }: { n: number }) {
   );
 }
 
+// custody-figs:start
+// Five figures, one per chapter, generated from the custody dataset and the
+// dates the page cites (Sept 2026). Server-rendered SVG, no client JS.
+function CustodyChainFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 330" role="img" aria-label="The chain of custody: how many links stand between Texas and its Bitcoin, now and after the contract">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE CHAIN OF CUSTODY · HOW MANY HANDS STAND BETWEEN TEXAS AND ITS BITCOIN</text>
+<text x="28" y="56" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">NOW · A CLAIM</text>
+<text x="28" y="72" fontSize="10.5" fill="var(--muted-2)">four hands, and the state holds shares</text>
+<rect x="28" y="86" width="150" height="58" rx="8" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="103.0" y="108" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Texas</text>
+<text x="103.0" y="124" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Fund 1018, outside the treasury</text>
+<line x1="182" x2="200" y1="115.0" y2="115.0" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<path d="M196,111.0 L200,115.0 L196,119.0" fill="none" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<rect x="204" y="86" width="150" height="58" rx="8" fill="var(--surface-2)" stroke="var(--muted)" strokeWidth="1.25"/>
+<text x="279.0" y="108" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">ETF shares</text>
+<text x="279.0" y="124" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">iShares Bitcoin Trust</text>
+<line x1="358" x2="376" y1="115.0" y2="115.0" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<path d="M372,111.0 L376,115.0 L372,119.0" fill="none" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<rect x="380" y="86" width="150" height="58" rx="8" fill="var(--surface-2)" stroke="var(--muted)" strokeWidth="1.25"/>
+<text x="455.0" y="108" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">The fund</text>
+<text x="455.0" y="124" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">BlackRock&apos;s structure and rules</text>
+<line x1="534" x2="552" y1="115.0" y2="115.0" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<path d="M548,111.0 L552,115.0 L548,119.0" fill="none" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<rect x="556" y="86" width="150" height="58" rx="8" fill="var(--surface-2)" stroke="var(--muted-2)" strokeWidth="1.25"/>
+<text x="631.0" y="108" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Its custodian</text>
+<text x="631.0" y="124" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">holds the coin</text>
+<text x="28" y="186" fontSize="11" fontWeight="600" letterSpacing="2" fill="#6f9e6a">AFTER THE CONTRACT · THE KEYS</text>
+<text x="28" y="202" fontSize="10.5" fill="var(--muted-2)">one contractor, coin in the state&apos;s own name</text>
+<rect x="28" y="216" width="150" height="58" rx="8" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="103.0" y="238" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Texas</text>
+<text x="103.0" y="254" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Fund 1018, outside the treasury</text>
+<line x1="182" x2="200" y1="245.0" y2="245.0" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<path d="M196,241.0 L200,245.0 L196,249.0" fill="none" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<rect x="204" y="216" width="150" height="58" rx="8" fill="var(--surface-2)" stroke="#6f9e6a" strokeWidth="1.25"/>
+<text x="279.0" y="238" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">The custodian</text>
+<text x="279.0" y="254" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">under RFP 908-26-1778WS</text>
+<line x1="358" x2="376" y1="245.0" y2="245.0" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<path d="M372,241.0 L376,245.0 L372,249.0" fill="none" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<rect x="380" y="216" width="150" height="58" rx="8" fill="var(--surface-2)" stroke="#6f9e6a" strokeWidth="1.25"/>
+<text x="455.0" y="238" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Bitcoin</text>
+<text x="455.0" y="254" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">in the State of Texas&apos;s name</text>
+<text x="405.0" y="320" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">an ETF share is real exposure, governed by the fund; direct custody is ownership, governed by the contract · schematic</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The chain of custody. Today the state holds ETF shares: its Bitcoin exposure runs through the fund, the fund&apos;s rules, and the fund&apos;s custodian. After the contract, one contractor holds coin in the name of the State of Texas. The procurement this page tracks exists to remove the links in between.
+      </figcaption>
+    </figure>
+  );
+}
+
+function CustodyMandateFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" aria-label="The custodian's mandate: six duties from the RFP scope">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE MANDATE · WHAT THE WINNING FIRM IS ON THE HOOK FOR, FROM THE RFP SCOPE</text>
+<rect x="28" y="50" width="246" height="104" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="42" y="72" fontSize="10.5" fontWeight="600" letterSpacing="1.5" fill="var(--accent)">01</text>
+<text x="42" y="94" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Hold the coin in the name of</text>
+<text x="42" y="110" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">the State of Texas</text>
+<text x="42" y="126" fontSize="9.5" fill="var(--muted-2)">Custody the reserve&apos;s Bitcoin directly in</text>
+<text x="42" y="139" fontSize="9.5" fill="var(--muted-2)">the state&apos;s name – not as a fund share,…</text>
+<rect x="286" y="50" width="246" height="104" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="300" y="72" fontSize="10.5" fontWeight="600" letterSpacing="1.5" fill="var(--accent)">02</text>
+<text x="300" y="94" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Retire the ETF placeholder</text>
+<text x="300" y="110" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">within 60 days</text>
+<text x="300" y="126" fontSize="9.5" fill="var(--muted-2)">Transition the full $10 million IBIT</text>
+<text x="300" y="139" fontSize="9.5" fill="var(--muted-2)">position into directly custodied Bitcoin…</text>
+<rect x="544" y="50" width="246" height="104" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="558" y="72" fontSize="10.5" fontWeight="600" letterSpacing="1.5" fill="var(--accent)">03</text>
+<text x="558" y="94" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Run cold storage with layered</text>
+<text x="558" y="110" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">controls</text>
+<text x="558" y="126" fontSize="9.5" fill="var(--muted-2)">The RFP&apos;s security scope names cold</text>
+<text x="558" y="139" fontSize="9.5" fill="var(--muted-2)">storage, encryption, and multifactor…</text>
+<rect x="28" y="166" width="246" height="104" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="42" y="188" fontSize="10.5" fontWeight="600" letterSpacing="1.5" fill="var(--accent)">04</text>
+<text x="42" y="210" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Provide liquidity both ways</text>
+<text x="42" y="226" fontSize="9.5" fill="var(--muted-2)">Support purchases and sales for the</text>
+<text x="42" y="239" fontSize="9.5" fill="var(--muted-2)">reserve – SB 21 lets the fund grow by…</text>
+<rect x="286" y="166" width="246" height="104" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="300" y="188" fontSize="10.5" fontWeight="600" letterSpacing="1.5" fill="var(--accent)">05</text>
+<text x="300" y="210" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Build the public transparency</text>
+<text x="300" y="226" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">website</text>
+<text x="300" y="242" fontSize="9.5" fill="var(--muted-2)">Stand up a dedicated public-facing site</text>
+<text x="300" y="255" fontSize="9.5" fill="var(--muted-2)">displaying the reserve&apos;s Bitcoin and…</text>
+<rect x="544" y="166" width="246" height="104" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="558" y="188" fontSize="10.5" fontWeight="600" letterSpacing="1.5" fill="var(--accent)">06</text>
+<text x="558" y="210" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Support legislative reporting</text>
+<text x="558" y="226" fontSize="9.5" fill="var(--muted-2)">Provide standard and custom reporting and</text>
+<text x="558" y="239" fontSize="9.5" fill="var(--muted-2)">support legislative inquiries – the…</text>
+<text x="405.0" y="290" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">RFP 908-26-1778WS scope, as summarized in the dataset this page renders · six duties, one contractor</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The mandate. Six duties from the RFP&apos;s scope: hold the coin in the state&apos;s own name, retire the ETF placeholder within 60 days, run cold storage with layered controls, provide liquidity both ways, build the public transparency website, and support the statute&apos;s reporting. Vaulting keys is the smallest part of it.
+      </figcaption>
+    </figure>
+  );
+}
+
+function CustodyWindowFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 260" role="img" aria-label="The procurement window, day by day: posted May 7, closed July 10, late-August target, and where September 1 falls">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE WINDOW, DAY BY DAY · RFP 908-26-1778WS AGAINST ITS OWN CALENDAR</text>
+<rect x="86.5" y="106" width="219.2" height="24" rx="4" fill="var(--star)" fillOpacity="0.22"/>
+<rect x="435.8" y="106" width="47.9" height="24" rx="4" fill="var(--accent)" fillOpacity="0.28"/>
+<rect x="483.8" y="106" width="3.4" height="24" fill="#c98a4e" fillOpacity="0.35"/>
+<line x1="66" x2="744" y1="118" y2="118" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<line x1="66.0" x2="66.0" y1="114" y2="122" stroke="var(--muted-2)"/>
+<text x="66.0" y="158" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">May</text>
+<line x1="172.2" x2="172.2" y1="114" y2="122" stroke="var(--muted-2)"/>
+<text x="172.2" y="158" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Jun</text>
+<line x1="274.9" x2="274.9" y1="114" y2="122" stroke="var(--muted-2)"/>
+<text x="274.9" y="158" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Jul</text>
+<line x1="381.0" x2="381.0" y1="114" y2="122" stroke="var(--muted-2)"/>
+<text x="381.0" y="158" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Aug</text>
+<line x1="487.2" x2="487.2" y1="114" y2="122" stroke="var(--muted-2)"/>
+<text x="487.2" y="158" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Sep</text>
+<line x1="589.9" x2="589.9" y1="114" y2="122" stroke="var(--muted-2)"/>
+<text x="589.9" y="158" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Oct</text>
+<line x1="696.1" x2="696.1" y1="114" y2="122" stroke="var(--muted-2)"/>
+<text x="696.1" y="158" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Nov</text>
+<line x1="86.5" x2="86.5" y1="104" y2="96" stroke="var(--muted-2)"/>
+<circle cx="86.5" cy="118" r="5" fill="var(--star)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="86.5" y="54" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Posted</text>
+<text x="86.5" y="68" fontSize="10" textAnchor="middle" fill="var(--muted-2)">May 7</text>
+<line x1="220.1" x2="220.1" y1="132" y2="140" stroke="var(--muted-2)"/>
+<circle cx="220.1" cy="118" r="5" fill="var(--muted-2)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="220.1" y="176" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Original deadline</text>
+<text x="220.1" y="190" fontSize="10" textAnchor="middle" fill="var(--muted-2)">June 15 · extended</text>
+<line x1="305.7" x2="305.7" y1="104" y2="96" stroke="var(--muted-2)"/>
+<circle cx="305.7" cy="118" r="5" fill="var(--star)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="305.7" y="54" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Proposals close</text>
+<text x="305.7" y="68" fontSize="10" textAnchor="middle" fill="var(--muted-2)">July 10 · 2:00 p.m.</text>
+<line x1="381.0" x2="381.0" y1="132" y2="200" stroke="var(--muted-2)"/>
+<circle cx="381.0" cy="118" r="5" fill="var(--accent-soft)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="381.0" y="212" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Huffines sworn in</text>
+<text x="381.0" y="226" fontSize="10" textAnchor="middle" fill="var(--muted-2)">Aug 1 · the desk changes</text>
+<line x1="459.8" x2="459.8" y1="104" y2="96" stroke="var(--muted-2)"/>
+<circle cx="459.8" cy="118" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="459.8" y="54" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Target: execution</text>
+<text x="459.8" y="68" fontSize="10" textAnchor="middle" fill="var(--muted-2)">late August</text>
+<line x1="487.2" x2="487.2" y1="132" y2="140" stroke="var(--muted-2)"/>
+<circle cx="487.2" cy="118" r="5" fill="#c98a4e" stroke="var(--surface)" strokeWidth="2"/>
+<text x="495.2" y="176" fontSize="12" fontWeight="600" textAnchor="start" fill="var(--foreground)" fontFamily="var(--font-display)">Today</text>
+<text x="495.2" y="190" fontSize="10" textAnchor="start" fill="var(--muted-2)">Sept 1 · 53 days since close</text>
+<line x1="487.2" x2="744" y1="118" y2="118" stroke="var(--accent)" strokeWidth="2" strokeDasharray="4 4"/>
+<text x="740.0" y="96" fontSize="10.5" textAnchor="end" fill="var(--muted)">once signed: +60 days to convert,</text>
+<text x="740.0" y="110" fontSize="10.5" textAnchor="end" fill="var(--muted)">and the public website goes live</text>
+<text x="405.0" y="250" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas SmartBuy ESBD; Crypto Briefing on the target · to scale by day · the red band is the overdue window</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The window, day by day. The solicitation was open nine weeks, closed July 10 after a deadline extension, and targeted execution for late August. The red band is the overdue window; the dashed tail is what starts the day the award posts: a 60-day conversion clock and the public holdings website.
+      </figcaption>
+    </figure>
+  );
+}
+
+function CustodyWatchersFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 320" role="img" aria-label="Who decides and who watches: the Comptroller, the advisory committee, and the statute">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">WHO DECIDES, WHO WATCHES · THE SIGNATURE, THE BENCH, AND THE STATUTE</text>
+<rect x="285" y="80" width="240" height="84" rx="10" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.5"/>
+<text x="405" y="102" fontSize="10.5" fontWeight="600" letterSpacing="2" textAnchor="middle" fill="var(--accent)">DECIDES · THE COMPTROLLER</text>
+<text x="405" y="124" fontSize="14" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Don Huffines · since Aug 1, 2026</text>
+<text x="405" y="142" fontSize="10" textAnchor="middle" fill="var(--muted-2)">signs the award · SB 21 § 403.703 custody · Hancock opened the search</text>
+<text x="405" y="156" fontSize="10" textAnchor="middle" fill="var(--muted-2)">on behalf of the Texas Treasury Safekeeping Trust Company</text>
+<rect x="28" y="190" width="370" height="106" rx="10" fill="var(--surface-2)" stroke="var(--star)"/>
+<text x="42" y="212" fontSize="10.5" fontWeight="600" letterSpacing="2" fill="var(--star)">WATCHES · THE ADVISORY COMMITTEE (5)</text>
+<text x="42" y="234" fontSize="10.5"><tspan fill="var(--foreground)" fontWeight="600">the Comptroller</tspan><tspan fill="var(--muted-2)"> · by office</tspan></text>
+<text x="42" y="253" fontSize="10.5"><tspan fill="var(--foreground)" fontWeight="600">Laurie Dotter</tspan><tspan fill="var(--muted-2)"> · investment</tspan></text>
+<text x="42" y="272" fontSize="10.5"><tspan fill="var(--foreground)" fontWeight="600">Jamie McAvity</tspan><tspan fill="var(--muted-2)"> · Cormint · mining</tspan></text>
+<text x="226" y="234" fontSize="10.5"><tspan fill="var(--foreground)" fontWeight="600">Carla Reyes</tspan><tspan fill="var(--muted-2)"> · SMU · law</tspan></text>
+<text x="226" y="253" fontSize="10.5"><tspan fill="var(--foreground)" fontWeight="600">Gary Vecchiarelli</tspan><tspan fill="var(--muted-2)"> · CleanSpark</tspan></text>
+<rect x="412" y="190" width="370" height="106" rx="10" fill="var(--surface-2)" stroke="#6f9e6a"/>
+<text x="426" y="212" fontSize="10.5" fontWeight="600" letterSpacing="2" fill="#6f9e6a">WATCHES · THE STATUTE AND THE CONTRACT</text>
+<text x="426" y="234" fontSize="10.5"><tspan fill="var(--foreground)" fontWeight="600">Biennial report</tspan><tspan fill="var(--muted-2)"> · SB 21 § 403.708 · first due Dec 31, 2026</tspan></text>
+<text x="426" y="253" fontSize="10.5"><tspan fill="var(--foreground)" fontWeight="600">Fund 1018</tspan><tspan fill="var(--muted-2)"> · its own line in the manual of accounts</tspan></text>
+<text x="426" y="272" fontSize="10.5"><tspan fill="var(--foreground)" fontWeight="600">Public holdings website</tspan><tspan fill="var(--muted-2)"> · required of the custodian by the RFP</tspan></text>
+<line x1="345" x2="213" y1="164" y2="190" stroke="var(--muted-2)"/>
+<line x1="465" x2="597" y1="164" y2="190" stroke="var(--muted-2)"/>
+<text x="405.0" y="310" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">SB 21 enrolled text; Comptroller release of May 28, 2026; RFP scope · the committee advises, the statute compels, the contract publishes</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        Who decides, who watches. The Comptroller signs the award and holds the reserve by statute; a five-seat committee that counts custody standards in its portfolio advises; and three fixed watchers sit outside anyone&apos;s discretion: the biennial report, the fund&apos;s own line in the accounts, and the public website the contract requires.
+      </figcaption>
+    </figure>
+  );
+}
+
+function CustodyTradeFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" aria-label="The trade: what Texas gives up and takes on by moving from an ETF to direct custody">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE TRADE · WHAT CHANGES HANDS WHEN A CLAIM BECOMES THE KEYS</text>
+<rect x="28" y="52" width="370" height="200" rx="10" fill="var(--surface-2)" stroke="var(--muted)" strokeWidth="1.25"/>
+<text x="44" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--muted)">IN THE ETF · BLACKROCK&apos;S PROBLEM</text>
+<circle cx="50" cy="100" r="3.5" fill="var(--muted)"/>
+<text x="62" y="104" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Key management</text>
+<text x="62" y="117" fontSize="10" fill="var(--muted-2)">the fund&apos;s custodian holds and secures the coin</text>
+<circle cx="50" cy="136" r="3.5" fill="var(--muted)"/>
+<text x="62" y="140" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Security engineering</text>
+<text x="62" y="153" fontSize="10" fill="var(--muted-2)">the fund&apos;s controls, the fund&apos;s audits</text>
+<circle cx="50" cy="172" r="3.5" fill="var(--muted)"/>
+<text x="62" y="176" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Operational failure</text>
+<text x="62" y="189" fontSize="10" fill="var(--muted-2)">backstopped by a $10 trillion balance sheet</text>
+<text x="44" y="240" fontSize="10.5" fill="var(--muted)">Texas owns shares. Someone else owns the risk.</text>
+<rect x="412" y="52" width="370" height="200" rx="10" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="428" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">AFTER CONVERSION · TEXAS&apos;S PROBLEM</text>
+<circle cx="434" cy="100" r="3.5" fill="var(--accent)"/>
+<text x="446" y="104" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Cold storage, layered controls</text>
+<text x="446" y="117" fontSize="10" fill="var(--muted-2)">encryption, multifactor authentication</text>
+<circle cx="434" cy="136" r="3.5" fill="var(--accent)"/>
+<text x="446" y="140" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Reporting and a public window</text>
+<text x="446" y="153" fontSize="10" fill="var(--muted-2)">the website, the biennial report</text>
+<circle cx="434" cy="172" r="3.5" fill="var(--accent)"/>
+<text x="446" y="176" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">A contractor the state must supervise</text>
+<text x="446" y="189" fontSize="10" fill="var(--muted-2)">and a committee seated to watch it</text>
+<text x="428" y="240" fontSize="10.5" fill="var(--muted)">Texas owns the coin. Texas owns the risk – by design.</text>
+<text x="405.0" y="290" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">RFP 908-26-1778WS scope; SB 21 · direct custody is the stronger form of ownership, and the stronger form of responsibility</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The trade. In the ETF, keys, security, and operational failure are BlackRock&apos;s problems, backstopped by a balance sheet in the trillions. After conversion they are Texas&apos;s, outsourced to a contractor the state supervises under the controls the RFP spells out. The stronger ownership carries the stronger responsibility.
+      </figcaption>
+    </figure>
+  );
+}
+// custody-figs:end
 export default function CustodyPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -297,6 +527,8 @@ export default function CustodyPage() {
             in the name of the State of Texas.<C n={3} />
           </p>
 
+          <CustodyChainFigure />
+
           <h2>Who is Texas hiring, and to do what?</h2>
           <p>
             A single <strong>custody-and-liquidity partner</strong>, selected
@@ -321,6 +553,8 @@ export default function CustodyPage() {
             ))}
           </ul>
 
+          <CustodyMandateFigure />
+
           <h2>Why has no custodian been announced yet?</h2>
           <p>
             The procurement is simply still inside its own window – with the
@@ -339,6 +573,8 @@ export default function CustodyPage() {
             blank. When the award posts, it becomes the first entry this page
             adds.
           </p>
+
+          <CustodyWindowFigure />
 
           <h2>Who decides, and who watches the decision?</h2>
           <p>
@@ -364,6 +600,8 @@ export default function CustodyPage() {
             and administration, and the reserve lives as its own line – Fund
             1018 – in the Comptroller&apos;s manual of accounts.<C n={6} /><C n={9} /><C n={8} />
           </p>
+
+          <CustodyWatchersFigure />
 
           <h2>What happens after the contract executes?</h2>
           <p>
@@ -403,6 +641,8 @@ export default function CustodyPage() {
             $10 trillion balance sheet, and the record on this page is how
             Texans will be able to check that the trade is being managed well.
           </p>
+
+          <CustodyTradeFigure />
         </div>
 
         {/* FAQ */}
