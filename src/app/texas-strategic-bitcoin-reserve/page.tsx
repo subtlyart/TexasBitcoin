@@ -120,7 +120,7 @@ function ReservePositionFigure() {
 <text x="520.0" y="124" fontSize="11" fill="var(--muted)">~$5.0M · Bitcoin near $87,000</text>
 <text x="236" y="168" fontSize="12.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Marked · Mar 2, 2026</text>
 <rect x="250" y="152" width="405.6" height="24" rx="4" fill="var(--star)"/>
-<text x="665.6" y="168" fontSize="11" fill="var(--muted)">~$7.8M · under water in month four</text>
+<text x="260" y="168" fontSize="11" fontWeight="600" fill="var(--surface)">~$7.8M · under water in month four</text>
 <line x1="770.0" x2="770.0" y1="56" y2="186" stroke="var(--muted-2)" strokeDasharray="3 3"/>
 <text x="770.0" y="50" fontSize="10" textAnchor="middle" fill="var(--muted-2)">$10M cost</text>
 <text x="405.0" y="230" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">The Bond Buyer, Nov 2025; Dallas Morning News, Mar 2, 2026 · bars to scale · a ten-year argument, in month four</text>
@@ -546,7 +546,7 @@ export default function ReservePage() {
             keys.
           </p>
 
-          <ReservePositionFigure />
+            <ReservePositionFigure />
 
           <h2>How is the reserve funded?</h2>
           <p>
@@ -562,7 +562,7 @@ export default function ReservePage() {
             accumulate, not just to hold a one-time allocation.
           </p>
 
-          <ReserveGrowthFigure />
+            <ReserveGrowthFigure />
 
           <h2>What can the reserve hold?</h2>
           <p>
@@ -583,7 +583,7 @@ export default function ReservePage() {
             .
           </p>
 
-          <ReserveFloorFigure />
+            <ReserveFloorFigure />
 
           <h2>Who runs it, and who is on the advisory committee?</h2>
           <p>
@@ -610,7 +610,7 @@ export default function ReservePage() {
           <p>
             Texas is not alone in law — <strong>Arizona</strong> and{" "}
             <strong>New Hampshire</strong> also enacted cryptocurrency-reserve
-            statutes — but it is first in structure.<C n={4} /><C n={14} /><C n={15} /> Where others
+            statutes — but it is first in structure.<C n={4} /><C n={14} /><C n={15} /><C n={14} /><C n={15} /> Where others
             authorized crypto exposure inside existing funds, Texas stood up a
             standalone, publicly funded reserve held outside the treasury, with
             its own committee, its own reporting cadence, and its own line in the
@@ -619,7 +619,7 @@ export default function ReservePage() {
             reports on, not a position it happens to carry.
           </p>
 
-          <ReserveStatesFigure />
+            <ReserveStatesFigure />
 
           <h2>What comes next for the reserve?</h2>
           <p>
