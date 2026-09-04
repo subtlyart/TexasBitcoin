@@ -62,6 +62,228 @@ function C({ n }: { n: number }) {
   );
 }
 
+// mining-figs:start
+// Five figures, one per chapter, generated from lib/mining-sites.ts and the
+// figures the chapters cite (Sept 2026). Server-rendered SVG, no client JS.
+function MiningRankFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 448" role="img" aria-label="The mapped Texas sites ranked by capacity in megawatts">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE SITES BY MEGAWATT · THE 13 MAPPED SITES, RANKED</text>
+<rect x="28" y="42" width="10" height="10" rx="2" fill="var(--accent)" stroke="none"/>
+<text x="42" y="51" fontSize="10.5" fill="var(--muted)">Bitcoin mining</text>
+<rect x="143.39999999999998" y="42" width="10" height="10" rx="2" fill="var(--accent-soft)" stroke="none"/>
+<text x="157.39999999999998" y="51" fontSize="10.5" fill="var(--muted)">mining + AI pivot underway</text>
+<rect x="332.0" y="42" width="10" height="10" rx="2" fill="var(--muted)" stroke="none"/>
+<text x="346.0" y="51" fontSize="10.5" fill="var(--muted)">AI/HPC data center</text>
+<rect x="471.8" y="42" width="10" height="10" rx="2" fill="var(--muted-2)" stroke="none"/>
+<text x="485.8" y="51" fontSize="10.5" fill="var(--muted)">historic</text>
+<rect x="550.6" y="42" width="10" height="10" rx="2" fill="var(--border)" stroke="var(--muted-2)"/>
+<text x="564.6" y="51" fontSize="10.5" fill="var(--muted)">announced</text>
+<text x="238" y="83" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">MARA Matagorda</text>
+<rect x="250" y="70" width="310.0" height="18" rx="3" fill="var(--border)" stroke="var(--muted-2)" strokeDasharray="3 3"/>
+<text x="568.0" y="83" fontSize="10.5" fill="var(--muted)">2,000 MW</text>
+<text x="627.2" y="83" fontSize="10" fill="var(--muted-2)">Matagorda County · online 2027</text>
+<text x="238" y="109" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Hut 8 Beacon Point</text>
+<rect x="250" y="96" width="155.0" height="18" rx="3" fill="var(--muted)"/>
+<text x="413.0" y="109" fontSize="10.5" fill="var(--muted)">1,000 MW</text>
+<text x="472.2" y="109" fontSize="10" fill="var(--muted-2)">Nueces County · online 2026</text>
+<text x="238" y="135" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Galaxy Helios</text>
+<rect x="250" y="122" width="124.0" height="18" rx="3" fill="var(--muted)"/>
+<text x="382.0" y="135" fontSize="10.5" fill="var(--muted)">800 MW</text>
+<text x="428.4" y="135" fontSize="10" fill="var(--muted-2)">Dickens County · online 2022</text>
+<text x="238" y="161" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Riot Rockdale</text>
+<rect x="250" y="148" width="108.5" height="18" rx="3" fill="var(--accent-soft)"/>
+<text x="366.5" y="161" fontSize="10.5" fill="var(--muted)">700 MW</text>
+<text x="412.9" y="161" fontSize="10" fill="var(--muted-2)">Rockdale · Milam County · online 2020</text>
+<text x="238" y="187" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Riot Corsicana</text>
+<rect x="250" y="174" width="62.0" height="18" rx="3" fill="var(--accent-soft)"/>
+<text x="320.0" y="187" fontSize="10.5" fill="var(--muted)">400 MW</text>
+<text x="366.4" y="187" fontSize="10" fill="var(--muted-2)">Corsicana · Navarro County · online 2024</text>
+<text x="238" y="213" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">MARA Granbury</text>
+<rect x="250" y="200" width="46.5" height="18" rx="3" fill="var(--accent)"/>
+<text x="304.5" y="213" fontSize="10.5" fill="var(--muted)">300 MW</text>
+<text x="350.9" y="213" fontSize="10" fill="var(--muted-2)">Granbury · Hood County · online 2022</text>
+<text x="238" y="239" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Cipher Black Pearl</text>
+<rect x="250" y="226" width="46.5" height="18" rx="3" fill="var(--accent-soft)"/>
+<text x="304.5" y="239" fontSize="10.5" fill="var(--muted)">300 MW</text>
+<text x="350.9" y="239" fontSize="10" fill="var(--muted-2)">Wink · Winkler County · online 2025</text>
+<text x="238" y="265" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Cipher Barber Lake</text>
+<rect x="250" y="252" width="46.5" height="18" rx="3" fill="var(--muted)"/>
+<text x="304.5" y="265" fontSize="10.5" fill="var(--muted)">300 MW</text>
+<text x="350.9" y="265" fontSize="10" fill="var(--muted-2)">Colorado City · Mitchell County · online 2026</text>
+<text x="238" y="291" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Hut 8 King Mountain</text>
+<rect x="250" y="278" width="43.4" height="18" rx="3" fill="var(--accent)"/>
+<text x="301.4" y="291" fontSize="10.5" fill="var(--muted)">280 MW</text>
+<text x="347.8" y="291" fontSize="10" fill="var(--muted-2)">McCamey · Upton County · online 2022</text>
+<text x="238" y="317" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Core Scientific Denton</text>
+<rect x="250" y="304" width="40.3" height="18" rx="3" fill="var(--muted)"/>
+<text x="298.3" y="317" fontSize="10.5" fill="var(--muted)">260 MW</text>
+<text x="344.7" y="317" fontSize="10" fill="var(--muted-2)">Denton · Denton County · online 2022</text>
+<text x="238" y="343" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Cipher Odessa</text>
+<rect x="250" y="330" width="32.1" height="18" rx="3" fill="var(--accent)"/>
+<text x="290.1" y="343" fontSize="10.5" fill="var(--muted)">207 MW</text>
+<text x="336.5" y="343" fontSize="10" fill="var(--muted-2)">Odessa · Ector County · online 2022</text>
+<text x="238" y="369" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Bitdeer Rockdale</text>
+<rect x="250" y="356" width="26.4" height="18" rx="3" fill="var(--accent)"/>
+<text x="284.4" y="369" fontSize="10.5" fill="var(--muted)">170 MW</text>
+<text x="330.8" y="369" fontSize="10" fill="var(--muted-2)">Rockdale · Milam County · online 2019</text>
+<text x="238" y="395" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Layer1</text>
+<rect x="250" y="382" width="15.5" height="18" rx="3" fill="var(--muted-2)"/>
+<text x="273.5" y="395" fontSize="10.5" fill="var(--muted)">100 MW</text>
+<text x="319.9" y="395" fontSize="10" fill="var(--muted-2)">Ward County · online 2020</text>
+<text x="405.0" y="438" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">operator-published capacity, developed or contracted · colored by 2026 status · not hashrate</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The sites by megawatt. The mapped sites ranked by developed or contracted capacity, colored by what each is doing in 2026: still mining, pivoting, converted to AI, or announced. Rockdale&apos;s 700 MW led the mining era; the gigawatt campuses now above it are the AI turn.
+      </figcaption>
+    </figure>
+  );
+}
+
+function MiningCurtailFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" aria-label="Mine cheap, curtail high: how a Texas mine responds to a grid price spike">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">MINE CHEAP, CURTAIL HIGH · A HOT TEXAS DAY, SCHEMATICALLY</text>
+<path d="M64.0,206.1 L180.0,212.7 L296.0,201.1 L412.0,184.5 L470.0,167.9 L499.0,109.8 L528.0,68.3 L557.0,60.0 L586.0,76.6 L615.0,126.4 L644.0,167.9 L702.0,196.1 L760.0,206.1" fill="none" stroke="var(--star)" strokeWidth="2"/>
+<path d="M64.0,134.7 L499.0,134.7 L504.8,217.7 L615.0,217.7 L620.8,134.7 L760.0,134.7" fill="none" stroke="var(--accent)" strokeWidth="2.5"/>
+<rect x="499.0" y="60" width="116.0" height="166" fill="var(--accent)" fillOpacity="0.08"/>
+<text x="64.0" y="242" fontSize="10" textAnchor="middle" fill="var(--muted-2)">00:00</text>
+<text x="238.0" y="242" fontSize="10" textAnchor="middle" fill="var(--muted-2)">06:00</text>
+<text x="412.0" y="242" fontSize="10" textAnchor="middle" fill="var(--muted-2)">12:00</text>
+<text x="586.0" y="242" fontSize="10" textAnchor="middle" fill="var(--muted-2)">18:00</text>
+<text x="760.0" y="242" fontSize="10" textAnchor="middle" fill="var(--muted-2)">24:00</text>
+<line x1="64" x2="760" y1="226" y2="226" stroke="var(--muted-2)"/>
+<text x="151.0" y="123.1" fontSize="10.5" fontWeight="600" fill="var(--accent)">mine load · full</text>
+<text x="151.0" y="192.8" fontSize="10.5" fontWeight="600" fill="var(--star)">wholesale price</text>
+<text x="557.0" y="176.2" fontSize="11.5" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">curtailed</text>
+<text x="557.0" y="189.5" fontSize="10" textAnchor="middle" fill="var(--muted-2)">power sold back or demand</text>
+<text x="557.0" y="201.1" fontSize="10" textAnchor="middle" fill="var(--muted-2)">response paid by ERCOT</text>
+<text x="557.0" y="52" fontSize="10.5" textAnchor="middle" fill="var(--star)">the evening peak</text>
+<text x="64" y="268" fontSize="11" fill="var(--muted)">Layer1 ran this play in Ward County in 2020; Riot earned $31.7M doing it at Rockdale in August 2023 – more than its bitcoin that month.</text>
+<text x="405.0" y="290" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">schematic, not a real day · ERCOT demand-response and 4CP programs pay large loads to power down when the grid is stressed</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        Mine cheap, curtail high, schematically. A Texas mine runs flat out on cheap overnight and midday power, then powers down through the evening peak, selling its electricity back or collecting demand-response payments from ERCOT. The playbook Layer1 proved in 2020 became the industry&apos;s standard grid pitch.
+      </figcaption>
+    </figure>
+  );
+}
+
+function MiningAiTurnFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 262" role="img" aria-label="The AI turn in megawatts: mapped capacity by 2026 status, and the pivot timeline">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE AI TURN, IN MEGAWATTS · 6,817 MW MAPPED, BY WHAT IT IS DOING IN 2026</text>
+<rect x="28.0" y="56" width="105.8" height="34" fill="var(--accent)"/>
+<text x="80.9" y="77" fontSize="11" fontWeight="600" textAnchor="middle" fill="var(--surface)">957 MW</text>
+<text x="80.9" y="106" fontSize="10" textAnchor="middle" fill="var(--muted-2)">Bitcoin mining</text>
+<rect x="133.8" y="56" width="154.8" height="34" fill="var(--accent-soft)"/>
+<text x="211.3" y="77" fontSize="11" fontWeight="600" textAnchor="middle" fill="var(--surface)">1,400 MW</text>
+<text x="211.3" y="106" fontSize="10" textAnchor="middle" fill="var(--muted-2)">mining + AI pivot underway</text>
+<rect x="288.7" y="56" width="261.0" height="34" fill="var(--muted)"/>
+<text x="419.2" y="77" fontSize="11" fontWeight="600" textAnchor="middle" fill="var(--foreground)">2,360 MW</text>
+<text x="419.2" y="106" fontSize="10" textAnchor="middle" fill="var(--muted-2)">AI/HPC data center</text>
+<rect x="549.7" y="56" width="11.1" height="34" fill="var(--muted-2)"/>
+<text x="555.3" y="106" fontSize="10" textAnchor="middle" fill="var(--muted-2)">historic</text>
+<rect x="560.8" y="56" width="221.2" height="34" fill="var(--border)" stroke="var(--muted-2)" strokeDasharray="3 3"/>
+<text x="671.4" y="77" fontSize="11" fontWeight="600" textAnchor="middle" fill="var(--foreground)">2,000 MW</text>
+<text x="671.4" y="106" fontSize="10" textAnchor="middle" fill="var(--muted-2)">announced</text>
+<text x="28" y="146" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">WHEN EACH MINE TURNED</text>
+<line x1="64" x2="760" y1="190" y2="190" stroke="var(--muted-2)"/>
+<line x1="64.0" x2="64.0" y1="186" y2="194" stroke="var(--muted-2)"/>
+<text x="64.0" y="208" fontSize="10" textAnchor="middle" fill="var(--muted-2)">2023</text>
+<line x1="296.0" x2="296.0" y1="186" y2="194" stroke="var(--muted-2)"/>
+<text x="296.0" y="208" fontSize="10" textAnchor="middle" fill="var(--muted-2)">2024</text>
+<line x1="528.0" x2="528.0" y1="186" y2="194" stroke="var(--muted-2)"/>
+<text x="528.0" y="208" fontSize="10" textAnchor="middle" fill="var(--muted-2)">2025</text>
+<line x1="760.0" x2="760.0" y1="186" y2="194" stroke="var(--muted-2)"/>
+<text x="760.0" y="208" fontSize="10" textAnchor="middle" fill="var(--muted-2)">2026</text>
+<line x1="64.0" x2="64.0" y1="184" y2="182" stroke="var(--muted-2)"/>
+<circle cx="64.0" cy="176" r="4" fill="var(--muted)" stroke="var(--surface)" strokeWidth="1.5"/>
+<text x="74.0" y="180" fontSize="10.5" textAnchor="start" fill="var(--foreground)">Galaxy Helios</text>
+<line x1="296.0" x2="296.0" y1="184" y2="182" stroke="var(--muted-2)"/>
+<circle cx="296.0" cy="176" r="4" fill="var(--muted)" stroke="var(--surface)" strokeWidth="1.5"/>
+<text x="306.0" y="180" fontSize="10.5" textAnchor="start" fill="var(--foreground)">Core Scientific Denton</text>
+<line x1="528.0" x2="528.0" y1="184" y2="182" stroke="var(--muted-2)"/>
+<circle cx="528.0" cy="176" r="4" fill="var(--accent-soft)" stroke="var(--surface)" strokeWidth="1.5"/>
+<text x="538.0" y="180" fontSize="10.5" textAnchor="start" fill="var(--foreground)">Riot Corsicana</text>
+<line x1="528.0" x2="528.0" y1="184" y2="160" stroke="var(--muted-2)"/>
+<circle cx="528.0" cy="154" r="4" fill="var(--accent-soft)" stroke="var(--surface)" strokeWidth="1.5"/>
+<text x="538.0" y="158" fontSize="10.5" textAnchor="start" fill="var(--foreground)">Cipher Black Pearl</text>
+<line x1="760.0" x2="760.0" y1="184" y2="182" stroke="var(--muted-2)"/>
+<circle cx="760.0" cy="176" r="4" fill="var(--accent-soft)" stroke="var(--surface)" strokeWidth="1.5"/>
+<text x="750.0" y="180" fontSize="10.5" textAnchor="end" fill="var(--foreground)">Riot Rockdale</text>
+<text x="405.0" y="252" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">from the map dataset · pivot year = first AI/HPC tenant or conversion announced · Bitcoin remains the anchor tenant at hybrid sites</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The AI turn, in megawatts. Of the 6,817 MW on the map, the share still mining, the share pivoting with mining as anchor tenant, the share converted to AI, and the share announced, with the year each converting site turned. Not Bitcoin losing to AI: the power Bitcoin connected becoming the on-ramp.
+      </figcaption>
+    </figure>
+  );
+}
+
+function MiningQueueFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 260" role="img" aria-label="ERCOT interconnection queue, early 2026 versus August 2026, against the mapped sites">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE QUEUE · WHAT THE AUGUST 2026 AUDIT IS SORTING</text>
+<text x="218" y="76" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Queue, early 2026</text>
+<rect x="230" y="60" width="257.5" height="24" rx="4" fill="var(--muted)"/>
+<text x="497.5" y="76" fontSize="11" fill="var(--muted)">≈ 226 GW of interconnection requests</text>
+<text x="218" y="120" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Queue, August 2026</text>
+<rect x="230" y="104" width="540.0" height="24" rx="4" fill="var(--accent)"/>
+<rect x="230" y="104" width="486.0" height="24" rx="4" fill="var(--surface)" fillOpacity="0.18"/>
+<text x="240" y="120" fontSize="11" fontWeight="600" fill="var(--surface)">≈ 474 GW · about 90% data centers</text>
+<text x="218" y="164" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">This map, developed + approved</text>
+<rect x="230" y="148" width="5.5" height="24" rx="4" fill="var(--star)"/>
+<text x="245.5" y="164" fontSize="11" fill="var(--muted)">≈ 4.8 GW · the sites already holding power</text>
+<text x="230" y="198" fontSize="11" fill="var(--muted)">No grid can build 474 GW. An approved interconnection stops being paperwork and becomes the moat –</text>
+<text x="230" y="216" fontSize="11" fill="var(--muted)">“if MWs are scarce, it makes sense to earn more per MW.”</text>
+<text x="405.0" y="250" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">ERCOT queue figures as reported August 2026; Abbott’s audit order, Aug 4, 2026 · bars to scale</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The queue, to scale. ERCOT&apos;s interconnection requests roughly doubled in eight months to about 474 gigawatts, most of it data centers, against a few gigawatts of miner-built capacity already holding approved power. The August 2026 audit is the state sorting the real projects from the speculative ones.
+      </figcaption>
+    </figure>
+  );
+}
+
+function MiningDealsFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 280" role="img" aria-label="The deal board: contracted AI leases on Texas mining sites, by value">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE DEAL BOARD · AI LEASES ON MINER-BUILT POWER, BY CONTRACT VALUE</text>
+<text x="218" y="72" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Hut 8 Beacon Point</text>
+<text x="218" y="86" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">Nueces County · 2026</text>
+<rect x="230" y="58" width="520.0" height="22" rx="4" fill="var(--accent)" fillOpacity="1.00"/>
+<text x="758.0" y="73" fontSize="11.5" fontWeight="600" fill="var(--foreground)">$19.6B</text>
+<text x="230" y="94" fontSize="10" fill="var(--muted-2)">1 GW · two 15-yr, 352 MW leases · reported Nvidia</text>
+<text x="218" y="122" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Riot Rockdale</text>
+<text x="218" y="136" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">Milam County · Aug 10, 2026</text>
+<rect x="230" y="108" width="241.4" height="22" rx="4" fill="var(--accent)" fillOpacity="0.76"/>
+<text x="479.4" y="123" fontSize="11.5" fontWeight="600" fill="var(--foreground)">$9.1B</text>
+<text x="230" y="144" fontSize="10" fill="var(--muted-2)">191 MW · 20-yr lease, frontier AI lab · AMD first tenant</text>
+<text x="218" y="172" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Core Scientific Denton</text>
+<text x="218" y="186" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">Denton County · 2024 →</text>
+<rect x="230" y="158" width="161.8" height="22" rx="4" fill="var(--accent)" fillOpacity="0.69"/>
+<text x="399.8" y="173" fontSize="11.5" fontWeight="600" fill="var(--foreground)">$6.1B</text>
+<text x="230" y="194" fontSize="10" fill="var(--muted-2)">campus conversion for CoreWeave</text>
+<text x="218" y="222" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Cipher Barber Lake</text>
+<text x="218" y="236" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">Mitchell County · 2026</text>
+<rect x="230" y="208" width="79.6" height="22" rx="4" fill="var(--accent)" fillOpacity="0.62"/>
+<text x="317.6" y="223" fontSize="11.5" fontWeight="600" fill="var(--foreground)">$3.0B</text>
+<text x="230" y="244" fontSize="10" fill="var(--muted-2)">300 MW · Fluidstack, Google backstop</text>
+<text x="405.0" y="270" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Hut 8, Riot, Core Scientific, and Cipher disclosures as cited on the map · Helios (133 MW to CoreWeave, over $1B a year projected) and Black Pearl (Amazon) not valued publicly</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The deal board. The four publicly valued AI leases on Texas mining sites, by contract value: Hut 8&apos;s gigawatt at Beacon Point, Riot&apos;s 191 megawatts at Rockdale, Core Scientific&apos;s Denton conversion, and Cipher&apos;s Barber Lake. The machines Bitcoin installed are why Texas is the front line of the AI power crunch.
+      </figcaption>
+    </figure>
+  );
+}
+// mining-figs:end
 export default function MiningMapPage() {
   const pageUrl = `${site.url}/bitcoin-mining-map-texas`;
 
@@ -257,6 +479,8 @@ export default function MiningMapPage() {
             Western Hemisphere.
           </p>
 
+          <MiningRankFigure />
+
           <h2>Why is Bitcoin mining concentrated in West Texas?</h2>
           <p>
             Because that&apos;s where the stranded power is. West Texas
@@ -273,6 +497,8 @@ export default function MiningMapPage() {
             <strong>demand response</strong> programs, which pay large loads to
             power down when the grid is stressed.<C n={17} />
           </p>
+
+          <MiningCurtailFigure />
 
           <h2>Why are Bitcoin mines turning into AI data centers?</h2>
           <p>
@@ -294,6 +520,8 @@ export default function MiningMapPage() {
             like Rockdale.
           </p>
 
+          <MiningAiTurnFigure />
+
           <h2>What did Texas&apos;s August 2026 data-center audit change?</h2>
           <p>
             On August 4, 2026, Governor Greg Abbott ordered the Public Utility
@@ -311,6 +539,10 @@ export default function MiningMapPage() {
             at Rockdale and its approved gigawatt at Corsicana among them, are
             the ones holding it.<C n={20} />
           </p>
+
+          <MiningQueueFigure />
+
+
           <p>
             What the audit is now screening is a Texas land-grab for
             miner-built AI capacity. Hut 8 has fully contracted its 1-gigawatt{" "}
@@ -330,6 +562,8 @@ export default function MiningMapPage() {
             are why Texas is now the front line of the AI power crunch — and why
             the state just hit pause to take inventory.
           </p>
+
+          <MiningDealsFigure />
 
           <h2>The counterweight: Granbury&apos;s noise fight</h2>
           <p>
