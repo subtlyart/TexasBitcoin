@@ -330,7 +330,7 @@ export default function HistoryPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: `${site.url}/history-of-bitcoin-in-texas`,
     datePublished: "2026-06-28",
-    dateModified: "2026-09-01",
+    dateModified: "2026-09-05",
   };
 
   const faqJsonLd = {
@@ -393,7 +393,7 @@ export default function HistoryPage() {
             and the proving ground for what comes next.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published June 28, 2026 · Updated September 1, 2026
+            By {site.name} · Published June 28, 2026 · Updated September 5, 2026
           </p>
         </header>
 
@@ -698,7 +698,14 @@ export default function HistoryPage() {
             who led the 2021 floor fight and wrote the CBDC ban into law; and{" "}
             <Link href="/jimmy-song-bitcoin">Jimmy Song</Link>, the Austin
             developer who taught a generation of engineers to build the
-            protocol from scratch.
+            protocol from scratch. Beneath all of them is the merchant layer
+            that took the coin before the state had a position on it –
+            opened by{" "}
+            <Link href="/central-texas-gun-works-bitcoin">
+              Central Texas Gun Works
+            </Link>
+            , the South Austin gun store that went live on Bitcoin in January
+            2014, ten weeks before Supervisory Memorandum 1037.
           </p>
 
           <h2>The frontier: programmable money on the hardest base</h2>
