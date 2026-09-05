@@ -65,6 +65,89 @@ function C({ n }: { n: number }) {
   );
 }
 
+// people-figs:start
+// Two figures - the record and the counterweight - drawn from the dated,
+// sourced facts on this page (Sept 2026). Server-rendered SVG, no client JS.
+function HancockThreeMovesFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 260" role="img" aria-label="Kelly Hancock's three moves: the first purchase, the build to $10 million, the committee and RFP">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THREE MOVES IN TWELVE MONTHS · WHAT THE ACTING COMPTROLLER ACTUALLY DID</text>
+<rect x="28" y="52" width="246" height="150" rx="10" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="44" y="76" fontSize="10.5" fontWeight="600" letterSpacing="2" fill="var(--accent)">01</text>
+<text x="44" y="100" fontSize="15" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">The purchase</text>
+<text x="44" y="118" fontSize="10.5" fontWeight="600" fill="var(--accent)">November 20, 2025</text>
+<text x="44" y="142" fontSize="10.5" fill="var(--muted-2)">~$5M into IBIT at $51.87 · Bitcoin</text>
+<text x="44" y="156" fontSize="10.5" fill="var(--muted-2)">near $91,300 · first state buy in</text>
+<text x="44" y="170" fontSize="10.5" fill="var(--muted-2)">U.S. history</text>
+<path d="M278,127 L284,127" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<rect x="286" y="52" width="246" height="150" rx="10" fill="var(--surface-2)" stroke="var(--accent-soft)" strokeWidth="1.25"/>
+<text x="302" y="76" fontSize="10.5" fontWeight="600" letterSpacing="2" fill="var(--accent-soft)">02</text>
+<text x="302" y="100" fontSize="15" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">The build</text>
+<text x="302" y="118" fontSize="10.5" fontWeight="600" fill="var(--accent-soft)">by May 2026</text>
+<text x="302" y="142" fontSize="10.5" fill="var(--muted-2)">the position reaches the full $10M</text>
+<text x="302" y="156" fontSize="10.5" fill="var(--muted-2)">appropriation, all in the ETF</text>
+<text x="302" y="170" fontSize="10.5" fill="var(--muted-2)">placeholder</text>
+<path d="M536,127 L542,127" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<rect x="544" y="52" width="246" height="150" rx="10" fill="var(--surface-2)" stroke="var(--star)" strokeWidth="1.25"/>
+<text x="560" y="76" fontSize="10.5" fontWeight="600" letterSpacing="2" fill="var(--star)">03</text>
+<text x="560" y="100" fontSize="15" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">The plumbing</text>
+<text x="560" y="118" fontSize="10.5" fontWeight="600" fill="var(--star)">May 28, 2026</text>
+<text x="560" y="142" fontSize="10.5" fill="var(--muted-2)">four committee seats named;</text>
+<text x="560" y="156" fontSize="10.5" fill="var(--muted-2)">custody RFP 908-26-1778WS issued ·</text>
+<text x="560" y="170" fontSize="10.5" fill="var(--muted-2)">closes July 10</text>
+<text x="405.0" y="250" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">The Bond Buyer; Texas Comptroller, May 28, 2026; ESBD · the office, not the man, was handed the mandate – this is what he did with it</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        Three moves in twelve months. The first state Bitcoin purchase in American history, the build to the full appropriation, and the plumbing: a seated committee and a custody solicitation. Every precedent his successor works from was set here.
+      </figcaption>
+    </figure>
+  );
+}
+
+function HancockHandoffFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 280" role="img" aria-label="The handoff of August 1, 2026: what transferred in structure and what did not in substance">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE HANDOFF · AUGUST 1, 2026 · STRUCTURE TRANSFERRED, SUBSTANCE STILL IN PROCUREMENT</text>
+<rect x="28" y="52" width="370" height="196" rx="10" fill="var(--surface-2)" stroke="#6f9e6a" strokeWidth="1.25"/>
+<text x="44" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="#6f9e6a">TRANSFERRED WITH THE OFFICE</text>
+<circle cx="50" cy="98" r="3.5" fill="#6f9e6a"/>
+<text x="62" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">The $10M position</text>
+<text x="62" y="115" fontSize="10" fill="var(--muted-2)">in the iShares Bitcoin Trust</text>
+<circle cx="50" cy="132" r="3.5" fill="#6f9e6a"/>
+<text x="62" y="136" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">A seated committee</text>
+<text x="62" y="149" fontSize="10" fill="var(--muted-2)">five members, the Comptroller by office</text>
+<circle cx="50" cy="166" r="3.5" fill="#6f9e6a"/>
+<text x="62" y="170" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">A closed solicitation</text>
+<text x="62" y="183" fontSize="10" fill="var(--muted-2)">RFP 908-26-1778WS, bids in since July 10</text>
+<circle cx="50" cy="200" r="3.5" fill="#6f9e6a"/>
+<text x="62" y="204" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Fund 1018</text>
+<text x="62" y="217" fontSize="10" fill="var(--muted-2)">its own line in the manual of accounts</text>
+<rect x="412" y="52" width="370" height="196" rx="10" fill="var(--surface-2)" stroke="#c98a4e" strokeWidth="1.25"/>
+<text x="428" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="#c98a4e">NOT YET</text>
+<circle cx="434" cy="98" r="3.5" fill="#c98a4e"/>
+<text x="446" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">A custodian</text>
+<text x="446" y="115" fontSize="10" fill="var(--muted-2)">the late-August target passed with no award</text>
+<circle cx="434" cy="132" r="3.5" fill="#c98a4e"/>
+<text x="446" y="136" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Coin in the state&apos;s name</text>
+<text x="446" y="149" fontSize="10" fill="var(--muted-2)">the ETF placeholder still stands</text>
+<circle cx="434" cy="166" r="3.5" fill="#c98a4e"/>
+<text x="446" y="170" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">The public holdings website</text>
+<text x="446" y="183" fontSize="10" fill="var(--muted-2)">required of the custodian, not yet built</text>
+<circle cx="434" cy="200" r="3.5" fill="#c98a4e"/>
+<text x="446" y="204" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">The first biennial report</text>
+<text x="446" y="217" fontSize="10" fill="var(--muted-2)">due December 31, 2026</text>
+<text x="405.0" y="270" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas Comptroller; ESBD · the clean transfer an orderly office promises, delivered in structure and not yet in substance</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The handoff. What passed to the successor with the office on August 1, 2026, and what had not yet happened: the custodian, the coin in the state&apos;s own name, the public window. Hancock&apos;s legacy is measured by whether the transfer was clean; the structure was, the substance is still in procurement.
+      </figcaption>
+    </figure>
+  );
+}
+
+// people-figs:end
 export default function KellyHancockBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -304,6 +387,8 @@ export default function KellyHancockBitcoinPage() {
             .
           </p>
 
+          <HancockThreeMovesFigure />
+
           <h2>Why does the comptroller matter more than the statute?</h2>
           <p>
             Because SB 21 is deliberately thin on operations. The law sets the
@@ -351,6 +436,8 @@ export default function KellyHancockBitcoinPage() {
             are the whole point of writing a reserve into statute rather than
             leaving it to personality.
           </p>
+
+          <HancockHandoffFigure />
 
           <h2>Where does the Hancock record stand today?</h2>
           <p>

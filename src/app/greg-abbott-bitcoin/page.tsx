@@ -70,6 +70,112 @@ function C({ n }: { n: number }) {
   );
 }
 
+// people-figs:start
+// Two figures - the record and the counterweight - drawn from the dated,
+// sourced facts on this page (Sept 2026). Server-rendered SVG, no client JS.
+function AbbottArcFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 330" role="img" aria-label="Greg Abbott and Bitcoin: the arc from 2014 donations to the 2026 ratepayer directive">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE ARC · RECRUIT, THEN CONDITION · 2014 → 2026</text>
+<line x1="66" x2="744" y1="130" y2="130" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<line x1="78.9" x2="78.9" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="78.9" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2014</text>
+<line x1="130.0" x2="130.0" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="130.0" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2015</text>
+<line x1="181.2" x2="181.2" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="181.2" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2016</text>
+<line x1="232.5" x2="232.5" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="232.5" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2017</text>
+<line x1="283.6" x2="283.6" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="283.6" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2018</text>
+<line x1="334.7" x2="334.7" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="334.7" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2019</text>
+<line x1="385.9" x2="385.9" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="385.9" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2020</text>
+<line x1="437.2" x2="437.2" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="437.2" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2021</text>
+<line x1="488.3" x2="488.3" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="488.3" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2022</text>
+<line x1="539.4" x2="539.4" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="539.4" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2023</text>
+<line x1="590.6" x2="590.6" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="590.6" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2024</text>
+<line x1="641.9" x2="641.9" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="641.9" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2025</text>
+<line x1="693.0" x2="693.0" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="693.0" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2026</text>
+<line x1="93.7" x2="93.7" y1="124" y2="80" stroke="var(--muted-2)"/>
+<circle cx="93.7" cy="130" r="5" fill="var(--star)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="93.7" y="54" fontSize="12" fontWeight="600" textAnchor="start" fill="var(--foreground)" fontFamily="var(--font-display)">Takes bitcoin donations</text>
+<text x="93.7" y="68" fontSize="10" textAnchor="start" fill="var(--muted-2)">as Attorney General, running for governor</text>
+<line x1="447.4" x2="447.4" y1="136" y2="204" stroke="var(--muted-2)"/>
+<circle cx="447.4" cy="130" r="5" fill="var(--accent-soft)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="447.4" y="218" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">“Count me in”</text>
+<text x="447.4" y="232" fontSize="10" textAnchor="middle" fill="var(--muted-2)">endorses the 87th&apos;s crypto bills</text>
+<line x1="460.3" x2="460.3" y1="124" y2="116" stroke="var(--muted-2)"/>
+<circle cx="460.3" cy="130" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="460.3" y="92" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Signs HB 4474, HB 1576</text>
+<text x="460.3" y="106" fontSize="10" textAnchor="middle" fill="var(--muted-2)">virtual currency in the UCC; a work group</text>
+<line x1="477.4" x2="477.4" y1="136" y2="164" stroke="var(--muted-2)"/>
+<circle cx="477.4" cy="130" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="477.4" y="178" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Recruits the miners</text>
+<text x="477.4" y="192" fontSize="10" textAnchor="middle" fill="var(--muted-2)">flexible load for ERCOT, months after Uri</text>
+<line x1="665.7" x2="665.7" y1="124" y2="80" stroke="var(--muted-2)"/>
+<circle cx="665.7" cy="130" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="665.7" y="54" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Signs SB 21, HB 4488</text>
+<text x="665.7" y="68" fontSize="10" textAnchor="middle" fill="var(--muted-2)">the reserve, shielded from sweeps</text>
+<line x1="715.4" x2="715.4" y1="136" y2="204" stroke="var(--muted-2)"/>
+<circle cx="715.4" cy="130" r="5" fill="#c98a4e" stroke="var(--surface)" strokeWidth="2"/>
+<text x="715.4" y="218" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">The ratepayer directive</text>
+<text x="715.4" y="232" fontSize="10" textAnchor="end" fill="var(--muted-2)">data centers fund their own grid costs</text>
+<rect x="715.4" y="118" width="28.6" height="24" fill="#c98a4e" fillOpacity="0.12"/>
+<text x="405.0" y="320" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Abbott campaign, Texas Legislature Online, Office of the Governor · to scale by year · the second act is the pitch being held to its word</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The arc. Twelve years from taking bitcoin donations as attorney general to directing data centers to fund their own grid costs, with the recruiting years in between: the endorsement, the two 2021 laws, the miner summit, the reserve. The 2026 directive is drawn as a second act, not a reversal.
+      </figcaption>
+    </figure>
+  );
+}
+
+function AbbottRatepayerFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 290" role="img" aria-label="The ratepayer turn: the 2021 recruiting pitch beside the 2026 directive">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE RATEPAYER TURN · THE 2021 PITCH, AND THE 2026 DIRECTIVE THAT HOLDS IT TO ITS WORD</text>
+<rect x="28" y="52" width="370" height="200" rx="10" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="44" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">FALL 2021 · THE PITCH</text>
+<circle cx="50" cy="98" r="3.5" fill="var(--accent)"/>
+<text x="62" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Miners as flexible load</text>
+<text x="62" y="115" fontSize="10" fill="var(--muted-2)">power down in minutes when the grid is stressed</text>
+<circle cx="50" cy="132" r="3.5" fill="var(--accent)"/>
+<text x="62" y="136" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">A stronger, cheaper grid</text>
+<text x="62" y="149" fontSize="10" fill="var(--muted-2)">for Texans, funded by an industry that curtails</text>
+<circle cx="50" cy="166" r="3.5" fill="var(--accent)"/>
+<text x="62" y="170" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Dozens of executives in Austin</text>
+<text x="62" y="183" fontSize="10" fill="var(--muted-2)">months after Winter Storm Uri</text>
+<rect x="412" y="52" width="370" height="200" rx="10" fill="var(--surface-2)" stroke="#c98a4e" strokeWidth="1.25"/>
+<text x="428" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="#c98a4e">JUNE 10, 2026 · THE DIRECTIVE</text>
+<circle cx="434" cy="98" r="3.5" fill="#c98a4e"/>
+<text x="446" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Fund your own infrastructure</text>
+<text x="446" y="115" fontSize="10" fill="var(--muted-2)">no pass-through to residential ratepayers</text>
+<circle cx="434" cy="132" r="3.5" fill="#c98a4e"/>
+<text x="446" y="136" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">July 17 · July 31, 2026</text>
+<text x="446" y="149" fontSize="10" fill="var(--muted-2)">a protective-actions memo; PUC action on transmission costs</text>
+<circle cx="434" cy="166" r="3.5" fill="#c98a4e"/>
+<text x="446" y="170" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">“Reduce costs for residential customers”</text>
+<text x="446" y="183" fontSize="10" fill="var(--muted-2)">the directive&apos;s own words, applied to the mines he recruited</text>
+<text x="405.0" y="280" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Office of the Governor, June 10, 2026 · a governor who wanted the mines gone has blunter tools than a cost-allocation memo</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The ratepayer turn. The 2021 recruiting pitch beside the 2026 directive, which holds the industry to exactly that pitch: data centers, the category that includes the mines Abbott recruited, must fund their own grid costs. The thesis maturing, not reversing.
+      </figcaption>
+    </figure>
+  );
+}
+
+// people-figs:end
 export default function GregAbbottBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -303,6 +409,8 @@ export default function GregAbbottBitcoinPage() {
             .
           </p>
 
+          <AbbottArcFigure />
+
           <h2>Why does Abbott want Bitcoin miners on the Texas grid?</h2>
           <p>
             Because of February 2021. Winter Storm Uri broke the ERCOT grid,
@@ -378,6 +486,8 @@ export default function GregAbbottBitcoinPage() {
             What Abbott ordered instead is the frontier growing its
             institutions - the same story the reserve tells on the asset side.
           </p>
+
+          <AbbottRatepayerFigure />
 
           <h2>Where does Greg Abbott&apos;s Bitcoin record stand today?</h2>
           <p>

@@ -65,6 +65,78 @@ function C({ n }: { n: number }) {
   );
 }
 
+// people-figs:start
+// Two figures - the record and the counterweight - drawn from the dated,
+// sourced facts on this page (Sept 2026). Server-rendered SVG, no client JS.
+function PatrickTwoSidesFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 290" role="img" aria-label="Dan Patrick and Bitcoin: the brake on the load beside the priority on the asset">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE ASSET, NOT THE MEGAWATTS · ONE RECORD, TWO SIDES</text>
+<rect x="28" y="52" width="370" height="200" rx="10" fill="var(--surface-2)" stroke="#c98a4e" strokeWidth="1.25"/>
+<text x="44" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="#c98a4e">THE BRAKE · THE LOAD</text>
+<circle cx="50" cy="98" r="3.5" fill="#c98a4e"/>
+<text x="62" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">SB 1751 passes the Senate 30–1</text>
+<text x="62" y="115" fontSize="10" fill="var(--muted-2)">April 12, 2023 · a 10% demand-response cap</text>
+<circle cx="50" cy="132" r="3.5" fill="#c98a4e"/>
+<text x="62" y="136" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">“Wild Wild West”</text>
+<text x="62" y="149" fontSize="10" fill="var(--muted-2)">June 2024 · mining load near 2,600 MW, about Austin&apos;s draw</text>
+<circle cx="50" cy="166" r="3.5" fill="#c98a4e"/>
+<text x="62" y="170" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">The cap dies in the House</text>
+<text x="62" y="183" fontSize="10" fill="var(--muted-2)">May 2023 · the Senate&apos;s verdict stands on record</text>
+<rect x="412" y="52" width="370" height="200" rx="10" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="428" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE PRIORITY · THE ASSET</text>
+<circle cx="434" cy="98" r="3.5" fill="var(--accent)"/>
+<text x="446" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">The reserve, a priority</text>
+<text x="446" y="115" fontSize="10" fill="var(--muted-2)">January 30, 2025</text>
+<circle cx="434" cy="132" r="3.5" fill="var(--accent)"/>
+<text x="446" y="136" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">SB 21 on the Top 40</text>
+<text x="446" y="149" fontSize="10" fill="var(--muted-2)">the list that runs the Senate calendar</text>
+<circle cx="434" cy="166" r="3.5" fill="var(--accent)"/>
+<text x="446" y="170" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Passed 25–5, then signed</text>
+<text x="446" y="183" fontSize="10" fill="var(--muted-2)">March 6 → June 20, 2025 · “digital gold”</text>
+<text x="405.0" y="280" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas Legislature Online; Lt. Gov. Patrick statements · bullish on the coin, tough on the load – one coherent position</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The asset, not the megawatts. One record with two sides: the 2023 brake on miners&apos; grid credits and the 2024 warning about the load, beside the 2025 priority that carried the reserve. Read by its dates it is one position, not a flip.
+      </figcaption>
+    </figure>
+  );
+}
+
+function PatrickSettlementFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 270" role="img" aria-label="Service or subsidy: the industry's case against SB 1751, the ratepayer case for it, and how Texas split the difference">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">SERVICE OR SUBSIDY · THE INDUSTRY’S CASE, THE RATEPAYER’S CASE, AND THE SETTLEMENT</text>
+<rect x="28" y="52" width="370" height="140" rx="10" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="44" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE INDUSTRY’S CASE</text>
+<circle cx="50" cy="98" r="3.5" fill="var(--accent)"/>
+<text x="62" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Demand response is a service</text>
+<text x="62" y="115" fontSize="10" fill="var(--muted-2)">two gigawatts off in minutes is worth paying for</text>
+<circle cx="50" cy="132" r="3.5" fill="var(--accent)"/>
+<text x="62" y="136" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Miners show up voluntarily</text>
+<text x="62" y="149" fontSize="10" fill="var(--muted-2)">the one industry that curtails on call</text>
+<rect x="412" y="52" width="370" height="140" rx="10" fill="var(--surface-2)" stroke="#c98a4e" strokeWidth="1.25"/>
+<text x="428" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="#c98a4e">THE RATEPAYER’S CASE</text>
+<circle cx="434" cy="98" r="3.5" fill="#c98a4e"/>
+<text x="446" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Outsized credits get noticed</text>
+<text x="446" y="115" fontSize="10" fill="var(--muted-2)">one industry, paid to power down</text>
+<circle cx="434" cy="132" r="3.5" fill="#c98a4e"/>
+<text x="446" y="136" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">A presiding officer&apos;s job</text>
+<text x="446" y="149" fontSize="10" fill="var(--muted-2)">to notice when residential bills carry it</text>
+<rect x="28" y="206" width="754" height="34" rx="8" fill="var(--surface-2)" stroke="#6f9e6a"/>
+<text x="405.0" y="228" fontSize="11.5" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">The settlement: SB 1751 died, the mines kept growing, and cost allocation moved to the PUC</text>
+<text x="405.0" y="260" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas Legislature Online, SB 1751 (88R) · federalism&apos;s version of a negotiated settlement</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        Service or subsidy. The industry&apos;s case that curtailment is a service worth paying for, the ratepayer&apos;s case that outsized credits get noticed, and how Texas split the difference: the cap died, the mines grew, and the cost question moved to the Public Utility Commission.
+      </figcaption>
+    </figure>
+  );
+}
+
+// people-figs:end
 export default function DanPatrickBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -273,6 +345,8 @@ export default function DanPatrickBitcoinPage() {
             simultaneously.
           </p>
 
+          <PatrickTwoSidesFigure />
+
           <h2>What was SB 1751, and what did Patrick&apos;s Senate do?</h2>
           <p>
             Senate Bill 1751 was the 88th session&apos;s attempt to discipline
@@ -352,6 +426,8 @@ export default function DanPatrickBitcoinPage() {
             That is not a loose end; it is federalism&apos;s version of a
             negotiated settlement.
           </p>
+
+          <PatrickSettlementFigure />
 
           <h2>Where does Dan Patrick&apos;s Bitcoin record stand today?</h2>
           <p>

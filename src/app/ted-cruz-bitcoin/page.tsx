@@ -70,6 +70,105 @@ function C({ n }: { n: number }) {
   );
 }
 
+// people-figs:start
+// Two figures - the record and the counterweight - drawn from the dated,
+// sourced facts on this page (Sept 2026). Server-rendered SVG, no client JS.
+function CruzSkinFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 330" role="img" aria-label="Ted Cruz and Bitcoin: the legislative record and the disclosed purchases on one strip">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">SKIN IN THE GAME · THE FLOOR, THE FILINGS, AND THE PURCHASES, 2021 → 2026</text>
+<line x1="66" x2="744" y1="130" y2="130" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<line x1="158.8" x2="158.8" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="158.8" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2022</text>
+<line x1="282.0" x2="282.0" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="282.0" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2023</text>
+<line x1="405.2" x2="405.2" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="405.2" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2024</text>
+<line x1="528.7" x2="528.7" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="528.7" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2025</text>
+<line x1="651.9" x2="651.9" y1="126" y2="134" stroke="var(--muted-2)"/>
+<text x="651.9" y="148" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2026</text>
+<line x1="109.9" x2="109.9" y1="124" y2="80" stroke="var(--muted-2)"/>
+<circle cx="109.9" cy="130" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="109.9" y="54" fontSize="12" fontWeight="600" textAnchor="start" fill="var(--foreground)" fontFamily="var(--font-display)">The floor fight</text>
+<text x="109.9" y="68" fontSize="10" textAnchor="start" fill="var(--muted-2)">amendment to strike crypto provisions fails on one objection</text>
+<line x1="166.9" x2="166.9" y1="136" y2="204" stroke="var(--muted-2)"/>
+<circle cx="166.9" cy="130" r="5" fill="var(--star)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="166.9" y="218" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Buys $15k–$50k</text>
+<text x="166.9" y="232" fontSize="10" textAnchor="middle" fill="var(--muted-2)">through River, in a dip · Senate disclosure</text>
+<line x1="343.1" x2="343.1" y1="124" y2="116" stroke="var(--muted-2)"/>
+<circle cx="343.1" cy="130" r="5" fill="var(--star)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="343.1" y="92" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Buys $50k–$100k more</text>
+<text x="343.1" y="106" fontSize="10" textAnchor="middle" fill="var(--muted-2)">2023 purchases; “buys weekly,” per trade press</text>
+<line x1="424.1" x2="424.1" y1="136" y2="164" stroke="var(--muted-2)"/>
+<circle cx="424.1" cy="130" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="424.1" y="178" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">S. 3801</text>
+<text x="424.1" y="192" fontSize="10" textAnchor="middle" fill="var(--muted-2)">third version of the CBDC ban</text>
+<line x1="533.4" x2="533.4" y1="124" y2="80" stroke="var(--muted-2)"/>
+<circle cx="533.4" cy="130" r="5" fill="var(--accent-soft)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="533.4" y="54" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Commerce chairman</text>
+<text x="533.4" y="68" fontSize="10" textAnchor="middle" fill="var(--muted-2)">jurisdiction over market structure</text>
+<line x1="716.3" x2="716.3" y1="136" y2="204" stroke="var(--muted-2)"/>
+<circle cx="716.3" cy="130" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="716.3" y="218" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">CBDC ban becomes law</text>
+<text x="716.3" y="232" fontSize="10" textAnchor="end" fill="var(--muted-2)">four years, § 1101 of P.L. 119-101 · he voted no: not permanent</text>
+<text x="405.0" y="320" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Senate financial disclosures; Congressional Record; Public Law 119-101 · orange: the record; gold: the purchases</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        Skin in the game. The legislative record and the disclosed purchases on one strip: the 2021 floor fight first, the first bitcoin purchase five months later, two more years of buying, the CBDC bills, the committee chair, and the ban becoming law in 2026 over his own no vote.
+      </figcaption>
+    </figure>
+  );
+}
+
+function CruzMoneyFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 290" role="img" aria-label="The money question: positions taken before the 2024 crypto PAC money arrived">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE MONEY QUESTION · WHAT CAME FIRST, THE POSITIONS OR THE MONEY</text>
+<line x1="66" x2="744" y1="122" y2="122" stroke="var(--muted-2)" strokeWidth="1.5"/>
+<line x1="193.6" x2="193.6" y1="118" y2="126" stroke="var(--muted-2)"/>
+<text x="193.6" y="140" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2022</text>
+<line x1="363.0" x2="363.0" y1="118" y2="126" stroke="var(--muted-2)"/>
+<text x="363.0" y="140" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2023</text>
+<line x1="532.4" x2="532.4" y1="118" y2="126" stroke="var(--muted-2)"/>
+<text x="532.4" y="140" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2024</text>
+<line x1="702.2" x2="702.2" y1="118" y2="126" stroke="var(--muted-2)"/>
+<text x="702.2" y="140" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2025</text>
+<line x1="126.3" x2="126.3" y1="116" y2="80" stroke="var(--muted-2)"/>
+<circle cx="126.3" cy="122" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="126.3" y="54" fontSize="12" fontWeight="600" textAnchor="start" fill="var(--foreground)" fontFamily="var(--font-display)">Floor fight</text>
+<text x="126.3" y="68" fontSize="10" textAnchor="start" fill="var(--muted-2)">August 2021</text>
+<line x1="204.8" x2="204.8" y1="128" y2="172" stroke="var(--muted-2)"/>
+<circle cx="204.8" cy="122" r="5" fill="var(--star)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="204.8" y="186" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">First purchase</text>
+<text x="204.8" y="200" fontSize="10" textAnchor="middle" fill="var(--muted-2)">January 2022</text>
+<line x1="390.4" x2="390.4" y1="116" y2="80" stroke="var(--muted-2)"/>
+<circle cx="390.4" cy="122" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="390.4" y="54" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">CBDC bills</text>
+<text x="390.4" y="68" fontSize="10" textAnchor="middle" fill="var(--muted-2)">2022–2024, three versions</text>
+<line x1="631.2" x2="631.2" y1="128" y2="172" stroke="var(--muted-2)"/>
+<circle cx="631.2" cy="122" r="5" fill="#c98a4e" stroke="var(--surface)" strokeWidth="2"/>
+<text x="631.2" y="186" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">The PAC money</text>
+<text x="631.2" y="200" fontSize="10" textAnchor="middle" fill="var(--muted-2)">$350k via Bitcoin Freedom PAC, funded by $3.9M from Jeff Yass</text>
+<text x="631.2" y="213" fontSize="10" textAnchor="middle" fill="var(--muted-2)">$3,300 each from Brian Armstrong and the Winklevoss twins</text>
+<line x1="708.7" x2="708.7" y1="116" y2="80" stroke="var(--muted-2)"/>
+<circle cx="708.7" cy="122" r="5" fill="var(--accent-soft)" stroke="var(--surface)" strokeWidth="2"/>
+<text x="708.7" y="54" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Commerce chair</text>
+<text x="708.7" y="68" fontSize="10" textAnchor="end" fill="var(--muted-2)">January 2025</text>
+<rect x="532.4" y="110" width="169.4" height="24" fill="#c98a4e" fillOpacity="0.12"/>
+<text x="616.8" y="104" fontSize="9.5" textAnchor="middle" fill="#c98a4e">the $192M race</text>
+<text x="405.0" y="280" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">FEC filings; Senate disclosures · the money bought reinforcement, not conversion – whether donors should also chair the committee is the fair question</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The money question, sequenced. The floor fight, the first purchase, and the CBDC bills all predate the 2024 race, the most expensive Senate contest in history, in which crypto-linked money arrived. What the money bought was reinforcement. Whether an industry&apos;s donors should chair its committee is the fair question left.
+      </figcaption>
+    </figure>
+  );
+}
+
+// people-figs:end
 export default function TedCruzBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -339,6 +438,8 @@ export default function TedCruzBitcoinPage() {
             backed by the senator&apos;s own treasury, not just his speeches.
           </p>
 
+          <CruzSkinFigure />
+
           <h2>What has Ted Cruz done for Bitcoin in the Senate?</h2>
           <p>
             Three items carry the record. First, the CBDC crusade: Cruz
@@ -394,6 +495,8 @@ export default function TedCruzBitcoinPage() {
             it is a fair question for voters; pretending Cruz flipped his
             position for it is not supported by the dates.
           </p>
+
+          <CruzMoneyFigure />
 
           <h2>Where does Ted Cruz stand on Bitcoin today?</h2>
           <p>

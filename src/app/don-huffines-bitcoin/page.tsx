@@ -65,6 +65,90 @@ function C({ n }: { n: number }) {
   );
 }
 
+// people-figs:start
+// Two figures - the record and the counterweight - drawn from the dated,
+// sourced facts on this page (Sept 2026). Server-rendered SVG, no client JS.
+function HuffinesPlanFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 320" role="img" aria-label="Don Huffines's 2022 Bitcoin plan against what Texas law did by 2025">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE 2022 PLAN AGAINST THE 2025 STATUTE · SIX PLANKS, WHAT BECAME OF EACH</text>
+<rect x="28" y="48" width="754" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="48" y="68" fontSize="14" fontWeight="600" fill="#6f9e6a">✓</text>
+<text x="72" y="67" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Hold state reserves in Bitcoin</text>
+<text x="766" y="67" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">SB 21 built it – by the Legislature, without him · June 20, 2025</text>
+<rect x="28" y="86" width="754" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="48" y="106" fontSize="14" fontWeight="600" fill="#c98a4e">✕</text>
+<text x="72" y="105" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Declare Bitcoin legal tender</text>
+<text x="766" y="105" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">Article I, Section 10 closes that lane; Texas chose gold and silver instead</text>
+<rect x="28" y="124" width="754" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="48" y="144" fontSize="14" fontWeight="600" fill="#c98a4e">✕</text>
+<text x="72" y="143" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">A Bitcoin &amp; Cryptocurrency Policy Commission</text>
+<text x="766" y="143" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">never created; SB 21 seated a five-member reserve committee instead</text>
+<rect x="28" y="162" width="754" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="48" y="182" fontSize="14" fontWeight="600" fill="#6f9e6a">✓</text>
+<text x="72" y="181" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Pair miners with flared gas</text>
+<text x="766" y="181" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">HB 591 exempted wellhead-consumed gas from severance tax · 2023</text>
+<rect x="28" y="200" width="754" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="48" y="220" fontSize="14" fontWeight="600" fill="#c98a4e">✕</text>
+<text x="72" y="219" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Shield holders and miners from federal rules</text>
+<text x="766" y="219" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">no such statute; the federal map is Washington&apos;s</text>
+<rect x="28" y="238" width="754" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+<text x="48" y="258" fontSize="14" fontWeight="600" fill="#c98a4e">✕</text>
+<text x="72" y="257" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Bar cities from regulating them</text>
+<text x="766" y="257" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">not enacted; the 2025 large-load law went the other way</text>
+<text x="405.0" y="310" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">donhuffines.com/issues (Jan 28, 2022, since removed), via Slashdot and BTC Times; Texas Legislature Online · the reserve plank was the one ahead of its time</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The 2022 plan against the 2025 statute. Six planks from a losing campaign for governor, and what became of each: the state reserve was built three years later without him; the flared-gas plank arrived by another bill; legal tender, a commission, a federal shield, and local preemption did not. The one plank ahead of its time is the one he now operates.
+      </figcaption>
+    </figure>
+  );
+}
+
+function HuffinesSilenceFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" aria-label="The silence, itemized: the Comptroller's releases in Huffines's first month by topic, none on the reserve">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE SILENCE, ITEMIZED · THE OFFICE’S RELEASES, AUGUST 1 – SEPTEMBER 1, 2026, BY TOPIC</text>
+<text x="278" y="73" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Sales tax collections</text>
+<rect x="290" y="60" width="280.0" height="18" rx="3" fill="var(--muted-2)"/>
+<text x="578.0" y="73" fontSize="11" fontWeight="600" fill="var(--foreground)">4</text>
+<text x="610.0" y="73" fontSize="9.5" fill="var(--muted-2)">Aug 3, Aug 6, Aug 12, Sept 1</text>
+<text x="278" y="103" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Property tax relief</text>
+<rect x="290" y="90" width="140.0" height="18" rx="3" fill="var(--muted-2)"/>
+<text x="438.0" y="103" fontSize="11" fontWeight="600" fill="var(--foreground)">2</text>
+<text x="610.0" y="103" fontSize="9.5" fill="var(--muted-2)">Aug 18, Aug 27</text>
+<text x="278" y="133" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Education Freedom Accounts</text>
+<rect x="290" y="120" width="140.0" height="18" rx="3" fill="var(--muted-2)"/>
+<text x="438.0" y="133" fontSize="11" fontWeight="600" fill="var(--foreground)">2</text>
+<text x="610.0" y="133" fontSize="9.5" fill="var(--muted-2)">Aug 3, Aug 13</text>
+<text x="278" y="163" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Audits and performance reviews</text>
+<rect x="290" y="150" width="140.0" height="18" rx="3" fill="var(--muted-2)"/>
+<text x="438.0" y="163" fontSize="11" fontWeight="600" fill="var(--foreground)">2</text>
+<text x="610.0" y="163" fontSize="9.5" fill="var(--muted-2)">Aug 4, Aug 19</text>
+<text x="278" y="193" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Sworn in; salary refused</text>
+<rect x="290" y="180" width="70.0" height="18" rx="3" fill="var(--muted-2)"/>
+<text x="368.0" y="193" fontSize="11" fontWeight="600" fill="var(--foreground)">1</text>
+<text x="610.0" y="193" fontSize="9.5" fill="var(--muted-2)">Aug 1</text>
+<text x="278" y="223" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Job growth</text>
+<rect x="290" y="210" width="70.0" height="18" rx="3" fill="var(--muted-2)"/>
+<text x="368.0" y="223" fontSize="11" fontWeight="600" fill="var(--foreground)">1</text>
+<text x="610.0" y="223" fontSize="9.5" fill="var(--muted-2)">Aug 22</text>
+<text x="278" y="253" fontSize="12" fontWeight="600" textAnchor="end" fill="#c98a4e" fontFamily="var(--font-display)">The Strategic Bitcoin Reserve</text>
+<rect x="290" y="240" width="280.0" height="18" rx="3" fill="none" stroke="#c98a4e" strokeDasharray="4 4"/>
+<text x="298" y="253" fontSize="11" fontWeight="600" fill="#c98a4e">0</text>
+<text x="610.0" y="253" fontSize="9.5" fill="var(--muted-2)">no release · custody award overdue</text>
+<text x="405.0" y="290" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas Comptroller newsroom, Aug 1 – Sept 1, 2026 · twelve releases; silence on a live solicitation is procedure, not policy – but the reader should see it</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The silence, itemized. Every release from the Comptroller&apos;s office in Huffines&apos;s first month, by topic: sales tax, property tax, education accounts, audits, job growth. The reserve, the custodian, and the overdue award appear in none of them. Silence on a live solicitation is procedure; the record still has not started.
+      </figcaption>
+    </figure>
+  );
+}
+
+// people-figs:end
 export default function DonHuffinesBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -333,6 +417,8 @@ export default function DonHuffinesBitcoinPage() {
             ahead of its time and within his eventual reach.
           </p>
 
+          <HuffinesPlanFigure />
+
           <h2>What does the comptroller actually control?</h2>
           <p>
             The whole operating layer. SB 21 is thin on operations by design:
@@ -392,6 +478,8 @@ export default function DonHuffinesBitcoinPage() {
             started. When it does, the first entry will be a custodian&apos;s
             name.
           </p>
+
+          <HuffinesSilenceFigure />
 
           <h2>Where does the Huffines record stand today?</h2>
           <p>

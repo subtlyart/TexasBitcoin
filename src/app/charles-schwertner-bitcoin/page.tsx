@@ -65,6 +65,87 @@ function C({ n }: { n: number }) {
   );
 }
 
+// people-figs:start
+// Two figures - the record and the counterweight - drawn from the dated,
+// sourced facts on this page (Sept 2026). Server-rendered SVG, no client JS.
+function SchwertnerVotesFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 280" role="img" aria-label="The vote ledger for SB 21: committee 10 to 0, Senate 25 to 5, House committee 8 to 4, House 101 to 42">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE VOTE LEDGER · SB 21 AT EVERY STOP, YES AGAINST NO</text>
+<text x="258" y="74" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Senate Business &amp; Commerce</text>
+<text x="258" y="88" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">Feb 18, 2025</text>
+<rect x="270" y="62" width="480.0" height="22" rx="3" fill="#6f9e6a"/>
+<rect x="750.0" y="62" width="0.0" height="22" rx="3" fill="#c98a4e"/>
+<text x="278" y="77" fontSize="11" fontWeight="600" fill="var(--surface)">10 yes</text>
+<text x="758" y="77" fontSize="10" fill="var(--muted-2)">100%</text>
+<text x="258" y="120" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Texas Senate</text>
+<text x="258" y="134" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">Mar 6, 2025</text>
+<rect x="270" y="108" width="400.0" height="22" rx="3" fill="#6f9e6a"/>
+<rect x="670.0" y="108" width="80.0" height="22" rx="3" fill="#c98a4e"/>
+<text x="278" y="123" fontSize="11" fontWeight="600" fill="var(--surface)">25 yes</text>
+<text x="742" y="123" fontSize="11" fontWeight="600" textAnchor="end" fill="var(--surface)">5 no</text>
+<text x="758" y="123" fontSize="10" fill="var(--muted-2)">83%</text>
+<text x="258" y="166" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">House committee</text>
+<text x="258" y="180" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">May 7, 2025</text>
+<rect x="270" y="154" width="320.0" height="22" rx="3" fill="#6f9e6a"/>
+<rect x="590.0" y="154" width="160.0" height="22" rx="3" fill="#c98a4e"/>
+<text x="278" y="169" fontSize="11" fontWeight="600" fill="var(--surface)">8 yes</text>
+<text x="742" y="169" fontSize="11" fontWeight="600" textAnchor="end" fill="var(--surface)">4 no</text>
+<text x="758" y="169" fontSize="10" fill="var(--muted-2)">67%</text>
+<text x="258" y="212" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Texas House</text>
+<text x="258" y="226" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">May 21, 2025</text>
+<rect x="270" y="200" width="339.0" height="22" rx="3" fill="#6f9e6a"/>
+<rect x="609.0" y="200" width="141.0" height="22" rx="3" fill="#c98a4e"/>
+<text x="278" y="215" fontSize="11" fontWeight="600" fill="var(--surface)">101 yes</text>
+<text x="742" y="215" fontSize="11" fontWeight="600" textAnchor="end" fill="var(--surface)">42 no</text>
+<text x="758" y="215" fontSize="10" fill="var(--muted-2)">71%</text>
+<text x="405.0" y="270" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas Legislature Online, SB 21 (89R) · bipartisan at both floors; 21 Republicans and 21 Democrats among the House no votes</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The vote ledger. Senate Bill 21 at every stop, yes against no: unanimous out of his committee, 25 to 5 on the Senate floor, 8 to 4 in the House committee where it first stumbled, and 101 to 42 on the House floor. Bipartisan at both floors.
+      </figcaption>
+    </figure>
+  );
+}
+
+function SchwertnerBothSidesFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 300" role="img" aria-label="Bullish on the coin, tough on the load: Schwertner's reserve bills beside his grid bills">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">BULLISH ON THE COIN, TOUGH ON THE LOAD · THE SAME AUTHOR, BOTH SIDES OF THE METER</text>
+<rect x="28" y="52" width="370" height="196" rx="10" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="44" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE COIN</text>
+<circle cx="50" cy="98" r="3.5" fill="var(--accent)"/>
+<text x="62" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">SB 778 · Jan 14, 2025</text>
+<text x="62" y="115" fontSize="10" fill="var(--muted-2)">the first reserve bill, appropriation included</text>
+<circle cx="50" cy="132" r="3.5" fill="var(--accent)"/>
+<text x="62" y="136" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">SB 21 · Feb 12 → June 20, 2025</text>
+<text x="62" y="149" fontSize="10" fill="var(--muted-2)">the Strategic Bitcoin Reserve, $10M</text>
+<circle cx="50" cy="166" r="3.5" fill="var(--accent)"/>
+<text x="62" y="170" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">“We took the full punch”</text>
+<text x="62" y="183" fontSize="10" fill="var(--muted-2)">October 2025 · ether if it holds $500B for 24 months</text>
+<rect x="412" y="52" width="370" height="196" rx="10" fill="var(--surface-2)" stroke="#c98a4e" strokeWidth="1.25"/>
+<text x="428" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="#c98a4e">THE LOAD</text>
+<circle cx="434" cy="98" r="3.5" fill="#c98a4e"/>
+<text x="446" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">SB 3 · 2021</text>
+<text x="446" y="115" fontSize="10" fill="var(--muted-2)">the post-Uri electricity-market overhaul</text>
+<circle cx="434" cy="132" r="3.5" fill="#c98a4e"/>
+<text x="446" y="136" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">SB 6, SB 7 · 2023</text>
+<text x="446" y="149" fontSize="10" fill="var(--muted-2)">10 GW of gas “energy insurance”; SB 1751 clears his committee</text>
+<circle cx="434" cy="166" r="3.5" fill="#c98a4e"/>
+<text x="446" y="170" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">SB 6 · 2025</text>
+<text x="446" y="183" fontSize="10" fill="var(--muted-2)">large-load interconnection and curtailment, joint-authored with King</text>
+<text x="405.0" y="290" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas Legislature Online; Lt. Gov. Patrick, April 6, 2023 · the reserve and the leash were signed the same June afternoon</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        Bullish on the coin, tough on the load. The senator who wrote the reserve twice is the senator who wrote the grid packages miners read as a leash, and the 2025 large-load law was signed the same afternoon as SB 21. Read together, it is one position: the state should own the asset, and the grid that mines it should answer to ERCOT.
+      </figcaption>
+    </figure>
+  );
+}
+
+// people-figs:end
 export default function CharlesSchwertnerBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -336,6 +417,8 @@ export default function CharlesSchwertnerBitcoinPage() {
             punch.&rdquo;<C n={17} />
           </p>
 
+          <SchwertnerVotesFigure />
+
           <h2>Why is the grid author also the reserve author?</h2>
           <p>
             Because in Texas they are the same job. Schwertner wrote SB 3 in
@@ -403,6 +486,8 @@ export default function CharlesSchwertnerBitcoinPage() {
             is a question for the 90th Legislature and the author&apos;s
             next bill.
           </p>
+
+          <SchwertnerBothSidesFigure />
 
           <h2>Where does the Schwertner record stand today?</h2>
           <p>

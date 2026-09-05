@@ -65,6 +65,77 @@ function C({ n }: { n: number }) {
   );
 }
 
+// people-figs:start
+// Two figures - the record and the counterweight - drawn from the dated,
+// sourced facts on this page (Sept 2026). Server-rendered SVG, no client JS.
+function SongShelfFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 260" role="img" aria-label="Jimmy Song's record in five tiles: books, repository, Core commits, seminar, UT course">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE SHELF AND THE LOG · WHAT THE RECORD CONTAINS, COUNTED</text>
+<rect x="28.0" y="52" width="142.8" height="150" rx="10" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="99.4" y="104" fontSize="30" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">5</text>
+<text x="99.4" y="126" fontSize="11" fontWeight="600" letterSpacing="1.5" textAnchor="middle" fill="var(--accent)">BOOKS</text>
+<text x="99.4" y="150" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Mar 2019 → Sept 2023</text>
+<rect x="180.8" y="52" width="142.8" height="150" rx="10" fill="var(--surface-2)" stroke="var(--accent-soft)" strokeWidth="1.25"/>
+<text x="252.2" y="104" fontSize="30" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">~1,900</text>
+<text x="252.2" y="126" fontSize="11" fontWeight="600" letterSpacing="1.5" textAnchor="middle" fill="var(--accent-soft)">STARS</text>
+<text x="252.2" y="150" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">Programming Bitcoin</text>
+<text x="252.2" y="163" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">repo, since Dec 2017</text>
+<rect x="333.6" y="52" width="142.8" height="150" rx="10" fill="var(--surface-2)" stroke="var(--star)" strokeWidth="1.25"/>
+<text x="405.0" y="104" fontSize="30" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">14</text>
+<text x="405.0" y="126" fontSize="11" fontWeight="600" letterSpacing="1.5" textAnchor="middle" fill="var(--star)">CORE COMMITS</text>
+<text x="405.0" y="150" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">test suite · Apr–Jun</text>
+<text x="405.0" y="163" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">2017</text>
+<rect x="486.4" y="52" width="142.8" height="150" rx="10" fill="var(--surface-2)" stroke="var(--accent)" strokeWidth="1.25"/>
+<text x="557.8" y="104" fontSize="30" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">500+</text>
+<text x="557.8" y="126" fontSize="11" fontWeight="600" letterSpacing="1.5" textAnchor="middle" fill="var(--accent)">DEVELOPERS</text>
+<text x="557.8" y="150" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">trained in the</text>
+<text x="557.8" y="163" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">two-day seminar</text>
+<rect x="639.2" y="52" width="142.8" height="150" rx="10" fill="var(--surface-2)" stroke="var(--accent-soft)" strokeWidth="1.25"/>
+<text x="710.6" y="104" fontSize="30" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">7</text>
+<text x="710.6" y="126" fontSize="11" fontWeight="600" letterSpacing="1.5" textAnchor="middle" fill="var(--accent-soft)">WEEKS</text>
+<text x="710.6" y="150" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">graduate course at</text>
+<text x="710.6" y="163" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">UT McCombs, 2019</text>
+<text x="405.0" y="250" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">O&apos;Reilly; GitHub; UT McCombs; Song&apos;s own count · the classroom, not the commit log, is the instrument</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The shelf and the log, counted. Five books, a repository near two thousand stars, fourteen commits to Bitcoin Core&apos;s test suite in one spring, more than five hundred developers through the seminar, and a seven-week graduate course at UT. The influence is pedagogical, and the numbers say so.
+      </figcaption>
+    </figure>
+  );
+}
+
+function SongLedgerFigure() {
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 280" role="img" aria-label="The maximalist's ledger: three claims and how each resolved">
+<text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE MAXIMALIST’S LEDGER · THREE CLAIMS, AND HOW EACH RESOLVED</text>
+<rect x="28" y="48" width="754" height="56" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+<rect x="28" y="48" width="6" height="56" rx="3" fill="var(--star)"/>
+<text x="48" y="68" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">A pinned New Year&apos;s prediction</text>
+<text x="48" y="86" fontSize="10" fill="var(--muted-2)">January 1, 2017 · on SegWit and big blocks</text>
+<text x="766" y="77" fontSize="10.5" fontWeight="600" textAnchor="end" fill="var(--star)">“2/3 wrong,” by his own grade · Aug 24, 2017</text>
+<rect x="28" y="114" width="754" height="56" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+<rect x="28" y="114" width="6" height="56" rx="3" fill="#c98a4e"/>
+<text x="48" y="134" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">The Lubin wager</text>
+<text x="48" y="152" fontSize="10" fill="var(--muted-2)">May 2018 → May 23, 2023 · 810.8 ETH vs 69.74 BTC</text>
+<text x="766" y="143" fontSize="10.5" fontWeight="600" textAnchor="end" fill="#c98a4e">five qualifying dapps, the bare minimum – disputed, never settled</text>
+<rect x="28" y="180" width="754" height="56" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+<rect x="28" y="180" width="6" height="56" rx="3" fill="var(--muted)"/>
+<text x="48" y="200" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">“Bitcoin Core developer”</text>
+<text x="48" y="218" fontSize="10" fill="var(--muted-2)">the billing on podcasts, summits, speaker bureaus</text>
+<text x="766" y="209" fontSize="10.5" fontWeight="600" textAnchor="end" fill="var(--muted)">fourteen test-suite commits from one spring · a contributor</text>
+<text x="405.0" y="270" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Medium (Aug 24, 2017); CoinDesk (May 2019, May 2023); GitHub · the essays that were wrong were graded wrong in public by their author</text>
+</svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The maximalist&apos;s ledger. Three claims and how each resolved: a pinned prediction its author graded two-thirds wrong, a half-million-dollar wager that ended as a definitional argument, and a Core-developer billing that outruns fourteen test commits. None of it touches the teaching, which is the work that matters.
+      </figcaption>
+    </figure>
+  );
+}
+
+// people-figs:end
 export default function JimmySongBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -320,6 +391,8 @@ export default function JimmySongBitcoinPage() {
             his influence.
           </p>
 
+          <SongShelfFigure />
+
           <h2>What did Song argue, and which fights did he pick?</h2>
           <p>
             The block-size war first. Through 2017, as the network split over
@@ -389,6 +462,8 @@ export default function JimmySongBitcoinPage() {
             records; it cannot write the engineers. Song&apos;s influence on
             the network is that he did.
           </p>
+
+          <SongLedgerFigure />
 
           <h2>Where does the Song record stand today?</h2>
           <p>
