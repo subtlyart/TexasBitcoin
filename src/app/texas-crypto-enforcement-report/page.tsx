@@ -6,8 +6,9 @@ import {
   formatUsd,
   formatDate,
   shortDistrict,
+  themeLabel,
 } from "@/lib/enforcement-report";
-import { districtSlug } from "@/lib/case-tracker";
+import { districtSlug, trackedCases } from "@/lib/case-tracker";
 
 const pageUrl = `${site.url}/texas-crypto-enforcement-report`;
 
@@ -152,6 +153,179 @@ function CasesPerYearChart() {
     </figure>
   );
 }
+
+// enforcement-figs:start
+// Four figures, one per chapter. Unlike the static figures elsewhere on the
+// site these compute from the report object at build time, so the weekly
+// dataset refresh redraws them. Server-rendered SVG, no client JS.
+const FIG_FRAME =
+  "mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6";
+const KICKER = { fontSize: 11, fontWeight: 600, letterSpacing: 2, fill: "var(--accent)" } as const;
+
+function ChargeMixFigure() {
+  const W = 810;
+  const rows = r.topThemes;
+  const H = 70 + rows.length * 30 + 36;
+  const max = Math.max(...rows.map((t) => t.count));
+  const bx = 300;
+  const wpc = (W - bx - 70) / max;
+  const hot = new Set(["money_laundering", "unlicensed_money_transmitting_business"]);
+  return (
+    <figure className={FIG_FRAME}>
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`What prosecutors charge: the ${rows.length} most common themes across ${r.caseCount} Texas cases`} className="h-auto w-full min-w-[640px]">
+        <text x="28" y="30" {...KICKER}>THE CHARGE MIX · THEMES ACROSS {r.caseCount} ANNOUNCED CASES · A CASE CAN CARRY SEVERAL</text>
+        {rows.map((t, i) => {
+          const y = 56 + i * 30;
+          const isHot = hot.has(t.theme);
+          return (
+            <g key={t.theme}>
+              <text x={bx - 12} y={y + 14} fontSize="11.5" fontWeight="600" textAnchor="end" fill={isHot ? "var(--foreground)" : "var(--muted)"} fontFamily="var(--font-display)">{themeLabel(t.theme)}</text>
+              <rect x={bx} y={y} width={t.count * wpc} height="20" rx="3" fill={isHot ? "var(--accent)" : "var(--muted-2)"} />
+              <text x={bx + t.count * wpc + 8} y={y + 14} fontSize="11" fill="var(--muted)">{t.count}</text>
+            </g>
+          );
+        })}
+        <text x={W / 2} y={H - 10} fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">the two in orange are the movement of money – laundering and § 1960 – not the asset · computed from the dataset, {formatDate(r.generatedAt)}</text>
+      </svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The charge mix. Themes across every announced case, a case counting once per theme it carries. Money laundering and unlicensed money transmission lead: the federal caseload is about who moves money and whether they registered, not about the asset. Recomputed from the dataset on every refresh.
+      </figcaption>
+    </figure>
+  );
+}
+
+function ForfeitureWeatherFigure() {
+  const W = 810;
+  const H = 300;
+  const x0 = 64, x1 = 790, base = 236, top = 76;
+  const max = Math.max(...r.years.map((y) => y.forfeituresUsd), 1);
+  const slot = (x1 - x0) / r.years.length;
+  const bw = Math.min(30, slot * 0.6);
+  const sc = (base - top) / max;
+  const yearOf = (d: string | null) => (d ? d.slice(0, 4) : "");
+  const callouts = r.topForfeitures.slice(0, 3);
+  return (
+    <figure className={FIG_FRAME}>
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Announced forfeitures by year, ${r.firstYear} to ${r.generatedAt.slice(0, 4)}, with the largest cases marked`} className="h-auto w-full min-w-[640px]">
+        <text x="28" y="30" {...KICKER}>FORFEITURES AS WEATHER · {formatUsd(r.totalForfeituresUsd)} ANNOUNCED, BY YEAR</text>
+        <line x1={x0} x2={x1} y1={base} y2={base} stroke="var(--muted-2)" />
+        {r.years.map((y, i) => {
+          const cx = x0 + slot * (i + 0.5);
+          const h = y.forfeituresUsd * sc;
+          return (
+            <g key={y.year}>
+              <rect x={cx - bw / 2} y={base - h} width={bw} height={h} rx="3" fill={y.forfeituresUsd > 0 ? "var(--accent)" : "var(--border)"} fillOpacity={y.forfeituresUsd > 0 ? 0.85 : 1} />
+              {y.forfeituresUsd === 0 && <rect x={cx - bw / 2} y={base - 3} width={bw} height="3" fill="var(--border)" />}
+              <text x={cx} y={base + 16} fontSize="10" textAnchor="middle" fill="var(--muted-2)">{y.year.slice(2)}</text>
+              {y.forfeituresUsd > 0 && <text x={cx} y={base - h - 6} fontSize="9.5" textAnchor="middle" fill="var(--muted)">{formatUsd(y.forfeituresUsd)}</text>}
+            </g>
+          );
+        })}
+        {callouts.map((c, i) => {
+          const idx = r.years.findIndex((y) => y.year === yearOf(c.date));
+          if (idx < 0) return null;
+          const cx = x0 + slot * (idx + 0.5);
+          const h = r.years[idx].forfeituresUsd * sc;
+          const ly = 52 + i * 15;
+          return (
+            <g key={c.slug}>
+              <circle cx={cx} cy={base - h - 22} r="7" fill="var(--surface)" stroke="var(--accent)" strokeWidth="1.25" />
+              <text x={cx} y={base - h - 18.5} fontSize="9" fontWeight="600" textAnchor="middle" fill="var(--accent)">{i + 1}</text>
+              <circle cx={x0 + 8} cy={ly - 3.5} r="7" fill="var(--surface)" stroke="var(--accent)" strokeWidth="1.25" />
+              <text x={x0 + 8} y={ly} fontSize="9" fontWeight="600" textAnchor="middle" fill="var(--accent)">{i + 1}</text>
+              <text x={x0 + 22} y={ly} fontSize="10" fill="var(--foreground)">{formatUsd(c.forfeitureUsd)} · {shortDistrict(c.district)} · {yearOf(c.date)}</text>
+            </g>
+          );
+        })}
+        <text x={W / 2} y={H - 10} fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">the three largest single matters, marked · years with no announced forfeiture shown flat · forfeitures as announced, not as collected</text>
+      </svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        Forfeitures as weather. Announced forfeitures by year, to scale, with the three largest single matters marked. One case accounts for roughly half the all-time total, which is why the report reads case counts as the trend and forfeitures as weather. Recomputed on every refresh.
+      </figcaption>
+    </figure>
+  );
+}
+
+function DistrictFigure() {
+  const W = 810;
+  const H = 60 + r.districts.length * 40 + 44;
+  const bx = 250;
+  const max = r.districts[0]?.count ?? 1;
+  const wpc = (W - bx - 110) / max;
+  const total = r.districts.reduce((s, d) => s + d.count, 0);
+  return (
+    <figure className={FIG_FRAME}>
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Cases by federal district: ${r.districts.map((d) => `${shortDistrict(d.district)} ${d.count}`).join(", ")}`} className="h-auto w-full min-w-[640px]">
+        <text x="28" y="30" {...KICKER}>THE DOCKET BY DISTRICT · {total} CASES ACROSS TEXAS&apos;S FOUR FEDERAL DISTRICTS</text>
+        {r.districts.map((d, i) => {
+          const y = 56 + i * 40;
+          const pct = Math.round((d.count / total) * 100);
+          return (
+            <g key={d.district}>
+              <text x={bx - 12} y={y + 12} fontSize="12.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">{shortDistrict(d.district)}</text>
+              <text x={bx - 12} y={y + 26} fontSize="9.5" textAnchor="end" fill="var(--muted-2)">{i === 0 ? "Dallas–Fort Worth" : d.district.startsWith("Southern") ? "Houston" : d.district.startsWith("Eastern") ? "Sherman–Plano" : "Austin–San Antonio–El Paso"}</text>
+              <rect x={bx} y={y} width={d.count * wpc} height="24" rx="4" fill={i === 0 ? "var(--accent)" : i === 1 ? "var(--accent-soft)" : "var(--star)"} fillOpacity={1 - i * 0.15} />
+              <text x={bx + d.count * wpc + 8} y={y + 16} fontSize="11.5" fontWeight="600" fill="var(--foreground)">{d.count}</text>
+              <text x={bx + d.count * wpc + 8 + 24} y={y + 16} fontSize="10.5" fill="var(--muted-2)">{pct}%</text>
+            </g>
+          );
+        })}
+        <text x={W / 2} y={H - 10} fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">a population-and-infrastructure map, with the Eastern District as the overperformer · computed from the dataset</text>
+      </svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The docket by district. Announced cases in each of Texas&apos;s four federal districts, with each district&apos;s share of the whole. The ranking tracks population and field offices; the Eastern District&apos;s outsized share reflects the Sherman–Plano corridor&apos;s fraud and botnet matters. Recomputed on every refresh.
+      </figcaption>
+    </figure>
+  );
+}
+
+function CoverageFigure() {
+  const W = 810;
+  const H = 230;
+  const n = r.caseCount;
+  const dated = n - r.undatedCount;
+  const withForfeiture = trackedCases.filter((c) => (c.forfeiture_usd || 0) > 0).length;
+  const withThemes = trackedCases.filter((c) => c.themes.length > 0).length;
+  const rows: [string, number, string][] = [
+    ["Carry an announcement date", dated, "the year charts count these"],
+    ["Carry at least one theme", withThemes, "the charge mix counts these"],
+    ["Announce a forfeiture", withForfeiture, "the rest report $0 – often because none was announced"],
+  ];
+  const bx = 280;
+  const wpc = (W - bx - 60) / n;
+  return (
+    <figure className={FIG_FRAME}>
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`What the dataset measures: of ${n} DOJ press releases, ${dated} carry a date, ${withThemes} carry a theme, ${withForfeiture} announce a forfeiture`} className="h-auto w-full min-w-[640px]">
+        <text x="28" y="30" {...KICKER}>WHAT THE LEDGER MEASURES · OF {n} DOJ PRESS RELEASES, HOW MANY…</text>
+        <rect x={bx} y="52" width={n * wpc} height="10" rx="2" fill="var(--surface-2)" stroke="var(--border)" />
+        <text x={bx + n * wpc} y="48" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">all {n}</text>
+        {rows.map(([label, v, note], i) => {
+          const y = 78 + i * 44;
+          return (
+            <g key={label}>
+              <text x={bx - 12} y={y + 14} fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">{label}</text>
+              <rect x={bx} y={y} width={n * wpc} height="20" rx="3" fill="var(--surface-2)" stroke="var(--border)" />
+              <rect x={bx} y={y} width={v * wpc} height="20" rx="3" fill={i === 2 ? "var(--star)" : "var(--accent)"} fillOpacity={i === 2 ? 0.9 : 0.75} />
+              {v * wpc > (W - bx) * 0.6 ? (
+                <text x={bx + 10} y={y + 14} fontSize="10.5" fontWeight="600" fill="var(--surface)">{v} · {note}</text>
+              ) : (
+                <>
+                  <text x={bx + Math.max(v * wpc, 30) + 8} y={y + 14} fontSize="11" fontWeight="600" fill="var(--foreground)">{v}</text>
+                  <text x={bx + Math.max(v * wpc, 30) + 8 + 28} y={y + 14} fontSize="10" fill="var(--muted-2)">{note}</text>
+                </>
+              )}
+            </g>
+          );
+        })}
+        <text x={W / 2} y={H - 10} fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">press releases, not dockets: announcement dates, prosecutor summaries, forfeitures as announced · counts recompute on every refresh</text>
+      </svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        What the ledger measures. The unit of count is a DOJ press release. Most carry a date and a theme; only a minority announce a forfeiture, so the dollar figures describe what prosecutors chose to say, not what courts collected. Every bar recomputes from the dataset on each refresh.
+      </figcaption>
+    </figure>
+  );
+}
+// enforcement-figs:end
 
 export default function EnforcementReportPage() {
   const articleJsonLd = {
@@ -363,6 +537,8 @@ export default function EnforcementReportPage() {
             .
           </p>
 
+          <ChargeMixFigure />
+
           <h2>Where does the money go? Reading the forfeiture spikes</h2>
           <p>
             Announced forfeitures total{" "}
@@ -393,6 +569,8 @@ export default function EnforcementReportPage() {
             as weather.
           </p>
 
+          <ForfeitureWeatherFigure />
+
           <h2>Which district carries the docket?</h2>
           <p>
             All four, but not equally.{" "}
@@ -417,6 +595,8 @@ export default function EnforcementReportPage() {
             <C n={2} />
           </p>
 
+          <DistrictFigure />
+
           <h2>What this dataset is - and is not</h2>
           <p>
             The honest counterweight, stated plainly. The unit of count here
@@ -432,6 +612,8 @@ export default function EnforcementReportPage() {
             why every number on this page recomputes from the dataset on each
             refresh instead of freezing into prose.
           </p>
+
+          <CoverageFigure />
 
           <h2>What should Texans take from the ledger?</h2>
           <p>
