@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // changes; the case tracker inherits its dataset's generation date.
   const routes = [
     { path: "/", priority: 1, changeFrequency: "weekly" as const, lastMod: "2026-08-09" },
-    { path: "/history-of-bitcoin-in-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
+    { path: "/history-of-bitcoin-in-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-09-05" },
     { path: "/bitcoin-mining-map-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-bitcoin-law-timeline", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/texas-strategic-bitcoin-reserve", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/jimmy-song-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/charles-schwertner-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/satoshi-nakamoto-institute", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
+    { path: "/central-texas-gun-works-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-09-05" },
     { path: "/texas-bitcoin-bills-that-died", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/invest-in-texas-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-bitcoin-case-tracker", priority: 0.8, changeFrequency: "daily" as const, lastMod: trackerDerived.lastUpdated },
