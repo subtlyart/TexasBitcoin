@@ -489,8 +489,11 @@ export default function CentralTexasGunWorksBitcoinPage() {
           <p>
             The store still accepts Bitcoin.<C n={13} /> As of September 2026
             it is among the longest-running Bitcoin merchants in Texas, and
-            the best-documented survivor of a grassroots era that the state
-            would take another decade to catch up to – in{" "}
+            the best-documented survivor of{" "}
+            <Link href="/early-bitcoin-merchants-texas">
+              a grassroots era
+            </Link>{" "}
+            that the state would take another decade to catch up to – in{" "}
             <Link href="/texas-strategic-bitcoin-reserve">
               the Strategic Bitcoin Reserve
             </Link>{" "}
