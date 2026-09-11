@@ -700,7 +700,9 @@ export default function HistoryPage() {
             who led the 2021 floor fight and wrote the CBDC ban into law; and{" "}
             <Link href="/jimmy-song-bitcoin">Jimmy Song</Link>, the Austin
             developer who taught a generation of engineers to build the
-            protocol from scratch. Beneath all of them is the merchant layer
+            protocol from scratch, and{" "}
+            <Link href="/parker-lewis-bitcoin">Parker Lewis</Link>, the
+            Austin essayist who wrote why it is money. Beneath all of them is the merchant layer
             that took the coin before the state had a position on it –
             opened by{" "}
             <Link href="/central-texas-gun-works-bitcoin">

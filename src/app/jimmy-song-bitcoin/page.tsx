@@ -478,8 +478,9 @@ export default function JimmySongBitcoinPage() {
             and{" "}
             <Link href="/don-huffines-bitcoin">Don Huffines and Bitcoin</Link>.
             This page opens the other wing: the Texans who shaped the network
-            itself. The man who booked the summit stage Song shared with
-            Cruz is on{" "}
+            itself. Its essayist is on{" "}
+            <Link href="/parker-lewis-bitcoin">Parker Lewis and Bitcoin</Link>;
+            the man who booked the summit stage Song shared with Cruz is on{" "}
             <Link href="/lee-bratcher-bitcoin">Lee Bratcher and Bitcoin</Link>.
           </p>
         </div>
