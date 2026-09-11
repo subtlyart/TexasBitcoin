@@ -1,3 +1,4 @@
+import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Compass } from "lucide-react";
@@ -44,7 +45,7 @@ export default function ResourcesPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLd(itemListJsonLd) }}
       />
 
       {/* Hero */}
