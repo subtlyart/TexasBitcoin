@@ -1,3 +1,4 @@
+import { jsonLd } from "@/lib/json-ld";
 import Link from "next/link";
 import { ArrowRight, Zap, Scale, Layers, Cpu } from "lucide-react";
 import { LoneStar } from "@/components/lone-star";
@@ -47,7 +48,7 @@ export default function Home() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLd(webPageJsonLd) }}
       />
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border">
