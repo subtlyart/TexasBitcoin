@@ -584,9 +584,10 @@ export default function HistoryPage() {
           </p>
           <p>
             The coordination layer arrived alongside the machines. The{" "}
-            <strong>Texas Blockchain Council</strong>, founded in 2019,
-            organized the industry&apos;s lobbying with an explicit goal: make
-            Texas the jurisdiction of choice for Bitcoin.<C n={9} />{" "}
+            <strong>Texas Blockchain Council</strong>, founded in 2019 by{" "}
+            <Link href="/lee-bratcher-bitcoin">Lee Bratcher</Link>, organized
+            the industry&apos;s lobbying with an explicit goal: make Texas the
+            jurisdiction of choice for Bitcoin.<C n={9} />{" "}
             Politicians obliged, and the state comptroller was soon publishing
             primers on the industry it was courting.<C n={10} />
           </p>
