@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // changes; the case tracker inherits its dataset's generation date.
   const routes = [
     { path: "/", priority: 1, changeFrequency: "weekly" as const, lastMod: "2026-08-09" },
-    { path: "/history-of-bitcoin-in-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-09-10" },
+    { path: "/history-of-bitcoin-in-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-09-11" },
     { path: "/bitcoin-mining-map-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-bitcoin-law-timeline", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/texas-strategic-bitcoin-reserve", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
@@ -22,8 +22,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/dan-patrick-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/kelly-hancock-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/don-huffines-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
-    { path: "/jimmy-song-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-10" },
-    { path: "/lee-bratcher-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-10" },
+    { path: "/jimmy-song-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-11" },
+    { path: "/lee-bratcher-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-11" },
+    { path: "/parker-lewis-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-11" },
     { path: "/charles-schwertner-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/satoshi-nakamoto-institute", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/central-texas-gun-works-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-09-05" },
