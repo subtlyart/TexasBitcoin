@@ -432,7 +432,8 @@ export default function CharlesSchwertnerBitcoinPage() {
             <Link href="/lois-kolkhorst-bitcoin">Kolkhorst</Link>&apos;s 10% cap
             on miners in demand response, passed the Senate 30–1 out of his
             committee.<C n={13} /><C n={14} /> In 2025 he joint-authored
-            SB 6 with Senator Phil King: the large-load law that sets
+            SB 6 with Senator{" "}
+            <Link href="/phil-king-bitcoin">Phil King</Link>: the large-load law that sets
             interconnection standards for facilities over 75 megawatts and
             lets ERCOT curtail them in an emergency, signed the same June 20
             afternoon as the reserve.<C n={15} /><C n={16} /> Read together,

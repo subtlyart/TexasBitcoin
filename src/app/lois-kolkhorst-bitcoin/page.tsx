@@ -521,7 +521,8 @@ export default function LoisKolkhorstBitcoinPage() {
             nothing.<C n={21} /> And the half that passed: the registration
             requirement she wrote for 10 megawatts became law at 75 under
             Johnson&apos;s name in 2023, and in 2025 the large-load law
-            authored by King and Schwertner – interconnection standards and
+            authored by <Link href="/phil-king-bitcoin">King</Link> and
+            Schwertner – interconnection standards and
             emergency curtailment for every load above 75 megawatts – put
             the register-and-curtail architecture of her bill at the
             center of state policy, with her name nowhere on

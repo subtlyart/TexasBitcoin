@@ -701,6 +701,8 @@ export default function HistoryPage() {
             <Link href="/nathan-johnson-bitcoin">Nathan Johnson</Link>, the
             Democrat who wrote the mining registry and cut the donors out
             of the reserve;{" "}
+            <Link href="/phil-king-bitcoin">Phil King</Link>, the senator
+            who wrote the 2025 large-load law and its kill switch;{" "}
             <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link>, the
             comptroller who bought the state its first Bitcoin;{" "}
             <Link href="/don-huffines-bitcoin">Don Huffines</Link>, the
