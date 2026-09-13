@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/lee-bratcher-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-11" },
     { path: "/parker-lewis-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-11" },
     { path: "/charles-schwertner-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
+    { path: "/giovanni-capriglione-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-13" },
     { path: "/satoshi-nakamoto-institute", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/central-texas-gun-works-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-09-05" },
     { path: "/texas-bitcoin-bills-that-died", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },

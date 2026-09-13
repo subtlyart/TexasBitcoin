@@ -559,7 +559,8 @@ export default function DeadBillsPage() {
             SB 778 was the opening draft - filed January
             14, 2025, appropriation included - and died the procedural death
             of a bill superseded by its own successor, SB 21.<C n={1} />
-            <C n={13} /> Representative Capriglione&apos;s HB 1598 was the
+            <C n={13} /> Representative{" "}
+            <Link href="/giovanni-capriglione-bitcoin">Capriglione</Link>&apos;s HB 1598 was the
             custody-first alternative: Bitcoin inside the state treasury, a
             minimum five-year hold, and a donation channel for citizens and
             governmental entities - discipline SB 21&apos;s investment-first

@@ -512,9 +512,10 @@ export default function LeeBratcherBitcoinPage() {
             Government Affairs, with a brief that includes representing the
             company inside ERCOT.<C n={17} /><C n={18} /> The man who spent
             six years arguing the miners&apos; case to the state now argues
-            it for one miner, and the association he built is run by
-            Giovanni Capriglione, the legislator who wrote the reserve
-            statute the association testified for.<C n={17} /> None of this
+            it for one miner, and the association he built is run by{" "}
+            <Link href="/giovanni-capriglione-bitcoin">Giovanni Capriglione</Link>,
+            the legislator who carried the reserve statute the association
+            testified for through the House.<C n={17} /> None of this
             is hidden; all of it is the ordinary circuit of a state capital.
             The fair reading is that the work is on the books either way –
             a UCC chapter, a Work Group report, four statutes, a federal

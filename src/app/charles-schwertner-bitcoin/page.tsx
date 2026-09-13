@@ -366,9 +366,9 @@ export default function CharlesSchwertnerBitcoinPage() {
             appropriation ceiling of 1% of general revenue, cold storage,
             regular audits, and Bitcoin named a &ldquo;valuable digital
             asset&rdquo; for hedging inflation.<C n={23} /><C n={7} /> The
-            Austin American-Statesman set it against Representative Giovanni
-            Capriglione&apos;s in-treasury House design two weeks
-            later.<C n={8} /> <strong>SB 21</strong>, filed February 12, kept
+            Austin American-Statesman set it against Representative{" "}
+            <Link href="/giovanni-capriglione-bitcoin">Giovanni Capriglione</Link>&apos;s
+            in-treasury House design two weeks later.<C n={8} /> <strong>SB 21</strong>, filed February 12, kept
             Schwertner&apos;s architecture and added the priority number:
             a reserve held <em>outside</em> the treasury, custody and
             management vested in the comptroller, a five-member advisory
