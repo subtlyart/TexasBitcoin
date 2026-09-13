@@ -551,7 +551,9 @@ export default function LawTimelinePage() {
           <p>
             The most consequential failure — and the honest counterweight on
             this timeline — is <strong>Senate Bill 1751</strong>. Authored by
-            Senator Lois Kolkhorst in 2023, it would have capped Bitcoin
+            Senator{" "}
+            <Link href="/lois-kolkhorst-bitcoin">Lois Kolkhorst</Link> in
+            2023, it would have capped Bitcoin
             miners&apos; participation in ERCOT demand-response programs —
             which pay large loads to power down when the grid is stressed — at
             10%, and stripped miners&apos; tax abatements. It was no fringe

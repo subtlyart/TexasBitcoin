@@ -77,21 +77,21 @@ function KolkhorstThreePartsFigure() {
       what: "mines over 10 MW register with the PUC within one business day, five years of demand projections",
       fate: "BECAME LAW, TWICE",
       fateColor: "#6f9e6a",
-      lines: ["SB 1929 (Johnson) · June 9, 2023 · above 75 MW", "SB 6 (King, Schwertner) · June 20, 2025 · above 75 MW"],
+      lines: ["SB 1929 · June 9, 2023 · above 75 MW", "SB 6 · June 20, 2025 · above 75 MW"],
     },
     {
       title: "Cap the demand response",
       what: "miners admitted to paid curtailment programs only while under 10% of program load",
       fate: "DIED",
       fateColor: "#c98a4e",
-      lines: ["no House hearing · May 29, 2023", "Riot's $31.7M August 2023 kept the argument alive"],
+      lines: ["no House hearing · May 29, 2023", "Riot's $31.7M August 2023 kept it alive"],
     },
     {
       title: "End the abatements",
       what: "no Chapter 312 property-tax abatements for virtual currency mining facilities",
       fate: "DIED",
       fateColor: "#c98a4e",
-      lines: ["no House hearing · May 29, 2023", "Milam County kept abating Riot Rockdale"],
+      lines: ["no House hearing · May 29, 2023", "Milam County kept abating Rockdale"],
     },
   ];
   return (
