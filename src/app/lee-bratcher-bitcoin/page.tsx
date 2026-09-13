@@ -387,7 +387,8 @@ export default function LeeBratcherBitcoinPage() {
             control means, how a purchaser takes it free of adverse claims,
             how a security interest is perfected – and{" "}
             <strong>HB 1576</strong>, which created the Work Group on
-            Blockchain Matters. Rep. Tan Parker and Sen. Angela Paxton
+            Blockchain Matters. Rep.{" "}
+            <Link href="/tan-parker-bitcoin">Tan Parker</Link> and Sen. Angela Paxton
             carried them; the release says the TBC &ldquo;spearheaded&rdquo;
             both, drafted with the Uniform Law Commission, and
             &ldquo;ensured blockchain remained a priority.&rdquo;<C n={4} />
