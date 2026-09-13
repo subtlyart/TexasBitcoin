@@ -428,7 +428,8 @@ export default function CharlesSchwertnerBitcoinPage() {
             Senate&apos;s grid package – SB 6, a 10,000-megawatt natural-gas
             &ldquo;Texas Energy Insurance Program&rdquo; with zero-interest
             loans for dispatchable plants, SB 7, and four market-power bills
-            – and six days later SB 1751, Senator Kolkhorst&apos;s 10% cap
+            – and six days later SB 1751, Senator{" "}
+            <Link href="/lois-kolkhorst-bitcoin">Kolkhorst</Link>&apos;s 10% cap
             on miners in demand response, passed the Senate 30–1 out of his
             committee.<C n={13} /><C n={14} /> In 2025 he joint-authored
             SB 6 with Senator Phil King: the large-load law that sets

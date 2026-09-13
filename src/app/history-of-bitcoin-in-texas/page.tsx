@@ -694,6 +694,8 @@ export default function HistoryPage() {
             the senator who wrote Senate Bill 21;{" "}
             <Link href="/giovanni-capriglione-bitcoin">Giovanni Capriglione</Link>,
             the representative who carried it through the House;{" "}
+            <Link href="/lois-kolkhorst-bitcoin">Lois Kolkhorst</Link>, the
+            senator who wrote the 2023 brake on the miners;{" "}
             <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link>, the
             comptroller who bought the state its first Bitcoin;{" "}
             <Link href="/don-huffines-bitcoin">Don Huffines</Link>, the
