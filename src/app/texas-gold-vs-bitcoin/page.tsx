@@ -282,7 +282,8 @@ export default function GoldVsBitcoinPage() {
             precious-metals depository in the country – gave the 2025 tender
             law something to build on: HB 1056&apos;s spendable currency is
             depository holdings with a payment interface.<C n={6} /><C n={7} />{" "}
-            Its author, Representative <strong>Giovanni Capriglione</strong>,
+            Its author, Representative{" "}
+            <Link href="/giovanni-capriglione-bitcoin"><strong>Giovanni Capriglione</strong></Link>,
             co-authored HB 1056 a decade later – and filed his own Bitcoin
             reserve design, HB 1598, which died without a hearing as SB 21
             advanced.<C n={1} /><C n={9} /> The pattern repeats across the
