@@ -434,7 +434,9 @@ export default function LeeBratcherBitcoinPage() {
           <h2>What fights did Bratcher pick, and how did they end?</h2>
           <p>
             Two, and he won both. The first was <strong>SB 1751</strong> in
-            2023, Senator Lois Kolkhorst&apos;s bill to cap miners at ten
+            2023, Senator{" "}
+            <Link href="/lois-kolkhorst-bitcoin">Lois Kolkhorst</Link>&apos;s
+            bill to cap miners at ten
             percent of any ERCOT demand-response program, lower the
             registration threshold to ten megawatts, and strip their tax
             abatements. The council answered with a named campaign –
@@ -540,7 +542,10 @@ export default function LeeBratcherBitcoinPage() {
             </Link>
             , and <Link href="/ted-cruz-bitcoin">Ted Cruz and Bitcoin</Link>;
             the builder who shared his first summit stage is on{" "}
-            <Link href="/jimmy-song-bitcoin">Jimmy Song and Bitcoin</Link>.
+            <Link href="/jimmy-song-bitcoin">Jimmy Song and Bitcoin</Link>,
+            and the private Texan who wrote Kolkhorst an open letter on the
+            same bill is on{" "}
+            <Link href="/parker-lewis-bitcoin">Parker Lewis and Bitcoin</Link>.
             This page opens a third wing: the Texans who organized the
             room.
           </p>
