@@ -539,7 +539,10 @@ export default function LeeBratcherBitcoinPage() {
             </Link>
             , and <Link href="/ted-cruz-bitcoin">Ted Cruz and Bitcoin</Link>;
             the builder who shared his first summit stage is on{" "}
-            <Link href="/jimmy-song-bitcoin">Jimmy Song and Bitcoin</Link>.
+            <Link href="/jimmy-song-bitcoin">Jimmy Song and Bitcoin</Link>,
+            and the private Texan who wrote Kolkhorst an open letter on the
+            same bill is on{" "}
+            <Link href="/parker-lewis-bitcoin">Parker Lewis and Bitcoin</Link>.
             This page opens a third wing: the Texans who organized the
             room.
           </p>
