@@ -696,6 +696,8 @@ export default function HistoryPage() {
             the representative who carried it through the House;{" "}
             <Link href="/lois-kolkhorst-bitcoin">Lois Kolkhorst</Link>, the
             senator who wrote the 2023 brake on the miners;{" "}
+            <Link href="/tan-parker-bitcoin">Tan Parker</Link>, the
+            legislator who wrote the 2021 definition of the asset;{" "}
             <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link>, the
             comptroller who bought the state its first Bitcoin;{" "}
             <Link href="/don-huffines-bitcoin">Don Huffines</Link>, the
