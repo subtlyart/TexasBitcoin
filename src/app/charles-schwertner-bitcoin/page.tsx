@@ -456,7 +456,8 @@ export default function CharlesSchwertnerBitcoinPage() {
             outside the treasury &ldquo;limits legislative
             oversight.&rdquo;<C n={11} /> From the left, law professor
             Hilary Allen told the Observer &ldquo;there is simply nothing
-            behind Bitcoin,&rdquo; and Senator Nathan Johnson warned that the
+            behind Bitcoin,&rdquo; and Senator{" "}
+            <Link href="/nathan-johnson-bitcoin">Nathan Johnson</Link> warned that the
             donation clause would let a donor &ldquo;manipulate the market
             using the imprimatur of the state&rdquo; – &ldquo;I don&apos;t
             want billionaire tech bros owning a branch of the state

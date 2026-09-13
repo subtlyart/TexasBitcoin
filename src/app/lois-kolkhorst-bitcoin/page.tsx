@@ -492,7 +492,8 @@ export default function LoisKolkhorstBitcoinPage() {
             Affairs on April 24 and sat; the session ended May 29 with no
             hearing.<C n={6} /><C n={17} /> Eleven days later the governor
             signed the two bills the industry could live with: Senator
-            Johnson&apos;s SB 1929, registration above 75 megawatts, and
+            <Link href="/nathan-johnson-bitcoin">Johnson</Link>&apos;s SB 1929,
+            registration above 75 megawatts, and
             Capriglione&apos;s HB 591, the flared-gas
             exemption.<C n={18} /> The people who beat her are on{" "}
             <Link href="/lee-bratcher-bitcoin">Lee Bratcher and Bitcoin</Link>{" "}
