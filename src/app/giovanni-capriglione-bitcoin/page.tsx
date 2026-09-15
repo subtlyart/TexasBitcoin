@@ -392,7 +392,8 @@ export default function GiovanniCapriglioneBitcoinPage() {
             Depository – the first state-run precious-metals depository in
             the country, and the template for everything after it: build
             the vault, add the functions later.<C n={5} /> In 2021 he
-            joint-authored two bills with Representative Tan Parker that
+            joint-authored two bills with Representative{" "}
+            <Link href="/tan-parker-bitcoin">Tan Parker</Link> that
             became law eight days apart: <strong>HB 1576</strong>, the Work
             Group on Blockchain Matters, and <strong>HB 4474</strong>, which
             wrote &ldquo;virtual currency&rdquo; into the Texas Uniform

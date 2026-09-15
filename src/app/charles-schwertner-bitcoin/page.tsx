@@ -428,10 +428,12 @@ export default function CharlesSchwertnerBitcoinPage() {
             Senate&apos;s grid package – SB 6, a 10,000-megawatt natural-gas
             &ldquo;Texas Energy Insurance Program&rdquo; with zero-interest
             loans for dispatchable plants, SB 7, and four market-power bills
-            – and six days later SB 1751, Senator Kolkhorst&apos;s 10% cap
+            – and six days later SB 1751, Senator{" "}
+            <Link href="/lois-kolkhorst-bitcoin">Kolkhorst</Link>&apos;s 10% cap
             on miners in demand response, passed the Senate 30–1 out of his
             committee.<C n={13} /><C n={14} /> In 2025 he joint-authored
-            SB 6 with Senator Phil King: the large-load law that sets
+            SB 6 with Senator{" "}
+            <Link href="/phil-king-bitcoin">Phil King</Link>: the large-load law that sets
             interconnection standards for facilities over 75 megawatts and
             lets ERCOT curtail them in an emergency, signed the same June 20
             afternoon as the reserve.<C n={15} /><C n={16} /> Read together,
@@ -455,7 +457,8 @@ export default function CharlesSchwertnerBitcoinPage() {
             outside the treasury &ldquo;limits legislative
             oversight.&rdquo;<C n={11} /> From the left, law professor
             Hilary Allen told the Observer &ldquo;there is simply nothing
-            behind Bitcoin,&rdquo; and Senator Nathan Johnson warned that the
+            behind Bitcoin,&rdquo; and Senator{" "}
+            <Link href="/nathan-johnson-bitcoin">Nathan Johnson</Link> warned that the
             donation clause would let a donor &ldquo;manipulate the market
             using the imprimatur of the state&rdquo; – &ldquo;I don&apos;t
             want billionaire tech bros owning a branch of the state

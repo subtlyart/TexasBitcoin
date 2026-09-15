@@ -414,7 +414,8 @@ export default function ParkerLewisBitcoinPage() {
           <p>
             The state second, and only once. Two days after SB 1751 cleared
             Senate Business &amp; Commerce in April 2023, Lewis and Will
-            Cole published an open letter to Senator Lois Kolkhorst, signed
+            Cole published an open letter to Senator{" "}
+            <Link href="/lois-kolkhorst-bitcoin">Lois Kolkhorst</Link>, signed
             as private Texans representing no company or lobby, calling the
             bill &ldquo;misinformed, discriminatory, anti-competitive,
             harmful to grid stability, bad for consumers and a strategic

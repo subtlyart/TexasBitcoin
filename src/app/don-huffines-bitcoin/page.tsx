@@ -348,7 +348,8 @@ export default function DonHuffinesBitcoinPage() {
             By appointment – from the governor he once ran against. Huffines
             is a Dallas developer who co-founded Huffines Communities with his
             twin brother in 1985, served one term in Senate District 16 from
-            2015 to 2019, and lost the seat to Democrat Nathan Johnson as
+            2015 to 2019, and lost the seat to Democrat{" "}
+            <Link href="/nathan-johnson-bitcoin">Nathan Johnson</Link> as
             Dallas County turned in 2018.<C n={14} /> In 2022 he challenged
             Greg Abbott from the right in the Republican primary for governor
             and finished third with about 12%.<C n={14} /> In 2026 he ran for

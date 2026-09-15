@@ -387,7 +387,8 @@ export default function LeeBratcherBitcoinPage() {
             control means, how a purchaser takes it free of adverse claims,
             how a security interest is perfected – and{" "}
             <strong>HB 1576</strong>, which created the Work Group on
-            Blockchain Matters. Rep. Tan Parker and Sen. Angela Paxton
+            Blockchain Matters. Rep.{" "}
+            <Link href="/tan-parker-bitcoin">Tan Parker</Link> and Sen. Angela Paxton
             carried them; the release says the TBC &ldquo;spearheaded&rdquo;
             both, drafted with the Uniform Law Commission, and
             &ldquo;ensured blockchain remained a priority.&rdquo;<C n={4} />
@@ -434,7 +435,9 @@ export default function LeeBratcherBitcoinPage() {
           <h2>What fights did Bratcher pick, and how did they end?</h2>
           <p>
             Two, and he won both. The first was <strong>SB 1751</strong> in
-            2023, Senator Lois Kolkhorst&apos;s bill to cap miners at ten
+            2023, Senator{" "}
+            <Link href="/lois-kolkhorst-bitcoin">Lois Kolkhorst</Link>&apos;s
+            bill to cap miners at ten
             percent of any ERCOT demand-response program, lower the
             registration threshold to ten megawatts, and strip their tax
             abatements. The council answered with a named campaign –
