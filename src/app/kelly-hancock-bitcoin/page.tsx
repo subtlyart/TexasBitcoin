@@ -160,7 +160,7 @@ export default function KellyHancockBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-28",
-    dateModified: "2026-09-01",
+    dateModified: "2026-09-19",
     about: [
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Kelly Hancock" },
@@ -436,6 +436,19 @@ export default function KellyHancockBitcoinPage() {
             <C n={16} /><C n={17} /><C n={18} /> Institutions that survive their founders
             are the whole point of writing a reserve into statute rather than
             leaving it to personality.
+          </p>
+
+          <p>
+            There is one more line in the record, and it is the strangest. On
+            March 6, 2025, the Senate passed SB 21 by 25 to 5, and the
+            journal lists Senator Kelly Hancock among the five nays - with
+            Creighton, Gutierrez, Hall, and Nichols.<C n={19} /> The day
+            after that vote Hegar was named to A&amp;M; four months later
+            the man who voted against the reserve was the man building it.
+            Nothing in the public record explains the vote, and nothing in
+            his conduct as comptroller suggests he slow-walked the statute:
+            the first purchase, the committee, and the RFP all happened on
+            his watch. But the honest ledger starts with a no.
           </p>
 
           <HancockHandoffFigure />

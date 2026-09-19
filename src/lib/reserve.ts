@@ -8,7 +8,7 @@
 // Re-verify whenever the Comptroller acts, reports, or names the fifth committee
 // member — and bump RESERVE_LAST_VERIFIED and the page's dateModified together.
 
-export const RESERVE_LAST_VERIFIED = "September 1, 2026";
+export const RESERVE_LAST_VERIFIED = "September 19, 2026";
 
 export interface ReserveSource {
   id: number;
@@ -50,7 +50,7 @@ export const reserveStatus: ReserveStatusRow[] = [
   { label: "Eligibility floor", value: "Digital assets averaging ≥ $500B market cap over 24 months — only Bitcoin qualifies today", sourceIds: [2] },
   { label: "First purchase", value: "~$5 million into the iShares Bitcoin Trust on November 20, 2025", sourceIds: [4] },
   { label: "Current holdings", value: "$10 million in the iShares Bitcoin Trust (a spot BTC ETF) — the full appropriation deployed, held as an explicit placeholder", sourceIds: [8, 9] },
-  { label: "Custody", value: "No custodian named as of September 1, 2026. RFP 908-26-1778WS closed July 10, 2026 (extended from June 15); the late-August execution target passed with no award, so the contract moving the $10M from the ETF proxy to directly held Bitcoin now executes under Comptroller Huffines", sourceIds: [8, 9, 10] },
+  { label: "Custody", value: "No custodian named as of September 19, 2026. RFP 908-26-1778WS closed July 10, 2026 (extended from June 15); the late-August execution target passed with no award, so the contract moving the $10M from the ETF proxy to directly held Bitcoin now executes under Comptroller Huffines", sourceIds: [8, 9, 10] },
   { label: "Advisory committee", value: "Complete — the Comptroller chairs by office (Kelly Hancock to July 31, 2026; Don Huffines since August 1), joined May 28, 2026 by Laurie Dotter, Jamie McAvity (Cormint), Carla Reyes (SMU), Gary Vecchiarelli (CleanSpark)", sourceIds: [5, 10] },
   { label: "Reporting", value: "Comptroller must publish biennial reports on the fund's value and management", sourceIds: [2] },
 ];
