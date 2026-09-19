@@ -15,7 +15,7 @@
 // the custodian award or the first SB 21 report re-characterizes what he
 // left behind. The successor's record lives in huffines.ts.
 
-export const HANCOCK_LAST_VERIFIED = "September 1, 2026";
+export const HANCOCK_LAST_VERIFIED = "September 19, 2026";
 
 export interface HancockSource {
   id: number;
@@ -44,6 +44,7 @@ export const hancockSources: HancockSource[] = [
   { id: 16, label: "Texas Tribune - Acting Comptroller Kelly Hancock to step down as Texas CFO: resignation submitted July 1, 2026, effective end of July (July 1, 2026)", url: "https://www.texastribune.org/2026/07/01/texas-comptroller-kelly-hancock-resigns-greg-abbott-don-huffines/" },
   { id: 17, label: "The Texan - Abbott Appoints Comptroller Candidate Don Huffines to Fill Outgoing Hancock's Unexpired Term (July 2, 2026)", url: "https://thetexan.news/state/texas-state-news/abbott-appoints-comptroller-candidate-don-huffines-to-fill-outgoing-hancocks-unexpired-term/article_6ae16818-e965-4319-8f0a-2524476ade36.html" },
   { id: 18, label: "Texas Comptroller - Don Huffines Sworn in as Texas Comptroller, Refuses Salary, Calls for Property Tax Relief (August 1, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260801-don-huffines-sworn-in-as-texas-comptroller-refuses-salary-calls-for-property-tax-relief-1785512488796" },
+  { id: 19, label: "Texas Senate Journal - 89th Legislature, Regular Session, 14th Day (March 6, 2025): CSSB 21 finally passed, Yeas 25, Nays 5 - Hancock among the nays with Creighton, Gutierrez, Hall, and Nichols", url: "https://journals.senate.texas.gov/sjrnl/89r/pdf/89RSJ03-06-F.PDF" },
 ];
 
 export type HancockTimelineKind = "path" | "office" | "execution" | "verdict";
@@ -59,6 +60,15 @@ export interface HancockEvent {
 }
 
 export const hancockTimeline: HancockEvent[] = [
+  {
+    date: "2025-03-06",
+    dateLabel: "March 6, 2025",
+    title: "The no vote: Senator Hancock against SB 21",
+    detail:
+      "The Senate passes SB 21 by 25 to 5. The journal records Hancock among the five nays - with Creighton, Gutierrez, Hall, and Nichols - one day before the vacancy opens that will hand him the reserve the bill creates. The senator votes against the statute the comptroller will execute.",
+    kind: "path",
+    sourceIds: [19],
+  },
   {
     date: "2025-03-07",
     dateLabel: "March 7, 2025",

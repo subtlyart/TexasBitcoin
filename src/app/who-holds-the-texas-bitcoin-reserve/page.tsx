@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Who is the custodian of the Texas Bitcoin reserve?",
-    a: "No custodian has been named yet. As of September 1, 2026, the Texas Comptroller's custody-and-liquidity RFP (908-26-1778WS) shows no award, and the late-August 2026 target for contract execution has passed. Until a contract executes, the reserve's $10 million sits in the iShares Bitcoin Trust, where BlackRock's ETF custodian holds the underlying coin.",
+    a: "No custodian has been named yet. As of September 19, 2026, the Texas Comptroller's custody-and-liquidity RFP (908-26-1778WS) shows no award, and the late-August 2026 target for contract execution has passed. Until a contract executes, the reserve's $10 million sits in the iShares Bitcoin Trust, where BlackRock's ETF custodian holds the underlying coin.",
   },
   {
     q: "Does Texas hold its own Bitcoin keys?",
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "When does the Texas reserve convert its ETF to real Bitcoin?",
-    a: "Within 60 days of the custody contract executing. The procurement targeted execution for late August 2026, so on that schedule the $10 million iShares Bitcoin Trust position would convert to directly held Bitcoin by roughly late October 2026. No award had been posted as of September 1, 2026, so the clock has not started.",
+    a: "Within 60 days of the custody contract executing. The procurement targeted execution for late August 2026, so on that schedule the $10 million iShares Bitcoin Trust position would convert to directly held Bitcoin by roughly late October 2026. No award had been posted as of September 19, 2026, so the clock has not started.",
   },
 ];
 
@@ -167,7 +167,7 @@ function CustodyWindowFigure() {
 <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE WINDOW, DAY BY DAY · RFP 908-26-1778WS AGAINST ITS OWN CALENDAR</text>
 <rect x="86.5" y="106" width="219.2" height="24" rx="4" fill="var(--star)" fillOpacity="0.22"/>
 <rect x="435.8" y="106" width="47.9" height="24" rx="4" fill="var(--accent)" fillOpacity="0.28"/>
-<rect x="483.8" y="106" width="3.4" height="24" fill="#c98a4e" fillOpacity="0.35"/>
+<rect x="483.8" y="106" width="64.9" height="24" fill="#c98a4e" fillOpacity="0.35"/>
 <line x1="66" x2="744" y1="118" y2="118" stroke="var(--muted-2)" strokeWidth="1.5"/>
 <line x1="66.0" x2="66.0" y1="114" y2="122" stroke="var(--muted-2)"/>
 <text x="66.0" y="158" fontSize="9.5" textAnchor="middle" fill="var(--muted-2)">May</text>
@@ -203,11 +203,11 @@ function CustodyWindowFigure() {
 <circle cx="459.8" cy="118" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
 <text x="459.8" y="54" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Target: execution</text>
 <text x="459.8" y="68" fontSize="10" textAnchor="middle" fill="var(--muted-2)">late August</text>
-<line x1="487.2" x2="487.2" y1="132" y2="140" stroke="var(--muted-2)"/>
-<circle cx="487.2" cy="118" r="5" fill="#c98a4e" stroke="var(--surface)" strokeWidth="2"/>
-<text x="495.2" y="176" fontSize="12" fontWeight="600" textAnchor="start" fill="var(--foreground)" fontFamily="var(--font-display)">Today</text>
-<text x="495.2" y="190" fontSize="10" textAnchor="start" fill="var(--muted-2)">Sept 1 · 53 days since close</text>
-<line x1="487.2" x2="744" y1="118" y2="118" stroke="var(--accent)" strokeWidth="2" strokeDasharray="4 4"/>
+<line x1="548.7" x2="548.7" y1="132" y2="140" stroke="var(--muted-2)"/>
+<circle cx="548.7" cy="118" r="5" fill="#c98a4e" stroke="var(--surface)" strokeWidth="2"/>
+<text x="556.7" y="176" fontSize="12" fontWeight="600" textAnchor="start" fill="var(--foreground)" fontFamily="var(--font-display)">Today</text>
+<text x="556.7" y="190" fontSize="10" textAnchor="start" fill="var(--muted-2)">Sept 19 · 71 days since close</text>
+<line x1="548.7" x2="744" y1="118" y2="118" stroke="var(--accent)" strokeWidth="2" strokeDasharray="4 4"/>
 <text x="740.0" y="96" fontSize="10.5" textAnchor="end" fill="var(--muted)">once signed: +60 days to convert,</text>
 <text x="740.0" y="110" fontSize="10.5" textAnchor="end" fill="var(--muted)">and the public website goes live</text>
 <text x="405.0" y="250" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas SmartBuy ESBD; Crypto Briefing on the target · to scale by day · the red band is the overdue window</text>
@@ -301,7 +301,7 @@ export default function CustodyPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-30",
-    dateModified: "2026-09-01",
+    dateModified: "2026-09-19",
   };
 
   const faqJsonLd = {
