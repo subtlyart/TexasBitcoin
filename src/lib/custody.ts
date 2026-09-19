@@ -10,7 +10,7 @@
 // and the page's dateModified together. The reserve page's status panel links
 // here; keep the two consistent.
 
-export const CUSTODY_LAST_VERIFIED = "September 1, 2026";
+export const CUSTODY_LAST_VERIFIED = "September 19, 2026";
 
 export interface CustodySource {
   id: number;
@@ -41,7 +41,7 @@ export interface CustodyStatusRow {
 }
 
 export const custodyStatus: CustodyStatusRow[] = [
-  { label: "Custodian", value: "Not yet named. As of September 1, 2026, the late-August execution target has passed, no award is posted on the ESBD, and the Comptroller has made no custodian announcement.", sourceIds: [1] },
+  { label: "Custodian", value: "Not yet named. As of September 19, 2026, the late-August execution target has passed, no award is posted on the ESBD, and the Comptroller has made no custodian announcement.", sourceIds: [1] },
   { label: "Who signs", value: "Comptroller Don Huffines, sworn in August 1, 2026 after Kelly Hancock – who opened the search – resigned effective July 31. Under SB 21, custody of the reserve and the comptroller's committee seat pass with the office", sourceIds: [10, 11, 12] },
   { label: "What Texas holds", value: "$10 million in the iShares Bitcoin Trust (IBIT), a spot Bitcoin ETF – a claim on Bitcoin held by BlackRock's custodian, not coin in the state's name", sourceIds: [4, 7] },
   { label: "Legal owner of the fund", value: "The Strategic Bitcoin Reserve (Fund 1018), managed by the Texas Comptroller outside the state treasury", sourceIds: [6, 8] },

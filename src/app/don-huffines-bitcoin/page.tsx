@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "Has Huffines named a custodian for the Texas Bitcoin reserve?",
-    a: "Not as of September 1, 2026. The custody RFP closed July 10, 2026 with contract execution targeted for late August; that window passed with no award posted on the state procurement site and no announcement from the Comptroller's office. The award - and the 60-day conversion of the ETF position into directly held Bitcoin - is the first decision the reserve will record under his name.",
+    a: "Not as of September 19, 2026. The custody RFP closed July 10, 2026 with contract execution targeted for late August; that window passed with no award posted on the state procurement site and no announcement from the Comptroller's office. The award - and the 60-day conversion of the ETF position into directly held Bitcoin - is the first decision the reserve will record under his name.",
   },
   {
     q: "Was Don Huffines elected comptroller?",
@@ -161,7 +161,7 @@ export default function DonHuffinesBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-01",
-    dateModified: "2026-09-01",
+    dateModified: "2026-09-19",
     about: [
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Don Huffines" },
@@ -277,7 +277,7 @@ export default function DonHuffinesBitcoinPage() {
             </li>
             <li>
               Custody RFP 908-26-1778WS closed July 10, 2026 with contract
-              execution targeted for late August; as of September 1, 2026, no
+              execution targeted for late August; as of September 19, 2026, no
               award is posted and the Comptroller&apos;s office has issued no
               statement on the reserve.<C n={3} /><C n={4} />
             </li>
@@ -485,7 +485,7 @@ export default function DonHuffinesBitcoinPage() {
 
           <h2>Where does the Huffines record stand today?</h2>
           <p>
-            As of September 1, 2026: one month in office, zero public words
+            As of September 19, 2026: seven weeks in office, zero public words
             on the reserve, three clocks running. The custody award, overdue
             against its own target, is the near one. November 3 – Huffines
             against Sarah Eckhardt for the full term – decides whether the

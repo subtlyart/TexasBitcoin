@@ -12,11 +12,11 @@
 // The honest counterweight: since taking office he has said nothing about
 // it, and the custody window closed on his watch with no award.
 //
-// Verified September 1, 2026. Re-verify when the custodian is named, after
+// Verified September 19, 2026. Re-verify when the custodian is named, after
 // the November 3, 2026 general (Huffines vs. Eckhardt), and when the first
 // SB 21 biennial report posts (due by December 31, 2026).
 
-export const HUFFINES_LAST_VERIFIED = "September 1, 2026";
+export const HUFFINES_LAST_VERIFIED = "September 19, 2026";
 
 export interface HuffinesSource {
   id: number;
@@ -31,7 +31,7 @@ export const huffinesSources: HuffinesSource[] = [
   { id: 1, label: "Texas Comptroller - Don Huffines Sworn in as Texas Comptroller, Refuses Salary, Calls for Property Tax Relief (August 1, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260801-don-huffines-sworn-in-as-texas-comptroller-refuses-salary-calls-for-property-tax-relief-1785512488796" },
   { id: 2, label: "Texas Comptroller - Media kit: Don Huffines, Texas Comptroller of Public Accounts (2026)", url: "https://comptroller.texas.gov/about/media-center/media-kit/2026/don-huffines/" },
   { id: 3, label: "Texas Comptroller - News releases, August–September 2026: sales tax, property tax, school-district reviews, TEFA - no release on the reserve or a custodian", url: "https://comptroller.texas.gov/about/media-center/news/" },
-  { id: 4, label: "Texas SmartBuy ESBD - RFP 908-26-1778WS, custody and liquidity services for the Texas Strategic Bitcoin Reserve: closed July 10, 2026; no award posted as of September 1, 2026", url: "https://www.txsmartbuy.gov/esbd/908-26-1778WS" },
+  { id: 4, label: "Texas SmartBuy ESBD - RFP 908-26-1778WS, custody and liquidity services for the Texas Strategic Bitcoin Reserve: closed July 10, 2026; no award posted as of September 19, 2026", url: "https://www.txsmartbuy.gov/esbd/908-26-1778WS" },
   { id: 5, label: "Texas Legislature Online - SB 21 (89R), enrolled text: § 403.703 (the comptroller has custody of the reserve), § 403.707 (the comptroller sits on the five-member advisory committee), § 403.708 (biennial report due by December 31 of each even-numbered year)", url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00021F.htm" },
   { id: 6, label: "Texas Tribune - Acting Comptroller Kelly Hancock to step down as Texas CFO (July 1, 2026)", url: "https://www.texastribune.org/2026/07/01/texas-comptroller-kelly-hancock-resigns-greg-abbott-don-huffines/" },
   { id: 7, label: "The Texan - Abbott Appoints Comptroller Candidate Don Huffines to Fill Outgoing Hancock's Unexpired Term (July 2, 2026)", url: "https://thetexan.news/state/texas-state-news/abbott-appoints-comptroller-candidate-don-huffines-to-fill-outgoing-hancocks-unexpired-term/article_6ae16818-e965-4319-8f0a-2524476ade36.html" },
