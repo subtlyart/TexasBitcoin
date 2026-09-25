@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/glenn-hegar-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-24" },
     { path: "/mayes-middleton-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-25" },
     { path: "/texas-attorney-general-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-25" },
+    { path: "/texas-state-securities-board-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-25" },
     { path: "/satoshi-nakamoto-institute", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/central-texas-gun-works-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-09-05" },
     { path: "/texas-bitcoin-bills-that-died", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },

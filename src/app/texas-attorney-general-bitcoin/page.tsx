@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "Has the Texas Attorney General sued crypto scammers or kiosk operators?",
-    a: "No enforcement action, Deceptive Trade Practices Act suit, or kiosk lawsuit by the Texas Attorney General against a cryptocurrency company or kiosk operator has been located. Texans lost about $56.8 million to crypto-kiosk scams in 2025, roughly 1,200 victims, and more than a billion dollars to crypto fraud of all kinds. The attorneys general of Iowa and the District of Columbia have sued kiosk operators. Crypto-fraud enforcement in Texas has come from the State Securities Board, a separate agency with more than fifty crypto orders, and from the Department of Banking.",
+    a: "No enforcement action, Deceptive Trade Practices Act suit, or kiosk lawsuit by the Texas Attorney General against a cryptocurrency company or kiosk operator has been located. Texans lost about $56.8 million to crypto-kiosk scams in 2025, roughly 1,200 victims, and more than a billion dollars to crypto fraud of all kinds. The attorneys general of Iowa and the District of Columbia have sued kiosk operators. Crypto-fraud enforcement in Texas has come from the State Securities Board, a separate agency with more than seventy crypto orders, and from the Department of Banking.",
   },
   {
     q: "What is the difference between the Attorney General and the State Securities Board?",
@@ -120,12 +120,12 @@ function AgLedgerFigure() {
     { big: "0", l: "AG kiosk suits", sub: "Iowa, D.C. have sued", c: "var(--star)" },
     { big: "0", l: "AG enforcement actions", sub: "DTPA, any crypto firm", c: "var(--star)" },
     { big: "0", l: "AG opinions on the asset", sub: "2015–2026", c: "var(--star)" },
-    { big: "50+", l: "Securities Board orders", sub: "a separate agency", c: "#6f9e6a" },
+    { big: "70+", l: "Securities Board orders", sub: "a separate agency", c: "#6f9e6a" },
     { big: "1", l: "affirmative AG suit", sub: "v. SEC · stayed", c: "var(--accent)" },
   ];
   return (
     <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
-      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 250" role="img" aria-label="The consumer ledger: $56.8 million lost to kiosk scams by about 1,200 Texans in 2025, more than a billion to all crypto fraud; zero Attorney General kiosk suits, enforcement actions, or opinions; more than fifty Securities Board orders; one affirmative suit, against the SEC, stayed">
+      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 250" role="img" aria-label="The consumer ledger: $56.8 million lost to kiosk scams by about 1,200 Texans in 2025, more than a billion to all crypto fraud; zero Attorney General kiosk suits, enforcement actions, or opinions; more than seventy Securities Board orders; one affirmative suit, against the SEC, stayed">
         <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE CONSUMER LEDGER · THE LOSSES, AND THE OFFICE&apos;S RESPONSE</text>
         {tiles.map((t, i) => {
           const col = i % 4;
@@ -225,7 +225,7 @@ export default function TexasAttorneyGeneralBitcoinPage() {
             asset. The Legislature defined it, registered its mines, and
             bought it. The Comptroller custodies it. The Public Utility
             Commission curtails it and fights to keep its registrations
-            secret. The State Securities Board has issued more than fifty
+            secret. The State Securities Board has issued more than seventy
             orders against people selling it fraudulently. The Attorney
             General – the state&apos;s chief civil litigator, its
             consumer-protection enforcer, and the lawyer for every agency
@@ -362,12 +362,15 @@ export default function TexasAttorneyGeneralBitcoinPage() {
             against businesses that cheat consumers, issues formal opinions
             construing Texas law when officials ask, and rules on public
             records requests when agencies refuse them. It is not the
-            state&apos;s securities regulator. That is the Texas State
-            Securities Board, an independent agency under the Securities
-            Commissioner, which was the first state securities regulator in
-            the country to act against a crypto firm, led the 2017 and 2019
-            sweeps, has entered more than fifty crypto orders, and names
-            the asset its top investor threat; nor is it the Department of
+            state&apos;s securities regulator. That is{" "}
+            <Link href="/texas-state-securities-board-bitcoin">
+              the Texas State Securities Board
+            </Link>
+            , an independent agency under the Securities Commissioner,
+            which was the first state securities regulator in the country
+            to act against a crypto firm, led the 2018 sweep, has entered
+            more than seventy crypto orders, and has named the asset its
+            top investor threat; nor is it the Department of
             Banking, which licenses money transmitters and issued the 2021
             guidance letting banks custody virtual currency.<C n={21} />
             <C n={20} /><C n={27} /> When those agencies go to court, the
@@ -388,7 +391,11 @@ export default function TexasAttorneyGeneralBitcoinPage() {
           <h2>What did the office do as the regulators&apos; lawyer?</h2>
           <p>
             Object, in New York, three times, and lose once. When Celsius
-            failed in the summer of 2022, the Securities Board and the
+            failed in the summer of 2022,{" "}
+            <Link href="/texas-state-securities-board-bitcoin">
+              the Securities Board
+            </Link>{" "}
+            and the
             Department of Banking objected to its plan to sell stablecoins
             to fund operations – &ldquo;troublingly broad permission to sell
             assets insufficiently defined for purposes that are also
@@ -527,7 +534,7 @@ export default function TexasAttorneyGeneralBitcoinPage() {
             against a cryptocurrency company, no lawsuit against a kiosk
             operator, and no consumer alert specific to the machines have
             been found – while the Securities Board, next door, has entered
-            more than fifty orders and runs the state&apos;s crypto-scam
+            more than seventy orders and runs the state&apos;s crypto-scam
             education page.<C n={20} /><C n={21} /> The number the absence
             sits beside: Texans lost about $56.8 million to crypto-kiosk
             scams in 2025, roughly 1,200 victims across some 4,000
