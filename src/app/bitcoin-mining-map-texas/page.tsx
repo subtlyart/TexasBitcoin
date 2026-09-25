@@ -428,8 +428,10 @@ export default function MiningMapPage() {
               <C n={6} />
             </li>
             <li>
-              In August 2023, ERCOT paid Riot $31.7 million in power credits to
-              curtail mining during the Texas heat wave.<C n={17} />
+              In August 2023, Riot booked $31.7 million in power credits for
+              curtailing during the Texas heat wave – about $7.4 million from{" "}
+              <Link href="/ercot-bitcoin">ERCOT</Link>&apos;s ancillary services
+              and $24.2 million under its retail power contract.<C n={17} />
             </li>
             <li>
               By August 2026, ERCOT&apos;s interconnection queue had reached

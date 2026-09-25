@@ -420,7 +420,8 @@ export default function NathanJohnsonBitcoinPage() {
             attempted,&rdquo; the federal survey it had sued to
             stop.<C n={12} /> By then the number the registry was built to
             capture had exploded: at Johnson&apos;s committee on June 12,
-            2024, ERCOT&apos;s Pablo Vegas said peak demand could go from
+            2024, <Link href="/ercot-bitcoin">ERCOT</Link>&apos;s Pablo
+            Vegas said peak demand could go from
             about 85,000 megawatts to 150,000 by 2030, with data centers
             and miners more than half of it.<C n={9} /> Johnson&apos;s
             reaction was the sentence the hearing is remembered for:

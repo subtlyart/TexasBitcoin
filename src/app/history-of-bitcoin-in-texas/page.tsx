@@ -600,7 +600,8 @@ export default function HistoryPage() {
           <h2>The grid: friendly, but not unconditionally</h2>
           <p>
             What truly distinguishes Texas is that mining collides with the power
-            grid here in a way it does almost nowhere else. ERCOT runs a
+            grid here in a way it does almost nowhere else.{" "}
+            <Link href="/ercot-bitcoin">ERCOT</Link> runs a
             deregulated, islanded market, and miners pitched themselves as a new
             kind of asset: <strong>flexible, interruptible load</strong> that can
             be paid to power down in seconds when demand spikes. After Winter
@@ -612,8 +613,9 @@ export default function HistoryPage() {
             The pitch paid, literally. In August 2023, during a record heat
             wave, Riot curtailed its Rockdale operation by more than 95% at
             peak-demand hours and earned <strong>$31.7 million</strong> in
-            power credits from ERCOT — $24.2 million in curtailment credits and
-            $7.4 million from demand response — more than triple the roughly
+            power credits — $24.2 million in resale credits under its power
+            contract with TXU and $7.4 million from ERCOT&apos;s ancillary
+            services — more than triple the roughly
             $8.9 million value of the 333 bitcoin it mined that month.
             <C n={20} /><C n={21} /> For one summer month, the largest Bitcoin
             mine in North America made more money stabilizing the Texas grid
@@ -760,7 +762,9 @@ export default function HistoryPage() {
               the Department of Banking
             </Link>
             , which wrote the 2014 memo that said Bitcoin was not money and
-            has never changed that line.
+            has never changed that line; and running the grid itself,{" "}
+            <Link href="/ercot-bitcoin">ERCOT</Link>, the operator that
+            counts the mines as a resource it can switch off.
           </p>
 
           <h2>The frontier: programmable money on the hardest base</h2>
