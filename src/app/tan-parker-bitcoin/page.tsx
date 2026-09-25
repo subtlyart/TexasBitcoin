@@ -418,8 +418,11 @@ export default function TanParkerBitcoinPage() {
             takes control for value without notice of a competing claim
             takes the asset free of it, the way cash and negotiable
             instruments have always worked.<C n={8} /> Five days before the
-            signature, the Department of Banking issued Industry Notice
-            2021-03: state-chartered banks may custody virtual
+            signature,{" "}
+            <Link href="/texas-department-of-banking-bitcoin">
+              the Department of Banking
+            </Link>{" "}
+            issued Industry Notice 2021-03: state-chartered banks may custody virtual
             currency.<C n={10} /> Texas was the third state to write the
             asset into its Uniform Commercial Code.<C n={13} /> What the law
             settled and what it left open is on{" "}

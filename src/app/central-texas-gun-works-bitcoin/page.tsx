@@ -361,8 +361,11 @@ export default function CentralTexasGunWorksBitcoinPage() {
             announcement.<C n={1} /> The visibility part worked immediately.
             Cargill was on Fox News on January 29, two days after going live,
             and Forbes sent Andy Greenberg to the store within six weeks.
-            <C n={3} /><C n={4} /> This was the same season the Texas
-            Department of Banking was drafting the memo that would say Bitcoin
+            <C n={3} /><C n={4} /> This was the same season{" "}
+            <Link href="/texas-department-of-banking-bitcoin">
+              the Texas Department of Banking
+            </Link>{" "}
+            was drafting the memo that would say Bitcoin
             is not money – the seam{" "}
             <Link href="/history-of-bitcoin-in-texas">
               the history of Bitcoin in Texas
