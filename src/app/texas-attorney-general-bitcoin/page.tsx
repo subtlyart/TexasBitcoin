@@ -490,7 +490,11 @@ export default function TexasAttorneyGeneralBitcoinPage() {
           <p>
             Rule for the public, and get sued for it. Under SB 1929,
             Johnson&apos;s 2023 registry, mines drawing more than 75
-            megawatts registered with the Public Utility Commission by
+            megawatts registered with{" "}
+            <Link href="/texas-public-utility-commission-bitcoin">
+              the Public Utility Commission
+            </Link>{" "}
+            by
             February 2025. Reporters for Straight Arrow News and the Texas
             Tribune asked for the registrations; the commission refused,
             citing the critical-infrastructure exception. On May 15, 2025

@@ -746,7 +746,13 @@ export default function HistoryPage() {
             </Link>
             , which in December 2017 became the first state regulator in
             the country to act against a crypto scheme and has entered more
-            than seventy orders since.
+            than seventy orders since; and above the grid itself,{" "}
+            <Link href="/texas-public-utility-commission-bitcoin">
+              the Public Utility Commission
+            </Link>
+            , which wrote the mining registry, sued to keep it secret, and
+            is now writing the rules for a load five times the grid&apos;s
+            record peak.
           </p>
 
           <h2>The frontier: programmable money on the hardest base</h2>

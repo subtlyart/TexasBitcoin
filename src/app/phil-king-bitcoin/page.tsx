@@ -486,7 +486,9 @@ export default function PhilKingBitcoinPage() {
             are asking us about data centers and (electricity) costs and
             all these things. We need to be able to tell our constituents
             it&apos;s getting done.&rdquo;<C n={18} /> On June 10 the
-            Governor directed the PUC and ERCOT to make data centers pay
+            Governor directed{" "}
+            <Link href="/texas-public-utility-commission-bitcoin">the PUC</Link>{" "}
+            and ERCOT to make data centers pay
             their full infrastructure cost and to lower residential bills,
             with memoranda due July 17 and 31; King posted the next day
             that SB 6 was &ldquo;the nation&apos;s first comprehensive

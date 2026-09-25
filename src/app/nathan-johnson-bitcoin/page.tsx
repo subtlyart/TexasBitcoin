@@ -406,8 +406,11 @@ export default function NathanJohnsonBitcoinPage() {
 
           <h2>What did the registry become?</h2>
           <p>
-            A rule, and then the state&apos;s large-load policy. The
-            Public Utility Commission took seventeen months to adopt the
+            A rule, and then the state&apos;s large-load policy.{" "}
+            <Link href="/texas-public-utility-commission-bitcoin">
+              The Public Utility Commission
+            </Link>{" "}
+            took seventeen months to adopt the
             registration rule his statute required – November 21, 2024 –
             and made it heavier than the bill: location, ownership, and
             annual demand, penalties of up to $25,000 per violation per

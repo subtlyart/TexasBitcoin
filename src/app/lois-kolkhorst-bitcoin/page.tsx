@@ -424,7 +424,11 @@ export default function LoisKolkhorstBitcoinPage() {
             all.<C n={8} /> Kolkhorst filed the answer on March 7, 2023, in
             three parts.<C n={6} /> <strong>Register:</strong> any facility
             expecting more than 10 megawatts within two years registers
-            with the Public Utility Commission within one business day of
+            with{" "}
+            <Link href="/texas-public-utility-commission-bitcoin">
+              the Public Utility Commission
+            </Link>{" "}
+            within one business day of
             its power agreement, with five years of demand
             projections.<C n={7} /> <strong>Cap:</strong> registered mines
             may join ERCOT&apos;s paid demand-response programs – the ones
