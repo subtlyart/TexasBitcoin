@@ -432,9 +432,9 @@ export default function TexasStateSecuritiesBoardBitcoinPage() {
             <Link href="/texas-bitcoin-law-timeline">
               the Texas Bitcoin law timeline
             </Link>
-            ; the gun store running that ATM when the alert went out is on{" "}
-            <Link href="/central-texas-gun-works-bitcoin">
-              Central Texas Gun Works and Bitcoin
+            ; the merchant era the 2014 alert belongs to is on{" "}
+            <Link href="/early-bitcoin-merchants-texas">
+              the grassroots era
             </Link>
             .
           </p>
