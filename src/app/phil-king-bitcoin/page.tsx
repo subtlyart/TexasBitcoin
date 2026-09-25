@@ -384,7 +384,8 @@ export default function PhilKingBitcoinPage() {
             on the same day, both 11–0.<C n={7} /><C n={8} /> The Senate
             passed both on April 12; the House kept the registry and let
             the cap die.<C n={7} /><C n={8} /> Fourteen months later, on
-            June 12, 2024, ERCOT&apos;s Pablo Vegas told the committee that
+            June 12, 2024, <Link href="/ercot-bitcoin">ERCOT</Link>&apos;s
+            Pablo Vegas told the committee that
             peak demand could go from about 85,000 megawatts to 150,000 by
             2030, more than half of it data centers and miners, and the
             Lieutenant Governor said within days there would be no

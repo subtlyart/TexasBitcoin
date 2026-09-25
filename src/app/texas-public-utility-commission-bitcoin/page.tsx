@@ -391,7 +391,8 @@ export default function TexasPublicUtilityCommissionBitcoinPage() {
             Governor. Peter Lake chaired it from April 2021 until July
             2023; Thomas Gleeson, its executive director since December
             2020 and fifteen years at the agency, has chaired it since
-            January 23, 2024.<C n={2} /><C n={3} /> ERCOT is the grid
+            January 23, 2024.<C n={2} /><C n={3} />{" "}
+            <Link href="/ercot-bitcoin">ERCOT</Link> is the grid
             operator the commission oversees: the nonprofit that runs the
             market, the interconnection queue, the ancillary services, and
             the curtailment programs, under a board the same 2021 session

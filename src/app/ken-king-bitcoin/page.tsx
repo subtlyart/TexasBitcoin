@@ -429,7 +429,8 @@ export default function KenKingBitcoinPage() {
             Organization&apos;s digest describes the substitute: the 75
             megawatt threshold, the $100,000 study fee, site control and
             financial commitment, disclosure of on-site backup generation,
-            ERCOT&apos;s authority to direct large loads to deploy backup or
+            <Link href="/ercot-bitcoin">ERCOT</Link>&apos;s authority to
+            direct large loads to deploy backup or
             curtail once other services are exhausted, mandatory
             curtailment equipment for transmission-voltage loads
             interconnected after December 31, 2025, and a demand-reduction
