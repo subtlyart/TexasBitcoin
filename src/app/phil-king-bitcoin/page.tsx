@@ -451,7 +451,8 @@ export default function PhilKingBitcoinPage() {
             industry that had organized to kill the 2023 cap did not
             organize against this.<C n={13} /> Business and Commerce passed
             it 10–0 on March 13, the Senate 31–0 on March 19; House State
-            Affairs, with Representative Ken King as sponsor, 12–0 on May
+            Affairs, with Representative{" "}
+            <Link href="/ken-king-bitcoin">Ken King</Link> as sponsor, 12–0 on May
             23; the House 103–25 on May 27, no conference
             required.<C n={10} /><C n={14} /><C n={15} /> Abbott signed it
             June 20, 2025, effective immediately – the same afternoon he

@@ -705,6 +705,8 @@ export default function HistoryPage() {
             of the reserve;{" "}
             <Link href="/phil-king-bitcoin">Phil King</Link>, the senator
             who wrote the 2025 large-load law and its kill switch;{" "}
+            <Link href="/ken-king-bitcoin">Ken King</Link>, the House
+            chairman who rewrote it;{" "}
             <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link>, the
             comptroller who bought the state its first Bitcoin;{" "}
             <Link href="/don-huffines-bitcoin">Don Huffines</Link>, the
