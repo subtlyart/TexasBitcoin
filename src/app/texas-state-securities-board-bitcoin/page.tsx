@@ -264,8 +264,11 @@ export default function TexasStateSecuritiesBoardBitcoinPage() {
             investigation three weeks before FTX failed, and has entered
             more than seventy crypto enforcement orders. It regulates
             investments that use the asset, not the asset itself, and
-            leaves exchanges, money transmission, and kiosks to the
-            Department of Banking.
+            leaves exchanges, money transmission, and kiosks to{" "}
+            <Link href="/texas-department-of-banking-bitcoin">
+              the Department of Banking
+            </Link>
+            .
           </p>
         </div>
 

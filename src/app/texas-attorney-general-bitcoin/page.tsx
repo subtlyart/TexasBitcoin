@@ -370,8 +370,11 @@ export default function TexasAttorneyGeneralBitcoinPage() {
             which was the first state securities regulator in the country
             to act against a crypto firm, led the 2018 sweep, has entered
             more than seventy crypto orders, and has named the asset its
-            top investor threat; nor is it the Department of
-            Banking, which licenses money transmitters and issued the 2021
+            top investor threat; nor is it{" "}
+            <Link href="/texas-department-of-banking-bitcoin">
+              the Department of Banking
+            </Link>
+            , which licenses money transmitters and issued the 2021
             guidance letting banks custody virtual currency.<C n={21} />
             <C n={20} /><C n={27} /> When those agencies go to court, the
             Attorney General&apos;s lawyers go with them as counsel of

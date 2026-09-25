@@ -470,8 +470,11 @@ export default function HistoryPage() {
 
           <h2>2014: The memo that said Bitcoin isn&apos;t money</h2>
           <p>
-            The story starts not with miners but with lawyers. On April 3, 2014,
-            the Texas Department of Banking issued{" "}
+            The story starts not with miners but with lawyers. On April 3, 2014,{" "}
+            <Link href="/texas-department-of-banking-bitcoin">
+              the Texas Department of Banking
+            </Link>{" "}
+            issued{" "}
             <strong>Supervisory Memorandum 1037</strong> — among the first formal
             positions any U.S. state took on how its money-transmission law
             applies to virtual currency.<C n={1} /> Its core holding was
@@ -752,7 +755,12 @@ export default function HistoryPage() {
             </Link>
             , which wrote the mining registry, sued to keep it secret, and
             is now writing the rules for a load five times the grid&apos;s
-            record peak.
+            record peak; and beneath the whole record,{" "}
+            <Link href="/texas-department-of-banking-bitcoin">
+              the Department of Banking
+            </Link>
+            , which wrote the 2014 memo that said Bitcoin was not money and
+            has never changed that line.
           </p>
 
           <h2>The frontier: programmable money on the hardest base</h2>

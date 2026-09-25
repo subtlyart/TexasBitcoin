@@ -427,7 +427,10 @@ export default function EarlyBitcoinMerchantsTexasPage() {
             Greg Abbott&apos;s gubernatorial campaign began taking Bitcoin
             donations, a story told on{" "}
             <Link href="/greg-abbott-bitcoin">Greg Abbott and Bitcoin</Link>.
-            The Department of Banking&apos;s Supervisory Memorandum 1037,
+            <Link href="/texas-department-of-banking-bitcoin">
+              The Department of Banking
+            </Link>
+            &apos;s Supervisory Memorandum 1037,
             the state&apos;s first formal word on Bitcoin, landed on April 3,
             2014 – after the merchants, the machines, the conference, and the
             candidate. The sequence matters:{" "}

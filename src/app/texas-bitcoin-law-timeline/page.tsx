@@ -416,8 +416,11 @@ export default function LawTimelinePage() {
           </p>
           <ul className="mt-3 space-y-2.5 text-sm leading-relaxed text-muted">
             <li>
-              On April 3, 2014, the Texas Department of Banking issued
-              Supervisory Memorandum 1037, holding that Bitcoin is not
+              On April 3, 2014,{" "}
+              <Link href="/texas-department-of-banking-bitcoin">
+                the Texas Department of Banking
+              </Link>{" "}
+              issued Supervisory Memorandum 1037, holding that Bitcoin is not
               &ldquo;money&rdquo; under the Texas Money Services Act.
               <C n={10} />
             </li>
