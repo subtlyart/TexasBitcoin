@@ -611,7 +611,13 @@ export default function EnforcementReportPage() {
             prosecutors <em>choose to say</em> about crypto enforcement in
             Texas - which is itself a signal worth tracking, and precisely
             why every number on this page recomputes from the dataset on each
-            refresh instead of freezing into prose.
+            refresh instead of freezing into prose. It is also federal only:
+            the state&apos;s own chief lawyer has a separate, and much
+            thinner, record on{" "}
+            <Link href="/texas-attorney-general-bitcoin">
+              the Texas Attorney General and Bitcoin
+            </Link>
+            .
           </p>
 
           <CoverageFigure />
