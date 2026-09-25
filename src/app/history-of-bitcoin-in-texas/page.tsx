@@ -724,8 +724,12 @@ export default function HistoryPage() {
             protocol from scratch, and{" "}
             <Link href="/parker-lewis-bitcoin">Parker Lewis</Link>, the
             Austin essayist who wrote why it is money. Beneath all of them is the merchant layer
-            that took the coin before the state had a position on it –
-            opened by{" "}
+            that took the coin before the state had a position on it –{" "}
+            <Link href="/early-bitcoin-merchants-texas">
+              the grassroots era of 2013–2015
+            </Link>
+            , from a bookstore with two Bitcoin customers to eleven mapped
+            Austin merchants, opened in depth by{" "}
             <Link href="/central-texas-gun-works-bitcoin">
               Central Texas Gun Works
             </Link>
