@@ -1,11 +1,29 @@
 {
   "stats": {
-    "case_count": 153,
+    "case_count": 154,
     "total_forfeitures_usd": 255275850.44,
     "districts_active": 4,
-    "generated_at": "2026-08-18T21:07:01Z"
+    "generated_at": "2026-09-25T02:56:58Z"
   },
   "cases": [
+    {
+      "id": "2ad52f3c-bc7f-47a9-be52-4e020948acbf",
+      "title": "U.S. Attorney Ryan Raybould meets with Guatemalan leaders to strengthen joint efforts against cartel networks",
+      "date": "2026-09-24",
+      "district": "Northern District of Texas",
+      "summary": "United States Attorney Ryan Raybould and Criminal Chief Fabio Leonardi of the Northern District of Texas traveled to Guatemala this week to expand cooperative efforts with Guatemalan justice‑sector partners to prosecute transnational cartels and disrupt the financial networks that support them.",
+      "statutes": [],
+      "forfeiture_usd": 0,
+      "themes": [
+        "cartel_networks",
+        "cryptocurrency",
+        "dallas-fort_worth_as_financial_choke_point",
+        "fraud_networks",
+        "international_cooperation",
+        "money_laundering"
+      ],
+      "doj_url": "https://www.justice.gov/usao-ndtx/pr/us-attorney-ryan-raybould-meets-guatemalan-leaders-strengthen-joint-efforts-against"
+    },
     {
       "id": "9fbd9ec2-b396-4d8d-8075-ae3119492e4e",
       "title": "Number one dark web dealer of Oxycodone sentenced to over 13 years in federal prison",

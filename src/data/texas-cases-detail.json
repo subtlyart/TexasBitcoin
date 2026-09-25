@@ -1,6 +1,97 @@
 {
-  "generated_at": "2026-08-27T04:40:30Z",
+  "generated_at": "2026-09-25T02:56:58Z",
   "cases": {
+    "2ad52f3c-bc7f-47a9-be52-4e020948acbf": {
+      "metadata": {
+        "district_office": "Northern District of Texas",
+        "usa_name": "Ryan Raybould",
+        "event_type": "other",
+        "judge_name": null,
+        "judge_title": null,
+        "case_number": null,
+        "max_penalty_text": null,
+        "sentence_summary": null,
+        "crypto_assets": null
+      },
+      "participants": [
+        {
+          "name": "Ryan Raybould",
+          "role": "prosecutor",
+          "title": "U.S. Attorney",
+          "organization": "U.S. Attorney's Office, Northern District of Texas",
+          "location": "Dallas, Texas",
+          "age": null,
+          "nationality": "American",
+          "status": null
+        },
+        {
+          "name": "Fabio Leonardi",
+          "role": "prosecutor",
+          "title": "Criminal Chief",
+          "organization": "U.S. Attorney's Office, Northern District of Texas",
+          "location": "Dallas, Texas",
+          "age": null,
+          "nationality": "American",
+          "status": null
+        }
+      ],
+      "agencies": [
+        {
+          "agency_name": "United States Attorney's Office, Northern District of Texas",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": "Northern District of Texas",
+          "agents_mentioned": "Ryan Raybould, Fabio Leonardi",
+          "contribution": "Traveled to Guatemala to expand cooperative efforts with Guatemalan justice-sector partners to prosecute transnational cartels and disrupt financial networks"
+        },
+        {
+          "agency_name": "Federal Bureau of Investigation",
+          "abbreviation": "FBI",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Leadership met with U.S. Attorney to strengthen joint investigations targeting cartel money-movement systems"
+        },
+        {
+          "agency_name": "Homeland Security Investigations",
+          "abbreviation": "HSI",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Leadership met with U.S. Attorney to strengthen joint investigations targeting cartel money-movement systems"
+        },
+        {
+          "agency_name": "Drug Enforcement Administration",
+          "abbreviation": "DEA",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Leadership met with U.S. Attorney to strengthen joint investigations targeting cartel money-movement systems"
+        }
+      ],
+      "charges": [],
+      "financial_actions": [],
+      "quotes": [
+        {
+          "quote_text": "Cartels are not just violent criminal organizations—they are global financial machines built to exploit international borders. And We will not allow those borders to protect them,",
+          "speaker_name": "Ryan Raybould",
+          "speaker_title": "U.S. Attorney",
+          "speaker_organization": "Northern District of Texas, U.S. Department of Justice",
+          "quote_type": "statement",
+          "context": "Statement made during Raybould's visit to Guatemala to strengthen joint efforts against cartel networks",
+          "significance": "Emphasizes the DOJ's view of cartels as international financial operations and signals determination to pursue them across borders"
+        },
+        {
+          "quote_text": "Our message is unequivocal: we will follow their money, expose their networks and work with our Guatemalan partners to bring every facilitator, broker and launderer to justice. If you move cartel money, we will find you.",
+          "speaker_name": "Ryan Raybould",
+          "speaker_title": "U.S. Attorney",
+          "speaker_organization": "Northern District of Texas, U.S. Department of Justice",
+          "quote_type": "statement",
+          "context": "Statement made during Raybould's visit to Guatemala outlining enforcement priorities against cartel finance networks",
+          "significance": "Communicates a clear deterrent warning and highlights the collaborative strategy with Guatemalan authorities to target cartel financial infrastructure"
+        }
+      ]
+    },
     "9fbd9ec2-b396-4d8d-8075-ae3119492e4e": {
       "metadata": {
         "district_office": "Northern District of Texas",
