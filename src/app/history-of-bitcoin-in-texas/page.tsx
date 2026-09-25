@@ -736,7 +736,13 @@ export default function HistoryPage() {
               the Texas Attorney General
             </Link>
             , which sued Washington over the asset once and has never
-            construed it or sued anyone for stealing it.
+            construed it or sued anyone for stealing it – and, next door,{" "}
+            <Link href="/texas-state-securities-board-bitcoin">
+              the State Securities Board
+            </Link>
+            , which in December 2017 became the first state regulator in
+            the country to act against a crypto scheme and has entered more
+            than seventy orders since.
           </p>
 
           <h2>The frontier: programmable money on the hardest base</h2>
