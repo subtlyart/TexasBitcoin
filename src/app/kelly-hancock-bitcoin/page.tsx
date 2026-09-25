@@ -353,8 +353,8 @@ export default function KellyHancockBitcoinPage() {
             years in the Legislature - the Texas House from 2007 to 2013, then
             Senate District 9 in Tarrant County from 2013 to 2025, including a
             stretch as president pro tempore.<C n={9} /> In March 2025,
-            Comptroller Glenn Hegar was named the next chancellor of the Texas
-            A&amp;M System; on June 19, 2025, Hegar welcomed Hancock into the
+            Comptroller <Link href="/glenn-hegar-bitcoin">Glenn Hegar</Link>{" "}
+            was named the next chancellor of the Texas A&amp;M System; on June 19, 2025, Hegar welcomed Hancock into the
             Comptroller&apos;s office as chief clerk - one day before Governor
             Abbott signed SB 21 - and on July 1 Hancock became acting
             comptroller, inheriting an eleven-day-old statute directing his
