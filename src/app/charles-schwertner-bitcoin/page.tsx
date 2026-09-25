@@ -401,7 +401,8 @@ export default function CharlesSchwertnerBitcoinPage() {
             evaluating the best performing asset over the last 10
             years&rdquo; – and the bill is &ldquo;a specific signal to our
             federal government that is being echoed by many other
-            states.&rdquo;<C n={4} /> Comptroller Glenn Hegar testified that
+            states.&rdquo;<C n={4} /> Comptroller{" "}
+            <Link href="/glenn-hegar-bitcoin">Glenn Hegar</Link> testified that
             the bill &ldquo;takes a measured approach to managing a
             potentially volatile asset.&rdquo;<C n={4} /> On the floor on
             March 6: &ldquo;Texas cannot expect to put its money in a

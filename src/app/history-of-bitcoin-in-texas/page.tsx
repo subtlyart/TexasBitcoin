@@ -707,6 +707,9 @@ export default function HistoryPage() {
             who wrote the 2025 large-load law and its kill switch;{" "}
             <Link href="/ken-king-bitcoin">Ken King</Link>, the House
             chairman who rewrote it;{" "}
+            <Link href="/glenn-hegar-bitcoin">Glenn Hegar</Link>, the
+            comptroller the reserve was written for, who could already buy
+            it and never did;{" "}
             <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link>, the
             comptroller who bought the state its first Bitcoin;{" "}
             <Link href="/don-huffines-bitcoin">Don Huffines</Link>, the
