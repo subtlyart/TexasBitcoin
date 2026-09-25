@@ -484,8 +484,9 @@ export default function NathanJohnsonBitcoinPage() {
             can say, accurately, that he fixed the bill&apos;s worst clause
             and then honored the committee&apos;s work; a critic can say
             he narrowed the reserve and then bought it. Third, the exit. He
-            is leaving the chamber to run for attorney general, an office
-            whose consumer-protection docket – the kiosk scams the
+            is leaving the chamber to run for{" "}
+            <Link href="/texas-attorney-general-bitcoin">attorney general</Link>
+            , an office whose consumer-protection docket – the kiosk scams the
             Legislature twice failed to regulate among them – he has not
             addressed in a campaign about restoring &ldquo;faith and
             confidence&rdquo; in the office itself.<C n={19} /><C n={20} />
@@ -512,7 +513,8 @@ export default function NathanJohnsonBitcoinPage() {
             the reserve he narrowed holds ten million dollars of state
             money and no donations, and he is the Democratic nominee for
             attorney general – 48.1% in the March 3 primary, 60.5% in the
-            May 26 runoff – against Republican Senator Mayes Middleton, a
+            May 26 runoff – against Republican Senator{" "}
+            <Link href="/mayes-middleton-bitcoin">Mayes Middleton</Link>, a
             Business and Commerce colleague and SB 6 coauthor, on November
             3.<C n={21} /><C n={22} /><C n={18} /> He holds Senate District
             16 through the campaign.<C n={1} /> The 90th Legislature

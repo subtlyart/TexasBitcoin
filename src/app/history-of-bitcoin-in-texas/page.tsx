@@ -703,6 +703,9 @@ export default function HistoryPage() {
             <Link href="/nathan-johnson-bitcoin">Nathan Johnson</Link>, the
             Democrat who wrote the mining registry and cut the donors out
             of the reserve;{" "}
+            <Link href="/mayes-middleton-bitcoin">Mayes Middleton</Link>, the
+            senator who voted for all of it and said nothing, now running
+            for attorney general against him;{" "}
             <Link href="/phil-king-bitcoin">Phil King</Link>, the senator
             who wrote the 2025 large-load law and its kill switch;{" "}
             <Link href="/ken-king-bitcoin">Ken King</Link>, the House
@@ -727,7 +730,13 @@ export default function HistoryPage() {
               Central Texas Gun Works
             </Link>
             , the South Austin gun store that went live on Bitcoin in January
-            2014, ten weeks before Supervisory Memorandum 1037.
+            2014, ten weeks before Supervisory Memorandum 1037. And beside
+            the people is the one office that has never taken a position:{" "}
+            <Link href="/texas-attorney-general-bitcoin">
+              the Texas Attorney General
+            </Link>
+            , which sued Washington over the asset once and has never
+            construed it or sued anyone for stealing it.
           </p>
 
           <h2>The frontier: programmable money on the hardest base</h2>
