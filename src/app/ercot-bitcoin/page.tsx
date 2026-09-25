@@ -460,7 +460,9 @@ export default function ErcotBitcoinPage() {
             fall: &ldquo;I&apos;m interested in their operating
             characteristics.&rdquo;<C n={19} /> The site that curtailed is
             on{" "}
-            <Link href="/rockdale-texas-bitcoin">Rockdale, Texas and Bitcoin</Link>.
+            <Link href="/rockdale-texas-bitcoin">Rockdale, Texas and Bitcoin</Link>;
+            the company that curtailed it is on{" "}
+            <Link href="/riot-platforms-bitcoin">Riot Platforms and Texas</Link>.
           </p>
 
           <h2>How does ERCOT plan around them?</h2>

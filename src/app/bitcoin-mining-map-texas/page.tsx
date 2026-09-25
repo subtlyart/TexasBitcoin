@@ -469,7 +469,8 @@ export default function MiningMapPage() {
 
           <h2>Where are the biggest Bitcoin mines in Texas?</h2>
           <p>
-            The biggest Bitcoin mines in Texas are Riot&apos;s Rockdale
+            The biggest Bitcoin mines in Texas are{" "}
+            <Link href="/riot-platforms-bitcoin">Riot</Link>&apos;s Rockdale
             facility (700 MW developed) and Corsicana campus (400 MW mining, 1
             GW approved), MARA&apos;s Granbury site (~300 MW), Cipher&apos;s
             Black Pearl (300 MW) and Odessa (207 MW), and Hut 8&apos;s King

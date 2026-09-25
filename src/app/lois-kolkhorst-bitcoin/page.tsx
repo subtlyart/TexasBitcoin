@@ -463,7 +463,9 @@ export default function LoisKolkhorstBitcoinPage() {
             Public Citizen, and Concerned Citizens of Navarro County for;
             Riot Platforms and US Bitcoin Corp against; the Texas Blockchain
             Council, ERCOT, and the electric cooperatives registered
-            &ldquo;on.&rdquo;<C n={9} /> Riot&apos;s Pierre Rochard answered
+            &ldquo;on.&rdquo;<C n={9} />{" "}
+            <Link href="/riot-platforms-bitcoin">Riot</Link>&apos;s Pierre
+            Rochard answered
             the abatement clause with Rockdale: miners are the town&apos;s
             largest employer and the largest taxpayer to its school
             district.<C n={10} /> The cooperatives asked for something

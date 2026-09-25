@@ -270,8 +270,9 @@ export default function LeeBratcherBitcoinPage() {
               program.<C n={7} />
             </li>
             <li>
-              The council and Riot Platforms sued the Department of Energy
-              on February 23, 2024; the EIA withdrew its survey by March 1
+              The council and{" "}
+              <Link href="/riot-platforms-bitcoin">Riot Platforms</Link> sued
+              the Department of Energy on February 23, 2024; the EIA withdrew its survey by March 1
               and agreed to destroy the responses.<C n={11} /><C n={13} />
               <C n={14} />
             </li>
