@@ -767,7 +767,9 @@ export default function HistoryPage() {
             counts the mines as a resource it can switch off. And the
             company that switched off most profitably, then became a
             landlord:{" "}
-            <Link href="/riot-platforms-bitcoin">Riot Platforms</Link>.
+            <Link href="/riot-platforms-bitcoin">Riot Platforms</Link>; and
+            the one whose neighbors sued:{" "}
+            <Link href="/mara-holdings-bitcoin">MARA Holdings</Link>.
           </p>
 
           <h2>The frontier: programmable money on the hardest base</h2>

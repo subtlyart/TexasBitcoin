@@ -559,7 +559,8 @@ export default function RiotPlatformsBitcoinPage() {
             cents, ten billion dollars of rent under contract, and a
             county that said no in March and yes in October.<C n={18} />
             <C n={37} /><C n={26} /> Two things this page does not say:
-            the Granbury noise litigation is Marathon&apos;s, not
+            the Granbury noise litigation is{" "}
+            <Link href="/mara-holdings-bitcoin">Marathon&apos;s</Link>, not
             Riot&apos;s, and the Core Scientific shareholders who rejected
             CoreWeave in October 2025 were not voting on anything of
             Riot&apos;s.<C n={45} />
