@@ -698,6 +698,8 @@ export default function HistoryPage() {
             senator who wrote the 2023 brake on the miners;{" "}
             <Link href="/tan-parker-bitcoin">Tan Parker</Link>, the
             legislator who wrote the 2021 definition of the asset;{" "}
+            <Link href="/angela-paxton-bitcoin">Angela Paxton</Link>, the
+            senator who carried it through the upper chamber;{" "}
             <Link href="/nathan-johnson-bitcoin">Nathan Johnson</Link>, the
             Democrat who wrote the mining registry and cut the donors out
             of the reserve;{" "}

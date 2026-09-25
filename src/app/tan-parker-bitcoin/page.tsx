@@ -450,7 +450,8 @@ export default function TanParkerBitcoinPage() {
             extraordinarily bright new future,&rdquo; and predicted the
             technology&apos;s impact would exceed the internet&apos;s.
             <C n={13} /> The council that organized the summit called him
-            and Senator Paxton the champions of its first two laws and the
+            and <Link href="/angela-paxton-bitcoin">Senator Paxton</Link>, his
+            Senate sponsor, the champions of its first two laws and the
             laws &ldquo;the opening salvo.&rdquo;<C n={11} /> The work group
             HB 1576 created – 16 members, chaired by SMU&apos;s Carla Reyes,
             with Parker among Speaker Phelan&apos;s appointees beside Lee

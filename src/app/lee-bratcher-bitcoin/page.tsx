@@ -388,7 +388,8 @@ export default function LeeBratcherBitcoinPage() {
             how a security interest is perfected – and{" "}
             <strong>HB 1576</strong>, which created the Work Group on
             Blockchain Matters. Rep.{" "}
-            <Link href="/tan-parker-bitcoin">Tan Parker</Link> and Sen. Angela Paxton
+            <Link href="/tan-parker-bitcoin">Tan Parker</Link> and Sen.{" "}
+            <Link href="/angela-paxton-bitcoin">Angela Paxton</Link>
             carried them; the release says the TBC &ldquo;spearheaded&rdquo;
             both, drafted with the Uniform Law Commission, and
             &ldquo;ensured blockchain remained a priority.&rdquo;<C n={4} />
