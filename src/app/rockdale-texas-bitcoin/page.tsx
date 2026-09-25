@@ -255,8 +255,9 @@ export default function RockdalePage() {
             because its shuttered Alcoa aluminum smelter left behind the
             high-voltage power infrastructure industrial mining needs. Bitmain
             arrived on the old Alcoa land in 2018, Whinstone built the giant
-            next door, and Riot acquired Whinstone in May 2021 for roughly
-            $651 million. Riot&apos;s Rockdale facility now has 700 MW of
+            next door, and{" "}
+            <Link href="/riot-platforms-bitcoin">Riot</Link> acquired
+            Whinstone in May 2021 for roughly $651 million. Riot&apos;s Rockdale facility now has 700 MW of
             developed capacity — the largest single Bitcoin mine in North
             America.
           </p>

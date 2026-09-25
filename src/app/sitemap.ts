@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/texas-public-utility-commission-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-25" },
     { path: "/texas-department-of-banking-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-25" },
     { path: "/ercot-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-26" },
+    { path: "/riot-platforms-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-26" },
     { path: "/satoshi-nakamoto-institute", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/central-texas-gun-works-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-09-05" },
     { path: "/early-bitcoin-merchants-texas", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-09-05" },

@@ -764,7 +764,10 @@ export default function HistoryPage() {
             , which wrote the 2014 memo that said Bitcoin was not money and
             has never changed that line; and running the grid itself,{" "}
             <Link href="/ercot-bitcoin">ERCOT</Link>, the operator that
-            counts the mines as a resource it can switch off.
+            counts the mines as a resource it can switch off. And the
+            company that switched off most profitably, then became a
+            landlord:{" "}
+            <Link href="/riot-platforms-bitcoin">Riot Platforms</Link>.
           </p>
 
           <h2>The frontier: programmable money on the hardest base</h2>
