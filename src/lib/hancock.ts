@@ -15,7 +15,7 @@
 // the custodian award or the first SB 21 report re-characterizes what he
 // left behind. The successor's record lives in huffines.ts.
 
-export const HANCOCK_LAST_VERIFIED = "September 19, 2026";
+export const HANCOCK_LAST_VERIFIED = "September 29, 2026";
 
 export interface HancockSource {
   id: number;
