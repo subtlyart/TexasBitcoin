@@ -313,7 +313,7 @@ export default function ReservePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-09",
-    dateModified: "2026-09-19",
+    dateModified: "2026-09-29",
   };
 
   const faqJsonLd = {

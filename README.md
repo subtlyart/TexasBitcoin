@@ -28,7 +28,7 @@ source. Where the record cuts against the thesis, the page says so (the
 
 ## What's on the site
 
-Roughly 40 routes, organised into wings:
+Roughly 60 routes, organised into wings:
 
 | Wing | Pages |
 |---|---|
@@ -36,8 +36,10 @@ Roughly 40 routes, organised into wings:
 | **Law & policy** | `/what-texas-law-says-about-bitcoin`, `/texas-bitcoin-law-timeline`, `/texas-strategic-bitcoin-reserve`, `/who-holds-the-texas-bitcoin-reserve`, `/texas-gold-vs-bitcoin`, `/texas-bitcoin-bills-that-died`, `/texas-bitcoin-bills-2027`, `/bitcoin-estate-planning-texas` |
 | **Enforcement** | `/texas-bitcoin-case-tracker` (+ per-case and per-district pages), `/texas-crypto-enforcement-report` |
 | **The grid** | `/bitcoin-mining-ercot`, `/bitcoin-mining-map-texas`, `/texas-bitcoin-miners-ai-pivot`, `/elon-musk-bitcoin-energy` |
-| **People** | `/greg-abbott-bitcoin`, `/dan-patrick-bitcoin`, `/ted-cruz-bitcoin`, `/kelly-hancock-bitcoin`, `/charles-schwertner-bitcoin`, `/don-huffines-bitcoin`, `/jimmy-song-bitcoin` |
-| **Builders & culture** | `/satoshi-nakamoto-institute`, `/doctor-bitcoin`, `/doctor-bitcoin-interviews`, `/events`, `/invest-in-texas-bitcoin`, `/texas-bitcoin-resources` |
+| **People – office** | `/greg-abbott-bitcoin`, `/dan-patrick-bitcoin`, `/ted-cruz-bitcoin`, `/kelly-hancock-bitcoin`, `/don-huffines-bitcoin`, `/glenn-hegar-bitcoin` |
+| **People – Legislature** | `/charles-schwertner-bitcoin`, `/angela-paxton-bitcoin`, `/giovanni-capriglione-bitcoin`, `/ken-king-bitcoin`, `/phil-king-bitcoin`, `/lois-kolkhorst-bitcoin`, `/mayes-middleton-bitcoin`, `/nathan-johnson-bitcoin`, `/tan-parker-bitcoin` |
+| **Institutions** | `/texas-attorney-general-bitcoin`, `/texas-department-of-banking-bitcoin`, `/texas-state-securities-board-bitcoin`, `/texas-public-utility-commission-bitcoin`, `/ercot-bitcoin`, `/riot-platforms-bitcoin` |
+| **Builders & culture** | `/jimmy-song-bitcoin`, `/lee-bratcher-bitcoin`, `/parker-lewis-bitcoin`, `/satoshi-nakamoto-institute`, `/doctor-bitcoin`, `/doctor-bitcoin-interviews`, `/events`, `/invest-in-texas-bitcoin`, `/texas-bitcoin-resources` |
 | **Trust layer** | `/about` (editorial standards), `/disclaimer` |
 
 Header nav is deliberately minimal (History, Events). The mining and law
@@ -108,6 +110,9 @@ SEAM.md                        # the hidden trail, internal only
 
 ## Watchlist
 
-- SB 21 reserve: custodian award, then the first statutory report (31 Dec).
+- SB 21 reserve: custodian award (RFP 908-26-1778WS closed July 10; late-August
+  execution target missed, no award as of September 29), then the first
+  statutory report (31 Dec). Stamps live in `src/lib/custody.ts`, `reserve.ts`,
+  `hancock.ts`, `huffines.ts`.
 - November 3 general election – candidates tracked on the people pages.
 - 2027 session bills – `/texas-bitcoin-bills-2027`.
