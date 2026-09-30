@@ -59,6 +59,54 @@ function C({ n }: { n: number }) {
   );
 }
 
+// people-figs:start
+// The session clock as one line, drawn from sessionDates and the page's
+// verification stamp (Sept 2026). Server-rendered SVG, no client JS.
+function SessionClockFigure() {
+  const start = Date.UTC(2026, 8, 1);
+  const end = Date.UTC(2027, 5, 15);
+  const x = (iso: string) => {
+    const [y, m, d] = iso.split("-").map(Number);
+    return 40 + ((Date.UTC(y, m - 1, d) - start) / (end - start)) * 742;
+  };
+  const today = "2026-09-30";
+  const report = { date: "2026-12-31", label: "Report due" };
+  return (
+    <figure className="mt-5 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 200" role="img" aria-label="The 90th Legislature's clock on one line: pre-filing opens November 9, 2026; the reserve's first report is due December 31, 2026; the session convenes January 12, 2027; the bill-filing deadline is March 12, 2027; sine die is May 31, 2027. The marker shows September 30, 2026, with zero bills filed.">
+        <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE CLOCK · SEPTEMBER 2026 → SINE DIE · 0 BILLS FILED</text>
+        <line x1="40" y1="110" x2="782" y2="110" stroke="var(--border)" strokeWidth="1.5" />
+        <rect x={x("2027-01-12")} y="104" width={x("2027-05-31") - x("2027-01-12")} height="12" rx="3" fill="color-mix(in srgb, #6f9e6a 30%, transparent)" />
+        <text x={(x("2027-01-12") + x("2027-05-31")) / 2} y="150" fontSize="9.5" textAnchor="middle" fill="#6f9e6a" fontWeight="600" letterSpacing="1">THE 140 DAYS</text>
+        <line x1={x(today)} y1="66" x2={x(today)} y2="128" stroke="var(--accent)" strokeWidth="1.5" strokeDasharray="3 3" />
+        <text x={x(today)} y="58" fontSize="9.5" textAnchor="middle" fontWeight="600" fill="var(--accent)">Verified Sept. 30</text>
+        {sessionDates.map((e, i) => {
+          const cx = x(e.date);
+          const up = i % 2 === 0;
+          return (
+            <g key={e.date}>
+              <circle cx={cx} cy="110" r="5" fill={e.done ? "var(--accent)" : "#6f9e6a"} stroke="var(--surface)" strokeWidth="2" />
+              <text x={i === 0 ? cx + 6 : cx} y={up ? 88 : 138} fontSize="10.5" fontWeight="600" textAnchor={i === 0 ? "end" : "middle"} fill="var(--foreground)" fontFamily="var(--font-display)">{e.title}</text>
+              <text x={i === 0 ? cx + 6 : cx} y={up ? 76 : 168} fontSize="9" textAnchor={i === 0 ? "end" : "middle"} fill="var(--muted-2)">{e.dateLabel}</text>
+            </g>
+          );
+        })}
+        <g>
+          <circle cx={x(report.date)} cy="110" r="4" fill="var(--surface)" stroke="#8a7fb5" strokeWidth="2" />
+          <line x1={x(report.date)} y1="92" x2={x(report.date)} y2="104" stroke="#8a7fb5" strokeWidth="1" />
+          <text x={x(report.date)} y="88" fontSize="10" fontWeight="600" textAnchor="middle" fill="#8a7fb5">{report.label}</text>
+          <text x={x(report.date)} y="76" fontSize="9" textAnchor="middle" fill="var(--muted-2)">December 31, 2026</text>
+        </g>
+        <text x="405" y="192" fontSize="10" textAnchor="middle" fill="var(--muted-2)">Texas Legislative Reference Library · State Bar of Texas legislative timetable 2026–27 · SB 21 § 403.708</text>
+      </svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The clock. Pre-filing opens the Monday after the general election; the Comptroller&apos;s first report on the reserve lands seven weeks later and two weeks before the gavel. The green band is the only stretch in which Texas passes laws.
+      </figcaption>
+    </figure>
+  );
+}
+// people-figs:end
+
 export default function Lege90Page() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -70,7 +118,7 @@ export default function Lege90Page() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-30",
-    dateModified: "2026-08-30",
+    dateModified: "2026-09-30",
   };
 
   const faqJsonLd = {
@@ -217,6 +265,7 @@ export default function Lege90Page() {
           <h2 className="font-display text-2xl font-semibold tracking-tight">
             The session clock
           </h2>
+          <SessionClockFigure />
           <ol className="mt-5 space-y-4">
             {sessionDates.map((e) => (
               <li

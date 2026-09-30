@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_VERIFIED = "August 30, 2026";
+const LAST_VERIFIED = "September 30, 2026";
 
 const sources = [
   { id: 1, label: "Husch Blackwell — Integrating Bitcoin Miners into ERCOT: the Large Flexible Load Task Force, first meeting April 14, 2022", url: "https://www.huschblackwell.com/newsandinsights/integrating-bitcoin-miners-into-ercot-critical-issues-come-into-focus-for-large-flexible-load-task-force" },
@@ -78,6 +78,83 @@ function C({ n }: { n: number }) {
   );
 }
 
+// people-figs:start
+
+// Two figures drawn from the dated, sourced facts on this page (Sept 2026):
+// the August 2023 Riot month, and the EIA's large-flexible-load count.
+// Server-rendered SVG, no client JS.
+function ErcotAugust2023Figure() {
+  const max = 31.7;
+  const w = (v: number) => (v / max) * 440;
+  const rows = [
+    { label: "Power credits", v: 24.2, c: "var(--accent)", note: "sold back into the spiking market" },
+    { label: "Demand-response payments", v: 7.4, c: "var(--accent)", note: "ERCOT programs, contracted curtailment" },
+    { label: "Bitcoin mined (333 BTC)", v: 8.9, c: "var(--star)", note: "the month's hashrate, at August prices" },
+  ];
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 250" role="img" aria-label="Riot Platforms, August 2023: $24.2 million in power credits and $7.4 million in demand-response payments, $31.7 million together, against about $8.9 million of Bitcoin mined (333 BTC).">
+        <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">ONE MONTH · RIOT PLATFORMS, AUGUST 2023 · MILLIONS OF DOLLARS</text>
+        {rows.map((r, i) => {
+          const y = 62 + i * 46;
+          return (
+            <g key={r.label}>
+              <text x="28" y={y + 13} fontSize="11" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">{r.label}</text>
+              <rect x="250" y={y} width={w(r.v)} height="20" rx="4" fill={r.c} opacity={i === 2 ? 0.85 : 1} />
+              <text x={250 + w(r.v) + 8} y={y + 14} fontSize="11" fontWeight="600" fill="var(--foreground)">${r.v.toFixed(1)}M</text>
+              <text x="250" y={y + 34} fontSize="9.5" fill="var(--muted-2)">{r.note}</text>
+            </g>
+          );
+        })}
+        <line x1="250" y1="56" x2="250" y2="196" stroke="var(--border)" strokeWidth="1" />
+        <path d={`M ${250 + w(31.7)} 60 v 66`} stroke="var(--accent)" strokeWidth="1" strokeDasharray="3 3" />
+        <text x={250 + w(31.7) + 8} y="80" fontSize="10.5" fontWeight="600" fill="var(--accent)">$31.7M together</text>
+        <text x={250 + w(31.7) + 8} y="94" fontSize="9.5" fill="var(--muted)">for not mining -</text>
+        <text x={250 + w(31.7) + 8} y="108" fontSize="9.5" fill="var(--muted)">3.6× the coin it mined</text>
+        <text x="405" y="238" fontSize="10" textAnchor="middle" fill="var(--muted-2)">Riot Platforms, August 2023 Production and Operations Update · CNBC, September 6, 2023</text>
+      </svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The month the stack showed itself. Two gold bars are the price of flexibility, paid by the market and by ERCOT; the one below them is the price of the hashrate. In the hottest August on record the first was worth more than three times the second.
+      </figcaption>
+    </figure>
+  );
+}
+
+function ErcotLoadFigure() {
+  const max = 26500;
+  const w = (v: number) => (v / max) * 440;
+  const rows = [
+    { label: "Approved, late 2024", v: 5479, c: "var(--accent)" },
+    { label: "Expected by end of 2025", v: 9500, c: "color-mix(in srgb, var(--accent) 65%, transparent)" },
+    { label: "In the application pipeline", v: 26500, c: "color-mix(in srgb, var(--accent) 35%, transparent)" },
+  ];
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 232" role="img" aria-label="ERCOT large flexible load per the EIA, October 2024: 5,479 megawatts approved, about 9,500 expected by the end of 2025, and about 26,500 more in the application pipeline.">
+        <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE CLASS · LARGE FLEXIBLE LOAD ON ERCOT, PER THE EIA · MEGAWATTS</text>
+        {rows.map((r, i) => {
+          const y = 60 + i * 44;
+          return (
+            <g key={r.label}>
+              <text x="28" y={y + 13} fontSize="11" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">{r.label}</text>
+              <rect x="250" y={y} width={w(r.v)} height="20" rx="4" fill={r.c} />
+              <text x={250 + w(r.v) + 8} y={y + 14} fontSize="11" fontWeight="600" fill="var(--foreground)">{r.v.toLocaleString("en-US")} MW</text>
+            </g>
+          );
+        })}
+        <line x1="250" y1="54" x2="250" y2="190" stroke="var(--border)" strokeWidth="1" />
+        <text x="28" y="204" fontSize="10" fill="var(--muted)">For scale: a 75 MW facility is the floor of the class. Forecast, not metered; the pipeline always overstates what gets built.</text>
+        <text x="405" y="224" fontSize="10" textAnchor="middle" fill="var(--muted-2)">U.S. Energy Information Administration, October 3, 2024 · ERCOT LFLTF deck, September 2022</text>
+      </svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The class, in three depths of the same color: what ERCOT had approved, what it expected within a year, and what was asking. The lightest bar is the one the audit of August 2026 was written for.
+      </figcaption>
+    </figure>
+  );
+}
+
+// people-figs:end
+
 export default function ErcotMiningPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -89,7 +166,7 @@ export default function ErcotMiningPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-30",
-    dateModified: "2026-08-30",
+    dateModified: "2026-09-30",
   };
 
   const faqJsonLd = {
@@ -256,6 +333,8 @@ export default function ErcotMiningPage() {
             the flexibility was worth more than triple the hashrate.
           </p>
 
+          <ErcotAugust2023Figure />
+
           <h2>What is 4CP?</h2>
           <p>
             <strong>Four Coincident Peak</strong> – the mechanism ERCOT uses
@@ -292,6 +371,8 @@ export default function ErcotMiningPage() {
             the pipeline always overstates what gets built – but the order of
             magnitude is the point.
           </p>
+
+          <ErcotLoadFigure />
 
           <h2>What rules govern miners on ERCOT now?</h2>
           <p>

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_VERIFIED = "August 30, 2026";
+const LAST_VERIFIED = "September 30, 2026";
 
 const sources = [
   { id: 1, label: "Texas Legislature Online — HB 1056 (89R) bill history: signed June 22, 2025; Section 2116.101 (legal tender) effective September 1, 2026; remainder effective May 1, 2027", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB1056" },
@@ -71,6 +71,94 @@ function C({ n }: { n: number }) {
   );
 }
 
+// people-figs:start
+
+// Two figures drawn from the dated, sourced facts on this page (Sept 2026):
+// the two laws' effective-date ladder, and the design split side by side.
+// Server-rendered SVG, no client JS.
+function GoldBitcoinLadderFigure() {
+  // x from June 2015 → May 2027, compressed: the 2015 origin sits at the left
+  // edge and the 2025–27 stretch takes the rest.
+  const stops = [
+    { x: 96, lane: "gold", date: "June 12, 2015", t: "HB 483 signed", d: "the Bullion Depository" },
+    { x: 250, lane: "btc", date: "June 20, 2025", t: "SB 21 signed", d: "the reserve; effective immediately" },
+    { x: 300, lane: "gold", date: "June 22, 2025", t: "HB 1056 signed", d: "gold and silver as tender" },
+    { x: 440, lane: "btc", date: "Nov. 20, 2025", t: "First purchase", d: "~$5M, spot Bitcoin ETF" },
+    { x: 600, lane: "gold", date: "Sept. 1, 2026", t: "Tender in force", d: "§ 2116.101 takes effect" },
+    { x: 760, lane: "gold", date: "May 1, 2027", t: "Currency live", d: "spend depository metal" },
+  ];
+  const laneY = { gold: 96, btc: 176 } as const;
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 250" role="img" aria-label="Two lanes of dates: gold - HB 483 signed June 12, 2015; HB 1056 signed June 22, 2025; tender in force September 1, 2026; currency live May 1, 2027. Bitcoin - SB 21 signed and effective June 20, 2025; first purchase November 20, 2025.">
+        <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">TWO LANES · WHEN EACH HARD-MONEY LAW STARTS DOING SOMETHING</text>
+        <text x="28" y={laneY.gold + 58} fontSize="10" fontWeight="600" letterSpacing="1.5" fill="var(--star)">GOLD · TENDER</text>
+        <text x="782" y={laneY.btc - 22} fontSize="10" fontWeight="600" letterSpacing="1.5" textAnchor="end" fill="var(--accent)">BITCOIN · RESERVE</text>
+        <line x1="40" y1={laneY.gold} x2="782" y2={laneY.gold} stroke="var(--border)" strokeWidth="1.5" />
+        <line x1="40" y1={laneY.btc} x2="782" y2={laneY.btc} stroke="var(--border)" strokeWidth="1.5" />
+        <line x1="170" y1="60" x2="170" y2="200" stroke="var(--border)" strokeWidth="1" strokeDasharray="3 4" />
+        <text x="170" y="216" fontSize="9" textAnchor="middle" fill="var(--muted-2)">ten years</text>
+        {stops.map((s) => {
+          const y = laneY[s.lane as "gold" | "btc"];
+          const c = s.lane === "gold" ? "var(--star)" : "var(--accent)";
+          const above = s.lane === "gold";
+          return (
+            <g key={s.date}>
+              <circle cx={s.x} cy={y} r="5" fill={c} stroke="var(--surface)" strokeWidth="2" />
+              <text x={s.x} y={above ? y - 30 : y + 24} fontSize="10.5" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">{s.t}</text>
+              <text x={s.x} y={above ? y - 17 : y + 37} fontSize="9" textAnchor="middle" fill="var(--muted-2)">{s.date}</text>
+              <text x={s.x} y={above ? y + 20 : y + 50} fontSize="9" textAnchor="middle" fill="var(--muted)">{s.d}</text>
+            </g>
+          );
+        })}
+        <text x="405" y="242" fontSize="10" textAnchor="middle" fill="var(--muted-2)">HB 483 and HB 1056 histories · SB 21 history · The Bond Buyer, November 2025 · Texas Policy Research</text>
+      </svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        Two lanes. The Bitcoin law was in force the day it was signed and buying within five months; the gold law took fifteen months to make its first clause effective and will take twenty-two to let anyone spend. One was built to hold, so it could start at once; the other to pay, so it had to build the rail first.
+      </figcaption>
+    </figure>
+  );
+}
+
+function GoldBitcoinSplitFigure() {
+  const rows: [string, string, string][] = [
+    ["The verb", "Spend", "Hold"],
+    ["The statute", "HB 1056 (2025), on HB 483 (2015)", "SB 21 (2025)"],
+    ["Constitutional lane", "Art. I § 10: gold and silver coin as tender", "None needed - a fund, not a currency"],
+    ["Where the asset sits", "Texas Bullion Depository, private vault", "Fund 1018, outside the treasury"],
+    ["What a Texan can do", "Pay by debit card or app from May 1, 2027", "Nothing - the state holds it"],
+    ["What the state owns", "No gold of its own", "$10M in a spot Bitcoin ETF"],
+    ["Reporting", "Depository administration", "Biennial report, first due Dec. 31, 2026"],
+  ];
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 330" role="img" aria-label="The design split, side by side: gold is to spend under HB 1056, on the constitutional tender clause, from the Bullion Depository, by card or app from May 1, 2027, though the state owns no gold; Bitcoin is to hold under SB 21, in Fund 1018 outside the treasury, $10 million in a spot ETF, with a biennial report due December 31, 2026.">
+        <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE SPLIT · ONE LEGISLATURE, ONE WEEK, TWO DESTINATIONS</text>
+        <text x="290" y="62" fontSize="10" fontWeight="600" letterSpacing="1.5" fill="var(--star)">GOLD AS TENDER</text>
+        <text x="560" y="62" fontSize="10" fontWeight="600" letterSpacing="1.5" fill="var(--accent)">BITCOIN AS RESERVE</text>
+        <line x1="28" y1="70" x2="782" y2="70" stroke="var(--border)" strokeWidth="1" />
+        {rows.map((r, i) => {
+          const y = 94 + i * 32;
+          return (
+            <g key={r[0]}>
+              {i % 2 === 1 && <rect x="28" y={y - 20} width="754" height="32" rx="3" fill="var(--surface-2)" />}
+              <text x="28" y={y} fontSize="10.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">{r[0]}</text>
+              <text x="290" y={y} fontSize="10" fill={i === 0 ? "var(--star)" : "var(--muted)"} fontWeight={i === 0 ? 700 : 400}>{r[1]}</text>
+              <text x="560" y={y} fontSize="10" fill={i === 0 ? "var(--accent)" : "var(--muted)"} fontWeight={i === 0 ? 700 : 400}>{r[2]}</text>
+            </g>
+          );
+        })}
+        <text x="405" y="322" fontSize="10" textAnchor="middle" fill="var(--muted-2)">HB 1056 · SB 21 · U.S. Const. art. I § 10 · Comptroller Fiscal Notes, Sept. 2017 · Texas Observer, Feb. 2025 · The Bond Buyer</text>
+      </svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The split, row by row. Read the first row and the rest follow: a thing built to be spent needs a tender clause, a vault, and a rail; a thing built to be held needs a fund and a report. The last two rows are the counterweight – the state spends no gold it owns and holds Bitcoin it cannot yet touch.
+      </figcaption>
+    </figure>
+  );
+}
+
+// people-figs:end
+
 export default function GoldVsBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -82,7 +170,7 @@ export default function GoldVsBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-30",
-    dateModified: "2026-08-30",
+    dateModified: "2026-09-30",
   };
 
   const faqJsonLd = {
@@ -228,6 +316,8 @@ export default function GoldVsBitcoinPage() {
             deliberately different destinations.
           </p>
 
+          <GoldBitcoinLadderFigure />
+
           <h2>Why can gold be tender when Bitcoin cannot?</h2>
           <p>
             Start with the oldest money text in American law.{" "}
@@ -273,6 +363,8 @@ export default function GoldVsBitcoinPage() {
             – do not sell. The state&apos;s two hard-money laws disagree
             about nothing; they simply answer different questions.
           </p>
+
+          <GoldBitcoinSplitFigure />
 
           <h2>What is the shared lineage underneath both laws?</h2>
           <p>

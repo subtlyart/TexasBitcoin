@@ -12,7 +12,7 @@
 // URL, and bump LEGE90_LAST_VERIFIED + the page's dateModified together.
 // When the first bills land, consider promoting the page off sitemap-only.
 
-export const LEGE90_LAST_VERIFIED = "August 30, 2026";
+export const LEGE90_LAST_VERIFIED = "September 30, 2026";
 
 // Session milestones — the clock the tracker runs on.
 export interface SessionDate {

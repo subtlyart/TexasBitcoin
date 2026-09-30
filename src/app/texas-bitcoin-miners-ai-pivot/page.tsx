@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_VERIFIED = "August 30, 2026";
+const LAST_VERIFIED = "September 30, 2026";
 
 const sources = [
   { id: 1, label: "Riot Platforms — Q2 2026 results (August 10, 2026): 20-year, 191 MW data center lease at Rockdale with \"one of the world's leading frontier AI labs\" — $9.1B initial term through June 2048, up to ~$16.1B with extensions; AMD as second tenant (50 MW contracted); 1,587 BTC still mined in Q2", url: "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/" },
@@ -76,6 +76,61 @@ function C({ n }: { n: number }) {
   );
 }
 
+// people-figs:start
+
+// One figure drawn from the deal ledger on this page (Sept 2026): the
+// megawatts each former or would-be mine has contracted or planned for AI.
+// Server-rendered SVG, no client JS.
+function PivotLedgerFigure() {
+  const rows = [
+    { site: "MARA · Matagorda County", mw: 2000, kind: "planned", note: "up to 2 GW powered land; HIF milestones to $600M" },
+    { site: "Hut 8 · Beacon Point", mw: 1000, kind: "contracted", note: "two 15-year leases, $19.6B base term; never mined" },
+    { site: "Riot · Corsicana", mw: 1000, kind: "planned", note: "letter of intent covering the full site" },
+    { site: "Galaxy · Helios", mw: 526, kind: "contracted", note: "15-year CoreWeave lease; first 133 MW delivered July 2026" },
+    { site: "Cipher · Barber Lake", mw: 300, kind: "contracted", note: "Fluidstack, ~$3B, Google backstop; built straight for AI" },
+    { site: "Riot · Rockdale (AI lab)", mw: 191, kind: "contracted", note: "20 years, $9.1B initial term, to ~$16.1B" },
+    { site: "Riot · Rockdale (AMD)", mw: 50, kind: "contracted", note: "first tenant, January 2026" },
+  ];
+  const max = 2000;
+  const w = (v: number) => (v / max) * 380;
+  return (
+    <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
+      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 366" role="img" aria-label="The deal ledger in megawatts: MARA Matagorda up to 2,000 planned; Hut 8 Beacon Point 1,000 contracted; Riot Corsicana 1,000 under letter of intent; Galaxy Helios 526 contracted; Cipher Barber Lake 300 contracted; Riot Rockdale 191 contracted with an AI lab and 50 with AMD.">
+        <defs>
+          <pattern id="pivot-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="6" stroke="var(--accent)" strokeWidth="1.5" />
+          </pattern>
+        </defs>
+        <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE LEDGER · TEXAS MINE SITES TURNED AI CAMPUSES · MEGAWATTS</text>
+        <rect x="28" y="44" width="12" height="12" rx="3" fill="var(--accent)" />
+        <text x="46" y="54" fontSize="10" fill="var(--muted)">Contracted lease</text>
+        <rect x="150" y="44" width="12" height="12" rx="3" fill="url(#pivot-hatch)" stroke="var(--accent)" strokeWidth="1" />
+        <text x="168" y="54" fontSize="10" fill="var(--muted)">Letter of intent or planned</text>
+        {rows.map((r, i) => {
+          const y = 74 + i * 38;
+          const contracted = r.kind === "contracted";
+          return (
+            <g key={r.site}>
+              <text x="28" y={y + 13} fontSize="11" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">{r.site}</text>
+              <rect x="220" y={y} width={w(r.mw)} height="18" rx="4" fill={contracted ? "var(--accent)" : "url(#pivot-hatch)"} stroke={contracted ? "none" : "var(--accent)"} strokeWidth="1" />
+              <text x={220 + w(r.mw) + 8} y={y + 13} fontSize="11" fontWeight="600" fill="var(--foreground)">{r.mw.toLocaleString("en-US")}</text>
+              <text x="220" y={y + 30} fontSize="9" fill="var(--muted-2)">{r.note}</text>
+            </g>
+          );
+        })}
+        <line x1="220" y1="68" x2="220" y2="340" stroke="var(--border)" strokeWidth="1" />
+        <text x="28" y="344" fontSize="9.5" fill="var(--muted)">Not drawn: Core Scientific Denton ($6.1B, CoreWeave; megawatts not disclosed on this page), Cipher Black Pearl (Amazon), Bitdeer Rockdale (in pipeline).</text>
+        <text x="405" y="360" fontSize="10" textAnchor="middle" fill="var(--muted-2)">Riot Q2 2026 results · Blockspace · The Block, July 2026 · Cipher 8-K · Hut 8 release · MARA 8-K, July 2026</text>
+      </svg>
+      <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
+        The ledger, by the only unit all the deals share. Solid bars are signed leases; hatched bars are intent. The two largest are a site that never mined and a site that has not been built – the miner&apos;s playbook applied where there was never a miner.
+      </figcaption>
+    </figure>
+  );
+}
+
+// people-figs:end
+
 export default function AiPivotPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -87,7 +142,7 @@ export default function AiPivotPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-30",
-    dateModified: "2026-08-30",
+    dateModified: "2026-09-30",
   };
 
   const faqJsonLd = {
@@ -291,6 +346,8 @@ export default function AiPivotPage() {
             AI/HPC conversion pipeline.<C n={11} /> Every operator on the
             map, without exception, is now in the powered-land business.
           </p>
+
+          <PivotLedgerFigure />
 
           <h2>The lineage runs deeper than the miners</h2>
           <p>
