@@ -423,8 +423,10 @@ export default function MiningMapPage() {
               lease.<C n={11} />
             </li>
             <li>
-              MARA bought its Granbury mine in January 2024 as part of a $178.6
-              million, 390 MW two-site acquisition from Generate Capital.
+              <Link href="/mara-holdings-bitcoin">MARA</Link> bought its
+              Granbury mine in January 2024 as part of a $178.6 million, 390 MW
+              two-site acquisition from Generate Capital, closed at $189.6
+              million.
               <C n={6} />
             </li>
             <li>
@@ -571,8 +573,9 @@ export default function MiningMapPage() {
 
           <h2>The counterweight: Granbury&apos;s noise fight</h2>
           <p>
-            The record isn&apos;t all triumph, and we keep the hard parts in.
-            MARA&apos;s Granbury mine runs behind-the-meter at the 1,115 MW
+            The record isn&apos;t all triumph, and we keep the hard parts in.{" "}
+            <Link href="/mara-holdings-bitcoin">MARA</Link>&apos;s Granbury mine
+            runs behind-the-meter at the 1,115 MW
             Wolf Hollow gas plant, and its cooling fans have made it the most
             litigated Bitcoin site in Texas: neighbors report sleep disruption
             and hearing problems, a Hood County constable issued 37 noise

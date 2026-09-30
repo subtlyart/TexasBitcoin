@@ -491,8 +491,9 @@ export default function LoisKolkhorstBitcoinPage() {
             line was the one the industry kept: the senator was
             &ldquo;well-intentioned, has the best interest of her
             constituents at heart, but is just being fed bad
-            information.&rdquo;<C n={14} /> Marathon&apos;s chief executive
-            said out loud what everyone knew – the House was &ldquo;much
+            information.&rdquo;<C n={14} />{" "}
+            <Link href="/mara-holdings-bitcoin">Marathon</Link>&apos;s chief
+            executive said out loud what everyone knew – the House was &ldquo;much
             more aligned with the positive aspects and the benefits of
             bitcoin mining.&rdquo;<C n={16} /> The bill reached House State
             Affairs on April 24 and sat; the session ended May 29 with no
@@ -522,7 +523,9 @@ export default function LoisKolkhorstBitcoinPage() {
             named in March, at scale. Both readings are on the record and
             the sentence &ldquo;part of their business model&rdquo; fits
             either.<C n={10} /> Then the neighbors: by 2025, residents of
-            Granbury living beside a 300-megawatt mine were lobbying the
+            Granbury living beside{" "}
+            <Link href="/mara-holdings-bitcoin">a 300-megawatt mine</Link> were
+            lobbying the
             Legislature to resurrect SB 1751, and went home with
             nothing.<C n={21} /> And the half that passed: the registration
             requirement she wrote for 10 megawatts became law at 75 under

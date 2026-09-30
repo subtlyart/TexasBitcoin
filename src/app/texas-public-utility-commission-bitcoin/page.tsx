@@ -497,8 +497,9 @@ export default function TexasPublicUtilityCommissionBitcoinPage() {
             Texas&apos;s energy grid and critical infrastructure&rdquo;
             through &ldquo;manipulation of the volume of available reliable
             electricity.&rdquo; Its press officer declined to comment on
-            pending litigation; Riot and Marathon declined to comment at
-            all.<C n={16} /> By November it had spent about $13,000 of the
+            pending litigation; Riot and{" "}
+            <Link href="/mara-holdings-bitcoin">Marathon</Link> declined to
+            comment at all.<C n={16} /> By November it had spent about $13,000 of the
             $56,000 in outside counsel it paid that year fighting three
             records rulings, and the case was still pending; no ruling has
             been reported since.<C n={17} /> Two things sit beside the suit.
