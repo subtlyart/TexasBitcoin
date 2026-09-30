@@ -100,7 +100,7 @@ export const watchlist: WatchItem[] = [
     detail:
       "The first session with SB 6 in force and the AI conversion in full swing: expect cleanup bills on transmission-cost allocation, curtailment obligations, and how much of the miners' demand-response franchise survives the pivot.",
     precedent:
-      "SB 6 (2025) rebuilt large-load rules; SB 1751's demand-response cap passed the Senate 30–1 in 2023 before dying; Governor Abbott's June 10, 2026 directive ordered data centers to fund their own grid costs.",
+      "SB 6 (2025) rebuilt large-load rules; SB 1751's demand-response cap passed the Senate 31–0 in 2023 before dying; Governor Abbott's June 10, 2026 directive ordered data centers to fund their own grid costs.",
   },
   {
     title: "The reserve's first biennial report",
@@ -152,5 +152,5 @@ export const lege90Sources: Lege90Source[] = [
   { id: 5, label: "Texas Legislature Online — SB 1705 (89R) bill history: the kiosk bill that passed the Senate and died on the House calendar", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB1705" },
   { id: 6, label: "Texas Legislature Online — HB 2798 (89R) bill history: the kiosk bill that passed the House and died in Senate committee", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=HB2798" },
   { id: 7, label: "Texas Legislature Online — SB 6 (89R) bill history: large-load interconnection overhaul, signed June 20, 2025", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB6" },
-  { id: 8, label: "Texas Legislature Online — SB 1751 (88R) bill history: the miner demand-response cap that passed the Senate 30–1 and died in House committee (2023)", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=88R&Bill=SB1751" },
+  { id: 8, label: "Texas Legislature Online — SB 1751 (88R) bill history: the miner demand-response cap that passed the Senate 31–0 and died in House committee (2023)", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=88R&Bill=SB1751" },
 ];

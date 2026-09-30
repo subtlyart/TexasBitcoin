@@ -104,7 +104,7 @@ export const johnsonTimeline: JohnsonEvent[] = [
     dateLabel: "April 12, 2023",
     title: "Two bills pass the Senate the same day",
     detail:
-      "Business and Commerce sends both bills out 11–0 on April 4; the Senate passes Kolkhorst's SB 1751 30–1 and Johnson's SB 1929 on April 12. The industry has already chosen: the registry it can live with, the cap it cannot.",
+      "Business and Commerce sends both bills out 11–0 on April 4; the Senate passes Kolkhorst's SB 1751 31–0 and Johnson's SB 1929 on April 12. The industry has already chosen: the registry it can live with, the cap it cannot.",
     kind: "registry",
     sourceIds: [4, 7],
   },

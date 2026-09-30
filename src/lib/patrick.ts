@@ -56,7 +56,7 @@ export const patrickTimeline: PatrickEvent[] = [
   {
     date: "2023-04-12",
     dateLabel: "April 12, 2023",
-    title: "The brake: SB 1751 passes Patrick's Senate 30–1",
+    title: "The brake: SB 1751 passes Patrick's Senate 31–0",
     detail:
       "The Senate Patrick presides over passes Senate Bill 1751, which would cap Bitcoin miners' share of ERCOT demand-response programs at 10% and roll back tax abatements - over a joint industry letter urging Patrick to oppose it. The bill dies in a House committee that May, but the signal from the upper chamber is unambiguous: the mines' grid economics are under scrutiny.",
     kind: "brake",

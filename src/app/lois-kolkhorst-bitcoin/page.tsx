@@ -14,7 +14,7 @@ const pageUrl = `${site.url}/lois-kolkhorst-bitcoin`;
 export const metadata: Metadata = {
   title: "Lois Kolkhorst: The Senator Who Wrote the Brake",
   description:
-    "Lois Kolkhorst's Bitcoin record, sourced: the Brenham senator who authored Senate Bill 1751 - the 2023 bill to register Bitcoin mines above 10 MW, cap them at 10% of ERCOT demand response, and end their tax abatements. The 37-gigawatt hearing, 'part of their business model,' the 11–0 committee and 30–1 Senate votes, the open letter and the industry campaign, the death in House State Affairs, Riot's $31.7 million August, and the half of her design that became law anyway. She was also the Senate sponsor of the 2015 Texas Bullion Depository.",
+    "Lois Kolkhorst's Bitcoin record, sourced: the Brenham senator who authored Senate Bill 1751 - the 2023 bill to register Bitcoin mines above 10 MW, cap them at 10% of ERCOT demand response, and end their tax abatements. The 37-gigawatt hearing, 'part of their business model,' the 11–0 committee and 31–0 Senate votes, the open letter and the industry campaign, the death in House State Affairs, Riot's $31.7 million August, and the half of her design that became law anyway. She was also the Senate sponsor of the 2015 Texas Bullion Depository.",
   alternates: { canonical: pageUrl },
   openGraph: {
     type: "article",
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: "What was Texas Senate Bill 1751?",
-    a: "SB 1751 was Kolkhorst's 2023 bill on large-load Bitcoin mining in ERCOT. It had three parts: mining facilities over 10 megawatts would register with the Public Utility Commission within one business day; miners could join ERCOT's paid demand-response programs only while they made up less than 10% of program load; and local governments could not grant Chapter 312 property-tax abatements to mining facilities. It passed the Senate 30–1 on April 12, 2023 and died without a hearing in the House State Affairs Committee.",
+    a: "SB 1751 was Kolkhorst's 2023 bill on large-load Bitcoin mining in ERCOT. It had three parts: mining facilities over 10 megawatts would register with the Public Utility Commission within one business day; miners could join ERCOT's paid demand-response programs only while they made up less than 10% of program load; and local governments could not grant Chapter 312 property-tax abatements to mining facilities. It passed the Senate 31–0 on April 12, 2023 and died without a hearing in the House State Affairs Committee.",
   },
   {
     q: "Is Lois Kolkhorst against Bitcoin?",
@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "Why did SB 1751 fail?",
-    a: "The House never heard it. After the 30–1 Senate vote, the bill was referred to House State Affairs on April 24, 2023 and sat there until the session ended May 29. The Texas Blockchain Council's 'Don't Mess With Texas Innovation' campaign, Riot Platforms' testimony on Rockdale jobs, and an open letter from Parker Lewis and Will Cole framed it as discrimination against one industry, and the House preferred Senator Johnson's registration-only SB 1929, which the governor signed June 9, 2023.",
+    a: "The House never heard it. After the 31–0 Senate vote, the bill was referred to House State Affairs on April 24, 2023 and sat there until the session ended May 29. The Texas Blockchain Council's 'Don't Mess With Texas Innovation' campaign, Riot Platforms' testimony on Rockdale jobs, and an open letter from Parker Lewis and Will Cole framed it as discrimination against one industry, and the House preferred Senator Johnson's registration-only SB 1929, which the governor signed June 9, 2023.",
   },
   {
     q: "Did any of SB 1751 become law?",
@@ -127,12 +127,12 @@ function KolkhorstThreePartsFigure() {
 function KolkhorstVotesFigure() {
   const rows = [
     { label: "Senate Business & Commerce", date: "Apr 4, 2023", yes: 11, no: 0, note: "11–0" },
-    { label: "Texas Senate", date: "Apr 12, 2023", yes: 30, no: 1, note: "30–1" },
+    { label: "Texas Senate", date: "Apr 12, 2023", yes: 31, no: 0, note: "31–0" },
     { label: "House State Affairs", date: "Apr 24 → May 29, 2023", yes: 0, no: 0, note: "no hearing" },
   ];
   return (
     <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
-      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 230" role="img" aria-label="The vote ledger for SB 1751: committee 11 to 0, Senate 30 to 1, House State Affairs no hearing">
+      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 230" role="img" aria-label="The vote ledger for SB 1751: committee 11 to 0, Senate 31 to 0, House State Affairs no hearing">
         <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE VOTE LEDGER · SB 1751 AT EVERY STOP, THEN THE STOP THAT NEVER CAME</text>
         {rows.map((r, i) => {
           const y = 62 + i * 52;
@@ -164,7 +164,7 @@ function KolkhorstVotesFigure() {
         <text x="405" y="220" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas Legislature Online, SB 1751 (88R) · the Senate near-unanimous, the House silent; the session ended May 29, 2023</text>
       </svg>
       <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
-        The vote ledger. Unanimous out of her committee, 30 to 1 on the Senate floor, and then a dashed line: House State Affairs received the bill on April 24 and never set a hearing. In Texas a bill that is not heard does not lose; it expires.
+        The vote ledger. Unanimous out of her committee, 31 to 0 on the Senate floor, and then a dashed line: House State Affairs received the bill on April 24 and never set a hearing. In Texas a bill that is not heard does not lose; it expires.
       </figcaption>
     </figure>
   );
@@ -177,7 +177,7 @@ export default function LoisKolkhorstBitcoinPage() {
     "@type": "Article",
     headline: "Lois Kolkhorst: The Senator Who Wrote the Brake",
     description:
-      "The Bitcoin record of the Texas senator who authored Senate Bill 1751: the 2022 interim hearing, the three-part bill, the committee quotes, the 11–0 and 30–1 votes, the industry campaign and the open letter, the death in House State Affairs, Riot's $31.7 million August, the registration half that became law under other names, and the 2015 Bullion Depository she sponsored.",
+      "The Bitcoin record of the Texas senator who authored Senate Bill 1751: the 2022 interim hearing, the three-part bill, the committee quotes, the 11–0 and 31–0 votes, the industry campaign and the open letter, the death in House State Affairs, Riot's $31.7 million August, the registration half that became law under other names, and the 2015 Bullion Depository she sponsored.",
     author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
@@ -249,7 +249,7 @@ export default function LoisKolkhorstBitcoinPage() {
             2023 a Brenham senator on the committee that owns the grid
             filed the only serious Texas attempt to constrain Bitcoin
             mining – register it, cap its paid curtailment, end its tax
-            abatements – and got it through the Senate 30 to 1 before the
+            abatements – and got it through the Senate 31 to 0 before the
             House let it expire unheard. She had also, eight years earlier,
             carried the Texas Bullion Depository through the same chamber
             and called it a golden idea. Bullish on gold, wary of the load.
@@ -272,7 +272,7 @@ export default function LoisKolkhorstBitcoinPage() {
             authored Senate Bill 1751, the 2023 Texas bill to register
             Bitcoin mines above 10 megawatts, cap them at 10% of ERCOT
             demand-response programs, and end their property-tax
-            abatements. SB 1751 passed the Texas Senate 30–1 on April 12,
+            abatements. SB 1751 passed the Texas Senate 31–0 on April 12,
             2023 and died without a hearing in House State Affairs.
             Kolkhorst was also the Senate sponsor of the 2015 law creating
             the Texas Bullion Depository.
@@ -297,7 +297,7 @@ export default function LoisKolkhorstBitcoinPage() {
             </li>
             <li>
               The Senate Business and Commerce Committee passed SB 1751 11–0
-              on April 4, 2023, and the Texas Senate passed it 30–1 on April
+              on April 4, 2023, and the Texas Senate passed it 31–0 on April
               12, 2023.<C n={6} /><C n={16} />
             </li>
             <li>
@@ -471,7 +471,7 @@ export default function LoisKolkhorstBitcoinPage() {
             district.<C n={10} /> The cooperatives asked for something
             harder than her cap – a rule that mines shed before any
             residential customer in an emergency.<C n={10} /> The committee
-            sent it out 11–0 on April 4; the Senate passed it 30–1 on April
+            sent it out 11–0 on April 4; the Senate passed it 31–0 on April
             12.<C n={6} /><C n={13} /><C n={16} />
           </p>
 

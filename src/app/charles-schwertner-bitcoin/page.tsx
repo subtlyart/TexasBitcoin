@@ -274,7 +274,7 @@ export default function CharlesSchwertnerBitcoinPage() {
             <li>
               Schwertner has chaired the Senate Business and Commerce
               Committee, which heard SB 21 and passed it 10–0, and through
-              which SB 1751&apos;s mining cap cleared the Senate 30–1 in
+              which SB 1751&apos;s mining cap cleared the Senate 31–0 in
               April 2023.<C n={1} /><C n={2} /><C n={14} />
             </li>
             <li>
@@ -431,7 +431,7 @@ export default function CharlesSchwertnerBitcoinPage() {
             loans for dispatchable plants, SB 7, and four market-power bills
             – and six days later SB 1751, Senator{" "}
             <Link href="/lois-kolkhorst-bitcoin">Kolkhorst</Link>&apos;s 10% cap
-            on miners in demand response, passed the Senate 30–1 out of his
+            on miners in demand response, passed the Senate 31–0 out of his
             committee.<C n={13} /><C n={14} /> In 2025 he joint-authored
             SB 6 with Senator{" "}
             <Link href="/phil-king-bitcoin">Phil King</Link>: the large-load law that sets
