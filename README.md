@@ -106,6 +106,7 @@ src/
   lib/                         # site config + one sourced data module per topic
 CONTENT-TEMPLATE.md            # AEO/GEO page template
 SEAM.md                        # the hidden trail, internal only
+ELECTION-2026.md               # Nov 3 / Dec 31 same-day update playbook, internal only
 ```
 
 ## Watchlist
@@ -114,5 +115,6 @@ SEAM.md                        # the hidden trail, internal only
   execution target missed, no award as of September 29), then the first
   statutory report (31 Dec). Stamps live in `src/lib/custody.ts`, `reserve.ts`,
   `hancock.ts`, `huffines.ts`.
-- November 3 general election – candidates tracked on the people pages.
+- November 3 general election – candidates tracked on the people pages;
+  the same-day edit is staged in `ELECTION-2026.md`.
 - 2027 session bills – `/texas-bitcoin-bills-2027`.

@@ -8,7 +8,7 @@
 // Re-verify whenever the Comptroller acts, reports, or names the fifth committee
 // member — and bump RESERVE_LAST_VERIFIED and the page's dateModified together.
 
-export const RESERVE_LAST_VERIFIED = "September 29, 2026";
+export const RESERVE_LAST_VERIFIED = "September 30, 2026";
 
 export interface ReserveSource {
   id: number;
@@ -33,6 +33,7 @@ export const reserveSources: ReserveSource[] = [
   { id: 13, label: "Dallas Morning News — Texas' $10M bitcoin investment slips into the red amid crypto price dive (March 2, 2026): ~$5M on Nov 20, 2025; ~$5M on Dec 15, 2025; valued ~$7.8M", url: "https://www.dallasnews.com/business/2026/03/02/texas-10m-bitcoin-investment-slips-into-the-red-amid-crypto-price-dive/" },
   { id: 14, label: "The Hill — New Hampshire becomes first state to adopt strategic crypto reserve: HB 302, up to 5% of certain funds in precious metals and digital assets over $500B (May 2025)", url: "https://thehill.com/policy/technology/5287441-new-hampshire-becomes-first-state-to-adopt-strategic-crypto-reserve/" },
   { id: 15, label: "Arizona Senate — HB 2749 fact sheet: the Bitcoin and Digital Assets Reserve Fund of abandoned digital assets, airdrops and staking rewards; signed May 7, 2025 after the veto of SB 1025", url: "https://www.azleg.gov/legtext/57leg/1R/summary/S.2749GOV.DOCX.htm" },
+  { id: 16, label: "Texas Legislature Online — SB 21 (89R), enrolled text: § 403.708 (biennial report: due December 31 of each even-numbered year, published on the comptroller's website and submitted to the legislature; holdings and estimated value as of the last day of the preceding state fiscal biennium; changes disaggregated by cryptocurrency type; actions taken to administer the reserve)", url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00021F.htm" },
 ];
 
 // Current status — the scannable "where the reserve stands today" panel. Each
@@ -52,7 +53,7 @@ export const reserveStatus: ReserveStatusRow[] = [
   { label: "Current holdings", value: "$10 million in the iShares Bitcoin Trust (a spot BTC ETF) — the full appropriation deployed, held as an explicit placeholder", sourceIds: [8, 9] },
   { label: "Custody", value: "No custodian named as of September 29, 2026. RFP 908-26-1778WS closed July 10, 2026 (extended from June 15); the late-August execution target passed with no award, so the contract moving the $10M from the ETF proxy to directly held Bitcoin now executes under Comptroller Huffines", sourceIds: [8, 9, 10] },
   { label: "Advisory committee", value: "Complete — the Comptroller chairs by office (Kelly Hancock to July 31, 2026; Don Huffines since August 1), joined May 28, 2026 by Laurie Dotter, Jamie McAvity (Cormint), Carla Reyes (SMU), Gary Vecchiarelli (CleanSpark)", sourceIds: [5, 10] },
-  { label: "Reporting", value: "Comptroller must publish biennial reports on the fund's value and management", sourceIds: [2] },
+  { label: "Reporting", value: "First statutory report due by December 31, 2026 under § 403.708 — published on the Comptroller's website and submitted to the Legislature; none posted as of September 30, 2026", sourceIds: [16] },
 ];
 
 // A compact reserve-specific timeline (a spoke of the fuller law timeline).
@@ -110,5 +111,14 @@ export const reserveTimeline: ReserveEvent[] = [
       "The RFP targeted contract execution for late August 2026; the window passed with no award as of September 29, and the contract now executes under Comptroller Don Huffines, sworn in August 1. Once the custodian is under contract, the $10 million IBIT placeholder converts to directly held Bitcoin — the moment the reserve stops holding a claim and starts holding the asset.",
     done: false,
     sourceIds: [8, 9],
+  },
+  {
+    date: "2026-12-31",
+    dateLabel: "December 31, 2026",
+    title: "The first biennial report — due",
+    detail:
+      "SB 21 § 403.708 requires the Comptroller to publish on the office's website, and submit to the Legislature, a report stating the amount and estimated value of the reserve's holdings as of the last day of the preceding state fiscal biennium, the changes since the assets were first held, and the actions taken to administer the fund. It is the first statutory account of the reserve and lands six weeks before the 90th Legislature convenes.",
+    done: false,
+    sourceIds: [16],
   },
 ];

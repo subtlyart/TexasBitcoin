@@ -44,6 +44,10 @@ const faqs = [
     a: "Only digital assets averaging at least $500 billion in market capitalization over the most recent 24 months. That threshold is a bar only Bitcoin currently clears, so in practice the reserve is Bitcoin-only — though the door is left open if another asset ever qualifies.",
   },
   {
+    q: "When is the first report on the Texas Bitcoin Reserve due?",
+    a: "By December 31, 2026. Senate Bill 21 § 403.708 requires the Texas Comptroller to publish on the office's website, and submit to the Legislature, a report by December 31 of each even-numbered year stating the amount and estimated value of Bitcoin held as of the last day of the preceding state fiscal biennium, the changes since the assets were first held, and the actions taken to administer the reserve. As of September 30, 2026 no report has been posted.",
+  },
+  {
     q: "Is Texas the only state with a Bitcoin reserve?",
     a: "No. Arizona and New Hampshire also enacted cryptocurrency-reserve laws. Texas's is distinguished as the first standalone, publicly funded Bitcoin reserve held outside the state treasury in a dedicated vehicle, rather than as a line item inside an existing fund.",
   },
@@ -313,7 +317,7 @@ export default function ReservePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-09",
-    dateModified: "2026-09-29",
+    dateModified: "2026-09-30",
   };
 
   const faqJsonLd = {
@@ -645,6 +649,41 @@ export default function ReservePage() {
           </p>
 
           <ReserveNextFigure />
+
+          <h2>What must the first biennial report contain?</h2>
+          <p>
+            Four things, by statute. Section 403.708 of the Government Code,
+            added by SB 21, requires the Comptroller — not later than{" "}
+            <strong>December 31 of each even-numbered year</strong> — to
+            publish on the office&apos;s website and submit to the Legislature
+            a report stating: the amount of Bitcoin held in the reserve on the
+            last day of the preceding state fiscal biennium; an estimate of its
+            monetary value on that day; the changes in amount and value over
+            the period the assets have been held, disaggregated by
+            cryptocurrency type; and a description of the actions the
+            Comptroller took to administer and manage the reserve.
+            <C n={16} /> The first report in the statute&apos;s life is due by{" "}
+            <strong>December 31, 2026</strong>, under Comptroller{" "}
+            <Link href="/don-huffines-bitcoin">Don Huffines</Link> whatever the
+            November 3 election decides, and six weeks before the 90th
+            Legislature convenes.<C n={10} /><C n={16} />
+          </p>
+          <p>
+            The honest reading of the text has a wrinkle. Texas&apos;s fiscal
+            biennium runs September 1 of an odd year through August 31 two
+            years later, so the &ldquo;preceding state fiscal biennium&rdquo;
+            for a December 2026 report ended on <strong>August 31, 2025</strong>{" "}
+            — twelve weeks before the first purchase on November 20, 2025.
+            <C n={4} /><C n={16} /> Read literally, the snapshot clause reports
+            a reserve that held nothing on its measuring date; it is the
+            third clause — changes over the period held, by asset — and the
+            fourth — actions taken — that would carry the two purchases, the
+            ETF placeholder, the advisory committee, and the custody
+            procurement. Whether the Comptroller reports against the literal
+            date or the date of publication is the first thing this page
+            checks when the report posts. We will read it against the primary
+            record and update the status panel above the same day.
+          </p>
         </div>
 
         {/* FAQ */}
