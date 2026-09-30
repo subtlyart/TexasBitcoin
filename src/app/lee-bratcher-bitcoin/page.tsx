@@ -231,8 +231,9 @@ export default function LeeBratcherBitcoinPage() {
           </p>
           <p className="mt-3 leading-relaxed">
             Lee Bratcher is the founder and, from 2019 to January 2026, the
-            president of the Texas Blockchain Council, the trade association
-            behind Texas&apos;s 2021 virtual-currency and Work Group statutes,
+            president of{" "}
+            <Link href="/texas-blockchain-council">the Texas Blockchain Council</Link>,
+            the trade association behind Texas&apos;s 2021 virtual-currency and Work Group statutes,
             the 2023 campaign that helped kill SB 1751, the 2024 lawsuit that
             forced the Energy Department to withdraw its emergency survey of
             Bitcoin miners, and the testimony for the 2025 Strategic Bitcoin

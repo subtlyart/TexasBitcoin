@@ -10,11 +10,16 @@ const INSTITUTIONS = [
   { href: "/texas-department-of-banking-bitcoin", name: "The Department of Banking", line: "The memo that said it wasn't money" },
   { href: "/texas-public-utility-commission-bitcoin", name: "The Public Utility Commission", line: "The list it keeps" },
   { href: "/ercot-bitcoin", name: "ERCOT", line: "The load it counts as a resource" },
+  { href: "/texas-blockchain-council", name: "The Texas Blockchain Council", line: "The lobby that outgrew its name" },
 ];
 
 const COMPANIES = [
   { href: "/riot-platforms-bitcoin", name: "Riot Platforms", line: "The miner that became a landlord" },
   { href: "/mara-holdings-bitcoin", name: "MARA Holdings", line: "The mine the neighbors could hear" },
+  { href: "/core-scientific-bitcoin", name: "Core Scientific", line: "The dimmer switch that became a data center" },
+  { href: "/cipher-mining-bitcoin", name: "Cipher", line: "The miner that dropped the word" },
+  { href: "/bitdeer-bitcoin", name: "Bitdeer", line: "The mine next door" },
+  { href: "/lancium-bitcoin", name: "Lancium", line: "The landlord who patented the switch" },
 ];
 
 function Shelf({

@@ -773,7 +773,19 @@ export default function HistoryPage() {
             landlord:{" "}
             <Link href="/riot-platforms-bitcoin">Riot Platforms</Link>; and
             the one whose neighbors sued:{" "}
-            <Link href="/mara-holdings-bitcoin">MARA Holdings</Link>.
+            <Link href="/mara-holdings-bitcoin">MARA Holdings</Link>; the
+            one that went bankrupt in Houston and came back as a landlord
+            in Denton:{" "}
+            <Link href="/core-scientific-bitcoin">Core Scientific</Link>;
+            the one that leased itself to Amazon and dropped the word
+            Mining: <Link href="/cipher-mining-bitcoin">Cipher</Link>; the
+            quiet one next door at Rockdale:{" "}
+            <Link href="/bitdeer-bitcoin">Bitdeer</Link>; the one that
+            patented the switch and then rented its land to Stargate:{" "}
+            <Link href="/lancium-bitcoin">Lancium</Link>. And the trade
+            association that carried most of the statutes above:{" "}
+            <Link href="/texas-blockchain-council">the Texas Blockchain Council</Link>,
+            renamed in August 2026.
           </p>
 
           <h2>The frontier: programmable money on the hardest base</h2>

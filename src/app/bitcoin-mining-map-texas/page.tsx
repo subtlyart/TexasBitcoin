@@ -513,10 +513,12 @@ export default function MiningMapPage() {
             it. Galaxy bought the distressed Argo Helios mine in Dickens County
             for $65 million in December 2022; on July 6, 2026, it delivered the
             first 133 MW to CoreWeave under a 15-year lease projected to
-            generate over $1 billion a year at full buildout.<C n={11} /> Core
-            Scientific is converting its Denton campus in a $6.1 billion
-            buildout.<C n={13} /><C n={14} /> Cipher&apos;s brand-new Black
-            Pearl site leased straight to Amazon.<C n={10} /> ERCOT&apos;s
+            generate over $1 billion a year at full buildout.<C n={11} />{" "}
+            <Link href="/core-scientific-bitcoin">Core Scientific</Link> is
+            converting its Denton campus in a $6.1 billion
+            buildout.<C n={13} /><C n={14} />{" "}
+            <Link href="/cipher-mining-bitcoin">Cipher</Link>&apos;s brand-new
+            Black Pearl site leased straight to Amazon.<C n={10} /> ERCOT&apos;s
             interconnection queue swelled from roughly 226 GW in early 2026 to
             about 474 GW by that August — most of it AI — enough to force the
             state&apos;s hand.<C n={19} /><C n={20} /> This is not Bitcoin losing
@@ -561,7 +563,8 @@ export default function MiningMapPage() {
             <strong>Matagorda County</strong> site carrying up to 2 GW of power
             for a campus that will blend high-performance computing with
             flexible Bitcoin mining, paying out as milestones — grid
-            authorization among them — are met.<C n={22} /> Even Bitdeer has
+            authorization among them — are met.<C n={22} /> Even{" "}
+            <Link href="/bitdeer-bitcoin">Bitdeer</Link> has
             flagged its Rockdale campus as a candidate for AI/HPC conversion in
             its operations updates.<C n={24} /> This is why we keep the mining
             map and the grid in the same frame: the machines Bitcoin installed
