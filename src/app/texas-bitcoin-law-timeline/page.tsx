@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "What Bitcoin bills have failed in Texas?",
-    a: "The biggest was Senate Bill 1751 in 2023, which would have capped Bitcoin miners' participation in ERCOT demand-response programs at 10% and stripped their tax abatements. It passed the Texas Senate 30–1 on April 12, 2023, then died in a Texas House committee in May 2023 without reaching a floor vote.",
+    a: "The biggest was Senate Bill 1751 in 2023, which would have capped Bitcoin miners' participation in ERCOT demand-response programs at 10% and stripped their tax abatements. It passed the Texas Senate 31–0 on April 12, 2023, then died in a Texas House committee in May 2023 without reaching a floor vote.",
   },
   {
     q: "Is Bitcoin legal tender in Texas?",
@@ -185,7 +185,7 @@ function LawSessionsFigure() {
 function LawSb1751Figure() {
   return (
     <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
-<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 220" role="img" aria-label="SB 1751 in 2023: passed the Senate 30 to 1, died in a House committee">
+<svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 220" role="img" aria-label="SB 1751 in 2023: passed the Senate 31 to 0, died in a House committee">
 <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">SB 1751, 2023 · HOW FAR THE COUNTERWEIGHT GOT</text>
 <line x1="70.0" x2="204.0" y1="100" y2="100" stroke="#6f9e6a" strokeWidth="2" strokeDasharray=""/>
 <circle cx="70.0" cy="100" r="7" fill="#6f9e6a" stroke="#6f9e6a" strokeWidth="2"/>
@@ -198,7 +198,7 @@ function LawSb1751Figure() {
 <line x1="338.0" x2="472.0" y1="100" y2="100" stroke="#6f9e6a" strokeWidth="2" strokeDasharray=""/>
 <circle cx="338.0" cy="100" r="7" fill="#6f9e6a" stroke="#6f9e6a" strokeWidth="2"/>
 <text x="338.0" y="78" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">Senate floor</text>
-<text x="338.0" y="126" fontSize="10" textAnchor="middle" fill="var(--muted-2)">passed 30–1 · Apr 12, 2023</text>
+<text x="338.0" y="126" fontSize="10" textAnchor="middle" fill="var(--muted-2)">passed 31–0 · Apr 12, 2023</text>
 <line x1="472.0" x2="606.0" y1="100" y2="100" stroke="var(--muted-2)" strokeWidth="2" strokeDasharray="4 4"/>
 <circle cx="472.0" cy="100" r="7" fill="#c98a4e" stroke="#c98a4e" strokeWidth="2"/>
 <line x1="468.0" x2="476.0" y1="96" y2="104" stroke="var(--surface)" strokeWidth="2"/><line x1="468.0" x2="476.0" y1="104" y2="96" stroke="var(--surface)" strokeWidth="2"/>
@@ -211,11 +211,11 @@ function LawSb1751Figure() {
 <circle cx="740.0" cy="100" r="5" fill="var(--surface)" stroke="var(--muted-2)" strokeWidth="2"/>
 <text x="740.0" y="78" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--muted-2)" fontFamily="var(--font-display)">Governor</text>
 <text x="740.0" y="126" fontSize="10" textAnchor="middle" fill="var(--muted-2)">–</text>
-<text x="405.0" y="184" fontSize="11.5" textAnchor="middle" fill="var(--muted)">A 10% cap on miners in demand response and the end of their abatements: 30 of 31 senators voted yes. Only the House kept it from law.</text>
+<text x="405.0" y="184" fontSize="11.5" textAnchor="middle" fill="var(--muted)">A 10% cap on miners in demand response and the end of their abatements: all 31 senators voted yes. Only the House kept it from law.</text>
 <text x="405.0" y="210" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">Texas Legislature Online, SB 1751 (88R); Cointelegraph, Apr 12, 2023; CoinDesk, May 30, 2023</text>
 </svg>
       <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
-        How far the counterweight got. Senate Bill 1751 cleared committee and passed the Texas Senate 30 to 1 in April 2023, then stalled in a House committee and died without a floor vote. Texas friendliness to mining has a boundary, and this is where the record shows it.
+        How far the counterweight got. Senate Bill 1751 cleared committee and passed the Texas Senate 31 to 0 in April 2023, then stalled in a House committee and died without a floor vote. Texas friendliness to mining has a boundary, and this is where the record shows it.
       </figcaption>
     </figure>
   );

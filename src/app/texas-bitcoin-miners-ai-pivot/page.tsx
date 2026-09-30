@@ -163,8 +163,11 @@ export default function AiPivotPage() {
             capacity, which miners already hold. Every major Texas operator
             has now signed AI deals – Riot&apos;s $9.1 billion, 20-year
             Rockdale lease (August 2026), Galaxy&apos;s 526 MW CoreWeave
-            lease at Helios, Core Scientific&apos;s $6.1 billion Denton
-            conversion, Cipher&apos;s Amazon and Fluidstack leases, Hut
+            lease at Helios,{" "}
+            <Link href="/core-scientific-bitcoin">Core Scientific</Link>&apos;s
+            $6.1 billion Denton conversion,{" "}
+            <Link href="/cipher-mining-bitcoin">Cipher</Link>&apos;s Amazon and
+            Fluidstack leases, Hut
             8&apos;s $19.6 billion Beacon Point – trading Bitcoin
             mining&apos;s flexible, interruptible economics for AI
             tenancy&apos;s firm, long-term rent.

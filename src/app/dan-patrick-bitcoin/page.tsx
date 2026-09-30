@@ -77,7 +77,7 @@ function PatrickTwoSidesFigure() {
 <rect x="28" y="52" width="370" height="200" rx="10" fill="var(--surface-2)" stroke="#c98a4e" strokeWidth="1.25"/>
 <text x="44" y="76" fontSize="11" fontWeight="600" letterSpacing="2" fill="#c98a4e">THE BRAKE · THE LOAD</text>
 <circle cx="50" cy="98" r="3.5" fill="#c98a4e"/>
-<text x="62" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">SB 1751 passes the Senate 30–1</text>
+<text x="62" y="102" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">SB 1751 passes the Senate 31–0</text>
 <text x="62" y="115" fontSize="10" fill="var(--muted-2)">April 12, 2023 · a 10% demand-response cap</text>
 <circle cx="50" cy="132" r="3.5" fill="#c98a4e"/>
 <text x="62" y="136" fontSize="12" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">“Wild Wild West”</text>

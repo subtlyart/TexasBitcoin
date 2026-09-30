@@ -391,8 +391,9 @@ export default function ErcotBitcoinPage() {
           <p>
             All at once, and mostly on paper. The market status they would
             use predates them: in June 2020 ERCOT granted the first
-            load-only Controllable Load Resource designation to a
-            Lancium-run computing site at Big Spring, the registration
+            load-only Controllable Load Resource designation to a{" "}
+            <Link href="/lancium-bitcoin">Lancium</Link>-run computing site
+            at Big Spring, the registration
             through which a mine can bid its flexibility into the reserve
             services like a generator.<C n={7} /> After China&apos;s ban in
             2021 the mines came for the cheap West Texas power and the

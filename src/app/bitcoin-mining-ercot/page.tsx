@@ -64,7 +64,7 @@ const faqs = [
   },
   {
     q: "Did Texas try to limit Bitcoin miners' grid payments?",
-    a: "Once, and it failed. Senate Bill 1751 (2023) would have capped miners' share of ERCOT demand-response programs at 10% and rolled back tax abatements. It passed the Texas Senate 30–1 in April 2023 but died in a House committee that May. The scrutiny returned in different form: SB 6 (2025) and Governor Abbott's June 2026 ratepayer directive regulate all large loads, miners included.",
+    a: "Once, and it failed. Senate Bill 1751 (2023) would have capped miners' share of ERCOT demand-response programs at 10% and rolled back tax abatements. It passed the Texas Senate 31–0 in April 2023 but died in a House committee that May. The scrutiny returned in different form: SB 6 (2025) and Governor Abbott's June 2026 ratepayer directive regulate all large loads, miners included.",
   },
 ];
 
@@ -207,7 +207,7 @@ export default function ErcotMiningPage() {
             </li>
             <li>
               Senate Bill 1751, which would have capped miners at 10% of
-              ERCOT demand-response programs, passed the Senate 30–1 in April
+              ERCOT demand-response programs, passed the Senate 31–0 in April
               2023 and died in a House committee.<C n={11} />
             </li>
           </ul>
@@ -329,7 +329,7 @@ export default function ErcotMiningPage() {
             <strong>Senate Bill 1751</strong> (2023) would have capped
             miners&apos; share of demand-response programs at 10% and rolled
             back their tax abatements – and it passed the Texas Senate
-            30–1 before dying in a House committee.<C n={11} /> The upper
+            31–0 before dying in a House committee.<C n={11} /> The upper
             chamber&apos;s message was that paying miners to turn off sits
             uneasily with voters who remember blackouts, and that argument
             has not gone away; it resurfaced, generalized to all large loads,

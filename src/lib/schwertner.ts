@@ -40,7 +40,7 @@ export const schwertnerSources: SchwertnerSource[] = [
   { id: 11, label: "Texans for Fiscal Responsibility - Vote Notice, March 5, 2025: OPPOSE SB 21 - \"Using taxpayer dollars to gamble on cryptocurrency is an unnecessary financial risk\"", url: "https://texastaxpayers.com/vote-notice-3-5-2025/" },
   { id: 12, label: "Texas Policy Research - Texas House Approves SB 21, Paving Way for State-Run Bitcoin Reserve: the $10 million appropriation", url: "https://www.texaspolicyresearch.com/texas-house-approves-sb-21-paving-way-for-state-run-bitcoin-reserve/" },
   { id: 13, label: "Lt. Gov. Dan Patrick - Statement on the Passage of the Texas Senate's Power Grid Reform Package (April 6, 2023): SB 6, SB 7, SB 2010–2013, SJR 1 by Schwertner; the 10,000 MW Texas Energy Insurance Program", url: "https://www.ltgov.texas.gov/2023/04/06/lt-gov-dan-patrick-statement-on-the-passage-of-the-texas-senates-power-grid-reform-package/" },
-  { id: 14, label: "Cointelegraph - Bill limiting incentives for crypto miners passes Texas Senate 30–1 (April 12, 2023): SB 1751 out of the Business and Commerce Committee", url: "https://cointelegraph.com/news/bill-limiting-incentives-for-crypto-miners-passes-texas-senate-moves-to-house" },
+  { id: 14, label: "Cointelegraph - Bill limiting incentives for crypto miners passes Texas Senate (April 12, 2023; the headline said 30–1 — the Senate Journal, p. 891, records 31–0): SB 1751 out of the Business and Commerce Committee", url: "https://cointelegraph.com/news/bill-limiting-incentives-for-crypto-miners-passes-texas-senate-moves-to-house" },
   { id: 15, label: "Texas Legislature Online - SB 6 (89R) bill history: authors King and Schwertner; large-load interconnection and curtailment; signed June 20, 2025", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB6" },
   { id: 16, label: "Baker Botts - Texas Senate Bill 6: Understanding the Impacts to Large Loads and Co-located Generation (July 2025)", url: "https://www.bakerbotts.com/thought-leadership/publications/2025/july/texas-senate-bill-6-understanding-the-impacts-to-large-loads-and-co-located-generation" },
   { id: 17, label: "Cointelegraph - Texas lawmaker behind state's crypto reserve bill: Ether may be next (October 10, 2025): \"We took the full punch\"", url: "https://cointelegraph.com/news/texas-senator-crypto-reserve-bill-ether-next" },
@@ -89,7 +89,7 @@ export const schwertnerTimeline: SchwertnerEvent[] = [
     dateLabel: "April 2023",
     title: "The grid package - and SB 1751 through his committee",
     detail:
-      "Schwertner authors the Senate's 2023 grid package: SB 6, a 10,000-megawatt natural-gas \"Texas Energy Insurance Program\" with zero-interest loans for dispatchable plants, plus SB 7 and four market-power bills. Six days later SB 1751 - Senator Kolkhorst's 10% cap on miners in demand response - clears the Senate 30–1 out of the Business and Commerce Committee he chairs.",
+      "Schwertner authors the Senate's 2023 grid package: SB 6, a 10,000-megawatt natural-gas \"Texas Energy Insurance Program\" with zero-interest loans for dispatchable plants, plus SB 7 and four market-power bills. Six days later SB 1751 - Senator Kolkhorst's 10% cap on miners in demand response - clears the Senate 31–0 out of the Business and Commerce Committee he chairs.",
     kind: "grid",
     sourceIds: [13, 14],
   },

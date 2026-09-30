@@ -28,7 +28,7 @@ source. Where the record cuts against the thesis, the page says so (the
 
 ## What's on the site
 
-Roughly 60 routes, organised into wings:
+Roughly 65 routes, organised into wings:
 
 | Wing | Pages |
 |---|---|
@@ -38,7 +38,7 @@ Roughly 60 routes, organised into wings:
 | **The grid** | `/bitcoin-mining-ercot`, `/bitcoin-mining-map-texas`, `/texas-bitcoin-miners-ai-pivot`, `/elon-musk-bitcoin-energy` |
 | **People – office** | `/greg-abbott-bitcoin`, `/dan-patrick-bitcoin`, `/ted-cruz-bitcoin`, `/kelly-hancock-bitcoin`, `/don-huffines-bitcoin`, `/glenn-hegar-bitcoin` |
 | **People – Legislature** | `/charles-schwertner-bitcoin`, `/angela-paxton-bitcoin`, `/giovanni-capriglione-bitcoin`, `/ken-king-bitcoin`, `/phil-king-bitcoin`, `/lois-kolkhorst-bitcoin`, `/mayes-middleton-bitcoin`, `/nathan-johnson-bitcoin`, `/tan-parker-bitcoin` |
-| **Institutions** | `/texas-comptroller-bitcoin`, `/texas-attorney-general-bitcoin`, `/texas-department-of-banking-bitcoin`, `/texas-state-securities-board-bitcoin`, `/texas-public-utility-commission-bitcoin`, `/ercot-bitcoin` · companies: `/riot-platforms-bitcoin`, `/mara-holdings-bitcoin` |
+| **Institutions** | `/texas-comptroller-bitcoin`, `/texas-attorney-general-bitcoin`, `/texas-department-of-banking-bitcoin`, `/texas-state-securities-board-bitcoin`, `/texas-public-utility-commission-bitcoin`, `/ercot-bitcoin`, `/texas-blockchain-council` · companies: `/riot-platforms-bitcoin`, `/mara-holdings-bitcoin`, `/core-scientific-bitcoin`, `/cipher-mining-bitcoin`, `/bitdeer-bitcoin`, `/lancium-bitcoin` |
 | **Builders & culture** | `/jimmy-song-bitcoin`, `/lee-bratcher-bitcoin`, `/parker-lewis-bitcoin`, `/satoshi-nakamoto-institute`, `/doctor-bitcoin`, `/doctor-bitcoin-interviews`, `/events`, `/invest-in-texas-bitcoin`, `/texas-bitcoin-resources` |
 | **Trust layer** | `/about` (editorial standards), `/disclaimer` |
 
@@ -47,7 +47,7 @@ verticals are reachable from body copy, not the nav – see `SEAM.md`.
 
 ### Figures
 
-Sixteen pages carry original SVG figures – around 60 in total – drawn from the
+Twenty-two pages carry original SVG figures – around 70 in total – drawn from the
 same data files that drive the prose (`src/lib/*.ts`). They are theme-aware,
 animate only where `prefers-reduced-motion` allows, and are built as chapter
 illustrations rather than decoration.

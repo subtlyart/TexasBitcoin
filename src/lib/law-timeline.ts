@@ -64,7 +64,7 @@ export const lawSources: LawSource[] = [
   { id: 11, label: "Texas Department of Banking — press release announcing Supervisory Memorandum 1037, April 3, 2014 (PDF)", url: "https://www.dob.texas.gov/public/uploads/files/news/press-releases/2014/04-03-14pr.pdf" },
   { id: 12, label: "Texas Department of Banking — Industry Notice 2021-03: Authority of Texas State-Chartered Banks to Provide Virtual Currency Custody Services (PDF)", url: "https://www.dob.texas.gov/sites/default/files/files/news/Industrynotices/in2021-03.pdf" },
   { id: 13, label: "Texas Department of Banking — Virtual Currency Guidance", url: "https://www.dob.texas.gov/consumer-information/virtual-currency-guidance" },
-  { id: 14, label: "CoinDesk — Texas Senate passes SB 1751, 30–1 (April 12, 2023)", url: "https://www.coindesk.com/policy/2023/04/12/texas-senate-passes-bill-to-limit-bitcoin-miners-participation-in-demand-response-programs" },
+  { id: 14, label: "CoinDesk — Texas Senate passes SB 1751 (April 12, 2023; the story was corrected from an earlier 30–1 — the Senate Journal records 31–0)", url: "https://www.coindesk.com/policy/2023/04/12/texas-senate-passes-bill-to-limit-bitcoin-miners-participation-in-demand-response-programs" },
   { id: 15, label: "CoinDesk — SB 1751 stopped in House committee (May 30, 2023)", url: "https://www.coindesk.com/policy/2023/05/30/texas-bill-that-would-limit-miners-participation-in-cost-saving-grid-programs-stopped-in-house-committee" },
   { id: 16, label: "CoinDesk — Texas state regulator greenlights banks to custody crypto (June 10, 2021)", url: "https://www.coindesk.com/policy/2021/06/10/texas-state-regulator-greenlights-banks-to-custody-crypto" },
   { id: 17, label: "O'Melveny — Texas Uniform Commercial Code updated to recognize cryptocurrency (HB 4474)", url: "https://www.omm.com/insights/alerts-publications/texas-uniform-commercial-code-updated-to-recognize-cryptocurrency/" },
@@ -130,7 +130,7 @@ export const lawMilestones: LawMilestone[] = [
     title: "SB 1751 — the demand-response cap that died",
     actor: "88th Legislature",
     summary:
-      "Senate Bill 1751 would have capped Bitcoin miners' share of ERCOT demand-response programs at 10% and stripped their tax abatements; it passed the Texas Senate 30–1 on April 12, 2023. It then died in a Texas House committee in May 2023, never reaching a floor vote.",
+      "Senate Bill 1751 would have capped Bitcoin miners' share of ERCOT demand-response programs at 10% and stripped their tax abatements; it passed the Texas Senate 31–0 on April 12, 2023. It then died in a Texas House committee in May 2023, never reaching a floor vote.",
     outcome: "died",
     sourceIds: [5, 14, 15],
   },

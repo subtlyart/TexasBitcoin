@@ -434,7 +434,9 @@ export default function GiovanniCapriglioneBitcoinPage() {
             Bitcoin, a biennial report, and a 2035 sunset – no
             appropriation.<C n={12} /><C n={13} /> &ldquo;Probably the
             biggest enemy of our investments is inflation,&rdquo; he said
-            that day; the Texas Blockchain Council announced it as
+            that day;{" "}
+            <Link href="/texas-blockchain-council">the Texas Blockchain Council</Link>{" "}
+            announced it as
             &ldquo;our partnership with Chairman
             Capriglione.&rdquo;<C n={14} /><C n={15} /> The Statesman set it
             against Senator Schwertner&apos;s outside-the-treasury design in

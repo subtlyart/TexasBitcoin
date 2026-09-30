@@ -45,7 +45,7 @@ export const kolkhorstSources: KolkhorstSource[] = [
   { id: 13, label: "CoinDesk - Texas Bill Limiting Benefits for Crypto Miners Unanimously Passes Committee Vote (April 4, 2023)", url: "https://www.coindesk.com/policy/2023/04/04/texas-bill-limiting-benefits-for-crypto-miners-unanimously-passes-committee-vote" },
   { id: 14, label: "CBS Austin - Bitcoin leaders push back against SB 1751 restrictions with campaign ahead of Senate vote (April 2023): \"Don't Mess With Texas Innovation\"; Bratcher - \"well-intentioned ... but is just being fed bad information\"", url: "https://cbsaustin.com/news/local/bitcoin-leaders-push-back-against-sb-1751-restrictions-with-campaign-ahead-of-senate-vote" },
   { id: 15, label: "Gradually, Then Suddenly - An Open Letter to Texas State Senator Lois Kolkhorst (April 7, 2023): Parker Lewis and Will Cole - \"misinformed, discriminatory, anti-competitive, harmful to grid stability, bad for consumers and a strategic setback for Texas\"", url: "https://graduallythensuddenly.xyz/open-letter-to-texas-senator/" },
-  { id: 16, label: "Cointelegraph - Bill limiting incentives for crypto miners passes Texas Senate 30–1, moves to House (April 12, 2023)", url: "https://cointelegraph.com/news/bill-limiting-incentives-for-crypto-miners-passes-texas-senate-moves-to-house" },
+  { id: 16, label: "Cointelegraph - Bill limiting incentives for crypto miners moves to House (April 12, 2023; the headline said 30–1 — the Senate Journal, p. 891, records 31–0)", url: "https://cointelegraph.com/news/bill-limiting-incentives-for-crypto-miners-passes-texas-senate-moves-to-house" },
   { id: 17, label: "CoinDesk - Texas Bill That Would Limit Miners' Participation in Cost-Saving Grid Programs Stopped in House Committee (May 30, 2023)", url: "https://www.coindesk.com/policy/2023/05/30/texas-bill-that-would-limit-miners-participation-in-cost-saving-grid-programs-stopped-in-house-committee" },
   { id: 18, label: "Texas Legislature Online - SB 1929 (88R) bill history: author Johnson; registration of virtual currency mining facilities above 75 MW; passed the Senate the same day as SB 1751; signed June 9, 2023", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=88R&Bill=SB1929" },
   { id: 19, label: "CNBC - Texas paid bitcoin miner Riot $31.7 million to shut down during heat wave in August (September 6, 2023)", url: "https://www.cnbc.com/2023/09/06/texas-paid-bitcoin-miner-riot-31point7-million-to-shut-down-in-august.html" },
@@ -136,9 +136,9 @@ export const kolkhorstTimeline: KolkhorstEvent[] = [
   {
     date: "2023-04-12",
     dateLabel: "April 12, 2023",
-    title: "The Senate, 30–1",
+    title: "The Senate, 31–0",
     detail:
-      "SB 1751 passes the Texas Senate 30–1 - the same day the chamber passes Senator Johnson's SB 1929, the registration-only bill the industry could live with. Marathon's Fred Thiel tells CoinDesk the House is \"much more aligned with the positive aspects and the benefits of bitcoin mining.\" He is right.",
+      "SB 1751 passes the Texas Senate 31–0 - the same day the chamber passes Senator Johnson's SB 1929, the registration-only bill the industry could live with. Marathon's Fred Thiel tells CoinDesk the House is \"much more aligned with the positive aspects and the benefits of bitcoin mining.\" He is right.",
     kind: "brake",
     sourceIds: [16, 18],
   },
