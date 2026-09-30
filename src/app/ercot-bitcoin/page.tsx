@@ -1,6 +1,7 @@
 import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
 import {
   ERCOT_LAST_VERIFIED,
@@ -657,6 +658,8 @@ export default function ErcotBitcoinPage() {
             the price it has decided that resource is worth.
           </p>
         </div>
+
+        <InstitutionsBlock current="/ercot-bitcoin" />
 
         {/* FAQ */}
         <section className="mt-14">

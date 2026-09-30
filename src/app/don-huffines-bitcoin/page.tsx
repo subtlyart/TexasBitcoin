@@ -497,6 +497,8 @@ export default function DonHuffinesBitcoinPage() {
             <Link href="/dan-patrick-bitcoin">Dan Patrick and Bitcoin</Link>;
             its builder on{" "}
             <Link href="/kelly-hancock-bitcoin">Kelly Hancock and Bitcoin</Link>
+            ; the office itself, across all three holders, on{" "}
+            <Link href="/texas-comptroller-bitcoin">the Texas Comptroller and Bitcoin</Link>
             . This page is what the holder does with it.
           </p>
         </div>

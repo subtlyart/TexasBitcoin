@@ -594,7 +594,10 @@ export default function ReservePage() {
           <p>
             The <strong>Texas Comptroller of Public Accounts</strong> manages the
             reserve, and must publish <strong>biennial reports</strong> on its
-            value and administration.<C n={2} /> A five-member advisory committee
+            value and administration.<C n={2} /> The office&apos;s own record
+            with the asset – the bullion depository before it, the tax
+            rulings beside it – is on{" "}
+            <Link href="/texas-comptroller-bitcoin">the Texas Comptroller and Bitcoin</Link>. A five-member advisory committee
             guides that work, and it is complete: on{" "}
             <strong>May 28, 2026</strong>, then-Acting Comptroller{" "}
             <Link href="/kelly-hancock-bitcoin">Kelly Hancock</Link> — the

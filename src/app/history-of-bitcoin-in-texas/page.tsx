@@ -740,7 +740,11 @@ export default function HistoryPage() {
             </Link>
             , the South Austin gun store that went live on Bitcoin in January
             2014, ten weeks before Supervisory Memorandum 1037. And beside
-            the people is the one office that has never taken a position:{" "}
+            the people are the offices. The one that holds the asset:{" "}
+            <Link href="/texas-comptroller-bitcoin">the Texas Comptroller</Link>
+            , custodian of the reserve, chair of its committee, and author
+            of the report due December 31; the one office that has never
+            taken a position:{" "}
             <Link href="/texas-attorney-general-bitcoin">
               the Texas Attorney General
             </Link>

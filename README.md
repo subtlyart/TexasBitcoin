@@ -38,7 +38,7 @@ Roughly 60 routes, organised into wings:
 | **The grid** | `/bitcoin-mining-ercot`, `/bitcoin-mining-map-texas`, `/texas-bitcoin-miners-ai-pivot`, `/elon-musk-bitcoin-energy` |
 | **People – office** | `/greg-abbott-bitcoin`, `/dan-patrick-bitcoin`, `/ted-cruz-bitcoin`, `/kelly-hancock-bitcoin`, `/don-huffines-bitcoin`, `/glenn-hegar-bitcoin` |
 | **People – Legislature** | `/charles-schwertner-bitcoin`, `/angela-paxton-bitcoin`, `/giovanni-capriglione-bitcoin`, `/ken-king-bitcoin`, `/phil-king-bitcoin`, `/lois-kolkhorst-bitcoin`, `/mayes-middleton-bitcoin`, `/nathan-johnson-bitcoin`, `/tan-parker-bitcoin` |
-| **Institutions** | `/texas-attorney-general-bitcoin`, `/texas-department-of-banking-bitcoin`, `/texas-state-securities-board-bitcoin`, `/texas-public-utility-commission-bitcoin`, `/ercot-bitcoin`, `/riot-platforms-bitcoin` |
+| **Institutions** | `/texas-comptroller-bitcoin`, `/texas-attorney-general-bitcoin`, `/texas-department-of-banking-bitcoin`, `/texas-state-securities-board-bitcoin`, `/texas-public-utility-commission-bitcoin`, `/ercot-bitcoin` · companies: `/riot-platforms-bitcoin`, `/mara-holdings-bitcoin` |
 | **Builders & culture** | `/jimmy-song-bitcoin`, `/lee-bratcher-bitcoin`, `/parker-lewis-bitcoin`, `/satoshi-nakamoto-institute`, `/doctor-bitcoin`, `/doctor-bitcoin-interviews`, `/events`, `/invest-in-texas-bitcoin`, `/texas-bitcoin-resources` |
 | **Trust layer** | `/about` (editorial standards), `/disclaimer` |
 
@@ -101,7 +101,8 @@ src/
     texas-bitcoin-case-tracker # index, [slug], district/[district]
     sitemap.ts / robots.ts     # SEO foundation
   components/                  # header, footer, case-tracker, law-timeline,
-                               # mining-map, seam-mark, lone-star, youtube-embed
+                               # mining-map, seam-mark, lone-star, youtube-embed,
+                               # institutions-block (the wing's shared shelf)
   data/                        # case-tracker JSON (generated upstream)
   lib/                         # site config + one sourced data module per topic
 CONTENT-TEMPLATE.md            # AEO/GEO page template

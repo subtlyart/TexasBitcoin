@@ -1,6 +1,7 @@
 import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
 import {
   RIOT_LAST_VERIFIED,
@@ -598,6 +599,8 @@ export default function RiotPlatformsBitcoinPage() {
             building where the mine was.
           </p>
         </div>
+
+        <InstitutionsBlock current="/riot-platforms-bitcoin" />
 
         {/* FAQ */}
         <section className="mt-14">
