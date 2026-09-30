@@ -1,6 +1,7 @@
 import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
 import {
   AG_LAST_VERIFIED,
@@ -623,6 +624,8 @@ export default function TexasAttorneyGeneralBitcoinPage() {
             not written.
           </p>
         </div>
+
+        <InstitutionsBlock current="/texas-attorney-general-bitcoin" />
 
         {/* FAQ */}
         <section className="mt-14">

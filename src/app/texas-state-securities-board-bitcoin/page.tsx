@@ -1,6 +1,7 @@
 import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
 import {
   TSSB_LAST_VERIFIED,
@@ -665,6 +666,8 @@ export default function TexasStateSecuritiesBoardBitcoinPage() {
             . This page is the first order, and the seventy after it.
           </p>
         </div>
+
+        <InstitutionsBlock current="/texas-state-securities-board-bitcoin" />
 
         {/* FAQ */}
         <section className="mt-14">

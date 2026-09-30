@@ -1,6 +1,7 @@
 import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
 import {
   MARA_LAST_VERIFIED,
@@ -703,6 +704,8 @@ export default function MaraHoldingsBitcoinPage() {
             Legislature.
           </p>
         </div>
+
+        <InstitutionsBlock current="/mara-holdings-bitcoin" />
 
         {/* FAQ */}
         <section className="mt-14">
