@@ -11,7 +11,7 @@
 // to Don Huffines, a lame duck who resigned effective July 31, 2026 with the
 // custody transition unfinished. Huffines inherited the reserve August 1.
 //
-// Verified September 1, 2026. Hancock's record is closed; re-verify only if
+// Verified September 29, 2026. Hancock's record is closed; re-verify only if
 // the custodian award or the first SB 21 report re-characterizes what he
 // left behind. The successor's record lives in huffines.ts.
 
