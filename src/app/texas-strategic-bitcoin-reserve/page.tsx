@@ -317,7 +317,7 @@ export default function ReservePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-09",
-    dateModified: "2026-09-30",
+    dateModified: "2026-10-04",
   };
 
   const faqJsonLd = {
@@ -611,7 +611,12 @@ export default function ReservePage() {
             when <Link href="/don-huffines-bitcoin">Don Huffines</Link> was
             sworn in after Hancock&apos;s resignation; custody of the reserve,
             the committee seat, and the pending custody award passed with it.
-            <C n={10} />
+            <C n={10} /> The honest counterweight runs through the executor: as
+            a senator, Hancock voted against SB 21 — one of the five nays when
+            the Senate passed it 25 to 5 on March 6, 2025 — a day before the
+            vacancy opened that would make him the acting comptroller who built
+            out the reserve&apos;s advisory committee and bought its first
+            position, the custodian of a statute he had opposed.<C n={17} />
           </p>
 
           <h2>How does Texas compare to other states?</h2>
