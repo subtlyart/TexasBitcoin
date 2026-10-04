@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Where does Ted Cruz stand on Bitcoin today?",
-    a: "As of August 2026, Ted Cruz chairs the Senate Committee on Commerce, Science, and Transportation, holds a CBDC ban on the books through December 31, 2030, has the FLARE Act (full expensing for flared-gas bitcoin mining) pending in the Finance Committee, and sits at the center of the CLARITY Act market-structure negotiation, with a cloture vote scheduled for September 15, 2026.",
+    a: "As of October 2026, Ted Cruz chairs the Senate Committee on Commerce, Science, and Transportation, holds a CBDC ban on the books through December 31, 2030, has the FLARE Act (full expensing for flared-gas bitcoin mining) pending in the Finance Committee, and sat at the center of the CLARITY Act market-structure negotiation, whose September 15, 2026 cloture vote failed 49–50 — eleven short of the 60 needed — with Thom Tillis flipping to no to file a motion to reconsider, leaving the bill procedurally alive.",
   },
 ];
 
@@ -182,7 +182,7 @@ export default function TedCruzBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-28",
-    dateModified: "2026-09-01",
+    dateModified: "2026-10-04",
     about: [
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Ted Cruz" },
@@ -501,15 +501,19 @@ export default function TedCruzBitcoinPage() {
 
           <h2>Where does Ted Cruz stand on Bitcoin today?</h2>
           <p>
-            As of August 2026: Cruz chairs the Senate Commerce Committee; a
+            As of October 2026: Cruz chairs the Senate Commerce Committee; a
             four-year CBDC ban he spent four years pushing is on the books
             through 2030; his FLARE Act awaits action in the Finance Committee;
-            and the next showdown is scheduled - a September 15, 2026 cloture
-            vote on the CLARITY Act, the market-structure bill that passed the
-            House 294-134 in July 2025, with Forbes noting that the 2021
-            infrastructure standoff Cruz starred in is the cautionary precedent
-            hanging over it.<C n={24} /> The skeptic of 2021 now sets the terms
-            of the fight.
+            and the showdown he sat at the center of has come and gone - the
+            September 15, 2026 cloture vote on the CLARITY Act, the
+            market-structure bill that passed the House 294-134 in July 2025,
+            failed 49-50, eleven short of the 60 needed, with every Democrat
+            voting no over ethics language on officials&apos; and the
+            president&apos;s family&apos;s crypto holdings; Thom Tillis flipped
+            to no to file a motion to reconsider, leaving it procedurally
+            alive.<C n={24} /><C n={27} /> The 2021 infrastructure standoff
+            Cruz starred in was the cautionary precedent, and the skeptic of
+            2021 now sets the terms of the fight.
           </p>
           <p>
             The Texas end of the arc is physical rather than legislative: the

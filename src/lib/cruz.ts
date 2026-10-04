@@ -10,10 +10,11 @@
 // no reversal — the positions came first and the industry money followed — and
 // the counterweight section keeps the money question in view anyway.
 //
-// Verified August 2026. The CLARITY Act cloture vote is scheduled for
-// September 15, 2026 — re-verify on the next pass.
+// Verified October 4, 2026. The CLARITY Act cloture vote failed 49–50 on
+// September 15, 2026; Tillis's motion to reconsider leaves it procedurally
+// alive — re-verify if the Senate takes it up again.
 
-export const CRUZ_LAST_VERIFIED = "August 28, 2026";
+export const CRUZ_LAST_VERIFIED = "October 4, 2026";
 
 export interface CruzSource {
   id: number;
@@ -181,6 +182,12 @@ export const cruzSources: CruzSource[] = [
       "Video — Senator Ted Cruz talks Bitcoin (Oct 8, 2021, Texas Blockchain Summit fireside): Cruz on knowing bitcoin existed but 'didn't understand it very much,' the Peter Thiel anecdote, and the infrastructure bill",
     url: "https://www.youtube.com/watch?v=8NbFiqIf7yE",
   },
+  {
+    id: 27,
+    label:
+      "The Block — 'This one stings': Clarity Act fails procedural Senate vote (September 15, 2026): the motion to proceed fails 49–50, short of 60; every Democrat votes no over ethics language on officials' and the president's family's crypto holdings; Tillis switches to no and files a motion to reconsider",
+    url: "https://www.theblock.co/news/regulation/2026-09-15-this-one-stings-clarity-act-fails-senate-is-cryptos-biggest-regulatory-push-dead-415135",
+  },
 ];
 
 export type CruzTimelineKind =
@@ -286,11 +293,11 @@ export const cruzTimeline: CruzTimelineEntry[] = [
   },
   {
     date: "2026-09-15",
-    dateLabel: "September 15, 2026 (scheduled)",
-    title: "Next test: the CLARITY Act cloture vote",
+    dateLabel: "September 15, 2026",
+    title: "The CLARITY Act cloture vote fails",
     detail:
-      "The Senate is set to hold a cloture vote on the CLARITY Act, the market-structure bill that passed the House 294–134 in July 2025 — with Forbes flagging the 2021 infrastructure-bill standoff as the cautionary precedent. Cruz, as chairman of the committee of jurisdiction, sits at the center of the negotiation.",
+      "The Senate's cloture vote on the CLARITY Act — the market-structure bill that passed the House 294–134 in July 2025 — fails 49–50, eleven short of the 60 needed to open floor debate, with every Democrat voting no, the seven who had negotiated the text included, over ethics language covering officials' and the president's family's crypto holdings. Thom Tillis flips from aye to no at the close to enter a motion to reconsider, leaving the bill procedurally alive. Cruz, chairman of the committee of jurisdiction, had sat at the center of the negotiation.",
     kind: "law",
-    sourceIds: [24],
+    sourceIds: [24, 27],
   },
 ];
