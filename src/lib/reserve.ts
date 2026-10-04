@@ -8,7 +8,7 @@
 // Re-verify whenever the Comptroller acts, reports, or names the fifth committee
 // member — and bump RESERVE_LAST_VERIFIED and the page's dateModified together.
 
-export const RESERVE_LAST_VERIFIED = "September 30, 2026";
+export const RESERVE_LAST_VERIFIED = "October 4, 2026";
 
 export interface ReserveSource {
   id: number;
@@ -34,6 +34,7 @@ export const reserveSources: ReserveSource[] = [
   { id: 14, label: "The Hill — New Hampshire becomes first state to adopt strategic crypto reserve: HB 302, up to 5% of certain funds in precious metals and digital assets over $500B (May 2025)", url: "https://thehill.com/policy/technology/5287441-new-hampshire-becomes-first-state-to-adopt-strategic-crypto-reserve/" },
   { id: 15, label: "Arizona Senate — HB 2749 fact sheet: the Bitcoin and Digital Assets Reserve Fund of abandoned digital assets, airdrops and staking rewards; signed May 7, 2025 after the veto of SB 1025", url: "https://www.azleg.gov/legtext/57leg/1R/summary/S.2749GOV.DOCX.htm" },
   { id: 16, label: "Texas Legislature Online — SB 21 (89R), enrolled text: § 403.708 (biennial report: due December 31 of each even-numbered year, published on the comptroller's website and submitted to the legislature; holdings and estimated value as of the last day of the preceding state fiscal biennium; changes disaggregated by cryptocurrency type; actions taken to administer the reserve)", url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00021F.htm" },
+  { id: 17, label: "Texas Senate Journal — 89th Legislature, Regular Session, 14th Day (March 6, 2025), p. 423: CSSB 21 passed on third reading, Yeas 25, Nays 5 — Kelly Hancock among the five nays, with Creighton, Gutierrez, Hall, and Nichols", url: "https://journals.senate.texas.gov/sjrnl/89r/pdf/89RSJ03-06-F.PDF" },
 ];
 
 // Current status — the scannable "where the reserve stands today" panel. Each
