@@ -39,7 +39,7 @@ Roughly 65 routes, organised into wings:
 | **People – office** | `/greg-abbott-bitcoin`, `/dan-patrick-bitcoin`, `/ted-cruz-bitcoin`, `/kelly-hancock-bitcoin`, `/don-huffines-bitcoin`, `/glenn-hegar-bitcoin` |
 | **People – Legislature** | `/charles-schwertner-bitcoin`, `/angela-paxton-bitcoin`, `/giovanni-capriglione-bitcoin`, `/ken-king-bitcoin`, `/phil-king-bitcoin`, `/lois-kolkhorst-bitcoin`, `/mayes-middleton-bitcoin`, `/nathan-johnson-bitcoin`, `/tan-parker-bitcoin` |
 | **Institutions** | `/texas-comptroller-bitcoin`, `/texas-attorney-general-bitcoin`, `/texas-department-of-banking-bitcoin`, `/texas-state-securities-board-bitcoin`, `/texas-public-utility-commission-bitcoin`, `/ercot-bitcoin`, `/texas-blockchain-council` · companies: `/riot-platforms-bitcoin`, `/mara-holdings-bitcoin`, `/core-scientific-bitcoin`, `/cipher-mining-bitcoin`, `/bitdeer-bitcoin`, `/lancium-bitcoin` |
-| **Builders & culture** | `/jimmy-song-bitcoin`, `/lee-bratcher-bitcoin`, `/parker-lewis-bitcoin`, `/satoshi-nakamoto-institute`, `/doctor-bitcoin`, `/doctor-bitcoin-interviews`, `/events`, `/invest-in-texas-bitcoin`, `/texas-bitcoin-resources` |
+| **Builders & culture** | `/jimmy-song-bitcoin`, `/lee-bratcher-bitcoin`, `/parker-lewis-bitcoin`, `/karin-kusano-bitcoin`, `/satoshi-nakamoto-institute`, `/doctor-bitcoin`, `/doctor-bitcoin-interviews`, `/events`, `/invest-in-texas-bitcoin`, `/texas-bitcoin-resources` |
 | **Trust layer** | `/about` (editorial standards), `/disclaimer` |
 
 Header nav is deliberately minimal (History, Events). The mining and law

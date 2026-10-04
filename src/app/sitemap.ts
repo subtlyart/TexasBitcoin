@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/jimmy-song-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-11" },
     { path: "/lee-bratcher-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-11" },
     { path: "/parker-lewis-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-11" },
+    { path: "/karin-kusano-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-10-04" },
     { path: "/charles-schwertner-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-30" },
     { path: "/giovanni-capriglione-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-13" },
     { path: "/lois-kolkhorst-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-30" },
