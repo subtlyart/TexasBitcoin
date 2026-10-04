@@ -6,7 +6,7 @@
 // regulator (dob.texas.gov) before inclusion; trade and legal press
 // corroborate. Dates are the primary record's dates, not a headline's.
 //
-// Dataset verified July 2026. Re-verify after every regular session (odd
+// Dataset verified September 1, 2026. Re-verify after every regular session (odd
 // years) and any special session that touches money or digital-asset law.
 
 export const LAW_LAST_VERIFIED = "September 1, 2026";

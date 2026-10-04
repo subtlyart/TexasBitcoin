@@ -10,7 +10,7 @@
 // load - bullish on the coin, tough on the megawatts - and the dates prove
 // it is one coherent position, not a flip.
 //
-// Verified August 2026. Re-verify when the 90th Legislature's priorities
+// Verified September 1, 2026. Re-verify when the 90th Legislature's priorities
 // land (January 2027) - grid-cost legislation touching miners is likely.
 
 export const PATRICK_LAST_VERIFIED = "September 1, 2026";

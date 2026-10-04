@@ -6,7 +6,7 @@
 // Sites that pivoted to AI/HPC stay on the map: the arc from ASIC to GPU is
 // part of the Texas story, not a departure from it.
 //
-// Dataset verified July 2026. Re-verify quarterly with the cornerstone.
+// Dataset verified August 30, 2026. Re-verify quarterly with the cornerstone.
 
 export const MAP_LAST_VERIFIED = "August 30, 2026";
 

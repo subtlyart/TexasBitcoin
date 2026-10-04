@@ -9,7 +9,7 @@
 // ordering that large loads fund their own grid costs. That is not a
 // reversal - it is the thesis maturing - and the page says so with dates.
 //
-// Verified August 2026. Re-verify after the PUC/ERCOT joint memorandum
+// Verified September 1, 2026. Re-verify after the PUC/ERCOT joint memorandum
 // (ordered by July 17, 2026) produces rules, and when the 90th Legislature
 // convenes January 2027.
 
