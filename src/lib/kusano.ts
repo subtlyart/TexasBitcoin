@@ -10,14 +10,19 @@
 // is built on; her broader digital-asset, DeFi, and AI work sits outside the
 // site's thesis and is named as such, not laundered into it.
 //
-// SOURCING NOTE (read before citing): this record is substantially
-// self-reported. Kusano's roles, her "first female retail crypto trader
-// honored at NASDAQ" line, and her U.S. Congress outreach are stated on her
-// own site and carried by event listings, not corroborated by a primary
-// record - the Association for Women in Cryptocurrency's own site names
-// neither a Texas chapter nor her. The page attributes these as her account
-// and the honest-counterweight section says so plainly. Only the Eve Wealth
-// Summit speaking slot (source 7) is independently dated and confirmed.
+// SOURCING NOTE (read before citing): the speaking record is now
+// independently confirmed - a National Cryptocurrency Association press
+// release (source 8) names her on its SXSW 2026 panel in Austin, March 12,
+// and the Eve Wealth Summit lists her in Phoenix, April 21 (source 7). What
+// remains self-reported, with no primary record located: the "first female
+// retail crypto trader honored at NASDAQ" line, the U.S. Congress outreach,
+// and the Texas Chapter President title at the Association for Women in
+// Cryptocurrency (whose own site names neither a Texas chapter nor her). The
+// page attributes those as her account and the counterweight says so plainly.
+// Note also that the confirmed stages - NCA (a Ripple-funded, XRP-world
+// education nonprofit) and a women-in-crypto summit - are generic-crypto, not
+// Bitcoin; the Bitcoin thread kept here is her self-custody message, not the
+// venues.
 //
 // Verified October 4, 2026. Re-verify on a primary-record confirmation of the
 // NASDAQ or Congress claims, a new book or platform, or a Texas-specific
@@ -41,6 +46,8 @@ export const kusanoSources: KusanoSource[] = [
   { id: 5, label: "Karin Kusano - Substack: her writing on digital assets and financial sovereignty", url: "https://substack.com/@karinkusano" },
   { id: 6, label: "Association for Women in Cryptocurrency - About: a global education, networking, and advocacy platform founded by Amanda Wick, grown to 750+ members across 22 countries; the org's own page lists regional ambassadors, not state chapters, and does not name Kusano", url: "https://www.womenincrypto.org/about" },
   { id: 7, label: "Eve Wealth Annual Summit 2026 (Luma) - Phoenix, April 20-22, 2026: Kusano speaks April 21 in \"Crypto Changed Everything,\" billed \"Karin Kusano - Crypto Market Strategist, Cryptomommi\"", url: "https://luma.com/evewealthsummit2026" },
+  { id: 8, label: "National Cryptocurrency Association - \"Returns to SXSW to Demystify Crypto for the Masses\" (BusinessWire, March 4, 2026): names \"crypto market strategist Karin Kusano\" on the Crypto Convergence panel alongside NCA VP of External Affairs Ali Tager and PayPal's Smitha Purohit; mentor sessions March 12 at the Hilton Austin (Room 400-402), SXSW March 12-15, 2026. The NCA is a 501(c)(4) crypto-education nonprofit", url: "https://www.businesswire.com/news/home/20260304249469/en/National-Cryptocurrency-Association-Returns-to-SXSW-to-Demystify-Crypto-for-the-Masses" },
+  { id: 9, label: "The Block - \"The NCA, founded with a $50 million grant from Ripple, launches education platform\" (2025): context on the National Cryptocurrency Association as a Ripple-funded, XRP-world consumer-education effort - generic crypto, not Bitcoin", url: "https://www.theblock.co/post/344699/the-nca-founded-with-a-50-million-grant-from-ripple-launches-education-platform-to-amplify-cryptos-untold-stories" },
 ];
 
 export type KusanoTimelineKind = "path" | "teach" | "advocacy" | "claim";
@@ -85,13 +92,13 @@ export const kusanoTimeline: KusanoEvent[] = [
     sourceIds: [1, 6],
   },
   {
-    date: "2026-04-21",
-    dateLabel: "April 21, 2026",
-    title: "The stages: SXSW to the Eve Wealth Summit",
+    date: "2026-03-12",
+    dateLabel: "March–April 2026",
+    title: "The stages: SXSW in Austin, then the Eve Wealth Summit",
     detail:
-      "Her site lists SXSW, Money 20/20, BTC Vegas, and Fast Company among her stages; the one with a firm, independent date is the Eve Wealth Annual Summit in Phoenix, where on April 21, 2026 she speaks in \"Crypto Changed Everything,\" billed as \"Crypto Market Strategist, Cryptomommi.\" The audience is women and allies, the subject is access.",
+      "The engagements the record confirms are both in 2026. On March 12 she appears on the National Cryptocurrency Association's \"Crypto Convergence\" panel at SXSW in Austin, billed \"crypto market strategist Karin Kusano\" beside NCA's Ali Tager and PayPal's Smitha Purohit; on April 21 she speaks at the Eve Wealth Annual Summit in Phoenix. Both are generic-crypto education rooms - the NCA is a Ripple-funded nonprofit - not Bitcoin stages; her site adds Money 20/20, BTC Vegas, and Fast Company without dates.",
     kind: "advocacy",
-    sourceIds: [1, 7],
+    sourceIds: [8, 7, 1],
   },
   {
     date: "2026-10-04",

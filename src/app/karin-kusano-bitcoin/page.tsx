@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "What is Karin Kusano's connection to Texas?",
-    a: "She is based in the Dallas-Fort Worth metroplex and presents herself as the Texas chapter lead of the Association for Women in Cryptocurrency. Her public work is education and advocacy rather than Texas legislation or mining; she has not, on the record here, engaged a specific Texas Bitcoin bill the way Parker Lewis or Lee Bratcher did.",
+    a: "She is based in the Dallas-Fort Worth metroplex and presents herself as the Texas chapter lead of the Association for Women in Cryptocurrency. Her confirmed Texas appearance is a National Cryptocurrency Association panel at SXSW in Austin on March 12, 2026. Her public work is education and advocacy rather than Texas legislation or mining; she has not, on the record here, engaged a specific Texas Bitcoin bill the way Parker Lewis or Lee Bratcher did.",
   },
   {
     q: "What is the honest counterweight on Karin Kusano?",
@@ -77,9 +77,9 @@ function KusanoLedgerFigure() {
 <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE CRYPTOMOMMI LEDGER · WHAT THE RECORD CONFIRMS, AND WHAT RESTS ON HER ACCOUNT</text>
 <rect x="28" y="48" width="754" height="56" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
 <rect x="28" y="48" width="6" height="56" rx="3" fill="var(--accent)"/>
-<text x="48" y="68" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Self-custody educator, on a public stage</text>
-<text x="48" y="86" fontSize="10" fill="var(--muted-2)">Eve Wealth Summit, Phoenix, April 21, 2026 · &ldquo;Crypto Market Strategist, Cryptomommi&rdquo;</text>
-<text x="766" y="77" fontSize="10.5" fontWeight="600" textAnchor="end" fill="var(--accent)">confirmed · independently dated listing</text>
+<text x="48" y="68" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Named panelist on dated conference stages</text>
+<text x="48" y="86" fontSize="10" fill="var(--muted-2)">SXSW (NCA panel), Austin, Mar 12, 2026 · Eve Wealth Summit, Phoenix, Apr 21, 2026</text>
+<text x="766" y="77" fontSize="10.5" fontWeight="600" textAnchor="end" fill="var(--accent)">confirmed · independent wire &amp; listing</text>
 <rect x="28" y="114" width="754" height="56" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
 <rect x="28" y="114" width="6" height="56" rx="3" fill="#8a7fb5"/>
 <text x="48" y="134" fontSize="12.5" fontWeight="600" fill="var(--foreground)" fontFamily="var(--font-display)">Texas Chapter President, Women in Cryptocurrency</text>
@@ -93,11 +93,13 @@ function KusanoLedgerFigure() {
 <text x="405" y="270" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">karinkusano.com; womenincrypto.org; Eve Wealth Summit (Luma) · the site carries each claim at the weight the record gives it</text>
 </svg>
       <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
-        The ledger. One line is independently confirmed, one rests on her own
-        site against an association that lists no state chapters, and one — the
-        NASDAQ &ldquo;first&rdquo; and the congressional line — has no primary
-        record this site could find. That is not a verdict on the person; it is
-        the standard the rest of the site is held to, applied here in the open.
+        The ledger. The top line is independently confirmed &ndash; two dated
+        2026 conference stages, one of them in Austin &ndash; while the middle
+        rests on her own site against an association that lists no state
+        chapters, and the last &ndash; the NASDAQ &ldquo;first&rdquo; and the
+        congressional line &ndash; has no primary record this site could find.
+        That is not a verdict on the person; it is the standard the rest of the
+        site is held to, applied here in the open.
       </figcaption>
     </figure>
   );
@@ -225,13 +227,15 @@ export default function KarinKusanoBitcoinPage() {
               by former federal prosecutor Amanda Wick.<C n={1} /><C n={6} />
             </li>
             <li>
-              She spoke at the Eve Wealth Annual Summit in Phoenix on April 21,
-              2026, billed as &ldquo;Crypto Market Strategist,
-              Cryptomommi.&rdquo;<C n={7} />
+              The National Cryptocurrency Association named her on its
+              &ldquo;Crypto Convergence&rdquo; panel at SXSW in Austin on
+              March 12, 2026, billed &ldquo;crypto market strategist.&rdquo;
+              <C n={8} />
             </li>
             <li>
-              Her site lists SXSW, Money 20/20, BTC Vegas, and Fast Company
-              among her stages, without firm dates on the page.<C n={1} />
+              She also spoke at the Eve Wealth Annual Summit in Phoenix on
+              April 21, 2026; both are generic-crypto education rooms, not
+              Bitcoin stages.<C n={7} /><C n={9} />
             </li>
             <li>
               Her &ldquo;first female retail crypto trader honored&rdquo; at
@@ -330,13 +334,17 @@ export default function KarinKusanoBitcoinPage() {
             the same audience: people &ndash; often women, often survivors of
             financial coercion &ndash; who were never the target market for a
             hardware wallet.<C n={2} /><C n={4} /><C n={5} /> She turns up on
-            conference stages framed around access: the one with a firm,
-            independently published date is the Eve Wealth Annual Summit in
-            Phoenix, where on April 21, 2026 she spoke in a session called
-            &ldquo;Crypto Changed Everything,&rdquo; billed as &ldquo;Crypto
-            Market Strategist, Cryptomommi.&rdquo;<C n={7} /> Her own site adds
-            SXSW, Money 20/20, BTC Vegas, and Fast Company to the wall, though
-            the page carries no dates for them.<C n={1} />
+            conference stages framed around access, and two carry firm,
+            independent dates in 2026. The National Cryptocurrency Association
+            &ndash; a 501(c)(4) consumer-education nonprofit launched with a
+            $50 million grant from Ripple &ndash; named her on its &ldquo;Crypto
+            Convergence&rdquo; panel at SXSW in Austin on March 12, 2026, billed
+            &ldquo;crypto market strategist&rdquo; beside the NCA&apos;s Ali
+            Tager and PayPal&apos;s Smitha Purohit; a month later she spoke at
+            the Eve Wealth Annual Summit in Phoenix.<C n={8} /><C n={7} />
+            <C n={9} /> Both are generic-crypto rooms rather than Bitcoin
+            stages &ndash; worth stating plainly &ndash; and her own site adds
+            Money 20/20, BTC Vegas, and Fast Company without dates.<C n={1} />
           </p>
           <p>
             The advocacy is where the record thins. Kusano presents herself as
@@ -386,9 +394,11 @@ export default function KarinKusanoBitcoinPage() {
           <p>
             As of October 2026: an active self-custody educator and speaker
             working the access-and-sovereignty beat from the Dallas-Fort Worth
-            area, with a confirmed 2026 summit stage, a stated Texas role in a
-            women-in-crypto association, and a set of headline claims the record
-            has not yet caught up to.<C n={1} /><C n={7} /> The engineer of the
+            area, with two confirmed 2026 conference stages &ndash; including
+            the National Cryptocurrency Association&apos;s panel at SXSW in
+            Austin &ndash; a stated Texas role in a women-in-crypto association,
+            and a set of headline claims the record has not yet caught up
+            to.<C n={8} /><C n={7} /><C n={1} /> The engineer of the
             builders wing is on{" "}
             <Link href="/jimmy-song-bitcoin">Jimmy Song and Bitcoin</Link>, the
             essayist on{" "}
@@ -419,13 +429,15 @@ export default function KarinKusanoBitcoinPage() {
         <section className="mt-14 border-t border-border pt-8">
           <h2 className="font-display text-xl font-semibold">Sources</h2>
           <p className="mt-2 text-sm text-muted">
-            This record is substantially self-reported: Kusano&apos;s own site
-            and platforms carry most of it, the Association for Women in
-            Cryptocurrency is cited for what the organization is, and the Eve
-            Wealth Summit listing is the one independently dated engagement.
-            Claims that could not be tied to a primary source are marked as her
-            account on the page. This is a research and reference article, not
-            financial, investment, or legal advice.
+            The speaking record is independently sourced &ndash; a National
+            Cryptocurrency Association press release for her SXSW 2026 panel in
+            Austin, and the Eve Wealth Summit listing for Phoenix &ndash; while
+            her roles, the NASDAQ &ldquo;first,&rdquo; and the congressional
+            line rest on her own site and platforms; the Association for Women
+            in Cryptocurrency is cited for what the organization is. Claims that
+            could not be tied to a primary source are marked as her account on
+            the page. This is a research and reference article, not financial,
+            investment, or legal advice.
           </p>
           <ol className="mt-4 space-y-2 text-sm text-muted">
             {kusanoSources.map((s) => (
