@@ -19,6 +19,30 @@ it with `<C n={…} />` on every sentence that changes. Bump the file's
 `*_LAST_VERIFIED`, the header comment's "Verified" line, and the page's
 `dateModified` together.
 
+**Lib file names.** The `<person>.ts` convention is not uniform — several
+lib files drop the first name or the hyphen. Use these exact paths:
+
+| Shorthand above | Route | Lib file |
+|---|---|---|
+| huffines | `/don-huffines-bitcoin` | `src/lib/huffines.ts` |
+| hegar | `/glenn-hegar-bitcoin` | `src/lib/hegar.ts` |
+| hancock | `/kelly-hancock-bitcoin` | `src/lib/hancock.ts` |
+| reserve | `/texas-strategic-bitcoin-reserve` | `src/lib/reserve.ts` |
+| who-holds | `/who-holds-the-texas-bitcoin-reserve` | `src/lib/custody.ts` |
+| comptroller | `/texas-comptroller-bitcoin` | `src/lib/comptroller.ts` |
+| schwertner | `/charles-schwertner-bitcoin` | `src/lib/schwertner.ts` |
+| capriglione | `/giovanni-capriglione-bitcoin` | `src/lib/capriglione.ts` |
+| ken-king | `/ken-king-bitcoin` | `src/lib/kenking.ts` |
+| middleton | `/mayes-middleton-bitcoin` | `src/lib/middleton.ts` |
+| johnson | `/nathan-johnson-bitcoin` | `src/lib/johnson.ts` |
+| ag | `/texas-attorney-general-bitcoin` | `src/lib/ag.ts` |
+| kolkhorst | `/lois-kolkhorst-bitcoin` | `src/lib/kolkhorst.ts` |
+| angela-paxton | `/angela-paxton-bitcoin` | `src/lib/paxton.ts` |
+| tan-parker | `/tan-parker-bitcoin` | `src/lib/parker.ts` |
+| ted-cruz | `/ted-cruz-bitcoin` | `src/lib/cruz.ts` |
+| law-timeline | `/texas-bitcoin-law-timeline` | (figure in `page.tsx`) |
+| bills-2027 | `/texas-bitcoin-bills-2027` | `src/lib/lege-90.ts` |
+
 ## The races on the site
 
 | Race | R | D | Pages that carry it | Why it matters here |
@@ -54,11 +78,25 @@ closing section "Where does the Huffines record stand today?" (the
   Sarah Eckhardt won the full term with X% to Y%; Huffines remains comptroller
   until the term begins in January 2027, so the December 31 report is still
   published under his name." Closing: the December 31 report becomes the last
-  act of the Huffines tenure; add the Eckhardt reserve record (statements, SB 21
-  vote — she sat in the Senate when SB 21 passed in 2025; check the
-  bill's record vote before writing). Open a `/sarah-eckhardt-bitcoin` page
+  act of the Huffines tenure; add the Eckhardt reserve record (statements and
+  the SB 21 vote, resolved below). Open a `/sarah-eckhardt-bitcoin` page
   only if her record supports one; otherwise add her to the who-holds
   "Who signs" row with a January 2027 effective date.
+
+  **Eckhardt's SB 21 vote (resolved, verified from the primary record).**
+  Senator Sarah Eckhardt (SD-14) voted **YEA** on SB 21 — on both second
+  reading and third reading/final passage, Thursday, March 6, 2025. The
+  Senate passed it 25–5; the five Nays were Creighton, Gutierrez, Hall,
+  Hancock, and Nichols (Miles absent-excused). So the Democratic challenger
+  voted *for* the reserve, and Kelly Hancock — who as comptroller later
+  bought the $10 million ETF position the reserve now holds — voted
+  *against* the bill that created it. If Eckhardt wins, write her reserve
+  record as "voted for Senate Bill 21 on March 6, 2025" and keep the house
+  voice; the counterweight (a reserve supporter inheriting a reserve she
+  helped pass) is the honest frame, not a reversal. Cite to the Senate
+  Journal, 89th Legislature Regular Session, March 6, 2025, p. 423
+  (`https://journals.senate.texas.gov/sjrnl/89r/pdf/89RSJ03-06-F.PDF`);
+  add it to `huffines.ts` (and any new Eckhardt file) sources before citing.
 
 ### `/who-holds-the-texas-bitcoin-reserve` — `src/lib/custody.ts`
 
