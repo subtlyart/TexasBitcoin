@@ -30,6 +30,11 @@ const EXCLUDED_DOJ_URLS = new Set<string>([
   // Tax-evasion sentence (W.D. Tex.): no crypto nexus in the DOJ summary, no
   // statutes extracted, and $0 forfeiture — a false positive on the crypto theme.
   "https://www.justice.gov/opa/pr/expatriated-hedge-fund-manager-sentenced-prison-tax-evasion",
+  // Lottery advance-fee fraud (W.D. Tex., 2020): a mass-marketing lottery scam
+  // with no cryptocurrency nexus in the DOJ summary and no statutes extracted —
+  // the pipeline's "cryptocurrency" theme tag is a false positive. Falls below
+  // the tracker's bar of a genuine § 1960 or cryptocurrency prosecution.
+  "https://www.justice.gov/usao-wdtx/pr/costa-rican-living-el-paso-indicted-fraudulent-lottery-scheme-stole-more-one-million",
 ]);
 
 export const trackedCases: TrackedCase[] = rawData.cases.filter(
@@ -37,12 +42,17 @@ export const trackedCases: TrackedCase[] = rawData.cases.filter(
 );
 
 // Page figures derive from the filtered set so every number is self-consistent.
-// The excluded case carries $0 forfeiture in an already-active district, so the
-// pipeline's forfeiture and district-count totals still hold; only the case
-// count changes.
+// Case count and forfeiture total are recomputed from the kept cases rather than
+// read from the pipeline's raw stats, so an excluded case drops out of every
+// headline number — not just the count. All excluded cases sit in districts that
+// stay active on other cases, so the district count is unaffected.
 export const trackerStats: TrackerStats = {
   ...rawData.stats,
   case_count: trackedCases.length,
+  total_forfeitures_usd: trackedCases.reduce(
+    (sum, c) => sum + (c.forfeiture_usd || 0),
+    0,
+  ),
 };
 
 // "Southern District of Texas" -> "Southern Texas" for badges and filters.
