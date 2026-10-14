@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   TBC_LAST_VERIFIED,
   tbcBills,
@@ -168,11 +169,11 @@ export default function TexasBlockchainCouncilPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-30",
     dateModified: "2026-09-30",
-    about: [
+    about: aboutGraph([
       { "@type": "Organization", name: "Texas Blockchain Council", alternateName: "Digital Infrastructure Network" },
       { "@type": "Thing", name: "Bitcoin mining" },
       { "@type": "Thing", name: "Lobbying" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

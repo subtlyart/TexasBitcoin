@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   PAXTON_LAST_VERIFIED,
   paxtonSources,
@@ -208,13 +209,13 @@ export default function AngelaPaxtonBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-24",
     dateModified: "2026-09-24",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Angela Paxton" },
       { "@type": "Legislation", name: "Texas House Bill 4474 (87R)" },
       { "@type": "Legislation", name: "Texas House Bill 1576 (87R)" },
       { "@type": "Thing", name: "Texas Work Group on Blockchain Matters" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

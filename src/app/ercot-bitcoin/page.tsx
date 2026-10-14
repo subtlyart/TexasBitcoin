@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   ERCOT_LAST_VERIFIED,
   ercotMiningByYear,
@@ -161,12 +162,12 @@ export default function ErcotBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-26",
     dateModified: "2026-09-26",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin mining" },
       { "@type": "Organization", name: "Electric Reliability Council of Texas" },
       { "@type": "Thing", name: "Large flexible load" },
       { "@type": "Thing", name: "Emergency Response Service" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

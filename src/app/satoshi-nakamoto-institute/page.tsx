@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   SNI_LAST_VERIFIED,
   sniSources,
@@ -505,13 +506,13 @@ export default function SatoshiNakamotoInstitutePage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-01",
     dateModified: "2026-09-01",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Organization", name: "Satoshi Nakamoto Institute", url: "https://nakamotoinstitute.org/" },
       { "@type": "Person", name: "Michael Goldstein" },
       { "@type": "Person", name: "Pierre Rochard" },
       { "@type": "Person", name: "Daniel Krawisz" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

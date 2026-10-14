@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   HEGAR_LAST_VERIFIED,
   hegarSources,
@@ -191,13 +192,13 @@ export default function GlennHegarBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-24",
     dateModified: "2026-09-24",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Glenn Hegar" },
       { "@type": "Legislation", name: "Texas Senate Bill 21 (89R)" },
       { "@type": "Thing", name: "Texas Strategic Bitcoin Reserve" },
       { "@type": "Organization", name: "Texas Comptroller of Public Accounts" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

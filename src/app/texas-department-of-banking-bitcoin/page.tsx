@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   BANKING_LAST_VERIFIED,
   bankingOrders,
@@ -156,12 +157,12 @@ export default function TexasDepartmentOfBankingBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-25",
     dateModified: "2026-09-25",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "GovernmentOrganization", name: "Texas Department of Banking" },
       { "@type": "Thing", name: "Supervisory Memorandum 1037" },
       { "@type": "Legislation", name: "Texas Finance Code Chapter 152" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

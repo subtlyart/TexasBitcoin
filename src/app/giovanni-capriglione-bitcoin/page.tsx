@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   CAPRIGLIONE_LAST_VERIFIED,
   capriglioneSources,
@@ -169,14 +170,14 @@ export default function GiovanniCapriglioneBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-13",
     dateModified: "2026-09-13",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Giovanni Capriglione" },
       { "@type": "Thing", name: "Texas Strategic Bitcoin Reserve" },
       { "@type": "Legislation", name: "Texas Senate Bill 21 (89R)" },
       { "@type": "Legislation", name: "Texas House Bill 1598 (89R)" },
       { "@type": "Organization", name: "Texas Blockchain Council" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

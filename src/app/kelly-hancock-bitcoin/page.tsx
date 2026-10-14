@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   HANCOCK_LAST_VERIFIED,
   hancockSources,
@@ -161,11 +162,11 @@ export default function KellyHancockBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-28",
     dateModified: "2026-09-29",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Kelly Hancock" },
       { "@type": "Thing", name: "Texas Strategic Bitcoin Reserve" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

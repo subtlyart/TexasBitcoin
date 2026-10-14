@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   PATRICK_LAST_VERIFIED,
   patrickSources,
@@ -150,11 +151,11 @@ export default function DanPatrickBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-28",
     dateModified: "2026-09-01",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Dan Patrick" },
       { "@type": "Thing", name: "Texas Strategic Bitcoin Reserve" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

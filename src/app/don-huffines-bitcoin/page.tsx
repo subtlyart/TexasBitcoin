@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   HUFFINES_LAST_VERIFIED,
   huffinesSources,
@@ -162,11 +163,11 @@ export default function DonHuffinesBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-01",
     dateModified: "2026-09-29",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Don Huffines" },
       { "@type": "Thing", name: "Texas Strategic Bitcoin Reserve" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   CRUZ_LAST_VERIFIED,
   cruzSources,
@@ -183,11 +184,11 @@ export default function TedCruzBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-28",
     dateModified: "2026-10-04",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Ted Cruz" },
       { "@type": "Thing", name: "Central bank digital currency" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

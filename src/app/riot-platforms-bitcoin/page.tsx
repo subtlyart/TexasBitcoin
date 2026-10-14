@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   RIOT_LAST_VERIFIED,
   riotCreditsByYear,
@@ -164,12 +165,12 @@ export default function RiotPlatformsBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-26",
     dateModified: "2026-09-26",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin mining" },
       { "@type": "Corporation", name: "Riot Platforms, Inc.", tickerSymbol: "RIOT" },
       { "@type": "Place", name: "Rockdale, Texas" },
       { "@type": "Place", name: "Corsicana, Texas" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

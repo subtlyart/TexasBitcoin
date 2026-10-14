@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   AG_LAST_VERIFIED,
   agSources,
@@ -164,12 +165,12 @@ export default function TexasAttorneyGeneralBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-25",
     dateModified: "2026-09-25",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "GovernmentOrganization", name: "Office of the Attorney General of Texas" },
       { "@type": "Thing", name: "Kentucky v. Securities and Exchange Commission" },
       { "@type": "GovernmentOrganization", name: "Texas State Securities Board" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {
