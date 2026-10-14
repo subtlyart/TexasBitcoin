@@ -86,6 +86,17 @@ export default function Home() {
               Have a look around
             </a>
           </div>
+          <p className="mt-5 text-sm text-muted-2">
+            New to all this?{" "}
+            <Link
+              href="/start-here"
+              className="group inline-flex items-center gap-1 font-medium text-accent-soft underline decoration-accent/40 underline-offset-2 transition-colors hover:decoration-accent"
+            >
+              Start here
+              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </Link>{" "}
+            — the plain-English way in.
+          </p>
         </div>
       </section>
 
