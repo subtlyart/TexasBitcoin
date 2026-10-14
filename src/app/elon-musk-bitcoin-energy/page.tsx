@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   MUSK_LAST_VERIFIED,
   muskSources,
@@ -143,11 +144,11 @@ export default function MuskBitcoinEnergyPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-19",
     dateModified: "2026-08-19",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Organization", name: "Tesla, Inc." },
       { "@type": "Person", name: "Elon Musk" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

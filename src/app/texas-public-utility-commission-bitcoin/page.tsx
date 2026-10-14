@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   PUC_LAST_VERIFIED,
   pucSources,
@@ -181,13 +182,13 @@ export default function TexasPublicUtilityCommissionBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-25",
     dateModified: "2026-09-25",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin mining" },
       { "@type": "GovernmentOrganization", name: "Public Utility Commission of Texas" },
       { "@type": "Organization", name: "ERCOT" },
       { "@type": "Legislation", name: "Texas Senate Bill 6 (89R)" },
       { "@type": "Legislation", name: "Texas Senate Bill 1929 (88R)" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

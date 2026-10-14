@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   CORESCIENTIFIC_LAST_VERIFIED,
   dentonStrip,
@@ -181,12 +182,12 @@ export default function CoreScientificBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-30",
     dateModified: "2026-09-30",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin mining" },
       { "@type": "Corporation", name: "Core Scientific, Inc.", tickerSymbol: "CORZ" },
       { "@type": "Place", name: "Denton, Texas" },
       { "@type": "Place", name: "Pecos, Texas" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

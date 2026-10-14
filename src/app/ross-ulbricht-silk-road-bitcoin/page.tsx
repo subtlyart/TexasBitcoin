@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import { YouTubeEmbed } from "@/components/youtube-embed";
 import {
   ULBRICHT_LAST_VERIFIED,
@@ -143,11 +144,11 @@ export default function RossUlbrichtPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-23",
     dateModified: "2026-08-23",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Thing", name: "Silk Road (marketplace)" },
       { "@type": "Person", name: "Ross Ulbricht" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

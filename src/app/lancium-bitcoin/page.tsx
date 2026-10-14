@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   LANCIUM_LAST_VERIFIED,
   lanciumCampuses,
@@ -168,12 +169,12 @@ export default function LanciumBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-30",
     dateModified: "2026-09-30",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin mining" },
       { "@type": "Thing", name: "Demand response" },
       { "@type": "Organization", name: "Lancium LLC" },
       { "@type": "Place", name: "Abilene, Texas" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

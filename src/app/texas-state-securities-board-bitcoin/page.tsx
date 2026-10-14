@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   TSSB_LAST_VERIFIED,
   tssbOrdersByYear,
@@ -167,12 +168,12 @@ export default function TexasStateSecuritiesBoardBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-25",
     dateModified: "2026-09-25",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "GovernmentOrganization", name: "Texas State Securities Board" },
       { "@type": "Thing", name: "Operation Cryptosweep" },
       { "@type": "Legislation", name: "Texas Securities Act" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

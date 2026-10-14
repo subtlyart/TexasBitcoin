@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   SCHWERTNER_LAST_VERIFIED,
   schwertnerSources,
@@ -159,12 +160,12 @@ export default function CharlesSchwertnerBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-01",
     dateModified: "2026-09-01",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Charles Schwertner" },
       { "@type": "Thing", name: "Texas Strategic Bitcoin Reserve" },
       { "@type": "Legislation", name: "Texas Senate Bill 21 (89R)" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import {
   COMPTROLLER_LAST_VERIFIED,
@@ -157,12 +158,12 @@ export default function TexasComptrollerBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-30",
     dateModified: "2026-09-30",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "GovernmentOrganization", name: "Texas Comptroller of Public Accounts" },
       { "@type": "Thing", name: "Texas Strategic Bitcoin Reserve" },
       { "@type": "Legislation", name: "Texas Senate Bill 21 (2025)" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

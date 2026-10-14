@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   MIDDLETON_LAST_VERIFIED,
   middletonSources,
@@ -177,13 +178,13 @@ export default function MayesMiddletonBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-25",
     dateModified: "2026-09-25",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Mayes Middleton" },
       { "@type": "Legislation", name: "Texas Senate Bill 21 (89R)" },
       { "@type": "Legislation", name: "Texas House Bill 1056 (89R)" },
       { "@type": "Event", name: "2026 Texas Attorney General election" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

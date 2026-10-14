@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   BITDEER_LAST_VERIFIED,
   rockdaleStrip,
@@ -178,12 +179,12 @@ export default function BitdeerBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-30",
     dateModified: "2026-09-30",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin mining" },
       { "@type": "Corporation", name: "Bitdeer Technologies Group", tickerSymbol: "BTDR" },
       { "@type": "Place", name: "Rockdale, Texas" },
       { "@type": "Place", name: "Milam County, Texas" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {
