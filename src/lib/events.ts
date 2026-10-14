@@ -6,9 +6,12 @@
 // entry has a real, working link. We do not publish specific dates/times we
 // can't guarantee — cadence is qualitative; "next date" lives at the link.
 //
-// Seed verified July 2026. Re-verify links periodically and prune dead groups.
+// Seed verified July 2026; re-verified October 2026. Re-verify links
+// periodically and prune dead groups. (Oct 2026: Bitcoin Builders Club and
+// Frisco Bitcoin moved off their old pages to Luma; San Antonio Bitcoin Club's
+// Meetup group was removed with no verifiable successor, so it was pruned.)
 
-export const LAST_VERIFIED = "July 2026";
+export const LAST_VERIFIED = "October 2026";
 
 export type Metro = "Austin" | "Houston" | "Dallas–Fort Worth" | "San Antonio";
 
@@ -66,9 +69,9 @@ export const meetups: Meetup[] = [
     name: "Bitcoin Builders Club",
     metro: "Austin",
     cadence: "Monthly",
-    url: "https://capitalfactory.com/event/bitcoin-builders-club-meetup/",
+    url: "https://luma.com/pleblab",
     platform: "Web",
-    focus: "For devs, hackers, and founders building on Bitcoin — at Capital Factory.",
+    focus: "PlebLab's monthly Hack & Tell for devs, hackers, and founders building on Bitcoin in Austin.",
     bitcoinOnly: true,
   },
   {
@@ -109,12 +112,12 @@ export const meetups: Meetup[] = [
     bitcoinOnly: true,
   },
   {
-    name: "Frisco Bitcoin (Orange-Pill Group)",
+    name: "Frisco Bitcoin",
     metro: "Dallas–Fort Worth",
     cadence: "Weekly",
-    url: "https://www.meetup.com/frisco-bitcoin-orange-pill-group/",
-    platform: "Meetup",
-    focus: "Weekly Bitcoin lunch at Steak 'n Shake on Preston Rd, Frisco — learn and network over a meal.",
+    url: "https://luma.com/friscobitcoin",
+    platform: "Web",
+    focus: "Weekly Bitcoin lunch on Preston Rd, Frisco — learn and network over a meal.",
     bitcoinOnly: true,
   },
   // Houston
@@ -135,15 +138,6 @@ export const meetups: Meetup[] = [
     url: "https://www.meetup.com/san-antonio-crypto-currency-meetup-group/",
     platform: "Meetup",
     focus: "Open Socratic, Bitcoin-centric technical discussion.",
-    bitcoinOnly: true,
-  },
-  {
-    name: "San Antonio Bitcoin Club",
-    metro: "San Antonio",
-    cadence: "Recurring",
-    url: "https://www.meetup.com/sanantoniobitcoinclub/",
-    platform: "Meetup",
-    focus: "Bitcoin-only — building, learning, and the Lightning Network.",
     bitcoinOnly: true,
   },
 ];
