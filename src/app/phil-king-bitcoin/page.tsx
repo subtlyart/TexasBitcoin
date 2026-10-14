@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   KING_LAST_VERIFIED,
   kingSources,
@@ -156,13 +157,13 @@ export default function PhilKingBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-13",
     dateModified: "2026-09-13",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Phil King" },
       { "@type": "Legislation", name: "Texas Senate Bill 6 (89R)" },
       { "@type": "Organization", name: "ERCOT" },
       { "@type": "Thing", name: "Bitcoin mining in Texas" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

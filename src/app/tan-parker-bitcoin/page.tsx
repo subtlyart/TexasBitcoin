@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   PARKER_LAST_VERIFIED,
   parkerSources,
@@ -186,13 +187,13 @@ export default function TanParkerBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-13",
     dateModified: "2026-09-13",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Tan Parker" },
       { "@type": "Legislation", name: "Texas House Bill 4474 (87R)" },
       { "@type": "Legislation", name: "Texas House Bill 1576 (87R)" },
       { "@type": "Thing", name: "Texas Work Group on Blockchain Matters" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

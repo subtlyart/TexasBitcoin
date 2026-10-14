@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   JOHNSON_LAST_VERIFIED,
   johnsonSources,
@@ -168,13 +169,13 @@ export default function NathanJohnsonBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-13",
     dateModified: "2026-09-13",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Nathan Johnson" },
       { "@type": "Legislation", name: "Texas Senate Bill 1929 (88R)" },
       { "@type": "Legislation", name: "Texas Senate Bill 21 (89R)" },
       { "@type": "Thing", name: "Texas Strategic Bitcoin Reserve" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

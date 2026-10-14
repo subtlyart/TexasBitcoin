@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   KENKING_LAST_VERIFIED,
   kenKingSources,
@@ -198,13 +199,13 @@ export default function KenKingBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-24",
     dateModified: "2026-09-24",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Ken King" },
       { "@type": "Legislation", name: "Texas Senate Bill 6 (89R)" },
       { "@type": "Thing", name: "ERCOT large-load interconnection" },
       { "@type": "Organization", name: "Texas House Committee on State Affairs" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

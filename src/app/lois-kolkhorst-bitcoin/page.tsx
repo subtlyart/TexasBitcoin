@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { aboutGraph } from "@/lib/same-as";
 import {
   KOLKHORST_LAST_VERIFIED,
   kolkhorstSources,
@@ -183,13 +184,13 @@ export default function LoisKolkhorstBitcoinPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-13",
     dateModified: "2026-09-13",
-    about: [
+    about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Lois Kolkhorst" },
       { "@type": "Legislation", name: "Texas Senate Bill 1751 (88R)" },
       { "@type": "Thing", name: "ERCOT demand response" },
       { "@type": "Thing", name: "Texas Bullion Depository" },
-    ],
+    ]),
   };
 
   const faqJsonLd = {

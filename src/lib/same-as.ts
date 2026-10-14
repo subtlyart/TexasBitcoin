@@ -33,9 +33,16 @@ export const SAME_AS: Record<string, string[]> = {
   "Mayes Middleton": ["https://en.wikipedia.org/wiki/Mayes_Middleton"],
   "Elon Musk": ["https://en.wikipedia.org/wiki/Elon_Musk"],
   "Ross Ulbricht": ["https://en.wikipedia.org/wiki/Ross_Ulbricht"],
-  // State legislator without a canonical encyclopedia entry — the official
-  // Texas House member biography is the authoritative identity page.
+  // State legislators without a canonical encyclopedia entry (or with an
+  // ambiguous one) — the official Texas Legislature member page is the
+  // authoritative, district-unambiguous identity page. Senate member pages are
+  // keyed by district (member.php?d=NN); House pages by member id.
   "Giovanni Capriglione": ["https://house.texas.gov/members/2345/biography"],
+  "Phil King": ["https://www.senate.texas.gov/member.php?d=10"],
+  "Lois Kolkhorst": ["https://www.senate.texas.gov/member.php?d=18"],
+  "Tan Parker": ["https://www.senate.texas.gov/member.php?d=12"],
+  "Nathan Johnson": ["https://www.senate.texas.gov/member.php?d=16"],
+  "Ken King": ["https://house.texas.gov/members/2455/biography"],
 
   // Institutions — official sites (unambiguous government and industry bodies).
   "Electric Reliability Council of Texas": ["https://www.ercot.com"],
