@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // changes; the case tracker inherits its dataset's generation date.
   const routes = [
     { path: "/", priority: 1, changeFrequency: "weekly" as const, lastMod: "2026-08-09" },
+    { path: "/start-here", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-10-14" },
     { path: "/history-of-bitcoin-in-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-09-11" },
     { path: "/bitcoin-mining-map-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-bitcoin-law-timeline", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-30" },
