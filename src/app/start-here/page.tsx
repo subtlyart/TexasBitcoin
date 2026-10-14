@@ -298,7 +298,15 @@ export default function StartHerePage() {
         </div>
         <p className="mt-2 max-w-2xl text-sm text-muted">
           The whole Texas Bitcoin story is four layers stacked on each other.
-          Here&apos;s each one in a sentence — follow any link to go deeper.
+          Here&apos;s each one in a sentence — follow any link to go deeper, or
+          keep the{" "}
+          <Link
+            href="/texas-bitcoin-glossary"
+            className="underline decoration-accent/40 underline-offset-2 transition-colors hover:text-accent-soft"
+          >
+            plain-English glossary
+          </Link>{" "}
+          open as you read.
         </p>
         <div className="mt-7 space-y-px overflow-hidden rounded-2xl border border-border bg-border">
           {layers.map((l) => {

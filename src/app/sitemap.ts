@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     { path: "/", priority: 1, changeFrequency: "weekly" as const, lastMod: "2026-08-09" },
     { path: "/start-here", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-10-14" },
+    { path: "/texas-bitcoin-glossary", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-10-14" },
     { path: "/history-of-bitcoin-in-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-09-11" },
     { path: "/bitcoin-mining-map-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-bitcoin-law-timeline", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-30" },
@@ -61,7 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/rockdale-texas-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-07-22" },
     { path: "/doctor-bitcoin", priority: 0.6, changeFrequency: "yearly" as const, lastMod: "2026-07-22" },
     { path: "/doctor-bitcoin-interviews", priority: 0.6, changeFrequency: "monthly" as const, lastMod: "2026-07-22" },
-    { path: "/events", priority: 0.8, changeFrequency: "weekly" as const, lastMod: "2026-07-27" },
+    { path: "/events", priority: 0.8, changeFrequency: "weekly" as const, lastMod: "2026-10-14" },
     { path: "/texas-bitcoin-resources", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-07-27" },
     // Direct-link only: indexed but never linked from the shell nav.
     { path: "/bitcoin-mining-ercot", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-09-30" },
