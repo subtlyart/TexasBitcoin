@@ -5,9 +5,9 @@ import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 
-// DISCRETION: sitemap-only, like the Exposure Map and /bitcoin-mining-ercot.
-// Indexed and in llms.txt, but no inbound links from the shell or sibling
-// pages. Outbound links are fine.
+// DISCRETION: out of the shell nav. Indexed and in llms.txt, and reached from
+// body copy on /what-texas-law-says-about-bitcoin (the custody section) rather
+// than from the nav. Outbound links are fine.
 //
 // YMYL care: this page states what statutes, constitutional amendments, and
 // IRS guidance SAY — it never advises. Every section is the sourced, neutral
