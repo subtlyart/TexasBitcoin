@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 
 // DISCRETION: sitemap-only, like the Exposure Map, /bitcoin-mining-ercot,
@@ -77,6 +78,7 @@ export default function GoldVsBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sources),
     headline: "Gold as Tender, Bitcoin as Reserve: How Texas Split Hard Money",
     description:
       "HB 1056 and SB 21, signed two days apart in June 2025, gave Texas's two hard-money traditions opposite jobs: one to spend, one to hold.",

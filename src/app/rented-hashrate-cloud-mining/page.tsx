@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 
 // DISCRETION: reader-protection reference. Vendor-neutral by design — it names
@@ -81,6 +82,7 @@ export default function RentedHashratePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sources),
     headline: "Rented Hashrate and Cloud Mining: How to Evaluate the Offer",
     description:
       "A vendor-neutral guide to rented hashrate and cloud mining: delivered work vs. an uncertain mining outcome, what a buyer can verify, the warning signs, and the Texas enforcement record.",

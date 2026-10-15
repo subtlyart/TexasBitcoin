@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -154,6 +155,7 @@ export default function CharlesSchwertnerBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(schwertnerSources),
     headline: "Charles Schwertner: The Surgeon Who Wrote the Reserve",
     description:
       "The Bitcoin record of the Texas senator who authored Senate Bill 21: SB 778 to SB 21, the committee and floor quotes, the 25–5 and 101–42 votes, the conference cuts, the grid bills written alongside it, the fiscal-right opposition, and the reserve's first drawdown.",

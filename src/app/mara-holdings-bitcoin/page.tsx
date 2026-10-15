@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -168,6 +169,7 @@ export default function MaraHoldingsBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(maraSources),
     headline: "MARA Holdings: The Mine the Neighbors Could Hear",
     description:
       "The Texas record of MARA Holdings, from its filings and the court record: the patent-shell origin, the Granbury site it financed and later bought, the noise dispute in TIME and in three courts, the county's resolution, the Mitchell Bend election, the grid, the treasury, the Ohio gas plant, and the Matagorda bet.",

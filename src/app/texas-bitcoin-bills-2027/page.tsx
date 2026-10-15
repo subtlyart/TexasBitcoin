@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   LEGE90_LAST_VERIFIED,
@@ -65,6 +66,7 @@ export default function Lege90Page() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(lege90Sources),
     headline: "Texas Bitcoin Bills 2027: The 90th Legislature Tracker",
     description:
       "The living tracker of Bitcoin and digital-asset bills in the 90th Texas Legislature, verified against capitol.texas.gov.",

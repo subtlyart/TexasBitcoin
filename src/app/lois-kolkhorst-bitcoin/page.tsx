@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -178,6 +179,7 @@ export default function LoisKolkhorstBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(kolkhorstSources),
     headline: "Lois Kolkhorst: The Senator Who Wrote the Brake",
     description:
       "The Bitcoin record of the Texas senator who authored Senate Bill 1751: the 2022 interim hearing, the three-part bill, the committee quotes, the 11–0 and 31–0 votes, the industry campaign and the open letter, the death in House State Affairs, Riot's $31.7 million August, the registration half that became law under other names, and the 2015 Bullion Depository she sponsored.",

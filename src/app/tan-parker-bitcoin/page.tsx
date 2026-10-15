@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -181,6 +182,7 @@ export default function TanParkerBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(parkerSources),
     headline: "Tan Parker: The Man Who Defined the Asset",
     description:
       "The Bitcoin record of the Texas legislator who wrote HB 4474, the 2021 statute defining virtual currency in the Texas UCC, and HB 1576, the Work Group on Blockchain Matters: the dead 2019 bill, the 2021 quotes, the custody notice, the work group's report, the Senate ledger of authored bills that died and sponsored bills that passed, the reserve coauthorship, the oil-backed stablecoin bill and the advisory board, and the boards he sits on as Majority Leader.",

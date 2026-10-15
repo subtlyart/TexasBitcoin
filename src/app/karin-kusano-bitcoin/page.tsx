@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   KUSANO_LAST_VERIFIED,
@@ -112,6 +113,7 @@ export default function KarinKusanoBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(kusanoSources),
     headline: "Karin Kusano: Teaching Self-Custody as Financial Sovereignty",
     description:
       "The Bitcoin-relevant record of the Dallas-Fort Worth self-custody educator known as Cryptomommi: the lockout that led her to key ownership, the Cryptomommi education platform, her women-in-crypto advocacy, and an honest accounting of the claims the record cannot yet confirm.",

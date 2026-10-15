@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { LoneStar } from "@/components/lone-star";
 
@@ -99,6 +100,7 @@ export default function ArchivePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sources),
     headline: "The Wider Ledger — Texas Crypto Archive",
     description:
       "The wider Texas digital-asset story — altcoins, developers, and venture capital — sourced and on the record.",

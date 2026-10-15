@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import { InstitutionsBlock } from "@/components/institutions-block";
@@ -152,6 +153,7 @@ export default function TexasComptrollerBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(comptrollerSources),
     headline: "The Texas Comptroller and Bitcoin: The Office That Holds It",
     description:
       "The institutional record of the Texas Comptroller of Public Accounts and Bitcoin, 2015–2026: the bullion depository, the Fiscal Notes studies, the SB 21 testimony and fiscal note, custody of the Strategic Bitcoin Reserve, Fund 1018, the two ETF purchases, the advisory committee, the unawarded custody RFP, the franchise-tax ruling, HB 1056's gold-backed currency, and the first biennial report due December 31, 2026.",

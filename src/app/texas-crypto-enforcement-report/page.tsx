@@ -341,6 +341,8 @@ export default function EnforcementReportPage() {
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-29",
     dateModified: r.generatedAt,
+    // Every figure here is computed from the case-tracker dataset.
+    isBasedOn: `${site.url}/texas-bitcoin-case-tracker`,
     about: [
       { "@type": "Thing", name: "Cryptocurrency" },
       { "@type": "Thing", name: "18 U.S.C. § 1960" },

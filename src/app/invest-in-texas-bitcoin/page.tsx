@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   EXPOSURE_LAST_VERIFIED,
@@ -76,6 +77,7 @@ export default function InvestInTexasBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(exposureSources),
     headline: "The Exposure Map - Who Can Own a Piece of Bitcoin Country",
     description:
       "A reference map of every route into the Texas Bitcoin economy: public equities with Texas operations, Bitcoin itself, the closed state reserve, the bond that doesn't exist, gated venture funds, and the Texas Stock Exchange. Research, not financial advice.",

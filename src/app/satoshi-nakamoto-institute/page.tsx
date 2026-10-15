@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -500,6 +501,7 @@ export default function SatoshiNakamotoInstitutePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sniSources),
     headline: "The Satoshi Nakamoto Institute: The Canon Was Written in Austin",
     description:
       "The sourced history of the Austin nonprofit that archives Satoshi's writings and published the essays that coined hyperbitcoinization and speculative attack: the UT reading group, the 2014 canon, the co-founder who left for BSV, and the 2024 relaunch.",

@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { SeamMark } from "@/components/seam-mark";
 
@@ -176,6 +177,7 @@ export default function RockdalePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sources),
     headline:
       "The Rockdale Story: How a Dying Aluminum Town Became the Bitcoin Mining Capital of North America",
     description:

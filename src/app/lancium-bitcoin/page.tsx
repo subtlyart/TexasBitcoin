@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -163,6 +164,7 @@ export default function LanciumBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(lanciumSources),
     headline: "Lancium: The Landlord Who Patented the Switch",
     description:
       "The Texas record of Lancium, from the Federal Circuit, ERCOT's board materials, the City of Abilene, the Legislature, and the company's own releases: the founding and the patents, the first Controllable Load Resource, the Layer1 and US Bitcoin suits, Fort Stockton and Abilene, the CleanSpark deal, Crusoe and Stargate, Blackstone and Nvidia, the ERCOT license, SB 6, the abatements, Childress and Hall County, and the Governor's audit.",

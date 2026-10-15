@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   GRASSROOTS_LAST_VERIFIED,
@@ -153,6 +154,7 @@ export default function EarlyBitcoinMerchantsTexasPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(grassrootsSources),
     headline: "Before the State: Texas's Grassroots Bitcoin Economy, 2013–2015",
     description:
       "The sourced record of Texas's street-level Bitcoin economy before the state had a position: Brave New Books, the Austin meetup, eleven mapped merchants, the first US Bitcoin ATM, the first Texas Bitcoin Conference, Houston's lag, and the SXSW 2015 pedicab – with the documented and the lore kept separate.",

@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   BRATCHER_LAST_VERIFIED,
@@ -144,6 +145,7 @@ export default function LeeBratcherBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(bratcherSources),
     headline: "Lee Bratcher: The Man Who Put the Industry in the Room",
     description:
       "The Bitcoin record of the Texas Blockchain Council's founder: the 2021 statutes, the Work Group seat, the SB 1751 campaign, the 2024 case against the Energy Department, the Strategic Bitcoin Reserve testimony, and the January 2026 move to the miner Cipher.",

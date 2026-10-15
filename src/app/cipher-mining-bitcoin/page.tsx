@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   CIPHER_LAST_VERIFIED,
@@ -168,6 +169,7 @@ export default function CipherMiningBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(cipherSources),
     headline: "Cipher: The Miner That Dropped the Word",
     description:
       "The Texas record of Cipher Mining, now Cipher Digital, from its filings and the county record: the Bitfury origin, the Odessa power contract and the Luminant suit, the wind-farm joint ventures, Black Pearl and Barber Lake, the Fluidstack, Google, and Amazon leases, the debt, the Bratcher hire, the rename, the Batch Zero designations, and the counties.",

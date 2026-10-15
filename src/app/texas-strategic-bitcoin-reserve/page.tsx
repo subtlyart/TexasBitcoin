@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   RESERVE_LAST_VERIFIED,
@@ -312,6 +313,7 @@ export default function ReservePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(reserveSources),
     headline: "The Texas Strategic Bitcoin Reserve",
     description:
       "How Texas's state Bitcoin reserve works and where it stands — SB 21, funding, the $500B market-cap floor, the first purchase, and the move to direct custody.",

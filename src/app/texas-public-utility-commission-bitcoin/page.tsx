@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -176,6 +177,7 @@ export default function TexasPublicUtilityCommissionBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(pucSources),
     headline: "The Public Utility Commission and Bitcoin: The List It Keeps",
     description:
       "The institutional record of the Public Utility Commission of Texas and Bitcoin mining, 2021–2026: the post-Uri commission, ERCOT's 2022 interim process and curtailment program, the 2023 hearings, the seventeen-month registration rule, the records suit against the Attorney General, SB 6's five projects and their status, the 12CP proposal, Batch Zero, the Governor's directives, the August 2026 audit, and the commission's own words on the mines.",

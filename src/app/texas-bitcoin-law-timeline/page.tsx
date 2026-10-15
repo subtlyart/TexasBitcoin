@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { LAW_LAST_VERIFIED, lawMilestones, lawSources } from "@/lib/law-timeline";
 import { LawTimeline } from "@/components/law-timeline";
@@ -325,6 +326,7 @@ export default function LawTimelinePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(lawSources),
     headline: "The Texas Bitcoin Law Timeline",
     description:
       "The interactive, sourced timeline of Bitcoin law in Texas — every bill, memo, and failed vote from Supervisory Memorandum 1037 (2014) to the Strategic Bitcoin Reserve (2025).",

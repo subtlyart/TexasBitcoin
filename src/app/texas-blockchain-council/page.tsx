@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -163,6 +164,7 @@ export default function TexasBlockchainCouncilPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(tbcSources),
     headline: "The Texas Blockchain Council: The Lobby That Outgrew Its Name",
     description:
       "The record of the Texas Blockchain Council, now the Digital Infrastructure Network, from its releases, the IRS record, the Texas Ethics Commission, the Legislature, and the federal dockets: the founding, the 2021 statutes, the SB 1751 campaign and the 31–0 Senate vote, the Department of Energy suit, the reserve, the money, the sitting-legislator presidency, and the August 2026 rename.",

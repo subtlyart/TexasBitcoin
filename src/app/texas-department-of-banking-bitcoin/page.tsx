@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -151,6 +152,7 @@ export default function TexasDepartmentOfBankingBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(bankingSources),
     headline: "The Department of Banking and Bitcoin: The Memo That Said It Wasn't Money",
     description:
       "The institutional record of the Texas Department of Banking and virtual currency, 2014–2026: Supervisory Memorandum 1037 in its three lives, Industry Notice 2021-03, the Money Services Modernization Act and Chapter 160, the thirteen crypto money-services orders, the bankruptcy objections, the kiosk gap and the bill that died, and the GENIUS Act framework Texas does not yet have.",
