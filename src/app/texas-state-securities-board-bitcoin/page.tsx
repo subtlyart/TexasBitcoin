@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -162,6 +163,7 @@ export default function TexasStateSecuritiesBoardBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(tssbSources),
     headline: "The Texas State Securities Board and Bitcoin: The First State to Act",
     description:
       "The institutional record of the Texas State Securities Board and digital assets, 2014–2026: the first state order against a crypto scheme, the 2018 sweep and Operation Cryptosweep, the BlockFi, Celsius, and Voyager notices, the FTX declaration, the Bankman-Fried loss, the working-group settlements, the Apertum set-aside, TEXITcoin, the order count, and the Board's own stated limit.",

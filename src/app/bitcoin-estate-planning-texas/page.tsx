@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 
 // DISCRETION: sitemap-only, like the Exposure Map and /bitcoin-mining-ercot.
@@ -88,6 +89,7 @@ export default function EstatePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sources),
     headline: "Bitcoin Estate Planning in Texas: Buy, Hold, Die",
     description:
       "What the record says about owning Bitcoin across a Texas lifetime — taxes, community property, TRUFADAA, the stepped-up basis, and the self-custody inheritance problem.",

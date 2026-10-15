@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -164,6 +165,7 @@ export default function GiovanniCapriglioneBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(capriglioneSources),
     headline: "Giovanni Capriglione: The Chairman Who Carried the Reserve",
     description:
       "The Bitcoin record of the Texas House member who sponsored Senate Bill 21: the 2015 Bullion Depository, the 2021 UCC definition, the 2023 flared-gas exemption and commingling ban, HB 1598 filed first and never heard, SB 21 through his own committee 8–4 and the floor 101–42, the conference he chaired, the retirement, and the turn to the Texas Blockchain Council.",

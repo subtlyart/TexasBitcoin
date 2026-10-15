@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -172,6 +173,7 @@ export default function MayesMiddletonBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(middletonSources),
     headline: "Mayes Middleton: The Votes Without the Words",
     description:
       "The Bitcoin record of the 2026 Republican nominee for Texas Attorney General: the Freedom Caucus no on the 2021 blockchain work group, the yea on the 2021 definition, the 2023 mining and custody votes, the reserve twice, the large-load law he coauthored, the gold bill he co-sponsored, zero authored bills and zero located statements, the self-funded campaign, and the kiosk-fraud question the office he seeks has not answered.",

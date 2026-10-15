@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -186,6 +187,7 @@ export default function GlennHegarBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(hegarSources),
     headline: "Glenn Hegar: The Comptroller Who Could Already Buy It",
     description:
       "The Bitcoin record of the three-term Texas Comptroller whose office SB 21 addresses: the Bullion Depository he opened, the Fiscal Notes studies of the mines, the ETF authority he held from January 2024 and never used, the February 18, 2025 testimony - 'on,' not 'for'; 'I can do that already' - the fiscal note, the A&M chancellorship named the day after the Senate vote, Fund 1018, the handoff to Hancock, and the silence since.",

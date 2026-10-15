@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   CUSTODY_LAST_VERIFIED,
@@ -296,6 +297,7 @@ export default function CustodyPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(custodySources),
     headline: "Who Holds the Texas Bitcoin Reserve?",
     description:
       "The custody watch on the Texas Strategic Bitcoin Reserve — the custodian search, the 60-day ETF-to-keys conversion, and what Texas owns vs. what it controls.",

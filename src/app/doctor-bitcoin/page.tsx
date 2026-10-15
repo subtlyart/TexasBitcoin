@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 
 export const metadata: Metadata = {
@@ -68,6 +69,7 @@ export default function DoctorBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sources),
     headline: "Doctor Bitcoin: Mark Hopkins and the Federal Line Texas Never Drew",
     description:
       "The sourced profile of Mark Alexander Hopkins, the North Texas P2P trader federally prosecuted for unlicensed money transmission — and what his case taught Texas bitcoiners about the gap between state and federal law.",

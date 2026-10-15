@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   GUNWORKS_LAST_VERIFIED,
@@ -155,6 +156,7 @@ export default function CentralTexasGunWorksBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(gunworksSources),
     headline: "Central Texas Gun Works: The First Gun Store in America to Take Bitcoin",
     description:
       "The sourced record of the South Austin firearms retailer that began accepting Bitcoin on January 27, 2014: the first legal Bitcoin firearm sale, the Robocoin ATM, the BitPay de-platforming, and owner Michael Cargill's road to Garland v. Cargill.",

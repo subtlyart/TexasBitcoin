@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   DEAD_BILLS_LAST_VERIFIED,
@@ -300,6 +301,7 @@ export default function DeadBillsPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(deadBillSources),
     headline: "The Dead File: Texas Bitcoin Bills That Didn't Become Law",
     description:
       "The 89th Legislature's Bitcoin dead file, verified against the official record: HJR 175, SB 1705, HB 2798, HB 1598, HB 4258, SB 778 - where each stopped, and what each leaves on the 90th's agenda.",

@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   LEWIS_LAST_VERIFIED,
@@ -148,6 +149,7 @@ export default function ParkerLewisBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(lewisSources),
     headline: "Parker Lewis: The Man Who Wrote Why Bitcoin Is Money",
     description:
       "The Bitcoin record of the Austin essayist and operator behind 'Gradually, Then Suddenly': the seventeen Unchained essays, the 2023 book, the open letter against SB 1751, the move to Zaprite, the Bitcoin Commons, and the Bitcoin Takeover.",

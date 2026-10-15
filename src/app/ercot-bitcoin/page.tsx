@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -156,6 +157,7 @@ export default function ErcotBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(ercotSources),
     headline: "ERCOT and Bitcoin: The Load It Counts as a Resource",
     description:
       "The institutional record of the Electric Reliability Council of Texas and Bitcoin mining, 2020–2026: the first controllable load, the 2022 queue and task force, the curtailment program, Elliott, Heather, and Fern in ERCOT's numbers, the planning documents that treat mines as non-firm, the reserve services and the market monitor's verdict, Riot's month corrected, the queue that outgrew the process, Batch Zero, and the audit.",

@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 
 // DISCRETION: sitemap-only, like the Exposure Map, /bitcoin-mining-ercot,
@@ -82,6 +83,7 @@ export default function AiPivotPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sources),
     headline: "The Second Life of the Texas Mines: Bitcoin's AI Pivot",
     description:
       "Why Texas Bitcoin miners are converting to AI data centers, deal by deal — and what the grid loses when the most flexible load stops flexing.",

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -159,6 +160,7 @@ export default function RiotPlatformsBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(riotSources),
     headline: "Riot Platforms: The Miner That Became a Landlord",
     description:
       "The Texas record of Riot Platforms, from its own filings: the 2017 rename and SEC subpoena, the Whinstone acquisition, Corsicana and its counties, the power credits and the August 2023 month, the Legislature and the DOE suit, the 2025 AI pivot, the AMD and frontier-lab leases, and the shareholder's ledger of dilution, losses, pay, and bitcoin sold.",

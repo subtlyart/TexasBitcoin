@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -203,6 +204,7 @@ export default function AngelaPaxtonBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(paxtonSources),
     headline: "Angela Paxton: The Senator Who Carried the Definition",
     description:
       "The Bitcoin record of the Texas senator who was Senate sponsor of HB 4474 and HB 1576, the 2021 statutes that defined virtual currency in the Texas UCC and created the Work Group on Blockchain Matters: the three authored bills that died, the May 2021 committee and calendar record, the work-group appointment, the Legislator of the Year award, the silence since, and the votes on the reserve, the registry, the brake, and the large-load law.",

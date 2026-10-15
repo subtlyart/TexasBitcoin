@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -156,6 +157,7 @@ export default function KellyHancockBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(hancockSources),
     headline: "Kelly Hancock: The Man Who Bought Texas Its Bitcoin",
     description:
       "The execution record of the acting Texas Comptroller: the first state Bitcoin purchase (Nov 20, 2025), the $10M position, the advisory committee, the custody RFP, the primary defeat - and the July 2026 resignation that handed the reserve to Don Huffines with the custodian still unnamed.",

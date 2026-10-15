@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 
 // DISCRETION: sitemap-only, like the Exposure Map. Indexed and in llms.txt,
@@ -84,6 +85,7 @@ export default function ErcotMiningPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sources),
     headline: "Bitcoin Mining and ERCOT: How the Texas Grid Treats Miners",
     description:
       "How ERCOT treats Bitcoin miners — the energy-only market, demand response, 4CP, Large Flexible Load rules, and SB 6's kill switch.",

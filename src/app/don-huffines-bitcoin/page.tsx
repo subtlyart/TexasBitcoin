@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -157,6 +158,7 @@ export default function DonHuffinesBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(huffinesSources),
     headline: "Don Huffines: The Citadel Candidate Gets the Keys",
     description:
       "The Bitcoin record of the Texas Comptroller who inherited the Strategic Bitcoin Reserve on August 1, 2026: the 2022 'citadel for Bitcoin' plan that proposed a state reserve three years before SB 21, the appointment, the custody window that closed with no award, and the November ballot.",

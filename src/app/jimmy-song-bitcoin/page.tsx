@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   SONG_LAST_VERIFIED,
@@ -143,6 +144,7 @@ export default function JimmySongBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(songSources),
     headline: "Jimmy Song: The Man Who Teaches Bitcoin From Scratch",
     description:
       "The Bitcoin record of the Austin-based developer, educator, and author of Programming Bitcoin: the UT Austin course, the 500-developer seminar, the 2017 Bitcoin Core test commits, the block-size-war essays, the Lubin wager, and the maximalism.",

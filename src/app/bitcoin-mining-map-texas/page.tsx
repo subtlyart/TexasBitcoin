@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import {
   MAP_LAST_VERIFIED,
@@ -314,6 +315,7 @@ export default function MiningMapPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(miningSources),
     headline: "Texas Bitcoin Mining Map — Every Major Mine, Mapped",
     description:
       "The interactive, sourced map of industrial Bitcoin mining in Texas, from Rockdale's 700 MW flagship to the former mines becoming AI data centers.",

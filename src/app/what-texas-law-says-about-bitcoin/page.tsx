@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 
 const pageUrl = `${site.url}/what-texas-law-says-about-bitcoin`;
@@ -301,6 +302,7 @@ export default function TexasLawPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sources),
     headline: "What Texas Law Actually Says About Bitcoin",
     description:
       "The legal status of Bitcoin in Texas from the primary record: state licensing, custody, legal tender, taxes, mining, and the federal § 1960 seam.",

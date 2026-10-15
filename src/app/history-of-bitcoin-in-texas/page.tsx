@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 
 export const metadata: Metadata = {
@@ -326,6 +327,7 @@ export default function HistoryPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sources),
     headline: "The History of Bitcoin in Texas",
     description:
       "The definitive, sourced account of how Texas became the center of gravity for Bitcoin — from the 2014 Supervisory Memo to the 2025 Strategic Bitcoin Reserve.",

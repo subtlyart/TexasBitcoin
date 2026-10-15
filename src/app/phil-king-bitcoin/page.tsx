@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -151,6 +152,7 @@ export default function PhilKingBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(kingSources),
     headline: "Phil King: The Man Who Wrote the Kill Switch",
     description:
       "The Bitcoin record of the Texas senator who authored SB 6, the 2025 large-load law: the 1999 deregulation vote, the Regulated Industries chair, the 2015 and 2019 coauthorships, the 2023 committee votes on both mining bills, the 150-gigawatt hearing, the bill's five tools and its 31–0 and 103–25 votes, the PUC rulemakings, and the queue that grew from 63 to 474 gigawatts before the Governor froze it.",

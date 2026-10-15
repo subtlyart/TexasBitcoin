@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -193,6 +194,7 @@ export default function KenKingBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(kenKingSources),
     headline: "Ken King: The Chairman Who Rewrote the Load Law",
     description:
       "The Bitcoin record of the Texas House State Affairs chairman who was House sponsor of SB 6, the 2025 large-load law: the committee substitute, the seventeen-item floor amendment adopted 136–3, the journal exchange on legislative intent, the floor quotes, the eight yea votes on every Bitcoin bill to reach the floor, the 2026 data-center hearings and the 410-gigawatt queue, the letter on transmission and landowners, the oilfield business, and the primary.",

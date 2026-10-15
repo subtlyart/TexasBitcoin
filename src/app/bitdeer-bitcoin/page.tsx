@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -173,6 +174,7 @@ export default function BitdeerBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(bitdeerSources),
     headline: "Bitdeer: The Mine Next Door",
     description:
       "The Texas record of Bitdeer Technologies Group, from its filings, Bitmain's releases, the county record, and the press: Bitmain's Rockdale promise and abatement, the suspension and the quiet build, the spin-off and the SPAC, the CNBC dispatch, the grid payments and the ownership question, Tether, the first profit since 2021, Winter Storm Fern, the Governor's audit, the 200 acres, the water, and the AI plan not yet described.",

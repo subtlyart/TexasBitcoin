@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -145,6 +146,7 @@ export default function DanPatrickBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(patrickSources),
     headline: "Dan Patrick and Bitcoin: The Asset, Not the Megawatts",
     description:
       "Dan Patrick's Bitcoin record, sourced: the SB 1751 brake on miners (2023), the 'Wild Wild West' grid warning (2024), the Texas Bitcoin Reserve priority and 'digital gold' statement (2025) - one coherent position.",

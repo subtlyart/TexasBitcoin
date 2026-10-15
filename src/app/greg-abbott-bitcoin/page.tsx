@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -184,6 +185,7 @@ export default function GregAbbottBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(abbottSources),
     headline: "Greg Abbott and Bitcoin: The Governor Who Took It First",
     description:
       "Greg Abbott's Bitcoin record, sourced: the 2014 campaign that took bitcoin donations, the 2021 legal foundation, the post-Uri miners-as-grid-asset thesis, the SB 21 signature - and the 2026 ratepayer directive.",

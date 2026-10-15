@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 
 export const metadata: Metadata = {
@@ -91,6 +92,7 @@ export default function DoctorBitcoinTapesPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(sources),
     headline: "The Doctor Bitcoin Tapes — The Lore of Mark Hopkins, In His Own Words",
     description:
       "The blended story of Mark 'Doctor Bitcoin' Hopkins, drawn from every interview he's given about his case — and the open questions only he can answer.",

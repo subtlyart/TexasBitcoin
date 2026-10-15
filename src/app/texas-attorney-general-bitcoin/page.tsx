@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -159,6 +160,7 @@ export default function TexasAttorneyGeneralBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(agSources),
     headline: "The Texas Attorney General and Bitcoin: One Suit, No Opinions",
     description:
       "The institutional record of the Texas Attorney General's office and digital assets, 2015–2026: the eighteen-state SEC suit and its stay, the bankruptcy objections signed for the state's regulators, the miners' records ruling and the PUC's suit, the coalition letters, the absence of any formal opinion or consumer enforcement, the kiosk-fraud losses, and the November 2026 handover.",

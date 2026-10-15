@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
@@ -163,6 +164,7 @@ export default function NathanJohnsonBitcoinPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    citation: citations(johnsonSources),
     headline: "Nathan Johnson: The Democrat Who Wrote the Registry",
     description:
       "The Bitcoin record of the Dallas senator who authored SB 1929, the 2023 mining-registration law, argued the donation clause out of the Texas Strategic Bitcoin Reserve, and voted for the reserve on the floor: the 2018 upset over Huffines, the registry and the rule that followed, the June 2024 load hearing, the February 2025 committee fight, the March 6 roll call, the conference, and the 2026 attorney general campaign.",
