@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   LEGE90_LAST_VERIFIED,
   lege90Sources,
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     "The living tracker of Bitcoin and digital-asset bills in the 90th Texas Legislature (convenes January 12, 2027) — every bill verified on capitol.texas.gov, plus the sourced watchlist: reserve top-up, the kiosk fight, HJR 175's return, staking, and the grid bills after SB 6.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Texas Bitcoin Bills 2027: The 90th Legislature Tracker"),
     type: "article",
     title: "Texas Bitcoin Bills 2027: The 90th Legislature Tracker",
     description:

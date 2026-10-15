@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   DEAD_BILLS_LAST_VERIFIED,
   deadBillSources,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "The 89th Legislature's Bitcoin dead file, verified against the official record: the constitutional right-to-transact amendment that passed the House (HJR 175), the kiosk bills both chambers approved but never reconciled (SB 1705, HB 2798), the rival reserve designs (HB 1598, HB 4258, SB 778) - and what each one leaves on the 90th's agenda.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Dead File: Texas Bitcoin Bills That Didn't Become Law"),
     type: "article",
     title: "The Dead File: Texas Bitcoin Bills That Didn't Become Law",
     description:

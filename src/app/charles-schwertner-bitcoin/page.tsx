@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   SCHWERTNER_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Charles Schwertner's Bitcoin record, sourced: the Georgetown orthopedic surgeon and Texas Senate Business and Commerce chair who authored Senate Bill 21, the law that created the Texas Strategic Bitcoin Reserve - from SB 778 (Jan 14, 2025) through the 25–5 Senate vote, the 101–42 House vote, and the June 20, 2025 signing. The design, the floor quotes, the grid bills he wrote alongside it, the fiscal-right opposition, and the red ink.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Charles Schwertner: The Surgeon Who Wrote the Reserve"),
     type: "article",
     title: "Charles Schwertner: The Surgeon Who Wrote the Reserve",
     description:

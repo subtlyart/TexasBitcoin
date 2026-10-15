@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   HUFFINES_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Don Huffines's Bitcoin record, sourced: the Texas Comptroller sworn in August 1, 2026 who now has statutory custody of the Texas Strategic Bitcoin Reserve - and the only statewide official who proposed a state Bitcoin reserve (January 2022) before the Legislature built one. The 2022 plan, the appointment, the custody window that closed on his watch, and the November ballot.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Don Huffines: The Citadel Candidate Gets the Keys"),
     type: "article",
     title: "Don Huffines: The Citadel Candidate Gets the Keys",
     description:

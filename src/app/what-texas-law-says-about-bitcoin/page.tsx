@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 
 const pageUrl = `${site.url}/what-texas-law-says-about-bitcoin`;
 
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
     "Is Bitcoin legal in Texas? Yes — to buy, sell, hold, and mine, with no state license to sell your own coin. What the statutes and the § 1960 seam say.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("What Texas Law Actually Says About Bitcoin"),
     type: "article",
     title: "What Texas Law Actually Says About Bitcoin",
     description:

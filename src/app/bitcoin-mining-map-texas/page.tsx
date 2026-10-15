@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   MAP_LAST_VERIFIED,
   STATUS_LABELS,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "The interactive, sourced map of industrial Bitcoin mining in Texas — Riot Rockdale, Corsicana, MARA Granbury, and the West Texas sites now turning to AI.",
   alternates: { canonical: `${site.url}/bitcoin-mining-map-texas` },
   openGraph: {
+    images: ogImages("Texas Bitcoin Mining Map"),
     type: "article",
     title: "Texas Bitcoin Mining Map",
     description:

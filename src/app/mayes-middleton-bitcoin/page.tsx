@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   MIDDLETON_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Mayes Middleton's Bitcoin record, sourced: the Wallisville oilman, former House Freedom Caucus chair, Senate District 11 senator, and 2026 Republican nominee for Texas Attorney General - the office that prosecutes crypto fraud - who has never authored a bill or said a word on digital assets, and whose record is votes alone: yea on the Texas Strategic Bitcoin Reserve twice, yea on the gold bill he co-sponsored, yea on the large-load law he coauthored, yea on the 2023 mining and custody bills and the 2021 definition, and a recorded no on the 2021 blockchain work group. A self-funded campaign of more than $15 million, a tied race against Nathan Johnson, and a kiosk-fraud problem neither nominee has addressed.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Mayes Middleton: The Votes Without the Words"),
     type: "article",
     title: "Mayes Middleton: The Votes Without the Words",
     description:

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   TBC_LAST_VERIFIED,
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     "The Texas Blockchain Council, now the Digital Infrastructure Network, 2019–2026, sourced from its own releases, the IRS record, the Texas Ethics Commission, the Legislature's witness lists and journals, and the federal dockets: the 501(c)(6) a political-science professor founded in Richardson that spearheaded the 2021 UCC and Work Group statutes, ran the 2023 campaign against SB 1751 (which passed the Senate 31–0, not 30–1, and died in the House), stopped a federal survey of miners' power use in a day in 2024, was the lead witness for the Texas Strategic Bitcoin Reserve in 2025, named a sitting state representative its president in January 2026, and dropped 'Blockchain' from its name on August 18, 2026 as its members became data-center landlords. Funded more than half by miners; about $2 million a year; 'an enemy of transparency,' says Public Citizen.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Texas Blockchain Council: The Lobby That Outgrew Its Name"),
     type: "article",
     title: "The Texas Blockchain Council: The Lobby That Outgrew Its Name",
     description:

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   DISTRICTS,
   districtBySlug,
@@ -37,7 +38,13 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     title: `${d.name} — Crypto & § 1960 Cases`,
     description,
     alternates: { canonical: url },
-    openGraph: { type: "website", title: `${d.name} Crypto Cases`, description, url },
+    openGraph: {
+      type: "website",
+      title: `${d.name} Crypto Cases`,
+      description,
+      url,
+      images: ogImages(`${d.name} — Crypto & § 1960 Cases`, { kicker: "Case Tracker" }),
+    },
   };
 }
 

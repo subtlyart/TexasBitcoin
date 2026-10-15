@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   CORESCIENTIFIC_LAST_VERIFIED,
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "Core Scientific and Texas, 2021–2026, sourced from its filings, the bankruptcy docket, and the City of Denton's record: the Seattle-born miner that moved to Austin, signed a partly redacted power contract with a city utility carrying $140 million of Winter Storm Uri debt, listed at a $4.3 billion valuation, filed for Chapter 11 in Houston eleven months later, and came out with its shareholders holding sixty percent. Then the AI turn: CoreWeave's $8.7 billion of leases, Denton's unanimous vote to convert the mine into a 394-megawatt supercomputer that no longer acts as a dimmer switch for the grid, the $9 billion sale the stockholders refused, a restatement, a $233 million county, a 1.5-gigawatt Pecos, AMD, $4.3 billion of debt - and, in September 2026, the same city's first hearing on a data-center moratorium.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Core Scientific: The Dimmer Switch That Became a Data Center"),
     type: "article",
     title: "Core Scientific: The Dimmer Switch That Became a Data Center",
     description:

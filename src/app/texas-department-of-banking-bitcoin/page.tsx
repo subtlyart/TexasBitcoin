@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   BANKING_LAST_VERIFIED,
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "The Texas Department of Banking and Bitcoin, 2014–2026, sourced: Supervisory Memorandum 1037 (April 3, 2014), the first state guidance on virtual currency - 'cannot be considered money or monetary value under the Money Services Act' - and its three lives: the 2019 revision that made fiat-backed stablecoins money, the 2023 statute that codified it, the 2025 rewrite that dropped the five safe harbors for 'case-by-case.' Industry Notice 2021-03 letting state banks custody crypto. Thirteen crypto money-services orders from Bitstamp to OKX, FTX's emergency order, Kraken's $250,000, Block's $1.65 million. The Celsius objection overruled. And the gap the memo built: by the commissioner's 2026 testimony, a kiosk selling bitcoin for cash is 'not subject to Chapter 152,' while Texans lost $56.8 million to kiosk scams and the bill that would have changed it died on the House calendar.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Department of Banking and Bitcoin: The Memo That Said It Wasn't Money"),
     type: "article",
     title: "The Department of Banking and Bitcoin: The Memo That Said It Wasn't Money",
     description:

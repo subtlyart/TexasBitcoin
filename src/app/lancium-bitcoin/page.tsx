@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   LANCIUM_LAST_VERIFIED,
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "Lancium and Texas, 2017–2026, sourced from the Federal Circuit, ERCOT's board, the City of Abilene, the Legislature, and the company's own releases: the Houston start-up that put 120 Bitcoin miners beside a wind farm in 2018, patented the software that turns them down in five seconds, won ERCOT's first load-only Controllable Load Resource designation in 2020, sued two miners over the patents, promised Fort Stockton 325 megawatts and Abilene a $2.4 billion Bitcoin-and-computing campus - and then leased the Abilene land to Crusoe for the first Stargate site, took Blackstone's and Nvidia's money, gave ERCOT a free license after its own counsel called the patents a possible 'barrier to entry,' and announced two more gigawatt campuses in a week. Beside it: Fort Stockton at 25 of 325 megawatts, a Bitcoin tenant that never arrived, an 80% county abatement, doubled rents, and 20 gallons of water a minute.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Lancium: The Landlord Who Patented the Switch"),
     type: "article",
     title: "Lancium: The Landlord Who Patented the Switch",
     description:

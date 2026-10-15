@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   HEGAR_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Glenn Hegar's Bitcoin record, sourced: the three-term Texas Comptroller (2015–2025) whose office SB 21 addresses - the man who opened the Texas Bullion Depository in 2018 and later testified the state owned no gold; whose Fiscal Notes measured the mines at 2,717 MW; who held the authority to buy a spot Bitcoin ETF from January 2024 and never used it; who registered 'on,' not 'for,' at the February 18, 2025 hearing and told Senator Johnson 'I can do that already'; who left for Texas A&M eleven days after the statute took effect, having opened Fund 1018 and nothing else. The reserve was built by his successors. Silent since.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Glenn Hegar: The Comptroller Who Could Already Buy It"),
     type: "article",
     title: "Glenn Hegar: The Comptroller Who Could Already Buy It",
     description:

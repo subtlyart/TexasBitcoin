@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   allCaseSlugs,
   districtSlug,
@@ -49,7 +50,13 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     // framing below. Only non-case items (PSAs, awareness days, personnel
     // notices, strategy memos) are held out of the search index.
     robots: isCaseIndexable(c, detail) ? undefined : { index: false, follow: true },
-    openGraph: { type: "article", title: c.title, description, url },
+    openGraph: {
+      type: "article",
+      title: c.title,
+      description,
+      url,
+      images: ogImages(c.title, { kicker: "Case Tracker" }),
+    },
   };
 }
 

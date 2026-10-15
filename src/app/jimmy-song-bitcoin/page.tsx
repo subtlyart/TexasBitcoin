@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   SONG_LAST_VERIFIED,
   songSources,
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "Jimmy Song's Bitcoin record, sourced: the Austin-based developer, educator, and author of Programming Bitcoin (O'Reilly, 2019) who taught a graduate Programming Blockchain course at UT Austin, trained 500+ developers in his two-day seminar, landed fourteen test commits in Bitcoin Core in 2017, and fought the block-size war in essays. The books, the bets, the maximalism - and what the commit log actually says.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Jimmy Song: The Man Who Teaches Bitcoin From Scratch"),
     type: "article",
     title: "Jimmy Song: The Man Who Teaches Bitcoin From Scratch",
     description:

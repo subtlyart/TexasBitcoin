@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   CRUZ_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Did Ted Cruz fall out of Bitcoin, or sell out? The sourced record: the self-described skeptic, the August 2021 infrastructure-bill floor fight, his disclosed bitcoin purchases, the CBDC ban that became law July 11, 2026 - and the industry money that followed.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Ted Cruz and Bitcoin: From Skeptic to the Senate's Loudest Champion"),
     type: "article",
     title: "Ted Cruz and Bitcoin: From Skeptic to the Senate's Loudest Champion",
     description:

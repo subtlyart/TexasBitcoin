@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 
 // DISCRETION: sitemap-only, like the Exposure Map, /bitcoin-mining-ercot,
 // and /bitcoin-estate-planning-texas. Indexed and in llms.txt, no inbound
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "In June 2025, Texas made gold and silver legal tender (HB 1056) and created a Bitcoin reserve (SB 21) — two days apart. The sourced essay on why the state gave its two hard-money traditions opposite jobs: one to spend, one to hold.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Gold as Tender, Bitcoin as Reserve: How Texas Split Hard Money"),
     type: "article",
     title: "Gold as Tender, Bitcoin as Reserve: How Texas Split Hard Money",
     description:

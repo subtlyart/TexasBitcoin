@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, Compass } from "lucide-react";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { LoneStar } from "@/components/lone-star";
 import {
   resources,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "A curated shelf of free tools for Bitcoin in Texas — merchant maps, the node census, ERCOT grid data, and the policy bodies that shape state law.",
   alternates: { canonical: `${site.url}/texas-bitcoin-resources` },
   openGraph: {
+    images: ogImages("Texas Bitcoin Resources — Tools, Maps & Data"),
     type: "website",
     title: "Texas Bitcoin Resources — Tools, Maps & Data",
     description:

@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 
 // DISCRETION: reader-protection reference. Vendor-neutral by design — it names
 // no rented-hashrate seller and links to none. It exists because the category
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "A vendor-neutral guide to rented hashrate and cloud mining — what you are actually buying (delivered work vs. an uncertain mining outcome), what a buyer can and cannot verify, the warning signs, and the Texas enforcement record from BitConnect to GAW Miners. Not investment advice.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Rented Hashrate and Cloud Mining: How to Evaluate the Offer"),
     type: "article",
     title: "Rented Hashrate and Cloud Mining: How to Evaluate the Offer",
     description:

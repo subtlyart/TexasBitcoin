@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { SeamMark } from "@/components/seam-mark";
 
 export const metadata: Metadata = {
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "Alcoa's smelter powered Rockdale, Texas for 56 years; 2008 hollowed it out. How Bitmain, Whinstone, and Riot turned the land into a 700 MW Bitcoin mine.",
   alternates: { canonical: `${site.url}/rockdale-texas-bitcoin` },
   openGraph: {
+    images: ogImages("The Rockdale Story: From Alcoa Smelter to Bitcoin Mining Capital"),
     type: "article",
     title: "The Rockdale Story: From Alcoa Smelter to Bitcoin Mining Capital",
     description:

@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   CUSTODY_LAST_VERIFIED,
   custodyMandate,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "The custody watch on the Texas Strategic Bitcoin Reserve — who actually holds the state's $10M, the custodian search, the 60-day ETF-to-keys conversion, and what Texas owns vs. what it controls. Updated against the primary record.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Who Holds the Texas Bitcoin Reserve?"),
     type: "article",
     title: "Who Holds the Texas Bitcoin Reserve?",
     description:

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   CIPHER_LAST_VERIFIED,
   cipherSites,
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "Cipher Mining, now Cipher Digital, and Texas, 2021–2026, sourced from its SEC filings and the county record: the Bitfury spin-out that listed with its parent holding 83%, built Odessa on a 2.7-cent Luminant contract it was sued over before the site was finished, and earned more in its first year by not running the mine than by running it. Then fourteen months that remade it: Barber Lake to Fluidstack with Google's backstop, Black Pearl to Amazon for $5.5 billion, Stingray to Amazon again, a twenty-year lease past $9 billion, $6 billion of debt, the Texas Blockchain Council's founder hired, the word Mining dropped from the name, 3.2 gigawatts conditionally classed by ERCOT - beside an $822 million loss, a hashrate cut in half, a Waco-area commissioner on its transparency, and a town whose water the company is now paying to fix.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Cipher: The Miner That Dropped the Word"),
     type: "article",
     title: "Cipher: The Miner That Dropped the Word",
     description:

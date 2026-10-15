@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { LoneStar } from "@/components/lone-star";
 
 export const metadata: Metadata = {
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     "The wider Texas digital-asset story beyond Bitcoin — Factom, Hedera, Multicoin, 8VC, ATX DAO, and Consensus in Austin: developers, tokens, and VC.",
   alternates: { canonical: `${site.url}/texas-crypto-archive` },
   openGraph: {
+    images: ogImages("The Wider Ledger — Texas Crypto Archive"),
     type: "article",
     title: "The Wider Ledger — Texas Crypto Archive",
     description:

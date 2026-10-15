@@ -11,6 +11,7 @@ import {
   Layers,
 } from "lucide-react";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { LoneStar } from "@/components/lone-star";
 import { meetups, METROS } from "@/lib/events";
 
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     "A friendly, plain-English way into Bitcoin in Texas. Find the meetup nearest you, get the 60-second version of the whole story, and pick the door that fits — curious Texan, miner, or policy watcher.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Start Here — New to Bitcoin in Texas?"),
     type: "website",
     title: "Start Here — New to Bitcoin in Texas?",
     description:

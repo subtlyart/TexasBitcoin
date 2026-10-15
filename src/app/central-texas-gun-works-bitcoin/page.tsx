@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   GUNWORKS_LAST_VERIFIED,
   gunworksSources,
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "The sourced record of Central Texas Gun Works, the South Austin firearms retailer and training school that began accepting Bitcoin on January 27, 2014 – the first licensed firearms dealer in Texas, and by Forbes's account the United States, to do so. The first legal Bitcoin firearm sale (February 4, 2014), the Robocoin ATM unveiled on Texas Independence Day, the BitPay de-platforming six weeks in, and where owner Michael Cargill went next: Garland v. Cargill (2024).",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Central Texas Gun Works: The First Gun Store in America to Take Bitcoin"),
     type: "article",
     title: "Central Texas Gun Works: The First Gun Store in America to Take Bitcoin",
     description:
