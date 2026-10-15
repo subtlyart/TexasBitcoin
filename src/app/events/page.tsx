@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, MapPin, CalendarDays } from "lucide-react";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { LoneStar } from "@/components/lone-star";
 import {
   meetups,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "A free, open directory of Bitcoin meetups and conferences across Texas — Austin, Dallas–Fort Worth, Houston, and San Antonio, linked to the organizer.",
   alternates: { canonical: `${site.url}/events` },
   openGraph: {
+    images: ogImages("Texas Bitcoin Events — Meetups & Conferences"),
     type: "website",
     title: "Texas Bitcoin Events — Meetups & Conferences",
     description:

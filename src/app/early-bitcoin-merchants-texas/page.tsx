@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   GRASSROOTS_LAST_VERIFIED,
   grassrootsSources,
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     "The sourced record of who took Bitcoin in Texas before the state had a position on it: Brave New Books and its two customers (June 2013), the Scholz Garten meetup, eleven Austin merchants on a map and the Leander dentist–meat-market–contractor cluster (February 2014), the first US Bitcoin ATM in an Austin bar, the first Texas Bitcoin Conference, Houston's 15–17 merchants, and the SXSW 2015 Bitcoin pedicab – kept honest about what is documented and what is lore.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Before the State: Texas's Grassroots Bitcoin Economy, 2013–2015"),
     type: "article",
     title: "Before the State: Texas's Grassroots Bitcoin Economy, 2013–2015",
     description:

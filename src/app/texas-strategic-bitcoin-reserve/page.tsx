@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   RESERVE_LAST_VERIFIED,
   reserveSources,
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "How the Texas Strategic Bitcoin Reserve works and where it stands — SB 21, the $10M appropriation, the $500B floor, and the road to direct custody.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Texas Strategic Bitcoin Reserve"),
     type: "article",
     title: "The Texas Strategic Bitcoin Reserve",
     description:

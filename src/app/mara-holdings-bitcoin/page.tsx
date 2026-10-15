@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   MARA_LAST_VERIFIED,
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "MARA Holdings and Texas, 2021–2026, sourced from its filings and the court record: the Florida patent-holding company that pivoted to mining, lent $67 million to build a 300-megawatt site behind a Granbury gas plant, and bought it in January 2024 with the $1.9 million sound wall already in the contract. TIME's forty residents, 72 decibels in a bedroom, the constable's citations and the jury's acquittal, the Hood County resolution the Legislature ignored, the Earthjustice nuisance suit seeking only an injunction, the remand, the town that tried to incorporate around the fans, MARA's suit to stop the vote and the 86-to-52 result, nine more plaintiffs in 2026 - beside 550 megawatts curtailed in Winter Storm Fern, a 53,822-bitcoin treasury sold down by a third, a $1.5 billion gas plant, and a two-gigawatt bet on Matagorda County.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("MARA Holdings: The Mine the Neighbors Could Hear"),
     type: "article",
     title: "MARA Holdings: The Mine the Neighbors Could Hear",
     description:

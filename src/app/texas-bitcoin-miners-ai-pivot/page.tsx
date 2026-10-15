@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 
 // DISCRETION: sitemap-only, like the Exposure Map, /bitcoin-mining-ercot,
 // /bitcoin-estate-planning-texas, and /texas-gold-vs-bitcoin. Indexed and in
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "Why Texas Bitcoin miners are converting to AI data centers — Riot's $9.1B Rockdale lease, Galaxy Helios, Core Scientific Denton, Cipher, Hut 8 — what powered land is now worth, and what the grid loses when the most flexible load stops flexing. The sourced longform.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Second Life of the Texas Mines: Bitcoin's AI Pivot"),
     type: "article",
     title: "The Second Life of the Texas Mines: Bitcoin's AI Pivot",
     description:

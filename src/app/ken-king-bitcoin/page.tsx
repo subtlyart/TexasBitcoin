@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   KENKING_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Ken King's Bitcoin record, sourced: the Canadian, Texas oilfield-service contractor who chairs House State Affairs and was House sponsor of SB 6, the 2025 large-load law - substituted in committee in two minutes, rewritten on the floor with a seventeen-item amendment adopted 136–3 that narrowed the kill switch to customers with backup generation and moved co-location decisions to the PUC, passed 103–25. Zero digital-asset bills authored, zero words on Bitcoin on the record, yea on every crypto bill that reached the floor including the reserve twice. The 2026 data-center hearings he chairs, the 410 gigawatts in the queue, and the primary he won with 53.9%.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Ken King: The Chairman Who Rewrote the Load Law"),
     type: "article",
     title: "Ken King: The Chairman Who Rewrote the Load Law",
     description:

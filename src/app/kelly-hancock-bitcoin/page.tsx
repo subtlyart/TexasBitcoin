@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   HANCOCK_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Kelly Hancock's Bitcoin record, sourced: the acting Texas Comptroller who executed the state's first Bitcoin purchase (Nov 20, 2025), built the $10M reserve position, named the advisory committee, and ran the custody RFP - then lost the March 2026 primary to Don Huffines, resigned effective July 31, 2026, and handed the reserve to the man who beat him with the custodian still unnamed.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Kelly Hancock: The Man Who Bought Texas Its Bitcoin"),
     type: "article",
     title: "Kelly Hancock: The Man Who Bought Texas Its Bitcoin",
     description:

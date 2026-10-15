@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   RIOT_LAST_VERIFIED,
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "Riot Platforms and Texas, 2017–2026, sourced from its own filings: the Colorado shell that renamed itself Riot Blockchain in 2017 and drew an SEC subpoena; Jason Les and the $651 million Whinstone deal that made Rockdale the largest mine in North America; Corsicana's gigawatt, the county that refused the abatement and then passed it 3–2; the August 2023 month it earned $31.7 million for switching off - $24.2 million from its TXU contract, $7.4 million from ERCOT; power credits of $71.2 million in 2023 and $56.7 million in 2025; Rochard against SB 1751 and for SB 21; the DOE survey suit; the 2025 pivot to AI, AMD's 50 megawatts, and the August 2026 twenty-year, $9.1 billion lease of 191 megawatts to a frontier AI lab. And the shareholder's ledger: four and a half times the shares, losses in four of five years, an $83.5 million pay year, and seven thousand bitcoin sold to build.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Riot Platforms: The Miner That Became a Landlord"),
     type: "article",
     title: "Riot Platforms: The Miner That Became a Landlord",
     description:

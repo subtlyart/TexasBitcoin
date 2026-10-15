@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   TSSB_LAST_VERIFIED,
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "The Texas State Securities Board and Bitcoin, 2014–2026, sourced: the first Bitcoin investor alert (February 2014); USI-Tech, December 20, 2017, the first order by any state securities regulator against a crypto scheme; BitConnect two days before its top; the 2018 sweep of 32 offerings and the forty-regulator Operation Cryptosweep Texas led; the BlockFi, Celsius, and Voyager notices five to sixteen months before the collapses; the FTX declaration in the enforcement director's own name three weeks before FTX failed; the Bankman-Fried jurisdiction loss; Nexo, Abra, GS Partners; the Apertum order set aside; TEXITcoin's 2026 hearing; more than seventy orders; and the Board's own limit - it regulates the investments, not the coins.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Texas State Securities Board and Bitcoin: The First State to Act"),
     type: "article",
     title: "The Texas State Securities Board and Bitcoin: The First State to Act",
     description:

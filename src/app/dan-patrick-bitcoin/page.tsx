@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   PATRICK_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Dan Patrick's Bitcoin record looks contradictory until you read the dates: the lieutenant governor whose Senate passed the anti-mining SB 1751 (2023) and who warned of a 'Wild Wild West' on the grid (2024) is the same man who made the Texas Bitcoin Reserve a Top 40 priority and called Bitcoin 'digital gold' (2025). One position, sourced.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Dan Patrick and Bitcoin: The Asset, Not the Megawatts"),
     type: "article",
     title: "Dan Patrick and Bitcoin: The Asset, Not the Megawatts",
     description:

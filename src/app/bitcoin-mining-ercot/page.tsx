@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 
 // DISCRETION: sitemap-only, like the Exposure Map. Indexed and in llms.txt,
 // but no inbound links from the shell or sibling pages — this page builds
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     "How ERCOT actually treats Bitcoin miners — the energy-only market, demand response and ancillary services, 4CP, the Large Flexible Load rules, SB 6's kill switch, and the honest fights over it. The market companion to the Texas mining map.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Bitcoin Mining and ERCOT: How the Texas Grid Treats Miners"),
     type: "article",
     title: "Bitcoin Mining and ERCOT: How the Texas Grid Treats Miners",
     description:

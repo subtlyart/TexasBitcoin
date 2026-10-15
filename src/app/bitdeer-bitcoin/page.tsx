@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   BITDEER_LAST_VERIFIED,
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "Bitdeer Technologies Group and Texas, 2018–2026, sourced from its SEC filings, Bitmain's releases, the county record, and the press: the Singapore company spun out of Bitmain in January 2021, controlled by Jihan Wu with 69.5% of the votes, that operates the 563-megawatt Rockdale mine four-tenths of a mile from Riot's on the same former Alcoa land. Bitmain's $500 million, 400-job promise of August 2018, the abatement lost when the crew fell to five, the 25 megawatts launched anyway in October 2019, the CNBC dispatch that called it 'aloof, steeped in mystery,' the 'nearly $50 million' from the grid, the Chinese-ownership question, Tether's stake, the first profitable year since 2021, 310 megawatts shed in Winter Storm Fern, 200 acres bought for $100 million in September 2026 - beside a 300-million-gallon water bill the Tribune had to find and an AI conversion that after two years is still 'in active evaluation' while the neighbor signs for $9.1 billion.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Bitdeer: The Mine Next Door"),
     type: "article",
     title: "Bitdeer: The Mine Next Door",
     description:

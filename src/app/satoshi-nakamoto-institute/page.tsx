@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   SNI_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "The sourced history of the Satoshi Nakamoto Institute, the Austin nonprofit founded in November 2013 by Michael Goldstein, Daniel Krawisz, and Pierre Rochard out of a University of Texas reading group: the Complete Satoshi archive, the cypherpunk Library, the Mempool essays that coined 'hyperbitcoinization' and 'speculative attack,' the co-founder who left for BSV, and the 2024 relaunch as a 501(c)(3) with OpenSats funding.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Satoshi Nakamoto Institute: The Canon Was Written in Austin"),
     type: "article",
     title: "The Satoshi Nakamoto Institute: The Canon Was Written in Austin",
     description:

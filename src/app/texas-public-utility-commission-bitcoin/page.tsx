@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   PUC_LAST_VERIFIED,
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "The Public Utility Commission of Texas and Bitcoin, 2021–2026, sourced: the post-Uri five-seat commission; ERCOT's March 2022 interim process and December 2022 curtailment program for the mines; Gleeson registered 'on' at the 2023 SB 1751 and SB 1929 hearing; seventeen months to adopt the mining registry, 16 TAC § 25.114, on November 21, 2024; the Attorney General's May 2025 order to release the registrations and the commission's June 27, 2025 suit to keep them secret; SB 6's five projects - forecasting and co-location rules adopted, interconnection standards still proposed, 12CP replacing 4CP with a December 2026 decision; staff naming crypto mines as loads that avoid transmission costs; Batch Zero, the Governor's 474-gigawatt letter, and the August 2026 audit sweeping in every crypto site over 25 MW.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Public Utility Commission and Bitcoin: The List It Keeps"),
     type: "article",
     title: "The Public Utility Commission and Bitcoin: The List It Keeps",
     description:

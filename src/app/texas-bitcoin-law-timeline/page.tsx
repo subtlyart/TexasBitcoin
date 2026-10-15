@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { LAW_LAST_VERIFIED, lawMilestones, lawSources } from "@/lib/law-timeline";
 import { LawTimeline } from "@/components/law-timeline";
 import { SeamMark } from "@/components/seam-mark";
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     "The interactive timeline of Bitcoin law in Texas — from the 2014 'not money' memo to the 2025 Strategic Bitcoin Reserve, every bill and memo verified.",
   alternates: { canonical: `${site.url}/texas-bitcoin-law-timeline` },
   openGraph: {
+    images: ogImages("The Texas Bitcoin Law Timeline"),
     type: "article",
     title: "The Texas Bitcoin Law Timeline",
     description:

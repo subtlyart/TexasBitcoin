@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   PARKER_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Tan Parker's Bitcoin record, sourced: the Flower Mound legislator who wrote HB 4474, the 2021 law that put 'virtual currency' into the Texas Uniform Commercial Code, and HB 1576, the Work Group on Blockchain Matters - after his 2019 version died in Calendars. In the Senate since 2023 and Majority Leader since January 2025: coauthor of the reserve, sponsor of the commingling ban and the Cyber Command, and author of eight digital-asset bills that never left committee, including an oil-backed stablecoin filed a year before he appeared on the advisory board of a company selling one.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Tan Parker: The Man Who Defined the Asset"),
     type: "article",
     title: "Tan Parker: The Man Who Defined the Asset",
     description:

@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   KING_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Phil King's Bitcoin record, sourced: the Weatherford senator who helped deregulate the Texas grid as a House freshman in 1999, chaired Regulated Industries, coauthored the 2015 Bullion Depository and the 2019 blockchain work group, voted both 2023 mining bills out of Business and Commerce as vice chair, and authored SB 6 - the 2025 large-load law that made registration, backup-generation disclosure, and ERCOT curtailment the rule for every load over 75 MW. The kill switch, the rules, and the queue that grew from 63 to 474 gigawatts anyway.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Phil King: The Man Who Wrote the Kill Switch"),
     type: "article",
     title: "Phil King: The Man Who Wrote the Kill Switch",
     description:

@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import { YouTubeEmbed } from "@/components/youtube-embed";
 import {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "The sourced account of Ross Ulbricht - the Austin-born founder of Silk Road, Bitcoin's first use case - his double-life sentence, the seized coins, and the full pardon he won on January 21, 2025.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Ross Ulbricht, Silk Road, and Bitcoin's First Use Case"),
     type: "article",
     title: "Ross Ulbricht, Silk Road, and Bitcoin's First Use Case",
     description:

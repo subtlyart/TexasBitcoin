@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   PAXTON_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Angela Paxton's Bitcoin record, sourced: the McKinney senator who was Senate sponsor of HB 4474 and HB 1576, the 2021 laws that wrote 'virtual currency' into the Texas Uniform Commercial Code and created the Work Group on Blockchain Matters - 31–0 and 31–0, on the uncontested calendar, without a floor speech. Her own three blockchain bills that session died in committee. The Lieutenant Governor's appointee to the work group; the Texas Blockchain Council's 2022 Legislator of the Year; no digital-asset bill under her name since, and reliable yea votes on the reserve, the registry, the brake, and the kill switch.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Angela Paxton: The Senator Who Carried the Definition"),
     type: "article",
     title: "Angela Paxton: The Senator Who Carried the Definition",
     description:

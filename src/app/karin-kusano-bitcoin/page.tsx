@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   KUSANO_LAST_VERIFIED,
   kusanoSources,
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "Karin Kusano's Bitcoin record, sourced and hedged: the Dallas-Fort Worth self-custody educator known as Cryptomommi who turned a lockout from conventional banking into a practice teaching cold storage and key ownership, chiefly to women and survivors. What the record confirms, what rests on her own account, and why a Bitcoin-centric site covers a self-custody teacher.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Karin Kusano: Teaching Self-Custody as Financial Sovereignty"),
     type: "article",
     title: "Karin Kusano: Teaching Self-Custody as Financial Sovereignty",
     description:

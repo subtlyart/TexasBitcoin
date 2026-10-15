@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   MUSK_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Why Tesla bought $1.5B in Bitcoin, stopped taking it over energy, and sold most of it - and how Elon Musk's AI data centers now dwarf Bitcoin on the Texas grid.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Elon Musk, Tesla, and the Bitcoin Energy Question"),
     type: "article",
     title: "Elon Musk, Tesla, and the Bitcoin Energy Question",
     description:

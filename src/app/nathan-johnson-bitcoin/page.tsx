@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   JOHNSON_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Nathan Johnson's Bitcoin record, sourced: the Dallas Democrat who unseated Don Huffines in 2018, authored SB 1929 - the 2023 law that makes Bitcoin mines above 75 MW register with the Public Utility Commission - argued the donation clause out of the Texas Strategic Bitcoin Reserve ('billionaire tech bros owning a branch of the state government'), then voted for the reserve on the floor while Kelly Hancock voted no. The registry, the rule, the roll call, and the attorney general race.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Nathan Johnson: The Democrat Who Wrote the Registry"),
     type: "article",
     title: "Nathan Johnson: The Democrat Who Wrote the Registry",
     description:

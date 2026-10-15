@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   KOLKHORST_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Lois Kolkhorst's Bitcoin record, sourced: the Brenham senator who authored Senate Bill 1751 - the 2023 bill to register Bitcoin mines above 10 MW, cap them at 10% of ERCOT demand response, and end their tax abatements. The 37-gigawatt hearing, 'part of their business model,' the 11–0 committee and 31–0 Senate votes, the open letter and the industry campaign, the death in House State Affairs, Riot's $31.7 million August, and the half of her design that became law anyway. She was also the Senate sponsor of the 2015 Texas Bullion Depository.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Lois Kolkhorst: The Senator Who Wrote the Brake"),
     type: "article",
     title: "Lois Kolkhorst: The Senator Who Wrote the Brake",
     description:

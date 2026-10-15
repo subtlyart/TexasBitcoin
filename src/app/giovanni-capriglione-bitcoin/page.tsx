@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   CAPRIGLIONE_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Giovanni Capriglione's Bitcoin record, sourced: the Southlake engineer-investor and seven-term Texas House member who authored the 2015 Bullion Depository, joint-authored the 2021 UCC virtual-currency definition, wrote the 2023 flared-gas mining exemption, filed the first Texas reserve bill (HB 1598, Dec 12, 2024), heard SB 21 in his own DOGE committee, carried it 101–42, chaired the conference - and became president of the Texas Blockchain Council in January 2026 while still in office.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Giovanni Capriglione: The Chairman Who Carried the Reserve"),
     type: "article",
     title: "Giovanni Capriglione: The Chairman Who Carried the Reserve",
     description:

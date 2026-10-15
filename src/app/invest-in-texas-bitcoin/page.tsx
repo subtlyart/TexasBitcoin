@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   EXPOSURE_LAST_VERIFIED,
   exposureSources,
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "A reference map of every route into the Texas Bitcoin economy - public mining stocks with Texas operations, Bitcoin itself, the state reserve (closed to private money), the Texas Bitcoin bond that doesn't exist, accredited-only venture funds, and the new Texas Stock Exchange. Research, not financial advice.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Exposure Map - Who Can Own a Piece of Bitcoin Country"),
     type: "article",
     title: "The Exposure Map - Who Can Own a Piece of Bitcoin Country",
     description:

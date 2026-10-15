@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   LEWIS_LAST_VERIFIED,
   lewisSources,
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "Parker Lewis's Bitcoin record, sourced: the Deutsche Bank and Hayman Capital analyst who wrote the seventeen 'Gradually, Then Suddenly' essays from Unchained's Austin office (July 2019 to December 2020), published them as a book in 2023, wrote to Senator Kolkhorst against SB 1751, moved to Zaprite to work on payments, and stewards the Bitcoin Commons and the off-SXSW Bitcoin Takeover. The essays, the room, and the honest counterweight.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Parker Lewis: The Man Who Wrote Why Bitcoin Is Money"),
     type: "article",
     title: "Parker Lewis: The Man Who Wrote Why Bitcoin Is Money",
     description:

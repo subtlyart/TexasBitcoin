@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, BookOpen } from "lucide-react";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { LoneStar } from "@/components/lone-star";
 import {
   terms,
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "Every word you'll hear about Bitcoin in Texas, explained in plain English — Bitcoin, mining, ERCOT, demand response, SB 21, the Strategic Bitcoin Reserve, Lightning, and more. Written for your first day.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Texas Bitcoin Glossary — Plain-English Terms"),
     type: "website",
     title: "Texas Bitcoin Glossary — Plain-English Terms",
     description:

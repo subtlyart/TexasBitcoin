@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   ERCOT_LAST_VERIFIED,
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "ERCOT and Bitcoin mining, 2020–2026, sourced from the grid operator's own reports and its market monitor: the first controllable load in 2020; the 2022 queue that ran from 17 to 35 gigawatts in four months; the December 2022 curtailment program and Winter Storm Elliott's 91.5% cut; the planning documents that count every large flexible load - 'typically a crypto-currency mining site' - as non-firm; mining at 1,530 megawatts in 2022, 3,600 in 2024, 4,600 in 2025, and 4,100 shed in Winter Storm Fern; all twelve registered controllable loads crypto mines; 64% of the emergency reserve service, which the monitor says 'essentially pays them to do what they would already do'; Riot's $31.7 million month, of which ERCOT's share was $7 million; the queue that outgrew the process, Batch Zero, and the audit.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("ERCOT and Bitcoin: The Load It Counts as a Resource"),
     type: "article",
     title: "ERCOT and Bitcoin: The Load It Counts as a Resource",
     description:

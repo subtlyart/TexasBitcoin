@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   AG_LAST_VERIFIED,
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "The Texas Attorney General's office and Bitcoin, 2015–2026, sourced: the eighteen-state suit against the SEC filed November 14, 2024 and stayed since April 2025; the Celsius, Voyager, and Binance.US bankruptcy objections signed for the State Securities Board; the May 2025 ruling ordering the PUC to release the miners' registration data, and the PUC's suit against the office; the one coalition letter signed and the ones skipped; zero formal opinions on virtual currency in eleven years; zero enforcement actions or kiosk suits while Texans lost $56.8 million to kiosk fraud in 2025 and peer states sued; and the November 3, 2026 handover.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Texas Attorney General and Bitcoin: One Suit, No Opinions"),
     type: "article",
     title: "The Texas Attorney General and Bitcoin: One Suit, No Opinions",
     description:

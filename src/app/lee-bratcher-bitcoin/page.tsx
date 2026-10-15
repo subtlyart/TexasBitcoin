@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   BRATCHER_LAST_VERIFIED,
   bratcherSources,
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "Lee Bratcher's Bitcoin record, sourced: the Army officer and political-science professor who founded the Texas Blockchain Council in 2019, spearheaded HB 4474 and HB 1576 in 2021, sat on the state's Blockchain Work Group, ran the campaign that helped kill SB 1751, sued the Energy Department over the 2024 miner survey and won in a week, testified for the Strategic Bitcoin Reserve - then left in January 2026 to run policy for the miner Cipher. The statutes, the fights, and the turn.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Lee Bratcher: The Man Who Put the Industry in the Room"),
     type: "article",
     title: "Lee Bratcher: The Man Who Put the Industry in the Room",
     description:

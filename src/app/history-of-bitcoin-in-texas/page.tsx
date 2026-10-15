@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "The History of Bitcoin in Texas",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     "How a 2014 banking memo, China's mining ban, an idled aluminum smelter, and a 2025 state reserve made Texas the capital of Bitcoin — sourced.",
   alternates: { canonical: `${site.url}/history-of-bitcoin-in-texas` },
   openGraph: {
+    images: ogImages("The History of Bitcoin in Texas"),
     type: "article",
     title: "The History of Bitcoin in Texas",
     description:

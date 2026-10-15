@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import {
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     "The Texas Comptroller of Public Accounts and Bitcoin, 2015–2026, sourced: the bullion depository (HB 483, 2015), the Fiscal Notes studies, the 'I can do that already' testimony, SB 21's custody, committee, and reporting duties, Fund 1018, the two $5 million ETF purchases, the unawarded custody RFP, the June 2025 franchise-tax ruling, and the December 31, 2026 report.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Texas Comptroller and Bitcoin: The Office That Holds It"),
     type: "article",
     title: "The Texas Comptroller and Bitcoin: The Office That Holds It",
     description:

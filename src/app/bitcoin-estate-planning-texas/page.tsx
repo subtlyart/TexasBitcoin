@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 
 // DISCRETION: sitemap-only, like the Exposure Map and /bitcoin-mining-ercot.
 // Indexed and in llms.txt, but no inbound links from the shell or sibling
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "What the record says about owning Bitcoin across a Texas lifetime — buying without a state license, no state income or death taxes, the $15M federal exemption, community property, the stepped-up basis, and why Texas's digital-asset law cannot open a hardware wallet.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Bitcoin Estate Planning in Texas: Buy, Hold, Die"),
     type: "article",
     title: "Bitcoin Estate Planning in Texas: Buy, Hold, Die",
     description:

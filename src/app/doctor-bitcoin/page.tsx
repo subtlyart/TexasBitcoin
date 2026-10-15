@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "Doctor Bitcoin: The Mark Hopkins Case",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     "The sourced story of Mark Hopkins, the North Texas trader prosecuted under federal law Texas never required — and what his case taught P2P bitcoiners.",
   alternates: { canonical: `${site.url}/doctor-bitcoin` },
   openGraph: {
+    images: ogImages("Doctor Bitcoin: Mark Hopkins and the Federal Line Texas Never Drew"),
     type: "article",
     title: "Doctor Bitcoin: Mark Hopkins and the Federal Line Texas Never Drew",
     description:

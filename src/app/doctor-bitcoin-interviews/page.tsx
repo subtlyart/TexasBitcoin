@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 
 export const metadata: Metadata = {
   title: "The Doctor Bitcoin Tapes — Mark Hopkins",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     "Mark 'Doctor Bitcoin' Hopkins, blended from every interview he's given — the educator, the raid, the paperwork crime, and questions only he can answer.",
   alternates: { canonical: `${site.url}/doctor-bitcoin-interviews` },
   openGraph: {
+    images: ogImages("The Doctor Bitcoin Tapes"),
     type: "article",
     title: "The Doctor Bitcoin Tapes",
     description:

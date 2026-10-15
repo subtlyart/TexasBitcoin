@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import { aboutGraph } from "@/lib/same-as";
 import {
   ABBOTT_LAST_VERIFIED,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     "Greg Abbott's Bitcoin record, sourced: the 2014 campaign that took bitcoin donations before any state owned the asset, the 2021 legal foundation (HB 4474, HB 1576), the post-Uri miners-as-grid-asset thesis, the SB 21 signature creating the Texas Strategic Bitcoin Reserve - and the 2026 directive making large loads pay their own way.",
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("Greg Abbott and Bitcoin: The Governor Who Took It First"),
     type: "article",
     title: "Greg Abbott and Bitcoin: The Governor Who Took It First",
     description:

@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ogImages } from "@/lib/og";
 import {
   enforcementReport as r,
   formatUsd,
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
   description: `What ${r.caseCount} DOJ cases say about federal crypto enforcement in Texas: the acceleration from ${r.firstYear} to a ${r.peakYear.year} peak of ${r.peakYear.cases} announced cases, ${formatUsd(r.totalForfeituresUsd)} in announced forfeitures, the money-laundering and unlicensed-transmission core, and which of the four federal districts carries the docket. Computed from the case tracker's dataset on every refresh.`,
   alternates: { canonical: pageUrl },
   openGraph: {
+    images: ogImages("The Enforcement Ledger: Crypto Prosecutions in Texas"),
     type: "article",
     title: "The Enforcement Ledger: Crypto Prosecutions in Texas",
     description:
