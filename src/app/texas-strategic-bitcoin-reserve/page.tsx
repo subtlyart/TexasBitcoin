@@ -570,6 +570,16 @@ export default function ReservePage() {
             cryptocurrency addresses.<C n={2} /> It is a fund designed to
             accumulate, not just to hold a one-time allocation.
           </p>
+          <p>
+            With the donation door closed, the reserve is not a channel for
+            private money — Texans cannot buy into it. For the routes that are
+            open to individuals, from public miners with Texas operations to the
+            new Texas Stock Exchange, see{" "}
+            <Link href="/invest-in-texas-bitcoin">
+              how to invest in the Texas Bitcoin economy
+            </Link>
+            .
+          </p>
 
             <ReserveGrowthFigure />
 

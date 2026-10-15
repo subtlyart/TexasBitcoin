@@ -465,7 +465,13 @@ export default function MiningMapPage() {
             published number or reputable trade-press reporting, cited below.
             Smaller and off-grid operations — including the flare-gas miners of
             the Permian Basin — aren&apos;t pinned here, so treat this as the
-            industrial backbone, not a census. The dataset was last verified{" "}
+            industrial backbone, not a census. These are real sites running their
+            own hardware — not the rented-hashrate and cloud-mining contracts sold
+            to the public, which are a different proposition entirely (
+            <Link href="/rented-hashrate-cloud-mining">
+              how to evaluate one
+            </Link>
+            ). The dataset was last verified{" "}
             {MAP_LAST_VERIFIED}, and we re-verify it quarterly alongside{" "}
             <Link href="/history-of-bitcoin-in-texas">
               the history of Bitcoin in Texas

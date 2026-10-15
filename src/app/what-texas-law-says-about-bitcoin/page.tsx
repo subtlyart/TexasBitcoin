@@ -503,7 +503,13 @@ export default function TexasLawPage() {
             state: providers must segregate customer funds and file
             auditor-attested reserve reports with the Department of Banking.
             <C n={6} /> Pro-Bitcoin and anti-trust-me is the consistent Texas
-            posture.
+            posture. None of it, though, can open a hardware wallet — which is
+            why holding Bitcoin across a lifetime raises questions the statutes
+            don&apos;t answer; see{" "}
+            <Link href="/bitcoin-estate-planning-texas">
+              Bitcoin estate planning in Texas
+            </Link>
+            .
           </p>
 
           <LegalPlumbingFigure />

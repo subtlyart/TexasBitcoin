@@ -257,7 +257,13 @@ export default function ErcotMiningPage() {
             credits and $7.4 million in demand-response payments –{" "}
             <strong>$31.7 million total</strong>, against 333 mined Bitcoin
             worth roughly $8.9 million.<C n={5} /><C n={6} /> For that month,
-            the flexibility was worth more than triple the hashrate.
+            the flexibility was worth more than triple the hashrate. That revenue
+            stack belongs to operators who own the machines and the power
+            contracts — not to buyers of{" "}
+            <Link href="/rented-hashrate-cloud-mining">
+              rented hashrate or cloud-mining contracts
+            </Link>
+            , who capture none of it.
           </p>
 
           <h2>What is 4CP?</h2>
