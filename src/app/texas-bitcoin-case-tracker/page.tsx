@@ -74,10 +74,31 @@ export default function CaseTrackerPage() {
     description: `Structured dataset of ${trackerStats.case_count} federal money-transmission and cryptocurrency prosecutions in Texas's four federal districts, extracted from public U.S. Department of Justice press releases: case title, date, district, statutes cited, themes, and forfeiture amounts.`,
     url: pageUrl,
     license: "https://creativecommons.org/licenses/by-sa/4.0/",
+    isAccessibleForFree: true,
     creator: { "@type": "Organization", name: site.name, url: site.url },
     dateModified: trackerDerived.lastUpdated,
     temporalCoverage: `${trackerDerived.earliestYear}/..`,
     spatialCoverage: { "@type": "Place", name: "Texas, United States" },
+    variableMeasured: [
+      "case title",
+      "filing or announcement date",
+      "federal district",
+      "statutes cited",
+      "forfeiture amount (USD)",
+      "themes",
+    ],
+    distribution: [
+      {
+        "@type": "DataDownload",
+        encodingFormat: "application/json",
+        contentUrl: `${pageUrl}/dataset.json`,
+      },
+      {
+        "@type": "DataDownload",
+        encodingFormat: "text/csv",
+        contentUrl: `${pageUrl}/dataset.csv`,
+      },
+    ],
   };
 
   const faqJsonLd = {
@@ -374,6 +395,25 @@ export default function CaseTrackerPage() {
             announcements. Every district count, forfeiture figure, and date
             on this page is computed directly from the dataset at build time
             — nothing is hand-maintained.
+          </p>
+          <p className="mt-4 text-sm leading-relaxed text-muted">
+            Download the full dataset —{" "}
+            <a
+              href={`${pageUrl}/dataset.json`}
+              className="underline decoration-accent/40 underline-offset-2 hover:text-accent-soft"
+            >
+              JSON
+            </a>{" "}
+            ·{" "}
+            <a
+              href={`${pageUrl}/dataset.csv`}
+              className="underline decoration-accent/40 underline-offset-2 hover:text-accent-soft"
+            >
+              CSV
+            </a>{" "}
+            — all {trackerStats.case_count} cases with source links, generated{" "}
+            {formatDate(trackerDerived.lastUpdated)}. Free to reuse with
+            attribution to {site.name} ({site.domain}) under CC BY-SA 4.0.
           </p>
         </section>
       </article>
