@@ -382,7 +382,12 @@ export default function JimmySongBitcoinPage() {
             lecturer.<C n={7} /><C n={8} /> The point of all of it is the
             same: the number of people who can read a Bitcoin transaction at
             the byte level is the network&apos;s real security budget, and
-            Song has done more to grow it than any other single teacher.
+            Song has done more to grow it than any other single teacher. The
+            developers he trains are the ones building{" "}
+            <Link href="/bitcoin-frontier-stack-texas">
+              the Bitcoin frontier stack
+            </Link>{" "}
+            — Lightning, Taproot, and the assets that settle to the base layer.
           </p>
           <p>
             The code record is smaller and worth stating precisely, because
