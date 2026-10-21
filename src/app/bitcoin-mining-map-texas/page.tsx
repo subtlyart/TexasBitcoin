@@ -511,7 +511,13 @@ export default function MiningMapPage() {
             prices spiked.<C n={15} /><C n={16} /> That playbook — mine cheap,
             curtail high — became standard practice through ERCOT&apos;s{" "}
             <strong>demand response</strong> programs, which pay large loads to
-            power down when the grid is stressed.<C n={17} />
+            power down when the grid is stressed.<C n={17} /> The physics
+            underneath it — miners as a buyer of last resort for stranded power,
+            flare-gas capture, and heat reuse — is the subject of{" "}
+            <Link href="/bitcoin-energy-engineering-texas">
+              Bitcoin as a thermodynamic battery
+            </Link>
+            .
           </p>
 
           <MiningCurtailFigure />

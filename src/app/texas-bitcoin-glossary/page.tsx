@@ -39,11 +39,19 @@ export default function GlossaryPage() {
     "@id": `${pageUrl}#glossary`,
     name: "Texas Bitcoin Glossary",
     url: pageUrl,
+    // Term and definition are the spoken-answer pair; speakable points voice
+    // assistants and answer engines at exactly that markup (<dt>/<dd>).
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["dt", "dd"],
+    },
     hasDefinedTerm: terms.map((t) => ({
       "@type": "DefinedTerm",
       name: t.term,
       description: t.definition,
       inDefinedTermSet: `${pageUrl}#glossary`,
+      // Canonical external identity, where the term maps to one unambiguously.
+      ...(t.sameAs ? { sameAs: t.sameAs } : {}),
     })),
   };
 

@@ -45,6 +45,12 @@ export interface Term {
   definition: string;
   // Optional deeper read on this site, with descriptive anchor text.
   related?: { href: string; label: string };
+  // Canonical external identity for the concept (Wikipedia, official site), for
+  // schema.org DefinedTerm `sameAs`. Only set where a term maps to one
+  // unambiguous public entity — Texas-statute terms (SM 1037, SB 21, HB 1056,
+  // § 1960, the reserve) have no such external entity and are left unset; they
+  // are disambiguated by their `related` deep page instead.
+  sameAs?: string[];
 }
 
 // Ordered within each category from most foundational to most specific.
@@ -52,6 +58,7 @@ export const terms: Term[] = [
   // ── The basics ──────────────────────────────────────────────────────────
   {
     term: "Bitcoin",
+    sameAs: ["https://en.wikipedia.org/wiki/Bitcoin"],
     category: "basics",
     definition:
       "A form of money you can hold and send yourself, over the internet, without a bank or company in the middle. There will only ever be 21 million of it, and no one can change that rule.",
@@ -62,6 +69,7 @@ export const terms: Term[] = [
   },
   {
     term: "Blockchain",
+    sameAs: ["https://en.wikipedia.org/wiki/Blockchain"],
     category: "basics",
     definition:
       "The shared public record of every Bitcoin transaction, copied across thousands of computers so no single one can quietly rewrite it. Think of it as a ledger everyone keeps a copy of at once.",
@@ -106,6 +114,7 @@ export const terms: Term[] = [
   },
   {
     term: "Proof-of-work",
+    sameAs: ["https://en.wikipedia.org/wiki/Proof_of_work"],
     category: "basics",
     definition:
       "The method Bitcoin uses to agree on its record without a referee: computers compete to solve a hard math puzzle, and the winner adds the next page to the ledger. The work costs real electricity, which is what makes cheating expensive — and ties Bitcoin to the power grid.",
@@ -134,6 +143,7 @@ export const terms: Term[] = [
   // ── Mining & the grid ───────────────────────────────────────────────────
   {
     term: "ERCOT",
+    sameAs: ["https://en.wikipedia.org/wiki/Electric_Reliability_Council_of_Texas", "https://www.ercot.com"],
     category: "grid",
     definition:
       "The Electric Reliability Council of Texas — the nonprofit that runs the state's standalone power grid, which covers most of Texas. Bitcoin miners plug into this grid, and ERCOT's rules shape where and when they run.",
@@ -144,6 +154,7 @@ export const terms: Term[] = [
   },
   {
     term: "Demand response",
+    sameAs: ["https://en.wikipedia.org/wiki/Demand_response"],
     category: "grid",
     definition:
       "Programs that pay large power users to switch off quickly when the grid is strained. Bitcoin miners can power down in seconds, so they get paid to act as a shock absorber during heat waves and cold snaps.",
@@ -160,6 +171,7 @@ export const terms: Term[] = [
   },
   {
     term: "Flared / stranded gas",
+    sameAs: ["https://en.wikipedia.org/wiki/Gas_flaring"],
     category: "grid",
     definition:
       "Natural gas that oil wells produce with no pipeline to sell it, so it's burned off and wasted. Some Texas miners set up on-site to turn that otherwise-wasted gas into electricity and hashrate.",
@@ -236,6 +248,7 @@ export const terms: Term[] = [
   // ── The frontier ────────────────────────────────────────────────────────
   {
     term: "Lightning Network",
+    sameAs: ["https://en.wikipedia.org/wiki/Lightning_Network"],
     category: "frontier",
     definition:
       "A faster layer built on top of Bitcoin that settles tiny payments instantly and for almost no fee — think buying a coffee rather than wiring money. It clears back down to the main Bitcoin ledger underneath.",
@@ -252,6 +265,7 @@ export const terms: Term[] = [
   },
   {
     term: "Stablecoin",
+    sameAs: ["https://en.wikipedia.org/wiki/Stablecoin"],
     category: "frontier",
     definition:
       "A digital token designed to hold steady at a fixed value, usually one U.S. dollar. We cover stablecoins only where they settle onto Bitcoin's base layer — not as a doorway to the wider “crypto” world.",
