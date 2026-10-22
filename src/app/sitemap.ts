@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/bitcoin-mining-map-texas", priority: 0.9, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-bitcoin-law-timeline", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-30" },
     { path: "/texas-strategic-bitcoin-reserve", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-30" },
+    { path: "/texas-bitcoin-reserve-game-theory", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-10-22" },
     { path: "/who-holds-the-texas-bitcoin-reserve", priority: 0.8, changeFrequency: "weekly" as const, lastMod: "2026-09-29" },
     { path: "/elon-musk-bitcoin-energy", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-19" },
     { path: "/ross-ulbricht-silk-road-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-23" },

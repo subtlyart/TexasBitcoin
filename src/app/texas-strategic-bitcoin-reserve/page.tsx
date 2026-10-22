@@ -643,7 +643,13 @@ export default function ReservePage() {
             its own committee, its own reporting cadence, and its own line in the
             Comptroller&apos;s manual of accounts.<C n={6} /> The design is the
             statement: a reserve is something a state builds on purpose and
-            reports on, not a position it happens to carry.
+            reports on, not a position it happens to carry. Why that structure
+            reads as a deliberate strategic move — a credible commitment and a
+            focal threshold other states are copying — is the subject of{" "}
+            <Link href="/texas-bitcoin-reserve-game-theory">
+              the game theory of the Texas Bitcoin reserve
+            </Link>
+            .
           </p>
 
             <ReserveStatesFigure />
