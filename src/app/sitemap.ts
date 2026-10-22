@@ -72,6 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/texas-gold-vs-bitcoin", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/texas-bitcoin-miners-ai-pivot", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-08-30" },
     { path: "/bitcoin-frontier-stack-texas", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-10-21" },
+    { path: "/run-a-bitcoin-node-texas", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-10-22" },
     { path: "/bitcoin-energy-engineering-texas", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-10-21" },
     { path: "/texas-bitcoin-bills-2027", priority: 0.7, changeFrequency: "weekly" as const, lastMod: "2026-09-30" },
     { path: "/texas-crypto-archive", priority: 0.5, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },

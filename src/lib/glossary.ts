@@ -111,6 +111,10 @@ export const terms: Term[] = [
     category: "basics",
     definition:
       "A computer running Bitcoin's software that keeps its own full copy of the ledger and checks that every transaction follows the rules. The more independent nodes there are, the harder the network is to cheat or capture.",
+    related: {
+      href: "/run-a-bitcoin-node-texas",
+      label: "why and when to run your own node",
+    },
   },
   {
     term: "Proof-of-work",
