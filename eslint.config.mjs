@@ -1,19 +1,15 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import next from "eslint-config-next/core-web-vitals";
+import nextTypescript from "eslint-config-next/typescript";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
+// eslint-config-next v16 ships native flat configs (arrays of Linter.Config),
+// spread directly — the old FlatCompat.extends() wrapper is gone and creates a
+// circular-structure error against the v16 plugin.
 const eslintConfig = [
   // Never lint generated build output or vendored deps — bare `eslint` (unlike
-  // `next lint`) does not exclude these by default.
+  // the removed `next lint`) does not exclude these by default.
   { ignores: [".next/**", "node_modules/**", "out/**", "build/**", "next-env.d.ts"] },
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...next,
+  ...nextTypescript,
 ];
 
 export default eslintConfig;

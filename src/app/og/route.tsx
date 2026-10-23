@@ -9,9 +9,9 @@ import { site } from "@/lib/site";
 // card, matching the root `opengraph-image.tsx` so a bare /og is never blank.
 //
 // Same visual language as the root OG mark and /logo: the lone star in Bitcoin
-// orange on the site's warm near-black, Fraunces-less (edge runtime uses the
+// orange on the site's warm near-black, Fraunces-less (this image route uses the
 // system serif/sans stack — next/font is not available here).
-export const runtime = "edge";
+export const runtime = "nodejs";
 export const contentType = "image/png";
 
 const STAR_PATH =

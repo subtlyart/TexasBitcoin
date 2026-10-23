@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 // Stable brand logo (512×512) for schema.org Organization/publisher `logo`.
 // Mirrors the favicon and OG mark: the lone star in Bitcoin orange on the
 // site's warm near-black. Served at /logo.
-export const runtime = "edge";
+export const runtime = "nodejs";
 export const contentType = "image/png";
 
 const STAR_PATH =
