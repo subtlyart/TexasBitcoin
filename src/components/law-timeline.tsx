@@ -44,39 +44,39 @@ export function LawTimeline() {
     if (typeof IntersectionObserver === "undefined") return; // stay visible
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    // Only fade nodes that are below the viewport right now — nothing the
-    // reader can already see ever blinks out.
-    const foldLine = window.innerHeight * 0.92;
-    const below = new Set<string>();
-    nodeRefs.current.forEach((el, id) => {
-      if (el.getBoundingClientRect().top > foldLine) below.add(id);
-    });
-    if (below.size === 0) return;
-    setHidden(below);
-
+    // The observer does all the state work — including the initial pass, which
+    // fires synchronously after observe(). Nodes below the viewport fade in
+    // (added to `hidden`); nodes already in or above view never blink out. This
+    // keeps all setState inside the async observer callback rather than the
+    // effect body, and content stays rendered on the server and for no-JS
+    // readers (hidden starts empty).
     const observer = new IntersectionObserver(
       (entries) => {
-        const revealed: string[] = [];
-        for (const entry of entries) {
-          if (!entry.isIntersecting) continue;
-          const id = entry.target.getAttribute("data-milestone-id");
-          if (id) revealed.push(id);
-          observer.unobserve(entry.target);
-        }
-        if (revealed.length === 0) return;
         setHidden((prev) => {
           const next = new Set(prev);
-          for (const id of revealed) next.delete(id);
-          return next;
+          let changed = false;
+          for (const entry of entries) {
+            const id = entry.target.getAttribute("data-milestone-id");
+            if (!id) continue;
+            if (entry.isIntersecting) {
+              if (next.delete(id)) changed = true;
+              observer.unobserve(entry.target);
+            } else if (entry.boundingClientRect.top > 0) {
+              // Below the fold — fade until it scrolls into view. (top < 0 is
+              // above the viewport; those stay visible.)
+              if (!next.has(id)) {
+                next.add(id);
+                changed = true;
+              }
+            }
+          }
+          return changed ? next : prev;
         });
       },
       { rootMargin: "0px 0px -10% 0px", threshold: 0.1 }
     );
 
-    below.forEach((id) => {
-      const el = nodeRefs.current.get(id);
-      if (el) observer.observe(el);
-    });
+    nodeRefs.current.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
