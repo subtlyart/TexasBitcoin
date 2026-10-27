@@ -16,7 +16,7 @@
 // general (SD-5), when the 90th Legislature files reserve bills (from
 // November 9, 2026), and when the first SB 21 biennial report posts.
 
-export const SCHWERTNER_LAST_VERIFIED = "September 1, 2026";
+export const SCHWERTNER_LAST_VERIFIED = "October 26, 2026";
 
 export interface SchwertnerSource {
   id: number;
@@ -50,6 +50,7 @@ export const schwertnerSources: SchwertnerSource[] = [
   { id: 21, label: "Lt. Gov. Dan Patrick - Statement on the Bipartisan Passage of Senate Bill 21 (March 6, 2025): \"digital gold\"", url: "https://www.ltgov.texas.gov/2025/03/06/lt-gov-dan-patrick-statement-on-the-bipartisan-passage-of-senate-bill-21-establishing-the-texas-bitcoin-reserve/" },
   { id: 22, label: "The Center Square - Proposed bill would create Texas Strategic Bitcoin Reserve: committee opposition to the donation clause (February 2025)", url: "https://www.thecentersquare.com/texas/article_54654c7a-f075-11ef-8116-97ce539fa96d.html" },
   { id: 23, label: "Texas Legislature Online - SB 778 (89R) bill history: author Schwertner; filed January 14, 2025; referred to Finance February 7, 2025, no further action", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB778" },
+  { id: 24, label: "Texas Secretary of State - Important 2026 election dates: November 3, 2026 uniform election; early voting by personal appearance October 19–30, 2026", url: "https://www.sos.texas.gov/elections/voter/important-election-dates.shtml" },
 ];
 
 export type SchwertnerTimelineKind = "path" | "grid" | "reserve" | "watch";
@@ -170,8 +171,8 @@ export const schwertnerTimeline: SchwertnerEvent[] = [
     dateLabel: "November 3, 2026",
     title: "The ballot",
     detail:
-      "Schwertner stands for another term in Senate District 5. Whatever the result, the 90th Legislature convenes January 12, 2027 with the reserve's author either back in his committee chair or gone from it - and the expansions drafted in 2025's dead bills waiting for a sponsor.",
+      "Schwertner stands for another term in Senate District 5. Early voting by personal appearance runs October 19–30, 2026; as of October 26 it is underway, and no result is in. Whatever the result, the 90th Legislature convenes January 12, 2027 with the reserve's author either back in his committee chair or gone from it - and the expansions drafted in 2025's dead bills waiting for a sponsor.",
     kind: "watch",
-    sourceIds: [20],
+    sourceIds: [20, 24],
   },
 ];

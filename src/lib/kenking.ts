@@ -22,7 +22,7 @@
 // general election and when House State Affairs files its interim report
 // on data centers and SB 6 implementation.
 
-export const KENKING_LAST_VERIFIED = "September 24, 2026";
+export const KENKING_LAST_VERIFIED = "October 26, 2026";
 
 export interface KenKingSource {
   id: number;
@@ -69,6 +69,7 @@ export const kenKingSources: KenKingSource[] = [
   { id: 34, label: "Texans for Fiscal Responsibility - Fiscal Responsibility Index, Ken King, 2025: 55, an F, the seventh consecutive failing grade", url: "https://index.texastaxpayers.com/legislators/ken-king/2025-index" },
   { id: 35, label: "Ballotpedia - Texas House of Representatives District 88: November 3, 2026 general, Ken King (R) v. Heather Wallace (D)", url: "https://ballotpedia.org/Texas_House_of_Representatives_District_88" },
   { id: 36, label: "Texas Rural Reporter - Interview with Rep. Ken King on his wildfire bills (March 14, 2025): \"The Panhandle doesn't have a new wind problem; we have an 80-year-old infrastructure problem\"", url: "https://texasruralreporter.substack.com/p/interview-with-rep-king-king-on-his" },
+  { id: 37, label: "Texas Secretary of State - Important 2026 election dates: November 3, 2026 uniform election; early voting by personal appearance October 19–30, 2026", url: "https://www.sos.texas.gov/elections/voter/important-election-dates.shtml" },
 ];
 
 export type KenKingTimelineKind = "path" | "load" | "vote" | "watch";
@@ -170,8 +171,8 @@ export const kenKingTimeline: KenKingEvent[] = [
     dateLabel: "August 2026",
     title: "The second hearing, the letter, and the landowners",
     detail:
-      "On August 19 the committee takes public testimony on data centers and 765-kV transmission for a full day; King frames the fight as \"really a routing issue\" and warns that many proposals \"erode private property rights.\" On August 24 he writes ERCOT and the PUC calling the transmission-line application process flawed and inviting them to help draft \"legislative guardrails\" for data centers: \"West Texas and the Permian Basin need power, but not built on the backs of thousands of farmers and ranchers.\" On the November 3 ballot against Heather Wallace, after a 53.9% primary in March.",
+      "On August 19 the committee takes public testimony on data centers and 765-kV transmission for a full day; King frames the fight as \"really a routing issue\" and warns that many proposals \"erode private property rights.\" On August 24 he writes ERCOT and the PUC calling the transmission-line application process flawed and inviting them to help draft \"legislative guardrails\" for data centers: \"West Texas and the Permian Basin need power, but not built on the backs of thousands of farmers and ranchers.\" On the November 3 ballot against Heather Wallace, after a 53.9% primary in March. Early voting by personal appearance runs October 19–30, 2026; as of October 26 it is underway, and no result is in.",
     kind: "watch",
-    sourceIds: [29, 30, 31, 4, 35],
+    sourceIds: [29, 30, 31, 4, 35, 37],
   },
 ];

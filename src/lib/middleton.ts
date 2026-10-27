@@ -19,7 +19,7 @@
 // Verified September 25, 2026. Re-verify after the November 3, 2026
 // general election and if he states a position on digital assets.
 
-export const MIDDLETON_LAST_VERIFIED = "September 25, 2026";
+export const MIDDLETON_LAST_VERIFIED = "October 26, 2026";
 
 export interface MiddletonSource {
   id: number;
@@ -66,6 +66,7 @@ export const middletonSources: MiddletonSource[] = [
   { id: 34, label: "Texans for Fiscal Responsibility - Fiscal Responsibility Index, Mayes Middleton, 2025: score 92, career A-; SB 21 and SB 6 votes scored against TFR's position", url: "https://index.texastaxpayers.com/legislators/mayes-middleton/2025-index" },
   { id: 35, label: "Texas Tribune - Texans lost $56.8 million to cryptocurrency kiosk scams (July 8, 2026): about 1,200 victims; Bitcoin Depot's bankruptcy; the 2027 session's consumer-protection fight - neither attorney general nominee quoted", url: "https://www.texastribune.org/2026/07/08/texas-cryptocurrency-kiosk-bitcoin-atm-scam-fraud/" },
   { id: 36, label: "CoinDesk - Crypto PACs spend $9 million in Texas and score wins in both parties (May 27, 2026): Fairshake's Texas spending was in federal runoffs; none tied to the attorney general race", url: "https://www.coindesk.com/policy/2026/05/27/crypto-pacs-spend-usd9-million-in-texas-and-score-wins-in-both-parties" },
+  { id: 37, label: "Texas Secretary of State - Important 2026 election dates: November 3, 2026 uniform election; early voting by personal appearance October 19–30, 2026", url: "https://www.sos.texas.gov/elections/voter/important-election-dates.shtml" },
 ];
 
 export type MiddletonTimelineKind = "path" | "vote" | "campaign" | "watch";
@@ -170,5 +171,14 @@ export const middletonTimeline: MiddletonEvent[] = [
       "The July report shows $5.2 million in new personal loans and $118,000 on hand against Johnson's $291,000. The Tribune reports Texans lost $56.8 million to crypto-kiosk scams and that the 2027 session will fight over them; neither nominee for the office that prosecutes such fraud is quoted. ReconMR's September poll has Middleton 45, Johnson 44. Crypto PACs spent nine million dollars in Texas this cycle, none of it on this race.",
     kind: "watch",
     sourceIds: [32, 35, 33, 36],
+  },
+  {
+    date: "2026-11-03",
+    dateLabel: "November 3, 2026",
+    title: "The ballot",
+    detail:
+      "Middleton faces Democrat Nathan Johnson for attorney general. Early voting by personal appearance runs October 19–30, 2026; as of October 26 it is underway, and no result is in.",
+    kind: "watch",
+    sourceIds: [2, 37],
   },
 ];

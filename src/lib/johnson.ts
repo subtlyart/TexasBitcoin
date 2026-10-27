@@ -22,7 +22,7 @@
 // attorney general general election and when the 90th Legislature files
 // large-load bills (from November 9, 2026).
 
-export const JOHNSON_LAST_VERIFIED = "September 13, 2026";
+export const JOHNSON_LAST_VERIFIED = "October 26, 2026";
 
 export interface JohnsonSource {
   id: number;
@@ -57,6 +57,7 @@ export const johnsonSources: JohnsonSource[] = [
   { id: 22, label: "CBS Texas - Nathan Johnson selected as Democratic candidate for Texas attorney general after winning primary runoff (May 26, 2026): faces Mayes Middleton; \"Attorneys General are supposed to make sure that the competitive market is competitive\"", url: "https://www.cbsnews.com/texas/news/2026-tx-ag-democrat-primary-runoff-winner/" },
   { id: 23, label: "Texas Tribune - Texas Democrats answer questions ahead of AG runoff (April 23, 2026): Johnson raised $901,353 and spent $1,230,534 from July 2025 to February 2026; endorsements", url: "https://www.texastribune.org/2026/04/23/texas-2026-attorney-general-democrats-runoff-nathan-johnson-joe-jaworski/" },
   { id: 24, label: "Texas Tribune - State Sen. Nathan Johnson to retain his Texas Senate seat (March 5, 2024): the primary over Rep. Victoria Neave Criado", url: "https://www.texastribune.org/2024/03/05/nathan-johnson-victoria-neave-criado-texas-senate/" },
+  { id: 25, label: "Texas Secretary of State - Important 2026 election dates: November 3, 2026 uniform election; early voting by personal appearance October 19–30, 2026", url: "https://www.sos.texas.gov/elections/voter/important-election-dates.shtml" },
 ];
 
 export type JohnsonTimelineKind = "path" | "registry" | "reserve" | "watch";
@@ -176,8 +177,8 @@ export const johnsonTimeline: JohnsonEvent[] = [
     dateLabel: "March 3 → May 26, 2026",
     title: "The nomination",
     detail:
-      "Johnson leads the Democratic primary with 48.1%, then wins the runoff over Joe Jaworski with 60.5% on May 26. \"Attorneys General are supposed to make sure that the competitive market is competitive,\" he says. He faces Republican Senator Mayes Middleton on November 3, 2026 - a colleague from Business and Commerce and a coauthor of SB 6.",
+      "Johnson leads the Democratic primary with 48.1%, then wins the runoff over Joe Jaworski with 60.5% on May 26. \"Attorneys General are supposed to make sure that the competitive market is competitive,\" he says. He faces Republican Senator Mayes Middleton on November 3, 2026 - a colleague from Business and Commerce and a coauthor of SB 6. Early voting by personal appearance runs October 19–30, 2026; as of October 26 it is underway, and no result is in.",
     kind: "watch",
-    sourceIds: [21, 2, 22, 18],
+    sourceIds: [21, 2, 22, 18, 25],
   },
 ];
