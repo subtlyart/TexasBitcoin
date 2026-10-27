@@ -376,7 +376,12 @@ export default function ErcotBitcoinPage() {
             them chosen by a committee the governor, lieutenant governor,
             and speaker appoint, all Texans – and to the Public Utility
             Commission, which approves its rule changes and writes the
-            rules the statutes require.<C n={3} /> The board fired Bill
+            rules the statutes require.<C n={3} /> Whether the mines caused
+            that blackout is a different question, answered on{" "}
+            <Link href="/did-bitcoin-mining-cause-the-2021-blackout">
+              its own page
+            </Link>
+            . The board fired Bill
             Magness in March 2021; Brad Jones ran the operator on an
             interim basis; Pablo Vegas, from NiSource, was chosen in August
             2022 after the governor vetoed at least one candidate, and
