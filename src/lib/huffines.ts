@@ -12,11 +12,11 @@
 // The honest counterweight: since taking office he has said nothing about
 // it, and the custody window closed on his watch with no award.
 //
-// Verified September 29, 2026. Re-verify when the custodian is named, after
+// Verified October 26, 2026. Re-verify when the custodian is named, after
 // the November 3, 2026 general (Huffines vs. Eckhardt), and when the first
 // SB 21 biennial report posts (due by December 31, 2026).
 
-export const HUFFINES_LAST_VERIFIED = "September 29, 2026";
+export const HUFFINES_LAST_VERIFIED = "October 26, 2026";
 
 export interface HuffinesSource {
   id: number;
@@ -30,8 +30,8 @@ export interface HuffinesSource {
 export const huffinesSources: HuffinesSource[] = [
   { id: 1, label: "Texas Comptroller - Don Huffines Sworn in as Texas Comptroller, Refuses Salary, Calls for Property Tax Relief (August 1, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260801-don-huffines-sworn-in-as-texas-comptroller-refuses-salary-calls-for-property-tax-relief-1785512488796" },
   { id: 2, label: "Texas Comptroller - Media kit: Don Huffines, Texas Comptroller of Public Accounts (2026)", url: "https://comptroller.texas.gov/about/media-center/media-kit/2026/don-huffines/" },
-  { id: 3, label: "Texas Comptroller - News releases, August–September 2026: sales tax, property tax, school-district reviews, TEFA - no release on the reserve or a custodian", url: "https://comptroller.texas.gov/about/media-center/news/" },
-  { id: 4, label: "Texas SmartBuy ESBD - RFP 908-26-1778WS, custody and liquidity services for the Texas Strategic Bitcoin Reserve: closed July 10, 2026; no award posted as of September 29, 2026", url: "https://www.txsmartbuy.gov/esbd/908-26-1778WS" },
+  { id: 3, label: "Texas Comptroller - News releases, reviewed October 26, 2026: no release on the reserve or a custodian; the last Bitcoin release is the May 28, 2026 advisory-committee announcement", url: "https://comptroller.texas.gov/about/media-center/news/" },
+  { id: 4, label: "Texas SmartBuy ESBD - RFP 908-26-1778WS, custody and liquidity services for the Texas Strategic Bitcoin Reserve: responses due July 10, 2026. HigherGov's mirror, read October 26, 2026, lists that deadline as past due and posts no award document", url: "https://www.highergov.com/sl/contract-opportunity/tx-texas-strategic-bitcoin-reserve-67282979/" },
   { id: 5, label: "Texas Legislature Online - SB 21 (89R), enrolled text: § 403.703 (the comptroller has custody of the reserve), § 403.707 (the comptroller sits on the five-member advisory committee), § 403.708 (biennial report due by December 31 of each even-numbered year)", url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00021F.htm" },
   { id: 6, label: "Texas Tribune - Acting Comptroller Kelly Hancock to step down as Texas CFO (July 1, 2026)", url: "https://www.texastribune.org/2026/07/01/texas-comptroller-kelly-hancock-resigns-greg-abbott-don-huffines/" },
   { id: 7, label: "The Texan - Abbott Appoints Comptroller Candidate Don Huffines to Fill Outgoing Hancock's Unexpired Term (July 2, 2026)", url: "https://thetexan.news/state/texas-state-news/abbott-appoints-comptroller-candidate-don-huffines-to-fill-outgoing-hancocks-unexpired-term/article_6ae16818-e965-4319-8f0a-2524476ade36.html" },
@@ -47,6 +47,7 @@ export const huffinesSources: HuffinesSource[] = [
   { id: 17, label: "Texas Tribune - Texas Votes: the Tribune sits down with Don Huffines, Republican nominee for comptroller - DEI, vouchers, working with Abbott; no Bitcoin (April 13, 2026)", url: "https://www.texastribune.org/events/2026/04/13/texas-votes-huffines-comptroller/" },
   { id: 18, label: "Texas Comptroller - Acting Comptroller Kelly Hancock Names Strategic Bitcoin Reserve Advisory Committee Members and opens the custody RFP (May 28, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260528-acting-texas-comptroller-kelly-hancock-names-strategic-bitcoin-reserve-advisory-committee-members-1778774749224" },
   { id: 19, label: "Wikipedia - 2026 Texas Comptroller of Public Accounts election: Huffines (R) vs. Sarah Eckhardt (D), November 3, 2026", url: "https://en.wikipedia.org/wiki/2026_Texas_Comptroller_of_Public_Accounts_election" },
+  { id: 20, label: "Texas Secretary of State - Important 2026 election dates: November 3, 2026 uniform election; early voting by personal appearance October 19–30, 2026", url: "https://www.sos.texas.gov/elections/voter/important-election-dates.shtml" },
 ];
 
 export type HuffinesTimelineKind = "path" | "plan" | "office" | "watch";
@@ -149,9 +150,9 @@ export const huffinesTimeline: HuffinesEvent[] = [
     dateLabel: "November 3, 2026",
     title: "The general",
     detail:
-      "Huffines faces Democratic state Senator Sarah Eckhardt for the full four-year term beginning January 2027. The reserve's manager is on the ballot for the first time since the reserve existed.",
+      "Huffines faces Democratic state Senator Sarah Eckhardt for the full four-year term beginning January 2027. Early voting by personal appearance runs October 19–30, 2026; as of October 26 it is underway, and no result is in. The reserve's manager is on the ballot for the first time since the reserve existed.",
     kind: "watch",
-    sourceIds: [19],
+    sourceIds: [19, 20],
   },
   {
     date: "2026-12-31",

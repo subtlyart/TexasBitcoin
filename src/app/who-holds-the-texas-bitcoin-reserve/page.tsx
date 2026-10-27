@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Who is the custodian of the Texas Bitcoin reserve?",
-    a: "No custodian has been named yet. As of September 29, 2026, the Texas Comptroller's custody-and-liquidity RFP (908-26-1778WS) shows no award, and the late-August 2026 target for contract execution has passed. Until a contract executes, the reserve's $10 million sits in the iShares Bitcoin Trust, where BlackRock's ETF custodian holds the underlying coin.",
+    a: "No custodian has been named yet. As of October 26, 2026, the Comptroller's newsroom contains no custodian announcement — the last Bitcoin release is still the May 28, 2026 advisory-committee notice — and HigherGov's mirror of RFP 908-26-1778WS lists the July 10 response deadline as past due and posts no award document. The late-August 2026 target for contract execution has passed. Until a contract executes, the reserve's $10 million sits in the iShares Bitcoin Trust, where BlackRock's ETF custodian holds the underlying coin.",
   },
   {
     q: "Does Texas hold its own Bitcoin keys?",
@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "When does the Texas reserve convert its ETF to real Bitcoin?",
-    a: "Within 60 days of the custody contract executing. The procurement targeted execution for late August 2026, so on that schedule the $10 million iShares Bitcoin Trust position would convert to directly held Bitcoin by roughly late October 2026. No award had been posted as of September 29, 2026, so the clock has not started.",
+    a: "Within 60 days of the custody contract executing. The procurement targeted execution for late August 2026, so on that schedule the $10 million iShares Bitcoin Trust position would convert to directly held Bitcoin by roughly late October 2026. As of October 26, 2026, no custodian has been announced, so the clock has not started.",
   },
 ];
 
@@ -305,7 +305,7 @@ export default function CustodyPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-30",
-    dateModified: "2026-09-29",
+    dateModified: "2026-10-26",
   };
 
   const faqJsonLd = {

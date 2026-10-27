@@ -172,7 +172,7 @@ export default function NathanJohnsonBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-13",
-    dateModified: "2026-09-13",
+    dateModified: "2026-10-26",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Nathan Johnson" },

@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "Has Huffines named a custodian for the Texas Bitcoin reserve?",
-    a: "Not as of September 29, 2026. The custody RFP closed July 10, 2026 with contract execution targeted for late August; that window passed with no award posted on the state procurement site and no announcement from the Comptroller's office. The award - and the 60-day conversion of the ETF position into directly held Bitcoin - is the first decision the reserve will record under his name.",
+    a: "Not as of October 26, 2026. Responses to the custody RFP were due July 10, 2026, with contract execution targeted for late August. That window passed. The Comptroller's newsroom through October 26 contains no custodian announcement, and HigherGov's mirror of the solicitation posts no award document. The award - and the 60-day conversion of the ETF position into directly held Bitcoin - is the first decision the reserve will record under his name.",
   },
   {
     q: "Was Don Huffines elected comptroller?",
@@ -166,7 +166,7 @@ export default function DonHuffinesBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-01",
-    dateModified: "2026-09-29",
+    dateModified: "2026-10-26",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Don Huffines" },
@@ -281,10 +281,11 @@ export default function DonHuffinesBitcoinPage() {
               Huffines with the office.<C n={5} />
             </li>
             <li>
-              Custody RFP 908-26-1778WS closed July 10, 2026 with contract
-              execution targeted for late August; as of September 29, 2026, no
-              award is posted and the Comptroller&apos;s office has issued no
-              statement on the reserve.<C n={3} /><C n={4} />
+              Custody RFP 908-26-1778WS: responses were due July 10, 2026, with
+              contract execution targeted for late August; as of October 26,
+              2026, the Comptroller&apos;s office has issued no statement on
+              the reserve, and HigherGov&apos;s mirror posts no award
+              document.<C n={3} /><C n={4} />
             </li>
             <li>
               The first SB 21 report on the reserve&apos;s holdings and
@@ -292,7 +293,8 @@ export default function DonHuffinesBitcoinPage() {
             </li>
             <li>
               Huffines faces Democrat Sarah Eckhardt on November 3, 2026 for
-              the full four-year term beginning January 2027.<C n={19} />
+              the full four-year term beginning January 2027. Early voting
+              runs October 19–30; as of October 26 it is underway.<C n={19} /><C n={20} />
             </li>
           </ul>
         </div>
@@ -490,9 +492,10 @@ export default function DonHuffinesBitcoinPage() {
 
           <h2>Where does the Huffines record stand today?</h2>
           <p>
-            As of September 29, 2026: nearly two months in office, zero public words
+            As of October 26, 2026: nearly three months in office, zero public words
             on the reserve, three clocks running. The custody award, overdue
-            against its own target, is the near one. November 3 – Huffines
+            against its own target, is the near one. Early voting is open
+            through October 30. November 3 – Huffines
             against Sarah Eckhardt for the full term – decides whether the
             citadel candidate keeps the desk. December 31 is the statutory
             report, due under his name either way. The political authors of

@@ -6,9 +6,9 @@
 // Sites that pivoted to AI/HPC stay on the map: the arc from ASIC to GPU is
 // part of the Texas story, not a departure from it.
 //
-// Dataset verified August 30, 2026. Re-verify quarterly with the cornerstone.
+// Dataset re-verified October 26, 2026. Re-verify quarterly with the cornerstone.
 
-export const MAP_LAST_VERIFIED = "August 30, 2026";
+export const MAP_LAST_VERIFIED = "October 26, 2026";
 
 export type SiteStatus = "mining" | "hybrid" | "ai" | "announced" | "historic";
 
@@ -80,6 +80,8 @@ export const miningSources: MiningSource[] = [
   { id: 24, label: "Bitdeer Technologies Group — September 2025 Production and Operations Update (AI/HPC conversion pipeline, including the Rockdale campus)", url: "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-september-2025-production-and-operations" },
   { id: 25, label: "Riot Platforms — Q2 2026 results (August 10, 2026): 20-year, 191 MW Rockdale data center lease with a leading frontier AI lab, $9.1B initial term (~$16.1B with extensions); AMD signed January 16, 2026 as first tenant, 50 MW contracted; 1,587 BTC mined in Q2", url: "https://www.riotplatforms.com/riot-platforms-reports-second-quarter-2026-financial-results-and-strategic-highlights/" },
   { id: 26, label: "Blockspace — Riot's full 1 GW Corsicana campus under a non-binding LOI to a single tenant; analysts (KBW) identify the Rockdale frontier-lab tenant as Anthropic (August 2026)", url: "https://blockspace.media/insight/riot-corsicana-loi-756mw-ai-data-center/" },
+  { id: 27, label: "Bitdeer — June 2026 production and operations update (July 21, 2026): Rockdale 563 MW online electrical capacity, planned usage crypto to colocation/AI cloud, \"in active evaluation of AI transition\"; 179 MW more at Rockdale in planning", url: "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-june-2026-production-and-operations-update" },
+  { id: 28, label: "Cipher Digital — Barber Lake lease extended to 20 years, contracted revenue over $9 billion (September 25, 2026): phased data-hall delivery from Q4 2026 through Q1 2027; first rent commencement expected in Q4 2026; no announcement that power has started", url: "https://www.globenewswire.com/news-release/2026/09/25/3369064/0/en/cipher-digital-expands-barber-lake-lease-term-to-20-years-increasing-revenue-over-9-billion.html" },
 ];
 
 export const miningSites: MiningSite[] = [
@@ -106,13 +108,13 @@ export const miningSites: MiningSite[] = [
     location: "Rockdale · Milam County",
     lat: 30.61,
     lng: -97.065,
-    mw: 170,
-    mwLabel: "~170 MW operating (reported)",
+    mw: 563,
+    mwLabel: "563 MW online electrical capacity (June 2026); AI transition in evaluation",
     yearOnline: 2019,
     status: "mining",
     story:
-      "Next door to Riot on the same former Alcoa land — the campus where Bitmain first broke ground in 2019, making Rockdale the town where industrial-scale Texas mining began.",
-    sourceIds: [4, 5],
+      "Next door to Riot on the same former Alcoa land — the campus where Bitmain first broke ground in 2019. Older profiles put the operating load near 170 MW. Bitdeer's own June 2026 operations update, published July 21, lists 563 MW of online electrical capacity here, planned usage \"Crypto to Colocation / AI Cloud,\" and the note \"In active evaluation of AI transition.\" Another 179 MW at Rockdale is still in planning. Evaluation is not a conversion: the site is still carried here as a mine.",
+    sourceIds: [4, 5, 27],
   },
   {
     id: "riot-corsicana",
@@ -266,13 +268,13 @@ export const miningSites: MiningSite[] = [
     lat: 32.41,
     lng: -100.87,
     mw: 300,
-    mwLabel: "300 MW · leased to Fluidstack",
+    mwLabel: "300 MW site · halls not yet delivered",
     yearOnline: 2026,
     status: "ai",
     aiNative: true,
     story:
-      "Cipher built Barber Lake straight for AI. The entire 300 MW site is leased to Fluidstack under a roughly $3 billion, ten-year deal that Google agreed to backstop, with power slated to start flowing in October 2026. It never mined a block — the West Texas mining playbook, applied to GPUs.",
-    sourceIds: [23],
+      "Cipher bought the 300 MW Barber Lake site and leased it for AI rather than mining. The Fluidstack lease, which Google backstopped, was extended on September 25, 2026 from 10 years to 20, taking contracted revenue at the site from $3.8 billion to over $9 billion, with a binding follow-on to a leading AI lab. Data halls are scheduled from the fourth quarter of 2026 through the first quarter of 2027; first rent commencement is expected in Q4 2026. As of October 26, 2026, Cipher has not announced that power has started. It never mined a block.",
+    sourceIds: [23, 28],
   },
   {
     id: "mara-matagorda",

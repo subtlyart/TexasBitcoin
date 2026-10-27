@@ -11,7 +11,7 @@
 // Frisco Bitcoin moved off their old pages to Luma; San Antonio Bitcoin Club's
 // Meetup group was removed with no verifiable successor, so it was pruned.)
 
-export const LAST_VERIFIED = "October 2026";
+export const LAST_VERIFIED = "October 26, 2026";
 
 export type Metro = "Austin" | "Houston" | "Dallas–Fort Worth" | "San Antonio";
 
@@ -153,19 +153,11 @@ export const conferences: Conference[] = [
   },
   {
     name: "North American Blockchain Summit (NABS)",
-    location: "Texas",
-    cadence: "Annual",
+    location: "Arlington, TX",
+    cadence: "November 18–19, 2026",
     url: "https://www.northamericanblockchainsummit.com/",
     blurb:
-      "The Texas Blockchain Council's policy summit — C-suite leaders, policymakers, and innovators on Bitcoin, mining, and digital-asset policy.",
-  },
-  {
-    name: "Texas Blockchain Summit",
-    location: "Austin, TX",
-    cadence: "Annual",
-    url: "https://www.txbitcoinfoundation.org/event-details/texas-blockchain-summit",
-    blurb:
-      "Austin gathering that has featured U.S. senators and Texas legislators on Bitcoin and digital-asset policy. Check the site for dates.",
+      "November 18–19, 2026, at the National Medal of Honor Museum in Arlington. Hosted by the Digital Infrastructure Network, formerly the Texas Blockchain Council — the successor to the Texas Blockchain Summit. C-suite leaders, policymakers, and operators on Bitcoin, mining, energy, and digital infrastructure. Dates from the organizer.",
   },
 ];
 

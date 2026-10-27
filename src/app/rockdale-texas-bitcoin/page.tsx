@@ -36,6 +36,7 @@ const sources = [
   { id: "s11", label: "FOX 7 Austin — Rockdale boom: Bitcoin mining companies move to rural Texas town (November 4, 2021)", url: "https://www.fox7austin.com/news/rockdale-boom-bitcoin-mining-companies-move-to-rural-texas-town" },
   { id: "s12", label: "Global Energy Monitor — Bitdeer Rockdale facility profile (~170 MW operating)", url: "https://www.gem.wiki/BitDeer_Douglas_County_facility" },
   { id: "s13", label: "CNBC — Texas paid Riot $31.7 million to shut down during August 2023 heat wave (September 6, 2023)", url: "https://www.cnbc.com/2023/09/06/texas-paid-bitcoin-miner-riot-31point7-million-to-shut-down-in-august.html" },
+  { id: "s14", label: "Bitdeer — June 2026 production and operations update (July 21, 2026): Rockdale 563 MW online electrical capacity; AI transition in active evaluation; 179 MW more in planning", url: "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-announces-june-2026-production-and-operations-update" },
 ];
 
 // FAQ — rendered on-page and mirrored 1:1 in FAQPage JSON-LD (never schema-only).
@@ -54,7 +55,7 @@ const faqs = [
   },
   {
     q: "Is Bitmain still mining Bitcoin in Rockdale?",
-    a: "The site Bitmain launched in October 2019 is now operated by Bitdeer, the mining company spun off from Bitmain in 2021. Bitdeer's Rockdale campus, roughly 170 MW, runs on the same former Alcoa land — directly beside Riot's 700 MW flagship in Milam County.",
+    a: "The site Bitmain launched in October 2019 is now operated by Bitdeer, the mining company spun off from Bitmain in 2021. Older profiles put the campus near 170 MW. Bitdeer's own June 2026 operations update lists 563 MW of online electrical capacity at Rockdale, with an AI transition in evaluation and another 179 MW in planning. It sits on the same former Alcoa land, directly beside Riot's 700 MW flagship in Milam County.",
   },
   {
     q: "How many jobs has Bitcoin mining created in Rockdale?",
@@ -186,7 +187,7 @@ export default function RockdalePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-22",
-    dateModified: "2026-07-22",
+    dateModified: "2026-10-26",
   };
 
   const faqJsonLd = {
@@ -434,8 +435,10 @@ export default function RockdalePage() {
           <p>
             And Riot is not alone on the old smelter land. Next door sits
             Bitdeer — the mining company spun off from Bitmain in 2021 —
-            operating the campus where Bitmain first broke ground, at roughly
-            170 MW.<C n={10} /><C n={12} /> One former aluminum site in Milam
+            operating the campus where Bitmain first broke ground. Older
+            profiles put that campus near 170 MW; Bitdeer&apos;s own June 2026
+            operations update lists 563 MW of online electrical capacity,
+            with an AI transition in evaluation.<C n={10} /><C n={12} /><C n={14} /> One former aluminum site in Milam
             County now hosts two of the largest Bitcoin mines on the
             continent; you can see both, alongside every other major Texas
             site, on{" "}

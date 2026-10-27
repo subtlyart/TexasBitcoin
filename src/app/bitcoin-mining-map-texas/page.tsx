@@ -100,38 +100,38 @@ function MiningRankFigure() {
 <rect x="250" y="148" width="108.5" height="18" rx="3" fill="var(--accent-soft)"/>
 <text x="366.5" y="161" fontSize="10.5" fill="var(--muted)">700 MW</text>
 <text x="412.9" y="161" fontSize="10" fill="var(--muted-2)">Rockdale · Milam County · online 2020</text>
-<text x="238" y="187" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Riot Corsicana</text>
-<rect x="250" y="174" width="62.0" height="18" rx="3" fill="var(--accent-soft)"/>
-<text x="320.0" y="187" fontSize="10.5" fill="var(--muted)">400 MW</text>
-<text x="366.4" y="187" fontSize="10" fill="var(--muted-2)">Corsicana · Navarro County · online 2024</text>
-<text x="238" y="213" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">MARA Granbury</text>
-<rect x="250" y="200" width="46.5" height="18" rx="3" fill="var(--accent)"/>
-<text x="304.5" y="213" fontSize="10.5" fill="var(--muted)">300 MW</text>
-<text x="350.9" y="213" fontSize="10" fill="var(--muted-2)">Granbury · Hood County · online 2022</text>
-<text x="238" y="239" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Cipher Black Pearl</text>
-<rect x="250" y="226" width="46.5" height="18" rx="3" fill="var(--accent-soft)"/>
+<text x="238" y="187" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Bitdeer Rockdale</text>
+<rect x="250" y="174" width="87.3" height="18" rx="3" fill="var(--accent)"/>
+<text x="345.3" y="187" fontSize="10.5" fill="var(--muted)">563 MW</text>
+<text x="391.7" y="187" fontSize="10" fill="var(--muted-2)">Rockdale · Milam County · online 2019</text>
+<text x="238" y="213" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Riot Corsicana</text>
+<rect x="250" y="200" width="62.0" height="18" rx="3" fill="var(--accent-soft)"/>
+<text x="320.0" y="213" fontSize="10.5" fill="var(--muted)">400 MW</text>
+<text x="366.4" y="213" fontSize="10" fill="var(--muted-2)">Corsicana · Navarro County · online 2024</text>
+<text x="238" y="239" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">MARA Granbury</text>
+<rect x="250" y="226" width="46.5" height="18" rx="3" fill="var(--accent)"/>
 <text x="304.5" y="239" fontSize="10.5" fill="var(--muted)">300 MW</text>
-<text x="350.9" y="239" fontSize="10" fill="var(--muted-2)">Wink · Winkler County · online 2025</text>
-<text x="238" y="265" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Cipher Barber Lake</text>
-<rect x="250" y="252" width="46.5" height="18" rx="3" fill="var(--muted)"/>
+<text x="350.9" y="239" fontSize="10" fill="var(--muted-2)">Granbury · Hood County · online 2022</text>
+<text x="238" y="265" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Cipher Black Pearl</text>
+<rect x="250" y="252" width="46.5" height="18" rx="3" fill="var(--accent-soft)"/>
 <text x="304.5" y="265" fontSize="10.5" fill="var(--muted)">300 MW</text>
-<text x="350.9" y="265" fontSize="10" fill="var(--muted-2)">Colorado City · Mitchell County · online 2026</text>
-<text x="238" y="291" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Hut 8 King Mountain</text>
-<rect x="250" y="278" width="43.4" height="18" rx="3" fill="var(--accent)"/>
-<text x="301.4" y="291" fontSize="10.5" fill="var(--muted)">280 MW</text>
-<text x="347.8" y="291" fontSize="10" fill="var(--muted-2)">McCamey · Upton County · online 2022</text>
-<text x="238" y="317" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Core Scientific Denton</text>
-<rect x="250" y="304" width="40.3" height="18" rx="3" fill="var(--muted)"/>
-<text x="298.3" y="317" fontSize="10.5" fill="var(--muted)">260 MW</text>
-<text x="344.7" y="317" fontSize="10" fill="var(--muted-2)">Denton · Denton County · online 2022</text>
-<text x="238" y="343" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Cipher Odessa</text>
-<rect x="250" y="330" width="32.1" height="18" rx="3" fill="var(--accent)"/>
-<text x="290.1" y="343" fontSize="10.5" fill="var(--muted)">207 MW</text>
-<text x="336.5" y="343" fontSize="10" fill="var(--muted-2)">Odessa · Ector County · online 2022</text>
-<text x="238" y="369" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Bitdeer Rockdale</text>
-<rect x="250" y="356" width="26.4" height="18" rx="3" fill="var(--accent)"/>
-<text x="284.4" y="369" fontSize="10.5" fill="var(--muted)">170 MW</text>
-<text x="330.8" y="369" fontSize="10" fill="var(--muted-2)">Rockdale · Milam County · online 2019</text>
+<text x="350.9" y="265" fontSize="10" fill="var(--muted-2)">Wink · Winkler County · online 2025</text>
+<text x="238" y="291" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Cipher Barber Lake</text>
+<rect x="250" y="278" width="46.5" height="18" rx="3" fill="var(--muted)"/>
+<text x="304.5" y="291" fontSize="10.5" fill="var(--muted)">300 MW</text>
+<text x="350.9" y="291" fontSize="10" fill="var(--muted-2)">Colorado City · Mitchell County · halls Q4 2026</text>
+<text x="238" y="317" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Hut 8 King Mountain</text>
+<rect x="250" y="304" width="43.4" height="18" rx="3" fill="var(--accent)"/>
+<text x="301.4" y="317" fontSize="10.5" fill="var(--muted)">280 MW</text>
+<text x="347.8" y="317" fontSize="10" fill="var(--muted-2)">McCamey · Upton County · online 2022</text>
+<text x="238" y="343" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Core Scientific Denton</text>
+<rect x="250" y="330" width="40.3" height="18" rx="3" fill="var(--muted)"/>
+<text x="298.3" y="343" fontSize="10.5" fill="var(--muted)">260 MW</text>
+<text x="344.7" y="343" fontSize="10" fill="var(--muted-2)">Denton · Denton County · online 2022</text>
+<text x="238" y="369" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Cipher Odessa</text>
+<rect x="250" y="356" width="32.1" height="18" rx="3" fill="var(--accent)"/>
+<text x="290.1" y="369" fontSize="10.5" fill="var(--muted)">207 MW</text>
+<text x="336.5" y="369" fontSize="10" fill="var(--muted-2)">Odessa · Ector County · online 2022</text>
 <text x="238" y="395" fontSize="11.5" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Layer1</text>
 <rect x="250" y="382" width="15.5" height="18" rx="3" fill="var(--muted-2)"/>
 <text x="273.5" y="395" fontSize="10.5" fill="var(--muted)">100 MW</text>
@@ -309,7 +309,7 @@ export default function MiningMapPage() {
       "year online",
       "status",
     ],
-    dateModified: "2026-08-30",
+    dateModified: "2026-10-26",
   };
 
   const articleJsonLd = {
@@ -323,7 +323,7 @@ export default function MiningMapPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-22",
-    dateModified: "2026-08-30",
+    dateModified: "2026-10-26",
   };
 
   const faqJsonLd = {
@@ -572,17 +572,24 @@ export default function MiningMapPage() {
             miner-built AI capacity. Hut 8 has fully contracted its 1-gigawatt{" "}
             <strong>Beacon Point</strong> campus in Nueces County to a single
             high-grade tenant — reported to be Nvidia — across two 15-year, 352
-            MW leases worth $19.6 billion.<C n={21} /> Cipher leased the
-            entirety of its 300 MW <strong>Barber Lake</strong> site in Mitchell
-            County to Fluidstack in a roughly $3 billion deal that Google agreed
-            to backstop.<C n={23} /> MARA signed to acquire a{" "}
+            MW leases worth $19.6 billion.<C n={21} /> Cipher leased its
+            300 MW <strong>Barber Lake</strong> site in Mitchell County to
+            Fluidstack, a deal Google agreed to backstop. On September 25,
+            2026 Cipher extended that lease from 10 years to 20 and raised
+            contracted revenue at the site from $3.8 billion to over $9
+            billion. Data halls are now scheduled from the fourth quarter of
+            2026 through the first quarter of 2027; as of October 26, Cipher
+            has not announced that power has started.<C n={23} /><C n={28} /> MARA signed to acquire a{" "}
             <strong>Matagorda County</strong> site carrying up to 2 GW of power
             for a campus that will blend high-performance computing with
             flexible Bitcoin mining, paying out as milestones — grid
             authorization among them — are met.<C n={22} /> Even{" "}
-            <Link href="/bitdeer-bitcoin">Bitdeer</Link> has
-            flagged its Rockdale campus as a candidate for AI/HPC conversion in
-            its operations updates.<C n={24} /> This is why we keep the mining
+            <Link href="/bitdeer-bitcoin">Bitdeer</Link>&apos;s June 2026
+            operations update lists 563 MW of online electrical capacity at
+            Rockdale — not the 170 MW older profiles still quote — and calls
+            the campus &ldquo;in active evaluation&rdquo; for a move from
+            crypto to colocation and AI cloud, with another 179 MW in
+            planning.<C n={27} /> This is why we keep the mining
             map and the grid in the same frame: the machines Bitcoin installed
             are why Texas is now the front line of the AI power crunch — and why
             the state just hit pause to take inventory.
