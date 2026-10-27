@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "Why doesn't the Department regulate Bitcoin kiosks?",
-    a: "Because of the memo's own logic. Commissioner Cooper told the Senate in June 2026 that 'unless the kiosk supports stablecoin and/or involves a third party ... the transaction between the kiosk operator and customer is not subject to Chapter 152,' since bitcoin is not money and a two-party sale is a sale of goods. Two 2025 bills would have registered kiosks with the Department; SB 1705 passed the Senate and a House committee and died on the House calendar at sine die. The Department said it 'was prepared to supervise and regulate the activity as required.' Texans lost $56.8 million to kiosk scams in 2025, the most of any state.",
+    a: "Because of the memo's own logic. Commissioner Cooper told the Senate in June 2026 that 'unless the kiosk supports stablecoin and/or involves a third party ... the transaction between the kiosk operator and customer is not subject to Chapter 152,' since bitcoin is not money and a two-party sale is a sale of goods. Two 2025 bills would have registered kiosks with the Department; SB 1705 passed the Senate and a House committee and died on the House calendar at sine die. The Department said it 'was prepared to supervise and regulate the activity as required.' Texans lost $56.8 million to kiosk scams in 2025, the largest adjusted-loss total of any state. The complaint count is a different ranking; the FBI table is on the kiosk page.",
   },
 ];
 
@@ -160,7 +160,7 @@ export default function TexasDepartmentOfBankingBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-25",
-    dateModified: "2026-09-25",
+    dateModified: "2026-10-26",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "GovernmentOrganization", name: "Texas Department of Banking" },
@@ -601,12 +601,19 @@ export default function TexasDepartmentOfBankingBitcoinPage() {
             required. If a similar bill is filed in the upcoming session,
             the Department will be prepared.&rdquo;<C n={35} /><C n={30} />
             The cost of the year between: $56.8 million lost by Texans to
-            kiosk scams in 2025 across 1,179 complaints, the most of any
-            state, on some 4,000 machines, seven in ten users over sixty –
+            kiosk scams in 2025 across 1,179 complaints — the largest
+            adjusted-loss total of any state, not the most complaints — on
+            some 4,000 machines, seven in ten users over sixty –
             &ldquo;Texas regulators currently have no oversight over the
             kiosks,&rdquo; the Tribune wrote, and AARP&apos;s Andrea Earl:
             &ldquo;The state of Texas is behind other states on this, and
-            then really lost momentum last session.&rdquo;<C n={34} />
+            then really lost momentum last session.&rdquo;<C n={34} /> The
+            FBI table, which splits the complaint count from the dollars, is
+            on{" "}
+            <Link href="/texas-crypto-kiosk-scams">
+              the kiosk ledger
+            </Link>
+            .
             Deputy Commissioner Saucillo, to a House committee on July 30,
             on why the money does not come back: &ldquo;typically,
             they&apos;re sending it to an unhosted wallet &hellip; it gets

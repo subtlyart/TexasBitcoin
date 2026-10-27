@@ -526,7 +526,7 @@ export default function MiningMapPage() {
           <p>
             Because the scarcest resource in computing is no longer chips —
             it&apos;s connected power, and miners spent a decade accumulating
-            it. Galaxy bought the distressed Argo Helios mine in Dickens County
+            it. <Link href="/galaxy-digital-bitcoin">Galaxy</Link> bought the distressed Argo Helios mine in Dickens County
             for $65 million in December 2022; on July 6, 2026, it delivered the
             first 133 MW to CoreWeave under a 15-year lease projected to
             generate over $1 billion a year at full buildout.<C n={11} />{" "}

@@ -278,7 +278,7 @@ export default function AiPivotPage() {
             all-stock deal, choosing to stay independent.<C n={5} /> The
             market had started pricing a former Bitcoin miner as a
             data-center platform too valuable to sell.{" "}
-            <strong>Galaxy Helios</strong> in Dickens County, bought out of
+            <Link href="/galaxy-digital-bitcoin"><strong>Galaxy Helios</strong></Link> in Dickens County, bought out of
             Argo&apos;s distress for $65 million in 2022, delivered its
             first <strong>133 MW to CoreWeave in July 2026</strong> under a
             15-year, 526 MW lease.<C n={6} /> <strong>Cipher</strong> runs the

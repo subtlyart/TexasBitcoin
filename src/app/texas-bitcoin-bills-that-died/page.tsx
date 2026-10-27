@@ -420,7 +420,9 @@ export default function DeadBillsPage() {
             <li>
               HB 2798, the House&apos;s kiosk-disclosure bill, passed the
               House April 25, 2025 and died in the Senate Business &amp;
-              Commerce Committee.<C n={5} />
+              Commerce Committee.<C n={5} /> The dollar ledger, and what the
+              bills would have required, is on{" "}
+              <Link href="/texas-crypto-kiosk-scams">the kiosk page</Link>.
             </li>
             <li>
               HB 1598 (an in-treasury reserve with a five-year hold) and HB
