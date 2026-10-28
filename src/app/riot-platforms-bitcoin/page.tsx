@@ -471,7 +471,9 @@ export default function RiotPlatformsBitcoinPage() {
             million and 140 jobs.<C n={26} /> Milam County followed in
             February 2026 with 75% for ten years from 2028, 4–1, the
             dissenter calling it &ldquo;too steep.&rdquo;<C n={35} /> At the
-            Capitol, Riot&apos;s research chief Pierre Rochard testified
+            Capitol, Riot&apos;s research chief{" "}
+            <Link href="/pierre-rochard-bitcoin">Pierre Rochard</Link>{" "}
+            testified
             against Kolkhorst&apos;s SB 1751 on March 28, 2023 – &ldquo;Bitcoin
             miners are the number 1 employer in Rockdale. Bitcoin miners are
             also the number 1 taxpayer to Rockdale ISD&rdquo; – and for the

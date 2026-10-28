@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "Who founded the Satoshi Nakamoto Institute?",
-    a: "Michael Goldstein, Daniel Krawisz, and Pierre Rochard, three members of the Mises Circle, an Austrian-economics reading group Goldstein ran at the University of Texas at Austin. Goldstein has been president since the founding; Krawisz was director of research until his essays stopped in January 2017; Rochard later became Riot Platforms' Vice President of Research and founded The Bitcoin Bond Company.",
+    a: "Michael Goldstein, Daniel Krawisz, and Pierre Rochard, three members of the Mises Circle, an Austrian-economics reading group Goldstein ran at the University of Texas at Austin. Goldstein has been president since the founding; Krawisz was director of research until his essays stopped in January 2017; Rochard later became Riot Platforms' Vice President of Research and then chief executive of The Bitcoin Bond Company, a job this site does not place in Texas.",
   },
   {
     q: "Who coined the term hyperbitcoinization?",
@@ -844,11 +844,13 @@ export default function SatoshiNakamotoInstitutePage() {
           <h2>Where does the Institute stand in the Texas story?</h2>
           <p>
             As the intellectual origin of the builder scene the rest of this
-            site covers. Rochard, the speculative-attack theorist, became
-            Vice President of Research at Riot Platforms – the company that
-            owns{" "}
+            site covers. <Link href="/pierre-rochard-bitcoin">Rochard</Link>,
+            the speculative-attack theorist, became Vice President of
+            Research at Riot Platforms – the company that owns{" "}
             <Link href="/rockdale-texas-bitcoin">the Rockdale mine</Link> –
-            and then founded The Bitcoin Bond Company.<C n={18} /> Parker
+            and then founded The Bitcoin Bond Company.<C n={18} /> No Texas
+            office or filing for that company was located; the Rochard page
+            does not domicile the job in Austin. Parker
             Lewis wrote his series on the Institute&apos;s shelf while
             building Unchained in Austin.<C n={8} /> A few miles away,{" "}
             <Link href="/jimmy-song-bitcoin">Jimmy Song</Link> was teaching

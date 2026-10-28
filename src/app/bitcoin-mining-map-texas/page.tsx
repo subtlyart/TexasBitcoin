@@ -263,7 +263,7 @@ function MiningDealsFigure() {
 <text x="218" y="86" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">Nueces County · 2026</text>
 <rect x="230" y="58" width="520.0" height="22" rx="4" fill="var(--accent)" fillOpacity="1.00"/>
 <text x="758.0" y="73" fontSize="11.5" fontWeight="600" fill="var(--foreground)">$19.6B</text>
-<text x="230" y="94" fontSize="10" fill="var(--muted-2)">1 GW · two 15-yr, 352 MW leases · reported Nvidia</text>
+<text x="230" y="94" fontSize="10" fill="var(--muted-2)">1 GW · two 15-yr, 352 MW leases · tenant unnamed</text>
 <text x="218" y="122" fontSize="12" fontWeight="600" textAnchor="end" fill="var(--foreground)" fontFamily="var(--font-display)">Riot Rockdale</text>
 <text x="218" y="136" fontSize="9.5" textAnchor="end" fill="var(--muted-2)">Milam County · Aug 10, 2026</text>
 <rect x="230" y="108" width="241.4" height="22" rx="4" fill="var(--accent)" fillOpacity="0.76"/>
@@ -309,7 +309,7 @@ export default function MiningMapPage() {
       "year online",
       "status",
     ],
-    dateModified: "2026-10-26",
+    dateModified: "2026-10-27",
   };
 
   const articleJsonLd = {
@@ -323,7 +323,7 @@ export default function MiningMapPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-07-22",
-    dateModified: "2026-10-26",
+    dateModified: "2026-10-27",
   };
 
   const faqJsonLd = {
@@ -569,10 +569,11 @@ export default function MiningMapPage() {
 
           <p>
             What the audit is now screening is a Texas land-grab for
-            miner-built AI capacity. Hut 8 has fully contracted its 1-gigawatt{" "}
+            miner-built AI capacity. <Link href="/hut-8-bitcoin">Hut 8</Link> has fully contracted its 1-gigawatt{" "}
             <strong>Beacon Point</strong> campus in Nueces County to a single
-            high-grade tenant — reported to be Nvidia — across two 15-year, 352
-            MW leases worth $19.6 billion.<C n={21} /> Cipher leased its
+            unnamed high-grade tenant — NVIDIA designed the halls; the
+            releases do not name the lessee — across two 15-year, 352
+            MW leases with a $19.6 billion base-term contract value.<C n={21} /> Cipher leased its
             300 MW <strong>Barber Lake</strong> site in Mitchell County to
             Fluidstack, a deal Google agreed to backstop. On September 25,
             2026 Cipher extended that lease from 10 years to 20 and raised

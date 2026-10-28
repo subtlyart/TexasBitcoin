@@ -363,7 +363,8 @@ export default function EarlyBitcoinMerchantsTexasPage() {
               the Satoshi Nakamoto Institute
             </Link>{" "}
             out of the same campus circle, and the other consultant KUT
-            quoted, Pierre Rochard, would co-found it with him.<C n={1} />{" "}
+            quoted, <Link href="/pierre-rochard-bitcoin">Pierre Rochard</Link>,
+            would co-found it with him.<C n={1} />{" "}
             The merchant layer and the intellectual layer of Austin Bitcoin
             began in the same room, and the room was small. By December, when
             Silicon Hills News counted the Austin Bitcoin and Cryptocurrency

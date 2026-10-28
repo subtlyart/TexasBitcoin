@@ -21,6 +21,7 @@ const COMPANIES = [
   { href: "/bitdeer-bitcoin", name: "Bitdeer", line: "The mine next door" },
   { href: "/lancium-bitcoin", name: "Lancium", line: "The landlord who patented the switch" },
   { href: "/galaxy-digital-bitcoin", name: "Galaxy", line: "The distressed mine that became the lease" },
+  { href: "/hut-8-bitcoin", name: "Hut 8", line: "The half-owned mine and the leased campus" },
 ];
 
 function Shelf({
