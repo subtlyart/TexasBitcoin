@@ -48,6 +48,9 @@ export const sniSources: SniSource[] = [
   { id: 18, label: "CoinDesk - Pierre Rochard, the Bitcoin Maximalist OG, on Mining, Markets and Modern Finance (April 7, 2025): Kraken, Riot Platforms VP of Research, The Bitcoin Bond Company", url: "https://www.coindesk.com/consensus-toronto-2025-coverage/2025/04/07/pierre-rochard-the-bitcoin-maximalist-og-on-mining-markets-and-modern-finance" },
   { id: 19, label: "Presidio Bitcoin - 21 in 21: Pierre Rochard: BBA and Master in Professional Accounting, University of Texas at Austin", url: "https://presidiobitcoin.substack.com/p/21-in-21-pierre-rochard" },
   { id: 20, label: "BitBlockBoom - Michael Goldstein: Bitcoin developer and educator, Austin; founder and president of the Satoshi Nakamoto Institute", url: "https://bitblockboom.com/michael-goldstein/" },
+  { id: 21, label: "Silicon Hills News - The Bitcoin Industry Takes Root in Austin (Laura Lorek, December 26, 2013): Bitstein Consulting, founded in 2013 by Michael Goldstein, described as a University of Texas computer science student, to help businesses adopt Bitcoin; he had helped Brave New Books", url: "https://www.siliconhillsnews.com/2013/12/26/the-bitcoin-industry-takes-root-in-austin/" },
+  { id: 22, label: "University of Texas events calendar - Bitcoin 101 with Michael Goldstein (February 11, 2014, McCombs School of Business): president of the Satoshi Nakamoto Institute and founder of Bitstein Consulting", url: "https://calendar.utexas.edu/event/bitcoin_101_with_michael_goldstein" },
+  { id: 23, label: "KUT - Austin Bitcoiners Bring Online Currency Offline, Into Stores (Andrew Weber, June 6, 2013): Brave New Books the only known Austin vendor; UT student Michael Goldstein its only consulting client", url: "https://www.kut.org/austin/2013-06-06/austin-bitcoiners-bring-online-currency-offline-into-stores" },
 ];
 
 export type SniTimelineKind = "circle" | "canon" | "schism" | "institution";

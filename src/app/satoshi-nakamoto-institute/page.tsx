@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "Who founded the Satoshi Nakamoto Institute?",
-    a: "Michael Goldstein, Daniel Krawisz, and Pierre Rochard, three members of the Mises Circle, an Austrian-economics reading group Goldstein ran at the University of Texas at Austin. Goldstein has been president since the founding; Krawisz was director of research until his essays stopped in January 2017; Rochard later became Riot Platforms' Vice President of Research and then chief executive of The Bitcoin Bond Company, a job this site does not place in Texas.",
+    a: "Michael Goldstein, Daniel Krawisz, and Pierre Rochard, three members of the Mises Circle, an Austrian-economics reading group Goldstein ran at the University of Texas at Austin. Goldstein, whom a 2013 Austin paper called the founder of Bitstein Consulting and whom TFTC identifies as Bitstein, has been president since the founding. Krawisz was director of research until his essays stopped in January 2017. Rochard later became Riot Platforms' Vice President of Research and then chief executive of The Bitcoin Bond Company, a job this site does not place in Texas.",
   },
   {
     q: "Who coined the term hyperbitcoinization?",
@@ -509,7 +509,7 @@ export default function SatoshiNakamotoInstitutePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-01",
-    dateModified: "2026-09-01",
+    dateModified: "2026-10-27",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Organization", name: "Satoshi Nakamoto Institute", url: "https://nakamotoinstitute.org/" },
@@ -581,8 +581,7 @@ export default function SatoshiNakamotoInstitutePage() {
             relaunch that turned a website into an institution.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published September 1, 2026 · Updated{" "}
-            {SNI_LAST_VERIFIED}
+            By {site.name} · Published September 1, 2026 · Updated October 27, 2026
           </p>
         </header>
 
@@ -715,6 +714,43 @@ export default function SatoshiNakamotoInstitutePage() {
             that room that wrote things down.<C n={3} /> The wider city story
             is in{" "}
             <Link href="/texas-crypto-archive">the Texas crypto archive</Link>.
+          </p>
+
+          <h2>Who is Bitstein?</h2>
+          <p>
+            The name on the firm, and the name the show uses. This page had
+            been calling him Michael Goldstein. Silicon Hills News, on
+            December 26, 2013, listed Bitstein Consulting among the Austin
+            startups in the room: founded that year by Goldstein, whom the
+            paper called a University of Texas computer science student, to
+            help businesses adopt Bitcoin. It said he had helped Brave New
+            Books.<C n={21} /> KUT, six months earlier, had called that
+            bookstore his only consulting client.<C n={23} /> The two
+            descriptions are not the same client list, and this page does
+            not force them to be.
+          </p>
+          <p>
+            On February 11, 2014 the university&apos;s own calendar, for a
+            talk at the McCombs School of Business, identified him as
+            president of the Satoshi Nakamoto Institute and founder of
+            Bitstein Consulting.<C n={22} /> TFTC&apos;s May 22, 2024 episode
+            identifies the guest as Michael Goldstein, also known as
+            Bitstein.<C n={3} /> In that conversation he does not treat the
+            2024 work as a rebirth. He says he does not know that the
+            Institute died, calls it a revitalization, and says it had been
+            in hibernation. He says he would not be where he is without the
+            Institute as it was when he was coming up.<C n={3} /> The joke
+            that named the place is already above. What was missing was the
+            handle.
+          </p>
+          <p>
+            Bitstein Consulting is not a second institution. Silicon Hills
+            put CoinTerra first and the consultancy in the next paragraph.
+            <C n={21} /> The computer-science line is that paper&apos;s. The
+            economics reading group is his own account, on TFTC and on this
+            page.<C n={3} /> This page does not pick a major. The rest of
+            the Institute record was last checked {SNI_LAST_VERIFIED}. The
+            handle is from the documents read for this section.
           </p>
 
           <h2>What did the Institute write that the network still quotes?</h2>
