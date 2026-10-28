@@ -216,9 +216,10 @@ export default function GalaxyHeliosPage() {
             </Link>{" "}
             already carried Helios as a line. Riot, MARA, Core Scientific,
             Cipher, Bitdeer, and Lancium had pages. Galaxy did not. This is
-            that page. Hut 8 is the follow-on, not a substitute: King
-            Mountain is still a mine, and Beacon Point is an AI campus with
-            a miner as landlord.
+            that page. <Link href="/hut-8-bitcoin">Hut 8</Link> is the
+            follow-on, not a substitute: King Mountain is still a mine, and
+            Beacon Point is a leased campus with a miner as landlord. The
+            halls are not delivered.
           </p>
 
           <h2>What did Galaxy buy in December 2022?</h2>

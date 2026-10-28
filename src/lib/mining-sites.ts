@@ -257,7 +257,7 @@ export const miningSites: MiningSite[] = [
     status: "ai",
     aiNative: true,
     story:
-      "Not a converted mine but Hut 8's purpose-built answer to the AI turn. The 1 GW campus is fully contracted across two 15-year, 352 MW leases — base-term value $19.6 billion — to a single high-grade tenant reported to be Nvidia, built to Nvidia's DSX reference design on interconnection secured with AEP Texas. The clearest sign that a Texas grid connection is now the prize.",
+      "Not a converted mine but Hut 8's purpose-built answer to the AI turn — after an original underwriting for American Bitcoin. The 1 GW campus is fully contracted across two 15-year, 352 MW leases — base-term contract value $19.6 billion, not cash collected — to a single unnamed high-grade tenant. NVIDIA is the design partner for the DSX architecture, not established as the lessee. Interconnection is with AEP Texas. Halls are not delivered.",
     sourceIds: [21],
   },
   {
