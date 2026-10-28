@@ -364,7 +364,8 @@ export default function EarlyBitcoinMerchantsTexasPage() {
             </Link>{" "}
             out of the same campus circle, and the other consultant KUT
             quoted, <Link href="/pierre-rochard-bitcoin">Pierre Rochard</Link>,
-            would co-found it with him.<C n={1} />{" "}
+            would co-found it with him.<C n={1} /> Silicon Hills, that
+            December, called his firm Bitstein Consulting.<C n={2} />{" "}
             The merchant layer and the intellectual layer of Austin Bitcoin
             began in the same room, and the room was small. By December, when
             Silicon Hills News counted the Austin Bitcoin and Cryptocurrency

@@ -47,6 +47,12 @@ const sources = [
       "Fort Worth Report — Fort Worth began cryptocurrency mining over two years ago. What were the results? (July 28, 2024): June 2022–June 2024 public-records totals; Capua on the rate, the four-year life, and 200 Texas Street; Bratcher on Temple",
     url: "https://fortworthreport.org/2024/07/28/fort-worth-began-cryptocurrency-mining-over-two-years-ago-what-were-the-results/",
   },
+  {
+    id: "s5",
+    label:
+      "Fort Worth Report — Fort Worth was the first city to adopt bitcoin mining to attract attention. Was it worth it? (Seth Bodine, August 2, 2023): Parker unavailable for an interview; her statement names Techstars, Texas A&M-Fort Worth, and Alliance, and calls the program one example; Quinn PR crafted the media campaign; Bratcher on the leap of faith; Capua says the city does not endorse the industry",
+    url: "https://fortworthreport.org/2023/08/02/fort-worth-was-the-first-city-to-adopt-bitcoin-mining-to-attract-attention-was-it-worth-it/",
+  },
 ];
 
 const faqs = [
@@ -65,6 +71,10 @@ const faqs = [
   {
     q: "Is the City Hall machine still running?",
     a: "No public accounting after July 28, 2024 was located as of October 26, 2026. On that date Carlo Capua told the Fort Worth Report the machine had about a four-year life, had been running more than two years, and would stay at 200 Texas Street. That is the last sourced status, not a 2026 confirmation.",
+  },
+  {
+    q: "What did Mayor Parker say the pilot was for?",
+    a: "A rebrand, not a treasury. On April 26, 2022 she told CNBC that a lot of people did not know Fort Worth, and that tech innovation including cryptocurrency was how the city would change that conversation. On August 2, 2023 she was unavailable for a Fort Worth Report interview. Her statement did not mention the machine or the earnings. It called the program one example, beside Techstars, Texas A&M-Fort Worth, and Alliance.",
   },
   {
     q: "Did any other Texas city copy Fort Worth?",
@@ -94,7 +104,7 @@ export default function FortWorthPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-10-26",
-    dateModified: "2026-10-26",
+    dateModified: "2026-10-27",
   };
 
   const faqJsonLd = {
@@ -147,7 +157,7 @@ export default function FortWorthPage() {
             stop.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published October 26, 2026 · Updated October 26, 2026
+            By {site.name} · Published October 26, 2026 · Updated October 27, 2026
           </p>
         </header>
 
@@ -258,6 +268,46 @@ export default function FortWorthPage() {
             quoted a TCU professor, Kelly Slaughter, saying that comparison
             does not stay still: as the puzzles get harder, the machines
             work harder.<C n={2} />
+          </p>
+
+          <h2>What did the mayor say it was for?</h2>
+          <p>
+            A name, not a treasury. Parker told CNBC that day that a lot of
+            people did not know Fort Worth, and that the city wanted to
+            change that conversation. Tech innovation, including
+            cryptocurrency, was how she said it would be done.<C n={1} /> She
+            called the project brand new for any city, and said there had
+            been a lot of policy to get through.<C n={1} /> She called Fort
+            Worth the fastest growing city in the country and said
+            cryptocurrency was a huge part of its future economy.<C n={1} />
+            Governments, she said, usually move at a snail&apos;s pace. Fort
+            Worth wanted to elbow its way into the room.<C n={1} />
+          </p>
+          <p>
+            CNBC&apos;s account of where the idea came from is her friends,
+            not a study. Parker, whom CNBC described as the city&apos;s first
+            millennial mayor and about a year in office, got the idea after
+            talking with people in venture capital. They told her that 80
+            percent of venture capital was spent on tech, and that
+            cryptocurrency was at the center of that.<C n={1} /> The 80
+            percent is what she was told. This page has not checked it.
+          </p>
+          <p>
+            A year later the sentence had moved. On August 2, 2023 the Fort
+            Worth Report could not interview her. The statement it printed
+            does not mention the machine, the rate, or the $1,019.31. It
+            says local leaders have to embrace out-of-the-box ideas, names
+            the Techstars Physical Health Fort Worth Accelerator, Texas
+            A&amp;M-Fort Worth&apos;s research building, and Alliance&apos;s
+            mobility zone, and calls the mining program &ldquo;just one
+            example&rdquo; of expanding what is possible in the city.
+            <C n={5} /> Lee Bratcher, in the same piece, called it &ldquo;the
+            leap of faith that Mayor Parker took.&rdquo;<C n={5} /> Carlo
+            Capua said the city does not endorse the crypto industry, or any
+            industry.<C n={5} /> The Report also says Quinn PR crafted the
+            campaign behind the impressions.<C n={5} /> The mayor&apos;s case
+            was attention. The ledger on this page is the counterweight.
+            No later statement from her about the rig was located.
           </p>
 
           <h2>What did the six-month pilot actually earn?</h2>
