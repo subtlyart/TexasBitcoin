@@ -35,8 +35,8 @@ export interface NetworkAssumptions {
 }
 
 export const DEFAULT_NETWORK: NetworkAssumptions = {
-  btcPrice: 108_000,
-  networkHashrateEh: 1_050,
+  btcPrice: 77_450,
+  networkHashrateEh: 1_070,
   blockSubsidyBtc: 3.125,
   blocksPerDay: 144,
 };
