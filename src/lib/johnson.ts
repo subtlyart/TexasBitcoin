@@ -58,7 +58,7 @@ export const johnsonSources: JohnsonSource[] = [
   { id: 23, label: "Texas Tribune - Texas Democrats answer questions ahead of AG runoff (April 23, 2026): Johnson raised $901,353 and spent $1,230,534 from July 2025 to February 2026; endorsements", url: "https://www.texastribune.org/2026/04/23/texas-2026-attorney-general-democrats-runoff-nathan-johnson-joe-jaworski/" },
   { id: 24, label: "Texas Tribune - State Sen. Nathan Johnson to retain his Texas Senate seat (March 5, 2024): the primary over Rep. Victoria Neave Criado", url: "https://www.texastribune.org/2024/03/05/nathan-johnson-victoria-neave-criado-texas-senate/" },
   { id: 25, label: "Texas Secretary of State - Important 2026 election dates: November 3, 2026 uniform election; early voting by personal appearance October 19–30, 2026", url: "https://www.sos.texas.gov/elections/voter/important-election-dates.shtml" },
-  { id: 26, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Mark Oxford (L) received 165,550 (1.69%).", url: "https://electionresults.sos.state.tx.us/results.html" },
+  { id: 26, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%).", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 export type JohnsonTimelineKind = "path" | "registry" | "reserve" | "watch";
@@ -186,7 +186,7 @@ export const johnsonTimeline: JohnsonEvent[] = [
     date: "2026-11-03",
     dateLabel: "November 3, 2026",
     title: "Unofficial general-election returns",
-    detail: "At 100% of polling locations reporting, unofficial Secretary of State returns show Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Mark Oxford (L) received 165,550 (1.69%). The result is not certified.",
+    detail: "At 100% of polling locations reporting, unofficial Secretary of State returns show Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). The result is not certified.",
     kind: "watch",
     sourceIds: [26],
   },

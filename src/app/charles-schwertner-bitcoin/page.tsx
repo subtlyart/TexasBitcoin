@@ -222,7 +222,7 @@ export default function CharlesSchwertnerBitcoinPage() {
             Charles Schwertner: The Surgeon Who Wrote the Reserve
           </h1>
           <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
-            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Charles Schwertner (R) led Amy Thomasson (D) 197,912 (53.30%) to 173,380 (46.70%) in Senate District 5. These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={25} />
+            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Charles Schwertner (R) led Paul Thomasson (D) 197,912 (53.30%) to 173,380 (46.70%) in Senate District 5. These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={25} />
           </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Every other page in this cluster leans on one sentence: Abbott
@@ -513,7 +513,7 @@ export default function CharlesSchwertnerBitcoinPage() {
             <Link href="/who-holds-the-texas-bitcoin-reserve">
               the custody watch
             </Link>
-            .<C n={3} /> Schwertner led Amy Thomasson in unofficial November 3 returns for
+            .<C n={3} /> Schwertner led Paul Thomasson in unofficial November 3 returns for
             Senate District 5.<C n={25} /> The 90th
             Legislature convenes January 12, 2027, with the expansions
             drafted in 2025&apos;s dead bills waiting for a sponsor and the

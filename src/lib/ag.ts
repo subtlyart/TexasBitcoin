@@ -66,7 +66,7 @@ export const agSources: AgSource[] = [
   { id: 30, label: "Texas Tribune - Ken Paxton's office filed a burst of Big Tech lawsuits in the runoff's final days (June 3, 2026): none concerned digital assets", url: "https://www.texastribune.org/2026/06/03/texas-ken-paxton-tech-lawsuits-senate-campaign/" },
   { id: 31, label: "Wikipedia - 2026 Texas Attorney General election: Mayes Middleton (R) v. Nathan Johnson (D), November 3, 2026 - the office's first change of hands since January 2015", url: "https://en.wikipedia.org/wiki/2026_Texas_Attorney_General_election" },
   { id: 32, label: "Texas Senate Journal - March 6, 2025: SB 21 passed 25–5; both 2026 attorney general nominees voted yea", url: "https://journals.senate.texas.gov/SJRNL/89R/HTML/89RSJ03-06-F.HTM" },
-  { id: 33, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Mark Oxford (L) received 165,550 (1.69%).", url: "https://electionresults.sos.state.tx.us/results.html" },
+  { id: 33, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%).", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 export type AgTimelineKind = "counsel" | "suit" | "records" | "gap" | "watch";
@@ -169,7 +169,7 @@ export const agTimeline: AgEvent[] = [
     dateLabel: "September → November 2026",
     title: "The handover",
     detail:
-      "The Attorney General is running for the U.S. Senate on a platform that added a crypto plank \"in recent months\" and names the CLARITY Act; his office's crypto record is unchanged by it. Unofficial November 3 returns at 100% of polling locations reporting: Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Mark Oxford (L) received 165,550 (1.69%). Ken Paxton remains the incumbent pending the January 2027 handover; the Kentucky case and the PUC case pass to his successor.",
+      "The Attorney General is running for the U.S. Senate on a platform that added a crypto plank \"in recent months\" and names the CLARITY Act; his office's crypto record is unchanged by it. Unofficial November 3 returns at 100% of polling locations reporting: Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). Ken Paxton remains the incumbent pending the January 2027 handover; the Kentucky case and the PUC case pass to his successor.",
     kind: "watch",
     sourceIds: [29, 30, 31, 32, 33],
   },

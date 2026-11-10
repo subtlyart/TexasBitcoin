@@ -15,7 +15,7 @@
 // the custodian award or the first SB 21 report re-characterizes what he
 // left behind. The successor's record lives in huffines.ts.
 
-export const HANCOCK_LAST_VERIFIED = "September 29, 2026";
+export const HANCOCK_LAST_VERIFIED = "November 9, 2026";
 
 export interface HancockSource {
   id: number;
@@ -45,6 +45,7 @@ export const hancockSources: HancockSource[] = [
   { id: 17, label: "The Texan - Abbott Appoints Comptroller Candidate Don Huffines to Fill Outgoing Hancock's Unexpired Term (July 2, 2026)", url: "https://thetexan.news/state/texas-state-news/abbott-appoints-comptroller-candidate-don-huffines-to-fill-outgoing-hancocks-unexpired-term/article_6ae16818-e965-4319-8f0a-2524476ade36.html" },
   { id: 18, label: "Texas Comptroller - Don Huffines Sworn in as Texas Comptroller, Refuses Salary, Calls for Property Tax Relief (August 1, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260801-don-huffines-sworn-in-as-texas-comptroller-refuses-salary-calls-for-property-tax-relief-1785512488796" },
   { id: 19, label: "Texas Senate Journal - 89th Legislature, Regular Session, 14th Day (March 6, 2025): CSSB 21 finally passed, Yeas 25, Nays 5 - Hancock among the nays with Creighton, Gutierrez, Hall, and Nichols", url: "https://journals.senate.texas.gov/sjrnl/89r/pdf/89RSJ03-06-F.PDF" },
+  { id: 20, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns with 100% of polling locations reporting: Sarah Eckhardt led Don Huffines in the comptroller race", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 export type HancockTimelineKind = "path" | "office" | "execution" | "verdict";

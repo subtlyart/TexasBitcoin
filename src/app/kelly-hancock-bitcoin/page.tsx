@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Who manages the Texas Bitcoin Reserve after Hancock?",
-    a: "Don Huffines, sworn in as Texas Comptroller on August 1, 2026 after Governor Abbott appointed him to Hancock's unexpired term. Under Senate Bill 21, custody of the reserve and the comptroller's seat on its advisory committee pass with the office. Huffines inherited the $10 million ETF position with the custodian still unnamed, and faces Democrat Sarah Eckhardt on November 3, 2026 for the full term.",
+    a: "Don Huffines, sworn in as Texas Comptroller on August 1, 2026 after Governor Abbott appointed him to Hancock's unexpired term. Under Senate Bill 21, custody of the reserve and the comptroller's seat on its advisory committee pass with the office. Huffines inherited the $10 million ETF position with the custodian still unnamed. Sarah Eckhardt led him in unofficial November 3, 2026 returns for the full term beginning January 2027. Source: Texas Secretary of State election results (100% of polling locations reporting).",
   },
 ];
 
@@ -165,7 +165,7 @@ export default function KellyHancockBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-28",
-    dateModified: "2026-09-29",
+    dateModified: "2026-11-09",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Kelly Hancock" },
@@ -487,7 +487,7 @@ export default function KellyHancockBitcoinPage() {
             {faqs.map((f) => (
               <div key={f.q}>
                 <h3 className="font-semibold">{f.q}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{f.a}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{f.a}{f.q === "Who manages the Texas Bitcoin Reserve after Hancock?" && <C n={20} />}</p>
               </div>
             ))}
           </div>

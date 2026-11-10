@@ -195,7 +195,7 @@ export default function GlennHegarBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-24",
-    dateModified: "2026-09-24",
+    dateModified: "2026-11-09",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Glenn Hegar" },
@@ -587,8 +587,7 @@ export default function GlennHegarBitcoinPage() {
             As of September 2026: Chancellor of the Texas A&amp;M University
             System since July 1, 2025, on no ballot, with no public position
             on the reserve since he left it.<C n={23} /> The office he ran is
-            Don Huffines&apos;s until November 3 and, if the voters agree,
-            after; the fund he opened holds the state&apos;s first bitcoin;
+            Don Huffines&apos;s until the January 2027 term begins; unofficial November 3 returns show Sarah Eckhardt leading him.<C n={30} /> The fund he opened holds the state&apos;s first bitcoin;
             the vault he opened holds other people&apos;s gold. The
             comptroller who bought is on{" "}
             <Link href="/kelly-hancock-bitcoin">Kelly Hancock and Bitcoin</Link>

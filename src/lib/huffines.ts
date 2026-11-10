@@ -48,7 +48,7 @@ export const huffinesSources: HuffinesSource[] = [
   { id: 18, label: "Texas Comptroller - Acting Comptroller Kelly Hancock Names Strategic Bitcoin Reserve Advisory Committee Members and opens the custody RFP (May 28, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260528-acting-texas-comptroller-kelly-hancock-names-strategic-bitcoin-reserve-advisory-committee-members-1778774749224" },
   { id: 19, label: "Wikipedia - 2026 Texas Comptroller of Public Accounts election: Huffines (R) vs. Sarah Eckhardt (D), November 3, 2026", url: "https://en.wikipedia.org/wiki/2026_Texas_Comptroller_of_Public_Accounts_election" },
   { id: 20, label: "Texas Secretary of State - Important 2026 election dates: November 3, 2026 uniform election; early voting by personal appearance October 19–30, 2026", url: "https://www.sos.texas.gov/elections/voter/important-election-dates.shtml" },
-  { id: 21, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); Joseph Echavarria-Garza (L) received 185,187 (1.89%) and Ahmad Faizi (G) 63,817 (0.65%).", url: "https://electionresults.sos.state.tx.us/results.html" },
+  { id: 21, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%).", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 export type HuffinesTimelineKind = "path" | "plan" | "office" | "watch";
@@ -151,7 +151,7 @@ export const huffinesTimeline: HuffinesEvent[] = [
     dateLabel: "November 3, 2026",
     title: "The general",
     detail:
-      "Unofficial November 3 returns at 100% of polling locations reporting: Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); Joseph Echavarria-Garza (L) received 185,187 (1.89%) and Ahmad Faizi (G) 63,817 (0.65%). Huffines remains comptroller by appointment pending the January 2027 term; the reserve's manager lost the lead for a full term.",
+      "Unofficial November 3 returns at 100% of polling locations reporting: Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%). Huffines remains comptroller by appointment pending the January 2027 term; the reserve's manager lost the lead for a full term.",
     kind: "watch",
     sourceIds: [19, 20, 21],
   },

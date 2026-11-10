@@ -241,7 +241,7 @@ export default function MayesMiddletonBitcoinPage() {
             Mayes Middleton: The Votes Without the Words
           </h1>
           <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
-            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Nathan Johnson (D) led Mayes Middleton (R) 5,133,629 (52.38%) to 4,502,442 (45.94%); Mark Oxford (L) received 165,550 (1.69%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={38} />
+            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Nathan Johnson (D) led Mayes Middleton (R) 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={38} />
           </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Unofficial November 3 returns point to Nathan Johnson as the next lawyer who decides whether

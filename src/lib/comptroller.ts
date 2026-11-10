@@ -67,7 +67,7 @@ export const comptrollerSources: ComptrollerSource[] = [
   { id: 30, label: "Wikipedia - 2026 Texas Comptroller of Public Accounts election: Huffines (R) vs. Sarah Eckhardt (D), November 3, 2026", url: "https://en.wikipedia.org/wiki/2026_Texas_Comptroller_of_Public_Accounts_election" },
   { id: 31, label: "Texas Senate Journal - 89th Legislature, 14th Day (March 6, 2025): CSSB 21 finally passed, Yeas 25, Nays 5 - Hancock among the nays", url: "https://journals.senate.texas.gov/sjrnl/89r/pdf/89RSJ03-06-F.PDF" },
   { id: 32, label: "Texas State Historical Association, Handbook of Texas - State Treasurer: voters abolished the office in November 1995, effective August 31, 1996, and its duties passed to the Comptroller of Public Accounts", url: "https://www.tshaonline.org/handbook/entries/state-treasurer" },
-  { id: 33, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); Joseph Echavarria-Garza (L) received 185,187 (1.89%) and Ahmad Faizi (G) 63,817 (0.65%).", url: "https://electionresults.sos.state.tx.us/results.html" },
+  { id: 33, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%).", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 // Status panel - the office's Bitcoin duties, one self-contained row each.
@@ -79,7 +79,7 @@ export interface ComptrollerStatusRow {
 
 export const comptrollerStatus: ComptrollerStatusRow[] = [
   { label: "The office", value: "Comptroller of Public Accounts - the state's chief financial officer, tax collector, revenue estimator, and treasurer, with the Texas Treasury Safekeeping Trust Company under it", sourceIds: [5] },
-  { label: "Holder", value: "Don Huffines since August 1, 2026, by appointment to Kelly Hancock's unexpired term; on the November 3, 2026 ballot against Sarah Eckhardt", sourceIds: [14, 30] },
+  { label: "Holder", value: "Don Huffines since August 1, 2026, by appointment to Kelly Hancock's unexpired term; Sarah Eckhardt led him in unofficial November 3 returns, but he remains in office pending the January 2027 term", sourceIds: [14, 33] },
   { label: "Custody of the reserve", value: "By statute: SB 21 § 403.703 places the Strategic Bitcoin Reserve in the comptroller's custody, outside the treasury, as Fund 1018 held by the Trust Company", sourceIds: [1, 3] },
   { label: "What it holds", value: "$10 million in the iShares Bitcoin Trust, bought in two ~$5 million tranches on November 20 and December 15, 2025, as an explicit placeholder for directly held Bitcoin", sourceIds: [8, 9] },
   { label: "The committee", value: "The comptroller chairs the five-member advisory committee by office and appointed its four outside members on May 28, 2026", sourceIds: [1, 10] },
@@ -190,7 +190,7 @@ export const comptrollerTimeline: ComptrollerEvent[] = [
     dateLabel: "November 3 → December 31, 2026",
     title: "The ballot and the report",
     detail:
-      "Unofficial November 3 returns at 100% of polling locations reporting: Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); Joseph Echavarria-Garza (L) received 185,187 (1.89%) and Ahmad Faizi (G) 63,817 (0.65%). Huffines remains the appointed comptroller pending the January 2027 term; the first SB 21 biennial report is due under the sitting comptroller's name by December 31.",
+      "Unofficial November 3 returns at 100% of polling locations reporting: Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%). Huffines remains the appointed comptroller pending the January 2027 term; the first SB 21 biennial report is due under the sitting comptroller's name by December 31.",
     kind: "watch",
     sourceIds: [30, 1, 33],
   },
