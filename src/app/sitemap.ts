@@ -81,7 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/bitcoin-frontier-stack-texas", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-10-21" },
     { path: "/run-a-bitcoin-node-texas", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-10-22" },
     { path: "/bitcoin-energy-engineering-texas", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-10-21" },
-    { path: "/texas-bitcoin-bills-2027", priority: 0.7, changeFrequency: "weekly" as const, lastMod: "2026-09-30" },
+    { path: "/texas-bitcoin-bills-2027", priority: 0.7, changeFrequency: "weekly" as const, lastMod: "2026-11-09" },
     { path: "/texas-crypto-archive", priority: 0.5, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/about", priority: 0.5, changeFrequency: "yearly" as const, lastMod: "2026-07-22" },
     { path: "/disclaimer", priority: 0.3, changeFrequency: "yearly" as const, lastMod: "2026-07-22" },

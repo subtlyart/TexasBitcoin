@@ -19,7 +19,7 @@
 // Verified September 25, 2026. Re-verify after the November 3, 2026
 // general election and if he states a position on digital assets.
 
-export const MIDDLETON_LAST_VERIFIED = "October 26, 2026";
+export const MIDDLETON_LAST_VERIFIED = "November 9, 2026";
 
 export interface MiddletonSource {
   id: number;
@@ -67,6 +67,7 @@ export const middletonSources: MiddletonSource[] = [
   { id: 35, label: "Texas Tribune - Texans lost $56.8 million to cryptocurrency kiosk scams (July 8, 2026): about 1,200 victims; Bitcoin Depot's bankruptcy; the 2027 session's consumer-protection fight - neither attorney general nominee quoted", url: "https://www.texastribune.org/2026/07/08/texas-cryptocurrency-kiosk-bitcoin-atm-scam-fraud/" },
   { id: 36, label: "CoinDesk - Crypto PACs spend $9 million in Texas and score wins in both parties (May 27, 2026): Fairshake's Texas spending was in federal runoffs; none tied to the attorney general race", url: "https://www.coindesk.com/policy/2026/05/27/crypto-pacs-spend-usd9-million-in-texas-and-score-wins-in-both-parties" },
   { id: 37, label: "Texas Secretary of State - Important 2026 election dates: November 3, 2026 uniform election; early voting by personal appearance October 19–30, 2026", url: "https://www.sos.texas.gov/elections/voter/important-election-dates.shtml" },
+  { id: 38, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%).", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 export type MiddletonTimelineKind = "path" | "vote" | "campaign" | "watch";
@@ -177,8 +178,8 @@ export const middletonTimeline: MiddletonEvent[] = [
     dateLabel: "November 3, 2026",
     title: "The ballot",
     detail:
-      "Middleton faces Democrat Nathan Johnson for attorney general. Early voting by personal appearance runs October 19–30, 2026; as of October 26 it is underway, and no result is in.",
+      "Unofficial November 3 returns at 100% of polling locations reporting: Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). Paxton remains attorney general pending the January 2027 handover.",
     kind: "watch",
-    sourceIds: [2, 37],
+    sourceIds: [2, 37, 38],
   },
 ];

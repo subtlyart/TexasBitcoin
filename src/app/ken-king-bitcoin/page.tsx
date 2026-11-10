@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Is Ken King on the November 2026 ballot?",
-    a: "Yes. He won the March 3, 2026 Republican primary over Plainview rancher John Browning, 53.9% to 46.1%, after two House colleagues filmed ads against him and Speaker Burrows campaigned for him, and faces Democrat Heather Wallace on November 3, 2026.",
+    a: "Yes. He won the March 3, 2026 Republican primary over Plainview rancher John Browning, 53.9% to 46.1%, after two House colleagues filmed ads against him and Speaker Burrows campaigned for him, and led Democrat Heather Wallace in unofficial November 3 returns, 36,488 to 10,259 (78.05% to 21.95%).",
   },
 ];
 
@@ -202,7 +202,7 @@ export default function KenKingBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-24",
-    dateModified: "2026-10-26",
+    dateModified: "2026-11-09",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Ken King" },
@@ -261,6 +261,9 @@ export default function KenKingBitcoinPage() {
           <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             Ken King: The Chairman Who Rewrote the Load Law
           </h1>
+          <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
+            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Ken King (R) led Heather Wallace (D) 36,488 (78.05%) to 10,259 (21.95%) in House District 88. These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={38} />
+          </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             There are two Kings in the Texas Legislature and the large-load
             law belongs to both. Senator Phil King wrote Senate Bill 6 and
@@ -337,8 +340,8 @@ export default function KenKingBitcoinPage() {
             </li>
             <li>
               He won the March 3, 2026 Republican primary 53.9% to 46.1% and
-              faces Heather Wallace on November 3, 2026.<C n={4} />
-              <C n={35} />
+              led Heather Wallace in unofficial November 3 returns.<C n={4} />
+              <C n={38} />
             </li>
           </ul>
         </div>
@@ -603,8 +606,7 @@ export default function KenKingBitcoinPage() {
 
           <h2>Where does the Ken King record stand today?</h2>
           <p>
-            As of September 2026: chair of State Affairs, on the November 3
-            ballot against Heather Wallace, with an interim report on data
+            As of September 2026: chair of State Affairs, ahead of Heather Wallace in unofficial November 3 returns, with an interim report on data
             centers and SB 6 implementation due before the 90th Legislature
             convenes January 12, 2027.<C n={1} /><C n={35} /><C n={26} /> The
             transmission-cost review the law ordered is due from the

@@ -19,7 +19,7 @@
 // Verified September 24, 2026. Re-verify if Hegar speaks on the reserve,
 // and after the November 3, 2026 comptroller election.
 
-export const HEGAR_LAST_VERIFIED = "September 24, 2026";
+export const HEGAR_LAST_VERIFIED = "November 9, 2026";
 
 export interface HegarSource {
   id: number;
@@ -59,6 +59,7 @@ export const hegarSources: HegarSource[] = [
   { id: 27, label: "Forbes India - Texas A&M to offer a course on Bitcoin (January 2023): Korok Ray's Bitcoin Protocol course, launched before Hegar's tenure", url: "https://www.forbesindia.com/article/cryptocurrency/texas-am-to-offer-a-course-on-bitcoin/82605/1" },
   { id: 28, label: "Texas Tribune - Don Huffines wins the Republican primary for comptroller (March 3, 2026): Huffines 57%, Hancock 24%, Craddick 15%; no Hegar endorsement on record", url: "https://www.texastribune.org/2026/03/03/don-huffines-christi-craddick-kelly-hancock-texas-gop-primary-comptroller/" },
   { id: 29, label: "Texas Tribune - Glenn Hegar named as Texas A&M System's next leader (March 7, 2025): the day after the Senate passed SB 21", url: "https://www.texastribune.org/2025/03/07/texas-am-system-chancellor-glenn-hegar/" },
+  { id: 30, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns with 100% of polling locations reporting: Sarah Eckhardt led Don Huffines in the comptroller race", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 export type HegarTimelineKind = "path" | "custodian" | "reserve" | "watch";

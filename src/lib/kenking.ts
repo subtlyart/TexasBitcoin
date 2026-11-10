@@ -22,7 +22,7 @@
 // general election and when House State Affairs files its interim report
 // on data centers and SB 6 implementation.
 
-export const KENKING_LAST_VERIFIED = "October 26, 2026";
+export const KENKING_LAST_VERIFIED = "November 9, 2026";
 
 export interface KenKingSource {
   id: number;
@@ -70,6 +70,7 @@ export const kenKingSources: KenKingSource[] = [
   { id: 35, label: "Ballotpedia - Texas House of Representatives District 88: November 3, 2026 general, Ken King (R) v. Heather Wallace (D)", url: "https://ballotpedia.org/Texas_House_of_Representatives_District_88" },
   { id: 36, label: "Texas Rural Reporter - Interview with Rep. Ken King on his wildfire bills (March 14, 2025): \"The Panhandle doesn't have a new wind problem; we have an 80-year-old infrastructure problem\"", url: "https://texasruralreporter.substack.com/p/interview-with-rep-king-king-on-his" },
   { id: 37, label: "Texas Secretary of State - Important 2026 election dates: November 3, 2026 uniform election; early voting by personal appearance October 19–30, 2026", url: "https://www.sos.texas.gov/elections/voter/important-election-dates.shtml" },
+  { id: 38, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Ken King (R) led Heather Wallace (D) in House District 88, 36,488 (78.05%) to 10,259 (21.95%).", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 export type KenKingTimelineKind = "path" | "load" | "vote" | "watch";
@@ -171,8 +172,16 @@ export const kenKingTimeline: KenKingEvent[] = [
     dateLabel: "August 2026",
     title: "The second hearing, the letter, and the landowners",
     detail:
-      "On August 19 the committee takes public testimony on data centers and 765-kV transmission for a full day; King frames the fight as \"really a routing issue\" and warns that many proposals \"erode private property rights.\" On August 24 he writes ERCOT and the PUC calling the transmission-line application process flawed and inviting them to help draft \"legislative guardrails\" for data centers: \"West Texas and the Permian Basin need power, but not built on the backs of thousands of farmers and ranchers.\" On the November 3 ballot against Heather Wallace, after a 53.9% primary in March. Early voting by personal appearance runs October 19–30, 2026; as of October 26 it is underway, and no result is in.",
+      "On August 19 the committee takes public testimony on data centers and 765-kV transmission for a full day; King frames the fight as \"really a routing issue\" and warns that many proposals \"erode private property rights.\" On August 24 he writes ERCOT and the PUC calling the transmission-line application process flawed and inviting them to help draft \"legislative guardrails\" for data centers: \"West Texas and the Permian Basin need power, but not built on the backs of thousands of farmers and ranchers.\" After a 53.9% primary in March, King led Heather Wallace 36,488 to 10,259 in the November 3 general election, according to unofficial Secretary of State returns with 100% of polling locations reporting.",
     kind: "watch",
-    sourceIds: [29, 30, 31, 4, 35, 37],
+    sourceIds: [29, 30, 31, 4, 35, 37, 38],
+  },
+  {
+    date: "2026-11-03",
+    dateLabel: "November 3, 2026",
+    title: "Unofficial general-election returns",
+    detail: "At 100% of polling locations reporting, unofficial Secretary of State returns show Ken King (R) led Heather Wallace (D) in House District 88, 36,488 (78.05%) to 10,259 (21.95%). The result is not certified.",
+    kind: "watch",
+    sourceIds: [38],
   },
 ];

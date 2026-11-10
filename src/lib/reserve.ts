@@ -8,7 +8,7 @@
 // Re-verify whenever the Comptroller acts, reports, or names the fifth committee
 // member — and bump RESERVE_LAST_VERIFIED and the page's dateModified together.
 
-export const RESERVE_LAST_VERIFIED = "October 26, 2026";
+export const RESERVE_LAST_VERIFIED = "November 9, 2026";
 
 export interface ReserveSource {
   id: number;
@@ -36,6 +36,7 @@ export const reserveSources: ReserveSource[] = [
   { id: 16, label: "Texas Legislature Online — SB 21 (89R), enrolled text: § 403.708 (biennial report: due December 31 of each even-numbered year, published on the comptroller's website and submitted to the legislature; holdings and estimated value as of the last day of the preceding state fiscal biennium; changes disaggregated by cryptocurrency type; actions taken to administer the reserve)", url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00021F.htm" },
   { id: 17, label: "Texas Senate Journal — 89th Legislature, Regular Session, 14th Day (March 6, 2025), p. 423: CSSB 21 passed on third reading, Yeas 25, Nays 5 — Kelly Hancock among the five nays, with Creighton, Gutierrez, Hall, and Nichols", url: "https://journals.senate.texas.gov/sjrnl/89r/pdf/89RSJ03-06-F.PDF" },
   { id: 18, label: "Texas Comptroller — News releases, reviewed October 26, 2026: no release naming a Strategic Bitcoin Reserve custodian. HigherGov mirror of RFP 908-26-1778WS the same day: July 10 response deadline past due, no award document posted", url: "https://comptroller.texas.gov/about/media-center/news/" },
+  { id: 19, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%).", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 // Current status — the scannable "where the reserve stands today" panel. Each

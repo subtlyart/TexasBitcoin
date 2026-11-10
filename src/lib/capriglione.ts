@@ -19,7 +19,7 @@
 // (from November 9, 2026), and after the North American Blockchain Summit
 // (November 18–19, 2026).
 
-export const CAPRIGLIONE_LAST_VERIFIED = "September 13, 2026";
+export const CAPRIGLIONE_LAST_VERIFIED = "November 9, 2026";
 
 export interface CapriglioneSource {
   id: number;
@@ -61,6 +61,7 @@ export const capriglioneSources: CapriglioneSource[] = [
   { id: 28, label: "KERA News - Armin Mizani, Cate Brennan lead race for Texas House District 98 primary (March 4, 2026): Mizani 53.5%, Tate 43%; Brennan 78%", url: "https://www.keranews.org/elections-2026/2026-03-04/armin-mizani-cate-brennan-lead-race-for-texas-house-district-98-primary-here-are-tarrant-election-results" },
   { id: 29, label: "Dallas Morning News - Texas' $10M bitcoin investment slips into the red amid crypto price dive (March 2, 2026): ~$5M on Nov 20, 2025 near $91,000; ~$5M on Dec 15 near $87,000; valued ~$7.8M", url: "https://www.dallasnews.com/business/2026/03/02/texas-10m-bitcoin-investment-slips-into-the-red-amid-crypto-price-dive/" },
   { id: 30, label: "Disruption Banking - Why the Texas Blockchain Council's North American Blockchain Summit Matters (June 9, 2026): November 18–19, 2026, National Medal of Honor Museum, Arlington; Capriglione as President", url: "https://www.disruptionbanking.com/2026/06/09/why-the-texas-blockchain-councils-north-american-blockchain-summit-matters/" },
+  { id: 31, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Armin Mizani (R) led Cate Brennan (D) in House District 98, 51,794 (59.92%) to 34,645 (40.08%).", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 export type CapriglioneTimelineKind = "path" | "statute" | "reserve" | "watch";
@@ -193,5 +194,13 @@ export const capriglioneTimeline: CapriglioneEvent[] = [
       "Mizani wins the Republican primary for HD-98 with 53.5%; Cate Brennan takes the Democratic nomination with 78%. The day before, the Dallas Morning News reports the reserve Capriglione carried - $10 million bought in November and December 2025 - is worth about $7.8 million. The November 18–19 North American Blockchain Summit in Arlington will be his first as the council's president, ten weeks before the 90th Legislature convenes without him.",
     kind: "watch",
     sourceIds: [28, 29, 30],
+  },
+  {
+    date: "2026-11-03",
+    dateLabel: "November 3, 2026",
+    title: "Unofficial general-election returns",
+    detail: "At 100% of polling locations reporting, unofficial Secretary of State returns show Armin Mizani (R) led Cate Brennan (D) in House District 98, 51,794 (59.92%) to 34,645 (40.08%). The result is not certified.",
+    kind: "watch",
+    sourceIds: [31],
   },
 ];

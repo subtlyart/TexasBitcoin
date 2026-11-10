@@ -168,7 +168,7 @@ export default function TexasAttorneyGeneralBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-25",
-    dateModified: "2026-09-25",
+    dateModified: "2026-11-09",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "GovernmentOrganization", name: "Office of the Attorney General of Texas" },
@@ -226,6 +226,9 @@ export default function TexasAttorneyGeneralBitcoinPage() {
           <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             The Texas Attorney General and Bitcoin: One Suit, No Opinions
           </h1>
+          <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
+            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Nathan Johnson (D) led Mayes Middleton (R) 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={33} />
+          </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Every other institution on this site has a position on the
             asset. The Legislature defined it, registered its mines, and
@@ -240,7 +243,7 @@ export default function TexasAttorneyGeneralBitcoinPage() {
             against the miners, and never issued an opinion on what it is
             or sued anyone for stealing it. In a state that lost more than
             a billion dollars to crypto fraud last year, that is the
-            record, and on November 3 it passes to someone new.
+            record, and unofficial November 3 returns point to Nathan Johnson as the next occupant; Ken Paxton remains in office pending the January 2027 handover.
           </p>
           <p className="mt-4 text-sm text-muted-2">
             By {site.name} · Published September 25, 2026 · Updated{" "}
@@ -609,11 +612,10 @@ export default function TexasAttorneyGeneralBitcoinPage() {
             one records case pending since June 2025, one coalition letter
             signed, no opinion, no enforcement action, and an occupant
             leaving for a U.S. Senate race.<C n={5} /><C n={15} />
-            <C n={16} /><C n={29} /> On November 3 the office changes hands
-            for the first time since January 2015, between two state
-            senators who both voted for the reserve and neither of whom has
-            stated a position on the kiosks, the SEC suit, or the
-            miners&apos; data.<C n={31} /><C n={32} /> They are on{" "}
+            <C n={16} /><C n={29} /> Unofficial November 3 returns show Nathan Johnson ahead of Mayes Middleton;
+            Paxton remains in office pending the January 2027 handover. Both
+            candidates voted for the reserve, and neither stated a position
+            on the kiosks, the SEC suit, or the miners&apos; data.<C n={31} /><C n={32} /><C n={33} /> They are on{" "}
             <Link href="/mayes-middleton-bitcoin">Mayes Middleton and Bitcoin</Link>{" "}
             and{" "}
             <Link href="/nathan-johnson-bitcoin">Nathan Johnson and Bitcoin</Link>.
