@@ -12,23 +12,19 @@ import {
   watchlist,
 } from "@/lib/lege-90";
 
-// DISCRETION: ships sitemap-only as a pre-session stub. When pre-filing opens
-// (November 9, 2026) and real bills land in lib/lege-90.ts, consider promoting
-// it off sitemap-only — it becomes the session-watch franchise page.
-
 const pageUrl = `${site.url}/texas-bitcoin-bills-2027`;
 
 export const metadata: Metadata = {
   title: "Texas Bitcoin Bills 2027: The 90th Legislature Tracker",
   description:
-    "The living tracker of Bitcoin and digital-asset bills in the 90th Texas Legislature (convenes January 12, 2027) — every bill verified on capitol.texas.gov, plus the sourced watchlist: reserve top-up, the kiosk fight, HJR 175's return, staking, and the grid bills after SB 6.",
+    "Eight bills filed November 9 for the 90th Texas Legislature: three direct cryptocurrency proposals and five broader data-center and computational-load measures, with bill histories and introduced texts.",
   alternates: { canonical: pageUrl },
   openGraph: {
     images: ogImages("Texas Bitcoin Bills 2027: The 90th Legislature Tracker"),
     type: "article",
     title: "Texas Bitcoin Bills 2027: The 90th Legislature Tracker",
     description:
-      "Every Bitcoin bill of the 90th Texas Legislature, tracked against the primary record — from pre-filing (November 9, 2026) to sine die.",
+      "Eight filed bills of the 90th Texas Legislature, tracked against histories and introduced texts.",
     url: pageUrl,
   },
 };
@@ -36,11 +32,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "When does the Texas Legislature meet next?",
-    a: "The 90th Texas Legislature convenes in Regular Session on January 12, 2027. Bill pre-filing opens November 9, 2026, the bill-filing deadline is March 12, 2027, and the session ends sine die on May 31, 2027. Texas legislatures meet in regular session only in odd-numbered years.",
+    a: "The 90th Texas Legislature convenes in Regular Session on January 12, 2027. Bill pre-filing opened November 9, 2026, the bill-filing deadline is March 12, 2027, and the session ends sine die on May 31, 2027. Texas legislatures meet in regular session only in odd-numbered years.",
   },
   {
     q: "What Bitcoin bills have been filed for the 2027 Texas session?",
-    a: "None yet — pre-filing for the 90th Legislature opens November 9, 2026, and this tracker adds each Bitcoin and digital-asset bill as it is filed, verified against its capitol.texas.gov bill history. Until then, the sourced watchlist covers what the record suggests is coming: a reserve appropriation debate, the crypto-kiosk fight's third round, a refiled HJR 175, staking authority, and post-SB 6 grid bills.",
+    a: "Eight tracked bills were filed November 9, 2026: HB 815 on local cryptocurrency investment; HB 271 and SB 181 on virtual-currency kiosks; and HB 734, HB 374, SB 32, SB 33 and SB 34 on broader data-center and computational-load issues that include mining or distributed-ledger activity. All remain proposals, not law.",
   },
   {
     q: "Will Texas add money to its Bitcoin reserve in 2027?",
@@ -48,7 +44,7 @@ const faqs = [
   },
   {
     q: "What happened to the Texas crypto kiosk bills?",
-    a: "Both died in 2025 despite majorities: SB 1705 passed the Senate and died on the House calendar, while HB 2798 passed the House and died in Senate committee. Consumer-protection rules for crypto ATMs are therefore the likeliest early Bitcoin filing of the 90th session — the rare issue where both chambers have already voted yes, just never on the same bill.",
+    a: "Both died in 2025 despite majorities: SB 1705 passed the Senate and died on the House calendar, while HB 2798 passed the House and died in Senate committee. HB 271 and SB 181 were filed November 9, 2026 with distinct proposed prohibitions: a criminal misdemeanor and a revenue-based civil penalty, respectively. Neither has passed.",
   },
 ];
 
@@ -74,7 +70,7 @@ export default function Lege90Page() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-30",
-    dateModified: "2026-08-30",
+    dateModified: "2026-11-09",
   };
 
   const faqJsonLd = {
@@ -146,15 +142,13 @@ export default function Lege90Page() {
             The short answer
           </p>
           <p className="mt-3 leading-relaxed">
-            The 90th Texas Legislature convenes January 12, 2027, with bill
-            pre-filing opening November 9, 2026 – no Bitcoin bills exist yet
-            for the session. The sourced watchlist runs six items: a possible
-            top-up of the $10 million Strategic Bitcoin Reserve, the
-            crypto-kiosk consumer-protection fight both chambers passed
-            separately in 2025, a likely refiling of HJR 175&apos;s
-            medium-of-exchange right, staking authority cut from SB 21, grid
-            and large-load bills following SB 6, and the reserve&apos;s first
-            mandatory biennial report.
+            Pre-filing opened November 9, 2026. Eight tracked bills were filed
+            that day: three direct cryptocurrency proposals (HB 815, HB 271 and
+            SB 181) and five broader data-center or computational-load bills
+            (HB 734, HB 374, SB 32, SB 33 and SB 34) whose definitions include
+            mining or distributed-ledger activity. All are filed proposals,
+            not enacted law.<C n={9} /><C n={10} /><C n={11} /><C n={12} />
+            <C n={13} /><C n={14} /><C n={15} /><C n={16} />
           </p>
         </div>
 
@@ -168,52 +162,26 @@ export default function Lege90Page() {
               As of {LEGE90_LAST_VERIFIED}
             </span>
           </div>
-          {trackedBills90.length === 0 ? (
-            <div className="mt-5 rounded-2xl border border-border bg-surface p-6">
-              <p className="font-display text-3xl font-semibold tabular-nums">
-                0
-              </p>
-              <p className="mt-1.5 text-sm leading-relaxed text-muted">
-                Bitcoin bills filed for the 90th Regular Session. Pre-filing
-                opens <strong>November 9, 2026</strong><C n={1} /> – this
-                tracker adds each Bitcoin and digital-asset bill as it is
-                filed, verified against its capitol.texas.gov bill history,
-                and follows it to passage, veto, or the dead file.
-              </p>
-            </div>
-          ) : (
-            <div className="mt-5 space-y-4">
-              {trackedBills90.map((b) => (
-                <div
-                  key={b.bill}
-                  className="rounded-xl border border-border bg-surface p-5"
-                >
-                  <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                    <h3 className="font-display text-lg font-semibold">
-                      {b.bill} — {b.title}
-                    </h3>
-                    <span className="rounded-full border border-accent/40 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-accent">
-                      {b.status}
-                    </span>
-                  </div>
-                  <p className="mt-1 text-xs text-muted-2">
-                    {b.chamber} · {b.author} · last action {b.lastAction}
-                  </p>
-                  <p className="mt-2 text-sm leading-relaxed text-muted">
-                    {b.summary} {b.statusDetail}{" "}
-                    <a
-                      href={b.historyUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline decoration-accent/40 underline-offset-2 hover:text-accent-soft"
-                    >
-                      Bill history
-                    </a>
-                  </p>
+          <p className="mt-3 text-sm text-muted">
+            {trackedBills90.length} filed proposals · 3 direct cryptocurrency · 5 broader computational load.
+            All statuses are as of {LEGE90_LAST_VERIFIED}.
+          </p>
+          <div className="mt-5 space-y-4">
+            {trackedBills90.map((b, i) => (
+              <div key={b.bill} className="rounded-xl border border-border bg-surface p-5">
+                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <h3 className="font-display text-lg font-semibold">{b.bill} — {b.title}</h3>
+                  <span className="rounded-full border border-accent/40 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-accent">{b.status}</span>
                 </div>
-              ))}
-            </div>
-          )}
+                <p className="mt-1 text-xs text-muted-2">{b.scope} · {b.chamber} · {b.author} · last action {b.lastAction}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{b.summary} {b.statusDetail}<C n={9 + i} /><C n={17 + i} /></p>
+                <p className="mt-2 text-xs">
+                  <a className="underline decoration-accent/40 underline-offset-2" href={b.historyUrl}>Bill history</a>{" · "}
+                  <a className="underline decoration-accent/40 underline-offset-2" href={b.textUrl}>Introduced text</a>
+                </p>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* Session clock */}
@@ -253,8 +221,7 @@ export default function Lege90Page() {
                 </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted">
                   {e.detail}
-                  <C n={1} />
-                  <C n={2} />
+                  {e.done ? <C n={9} /> : <C n={2} />}
                 </p>
               </li>
             ))}
@@ -264,12 +231,11 @@ export default function Lege90Page() {
         {/* Watchlist */}
         <section className="mt-10">
           <h2 className="font-display text-2xl font-semibold tracking-tight">
-            The watchlist: what the record says is coming
+            Open questions beyond the filed bills
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-muted">
-            Nothing here is speculation for its own sake – every item is
-            grounded in a dead bill, a cut provision, or a statutory deadline
-            already on the books. The fuller stories live in{" "}
+            These are questions to watch, not additional filed measures. Each is
+            grounded in the prior record or a statutory deadline. The fuller stories live in{" "}
             <Link
               href="/texas-bitcoin-bills-that-died"
               className="underline decoration-accent/40 underline-offset-2 hover:text-accent-soft"
