@@ -1,6 +1,500 @@
 {
-  "generated_at": "2026-09-25T02:56:58Z",
+  "generated_at": "2026-11-09T23:05:00Z",
   "cases": {
+    "9cc296c9-f161-4827-82db-376571ce3692": {
+      "metadata": {
+        "district_office": "Southern District of Texas",
+        "usa_name": null,
+        "event_type": "sentencing",
+        "judge_name": "Fernando Rodriguez Jr.",
+        "judge_title": "U.S. District Judge",
+        "case_number": null,
+        "max_penalty_text": null,
+        "sentence_summary": "Jeremiah Yzaguirre sentenced to 110 months imprisonment and Maria Luisa Yzaguirre sentenced to 80 months, both with three years supervised release, $9,248,976 in restitution to Medicare and a $25,000 fine.",
+        "crypto_assets": null
+      },
+      "participants": [
+        {
+          "name": "Jeremiah Yzaguirre",
+          "role": "defendant",
+          "title": null,
+          "organization": "Southwest Medical Homepatient",
+          "location": "Harlingen, Texas",
+          "age": 47,
+          "nationality": null,
+          "status": "sentenced"
+        },
+        {
+          "name": "Maria Luisa Yzaguirre",
+          "role": "defendant",
+          "title": null,
+          "organization": "Southwest Medical Homepatient",
+          "location": "Harlingen, Texas",
+          "age": 47,
+          "nationality": null,
+          "status": "sentenced"
+        },
+        {
+          "name": "Fernando Rodriguez Jr.",
+          "role": "judge",
+          "title": "U.S. District Judge",
+          "organization": null,
+          "location": null,
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Andrew Swartz",
+          "role": "prosecutor",
+          "title": "Assistant U.S. Attorney",
+          "organization": "U.S. Attorney's Office",
+          "location": null,
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Ana Cano",
+          "role": "prosecutor",
+          "title": "Assistant U.S. Attorney",
+          "organization": "U.S. Attorney's Office",
+          "location": null,
+          "age": null,
+          "nationality": null,
+          "status": null
+        }
+      ],
+      "agencies": [
+        {
+          "agency_name": "Federal Bureau of Investigation",
+          "abbreviation": "FBI",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Conducted the investigation"
+        },
+        {
+          "agency_name": "Department of Health and Human Services - Office of Inspector General",
+          "abbreviation": "HHS-OIG",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Conducted the investigation"
+        },
+        {
+          "agency_name": "Texas Health and Human Services - Office of Inspector General",
+          "abbreviation": "OIG",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Conducted the investigation"
+        },
+        {
+          "agency_name": "Texas Attorney General - Medicaid Fraud Control Unit",
+          "abbreviation": "MFCU",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Conducted the investigation"
+        },
+        {
+          "agency_name": "Texas Department of Insurance",
+          "abbreviation": null,
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Conducted the investigation"
+        },
+        {
+          "agency_name": "U.S. Attorney's Office",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": null,
+          "agents_mentioned": "Andrew Swartz, Ana Cano",
+          "contribution": "Assistant U.S. Attorneys who prosecuted the case"
+        }
+      ],
+      "charges": [
+        {
+          "charge_description": "Medicare fraud scheme (durable medical equipment fraud)",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "110 months in prison",
+          "fine_amount": "$25,000",
+          "defendant": "Jeremiah Yzaguirre",
+          "status": "pleaded guilty"
+        },
+        {
+          "charge_description": "Medicare fraud scheme (durable medical equipment fraud)",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "80 months in prison",
+          "fine_amount": "$25,000",
+          "defendant": "Maria Luisa Yzaguirre",
+          "status": "pleaded guilty"
+        }
+      ],
+      "financial_actions": [
+        {
+          "action_type": "restitution",
+          "amount": "$9,248,976",
+          "currency": "USD",
+          "description": "Restitution to Medicare ordered jointly against both defendants",
+          "asset_type": null,
+          "defendant": "Jeremiah Yzaguirre",
+          "status": "ordered"
+        },
+        {
+          "action_type": "restitution",
+          "amount": "$9,248,976",
+          "currency": "USD",
+          "description": "Restitution to Medicare ordered jointly against both defendants",
+          "asset_type": null,
+          "defendant": "Maria Luisa Yzaguirre",
+          "status": "ordered"
+        },
+        {
+          "action_type": "fine",
+          "amount": "$25,000",
+          "currency": "USD",
+          "description": "Fine imposed",
+          "asset_type": null,
+          "defendant": "Jeremiah Yzaguirre",
+          "status": "ordered"
+        },
+        {
+          "action_type": "fine",
+          "amount": "$25,000",
+          "currency": "USD",
+          "description": "Fine imposed",
+          "asset_type": null,
+          "defendant": "Maria Luisa Yzaguirre",
+          "status": "ordered"
+        }
+      ],
+      "quotes": []
+    },
+    "463bdabe-191b-40a8-be93-6a4e144fefb8": {
+      "metadata": {
+        "district_office": "Western District of Texas",
+        "usa_name": "Justin R. Simmons",
+        "event_type": "sentencing",
+        "judge_name": "Christopher Wolfe",
+        "judge_title": "U.S. District Judge",
+        "case_number": null,
+        "max_penalty_text": null,
+        "sentence_summary": "78 months in federal prison followed by five years of supervised release, $5,000 Victims of Trafficking Act assessment, and $10,000 Amy, Vicky, and Andy Child Pornography Assessment Act assessment",
+        "crypto_assets": "Bitcoin"
+      },
+      "participants": [
+        {
+          "name": "Justin R. Simmons",
+          "role": "prosecutor",
+          "title": "U.S. Attorney",
+          "organization": "U.S. Attorney's Office for the Western District of Texas",
+          "location": "Western District of Texas",
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Pietro Victor Giustino",
+          "role": "defendant",
+          "title": null,
+          "organization": "Belton High School",
+          "location": "Belton, Texas",
+          "age": 40,
+          "nationality": null,
+          "status": "sentenced"
+        },
+        {
+          "name": "Christopher Wolfe",
+          "role": "judge",
+          "title": "U.S. District Judge",
+          "organization": null,
+          "location": "Western District of Texas",
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Greg Gloff",
+          "role": "prosecutor",
+          "title": "Assistant U.S. Attorney",
+          "organization": "U.S. Attorney's Office for the Western District of Texas",
+          "location": "Western District of Texas",
+          "age": null,
+          "nationality": null,
+          "status": null
+        }
+      ],
+      "agencies": [
+        {
+          "agency_name": "Federal Bureau of Investigation",
+          "abbreviation": "FBI",
+          "role": "investigation, arrest",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Executed a federal search warrant at Giustino's residence and discovered devices containing child pornography; investigated the case"
+        },
+        {
+          "agency_name": "Belton Police Department",
+          "abbreviation": null,
+          "role": "investigation assistance",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Assisted the FBI with the investigation"
+        },
+        {
+          "agency_name": "U.S. Attorney's Office for the Western District of Texas",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": "Western District of Texas",
+          "agents_mentioned": "Justin R. Simmons, Greg Gloff",
+          "contribution": "Prosecuted the case; U.S. Attorney announced the sentence and Assistant U.S. Attorney Greg Gloff prosecuted"
+        }
+      ],
+      "charges": [
+        {
+          "charge_description": "Possession of visual depictions of sexual activities by minors (possession of child pornography)",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "78 months in prison",
+          "fine_amount": null,
+          "defendant": "Pietro Victor Giustino",
+          "status": "pleaded guilty, sentenced"
+        }
+      ],
+      "financial_actions": [
+        {
+          "action_type": "assessment",
+          "amount": "$5,000",
+          "currency": "USD",
+          "description": "Victims of Trafficking Act assessment",
+          "asset_type": null,
+          "defendant": "Pietro Victor Giustino",
+          "status": "ordered"
+        },
+        {
+          "action_type": "assessment",
+          "amount": "$10,000",
+          "currency": "USD",
+          "description": "Amy, Vicky, and Andy Child Pornography Assessment Act assessment",
+          "asset_type": null,
+          "defendant": "Pietro Victor Giustino",
+          "status": "ordered"
+        }
+      ],
+      "quotes": []
+    },
+    "8a0b1103-4c07-466d-ac09-052d82f98ef9": {
+      "metadata": {
+        "district_office": "Eastern District of Texas",
+        "usa_name": "Jay R. Combs",
+        "event_type": "conviction",
+        "judge_name": "Amos L. Mazzant",
+        "judge_title": "U.S. District Judge",
+        "case_number": null,
+        "max_penalty_text": "up to 20 years in federal prison, a potential fine, and restitution at sentencing",
+        "sentence_summary": null,
+        "crypto_assets": null
+      },
+      "participants": [
+        {
+          "name": "Marina Brooks",
+          "role": "defendant",
+          "title": null,
+          "organization": null,
+          "location": "Irving, Texas",
+          "age": 70,
+          "nationality": null,
+          "status": "convicted"
+        },
+        {
+          "name": "Charles Brooks",
+          "role": "defendant",
+          "title": null,
+          "organization": null,
+          "location": "Irving, Texas",
+          "age": 74,
+          "nationality": null,
+          "status": "convicted"
+        },
+        {
+          "name": "Jay R. Combs",
+          "role": "prosecutor",
+          "title": "U.S. Attorney",
+          "organization": "U.S. Attorney's Office",
+          "location": "Eastern District of Texas",
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Amos L. Mazzant",
+          "role": "judge",
+          "title": "U.S. District Judge",
+          "organization": "U.S. District Court",
+          "location": "Eastern District of Texas",
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "R. Joseph Rothrock",
+          "role": "law enforcement",
+          "title": "Special Agent in Charge",
+          "organization": "FBI",
+          "location": null,
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Christopher J. Altemus Jr.",
+          "role": "law enforcement",
+          "title": "Special Agent in Charge",
+          "organization": "IRS Criminal Investigation, Texas Field Office",
+          "location": "Texas",
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Peter T. Thomas",
+          "role": "prosecutor",
+          "title": "Assistant U.S. Attorney",
+          "organization": "U.S. Attorney's Office",
+          "location": "Eastern District of Texas",
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Ashlyn Scott",
+          "role": "prosecutor",
+          "title": "Assistant U.S. Attorney",
+          "organization": "U.S. Attorney's Office",
+          "location": "Eastern District of Texas",
+          "age": null,
+          "nationality": null,
+          "status": null
+        }
+      ],
+      "agencies": [
+        {
+          "agency_name": "Federal Bureau of Investigation",
+          "abbreviation": "FBI",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": "R. Joseph Rothrock",
+          "contribution": "Investigated the multi-million-dollar investment fraud conspiracy and worked with partners to hold the defendants accountable."
+        },
+        {
+          "agency_name": "Internal Revenue Service Criminal Investigation",
+          "abbreviation": "IRS-CI",
+          "role": "investigation",
+          "office_location": "Texas Field Office",
+          "agents_mentioned": "Christopher J. Altemus Jr.",
+          "contribution": "Investigated the fraud scheme and pooled resources with the FBI and U.S. Attorney's Office to stop the criminals."
+        },
+        {
+          "agency_name": "U.S. Attorney's Office, Eastern District of Texas",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": "Sherman, Texas",
+          "agents_mentioned": "Jay R. Combs, Peter T. Thomas, Ashlyn Scott",
+          "contribution": "Prosecuted the case against the defendants."
+        },
+        {
+          "agency_name": "U.S. Probation Office",
+          "abbreviation": null,
+          "role": "presentence investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Will conduct presentence investigations prior to sentencing hearings."
+        }
+      ],
+      "charges": [
+        {
+          "charge_description": "Conspiracy to commit wire fraud",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "20 years in prison",
+          "fine_amount": null,
+          "defendant": "Marina Brooks",
+          "status": "convicted"
+        },
+        {
+          "charge_description": "Conspiracy to commit wire fraud",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "20 years in prison",
+          "fine_amount": null,
+          "defendant": "Charles Brooks",
+          "status": "convicted"
+        }
+      ],
+      "financial_actions": [
+        {
+          "action_type": "fraud proceeds",
+          "amount": "$9.5 million",
+          "currency": "USD",
+          "description": "Funds fraudulently taken from over 700 victim investors through investment fraud scheme",
+          "asset_type": "cash",
+          "defendant": "Marina Brooks and Charles Brooks",
+          "status": "completed"
+        },
+        {
+          "action_type": "fine",
+          "amount": null,
+          "currency": null,
+          "description": "Potential fine as part of maximum statutory sentence",
+          "asset_type": null,
+          "defendant": "Marina Brooks and Charles Brooks",
+          "status": "pending"
+        },
+        {
+          "action_type": "restitution",
+          "amount": null,
+          "currency": null,
+          "description": "Restitution at sentencing as part of maximum statutory sentence",
+          "asset_type": null,
+          "defendant": "Marina Brooks and Charles Brooks",
+          "status": "pending"
+        }
+      ],
+      "quotes": [
+        {
+          "quote_text": "For years, Marina and Charles Brooks repeatedly victimized hardworking members of the community in the Eastern District of Texas and elsewhere. Through their lies, the family stole life savings and retirement earnings from people who had worked for decades to realize the American dream. Working with our law enforcement partners like the FBI and IRS-Criminal Investigation, our office will continue to aggressively investigate and prosecute those who lie for money and to vigorously seek justice for their victims.",
+          "speaker_name": "Jay R. Combs",
+          "speaker_title": "U.S. Attorney",
+          "speaker_organization": "U.S. Attorney's Office, Eastern District of Texas",
+          "quote_type": "statement",
+          "context": "Commenting on the conviction of the defendants following the jury verdict",
+          "significance": "Emphasizes the harm caused to victims and the government's commitment to prosecuting fraud"
+        },
+        {
+          "quote_text": "Today’s guilty verdict provides justice to the victims whose lives were financially impacted by this investment scheme. Through fraudulent representations and fake business ventures, these defendants solicited funds from vulnerable investors and diverted them for their own personal gain. The FBI remains committed to working closely with our partners to ensure that individuals who engage in fraudulent conduct are held accountable.",
+          "speaker_name": "R. Joseph Rothrock",
+          "speaker_title": "Special Agent in Charge",
+          "speaker_organization": "FBI",
+          "quote_type": "statement",
+          "context": "Commenting on the guilty verdict and the impact on victims",
+          "significance": "Highlights the FBI's role and commitment to holding fraudsters accountable"
+        },
+        {
+          "quote_text": "The evidence against Charles and Marina Brooks was overwhelming, and it begins with the bravery of their victims to come forward and help us put an end to this fraud. This conspiracy deceived the victims for years, targeting many in the Dallas-Fort Worth area and beyond. It is why IRS Criminal Investigation, the FBI and the U.S. Attorney’s Office pool our resources to stop these criminals. Investor fraud is often a story of misplaced trust and grand promises. If a deal sounds too good to be true, it probably is and you should walk away.",
+          "speaker_name": "Christopher J. Altemus Jr.",
+          "speaker_title": "Special Agent in Charge, Texas Field Office",
+          "speaker_organization": "IRS Criminal Investigation",
+          "quote_type": "statement",
+          "context": "Commenting on the strength of the evidence and warning about investor fraud",
+          "significance": "Underscores the collaborative investigation and provides a cautionary message about investment scams"
+        }
+      ]
+    },
     "2ad52f3c-bc7f-47a9-be52-4e020948acbf": {
       "metadata": {
         "district_office": "Northern District of Texas",

@@ -1,11 +1,65 @@
 {
   "stats": {
-    "case_count": 154,
+    "case_count": 157,
     "total_forfeitures_usd": 255275850.44,
     "districts_active": 4,
-    "generated_at": "2026-09-25T02:56:58Z"
+    "generated_at": "2026-11-09T23:05:00Z"
   },
   "cases": [
+    {
+      "id": "9cc296c9-f161-4827-82db-376571ce3692",
+      "title": "Harlingen couple sentenced in multimillion-dollar Medicare fraud scheme",
+      "date": "2026-10-23",
+      "district": "Southern District of Texas",
+      "summary": "The operators of a durable medical equipment company have been sentenced for defrauding Medicare",
+      "statutes": [],
+      "forfeiture_usd": 0,
+      "themes": [
+        "cryptocurrency",
+        "durable_medical_equipment_(dme)_scheme",
+        "federal_anti-fraud_initiatives",
+        "medicare_fraud",
+        "multi-agency_law_enforcement_cooperation",
+        "restitution_and_financial_penalties"
+      ],
+      "doj_url": "https://www.justice.gov/usao-sdtx/pr/harlingen-couple-sentenced-multimillion-dollar-medicare-fraud-scheme"
+    },
+    {
+      "id": "463bdabe-191b-40a8-be93-6a4e144fefb8",
+      "title": "Former High School Teacher Sentenced to Federal Prison for Possession of Child Pornography",
+      "date": "2026-10-22",
+      "district": "Western District of Texas",
+      "summary": "Pietro Victor Giustino, a former Belton High School teacher, was sentenced to 78 months in federal prison for possession of child pornography",
+      "statutes": [],
+      "forfeiture_usd": 0,
+      "themes": [
+        "abuse_of_position_of_trust",
+        "child_pornography_possession",
+        "child_sexual_exploitation",
+        "cryptocurrency",
+        "interagency_law_enforcement_cooperation",
+        "victim_restitution_and_assessments"
+      ],
+      "doj_url": "https://www.justice.gov/usao-wdtx/pr/former-high-school-teacher-sentenced-federal-prison-possession-child-pornography"
+    },
+    {
+      "id": "8a0b1103-4c07-466d-ac09-052d82f98ef9",
+      "title": "Irving couple convicted of federal conspiracy charges related to a multi-million-dollar fraud scheme targeting investors in the Eastern District of Texas",
+      "date": "2026-09-28",
+      "district": "Eastern District of Texas",
+      "summary": "An Irving couple has been convicted in federal court of charges related to a multi-million-dollar fraud conspiracy in the Eastern District of Texas, announced U.S. Attorney Jay R. Combs.",
+      "statutes": [],
+      "forfeiture_usd": 0,
+      "themes": [
+        "cryptocurrency",
+        "interagency_law_enforcement_cooperation",
+        "investment_fraud",
+        "targeting_vulnerable_communities",
+        "victim_justice_and_restitution",
+        "wire_fraud_conspiracy"
+      ],
+      "doj_url": "https://www.justice.gov/usao-edtx/pr/irving-couple-convicted-federal-conspiracy-charges-related-multi-million-dollar-fraud"
+    },
     {
       "id": "2ad52f3c-bc7f-47a9-be52-4e020948acbf",
       "title": "U.S. Attorney Ryan Raybould meets with Guatemalan leaders to strengthen joint efforts against cartel networks",
