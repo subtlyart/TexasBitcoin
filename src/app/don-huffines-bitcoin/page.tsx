@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Was Don Huffines elected comptroller?",
-    a: "Not yet. He holds the office by gubernatorial appointment to an unexpired term, the same way Kelly Hancock did. He is the Republican nominee for the full four-year term and faces Democratic state Senator Sarah Eckhardt on November 3, 2026. Either way, the first SB 21 report on the reserve, due by December 31, 2026, is published under his administration.",
+    a: "No. He holds the office by gubernatorial appointment to an unexpired term. Unofficial November 3 returns at 100% of polling locations reporting show Sarah Eckhardt leading him for the full term beginning January 2027. He remains the incumbent pending the handover; the first SB 21 reserve report is due December 31, 2026 under the sitting comptroller.",
   },
 ];
 
@@ -166,7 +166,7 @@ export default function DonHuffinesBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-01",
-    dateModified: "2026-10-26",
+    dateModified: "2026-11-09",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Don Huffines" },
@@ -223,6 +223,9 @@ export default function DonHuffinesBitcoinPage() {
           <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             Don Huffines: The Citadel Candidate Gets the Keys
           </h1>
+          <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
+            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Sarah Eckhardt (D) led Don Huffines (R) 5,014,496 (51.30%) to 4,511,185 (46.15%); Joseph Echavarria-Garza (L) received 185,187 (1.89%) and Ahmad Faizi (G) 63,817 (0.65%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={21} />
+          </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             In January 2022 a long-shot candidate for governor published a
             plan to make Texas &ldquo;the citadel for Bitcoin&rdquo; – legal
@@ -292,9 +295,9 @@ export default function DonHuffinesBitcoinPage() {
               administration is due by December 31, 2026.<C n={5} />
             </li>
             <li>
-              Huffines faces Democrat Sarah Eckhardt on November 3, 2026 for
-              the full four-year term beginning January 2027. Early voting
-              runs October 19–30; as of October 26 it is underway.<C n={19} /><C n={20} />
+              Unofficial November 3 returns show Sarah Eckhardt ahead of Huffines
+              for the full term beginning January 2027. He remains in office
+              by appointment pending the handover.<C n={21} />
             </li>
           </ul>
         </div>
@@ -494,11 +497,9 @@ export default function DonHuffinesBitcoinPage() {
           <p>
             As of October 26, 2026: nearly three months in office, zero public words
             on the reserve, three clocks running. The custody award, overdue
-            against its own target, is the near one. Early voting is open
-            through October 30. November 3 – Huffines
-            against Sarah Eckhardt for the full term – decides whether the
-            citadel candidate keeps the desk. December 31 is the statutory
-            report, due under his name either way. The political authors of
+            against its own target, is the near one. Unofficial November 3 returns place Sarah Eckhardt ahead of Huffines
+            for the full term; the result has not been certified. December 31
+            is the statutory report, due under the sitting comptroller. The political authors of
             the reserve are chronicled in{" "}
             <Link href="/greg-abbott-bitcoin">Greg Abbott and Bitcoin</Link>{" "}
             and{" "}

@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "What is the state of the 2026 attorney general race?",
-    a: "Middleton won the March 3, 2026 Republican primary with 39.1% and the May 26 runoff over Chip Roy with 55.2%, funded by more than $15 million of his own money by the primary and $5.2 million more in loans by July. He faces Nathan Johnson, who won the Democratic runoff with 60.5%, on November 3, 2026. ReconMR's September poll had Middleton 45, Johnson 44. Neither nominee has taken a position on the crypto-kiosk scams that cost Texans $56.8 million in 2025.",
+    a: "Middleton won the March 3, 2026 Republican primary with 39.1% and the May 26 runoff over Chip Roy with 55.2%, funded by more than $15 million of his own money by the primary and $5.2 million more in loans by July. Unofficial November 3 returns at 100% of polling locations reporting show Nathan Johnson ahead of Middleton. ReconMR's September poll had Middleton 45, Johnson 44. Neither nominee has taken a position on the crypto-kiosk scams that cost Texans $56.8 million in 2025.",
   },
 ];
 
@@ -181,7 +181,7 @@ export default function MayesMiddletonBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-25",
-    dateModified: "2026-10-26",
+    dateModified: "2026-11-09",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Mayes Middleton" },
@@ -240,8 +240,11 @@ export default function MayesMiddletonBitcoinPage() {
           <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             Mayes Middleton: The Votes Without the Words
           </h1>
+          <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
+            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Nathan Johnson (D) led Mayes Middleton (R) 5,133,629 (52.38%) to 4,502,442 (45.94%); Mark Oxford (L) received 165,550 (1.69%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={38} />
+          </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
-            On November 3 Texas will choose the lawyer who decides whether
+            Unofficial November 3 returns point to Nathan Johnson as the next lawyer who decides whether
             the state sues the crypto-kiosk operators its neighbors have
             sued, who defends the reserve if it is challenged, and who
             speaks for Texas when the states take on the federal
@@ -317,8 +320,8 @@ export default function MayesMiddletonBitcoinPage() {
             </li>
             <li>
               He won the May 26, 2026 runoff 55.2% to 44.8% after lending
-              his campaign more than $15 million, and faces Nathan Johnson
-              on November 3, 2026.<C n={30} /><C n={29} /><C n={32} />
+              his campaign more than $15 million, and trailed Nathan Johnson
+              in unofficial November 3 returns.<C n={30} /><C n={29} /><C n={38} />
             </li>
           </ul>
         </div>
@@ -534,12 +537,10 @@ export default function MayesMiddletonBitcoinPage() {
           <h2>Where does the Middleton record stand today?</h2>
           <p>
             As of September 2026: the Republican nominee for Attorney
-            General, on the November 3 ballot against Nathan Johnson in a
-            race polling within one point, holding Senate District 11
+            General, behind Nathan Johnson in unofficial November 3 returns, holding Senate District 11
             through the campaign.<C n={33} /><C n={7} /> The reserve he
             voted for twice is in the hands of Comptroller{" "}
-            <Link href="/don-huffines-bitcoin">Don Huffines</Link>, on the
-            same ballot. The office he seeks, and what it has and has not
+            <Link href="/don-huffines-bitcoin">Don Huffines</Link>, who also trailed in unofficial returns. The office he seeks, and what it has and has not
             done with the asset in eleven years, is on{" "}
             <Link href="/texas-attorney-general-bitcoin">
               the Texas Attorney General and Bitcoin

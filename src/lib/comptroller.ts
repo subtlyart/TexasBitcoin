@@ -24,7 +24,7 @@
 // posts (due December 31, 2026), and when HB 1056's transactional currency
 // goes live (May 1, 2027).
 
-export const COMPTROLLER_LAST_VERIFIED = "September 30, 2026";
+export const COMPTROLLER_LAST_VERIFIED = "November 9, 2026";
 
 export interface ComptrollerSource {
   id: number;
@@ -67,6 +67,7 @@ export const comptrollerSources: ComptrollerSource[] = [
   { id: 30, label: "Wikipedia - 2026 Texas Comptroller of Public Accounts election: Huffines (R) vs. Sarah Eckhardt (D), November 3, 2026", url: "https://en.wikipedia.org/wiki/2026_Texas_Comptroller_of_Public_Accounts_election" },
   { id: 31, label: "Texas Senate Journal - 89th Legislature, 14th Day (March 6, 2025): CSSB 21 finally passed, Yeas 25, Nays 5 - Hancock among the nays", url: "https://journals.senate.texas.gov/sjrnl/89r/pdf/89RSJ03-06-F.PDF" },
   { id: 32, label: "Texas State Historical Association, Handbook of Texas - State Treasurer: voters abolished the office in November 1995, effective August 31, 1996, and its duties passed to the Comptroller of Public Accounts", url: "https://www.tshaonline.org/handbook/entries/state-treasurer" },
+  { id: 33, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); Joseph Echavarria-Garza (L) received 185,187 (1.89%) and Ahmad Faizi (G) 63,817 (0.65%).", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 // Status panel - the office's Bitcoin duties, one self-contained row each.
@@ -189,8 +190,8 @@ export const comptrollerTimeline: ComptrollerEvent[] = [
     dateLabel: "November 3 → December 31, 2026",
     title: "The ballot and the report",
     detail:
-      "Huffines faces Sarah Eckhardt on November 3 for the full term beginning January 2027. Whatever the result, the first SB 21 biennial report - holdings, value, changes, and actions taken - is due under the sitting comptroller's name by December 31.",
+      "Unofficial November 3 returns at 100% of polling locations reporting: Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); Joseph Echavarria-Garza (L) received 185,187 (1.89%) and Ahmad Faizi (G) 63,817 (0.65%). Huffines remains the appointed comptroller pending the January 2027 term; the first SB 21 biennial report is due under the sitting comptroller's name by December 31.",
     kind: "watch",
-    sourceIds: [30, 1],
+    sourceIds: [30, 1, 33],
   },
 ];

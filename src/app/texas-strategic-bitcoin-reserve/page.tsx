@@ -238,7 +238,7 @@ function ReserveNextFigure() {
 <line x1="345.2" x2="345.2" y1="114" y2="112" stroke="var(--muted-2)"/>
 <circle cx="345.2" cy="120" r="5" fill="var(--accent-soft)" stroke="var(--surface)" strokeWidth="2"/>
 <text x="345.2" y="84" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">The general</text>
-<text x="345.2" y="98" fontSize="10" textAnchor="middle" fill="var(--muted-2)">Huffines vs. Eckhardt for the Comptroller&apos;s full term</text>
+<text x="345.2" y="98" fontSize="10" textAnchor="middle" fill="var(--muted-2)">Unofficial: Eckhardt ahead for the full term</text>
 <line x1="602.2" x2="602.2" y1="126" y2="146" stroke="var(--muted-2)"/>
 <circle cx="602.2" cy="120" r="5" fill="var(--accent)" stroke="var(--surface)" strokeWidth="2"/>
 <text x="602.2" y="160" fontSize="12" fontWeight="600" textAnchor="middle" fill="var(--foreground)" fontFamily="var(--font-display)">First biennial report</text>
@@ -250,7 +250,7 @@ function ReserveNextFigure() {
 <text x="405.0" y="240" fontSize="10.5" textAnchor="middle" fill="var(--muted-2)">the conversion date floats with the award · everything else is on the statute or the calendar</text>
 </svg>
       <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
-        What comes next. The custody award is overdue against its own target and starts a 60-day conversion clock whenever it lands; the November 3 general decides who holds the desk for a full term; the first biennial report is due December 31; the 90th Legislature convenes January 12, 2027 with the appropriation question open.
+        What comes next. The custody award is overdue against its own target and starts a 60-day conversion clock whenever it lands; unofficial November 3 returns show Eckhardt ahead for the next full term; the first biennial report is due December 31; the 90th Legislature convenes January 12, 2027 with the appropriation question open.
       </figcaption>
     </figure>
   );
@@ -321,7 +321,7 @@ export default function ReservePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-09",
-    dateModified: "2026-10-26",
+    dateModified: "2026-11-09",
   };
 
   const faqJsonLd = {
@@ -373,6 +373,9 @@ export default function ReservePage() {
           <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             The Texas Strategic Bitcoin Reserve
           </h1>
+          <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
+            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Sarah Eckhardt (D) led Don Huffines (R) 5,014,496 (51.30%) to 4,511,185 (46.15%); Joseph Echavarria-Garza (L) received 185,187 (1.89%) and Ahmad Faizi (G) 63,817 (0.65%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={19} />
+          </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             The nation&apos;s first standalone, publicly funded state Bitcoin
             reserve — what the law built, what the state has actually bought, and
@@ -692,8 +695,7 @@ export default function ReservePage() {
             Comptroller took to administer and manage the reserve.
             <C n={16} /> The first report in the statute&apos;s life is due by{" "}
             <strong>December 31, 2026</strong>, under Comptroller{" "}
-            <Link href="/don-huffines-bitcoin">Don Huffines</Link> whatever the
-            November 3 election decides, and six weeks before the 90th
+            <Link href="/don-huffines-bitcoin">Don Huffines</Link>, the appointed incumbent pending a handover after unofficial November 3 returns showed Eckhardt ahead, and six weeks before the 90th
             Legislature convenes.<C n={10} /><C n={16} />
           </p>
           <p>

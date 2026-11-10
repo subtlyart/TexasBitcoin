@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Is Nathan Johnson running for attorney general?",
-    a: "Yes. He announced on July 15, 2025, led the March 3, 2026 Democratic primary with 48.1%, and won the May 26 runoff over Joe Jaworski with 60.5%. He faces Republican state Senator Mayes Middleton in the November 3, 2026 general election. He kept his Senate seat through the campaign.",
+    a: "Yes. He announced on July 15, 2025, led the March 3, 2026 Democratic primary with 48.1%, and won the May 26 runoff over Joe Jaworski with 60.5%. Unofficial November 3 returns at 100% of polling locations reporting show him ahead of Republican state Senator Mayes Middleton for attorney general. Ken Paxton remains incumbent pending the January 2027 handover.",
   },
 ];
 
@@ -172,7 +172,7 @@ export default function NathanJohnsonBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-13",
-    dateModified: "2026-10-26",
+    dateModified: "2026-11-09",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Nathan Johnson" },
@@ -231,6 +231,9 @@ export default function NathanJohnsonBitcoinPage() {
           <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             Nathan Johnson: The Democrat Who Wrote the Registry
           </h1>
+          <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
+            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Nathan Johnson (D) led Mayes Middleton (R) 5,133,629 (52.38%) to 4,502,442 (45.94%); Mark Oxford (L) received 165,550 (1.69%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={26} />
+          </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             The Texas Bitcoin record is usually told as a Republican story,
             and most of its names are. This is the page for the other
@@ -302,8 +305,8 @@ export default function NathanJohnsonBitcoinPage() {
             </li>
             <li>
               Johnson won the Democratic nomination for attorney general on
-              May 26, 2026 with 60.5% in the runoff, and faces Mayes
-              Middleton on November 3, 2026.<C n={2} /><C n={22} />
+              May 26, 2026 with 60.5% in the runoff, and led Mayes
+              Middleton in unofficial November 3 returns.<C n={22} /><C n={26} />
             </li>
           </ul>
         </div>
@@ -524,9 +527,8 @@ export default function NathanJohnsonBitcoinPage() {
             attorney general – 48.1% in the March 3 primary, 60.5% in the
             May 26 runoff – against Republican Senator{" "}
             <Link href="/mayes-middleton-bitcoin">Mayes Middleton</Link>, a
-            Business and Commerce colleague and SB 6 coauthor, on November
-            3.<C n={21} /><C n={22} /><C n={18} /> He holds Senate District
-            16 through the campaign.<C n={1} /> The 90th Legislature
+            Business and Commerce colleague and SB 6 coauthor. Unofficial
+            November 3 returns put Johnson ahead.<C n={21} /><C n={22} /><C n={26} /> He still holds Senate District 16 pending the handover.<C n={1} /> The 90th Legislature
             convenes January 12, 2027 with the large-load question he named
             in June 2024 as its central grid fight, and either with him
             back on Business and Commerce or in the office across the

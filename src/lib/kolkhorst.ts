@@ -19,7 +19,7 @@
 // general (SD-18) and when the 90th Legislature files large-load and
 // mining bills (from November 9, 2026).
 
-export const KOLKHORST_LAST_VERIFIED = "October 26, 2026";
+export const KOLKHORST_LAST_VERIFIED = "November 9, 2026";
 
 export interface KolkhorstSource {
   id: number;
@@ -55,6 +55,7 @@ export const kolkhorstSources: KolkhorstSource[] = [
   { id: 23, label: "KBTX - Exclusive: Texas Sen. Lois Kolkhorst reflects on 89th legislative session (June 16, 2025): SB 17 foreign land ownership, SB 25, the A&M System; nothing on the grid or mining", url: "https://www.kbtx.com/2025/06/16/exclusive-texas-sen-lois-kolkhorst-reflects-89th-legislative-session/" },
   { id: 24, label: "Ballotpedia - Lois Kolkhorst: advanced from the March 3, 2026 Republican primary; faces Erica Gillum (D) in the November 3, 2026 general for Senate District 18", url: "https://ballotpedia.org/Lois_Kolkhorst" },
   { id: 25, label: "Texas Secretary of State - Important 2026 election dates: November 3, 2026 uniform election; early voting by personal appearance October 19–30, 2026", url: "https://www.sos.texas.gov/elections/voter/important-election-dates.shtml" },
+  { id: 26, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Lois Kolkhorst (R) led Erica Gillum (D) in Senate District 18, 196,125 (54.30%) to 165,093 (45.70%).", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 export type KolkhorstTimelineKind = "path" | "gold" | "brake" | "after";
@@ -175,8 +176,8 @@ export const kolkhorstTimeline: KolkhorstEvent[] = [
     dateLabel: "November 3, 2026",
     title: "The ballot",
     detail:
-      "Kolkhorst advanced from the March 3, 2026 Republican primary and faces Democrat Erica Gillum for Senate District 18. Early voting by personal appearance runs October 19–30, 2026; as of October 26 it is underway, and no result is in. The 90th Legislature convenes January 12, 2027 with the large-load question reopened by AI data centers that dwarf the miners - and the one senator who tried to cap the load in 2023 back on Business and Commerce.",
+      "Unofficial November 3 returns at 100% of polling locations reporting: Lois Kolkhorst (R) led Erica Gillum (D) in Senate District 18, 196,125 (54.30%) to 165,093 (45.70%). The 90th Legislature convenes January 12, 2027 with the large-load question reopened by AI data centers; the election has not been certified.",
     kind: "after",
-    sourceIds: [24, 1, 25],
+    sourceIds: [24, 1, 25, 26],
   },
 ];

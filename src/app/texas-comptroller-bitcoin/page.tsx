@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Who is the Texas Comptroller now?",
-    a: "Don Huffines, sworn in August 1, 2026 after Governor Abbott appointed him to the unexpired term of Kelly Hancock, who had served as acting comptroller since Glenn Hegar left for Texas A&M on July 1, 2025. Huffines faces Democrat Sarah Eckhardt on November 3, 2026 for the full four-year term. Custody of the reserve passes with the office under SB 21.",
+    a: "Don Huffines, sworn in August 1, 2026 after Governor Abbott appointed him to the unexpired term of Kelly Hancock, who had served as acting comptroller since Glenn Hegar left for Texas A&M on July 1, 2025. Unofficial November 3 returns show Sarah Eckhardt leading Huffines for the full term beginning January 2027; he remains the appointed incumbent until the handover. Custody of the reserve passes with the office under SB 21.",
   },
   {
     q: "Does Texas accept Bitcoin for taxes?",
@@ -161,7 +161,7 @@ export default function TexasComptrollerBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-30",
-    dateModified: "2026-09-30",
+    dateModified: "2026-11-09",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "GovernmentOrganization", name: "Texas Comptroller of Public Accounts" },
@@ -219,6 +219,9 @@ export default function TexasComptrollerBitcoinPage() {
           <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             The Texas Comptroller and Bitcoin: The Office That Holds It
           </h1>
+          <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
+            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Sarah Eckhardt (D) led Don Huffines (R) 5,014,496 (51.30%) to 4,511,185 (46.15%); Joseph Echavarria-Garza (L) received 185,187 (1.89%) and Ahmad Faizi (G) 63,817 (0.65%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={33} />
+          </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Every other institution on this site regulates, studies, sues,
             or switches off the asset. One holds it. The Comptroller of
@@ -602,8 +605,7 @@ export default function TexasComptrollerBitcoinPage() {
             As of September 30, 2026: $10 million in an ETF, a committee of
             five, a custody solicitation closed twelve weeks with no
             award, a legal-tender clause for gold in force, a report due
-            in three months, and a comptroller on the ballot in five
-            weeks.<C n={9} /><C n={10} /><C n={11} /><C n={22} /><C n={30} />
+            in three months, and unofficial returns showing Sarah Eckhardt ahead of the appointed comptroller Don Huffines for the January 2027 term.<C n={9} /><C n={10} /><C n={11} /><C n={22} /><C n={33} />
             The 90th Legislature convenes January 12, 2027 with the
             office&apos;s first report on its desk and the question the
             appropriation left open – whether $10 million was the seed or

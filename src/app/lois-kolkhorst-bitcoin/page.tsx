@@ -187,7 +187,7 @@ export default function LoisKolkhorstBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-13",
-    dateModified: "2026-10-26",
+    dateModified: "2026-11-09",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Lois Kolkhorst" },
@@ -246,6 +246,9 @@ export default function LoisKolkhorstBitcoinPage() {
           <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             Lois Kolkhorst: The Senator Who Wrote the Brake
           </h1>
+          <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
+            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Lois Kolkhorst (R) led Erica Gillum (D) 196,125 (54.30%) to 165,093 (45.70%) in Senate District 18. These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={26} />
+          </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Every other page in this cluster is someone who moved the asset
             or the industry forward: a governor who signed, a senator who
@@ -564,9 +567,9 @@ export default function LoisKolkhorstBitcoinPage() {
           <p>
             As of September 2026: SB 1751 is dead, SB 1929 and SB 6 are law,
             and the large-load question has outgrown Bitcoin. Kolkhorst
-            advanced from the March 3, 2026 Republican primary and faces
-            Democrat Erica Gillum for Senate District 18 on November
-            3.<C n={24} /> The 90th Legislature convenes January 12, 2027
+            advanced from the March 3, 2026 Republican primary and led
+            Democrat Erica Gillum in unofficial November 3 returns for
+            Senate District 18.<C n={26} /> The 90th Legislature convenes January 12, 2027
             with AI data centers, not miners, as the load the grid is
             arguing about, and with the one senator who tried to cap a load
             in 2023 still seated on Business and Commerce.<C n={1} /> The

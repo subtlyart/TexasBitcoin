@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Is Capriglione still in the Texas House?",
-    a: "Through January 2027. He announced on July 23, 2025 that he would not seek an eighth term, and on January 5, 2026 became president of the Texas Blockchain Council, the industry association that lobbied for the reserve, while continuing to hold his seat. Keller Mayor Armin Mizani won the March 3, 2026 Republican primary for House District 98 with 53.5%; the general election is November 3, 2026.",
+    a: "Through January 2027. He announced on July 23, 2025 that he would not seek an eighth term, and on January 5, 2026 became president of the Texas Blockchain Council, the industry association that lobbied for the reserve, while continuing to hold his seat. Keller Mayor Armin Mizani won the March 3, 2026 Republican primary for House District 98 with 53.5%; unofficial November 3 returns show Mizani leading Democrat Cate Brennan, 51,794 to 34,645 (59.92% to 40.08%).",
   },
 ];
 
@@ -173,7 +173,7 @@ export default function GiovanniCapriglioneBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-13",
-    dateModified: "2026-09-13",
+    dateModified: "2026-11-09",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Giovanni Capriglione" },
@@ -233,6 +233,9 @@ export default function GiovanniCapriglioneBitcoinPage() {
           <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             Giovanni Capriglione: The Chairman Who Carried the Reserve
           </h1>
+          <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
+            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Armin Mizani (R) led Cate Brennan (D) 51,794 (59.92%) to 34,645 (40.08%) in House District 98. These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={31} />
+          </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             The Senate page of this cluster ends on one sentence: Schwertner
             wrote it. This is the House page, and it starts a decade
@@ -534,8 +537,8 @@ export default function GiovanniCapriglioneBitcoinPage() {
             Legislature convenes on January 12, 2027, and will not be in it.
             Keller Mayor Armin Mizani, whom he beat in the 2018 primary,
             won the March 3, 2026 Republican primary for the seat with
-            53.5%; Cate Brennan is the Democratic nominee; the general is
-            November 3.<C n={28} /><C n={25} /> Two weeks after that, on
+            53.5%; he led Democratic nominee Cate Brennan in unofficial November 3
+            returns.<C n={28} /><C n={31} /> Two weeks after that, on
             November 18–19, he hosts his first North American Blockchain
             Summit as the council&apos;s president, at the National Medal of
             Honor Museum in Arlington.<C n={30} /> The reserve he carried is
