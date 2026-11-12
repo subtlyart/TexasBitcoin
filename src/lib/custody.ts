@@ -33,6 +33,7 @@ export const custodySources: CustodySource[] = [
   { id: 12, label: "Texas Legislature Online — SB 21 (89R) enrolled text: § 403.703 (the comptroller has custody of the reserve), § 403.707 (the comptroller sits on the advisory committee)", url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00021F.htm" },
   { id: 13, label: "Texas Comptroller — News releases, reviewed October 26, 2026: no release naming a Strategic Bitcoin Reserve custodian; the last Bitcoin release is the May 28, 2026 advisory-committee announcement", url: "https://comptroller.texas.gov/about/media-center/news/" },
   { id: 14, label: "HigherGov — mirror of solicitation 908-26-1778WS, read October 26, 2026: response deadline July 10, 2026, past due; posted documents are the RFP, a subcontracting plan, and Addendum 1; no award document", url: "https://www.highergov.com/sl/contract-opportunity/tx-texas-strategic-bitcoin-reserve-67282979/" },
+  { id: 15, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Sarah Eckhardt (D) led Don Huffines (R) for comptroller, 5,014,496 (51.30%) to 4,511,185 (46.15%). Not certified", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
 // The custody watch — the scannable "who holds what, right now" panel.

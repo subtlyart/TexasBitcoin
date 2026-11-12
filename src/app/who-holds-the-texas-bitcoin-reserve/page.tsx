@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "Who legally controls the Texas Strategic Bitcoin Reserve?",
-    a: "The Texas Comptroller of Public Accounts manages the reserve as a dedicated fund (Fund 1018) held outside the state treasury, guided by a five-member advisory committee the Comptroller chairs. Since August 1, 2026 that Comptroller is Don Huffines, appointed after Kelly Hancock resigned. The custody procurement runs through the Comptroller on behalf of the Texas Treasury Safekeeping Trust Company, the state's investment arm.",
+    a: "The Texas Comptroller of Public Accounts manages the reserve as a dedicated fund (Fund 1018) held outside the state treasury, guided by a five-member advisory committee the Comptroller chairs. Since August 1, 2026 that Comptroller is Don Huffines, appointed after Kelly Hancock resigned — but he holds the office only to the unexpired term. Unofficial November 3, 2026 returns at 100% of polling locations reporting show Sarah Eckhardt leading him 51.30% to 46.15% for the full term beginning January 2027, so custody of the reserve, the open procurement, and the committee chairmanship all change hands unless certified results reverse the count. The custody procurement runs through the Comptroller on behalf of the Texas Treasury Safekeeping Trust Company, the state's investment arm.",
   },
   {
     q: "How will the public see what the reserve holds?",
@@ -370,6 +370,22 @@ export default function CustodyPage() {
           <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             Who holds the Texas Bitcoin reserve?
           </h1>
+          <p className="mt-4 text-sm leading-relaxed text-muted-2">
+            <strong>November 3, 2026 general election — unofficial returns.</strong>{" "}
+            At 100% of polling locations reporting (November 4, 4:59 p.m.),
+            Sarah Eckhardt (D) led Don Huffines (R) for comptroller 5,014,496
+            (51.30%) to 4,511,185 (46.15%). These are not certified results,
+            but unless certification reverses them the office — and with it
+            custody of the reserve, the open procurement, and the advisory
+            committee chairmanship — changes hands in January 2027.{" "}
+            <a
+              href="https://electionresults.sos.state.tx.us/results.html"
+              className="underline"
+            >
+              Texas Secretary of State results
+            </a>
+            .<C n={15} />
+          </p>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             The operational sequel to{" "}
             <Link href="/texas-strategic-bitcoin-reserve">
