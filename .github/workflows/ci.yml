@@ -1,0 +1,43 @@
+name: CI
+
+# Run the same safety checks on every push and pull request so problems are
+# caught in review, not in production.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# A newer push to the same branch/PR cancels the older, still-running job.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          # Match engines.node (26.x). using: on the action is its own runtime,
+          # not the version this job installs.
+          node-version: 26
+          cache: npm
+
+      - name: Install dependencies (clean, from lockfile)
+        run: npm ci
+
+      # Fail the build if any dependency has a known high or critical
+      # vulnerability. Moderate/low are reported but do not block.
+      - name: Security audit
+        run: npm audit --audit-level=high
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build

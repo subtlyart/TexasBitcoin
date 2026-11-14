@@ -69,8 +69,8 @@ Internal notes in `SEAM.md`; do not explain it in page copy.
 
 ## Stack
 
-Next.js 15.5 (App Router, Turbopack) · React 19 · Tailwind CSS v4 · TypeScript ·
-lucide-react · Vercel Analytics + Speed Insights.
+Next.js 16 (App Router, Turbopack) · React 19 · Tailwind CSS v4 · TypeScript ·
+Node.js 26 · lucide-react · Vercel Analytics + Speed Insights.
 
 ## Develop
 
