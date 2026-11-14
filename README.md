@@ -69,8 +69,10 @@ Internal notes in `SEAM.md`; do not explain it in page copy.
 
 ## Stack
 
-Next.js 16 (App Router, Turbopack) · React 19 · Tailwind CSS v4 · TypeScript ·
-Node.js 26 · lucide-react · Vercel Analytics + Speed Insights.
+Next.js 16 (App Router, Turbopack) · React 19 · Tailwind CSS v4 · Node.js 26 ·
+lucide-react · Vercel Analytics + Speed Insights. The TypeScript 7 compiler
+is `@typescript/native`. The `typescript` package stays on the 6 API so
+eslint can load; typescript-eslint does not support 7.0.
 
 ## Develop
 
