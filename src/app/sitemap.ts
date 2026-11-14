@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/texas-bitcoin-reserve-game-theory", priority: 0.7, changeFrequency: "monthly" as const, lastMod: "2026-10-22" },
     { path: "/who-holds-the-texas-bitcoin-reserve", priority: 0.8, changeFrequency: "weekly" as const, lastMod: "2026-09-29" },
     { path: "/elon-musk-bitcoin-energy", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-19" },
-    { path: "/ross-ulbricht-silk-road-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-08-23" },
+    { path: "/ross-ulbricht-silk-road-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-11-14" },
     { path: "/ted-cruz-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/greg-abbott-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-01" },
     { path: "/dan-patrick-bitcoin", priority: 0.8, changeFrequency: "monthly" as const, lastMod: "2026-09-30" },

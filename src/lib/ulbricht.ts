@@ -9,10 +9,13 @@
 // are true. The murder-for-hire allegations are stated with precision — alleged,
 // never charged in the trial that convicted him, never proven, no one killed.
 //
-// Verified August 2026. Live figures (the fiat value of seized coins) move;
-// re-verify with the quarterly cornerstone pass.
+// Verified November 14, 2026. The laptop count is 144,336, from the 2017
+// SDNY forfeiture release — not the FBI artifact page. The November 2020
+// complaint says several thousand bitcoin, over $1 billion; it does not
+// state a coin count. Live fiat values move; re-verify with the quarterly
+// cornerstone pass.
 
-export const ULBRICHT_LAST_VERIFIED = "August 23, 2026";
+export const ULBRICHT_LAST_VERIFIED = "November 14, 2026";
 
 export interface UlbrichtSource {
   id: number;
@@ -56,25 +59,25 @@ export const ulbrichtSources: UlbrichtSource[] = [
   {
     id: 6,
     label:
-      "U.S. Department of Justice, SDNY — Acting Manhattan U.S. Attorney announces forfeiture of $48 million from the sale of Silk Road bitcoins (the U.S. Marshals auctions)",
+      "U.S. Department of Justice, SDNY — Acting Manhattan U.S. Attorney announces forfeiture of $48,238,116 from the sale of 144,336 bitcoin recovered from Ross Ulbricht's laptop (Sept 29, 2017). Ulbricht withdrew his claim to the proceeds",
     url: "https://www.justice.gov/usao-sdny/pr/acting-manhattan-us-attorney-announces-forfeiture-48-million-sale-silk-road-bitcoins",
   },
   {
     id: 7,
     label:
-      "U.S. Department of Justice, NDCA — United States files a civil action to forfeit cryptocurrency valued at over one billion dollars (Nov 2020): 69,370 BTC seized from 'Individual X,' who had hacked it from Silk Road",
+      "U.S. Department of Justice, NDCA — United States files a civil action to forfeit cryptocurrency valued at over $1 billion (Nov 5, 2020): several thousand bitcoin seized November 3, 2020, which the complaint alleges Individual X hacked from Silk Road; valued at over $1 billion on November 4, 2020. The complaint alleges Silk Road commissions totaling over 600,000 bitcoin and sales revenue over 9.5 million bitcoin. It does not state a coin count",
     url: "https://www.justice.gov/usao-ndca/pr/united-states-files-civil-action-forfeit-cryptocurrency-valued-over-one-billion-us",
   },
   {
     id: 8,
     label:
-      "Federal Bureau of Investigation — artifact record for Ross William Ulbricht's laptop, seized at his arrest (≈144,000 bitcoin recovered)",
+      "Federal Bureau of Investigation — artifact record for Ross William Ulbricht's laptop: the FBI arrested Ulbricht and seized the laptop on October 1, 2013",
     url: "https://www.fbi.gov/history/artifacts/ross-william-ulbrichts-laptop",
   },
   {
     id: 9,
     label:
-      "The White House — Fact Sheet: President Donald J. Trump establishes the Strategic Bitcoin Reserve and U.S. Digital Asset Stockpile (Mar 6, 2025): seized bitcoin to be held, not sold",
+      "The White House — Fact Sheet: President Donald J. Trump establishes the Strategic Bitcoin Reserve and U.S. Digital Asset Stockpile (Mar 6, 2025): the reserve is capitalized with bitcoin the Treasury holds from forfeiture; bitcoin deposited into the reserve will not be sold. The fact sheet does not name the Silk Road lots",
     url: "https://www.whitehouse.gov/fact-sheets/2025/03/fact-sheet-president-donald-j-trump-establishes-the-strategic-bitcoin-reserve-and-u-s-digital-asset-stockpile/",
   },
   {
@@ -191,6 +194,18 @@ export const ulbrichtSources: UlbrichtSource[] = [
       "Bitcoin Magazine (YouTube) — Ross Ulbricht: Freedom, Decentralization, Unity at Bitcoin 2025, his first public speech after the pardon (full 28-minute keynote)",
     url: "https://www.youtube.com/watch?v=8ZZGRA-8ZMU",
   },
+  {
+    id: 29,
+    label:
+      "Wall Street Journal — Joseph Pisani, Silk Road founder Ross Ulbricht thanks Trump for pardon (Sept. 10, 2026): Ulbricht spoke on the second day of the GOP convention; \"He felt compassion for me, because he too was the target of a weaponized government\"; \"He kept his word and I walked out.\"",
+    url: "https://www.wsj.com/livecoverage/trump-vance-midterm-elections-2026-rnc/card/silk-road-founder-ross-ulbricht-thanks-trump-for-pardon-UGEcnoJU1uLnOj6NcQed",
+  },
+  {
+    id: 30,
+    label:
+      "Associated Press — Joshua Boak, live updates from the GOP midterm convention (Sept. 10, 2026): Ulbricht spoke at the Republican convention in Dallas; \"You gave me my life back, sir.\"",
+    url: "https://apnews.com/live/trump-gop-midterm-convention-news-updates-09-10-2026#000001a0-8da7-d4e7-abab-dfff62070000",
+  },
 ];
 
 export type TimelineKind = "origin" | "rise" | "fall" | "seizure" | "freedom";
@@ -230,9 +245,9 @@ export const ulbrichtTimeline: TimelineEntry[] = [
     dateLabel: "Oct 1, 2013",
     title: "Arrested in a San Francisco library",
     detail:
-      "FBI agents arrest Ulbricht at the Glen Park branch library while he is logged in as Dread Pirate Roberts, seizing his open laptop. It holds roughly 144,000 bitcoin and the evidence that will convict him.",
+      "FBI agents arrest Ulbricht at the Glen Park branch library while he is logged in as Dread Pirate Roberts, seizing his open laptop. The government later said 144,336 bitcoin were recovered from that laptop.",
     kind: "fall",
-    sourceIds: [8, 20],
+    sourceIds: [8, 20, 6],
   },
   {
     date: "2015-02-04",
@@ -266,9 +281,9 @@ export const ulbrichtTimeline: TimelineEntry[] = [
     dateLabel: "Nov 3, 2020",
     title: "A $1 billion seizure",
     detail:
-      "The government seizes 69,370 bitcoin that a hacker had stolen from Silk Road years earlier - worth about $1 billion, the largest cryptocurrency seizure in Justice Department history at the time. The coins are separate from Ulbricht's own.",
+      "The government seizes several thousand bitcoin on November 3, 2020. The civil complaint alleges Individual X hacked them from Silk Road. On November 4 they are valued at over $1 billion, the largest cryptocurrency seizure in Justice Department history to that point. The complaint does not state a coin count. The coins are separate from the laptop.",
     kind: "seizure",
-    sourceIds: [7, 13, 23],
+    sourceIds: [7, 13],
   },
   {
     date: "2025-01-21",
@@ -287,5 +302,14 @@ export const ulbrichtTimeline: TimelineEntry[] = [
       "Ten years to the day after his sentencing, Ulbricht gives his first public speech at Bitcoin 2025 in Las Vegas - on freedom, decentralization, and unity - telling the crowd, 'You didn't abandon me. You didn't forget me.'",
     kind: "freedom",
     sourceIds: [18, 19, 28],
+  },
+  {
+    date: "2026-09-10",
+    dateLabel: "Sep 10, 2026",
+    title: "Speaks in Dallas",
+    detail:
+      "On the second day of the Republican midterm convention, Ulbricht speaks in Dallas and thanks President Trump for the pardon. 'You gave me my life back, sir,' he says. 'He felt compassion for me, because he too was the target of a weaponized government.' 'He kept his word and I walked out.'",
+    kind: "freedom",
+    sourceIds: [30, 29],
   },
 ];

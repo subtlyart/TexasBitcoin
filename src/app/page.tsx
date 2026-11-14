@@ -219,13 +219,13 @@ export default function Home() {
               Feature · Origins &amp; the base layer
             </p>
             <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
-              Ross Ulbricht, Silk Road &amp; Bitcoin&apos;s First Use Case
+              Ross Ulbricht, Silk Road &amp; the seized Bitcoin
             </h2>
             <p className="mt-2 max-w-xl text-muted">
               An Austin physics kid built the marketplace that gave Bitcoin
               something to do - and it cost him two life sentences. The sourced
-              story of Silk Road, the seized coins, and the full pardon of
-              January 2025 - kept honest about what it was.
+              ledger of the seized coins, the January 2025 pardon, and the
+              September 2026 speech in Dallas.
             </p>
           </div>
           <span className="inline-flex shrink-0 items-center gap-2 font-medium text-accent-soft">

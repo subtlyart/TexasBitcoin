@@ -16,16 +16,16 @@ import {
 const pageUrl = `${site.url}/ross-ulbricht-silk-road-bitcoin`;
 
 export const metadata: Metadata = {
-  title: "Ross Ulbricht, Silk Road, and Bitcoin's First Use Case",
+  title: "Ross Ulbricht, Silk Road, and the seized Bitcoin",
   description:
-    "The sourced account of Ross Ulbricht - the Austin-born founder of Silk Road, Bitcoin's first use case - his double-life sentence, the seized coins, and the full pardon he won on January 21, 2025.",
+    "Ross Ulbricht, the Austin-born founder of Silk Road: the seized Bitcoin, the double-life sentence, the January 21, 2025 pardon, and his September 10, 2026 speech in Dallas.",
   alternates: { canonical: pageUrl },
   openGraph: {
-    images: ogImages("Ross Ulbricht, Silk Road, and Bitcoin's First Use Case"),
+    images: ogImages("Ross Ulbricht, Silk Road, and the seized Bitcoin"),
     type: "article",
-    title: "Ross Ulbricht, Silk Road, and Bitcoin's First Use Case",
+    title: "Ross Ulbricht, Silk Road, and the seized Bitcoin",
     description:
-      "From an Austin physics degree to Dread Pirate Roberts to a full presidential pardon: the sourced story of Ross Ulbricht, Silk Road, and the Bitcoin the government seized - kept honest about what Silk Road was.",
+      "The sourced story of Ross Ulbricht and Silk Road: what the government seized, what it did not, the full pardon, and the September 10, 2026 speech in Dallas.",
     url: pageUrl,
   },
 };
@@ -53,8 +53,20 @@ const faqs = [
     a: "Yes. President Trump granted Ross Ulbricht a full and unconditional pardon on January 21, 2025, after a decade in prison. It fulfilled - and went beyond - a pledge Trump made at the 2024 Libertarian National Convention to commute Ulbricht's sentence, and followed a clemency petition with roughly 607,000 signatures.",
   },
   {
+    q: "Where is Ross Ulbricht now?",
+    a: "He is free. On September 10, 2026 he spoke in Dallas at the Republican midterm convention and thanked President Trump for the pardon. His first public speech after the pardon was at Bitcoin 2025 in Las Vegas on May 29, 2025.",
+  },
+  {
+    q: "How long was Ross Ulbricht in prison?",
+    a: "From his arrest on October 1, 2013 until the pardon on January 21, 2025 - more than eleven years. He was released after the pardon.",
+  },
+  {
+    q: "How much Bitcoin did the government seize from Silk Road?",
+    a: "Two seizures, and they are not one fortune. The government recovered 144,336 bitcoin from Ulbricht's laptop and later sold them for $48,238,116. On November 3, 2020 it seized several thousand more that a complaint alleges a hacker stole from Silk Road, valued at over $1 billion the next day. That complaint does not give a coin count. A forfeiture order of $183,961,921 is dollars, not bitcoin.",
+  },
+  {
     q: "What happened to Silk Road's Bitcoin?",
-    a: "The government seized about 174,000 bitcoin in Ulbricht's case and auctioned it off in 2014 and 2015, when Tim Draper was an early buyer. Separately, in November 2020 it seized 69,370 bitcoin a hacker had stolen from Silk Road - about $1 billion then. Those coins were never sold; in March 2025 they were placed in the U.S. Strategic Bitcoin Reserve.",
+    a: "The 144,336 bitcoin recovered from Ulbricht's laptop were sold by the U.S. Marshals for $48,238,116. One bidder, later identified as Tim Draper, claimed the first auction block of roughly 30,000 bitcoin. A separate November 2020 seizure, alleged to have been hacked from Silk Road, was valued at over $1 billion. The March 6, 2025 order says bitcoin deposited into the U.S. Strategic Bitcoin Reserve will not be sold. It does not name the Silk Road lots.",
   },
 ];
 
@@ -76,9 +88,113 @@ function C({ n }: { n: number }) {
   );
 }
 
-// The 69,370 bitcoin the government seized from a Silk Road hacker in 2020,
-// by fiat value at two moments - and the twist that they were never sold.
-// Static, theme-aware SVG (site is single dark theme).
+function SeizureLedger() {
+  const rows = [
+    {
+      figure: "144,336 BTC",
+      what: "Recovered from the laptop",
+      record: (
+        <>
+          Sold by the U.S. Marshals for $48,238,116. Ulbricht withdrew his claim
+          to the proceeds in 2017.<C n={6} />
+        </>
+      ),
+    },
+    {
+      figure: "Roughly 30,000 BTC",
+      what: "First Marshals auction, June 2014",
+      record: (
+        <>
+          One bidder claimed the block. Tim Draper was later identified as that
+          bidder. A slice of the sale, not a second seizure.<C n={17} />
+        </>
+      ),
+    },
+    {
+      figure: "$183,961,921",
+      what: "Forfeiture order, May 29, 2015",
+      record: (
+        <>
+          Dollars, not bitcoin.<C n={1} />
+        </>
+      ),
+    },
+    {
+      figure: "Over 600,000 BTC",
+      what: "Commissions alleged in 2020",
+      record: (
+        <>
+          The civil complaint alleges commissions over 600,000 bitcoin and sales
+          revenue over 9.5 million bitcoin. Not coins seized. The sentencing
+          release puts his commissions at more than $13 million.<C n={7} />
+          <C n={1} />
+        </>
+      ),
+    },
+    {
+      figure: "Several thousand BTC",
+      what: "Seized November 3, 2020",
+      record: (
+        <>
+          The complaint alleges Individual X hacked them from Silk Road. Valued
+          at over $1 billion on November 4, 2020. The complaint does not state a
+          coin count. Separate from the laptop.<C n={7} />
+        </>
+      ),
+    },
+    {
+      figure: "Forfeited bitcoin",
+      what: "March 6, 2025 order",
+      record: (
+        <>
+          The Strategic Bitcoin Reserve is capitalized with bitcoin the Treasury
+          holds from forfeiture. Bitcoin deposited into the reserve will not be
+          sold. The order does not name the Silk Road lots.<C n={9} />
+        </>
+      ),
+    },
+  ];
+  return (
+    <figure className="mt-6 overflow-x-auto rounded-xl border border-border bg-surface">
+      <figcaption className="border-b border-border px-5 py-4">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+          The ledger
+        </p>
+        <p className="mt-2 text-sm leading-relaxed text-muted">
+          These rows are not a sum. A commission allegation, a dollar forfeiture
+          order, and an auction block are not the same thing as coins seized.
+        </p>
+      </figcaption>
+      <table className="w-full min-w-[640px] text-left text-sm">
+        <thead>
+          <tr className="border-b border-border text-xs uppercase tracking-wider text-muted-2">
+            <th className="px-5 py-3 font-semibold">Figure</th>
+            <th className="px-5 py-3 font-semibold">What it is</th>
+            <th className="px-5 py-3 font-semibold">What the record says</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr key={row.figure} className="border-b border-border last:border-0">
+              <th className="px-5 py-3 align-top font-semibold text-foreground">
+                {row.figure}
+              </th>
+              <td className="px-5 py-3 align-top text-muted">{row.what}</td>
+              <td className="px-5 py-3 align-top leading-relaxed text-muted">
+                {row.record}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </figure>
+  );
+}
+
+// The November 2020 seizure, by the fiat value later reporting assigned it.
+// The complaint says several thousand bitcoin, over $1 billion on November 4,
+// 2020. It does not state a coin count, and the March 2025 order does not
+// name this lot. Static, theme-aware SVG (site is single dark theme).
 function SeizedBitcoinScale() {
   const max = 6.5; // $B, the early-2025 value
   const x0 = 250;
@@ -92,13 +208,13 @@ function SeizedBitcoinScale() {
         viewBox="0 0 680 250"
         className="h-auto w-full min-w-[560px]"
         role="img"
-        aria-label="Bar chart: the 69,370 bitcoin the U.S. seized from a Silk Road hacker was worth about $1.0 billion in November 2020 and about $6.5 billion by early 2025, when courts cleared a sale. The coins were not sold; they were placed in the U.S. Strategic Bitcoin Reserve in March 2025."
+        aria-label="Bar chart of reported fiat value for the November 2020 Silk Road seizure: over $1 billion on November 4, 2020, and about $6.5 billion in early 2025 reporting. The complaint does not state a coin count. The March 6, 2025 order does not name this lot."
       >
         <text x="0" y="22" fill="var(--accent)" fontSize="13" fontWeight="600" letterSpacing="2">
-          THE SILK ROAD BITCOIN THE U.S. KEPT
+          THE 2020 SILK ROAD SEIZURE
         </text>
         <text x="0" y="44" fill="var(--muted-2)" fontSize="13">
-          69,370 seized bitcoin, by fiat value, drawn to scale
+          Reported fiat value, drawn to scale. Not a coin count.
         </text>
 
         {/* 2020 — at seizure */}
@@ -128,7 +244,7 @@ function SeizedBitcoinScale() {
         </text>
 
         <text x="0" y="238" fill="var(--muted-2)" fontSize="12">
-          The coins were never sold. In March 2025 they were placed in the U.S. Strategic Bitcoin Reserve.
+          The March 2025 order does not name this lot.
         </text>
       </svg>
     </figure>
@@ -140,14 +256,14 @@ export default function RossUlbrichtPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     citation: citations(ulbrichtSources),
-    headline: "Ross Ulbricht, Silk Road, and Bitcoin's First Use Case",
+    headline: "Ross Ulbricht, Silk Road, and the seized Bitcoin",
     description:
-      "The sourced account of Ross Ulbricht - the Austin-born founder of Silk Road, Bitcoin's first use case - his double-life sentence, the seized coins, and the full pardon he won on January 21, 2025.",
+      "Ross Ulbricht, the Austin-born founder of Silk Road: the seized Bitcoin, the double-life sentence, the January 21, 2025 pardon, and his September 10, 2026 speech in Dallas.",
     author: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-23",
-    dateModified: "2026-08-23",
+    dateModified: "2026-11-14",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Thing", name: "Silk Road (marketplace)" },
@@ -173,7 +289,7 @@ export default function RossUlbrichtPage() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Ross Ulbricht, Silk Road, and Bitcoin's First Use Case",
+        name: "Ross Ulbricht, Silk Road, and the seized Bitcoin",
         item: pageUrl,
       },
     ],
@@ -202,7 +318,7 @@ export default function RossUlbrichtPage() {
             Reference · Origins &amp; the base layer
           </p>
           <h1 className="mt-3 font-display text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
-            Ross Ulbricht, Silk Road, and Bitcoin&apos;s First Use Case
+            Ross Ulbricht, Silk Road, and the seized Bitcoin
           </h1>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             An Austin physics kid built the first marketplace that gave Bitcoin
@@ -228,8 +344,10 @@ export default function RossUlbrichtPage() {
             2011 to 2013. Most of its trade was illegal drugs. Convicted in 2015
             on seven counts and sentenced to two life terms plus 40 years without
             parole, he was granted a full and unconditional pardon by President
-            Trump on January 21, 2025, after a decade in prison and a years-long
-            clemency campaign.
+            Trump on January 21, 2025, after more than eleven years in prison and
+            a years-long clemency campaign. On September 10, 2026, he spoke in
+            Dallas at the Republican midterm convention and thanked the president
+            for the pardon.
           </p>
         </div>
 
@@ -251,9 +369,9 @@ export default function RossUlbrichtPage() {
               marketplace,&rdquo; used by more than 100,000 buyers.<C n={1} />
             </li>
             <li>
-              The FBI arrested Ulbricht on October 1, 2013, seizing a laptop that
-              held roughly 144,000 bitcoin; about 174,000 BTC was seized in the
-              case overall.<C n={8} /><C n={20} />
+              The FBI arrested Ulbricht on October 1, 2013, and seized his laptop.
+              The government later said 144,336 bitcoin were recovered from it,
+              and sold them for $48,238,116.<C n={8} /><C n={6} />
             </li>
             <li>
               A Manhattan jury convicted him on all seven counts on February 4,
@@ -269,6 +387,11 @@ export default function RossUlbrichtPage() {
               President Trump granted Ulbricht a full and unconditional pardon on
               January 21, 2025, after a clemency petition of roughly 607,000
               signatures.<C n={11} /><C n={25} />
+            </li>
+            <li>
+              On September 10, 2026, he spoke in Dallas at the Republican midterm
+              convention and thanked President Trump for the pardon.<C n={30} />
+              <C n={29} />
             </li>
           </ul>
         </div>
@@ -366,9 +489,11 @@ export default function RossUlbrichtPage() {
             Department&apos;s words, the internet&apos;s &ldquo;most
             sophisticated and extensive criminal marketplace,&rdquo; used by
             several thousand vendors and more than 100,000 buyers to trade
-            illegal drugs, and prosecutors said it earned Ulbricht more than
-            600,000 bitcoin in commissions, over $13 million at the exchange rates
-            of the day.<C n={1} /><C n={2} />
+            illegal drugs, and the sentencing release said he reaped commissions
+            worth more than $13 million.<C n={1} /> A 2020 civil complaint alleges
+            the site&apos;s commissions totaled over 600,000 bitcoin, and its
+            sales revenue over 9.5 million bitcoin - an allegation, not a count
+            of coins seized.<C n={7} />
           </p>
           <p>
             And yet its place in Bitcoin&apos;s history is not in dispute. Before
@@ -394,7 +519,8 @@ export default function RossUlbrichtPage() {
             staged lovers&apos; quarrel pulled his attention; an agent grabbed the
             open laptop before he could close it, catching him logged in as Dread
             Pirate Roberts with the administrative controls of Silk Road on
-            screen.<C n={20} /> That laptop held roughly 144,000 bitcoin and the
+            screen.<C n={20} /> The government later said 144,336 bitcoin were
+            recovered from that laptop.<C n={6} /> The laptop also held the
             evidence that made the trial almost a formality.<C n={8} />
           </p>
           <p>
@@ -446,42 +572,41 @@ export default function RossUlbrichtPage() {
 
           <h2>What happened to Silk Road&apos;s Bitcoin?</h2>
           <p>
-            The government seized about <strong>174,000 bitcoin</strong> in
-            Ulbricht&apos;s case - roughly 144,000 from his laptop and the rest
-            from Silk Road&apos;s servers - and then did what Elon Musk&apos;s
-            Tesla would later do with its own treasury: it sold too early. The
-            U.S. Marshals auctioned the coins off in tranches across 2014 and
-            2015, and the venture capitalist <strong>Tim Draper</strong> won the
-            entire first block of nearly 30,000 BTC in June 2014 for about $19
-            million, roughly $632 a coin.<C n={17} /><C n={6} /> Ulbricht dropped
-            his own claim to the auction proceeds in 2017. The same instinct to
-            sell early would echo, years later, in{" "}
+            The government recovered <strong>144,336 bitcoin</strong> from
+            Ulbricht&apos;s laptop and later sold them. The U.S. Marshals sold
+            that lot for <strong>$48,238,116</strong>, and in 2017 Ulbricht
+            withdrew his claim to the proceeds.<C n={6} /> One bidder claimed all
+            of the roughly 30,000 bitcoin in the first auction, in June 2014.
+            Tim Draper was later identified as that bidder.<C n={17} /> That
+            block is a slice of the sale, not a second seizure. The same instinct
+            to sell early would echo, years later, in{" "}
             <Link href="/elon-musk-bitcoin-energy">
               Tesla&apos;s decision to convert most of its Bitcoin to cash
             </Link>
             .
           </p>
           <p>
-            Then came a stranger coda. In November 2020 the government seized{" "}
-            <strong>69,370 bitcoin</strong> that a hacker had quietly stolen from
-            Silk Road years earlier - worth about $1 billion at the time, the
-            largest cryptocurrency seizure in Justice Department history to that
-            point, and entirely separate from Ulbricht&apos;s own coins.<C n={7} />
-            <C n={13} /> As Bitcoin climbed, so did the stakes: by early 2025,
-            after a failed ownership claim and a Supreme Court that declined to
-            intervene, courts had cleared the government to sell a hoard then
-            worth roughly $6.5 billion.<C n={14} /> It never did. In March 2025,
-            President Trump&apos;s executive order established a{" "}
-            <strong>U.S. Strategic Bitcoin Reserve</strong> and directed that
-            seized bitcoin be held rather than sold.<C n={9} /><C n={10} /> The
-            coins born from Silk Road became the seed of a national reserve - a
-            federal echo of the{" "}
+            Then came a stranger coda. On November 3, 2020 the government seized
+            several thousand bitcoin that a civil complaint alleges Individual X
+            had hacked from Silk Road in 2012 and 2013. On November 4, 2020
+            those coins were valued at over $1 billion, the largest
+            cryptocurrency seizure in Justice Department history to that point,
+            and separate from the laptop coins. The complaint does not state a
+            coin count.<C n={7} /><C n={13} /> By early 2025, courts had cleared
+            the government to sell a hoard then worth roughly $6.5 billion.
+            <C n={14} /> The March 6, 2025 order established a{" "}
+            <strong>U.S. Strategic Bitcoin Reserve</strong> capitalized with
+            bitcoin the Treasury holds from forfeiture, and said bitcoin
+            deposited into that reserve will not be sold.<C n={9} /> It does not
+            name the Silk Road lots. The order is a federal echo of the{" "}
             <Link href="/texas-strategic-bitcoin-reserve">
               Texas Strategic Bitcoin Reserve
             </Link>{" "}
-            the state had funded months earlier.
+            the state had funded months earlier - not a finding that these coins
+            were deposited into it.
           </p>
 
+          <SeizureLedger />
           <SeizedBitcoinScale />
 
           <h2>Why was his sentence so controversial? The Free Ross campaign</h2>
@@ -529,7 +654,7 @@ export default function RossUlbrichtPage() {
             years in prison, Ulbricht was released.
           </p>
 
-          <h2>Where it lands: freedom, and the base layer</h2>
+          <h2>Where is Ross Ulbricht now?</h2>
           <p>
             On May 29, 2025 - ten years to the day after Judge Forrest sentenced
             him - Ross Ulbricht walked onto the main stage at{" "}
@@ -569,14 +694,23 @@ export default function RossUlbrichtPage() {
             it.
           </p>
           <p>
+            On September 10, 2026 - the second day of the Republican midterm
+            convention - Ross Ulbricht spoke in Dallas and thanked President
+            Trump for the pardon.<C n={30} /><C n={29} /> &ldquo;You gave me my
+            life back, sir,&rdquo; he said.<C n={30} /> &ldquo;He felt compassion
+            for me, because he too was the target of a weaponized
+            government,&rdquo; he said.<C n={29} /> &ldquo;He kept his word and I walked
+            out.&rdquo;<C n={29} />
+          </p>
+          <p>
             That is the arc in one line. An Austin physics student built the first
             application that gave Bitcoin a purpose, chose to make that purpose a
             crime, and paid for it with a decade and a double life sentence -
-            then walked out into a world where the coins seized from his
-            marketplace seed a national reserve, and where the state next door
-            treats Bitcoin as something to hold rather than hunt. The base layer
-            was always going to touch the physical world. In Ross Ulbricht it
-            touched a courtroom first, and Texas last.
+            then walked out into a world where forfeited bitcoin is something the
+            United States says it will hold, and where Texas treats Bitcoin as
+            something to hold rather than hunt. The base layer was always going
+            to touch the physical world. In Ross Ulbricht it touched a courtroom
+            first, and a Dallas stage last.
           </p>
         </div>
 
