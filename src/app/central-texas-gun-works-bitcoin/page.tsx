@@ -399,8 +399,10 @@ export default function CentralTexasGunWorksBitcoinPage() {
             after visiting the shop, Cargill required the same Form 4473
             paperwork and FBI background check of a Bitcoin customer as of
             anyone paying cash.<C n={4} /> The store was answering the obvious
-            question of early 2014 – Silk Road had been seized only four
-            months earlier – and the answer was that a licensed dealer is a
+            question of early 2014 –{" "}
+            <Link href="/ross-ulbricht-silk-road-bitcoin">Silk Road</Link> had
+            been seized only four months earlier – and the answer was that a
+            licensed dealer is a
             licensed dealer regardless of the payment rail. NBC News made the
             same point at the end of March, noting that Cargill and
             TrackingPoint&apos;s Oren Schauble, whose Austin precision-rifle
