@@ -197,7 +197,7 @@ export default function Home() {
             <p className="mt-2 max-w-xl text-muted">
               The man who called Bitcoin mining a fossil-fuel problem in 2021
               built the biggest new load in tech. From Tesla&apos;s $1.5B
-              treasury bet to xAI&apos;s gigawatts - the reversal, and how it
+              treasury bet to xAI&apos;s gigawatts, the reversal — and how it
               lands on the Texas grid. Sourced to the SEC filings.
             </p>
           </div>
@@ -223,7 +223,7 @@ export default function Home() {
             </h2>
             <p className="mt-2 max-w-xl text-muted">
               An Austin physics kid built the marketplace that gave Bitcoin
-              something to do - and it cost him two life sentences. The sourced
+              something to do — and it cost him two life sentences. The sourced
               ledger of the seized coins, the January 2025 pardon, and the
               September 2026 speech in Dallas.
             </p>
@@ -269,7 +269,7 @@ export default function Home() {
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">
               Mark Hopkins and the federal line Texas never drew — the case
-              that taught every P2P trader where the seam runs.
+              that taught every P2P trader where that line runs.
             </p>
             <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent-soft">
               Read the profile
