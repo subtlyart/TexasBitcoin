@@ -112,7 +112,7 @@ export default function KioskPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-10-26",
-    dateModified: "2026-10-26",
+    dateModified: "2026-11-15",
   };
 
   const faqJsonLd = {
@@ -164,7 +164,7 @@ export default function KioskPage() {
             pages. The FBI table is the page. It is not a list of machines.
           </p>
           <p className="mt-4 text-sm text-muted-2">
-            By {site.name} · Published October 26, 2026 · Updated October 26, 2026
+            By {site.name} · Published October 26, 2026 · Updated November 15, 2026
           </p>
         </header>
 
@@ -232,11 +232,11 @@ export default function KioskPage() {
             </Link>{" "}
             page were pointing at. It is not another bill history, not a
             directory of machines, and not advice about whether to use one.
-            Pre-filing for the 90th Legislature opens November 9, 2026.
+            Pre-filing for the 90th Legislature opened November 9, 2026.
             <C n={7} /> The fight this page describes is the one most likely
             to be filed first. The{" "}
             <Link href="/texas-bitcoin-bills-2027">2027 bills page</Link>{" "}
-            is where a filing will be logged.
+            is where the filings are logged.
           </p>
 
           <h2>What is a crypto kiosk under Texas law?</h2>

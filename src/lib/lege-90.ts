@@ -1,5 +1,5 @@
 // Verified 90(R) filings; bill histories and introduced texts are primary sources.
-export const LEGE90_LAST_VERIFIED = "November 9, 2026";
+export const LEGE90_LAST_VERIFIED = "November 15, 2026";
 
 // Session milestones — the clock the tracker runs on.
 export interface SessionDate {
@@ -8,6 +8,7 @@ export interface SessionDate {
   title: string;
   detail: string;
   done: boolean;
+  cite: number;
 }
 
 export const sessionDates: SessionDate[] = [
@@ -18,6 +19,16 @@ export const sessionDates: SessionDate[] = [
     detail:
       "Pre-filing opened; eight tracked bills were filed November 9, including three directly about cryptocurrency and five broader data-center or computational-load measures.",
     done: true,
+    cite: 9,
+  },
+  {
+    date: "2026-11-12",
+    dateLabel: "November 12, 2026",
+    title: "A third kiosk bill",
+    detail:
+      "HB 1082 was filed. It would make knowingly owning or operating a virtual-currency kiosk a state jail felony, above HB 271's Class A misdemeanor. It is a proposal, not law.",
+    done: true,
+    cite: 12,
   },
   {
     date: "2027-01-12",
@@ -26,6 +37,7 @@ export const sessionDates: SessionDate[] = [
     detail:
       "The Regular Session gavels in at the Capitol. Texas legislatures meet in regular session only in odd-numbered years — everything Bitcoin gets, it gets in these 140 days or in a called special session.",
     done: false,
+    cite: 2,
   },
   {
     date: "2027-03-12",
@@ -34,6 +46,7 @@ export const sessionDates: SessionDate[] = [
     detail:
       "The 60th day — the deadline for filing most bills. After this date, the session's Bitcoin agenda is effectively set; what is not filed is not happening.",
     done: false,
+    cite: 2,
   },
   {
     date: "2027-05-31",
@@ -42,6 +55,7 @@ export const sessionDates: SessionDate[] = [
     detail:
       "The last day of the Regular Session. Bills that have not passed both chambers die where they stand — the raw material of the next dead file.",
     done: false,
+    cite: 2,
   },
 ];
 
@@ -65,7 +79,7 @@ export const watchlist: WatchItem[] = [
   {
     title: "The kiosk fight, round three",
     detail:
-      "HB 271 and SB 181 propose different kiosk prohibitions: a Class A misdemeanor versus a civil penalty tied to revenue. Neither is law.",
+      "HB 271, HB 1082, and SB 181 propose three kiosk prohibitions: a Class A misdemeanor, a state jail felony, and a civil penalty tied to revenue. None is law.",
     precedent:
       "SB 1705 passed the Senate and died on the House calendar; HB 2798 passed the House and died in Senate committee (2025). Two majorities, zero laws, with kiosk-scam losses still running.",
   },
@@ -97,7 +111,7 @@ export const watchlist: WatchItem[] = [
   },
 ];
 
-// Bills of the 90th: three direct cryptocurrency bills, then five broader measures.
+// Bills of the 90th: four direct cryptocurrency bills, then five broader measures.
 export type BillChamber = "House" | "Senate";
 export type BillStatus =
   | "prefiled"
@@ -137,6 +151,10 @@ export const trackedBills90: TrackedBill[] = [
     summary: "Would prohibit operating a virtual-currency kiosk for compensation, or allowing that operation on controlled property; the proposed civil penalty equals revenue earned during the violation, including fees.", scope: "Direct cryptocurrency", status: "filed",
     statusDetail: "Filed November 9, 2026; not enacted.", lastAction: "2026-11-09",
     historyUrl: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=SB181", textUrl: "https://capitol.texas.gov/tlodocs/90R/billtext/html/SB00181I.htm" },
+  { bill: "HB 1082", chamber: "House", author: "Little", title: "Virtual-currency kiosk felony ban",
+    summary: "Would prohibit knowingly owning or operating a virtual-currency kiosk in Texas, or allowing one on property under a person's control. An offense would be a state jail felony, and the act would take effect September 1, 2027.", scope: "Direct cryptocurrency", status: "filed",
+    statusDetail: "Filed November 12, 2026; not enacted.", lastAction: "2026-11-12",
+    historyUrl: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB1082", textUrl: "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB01082I.htm" },
   { bill: "HB 734", chamber: "House", author: "Vincent Perez", title: "Data-center development-agreement disclosure",
     summary: "Would require complete public submission of local data-center development agreements, subject to specified attorney-general-approved redactions; its data-center definition includes cryptocurrency mining and blockchain computation.", scope: "Broader computational load", status: "filed",
     statusDetail: "Filed November 9, 2026; not enacted.", lastAction: "2026-11-09",
@@ -177,17 +195,19 @@ export const lege90Sources: Lege90Source[] = [
   { id: 9, label: "Texas Legislature Online — HB 815 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB815" },
   { id: 10, label: "Texas Legislature Online — HB 271 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB271" },
   { id: 11, label: "Texas Legislature Online — SB 181 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=SB181" },
-  { id: 12, label: "Texas Legislature Online — HB 734 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB734" },
-  { id: 13, label: "Texas Legislature Online — HB 374 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB374" },
-  { id: 14, label: "Texas Legislature Online — SB 32 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=SB32" },
-  { id: 15, label: "Texas Legislature Online — SB 33 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=SB33" },
-  { id: 16, label: "Texas Legislature Online — SB 34 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=SB34" },
-  { id: 17, label: "Texas Legislature Online — HB 815 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00815I.htm" },
-  { id: 18, label: "Texas Legislature Online — HB 271 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00271I.htm" },
-  { id: 19, label: "Texas Legislature Online — SB 181 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/SB00181I.htm" },
-  { id: 20, label: "Texas Legislature Online — HB 734 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00734I.htm" },
-  { id: 21, label: "Texas Legislature Online — HB 374 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00374I.htm" },
-  { id: 22, label: "Texas Legislature Online — SB 32 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/SB00032I.htm" },
-  { id: 23, label: "Texas Legislature Online — SB 33 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/SB00033I.htm" },
-  { id: 24, label: "Texas Legislature Online — SB 34 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/SB00034I.htm" },
+  { id: 12, label: "Texas Legislature Online — HB 1082 (90R), history: filed November 12, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB1082" },
+  { id: 13, label: "Texas Legislature Online — HB 734 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB734" },
+  { id: 14, label: "Texas Legislature Online — HB 374 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=HB374" },
+  { id: 15, label: "Texas Legislature Online — SB 32 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=SB32" },
+  { id: 16, label: "Texas Legislature Online — SB 33 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=SB33" },
+  { id: 17, label: "Texas Legislature Online — SB 34 (90R), history: filed November 9, 2026", url: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=90R&Bill=SB34" },
+  { id: 18, label: "Texas Legislature Online — HB 815 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00815I.htm" },
+  { id: 19, label: "Texas Legislature Online — HB 271 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00271I.htm" },
+  { id: 20, label: "Texas Legislature Online — SB 181 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/SB00181I.htm" },
+  { id: 21, label: "Texas Legislature Online — HB 1082 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB01082I.htm" },
+  { id: 22, label: "Texas Legislature Online — HB 734 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00734I.htm" },
+  { id: 23, label: "Texas Legislature Online — HB 374 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/HB00374I.htm" },
+  { id: 24, label: "Texas Legislature Online — SB 32 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/SB00032I.htm" },
+  { id: 25, label: "Texas Legislature Online — SB 33 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/SB00033I.htm" },
+  { id: 26, label: "Texas Legislature Online — SB 34 (90R), introduced text", url: "https://capitol.texas.gov/tlodocs/90R/billtext/html/SB00034I.htm" },
 ];
