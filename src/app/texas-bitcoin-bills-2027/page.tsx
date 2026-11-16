@@ -17,14 +17,14 @@ const pageUrl = `${site.url}/texas-bitcoin-bills-2027`;
 export const metadata: Metadata = {
   title: "Texas Bitcoin Bills 2027: The 90th Legislature Tracker",
   description:
-    "Eight bills filed November 9 for the 90th Texas Legislature: three direct cryptocurrency proposals and five broader data-center and computational-load measures, with bill histories and introduced texts.",
+    "Nine filed bills for the 90th Texas Legislature: four direct cryptocurrency proposals, including a November 12 kiosk felony bill, and five broader data-center and computational-load measures.",
   alternates: { canonical: pageUrl },
   openGraph: {
     images: ogImages("Texas Bitcoin Bills 2027: The 90th Legislature Tracker"),
     type: "article",
     title: "Texas Bitcoin Bills 2027: The 90th Legislature Tracker",
     description:
-      "Eight filed bills of the 90th Texas Legislature, tracked against histories and introduced texts.",
+      "Nine filed bills of the 90th Texas Legislature, tracked against histories and introduced texts.",
     url: pageUrl,
   },
 };
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "What Bitcoin bills have been filed for the 2027 Texas session?",
-    a: "Eight tracked bills were filed November 9, 2026: HB 815 on local cryptocurrency investment; HB 271 and SB 181 on virtual-currency kiosks; and HB 734, HB 374, SB 32, SB 33 and SB 34 on broader data-center and computational-load issues that include mining or distributed-ledger activity. All remain proposals, not law.",
+    a: "Nine tracked bills are on file. Eight were filed November 9, 2026: HB 815 on local cryptocurrency investment; HB 271 and SB 181 on virtual-currency kiosks; and HB 734, HB 374, SB 32, SB 33 and SB 34 on broader data-center and computational-load issues that include mining or distributed-ledger activity. HB 1082, filed November 12, would make operating a virtual-currency kiosk a state jail felony. All remain proposals, not law.",
   },
   {
     q: "Will Texas add money to its Bitcoin reserve in 2027?",
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "What happened to the Texas crypto kiosk bills?",
-    a: "Both died in 2025 despite majorities: SB 1705 passed the Senate and died on the House calendar, while HB 2798 passed the House and died in Senate committee. HB 271 and SB 181 were filed November 9, 2026 with distinct proposed prohibitions: a criminal misdemeanor and a revenue-based civil penalty, respectively. Neither has passed.",
+    a: "Both died in 2025 despite majorities: SB 1705 passed the Senate and died on the House calendar, while HB 2798 passed the House and died in Senate committee. Three 2027 proposals are on file and none has passed: HB 271, filed November 9, a Class A misdemeanor; HB 1082, filed November 12, a state jail felony; and SB 181, filed November 9, a civil penalty tied to revenue.",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function Lege90Page() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-30",
-    dateModified: "2026-11-09",
+    dateModified: "2026-11-15",
   };
 
   const faqJsonLd = {
@@ -146,9 +146,11 @@ export default function Lege90Page() {
             that day: three direct cryptocurrency proposals (HB 815, HB 271 and
             SB 181) and five broader data-center or computational-load bills
             (HB 734, HB 374, SB 32, SB 33 and SB 34) whose definitions include
-            mining or distributed-ledger activity. All are filed proposals,
-            not enacted law.<C n={9} /><C n={10} /><C n={11} /><C n={12} />
-            <C n={13} /><C n={14} /><C n={15} /><C n={16} />
+            mining or distributed-ledger activity.<C n={9} /><C n={10} /><C n={11} />
+            <C n={13} /><C n={14} /><C n={15} /><C n={16} /><C n={17} /> HB 1082,
+            filed November 12, would make owning or operating a virtual-currency
+            kiosk a state jail felony.<C n={12} /> All are filed proposals,
+            not enacted law.
           </p>
         </div>
 
@@ -163,7 +165,7 @@ export default function Lege90Page() {
             </span>
           </div>
           <p className="mt-3 text-sm text-muted">
-            {trackedBills90.length} filed proposals · 3 direct cryptocurrency · 5 broader computational load.
+            {trackedBills90.length} filed proposals · 4 direct cryptocurrency · 5 broader computational load.
             All statuses are as of {LEGE90_LAST_VERIFIED}.
           </p>
           <div className="mt-5 space-y-4">
@@ -174,7 +176,7 @@ export default function Lege90Page() {
                   <span className="rounded-full border border-accent/40 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-accent">{b.status}</span>
                 </div>
                 <p className="mt-1 text-xs text-muted-2">{b.scope} · {b.chamber} · {b.author} · last action {b.lastAction}</p>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{b.summary} {b.statusDetail}<C n={9 + i} /><C n={17 + i} /></p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{b.summary} {b.statusDetail}<C n={9 + i} /><C n={18 + i} /></p>
                 <p className="mt-2 text-xs">
                   <a className="underline decoration-accent/40 underline-offset-2" href={b.historyUrl}>Bill history</a>{" · "}
                   <a className="underline decoration-accent/40 underline-offset-2" href={b.textUrl}>Introduced text</a>
@@ -221,7 +223,7 @@ export default function Lege90Page() {
                 </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted">
                   {e.detail}
-                  {e.done ? <C n={9} /> : <C n={2} />}
+                  <C n={e.cite} />
                 </p>
               </li>
             ))}
