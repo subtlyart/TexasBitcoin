@@ -8,7 +8,7 @@
 // Re-verify whenever the Comptroller acts, reports, or names the fifth committee
 // member — and bump RESERVE_LAST_VERIFIED and the page's dateModified together.
 
-export const RESERVE_LAST_VERIFIED = "November 9, 2026";
+export const RESERVE_LAST_VERIFIED = "November 19, 2026";
 
 export interface ReserveSource {
   id: number;
@@ -35,7 +35,7 @@ export const reserveSources: ReserveSource[] = [
   { id: 15, label: "Arizona Senate — HB 2749 fact sheet: the Bitcoin and Digital Assets Reserve Fund of abandoned digital assets, airdrops and staking rewards; signed May 7, 2025 after the veto of SB 1025", url: "https://www.azleg.gov/legtext/57leg/1R/summary/S.2749GOV.DOCX.htm" },
   { id: 16, label: "Texas Legislature Online — SB 21 (89R), enrolled text: § 403.708 (biennial report: due December 31 of each even-numbered year, published on the comptroller's website and submitted to the legislature; holdings and estimated value as of the last day of the preceding state fiscal biennium; changes disaggregated by cryptocurrency type; actions taken to administer the reserve)", url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00021F.htm" },
   { id: 17, label: "Texas Senate Journal — 89th Legislature, Regular Session, 14th Day (March 6, 2025), p. 423: CSSB 21 passed on third reading, Yeas 25, Nays 5 — Kelly Hancock among the five nays, with Creighton, Gutierrez, Hall, and Nichols", url: "https://journals.senate.texas.gov/sjrnl/89r/pdf/89RSJ03-06-F.PDF" },
-  { id: 18, label: "Texas Comptroller — News releases, reviewed October 26, 2026: no release naming a Strategic Bitcoin Reserve custodian. HigherGov mirror of RFP 908-26-1778WS the same day: July 10 response deadline past due, no award document posted", url: "https://comptroller.texas.gov/about/media-center/news/" },
+  { id: 18, label: "Texas Comptroller — News releases, reviewed November 19, 2026: no release naming a Strategic Bitcoin Reserve custodian and no biennial report. HigherGov mirror of RFP 908-26-1778WS the same day: July 10 response deadline past due, no award document posted", url: "https://comptroller.texas.gov/about/media-center/news/" },
   { id: 19, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%).", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
@@ -54,9 +54,9 @@ export const reserveStatus: ReserveStatusRow[] = [
   { label: "Eligibility floor", value: "Digital assets averaging ≥ $500B market cap over 24 months — only Bitcoin qualifies today", sourceIds: [2] },
   { label: "First purchase", value: "~$5 million into the iShares Bitcoin Trust on November 20, 2025", sourceIds: [4] },
   { label: "Current holdings", value: "$10 million in the iShares Bitcoin Trust (a spot BTC ETF) — the full appropriation deployed, held as an explicit placeholder", sourceIds: [8, 9] },
-  { label: "Custody", value: "No custodian named as of October 26, 2026. Responses to RFP 908-26-1778WS were due July 10, 2026; the late-August execution target passed. The Comptroller's newsroom contains no custodian announcement, and HigherGov's mirror posts no award document, so the contract moving the $10M from the ETF proxy to directly held Bitcoin still executes under Comptroller Huffines", sourceIds: [8, 9, 10, 18] },
+  { label: "Custody", value: "No custodian named as of November 19, 2026. Responses to RFP 908-26-1778WS were due July 10, 2026; the late-August execution target passed. The Comptroller's newsroom contains no custodian announcement, and HigherGov's mirror posts no award document, so the contract moving the $10M from the ETF proxy to directly held Bitcoin still executes under Comptroller Huffines", sourceIds: [8, 9, 10, 18] },
   { label: "Advisory committee", value: "Complete — the Comptroller chairs by office (Kelly Hancock to July 31, 2026; Don Huffines since August 1), joined May 28, 2026 by Laurie Dotter, Jamie McAvity (Cormint), Carla Reyes (SMU), Gary Vecchiarelli (CleanSpark)", sourceIds: [5, 10] },
-  { label: "Reporting", value: "First statutory report due by December 31, 2026 under § 403.708 — published on the Comptroller's website and submitted to the Legislature; none posted as of September 30, 2026", sourceIds: [16] },
+  { label: "Reporting", value: "First statutory report due by December 31, 2026 under § 403.708 — published on the Comptroller's website and submitted to the Legislature; none posted as of November 19, 2026", sourceIds: [16] },
 ];
 
 // A compact reserve-specific timeline (a spoke of the fuller law timeline).
@@ -111,7 +111,7 @@ export const reserveTimeline: ReserveEvent[] = [
     dateLabel: "Late August 2026",
     title: "Custody contract execution — the move to the keys",
     detail:
-      "The RFP targeted contract execution for late August 2026; the window passed with no award as of September 29, and the contract now executes under Comptroller Don Huffines, sworn in August 1. Once the custodian is under contract, the $10 million IBIT placeholder converts to directly held Bitcoin — the moment the reserve stops holding a claim and starts holding the asset.",
+      "The RFP targeted contract execution for late August 2026; the window passed with no award, still unposted as of November 19, 2026, and the contract now executes under Comptroller Don Huffines, sworn in August 1. Once the custodian is under contract, the $10 million IBIT placeholder converts to directly held Bitcoin — the moment the reserve stops holding a claim and starts holding the asset.",
     done: false,
     sourceIds: [8, 9],
   },

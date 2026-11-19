@@ -602,10 +602,11 @@ export default function TexasComptrollerBitcoinPage() {
 
           <h2>Where does the office stand today?</h2>
           <p>
-            As of September 30, 2026: $10 million in an ETF, a committee of
-            five, a custody solicitation closed twelve weeks with no
-            award, a legal-tender clause for gold in force, a report due
-            in three months, and unofficial returns showing Sarah Eckhardt ahead of the appointed comptroller Don Huffines for the January 2027 term.<C n={9} /><C n={10} /><C n={11} /><C n={22} /><C n={33} />
+            As of November 19, 2026: $10 million in an ETF, a committee of
+            five, a custody solicitation closed since July with no
+            award, a legal-tender clause for gold in force, the{" "}
+            <Link href="/texas-bitcoin-reserve-report">first biennial report</Link>{" "}
+            due in six weeks, and unofficial returns showing Sarah Eckhardt ahead of the appointed comptroller Don Huffines for the January 2027 term.<C n={9} /><C n={10} /><C n={11} /><C n={22} /><C n={33} />
             The 90th Legislature convenes January 12, 2027 with the
             office&apos;s first report on its desk and the question the
             appropriation left open – whether $10 million was the seed or

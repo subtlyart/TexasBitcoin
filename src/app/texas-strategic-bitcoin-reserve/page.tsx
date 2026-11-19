@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     q: "When is the first report on the Texas Bitcoin Reserve due?",
-    a: "By December 31, 2026. Senate Bill 21 § 403.708 requires the Texas Comptroller to publish on the office's website, and submit to the Legislature, a report by December 31 of each even-numbered year stating the amount and estimated value of Bitcoin held as of the last day of the preceding state fiscal biennium, the changes since the assets were first held, and the actions taken to administer the reserve. As of September 30, 2026 no report has been posted.",
+    a: "By December 31, 2026. Senate Bill 21 § 403.708 requires the Texas Comptroller to publish on the office's website, and submit to the Legislature, a report by December 31 of each even-numbered year stating the amount and estimated value of Bitcoin held as of the last day of the preceding state fiscal biennium, the changes since the assets were first held, and the actions taken to administer the reserve. As of November 19, 2026 no report has been posted.",
   },
   {
     q: "Is Texas the only state with a Bitcoin reserve?",
@@ -321,7 +321,7 @@ export default function ReservePage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-09",
-    dateModified: "2026-11-09",
+    dateModified: "2026-11-19",
   };
 
   const faqJsonLd = {
@@ -712,7 +712,13 @@ export default function ReservePage() {
             procurement. Whether the Comptroller reports against the literal
             date or the date of publication is the first thing this page
             checks when the report posts. We will read it against the primary
-            record and update the status panel above the same day.
+            record and update the status panel above the same day. The full
+            clause-by-clause breakdown — and the checklist we run the day it
+            lands — lives on{" "}
+            <Link href="/texas-bitcoin-reserve-report">
+              the first Texas Bitcoin reserve report
+            </Link>
+            .
           </p>
         </div>
 
