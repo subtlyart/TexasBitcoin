@@ -1,0 +1,316 @@
+<title>The Blocksize War</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  /* Layout: single editorial column — illustrated hero + caption bar, then a slow-smoked explainer, a real timeline, a glossary, and a share footer. */
+  :root{
+    --sky:#f3ddb0;        /* dusty gold page ground */
+    --paper:#fbf4e6;      /* card surface */
+    --ink:#2a2017;        /* near-black warm brown text */
+    --ink-soft:#6a5a47;   /* muted body/caption */
+    --pool:#1fb6c9;       /* turquoise pool */
+    --pool-deep:#0e7f8f;
+    --rust:#c6522b;       /* western rust accent */
+    --gold:#e8a33d;       /* bitcoin gold */
+    --line:#e3d4b4;       /* hairline */
+    --good:#3f8f52;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+    --sky:#171411; --paper:#201a14; --ink:#f3e7d2; --ink-soft:#b6a588;
+    --pool:#2bc3d6; --pool-deep:#2bc3d6; --rust:#e2683f; --gold:#f0b24e; --line:#352b20; --good:#5db172;
+    color-scheme:dark;
+  }}
+  :root[data-theme="dark"]{
+    --sky:#171411; --paper:#201a14; --ink:#f3e7d2; --ink-soft:#b6a588;
+    --pool:#2bc3d6; --pool-deep:#0e7f8f; --rust:#e2683f; --gold:#f0b24e; --line:#352b20; --good:#5db172;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--sky); color:var(--ink);
+    font-family:Inter,system-ui,sans-serif; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:720px; margin:0 auto;
+    padding-left:max(18px,env(safe-area-inset-left,0px));
+    padding-right:max(18px,env(safe-area-inset-right,0px));
+    padding-block:0;
+  }
+  a{color:var(--pool-deep)}
+  h1,h2,h3{text-wrap:balance; line-height:1.15}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+
+  /* ---- Masthead ---- */
+  .mast{display:flex;align-items:center;gap:10px;padding-block:20px 10px;border-bottom:1px solid var(--line);margin-bottom:22px}
+  .mark{font-family:Rye,serif;color:var(--rust);font-size:1.5rem;letter-spacing:.5px;line-height:1}
+  .mark b{color:var(--gold)}
+  .mast .tag{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-left:auto}
+
+  /* ---- Hero ---- */
+  .eyebrow{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rust);font-weight:700;margin:0 0 10px}
+  h1{font-family:Rye,serif;font-weight:400;font-size:clamp(2.1rem,7vw,3.4rem);margin:0 0 14px;color:var(--ink)}
+  .dek{font-size:clamp(1.05rem,2.6vw,1.22rem);color:var(--ink-soft);margin:0 0 24px;max-width:60ch}
+
+  figure{margin:0 0 10px}
+  .scene{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line);
+    box-shadow:0 18px 40px -22px rgba(42,32,23,.55)}
+  figcaption{font-size:.8rem;color:var(--ink-soft);margin-top:8px;text-align:center;font-style:italic}
+
+  /* ---- Caption bar (the meme line) ---- */
+  .caption{
+    background:var(--ink); color:var(--sky);
+    border-radius:14px; padding:20px 22px; margin:22px 0 6px;
+  }
+  :root[data-theme="dark"] .caption,
+  :root:not([data-theme="light"]) .caption{background:#0e0b08}
+  @media (prefers-color-scheme:light){.caption{background:var(--ink)}}
+  .caption .big{font-family:Rye,serif;font-size:clamp(1.3rem,4.2vw,1.8rem);line-height:1.25;margin:0}
+  .caption .big em{color:var(--gold);font-style:normal}
+  .caption .sub{margin:12px 0 0;font-size:.95rem;color:#d9c7a3}
+
+  /* ---- Body ---- */
+  section{margin:30px 0}
+  h2{font-size:1.5rem;margin:0 0 6px;color:var(--rust)}
+  h2 .n{font-family:"JetBrains Mono",monospace;font-size:.85rem;color:var(--gold);display:block;letter-spacing:.1em;margin-bottom:2px}
+  p{margin:0 0 15px}
+  .lead{font-size:1.1rem}
+  strong{color:var(--ink)}
+
+  .pull{border-left:4px solid var(--gold);padding:4px 0 4px 18px;margin:20px 0;font-size:1.12rem;color:var(--ink);font-weight:500}
+
+  /* ---- Timeline ---- */
+  .time{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:0}
+  .time li{display:grid;grid-template-columns:84px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+  .time li:last-child{border-bottom:1px solid var(--line)}
+  .time .yr{font-family:"JetBrains Mono",monospace;font-weight:500;color:var(--pool-deep);font-size:.92rem;padding-top:1px}
+  .time .ev{min-width:0}
+  .time .ev b{color:var(--ink);display:block;margin-bottom:2px}
+  .time .ev span{color:var(--ink-soft);font-size:.95rem}
+
+  /* ---- Glossary ---- */
+  .terms{display:grid;gap:12px;margin-top:14px}
+  .term{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .term dt{font-weight:700;color:var(--rust);margin-bottom:3px}
+  .term dd{margin:0;color:var(--ink-soft);font-size:.96rem}
+
+  /* ---- Takeaway ---- */
+  .take{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--good);border-radius:12px;padding:18px 20px;margin-top:14px}
+  .take h3{margin:0 0 8px;font-size:1.05rem;color:var(--good)}
+
+  /* ---- Share / footer ---- */
+  .share{border-top:1px solid var(--line);margin-top:36px;padding-block:22px 10px}
+  .share h3{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 12px}
+  .copybox{display:flex;gap:8px;align-items:stretch}
+  .copybox textarea{flex:1;min-width:0;resize:none;font-family:inherit;font-size:.92rem;line-height:1.5;
+    background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px 14px;height:96px}
+  .copybtn{flex:0 0 auto;align-self:stretch;background:var(--rust);color:#fff;border:0;border-radius:10px;
+    padding:0 18px;font-weight:700;font-size:.9rem;cursor:pointer}
+  .copybtn:active{transform:translateY(1px)}
+  .foot{color:var(--ink-soft);font-size:.82rem;padding-block:18px 32px;line-height:1.7}
+  .foot .mark{font-size:1rem}
+  :focus-visible{outline:3px solid var(--pool);outline-offset:2px;border-radius:4px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <span class="mark">bits<b>₿</b>orn</span>
+    <span class="tag">Explain-it-slow · No.&nbsp;005</span>
+  </header>
+
+  <p class="eyebrow">Bitcoin, the Texas way</p>
+  <h1>The Blocksize War</h1>
+  <p class="dek">Why Bitcoin blocks are small on purpose — and how a two-year brawl over a single setting decided what Bitcoin would be. Told through Dale, a longhorn who refuses to panic.</p>
+
+  <figure>
+    <svg class="scene" viewBox="0 0 720 420" role="img" aria-label="Dale the longhorn, in a tiny cowboy hat and mirrored aviators, floating serenely in a Bitcoin-logo-shaped infinity pool on a West Texas horizon, holding up a single kernel of corn.">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f6c76a"/><stop offset=".55" stop-color="#f0a85b"/><stop offset="1" stop-color="#e98a52"/>
+        </linearGradient>
+        <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3fd0e0"/><stop offset="1" stop-color="#0e7f8f"/>
+        </linearGradient>
+        <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#fff6df"/><stop offset="1" stop-color="#ffd97a" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <!-- sky -->
+      <rect width="720" height="300" fill="url(#sky)"/>
+      <circle cx="560" cy="86" r="120" fill="url(#sun)"/>
+      <circle cx="560" cy="86" r="40" fill="#fff3d0"/>
+      <!-- ground -->
+      <rect y="258" width="720" height="162" fill="#d98a4e"/>
+      <rect y="258" width="720" height="18" fill="#c6763f"/>
+      <!-- derricks left -->
+      <g stroke="#7a3f22" stroke-width="4" fill="none" opacity=".85">
+        <path d="M70 258 L84 196 L98 258 M74 238 L94 238 M78 220 L90 220"/>
+        <path d="M120 258 L120 205 M108 215 L132 215"/>
+      </g>
+      <!-- turbines right -->
+      <g stroke="#9a5a33" stroke-width="3" opacity=".7">
+        <line x1="648" y1="258" x2="648" y2="212"/>
+        <g fill="#b06a3c" stroke="none"><circle cx="648" cy="210" r="4"/>
+          <path d="M648 210 L648 190 M648 210 L666 219 M648 210 L630 219"/></g>
+        <path d="M648 210 L648 190 M648 210 L666 219 M648 210 L630 219" stroke="#b06a3c" stroke-width="3" fill="none"/>
+      </g>
+      <!-- mining shed -->
+      <g>
+        <rect x="586" y="226" width="54" height="32" fill="#8a4e2c"/>
+        <rect x="586" y="218" width="54" height="10" fill="#6f3d22"/>
+        <rect x="596" y="234" width="8" height="14" fill="#f0b24e"/>
+        <rect x="610" y="234" width="8" height="14" fill="#f0b24e"/>
+        <rect x="624" y="234" width="8" height="14" fill="#f0b24e"/>
+      </g>
+      <!-- pool: bitcoin B shape made of turquoise -->
+      <g>
+        <rect x="150" y="300" width="420" height="104" rx="26" fill="url(#water)"/>
+        <rect x="150" y="300" width="420" height="12" rx="6" fill="#bff0f5" opacity=".6"/>
+        <!-- floating B glyph suggestion -->
+        <text x="235" y="392" font-family="Rye, serif" font-size="92" fill="#bff0f5" opacity=".35">₿</text>
+        <!-- ripples -->
+        <g stroke="#bff0f5" stroke-width="2" fill="none" opacity=".45">
+          <path d="M470 352 q10 -6 20 0 t20 0"/><path d="M300 372 q10 -6 20 0 t20 0"/>
+        </g>
+      </g>
+      <!-- pool noodle -->
+      <rect x="352" y="332" width="150" height="16" rx="8" fill="#ff7a59" transform="rotate(-4 427 340)"/>
+      <!-- Dale -->
+      <g transform="translate(360 268)">
+        <!-- horns -->
+        <path d="M30 34 C-10 10 -34 18 -48 8 C-30 22 -14 26 22 40 Z" fill="#efe3cf" stroke="#c9b89a" stroke-width="1.5"/>
+        <path d="M70 34 C110 10 134 18 148 8 C130 22 114 26 78 40 Z" fill="#efe3cf" stroke="#c9b89a" stroke-width="1.5"/>
+        <!-- head -->
+        <ellipse cx="50" cy="48" rx="34" ry="30" fill="#c98a4a"/>
+        <ellipse cx="50" cy="60" rx="20" ry="16" fill="#e8c89a"/>
+        <!-- ears -->
+        <ellipse cx="16" cy="40" rx="9" ry="6" fill="#b5793d" transform="rotate(-20 16 40)"/>
+        <ellipse cx="84" cy="40" rx="9" ry="6" fill="#b5793d" transform="rotate(20 84 40)"/>
+        <!-- tiny cowboy hat -->
+        <g transform="translate(50 18)">
+          <ellipse cx="0" cy="6" rx="30" ry="6" fill="#6f3d22"/>
+          <path d="M-15 6 Q-16 -14 0 -16 Q16 -14 15 6 Z" fill="#8a4e2c"/>
+          <rect x="-15" y="2" width="30" height="5" rx="2" fill="#5a2f18"/>
+        </g>
+        <!-- aviators -->
+        <g>
+          <rect x="30" y="44" width="16" height="12" rx="5" fill="#2a2017"/>
+          <rect x="54" y="44" width="16" height="12" rx="5" fill="#2a2017"/>
+          <line x1="46" y1="48" x2="54" y2="48" stroke="#2a2017" stroke-width="2"/>
+          <rect x="33" y="46" width="6" height="3" rx="1.5" fill="#7fe3ef" opacity=".8"/>
+          <rect x="57" y="46" width="6" height="3" rx="1.5" fill="#7fe3ef" opacity=".8"/>
+        </g>
+        <!-- muzzle + content squint -->
+        <ellipse cx="50" cy="66" rx="5" ry="3" fill="#8a5a2f"/>
+        <!-- hoof holding a corn kernel -->
+        <g transform="translate(92 70)">
+          <ellipse cx="0" cy="0" rx="8" ry="6" fill="#b5793d"/>
+          <ellipse cx="6" cy="-10" rx="5" ry="8" fill="#f4c948" transform="rotate(12 6 -10)"/>
+          <g stroke="#d9a21f" stroke-width="1" opacity=".7"><line x1="3" y1="-15" x2="9" y2="-5"/><line x1="7" y1="-16" x2="7" y2="-4"/></g>
+        </g>
+        <!-- halo B -->
+        <text x="120" y="20" font-family="Rye, serif" font-size="40" fill="#f0b24e" opacity=".9">₿</text>
+      </g>
+    </svg>
+    <figcaption>Dale, of Rockdale, Texas. Mines when it's cheap, floats when it's hot.</figcaption>
+  </figure>
+
+  <div class="caption">
+    <p class="big">Nobody could agree how big a Bitcoin block should be. So Texas settled it: can't make the block bigger? <em>Grow a bigger kernel.</em></p>
+    <p class="sub">They called it a blocksize war. We call it harvest season. 🌽</p>
+  </div>
+
+  <section>
+    <p class="lead">For two years Bitcoiners nearly tore the whole thing apart over one number: how many megabytes of transactions fit in a block. It sounds like a plumbing argument. It was really a fight over what Bitcoin is <em>for</em> — and the side that won is the reason Dale can still run a full node from a shed in Rockdale.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">01 / THE SETTING</span>Why there's a limit at all</h2>
+    <p>A Bitcoin <strong>block</strong> is a batch of transactions added to the chain about every ten minutes. In 2010, Satoshi Nakamoto quietly capped each block at roughly <strong>1 megabyte</strong> — a spam-and-denial-of-service guard, meant to stop anyone from stuffing the chain with junk nobody could afford to store.</p>
+    <p>That cap also set a ceiling on throughput: somewhere around <strong>3–7 transactions per second</strong>, forever, no matter how many people showed up. For years it didn't matter. By 2015, with blocks filling up and fees climbing, it mattered a lot.</p>
+    <p class="pull">The question underneath: should Bitcoin stay small enough that an ordinary person can verify it, or grow big enough to be everyone's daily payment rail?</p>
+  </section>
+
+  <section>
+    <h2><span class="n">02 / THE TWO SIDES</span>Big blocks vs. small blocks</h2>
+    <p><strong>Big-blockers</strong> wanted to raise the cap — to 2MB, 8MB, eventually gigabytes. More space per block means more transactions and cheaper fees. Their vision was Bitcoin as cash for the planet.</p>
+    <p><strong>Small-blockers</strong> wanted the cap to stay low. Their logic: if blocks get huge, only data centers can afford to store and verify the chain, and ordinary people stop running their own <strong>full nodes</strong>. Lose the hobbyist nodes, they argued, and you lose the decentralization that made Bitcoin worth anything. Scaling should happen in layers <em>on top</em> of the chain, not by inflating the chain itself.</p>
+    <p>Both sides believed the other was going to destroy Bitcoin. Neither was entirely wrong about the stakes.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">03 / THE WEAPONS</span>Forks, flags, and a street fight over code</h2>
+    <p>You can't vote on Bitcoin. You change it by getting people to run different software — so each camp shipped its own. Big-blockers launched <strong>Bitcoin XT</strong>, then <strong>Bitcoin Classic</strong>, then <strong>Bitcoin Unlimited</strong>. Small-blockers rallied behind the existing software and a soft-fork upgrade called <strong>SegWit</strong>.</p>
+    <p>In 2017 miners and companies cut a backroom deal, the <strong>New York Agreement</strong> (also "SegWit2x"): activate SegWit now, then double the block size later. Users who distrusted the deal threatened a <strong>UASF</strong> — a user-activated soft fork (BIP148) that would orphan any block not signaling SegWit. It was brinkmanship with real money on the line.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">04 / THE RESOLUTION</span>How it actually ended</h2>
+    <p><strong>SegWit activated in August 2017</strong> as a soft fork. It raised effective capacity (blocks now measured in "weight," up to ~4 million units) <em>and</em> fixed a bug that made the <strong>Lightning Network</strong> — fast, cheap payments layered on top — practical.</p>
+    <p>The big-blockers who wouldn't accept it split off on <strong>August 1, 2017</strong> and created <strong>Bitcoin Cash</strong>, with 8MB blocks. The promised "2x" hard fork was <strong>called off in November 2017</strong> for lack of support. Small blocks held.</p>
+    <p>Bitcoin kept the chain small and pushed scale into layers above it. Which is exactly why, nine years on, a longhorn with a mining shed can still verify the entire network himself — no permission, no data center.</p>
+  </section>
+
+  <section>
+    <h2>The war, start to finish</h2>
+    <ol class="time">
+      <li><span class="yr">2010</span><span class="ev"><b>The 1MB cap appears</b><span>Satoshi adds a block-size limit as an anti-spam measure.</span></span></li>
+      <li><span class="yr">2015</span><span class="ev"><b>Blocks start filling up</b><span>BIP101 and Bitcoin XT propose raising the cap. The debate goes public and ugly.</span></span></li>
+      <li><span class="yr">2016</span><span class="ev"><b>Bitcoin Classic &amp; Unlimited</b><span>New big-block clients launch; SegWit is proposed as the small-block path.</span></span></li>
+      <li><span class="yr">May 2017</span><span class="ev"><b>The New York Agreement</b><span>Miners and firms agree to "SegWit2x." Users distrust it and prepare a UASF.</span></span></li>
+      <li><span class="yr">Aug 2017</span><span class="ev"><b>SegWit activates · Bitcoin Cash forks</b><span>The soft fork locks in; big-blockers split off into a separate coin.</span></span></li>
+      <li><span class="yr">Nov 2017</span><span class="ev"><b>SegWit2x called off</b><span>The planned block-size increase is abandoned. The war is effectively over.</span></span></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Plain-English glossary</h2>
+    <dl class="terms">
+      <div class="term"><dt>Block</dt><dd>A bundle of transactions added to the chain roughly every ten minutes.</dd></div>
+      <div class="term"><dt>Block size cap</dt><dd>The limit on how much data fits in one block — the ~1MB rule the whole war was about.</dd></div>
+      <div class="term"><dt>Full node</dt><dd>Software that independently stores and checks the entire blockchain. Cheap full nodes = decentralization. Keeping them cheap was the small-blockers' core goal.</dd></div>
+      <div class="term"><dt>Soft fork</dt><dd>A backward-compatible upgrade (like SegWit). Old software still works.</dd></div>
+      <div class="term"><dt>Hard fork</dt><dd>An incompatible change that splits the network into two chains — how Bitcoin Cash was born.</dd></div>
+      <div class="term"><dt>SegWit</dt><dd>"Segregated Witness," the 2017 soft fork that raised capacity and unlocked the Lightning Network.</dd></div>
+      <div class="term"><dt>Lightning Network</dt><dd>A layer built on top of Bitcoin for fast, cheap payments — the small-blockers' answer to scaling.</dd></div>
+      <div class="term"><dt>UASF</dt><dd>User-Activated Soft Fork: node operators forcing an upgrade without waiting for miners to agree.</dd></div>
+    </dl>
+  </section>
+
+  <div class="take">
+    <h3>The one thing to walk away with</h3>
+    <p>"Y'all are gonna have to wait" isn't a bug in Bitcoin — it's the whole design philosophy that won. Small blocks keep the network cheap enough for anyone to verify, and the real scaling moved to layers on top. The limit is the feature. Dale knew. Dale always knew.</p>
+  </div>
+
+  <section class="share">
+    <h3>Steal this for your group chat</h3>
+    <div class="copybox">
+      <textarea id="copytext" readonly>The Bitcoin "blocksize war" (2015–2017): people nearly split Bitcoin apart arguing how big each block should be. Small blocks won — on purpose — so anyone can still run a full node and verify the chain themselves. Scaling moved to layers on top (Lightning). The limit is the feature. 🌽 via bitscorn</textarea>
+      <button class="copybtn" id="copybtn" type="button">Copy</button>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p><span class="mark">bits<b>₿</b>orn</span> — we explain Bitcoin the slow way, so it sticks.</p>
+    <p>Further reading: Jonathan Bier, <em>The Blocksize War</em> (2021), the definitive account. This page is an educational explainer, not financial advice. Dale is a cartoon longhorn and does not manage your keys.</p>
+  </footer>
+
+</div>
+
+<script>
+  (function(){
+    var btn=document.getElementById('copybtn'), ta=document.getElementById('copytext');
+    if(!btn||!ta) return;
+    btn.addEventListener('click',function(){
+      var done=function(){var o=btn.textContent;btn.textContent='Copied!';setTimeout(function(){btn.textContent=o;},1600);};
+      try{
+        navigator.clipboard.writeText(ta.value).then(done,function(){ta.focus();ta.select();done();});
+      }catch(e){ ta.focus(); ta.select(); done(); }
+    });
+  })();
+</script>
