@@ -1,0 +1,242 @@
+<title>Fire to Sats</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  /* Layout: single editorial column — illustrated hero + caption bar, then the slow explainer, a how-it-works flow, a glossary, an honest-caveat box, and footer. Shares the bitscorn design system with the blocksize page. */
+  :root{
+    --sky:#f3ddb0; --paper:#fbf4e6; --ink:#2a2017; --ink-soft:#6a5a47;
+    --pool:#1fb6c9; --pool-deep:#0e7f8f; --rust:#c6522b; --gold:#e8a33d;
+    --flame:#f0592b; --line:#e3d4b4; --good:#3f8f52;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+    --sky:#171411; --paper:#201a14; --ink:#f3e7d2; --ink-soft:#b6a588;
+    --pool:#2bc3d6; --pool-deep:#2bc3d6; --rust:#e2683f; --gold:#f0b24e;
+    --flame:#ff7347; --line:#352b20; --good:#5db172;
+    color-scheme:dark;
+  }}
+  :root[data-theme="dark"]{
+    --sky:#171411; --paper:#201a14; --ink:#f3e7d2; --ink-soft:#b6a588;
+    --pool:#2bc3d6; --pool-deep:#2bc3d6; --rust:#e2683f; --gold:#f0b24e;
+    --flame:#ff7347; --line:#352b20; --good:#5db172;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--sky);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;
+    padding-left:max(18px,env(safe-area-inset-left,0px));
+    padding-right:max(18px,env(safe-area-inset-right,0px));
+    padding-block:0}
+  a{color:var(--pool-deep)}
+  h1,h2,h3{text-wrap:balance;line-height:1.15}
+
+  .mast{display:flex;align-items:center;gap:10px;padding-block:20px 10px;border-bottom:1px solid var(--line);margin-bottom:22px}
+  .mark{font-family:Rye,serif;color:var(--rust);font-size:1.5rem;letter-spacing:.5px;line-height:1}
+  .mark b{color:var(--gold)}
+  .mast .tag{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-left:auto}
+
+  .eyebrow{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rust);font-weight:700;margin:0 0 10px}
+  h1{font-family:Rye,serif;font-weight:400;font-size:clamp(2.1rem,7vw,3.4rem);margin:0 0 14px;color:var(--ink)}
+  .dek{font-size:clamp(1.05rem,2.6vw,1.22rem);color:var(--ink-soft);margin:0 0 24px;max-width:60ch}
+
+  figure{margin:0 0 10px}
+  .scene{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line);box-shadow:0 18px 40px -22px rgba(42,32,23,.55)}
+  figcaption{font-size:.8rem;color:var(--ink-soft);margin-top:8px;text-align:center;font-style:italic}
+
+  .caption{background:var(--ink);color:var(--sky);border-radius:14px;padding:20px 22px;margin:22px 0 6px}
+  :root[data-theme="dark"] .caption,:root:not([data-theme="light"]) .caption{background:#0e0b08}
+  @media (prefers-color-scheme:light){.caption{background:var(--ink)}}
+  .caption .big{font-family:Rye,serif;font-size:clamp(1.3rem,4.2vw,1.8rem);line-height:1.25;margin:0}
+  .caption .big em{color:var(--flame);font-style:normal}
+  .caption .sub{margin:12px 0 0;font-size:.95rem;color:#d9c7a3}
+
+  section{margin:30px 0}
+  h2{font-size:1.5rem;margin:0 0 6px;color:var(--rust)}
+  h2 .n{font-family:"JetBrains Mono",monospace;font-size:.85rem;color:var(--gold);display:block;letter-spacing:.1em;margin-bottom:2px}
+  p{margin:0 0 15px}
+  .lead{font-size:1.1rem}
+  strong{color:var(--ink)}
+  .pull{border-left:4px solid var(--flame);padding:4px 0 4px 18px;margin:20px 0;font-size:1.12rem;color:var(--ink);font-weight:500}
+
+  /* flow */
+  .flow{display:grid;gap:12px;margin-top:14px}
+  .step{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .step .num{width:40px;height:40px;border-radius:10px;background:var(--flame);color:#fff;font-family:"JetBrains Mono",monospace;font-weight:500;display:flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .step .txt{min-width:0}
+  .step .txt b{color:var(--ink);display:block;margin-bottom:2px}
+  .step .txt span{color:var(--ink-soft);font-size:.96rem}
+
+  .terms{display:grid;gap:12px;margin-top:14px}
+  .term{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .term dt{font-weight:700;color:var(--rust);margin-bottom:3px}
+  .term dd{margin:0;color:var(--ink-soft);font-size:.96rem}
+
+  .caveat{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px;padding:18px 20px;margin-top:14px}
+  .caveat h3{margin:0 0 8px;font-size:1.05rem;color:var(--gold)}
+  .take{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--good);border-radius:12px;padding:18px 20px;margin-top:14px}
+  .take h3{margin:0 0 8px;font-size:1.05rem;color:var(--good)}
+
+  .foot{border-top:1px solid var(--line);margin-top:36px;color:var(--ink-soft);font-size:.82rem;padding-block:22px 32px;line-height:1.7}
+  .foot .mark{font-size:1rem}
+  :focus-visible{outline:3px solid var(--pool);outline-offset:2px;border-radius:4px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <span class="mark">bits<b>₿</b>orn</span>
+    <span class="tag">Explain-it-slow · No.&nbsp;001</span>
+  </header>
+
+  <p class="eyebrow">Bitcoin, the Texas way</p>
+  <h1>Fire to Sats</h1>
+  <p class="dek">Texas burns off enough natural gas to make the night sky glow from orbit. Some of that fire now mines Bitcoin instead. Here's how waste became hashrate — and where the honest catch is.</p>
+
+  <figure>
+    <svg class="scene" viewBox="0 0 720 420" role="img" aria-label="A West Texas oil well with a gas flare; a pipe routes the gas into a shipping-container Bitcoin mining unit marked with a B; Dale the longhorn floats in a small pool nearby in a tiny cowboy hat and aviators.">
+      <defs>
+        <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#2a2a44"/><stop offset=".6" stop-color="#6b3f55"/><stop offset="1" stop-color="#b5623f"/>
+        </linearGradient>
+        <linearGradient id="flame2" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#ffd24a"/><stop offset=".5" stop-color="#ff7a2e"/><stop offset="1" stop-color="#f0592b"/>
+        </linearGradient>
+        <linearGradient id="water2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3fd0e0"/><stop offset="1" stop-color="#0e7f8f"/>
+        </linearGradient>
+      </defs>
+      <!-- dusk sky -->
+      <rect width="720" height="300" fill="url(#sky2)"/>
+      <circle cx="120" cy="70" r="2" fill="#fff" opacity=".7"/><circle cx="200" cy="48" r="1.6" fill="#fff" opacity=".6"/><circle cx="300" cy="80" r="1.6" fill="#fff" opacity=".5"/><circle cx="470" cy="56" r="2" fill="#fff" opacity=".6"/>
+      <!-- ground -->
+      <rect y="262" width="720" height="158" fill="#3a2a22"/>
+      <rect y="262" width="720" height="16" fill="#2c1f19"/>
+
+      <!-- flare stack (left) -->
+      <rect x="150" y="150" width="14" height="118" fill="#5a4436"/>
+      <g>
+        <path d="M157 150 C138 120 150 104 142 86 C168 104 180 128 174 150 C190 136 190 118 184 108 C198 128 196 150 184 164 Z" fill="url(#flame2)"/>
+        <path d="M159 146 C150 128 158 118 154 106 C170 120 172 136 166 150 Z" fill="#ffe08a" opacity=".9"/>
+      </g>
+      <!-- pump jack silhouette far left -->
+      <g stroke="#2c1f19" stroke-width="5" fill="none" opacity=".9"><path d="M60 268 L60 220 M44 232 L92 210 M92 210 L100 226"/></g>
+
+      <!-- pipe routing gas to the right -->
+      <path d="M164 250 C280 250 300 300 360 300 L470 300" fill="none" stroke="#7a5a44" stroke-width="10" stroke-linecap="round"/>
+      <path d="M164 250 C280 250 300 300 360 300 L470 300" fill="none" stroke="#9a765a" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10"/>
+
+      <!-- mining container (right) -->
+      <g>
+        <rect x="470" y="208" width="178" height="92" rx="6" fill="#174b52"/>
+        <rect x="470" y="208" width="178" height="14" rx="6" fill="#0e3a40"/>
+        <!-- corrugation -->
+        <g stroke="#0e3a40" stroke-width="2" opacity=".5">
+          <line x1="490" y1="226" x2="490" y2="296"/><line x1="510" y1="226" x2="510" y2="296"/><line x1="530" y1="226" x2="530" y2="296"/><line x1="550" y1="226" x2="550" y2="296"/>
+        </g>
+        <!-- fans -->
+        <circle cx="600" cy="250" r="14" fill="#0e3a40" stroke="#3fd0e0" stroke-width="2"/><circle cx="600" cy="250" r="3" fill="#3fd0e0"/>
+        <circle cx="628" cy="250" r="14" fill="#0e3a40" stroke="#3fd0e0" stroke-width="2"/><circle cx="628" cy="250" r="3" fill="#3fd0e0"/>
+        <!-- B badge -->
+        <text x="484" y="278" font-family="Rye, serif" font-size="40" fill="#f0b24e">₿</text>
+      </g>
+
+      <!-- small pool + Dale (front center) -->
+      <g>
+        <rect x="250" y="330" width="230" height="72" rx="20" fill="url(#water2)"/>
+        <rect x="250" y="330" width="230" height="10" rx="5" fill="#bff0f5" opacity=".55"/>
+        <!-- pool noodle -->
+        <rect x="300" y="352" width="120" height="14" rx="7" fill="#ff7a59" transform="rotate(-3 360 359)"/>
+        <!-- Dale -->
+        <g transform="translate(316 300) scale(.82)">
+          <path d="M30 34 C-10 10 -34 18 -48 8 C-30 22 -14 26 22 40 Z" fill="#efe3cf" stroke="#c9b89a" stroke-width="1.5"/>
+          <path d="M70 34 C110 10 134 18 148 8 C130 22 114 26 78 40 Z" fill="#efe3cf" stroke="#c9b89a" stroke-width="1.5"/>
+          <ellipse cx="50" cy="48" rx="34" ry="30" fill="#c98a4a"/>
+          <ellipse cx="50" cy="60" rx="20" ry="16" fill="#e8c89a"/>
+          <ellipse cx="16" cy="40" rx="9" ry="6" fill="#b5793d" transform="rotate(-20 16 40)"/>
+          <ellipse cx="84" cy="40" rx="9" ry="6" fill="#b5793d" transform="rotate(20 84 40)"/>
+          <g transform="translate(50 18)">
+            <ellipse cx="0" cy="6" rx="30" ry="6" fill="#6f3d22"/>
+            <path d="M-15 6 Q-16 -14 0 -16 Q16 -14 15 6 Z" fill="#8a4e2c"/>
+            <rect x="-15" y="2" width="30" height="5" rx="2" fill="#5a2f18"/>
+          </g>
+          <rect x="30" y="44" width="16" height="12" rx="5" fill="#2a2017"/>
+          <rect x="54" y="44" width="16" height="12" rx="5" fill="#2a2017"/>
+          <line x1="46" y1="48" x2="54" y2="48" stroke="#2a2017" stroke-width="2"/>
+          <rect x="33" y="46" width="6" height="3" rx="1.5" fill="#ffb27a" opacity=".85"/>
+          <rect x="57" y="46" width="6" height="3" rx="1.5" fill="#ffb27a" opacity=".85"/>
+          <ellipse cx="50" cy="66" rx="5" ry="3" fill="#8a5a2f"/>
+        </g>
+      </g>
+    </svg>
+    <figcaption>Dale's pool heater runs on gas that used to just burn into the sky.</figcaption>
+  </figure>
+
+  <div class="caption">
+    <p class="big">Texas flared enough gas to light up satellite photos. Now some of it mines Bitcoin. <em>We were gonna burn it anyway.</em></p>
+    <p class="sub">Fire-to-sats. The most Texan sentence ever spoken. 🔥→₿</p>
+  </div>
+
+  <section>
+    <p class="lead">When you drill for oil, natural gas comes up with it — whether you want it or not. Out in the Permian Basin there's often no pipeline to carry that gas anywhere, so producers do the cheapest legal thing: they set it on fire. That's a <strong>flare</strong>. Billions of cubic feet of it, year after year, burning for nothing. Bitcoin miners looked at all that wasted fire and saw a power plant.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">01 / THE WASTE</span>Why gas gets burned in the first place</h2>
+    <p>Oil is the money; the gas that rises with it is "<strong>associated gas</strong>." Where there's no pipeline or it's not worth building one, that gas is stranded. Producers either <strong>flare</strong> it (burn it off) or, worse, <strong>vent</strong> it (release it straight into the air as methane).</p>
+    <p>Texas has flared and vented enormous volumes — at peaks, enough to rank among the largest flaring regions on Earth, bright enough to show up in nighttime satellite imagery. It's wasted energy and wasted money, every single day.</p>
+    <p class="pull">A flare is a dollar bill on fire. Bitcoin mining is the one buyer that can show up anywhere, instantly, and take all of it.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">02 / THE FIX</span>Put a generator and a miner on the wellhead</h2>
+    <p>The move is simple to describe: haul a <strong>generator</strong> and a shipping container full of <strong>mining computers</strong> out to the well. Feed the stranded gas into the generator, make electricity on-site, and point that electricity at Bitcoin mining — which is just computers racing to earn the next block reward.</p>
+    <p>Because a miner is a buyer that doesn't need a pipeline, a grid connection, or a customer down the road, it can plug into gas that had <em>no other market at all</em>. Companies like Crusoe, Giga, and others built whole businesses doing exactly this.</p>
+  </section>
+
+  <section>
+    <h2>How fire becomes sats</h2>
+    <div class="flow">
+      <div class="step"><div class="num">1</div><div class="txt"><b>Gas comes up with the oil</b><span>Associated gas with nowhere to go — a flare or a vent.</span></div></div>
+      <div class="step"><div class="num">2</div><div class="txt"><b>A generator burns it for power</b><span>An on-site engine turns the gas into electricity at the wellhead.</span></div></div>
+      <div class="step"><div class="num">3</div><div class="txt"><b>Miners turn power into hashrate</b><span>Containers of computers race to solve the next block.</span></div></div>
+      <div class="step"><div class="num">4</div><div class="txt"><b>The producer gets paid</b><span>Wasted gas becomes revenue; the flare shrinks or goes out.</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03 / THE EMISSIONS ANGLE</span>Why a generator can beat a flare</h2>
+    <p>Here's the part people fight about. A flare doesn't burn perfectly — some gas escapes as <strong>methane</strong>, which traps heat roughly 80× as hard as CO₂ over 20 years. A well-run engine combusts the gas more completely than an open flare, so advocates argue it can cut the methane that would otherwise slip out, and it beats venting by a mile.</p>
+    <p>That's the strongest version of the case: not that it's clean, but that it's <em>cleaner than the alternative that was already happening.</em></p>
+  </section>
+
+  <section>
+    <h2>Plain-English glossary</h2>
+    <dl class="terms">
+      <div class="term"><dt>Flaring</dt><dd>Burning off unwanted natural gas at the well. Visible as a flame on a stack.</dd></div>
+      <div class="term"><dt>Venting</dt><dd>Releasing the gas unburned — worse, because raw methane is a potent greenhouse gas.</dd></div>
+      <div class="term"><dt>Associated gas</dt><dd>Natural gas that comes up alongside oil, often with no pipeline to sell it.</dd></div>
+      <div class="term"><dt>Stranded energy</dt><dd>Power with no market where it's produced. Mining's specialty — it's a buyer anywhere.</dd></div>
+      <div class="term"><dt>Hashrate</dt><dd>How much computing a miner throws at finding the next block. More power, more hashrate.</dd></div>
+      <div class="term"><dt>Permian Basin</dt><dd>The West Texas / New Mexico oil region where much of this flaring — and now mining — happens.</dd></div>
+    </dl>
+  </section>
+
+  <div class="caveat">
+    <h3>The honest catch</h3>
+    <p>This isn't green energy. It's still burning a fossil fuel, and critics make two real points: paying producers for stranded gas could make marginal drilling <em>more</em> attractive, and the climate benefit depends entirely on comparing against gas that would truly have been flared or vented anyway. The win is "better than setting it on fire for nothing" — not "zero emissions." bitscorn tells the joke; we won't oversell the fire.</p>
+  </div>
+
+  <div class="take">
+    <h3>The one thing to walk away with</h3>
+    <p>Bitcoin mining is a buyer of last resort for energy that had no other buyer. In Texas that means stranded well-gas that was already on fire. Dale's floating on money that used to be smoke — and the strongest case for it is modest and honest: better than the flare, not better than clean.</p>
+  </div>
+
+  <footer class="foot">
+    <p><span class="mark">bits<b>₿</b>orn</span> — we explain Bitcoin the slow way, so it sticks.</p>
+    <p>Educational explainer, not financial or environmental advice. Flaring figures and emissions comparisons vary by site and year; treat specifics as directional. Dale is a cartoon longhorn and operates no wells.</p>
+  </footer>
+
+</div>

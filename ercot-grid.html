@@ -1,0 +1,245 @@
+<title>Not Your Grid</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  /* Layout: single editorial column — illustrated hero + caption bar, then the slow explainer, a "paid to stop" flow, a glossary, an honest-catch box, and footer. Shares the bitscorn design system. */
+  :root{
+    --sky:#f3ddb0; --paper:#fbf4e6; --ink:#2a2017; --ink-soft:#6a5a47;
+    --pool:#1fb6c9; --pool-deep:#0e7f8f; --rust:#c6522b; --gold:#e8a33d;
+    --volt:#e8a33d; --line:#e3d4b4; --good:#3f8f52;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+    --sky:#171411; --paper:#201a14; --ink:#f3e7d2; --ink-soft:#b6a588;
+    --pool:#2bc3d6; --pool-deep:#2bc3d6; --rust:#e2683f; --gold:#f0b24e;
+    --volt:#f0b24e; --line:#352b20; --good:#5db172;
+    color-scheme:dark;
+  }}
+  :root[data-theme="dark"]{
+    --sky:#171411; --paper:#201a14; --ink:#f3e7d2; --ink-soft:#b6a588;
+    --pool:#2bc3d6; --pool-deep:#2bc3d6; --rust:#e2683f; --gold:#f0b24e;
+    --volt:#f0b24e; --line:#352b20; --good:#5db172;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--sky);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;
+    padding-left:max(18px,env(safe-area-inset-left,0px));
+    padding-right:max(18px,env(safe-area-inset-right,0px));
+    padding-block:0}
+  a{color:var(--pool-deep)}
+  h1,h2,h3{text-wrap:balance;line-height:1.15}
+
+  .mast{display:flex;align-items:center;gap:10px;padding-block:20px 10px;border-bottom:1px solid var(--line);margin-bottom:22px}
+  .mark{font-family:Rye,serif;color:var(--rust);font-size:1.5rem;letter-spacing:.5px;line-height:1}
+  .mark b{color:var(--gold)}
+  .mast .tag{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-left:auto}
+
+  .eyebrow{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rust);font-weight:700;margin:0 0 10px}
+  h1{font-family:Rye,serif;font-weight:400;font-size:clamp(2.1rem,7vw,3.4rem);margin:0 0 14px;color:var(--ink)}
+  .dek{font-size:clamp(1.05rem,2.6vw,1.22rem);color:var(--ink-soft);margin:0 0 24px;max-width:60ch}
+
+  figure{margin:0 0 10px}
+  .scene{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line);box-shadow:0 18px 40px -22px rgba(42,32,23,.55)}
+  figcaption{font-size:.8rem;color:var(--ink-soft);margin-top:8px;text-align:center;font-style:italic}
+
+  .caption{background:var(--ink);color:var(--sky);border-radius:14px;padding:20px 22px;margin:22px 0 6px}
+  :root[data-theme="dark"] .caption,:root:not([data-theme="light"]) .caption{background:#0e0b08}
+  @media (prefers-color-scheme:light){.caption{background:var(--ink)}}
+  .caption .big{font-family:Rye,serif;font-size:clamp(1.25rem,4vw,1.7rem);line-height:1.3;margin:0}
+  .caption .big em{color:var(--gold);font-style:normal}
+  .caption .sub{margin:12px 0 0;font-size:.95rem;color:#d9c7a3}
+
+  section{margin:30px 0}
+  h2{font-size:1.5rem;margin:0 0 6px;color:var(--rust)}
+  h2 .n{font-family:"JetBrains Mono",monospace;font-size:.85rem;color:var(--gold);display:block;letter-spacing:.1em;margin-bottom:2px}
+  p{margin:0 0 15px}
+  .lead{font-size:1.1rem}
+  strong{color:var(--ink)}
+  .pull{border-left:4px solid var(--gold);padding:4px 0 4px 18px;margin:20px 0;font-size:1.12rem;color:var(--ink);font-weight:500}
+
+  .flow{display:grid;gap:12px;margin-top:14px}
+  .step{display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .step .num{width:40px;height:40px;border-radius:10px;background:var(--volt);color:#2a2017;font-family:"JetBrains Mono",monospace;font-weight:500;display:flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .step .txt{min-width:0}
+  .step .txt b{color:var(--ink);display:block;margin-bottom:2px}
+  .step .txt span{color:var(--ink-soft);font-size:.96rem}
+
+  .terms{display:grid;gap:12px;margin-top:14px}
+  .term{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .term dt{font-weight:700;color:var(--rust);margin-bottom:3px}
+  .term dd{margin:0;color:var(--ink-soft);font-size:.96rem}
+
+  .caveat{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px;padding:18px 20px;margin-top:14px}
+  .caveat h3{margin:0 0 8px;font-size:1.05rem;color:var(--gold)}
+  .take{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--good);border-radius:12px;padding:18px 20px;margin-top:14px}
+  .take h3{margin:0 0 8px;font-size:1.05rem;color:var(--good)}
+
+  .foot{border-top:1px solid var(--line);margin-top:36px;color:var(--ink-soft);font-size:.82rem;padding-block:22px 32px;line-height:1.7}
+  .foot .mark{font-size:1rem}
+  :focus-visible{outline:3px solid var(--pool);outline-offset:2px;border-radius:4px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+  <header class="mast">
+    <span class="mark">bits<b>₿</b>orn</span>
+    <span class="tag">Explain-it-slow · No.&nbsp;002</span>
+  </header>
+
+  <p class="eyebrow">Bitcoin, the Texas way</p>
+  <h1>Not Your Grid</h1>
+  <p class="dek">Texas runs its own power grid on purpose — so it answers to nobody. It's why Bitcoin miners moved here, why they sometimes get paid to switch <em>off</em>, and why one winter it nearly all went dark.</p>
+
+  <figure>
+    <svg class="scene" viewBox="0 0 720 420" role="img" aria-label="A glowing outline of Texas standing alone, lit by little transmission towers inside it, with an unplugged power cord dangling toward a dark, faint map of the rest of the country. Dale the longhorn floats in a small Bitcoin-logo pool in the foreground.">
+      <defs>
+        <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1a2342"/><stop offset=".6" stop-color="#3a2f52"/><stop offset="1" stop-color="#7a4a46"/>
+        </linearGradient>
+        <linearGradient id="tx" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f6c76a"/><stop offset="1" stop-color="#e08a3f"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="45%" r="60%">
+          <stop offset="0" stop-color="#ffe9a8" stop-opacity=".9"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="water3" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3fd0e0"/><stop offset="1" stop-color="#0e7f8f"/>
+        </linearGradient>
+      </defs>
+      <rect width="720" height="300" fill="url(#sky3)"/>
+      <rect y="262" width="720" height="158" fill="#2a2234"/>
+
+      <!-- faint rest-of-country on the far left, dark -->
+      <g fill="#2f2a3e" opacity=".8">
+        <path d="M-10 120 L120 110 L150 150 L120 210 L30 230 L-10 200 Z"/>
+      </g>
+      <g stroke="#4a4258" stroke-width="2" opacity=".6"><path d="M80 150 L120 170 M60 180 L110 185"/></g>
+
+      <!-- glow behind Texas -->
+      <ellipse cx="430" cy="150" rx="210" ry="150" fill="url(#glow)"/>
+
+      <!-- Texas outline, glowing and standing alone -->
+      <g>
+        <path d="M300 60 L380 60 L380 110 L560 108 L560 160 L500 196 L494 250 L452 258 L372 316 L336 250 L306 250 L292 198 L262 182 L300 150 Z"
+              fill="url(#tx)" stroke="#fff3cf" stroke-width="3"/>
+        <!-- little transmission towers inside, lit -->
+        <g stroke="#9a5a28" stroke-width="2.5" fill="none" opacity=".8">
+          <path d="M360 150 L360 128 M350 134 L370 134 M352 142 L368 142"/>
+          <path d="M430 175 L430 150 M420 157 L440 157 M422 165 L438 165"/>
+          <path d="M470 150 L470 128 M460 134 L480 134"/>
+        </g>
+        <g stroke="#fff3cf" stroke-width="2" opacity=".7"><path d="M360 134 L430 157 L470 134"/></g>
+        <!-- lone star -->
+        <path d="M418 206 l6 13 14 1 -11 9 4 14 -13 -8 -13 8 4 -14 -11 -9 14 -1 z" fill="#fff3cf"/>
+      </g>
+
+      <!-- unplugged cord dangling from Texas west edge toward the dark map -->
+      <path d="M262 182 C210 190 180 210 150 206" fill="none" stroke="#e8a33d" stroke-width="5" stroke-linecap="round"/>
+      <g transform="translate(150 206)">
+        <rect x="-16" y="-7" width="16" height="14" rx="3" fill="#d98a3f"/>
+        <line x1="-2" y1="-3" x2="8" y2="-3" stroke="#b5742f" stroke-width="3"/>
+        <line x1="-2" y1="3" x2="8" y2="3" stroke="#b5742f" stroke-width="3"/>
+      </g>
+
+      <!-- foreground pool + Dale -->
+      <g>
+        <rect x="250" y="332" width="230" height="72" rx="20" fill="url(#water3)"/>
+        <rect x="250" y="332" width="230" height="10" rx="5" fill="#bff0f5" opacity=".55"/>
+        <text x="300" y="398" font-family="Rye, serif" font-size="58" fill="#bff0f5" opacity=".3">₿</text>
+        <rect x="300" y="354" width="120" height="14" rx="7" fill="#ff7a59" transform="rotate(-3 360 361)"/>
+        <g transform="translate(316 302) scale(.82)">
+          <path d="M30 34 C-10 10 -34 18 -48 8 C-30 22 -14 26 22 40 Z" fill="#efe3cf" stroke="#c9b89a" stroke-width="1.5"/>
+          <path d="M70 34 C110 10 134 18 148 8 C130 22 114 26 78 40 Z" fill="#efe3cf" stroke="#c9b89a" stroke-width="1.5"/>
+          <ellipse cx="50" cy="48" rx="34" ry="30" fill="#c98a4a"/>
+          <ellipse cx="50" cy="60" rx="20" ry="16" fill="#e8c89a"/>
+          <ellipse cx="16" cy="40" rx="9" ry="6" fill="#b5793d" transform="rotate(-20 16 40)"/>
+          <ellipse cx="84" cy="40" rx="9" ry="6" fill="#b5793d" transform="rotate(20 84 40)"/>
+          <g transform="translate(50 18)">
+            <ellipse cx="0" cy="6" rx="30" ry="6" fill="#6f3d22"/>
+            <path d="M-15 6 Q-16 -14 0 -16 Q16 -14 15 6 Z" fill="#8a4e2c"/>
+            <rect x="-15" y="2" width="30" height="5" rx="2" fill="#5a2f18"/>
+          </g>
+          <rect x="30" y="44" width="16" height="12" rx="5" fill="#2a2017"/>
+          <rect x="54" y="44" width="16" height="12" rx="5" fill="#2a2017"/>
+          <line x1="46" y1="48" x2="54" y2="48" stroke="#2a2017" stroke-width="2"/>
+          <rect x="33" y="46" width="6" height="3" rx="1.5" fill="#7fe3ef" opacity=".8"/>
+          <rect x="57" y="46" width="6" height="3" rx="1.5" fill="#7fe3ef" opacity=".8"/>
+          <ellipse cx="50" cy="66" rx="5" ry="3" fill="#8a5a2f"/>
+          <!-- phone to the ear -->
+          <rect x="78" y="52" width="9" height="16" rx="2" fill="#2a2017" transform="rotate(16 82 60)"/>
+        </g>
+      </g>
+    </svg>
+    <figcaption>One state, its own grid, unplugged from everybody else. On purpose.</figcaption>
+  </figure>
+
+  <div class="caption">
+    <p class="big">Grid operator: "It's 108°, can you power down the miner?"<br>Dale: "I was already not doing anything."<br>Operator: "Perfect. <em>We'll pay you for it.</em>"</p>
+    <p class="sub">Not your grid, not your watts. 🏴 That's demand response, and in Texas it's a revenue stream.</p>
+  </div>
+
+  <section>
+    <p class="lead">Almost the whole country is wired into two giant power grids that cross state lines. Texas looked at that and said: no thanks. It runs its own grid, <strong>ERCOT</strong>, kept deliberately separate from the rest — and that one stubborn choice shapes everything about why Bitcoin mining boomed here.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">01 / THE SETUP</span>A grid that answers to nobody</h2>
+    <p>The US has three grids: the Eastern Interconnection, the Western Interconnection, and <strong>Texas</strong>. ERCOT — the Electric Reliability Council of Texas — runs the power for most of the state and pointedly does <em>not</em> connect across state lines.</p>
+    <p>Why go it alone? Because selling electricity <em>across</em> state lines triggers federal oversight. By keeping its grid inside Texas, the state sidesteps a big chunk of federal regulation and keeps the rules to itself. It's independence as infrastructure — the most Texan thing imaginable, poured into concrete and copper.</p>
+    <p class="pull">Miners love it: light-touch rules, cheap land, and a grid desperate for big flexible customers it can lean on when things get tight.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">02 / THE CATCH</span>February 2021, when the lights went out</h2>
+    <p>Independence cuts both ways. In <strong>Winter Storm Uri</strong> (February 2021), generators froze, demand spiked, and because Texas is walled off from its neighbors, it couldn't import much power to fill the gap. Millions lost electricity for days in lethal cold. People died.</p>
+    <p>That's the honest shadow over the whole "we don't need anybody" story: the same isolation that keeps federal regulators out also keeps emergency help out. bitscorn jokes about floating through a heat wave — but the grid's fragility is real, and it's part of the picture.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">03 / THE TWIST</span>Getting paid to turn off</h2>
+    <p>Here's where miners become useful instead of just hungry. A Bitcoin miner is a <strong>flexible load</strong> — it can power down in seconds without ruining anything. So when the grid is strained and every megawatt counts, miners shut off and sell their reserved power back. That's <strong>demand response</strong>.</p>
+    <p>During extreme demand, the payments for powering <em>down</em> can exceed what the miner would have earned mining. Big operators have taken millions in such credits during peak events. Dale gets compensated to float and do nothing, which is both a punchline and an actual market product.</p>
+  </section>
+
+  <section>
+    <h2>How "paid to stop" works</h2>
+    <div class="flow">
+      <div class="step"><div class="num">1</div><div class="txt"><b>Demand spikes</b><span>A heat wave or freeze pushes the grid toward its limit; prices soar.</span></div></div>
+      <div class="step"><div class="num">2</div><div class="txt"><b>The grid calls for cuts</b><span>ERCOT needs load to come off, fast, to avoid blackouts.</span></div></div>
+      <div class="step"><div class="num">3</div><div class="txt"><b>Miners power down</b><span>Flexible by design, they switch off in seconds and free up their megawatts.</span></div></div>
+      <div class="step"><div class="num">4</div><div class="txt"><b>They get paid</b><span>Through curtailment credits and demand-response programs — sometimes more than mining would've earned.</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Plain-English glossary</h2>
+    <dl class="terms">
+      <div class="term"><dt>ERCOT</dt><dd>Electric Reliability Council of Texas — the operator of the state's standalone grid.</dd></div>
+      <div class="term"><dt>Interconnection</dt><dd>A region of synchronized grid. The US has three; Texas is its own.</dd></div>
+      <div class="term"><dt>Flexible / controllable load</dt><dd>A big electricity user that can ramp down on demand. Miners are the textbook example.</dd></div>
+      <div class="term"><dt>Demand response</dt><dd>Paying consumers to use less power when the grid is stressed, instead of only paying generators to make more.</dd></div>
+      <div class="term"><dt>Curtailment</dt><dd>Deliberately cutting a load's power draw — voluntarily, for a payment, or by order.</dd></div>
+      <div class="term"><dt>Winter Storm Uri</dt><dd>The Feb 2021 freeze that triggered catastrophic Texas blackouts and exposed the grid's isolation.</dd></div>
+    </dl>
+  </section>
+
+  <div class="caveat">
+    <h3>The honest catch</h3>
+    <p>Paying miners to switch off is genuinely useful grid behavior — but it's contested. Critics argue miners profit handsomely from scarcity they didn't create, and that subsidizing flexible demand is a strange use of public markets. Defenders counter that a large, truly interruptible load makes the grid <em>more</em> stable and helps fund new generation. Both can be true. And none of it undoes the lesson of Uri: a grid that can't call for help is a grid that can fail alone.</p>
+  </div>
+
+  <div class="take">
+    <h3>The one thing to walk away with</h3>
+    <p>Texas built its own grid to stay free of federal rules — which drew the miners, created the "paid to power down" market, and left the state to face its worst storm alone. Dale floating while the grid pays him to do nothing is funny because it's real. The independence is the whole story: the upside and the risk, same coin.</p>
+  </div>
+
+  <footer class="foot">
+    <p><span class="mark">bits<b>₿</b>orn</span> — we explain Bitcoin the slow way, so it sticks.</p>
+    <p>Educational explainer, not financial or policy advice. Grid programs, payments, and rules change; treat specifics as directional and check current ERCOT sources. Dale is a cartoon longhorn and does not operate a power plant.</p>
+  </footer>
+
+</div>
