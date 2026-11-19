@@ -1,5 +1,5 @@
 // Verified 90(R) filings; bill histories and introduced texts are primary sources.
-export const LEGE90_LAST_VERIFIED = "November 15, 2026";
+export const LEGE90_LAST_VERIFIED = "November 19, 2026";
 
 // Session milestones — the clock the tracker runs on.
 export interface SessionDate {

@@ -24,7 +24,7 @@
 // posts (due December 31, 2026), and when HB 1056's transactional currency
 // goes live (May 1, 2027).
 
-export const COMPTROLLER_LAST_VERIFIED = "November 9, 2026";
+export const COMPTROLLER_LAST_VERIFIED = "November 19, 2026";
 
 export interface ComptrollerSource {
   id: number;
@@ -51,7 +51,7 @@ export const comptrollerSources: ComptrollerSource[] = [
   { id: 14, label: "Texas Comptroller - Don Huffines Sworn in as Texas Comptroller, Refuses Salary, Calls for Property Tax Relief (August 1, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260801-don-huffines-sworn-in-as-texas-comptroller-refuses-salary-calls-for-property-tax-relief-1785512488796" },
   { id: 15, label: "Texas Tribune - Acting Comptroller Kelly Hancock to step down as Texas CFO; Abbott appoints Don Huffines (July 1, 2026)", url: "https://www.texastribune.org/2026/07/01/texas-comptroller-kelly-hancock-resigns-greg-abbott-don-huffines/" },
   { id: 16, label: "Texas Comptroller - Comptroller Glenn Hegar Welcomes Former State Sen. Kelly Hancock to Comptroller's Office (June 19, 2025): chief clerk, to become acting comptroller July 1", url: "https://comptroller.texas.gov/about/media-center/news/20250619-texas-comptroller-glenn-hegar-welcomes-kelly-hancock-to-comptrollers-office-1750300171508" },
-  { id: 17, label: "Texas Comptroller - News releases, August–September 2026: sales tax, property tax, school-district reviews, education freedom accounts - no release on the reserve or a custodian", url: "https://comptroller.texas.gov/about/media-center/news/" },
+  { id: 17, label: "Texas Comptroller - News releases through November 2026: sales tax, streaming and cloud-storage taxes, school-district reviews, E-Verify - no release on the reserve, a custodian, or the biennial report due December 31, 2026", url: "https://comptroller.texas.gov/about/media-center/news/" },
   { id: 18, label: "Texas Legislature Online - HB 483 (84R) bill summary: the Texas Bullion Depository, signed June 12, 2015, effective June 19, 2015; the comptroller administers the depository and appoints its administrator", url: "https://capitol.texas.gov/billlookup/BillSummary.aspx?LegSess=84R&Bill=HB483" },
   { id: 19, label: "Texas Comptroller - Texas Comptroller's Office Begins Operation of Texas Bullion Depository (June 6, 2018): \"the nation's first state-administered bullion depository is now a reality\"; Hegar its first depositor", url: "https://comptroller.texas.gov/about/media-center/news/20180606-texas-comptrollerand39s-office-begins-operation-of-texas-bullion-depository-1528304460000" },
   { id: 20, label: "Texas Bullion Depository - The creation of the first ever state-authorized bullion depository: HB 483 signed June 12, 2015; the comptroller appoints the administrator; operator Lone Star Tangible Assets; vault at Leander", url: "https://www.texasbulliondepository.gov/the-creation-of-the-first-ever-bullion-depository" },

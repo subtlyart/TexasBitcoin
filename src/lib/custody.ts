@@ -10,7 +10,7 @@
 // and the page's dateModified together. The reserve page's status panel links
 // here; keep the two consistent.
 
-export const CUSTODY_LAST_VERIFIED = "October 26, 2026";
+export const CUSTODY_LAST_VERIFIED = "November 19, 2026";
 
 export interface CustodySource {
   id: number;
@@ -31,8 +31,8 @@ export const custodySources: CustodySource[] = [
   { id: 10, label: "Texas Comptroller — Don Huffines Sworn in as Texas Comptroller, Refuses Salary, Calls for Property Tax Relief (August 1, 2026)", url: "https://comptroller.texas.gov/about/media-center/news/20260801-don-huffines-sworn-in-as-texas-comptroller-refuses-salary-calls-for-property-tax-relief-1785512488796" },
   { id: 11, label: "Texas Tribune — Acting Comptroller Kelly Hancock to step down as Texas CFO: resignation effective end of July 2026; Abbott appoints Don Huffines (July 1, 2026)", url: "https://www.texastribune.org/2026/07/01/texas-comptroller-kelly-hancock-resigns-greg-abbott-don-huffines/" },
   { id: 12, label: "Texas Legislature Online — SB 21 (89R) enrolled text: § 403.703 (the comptroller has custody of the reserve), § 403.707 (the comptroller sits on the advisory committee)", url: "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00021F.htm" },
-  { id: 13, label: "Texas Comptroller — News releases, reviewed October 26, 2026: no release naming a Strategic Bitcoin Reserve custodian; the last Bitcoin release is the May 28, 2026 advisory-committee announcement", url: "https://comptroller.texas.gov/about/media-center/news/" },
-  { id: 14, label: "HigherGov — mirror of solicitation 908-26-1778WS, read October 26, 2026: response deadline July 10, 2026, past due; posted documents are the RFP, a subcontracting plan, and Addendum 1; no award document", url: "https://www.highergov.com/sl/contract-opportunity/tx-texas-strategic-bitcoin-reserve-67282979/" },
+  { id: 13, label: "Texas Comptroller — News releases, reviewed November 19, 2026: still no release naming a Strategic Bitcoin Reserve custodian, and no biennial report; the last Bitcoin release remains the May 28, 2026 advisory-committee announcement, while Comptroller Huffines's November 2026 releases cover streaming and cloud-storage taxes, sales-tax distributions, and E-Verify", url: "https://comptroller.texas.gov/about/media-center/news/" },
+  { id: 14, label: "HigherGov — mirror of solicitation 908-26-1778WS, read November 19, 2026: response deadline July 10, 2026, marked past due with posted documents no longer available; no award document", url: "https://www.highergov.com/sl/contract-opportunity/tx-texas-strategic-bitcoin-reserve-67282979/" },
   { id: 15, label: "Texas Secretary of State — November 3, 2026 general election, unofficial returns at 100% of polling locations reporting (November 4, 2026, 4:59 p.m.): Sarah Eckhardt (D) led Don Huffines (R) for comptroller, 5,014,496 (51.30%) to 4,511,185 (46.15%). Not certified", url: "https://electionresults.sos.state.tx.us/results.html" },
 ];
 
@@ -44,7 +44,7 @@ export interface CustodyStatusRow {
 }
 
 export const custodyStatus: CustodyStatusRow[] = [
-  { label: "Custodian", value: "Not yet named. As of October 26, 2026, the Comptroller's newsroom contains no custodian announcement — the last Bitcoin release is still the May 28, 2026 advisory-committee notice — and HigherGov's mirror of RFP 908-26-1778WS lists the July 10 response deadline as past due and posts no award document.", sourceIds: [13, 14] },
+  { label: "Custodian", value: "Not yet named. As of November 19, 2026, the Comptroller's newsroom contains no custodian announcement — the last Bitcoin release is still the May 28, 2026 advisory-committee notice — and HigherGov's mirror of RFP 908-26-1778WS lists the July 10 response deadline as past due and posts no award document.", sourceIds: [13, 14] },
   { label: "Who signs", value: "Comptroller Don Huffines, sworn in August 1, 2026 after Kelly Hancock – who opened the search – resigned effective July 31. Under SB 21, custody of the reserve and the comptroller's committee seat pass with the office", sourceIds: [10, 11, 12] },
   { label: "What Texas holds", value: "$10 million in the iShares Bitcoin Trust (IBIT), a spot Bitcoin ETF – a claim on Bitcoin held by BlackRock's custodian, not coin in the state's name", sourceIds: [4, 7] },
   { label: "Legal owner of the fund", value: "The Strategic Bitcoin Reserve (Fund 1018), managed by the Texas Comptroller outside the state treasury", sourceIds: [6, 8] },
@@ -162,7 +162,7 @@ export const custodyTimeline: CustodyEvent[] = [
     dateLabel: "Late August 2026",
     title: "Contract execution — the target window",
     detail:
-      "The procurement targeted contract execution for late August 2026. The window has stayed closed in the only places this record could re-read on October 26, 2026: the Comptroller has made no custodian announcement, and HigherGov's mirror of the solicitation posts no award document. The ESBD page itself is a JavaScript application and did not render an award notice on this pass. This is the entry we update next.",
+      "The procurement targeted contract execution for late August 2026. The window has stayed closed in the only places this record could re-read on November 19, 2026: the Comptroller has made no custodian announcement, and HigherGov's mirror of the solicitation is marked past due with no award document. The ESBD page itself is a JavaScript application and did not render an award notice on this pass. This is the entry we update next.",
     done: false,
     sourceIds: [4, 13, 14],
   },
