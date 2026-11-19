@@ -618,7 +618,9 @@ export default function CustodyPage() {
             award is his to sign.<C n={10} /><C n={11} /><C n={12} /> Statute
             adds the second layer of watching: SB 21 requires{" "}
             <strong>biennial public reports</strong> on the fund&apos;s value
-            and administration, and the reserve lives as its own line – Fund
+            and administration — the{" "}
+            <Link href="/texas-bitcoin-reserve-report">first due December 31, 2026</Link>{" "}
+            — and the reserve lives as its own line – Fund
             1018 – in the Comptroller&apos;s manual of accounts.<C n={6} /><C n={9} /><C n={8} />
           </p>
 
