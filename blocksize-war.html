@@ -101,16 +101,8 @@
   .take{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--good);border-radius:12px;padding:18px 20px;margin-top:14px}
   .take h3{margin:0 0 8px;font-size:1.05rem;color:var(--good)}
 
-  /* ---- Share / footer ---- */
-  .share{border-top:1px solid var(--line);margin-top:36px;padding-block:22px 10px}
-  .share h3{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 12px}
-  .copybox{display:flex;gap:8px;align-items:stretch}
-  .copybox textarea{flex:1;min-width:0;resize:none;font-family:inherit;font-size:.92rem;line-height:1.5;
-    background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px 14px;height:96px}
-  .copybtn{flex:0 0 auto;align-self:stretch;background:var(--rust);color:#fff;border:0;border-radius:10px;
-    padding:0 18px;font-weight:700;font-size:.9rem;cursor:pointer}
-  .copybtn:active{transform:translateY(1px)}
-  .foot{color:var(--ink-soft);font-size:.82rem;padding-block:18px 32px;line-height:1.7}
+  /* ---- Footer ---- */
+  .foot{border-top:1px solid var(--line);margin-top:36px;color:var(--ink-soft);font-size:.82rem;padding-block:22px 32px;line-height:1.7}
   .foot .mark{font-size:1rem}
   :focus-visible{outline:3px solid var(--pool);outline-offset:2px;border-radius:4px}
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -287,30 +279,9 @@
     <p>"Y'all are gonna have to wait" isn't a bug in Bitcoin — it's the whole design philosophy that won. Small blocks keep the network cheap enough for anyone to verify, and the real scaling moved to layers on top. The limit is the feature. Dale knew. Dale always knew.</p>
   </div>
 
-  <section class="share">
-    <h3>Steal this for your group chat</h3>
-    <div class="copybox">
-      <textarea id="copytext" readonly>The Bitcoin "blocksize war" (2015–2017): people nearly split Bitcoin apart arguing how big each block should be. Small blocks won — on purpose — so anyone can still run a full node and verify the chain themselves. Scaling moved to layers on top (Lightning). The limit is the feature. 🌽 via bitscorn</textarea>
-      <button class="copybtn" id="copybtn" type="button">Copy</button>
-    </div>
-  </section>
-
   <footer class="foot">
     <p><span class="mark">bits<b>₿</b>orn</span> — we explain Bitcoin the slow way, so it sticks.</p>
     <p>Further reading: Jonathan Bier, <em>The Blocksize War</em> (2021), the definitive account. This page is an educational explainer, not financial advice. Dale is a cartoon longhorn and does not manage your keys.</p>
   </footer>
 
 </div>
-
-<script>
-  (function(){
-    var btn=document.getElementById('copybtn'), ta=document.getElementById('copytext');
-    if(!btn||!ta) return;
-    btn.addEventListener('click',function(){
-      var done=function(){var o=btn.textContent;btn.textContent='Copied!';setTimeout(function(){btn.textContent=o;},1600);};
-      try{
-        navigator.clipboard.writeText(ta.value).then(done,function(){ta.focus();ta.select();done();});
-      }catch(e){ ta.focus(); ta.select(); done(); }
-    });
-  })();
-</script>
