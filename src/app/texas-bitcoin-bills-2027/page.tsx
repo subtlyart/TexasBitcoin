@@ -70,7 +70,7 @@ export default function Lege90Page() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-30",
-    dateModified: "2026-11-15",
+    dateModified: "2026-11-19",
   };
 
   const faqJsonLd = {

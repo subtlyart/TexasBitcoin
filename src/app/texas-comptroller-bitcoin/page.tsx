@@ -86,7 +86,7 @@ function ComptrollerDutiesFigure() {
   ];
   return (
     <figure className="mt-8 overflow-x-auto rounded-xl border border-border bg-surface p-4 sm:p-6">
-      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 250" role="img" aria-label="The Comptroller's four Bitcoin duties under SB 21 and their status in September 2026: custody held as an ETF placeholder; the custody contract unawarded after the RFP closed July 10; the advisory committee complete since May 28, 2026; the first biennial report due December 31, 2026.">
+      <svg className="h-auto w-full min-w-[640px]" viewBox="0 0 810 250" role="img" aria-label="The Comptroller's four Bitcoin duties under SB 21 and their status in November 2026: custody held as an ETF placeholder; the custody contract unawarded after the RFP closed July 10; the advisory committee complete since May 28, 2026; the first biennial report due December 31, 2026.">
         <text x="28" y="30" fontSize="11" fontWeight="600" letterSpacing="2" fill="var(--accent)">THE DESK · WHAT SB 21 MAKES THE COMPTROLLER DO, AND WHERE EACH DUTY STANDS</text>
         {duties.map((d, i) => {
           const x = 28 + i * 190;
@@ -161,7 +161,7 @@ export default function TexasComptrollerBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-30",
-    dateModified: "2026-11-09",
+    dateModified: "2026-11-19",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "GovernmentOrganization", name: "Texas Comptroller of Public Accounts" },
