@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Production one-sheet: locked character and style tokens plus six image-generation prompts for Dale the Whaleonghorn, the bitscorn mascot.">
+<title>Dale Render Kit · bitscorn</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: single column production sheet — the lock (tokens + rules), then six numbered prompt cards with selectable mono blocks, then a reaction-image add-on. bitscorn design system. */
+  :root{
+    --sky:#f3ddb0; --paper:#fbf4e6; --code:#f3ead3; --ink:#2a2017; --ink-soft:#6a5a47;
+    --pool:#1fb6c9; --pool-deep:#0e7f8f; --rust:#c6522b; --gold:#e8a33d; --line:#e3d4b4; --good:#3f8f52;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+    --sky:#171411; --paper:#201a14; --code:#161108; --ink:#f3e7d2; --ink-soft:#b6a588;
+    --pool:#2bc3d6; --pool-deep:#2bc3d6; --rust:#e2683f; --gold:#f0b24e; --line:#352b20; --good:#5db172;
+    color-scheme:dark;
+  }}
+  :root[data-theme="dark"]{
+    --sky:#171411; --paper:#201a14; --code:#161108; --ink:#f3e7d2; --ink-soft:#b6a588;
+    --pool:#2bc3d6; --pool-deep:#2bc3d6; --rust:#e2683f; --gold:#f0b24e; --line:#352b20; --good:#5db172;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--sky);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;
+    padding-left:max(18px,env(safe-area-inset-left,0px));
+    padding-right:max(18px,env(safe-area-inset-right,0px));
+    padding-block:0}
+  h1,h2,h3{text-wrap:balance;line-height:1.14}
+
+  .mast{display:flex;align-items:center;gap:10px;padding-block:20px 10px;border-bottom:1px solid var(--line);margin-bottom:22px}
+  .mark{font-family:Rye,serif;color:var(--rust);font-size:1.5rem;letter-spacing:.5px;line-height:1}
+  .mark b{color:var(--gold)}
+  .mast .tag{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-left:auto}
+
+  .eyebrow{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rust);font-weight:700;margin:0 0 10px}
+  h1{font-family:Rye,serif;font-weight:400;font-size:clamp(2rem,6.5vw,3rem);margin:0 0 12px;color:var(--ink)}
+  .dek{font-size:clamp(1.02rem,2.5vw,1.16rem);color:var(--ink-soft);margin:0 0 8px;max-width:62ch}
+
+  section{margin:30px 0}
+  h2{font-size:1.4rem;margin:0 0 6px;color:var(--rust)}
+  h2 .n{font-family:"JetBrains Mono",monospace;font-size:.82rem;color:var(--gold);display:block;letter-spacing:.1em;margin-bottom:2px}
+  p{margin:0 0 14px}
+  strong{color:var(--ink)}
+
+  .token{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px;padding:16px 18px;margin:12px 0}
+  .token h3{margin:0 0 8px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rust)}
+  .code{font-family:"JetBrains Mono",monospace;font-size:.84rem;line-height:1.55;color:var(--ink);background:var(--code);border:1px solid var(--line);border-radius:8px;padding:12px 14px;white-space:pre-wrap;word-break:break-word;user-select:all;-webkit-user-select:all}
+  .hint{font-size:.82rem;color:var(--ink-soft);margin:8px 0 0}
+
+  .rules{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
+  .rules li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:.95rem;color:var(--ink-soft)}
+  .rules li b{color:var(--ink)}
+  .rules .mk{color:var(--gold);font-weight:700;font-family:"JetBrains Mono",monospace}
+
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;margin:16px 0}
+  .card .head{display:flex;align-items:baseline;gap:10px;margin-bottom:4px}
+  .card .no{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.1em;color:var(--gold);font-weight:500}
+  .card h3{font-size:1.12rem;margin:0;color:var(--ink)}
+  .card .use{font-size:.88rem;color:var(--ink-soft);margin:2px 0 12px}
+  .card .use em{color:var(--rust);font-style:normal;font-weight:600}
+  .lede{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--pool-deep);background:color-mix(in srgb,var(--pool) 16%,transparent);border-radius:6px;padding:3px 8px;margin-bottom:10px}
+
+  .foot{border-top:1px solid var(--line);margin-top:34px;color:var(--ink-soft);font-size:.82rem;padding-block:20px 34px;line-height:1.7}
+  .foot .mark{font-size:1rem}
+  :focus-visible{outline:3px solid var(--pool);outline-offset:2px;border-radius:6px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="mast">
+    <span class="mark">bits<b>₿</b>orn</span>
+    <span class="tag">Production kit · Dale v1</span>
+  </header>
+
+  <p class="eyebrow">Mascot render kit</p>
+  <h1>Dale, on demand</h1>
+  <p class="dek">Everything needed to generate <strong>Dale the Whaleonghorn</strong> — same hat, same aviators, same pool — across every post. Paste the two locked tokens into any image model, then append one scene prompt. The tokens are what keep him from drifting into a different longhorn every time.</p>
+
+  <section>
+    <h2><span class="n">THE LOCK</span>Two tokens, pasted every time</h2>
+
+    <div class="token">
+      <h3>Character token — paste first, verbatim</h3>
+      <div class="code">A single Texas longhorn with long symmetrical horns and warm tan-and-white hide, wearing a comically tiny brown felt cowboy hat perched between the horns and small mirrored aviator sunglasses, deadpan serene expression.</div>
+    </div>
+
+    <div class="token">
+      <h3>Style token — paste second, verbatim</h3>
+      <div class="code">Glossy 3D Pixar-style render, soft cinematic lighting, shallow depth of field, warm Texas color grade (dusty gold, turquoise water, big sky), clean and uncluttered composition, subtle film grain, square 1:1 framing with empty headroom at the top for a caption.</div>
+    </div>
+
+    <ul class="rules">
+      <li><span class="mk">1</span><span><b>Lock a seed.</b> Once one Dale looks right, reuse that exact seed on every later prompt so his face stays identical. This matters more than any wording.</span></li>
+      <li><span class="mk">2</span><span><b>Keep horns symmetrical.</b> Models love to warp them — the word "symmetrical" is in the token for a reason; keep it.</span></li>
+      <li><span class="mk">3</span><span><b>Never ask the model for caption text.</b> Generate clean images with headroom and set the type yourself in Canva/Figma. AI text rendering is unreliable and off-brand.</span></li>
+      <li><span class="mk">4</span><span><b>Render big.</b> 2048×2048, then downscale for posting. Keep the master.</span></li>
+      <li><span class="mk">5</span><span><b>One character, infinite scenes.</b> Only the scene line changes between posts. That repetition is the brand.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>The launch set — six prompts</h2>
+    <p class="hint">Each block below is the <strong>scene line only</strong>. Final prompt = Character token + Style token + the scene line. Blocks are tap-to-select.</p>
+
+    <div class="card">
+      <div class="head"><span class="no">POST 01</span><h3>The flagship intro</h3></div>
+      <p class="use">Pinned post. Establishes the whole world. <em>Use the resulting seed for everything after.</em></p>
+      <div class="code">Scene: floating peacefully on a bright pool noodle in the center of a luxurious infinity pool shaped exactly like the Bitcoin logo, turquoise water, one small bead of sweat on his brow. Behind him a West Texas horizon at midday — oil pump-jack derricks on the left, white wind turbines and a small humming metal mining shed on the right. Wide establishing shot, lots of sky.</div>
+    </div>
+
+    <div class="card">
+      <div class="head"><span class="no">POST 02</span><h3>The grid flex</h3></div>
+      <p class="use">Pairs with the "not your grid, not your watts" line.</p>
+      <div class="code">Scene: floating in the Bitcoin-logo infinity pool, holding a smartphone to the side of his head with one hoof, completely unbothered. Above him a small cartoon thought-bubble showing a simple map of the United States where the state of Texas glows and is visibly disconnected from the rest. Medium shot.</div>
+    </div>
+
+    <div class="card">
+      <div class="head"><span class="no">POST 03</span><h3>Demand response</h3></div>
+      <p class="use">The "I was already not doing anything" gag.</p>
+      <div class="code">Scene: floating flat on his back in the Bitcoin-logo infinity pool, hooves tucked behind his head like a man relaxing in a hammock, eyes closed behind the aviators, blissful. Shimmering heat haze in the air, a blazing sun overhead, the metal mining shed in the background with its cooling fans visibly stopped. Low angle, heat-wave atmosphere.</div>
+    </div>
+
+    <div class="card">
+      <div class="head"><span class="no">POST 04</span><h3>Brisket = HODL</h3></div>
+      <p class="use">Mass-appeal crossover. Two-panel composition.</p>
+      <div class="code">Scene: a vertically split square. TOP HALF — a glistening beef brisket slow-smoking inside a black Texas offset smoker, wisps of blue smoke, warm ember glow. BOTTOM HALF — the longhorn floating in the turquoise Bitcoin-logo infinity pool with the exact same patient, squinting, contented expression as the brisket scene. Matching warm lighting across both halves.</div>
+    </div>
+
+    <div class="card">
+      <span class="lede">Hero / money post</span>
+      <div class="head"><span class="no">POST 05</span><h3>The bitscorn harvest</h3></div>
+      <p class="use">The clickbait-headline post (blocksize war). <em>Make this one the strongest render.</em></p>
+      <div class="code">Scene: floating upright in the Bitcoin-logo infinity pool, holding up a single golden kernel of corn between two hooves at eye level with exaggerated reverence, as if presenting a sacred relic. Behind him a large softly glowing golden Bitcoin symbol hovers like a halo. Dramatic, slightly worshipful cinematic lighting, dust motes drifting in the air. Centered hero composition.</div>
+    </div>
+
+    <div class="card">
+      <div class="head"><span class="no">POST 06</span><h3>Golden-hour sign-off</h3></div>
+      <p class="use">The quiet closer. Generous sky for the sign-off caption.</p>
+      <div class="code">Scene: floating calmly in the Bitcoin-logo infinity pool at golden hour, sky deep amber and pink. The small mining shed in the background has warm interior lights just flickering on, and the pool water glows gold reflecting the Bitcoin shape. Peaceful end-of-day mood. Wide cinematic shot with lots of sky.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">ADD-ON</span>The reaction image (optional 7th)</h2>
+    <p>Reaction images are what other people post — the pieces that actually spread. Make a few expression variants from the same seed and keep them on hand as replies.</p>
+    <div class="card">
+      <div class="head"><span class="no">REACT</span><h3>Lowering the aviators</h3></div>
+      <p class="use">The unimpressed-stare reply. Generate 2–3 expression variants.</p>
+      <div class="code">Scene: close-up on the longhorn's face as he floats in the Bitcoin-logo infinity pool, slowly lowering his mirrored aviators with one hoof to give a flat, unimpressed stare directly at the camera. Tight framing, shallow depth of field.</div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p><span class="mark">bits<b>₿</b>orn</span> — mascot render kit v1. Keep this sheet beside the generator.</p>
+    <p>Set captions in your own layout tool, not in the model. If a model refuses the Bitcoin logo by name, describe it as "a glowing golden capital B with two vertical strokes through it." Dale stays deadpan in every frame — that's the joke.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
