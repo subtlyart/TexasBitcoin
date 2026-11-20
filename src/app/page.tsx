@@ -135,13 +135,13 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 pb-8">
         <Link
           href="/history-of-bitcoin-in-texas"
-          className="group relative block overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-surface to-background p-8 transition-colors hover:border-accent/40 sm:p-12"
+          className="group relative block overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-surface to-background p-8 transition-colors duration-300 hover:border-accent/40 sm:p-12"
         >
           <LoneStar className="pointer-events-none absolute -bottom-12 -right-10 h-64 w-64 text-accent/[0.06] transition-transform duration-500 group-hover:rotate-12" />
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
             Cornerstone · The definitive account
           </p>
-          <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+          <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight tracking-tight transition-colors group-hover:text-accent-soft sm:text-4xl">
             The History of Bitcoin in Texas
           </h2>
           <p className="mt-4 max-w-2xl text-muted">
@@ -160,13 +160,13 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 pb-8">
         <Link
           href="/bitcoin-mining-map-texas"
-          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent/40 sm:flex-row sm:items-center"
+          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2 sm:flex-row sm:items-center"
         >
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
               Data asset · Interactive
             </p>
-            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight transition-colors group-hover:text-accent-soft sm:text-3xl">
               The Texas Bitcoin Mining Map
             </h2>
             <p className="mt-2 max-w-xl text-muted">
@@ -186,13 +186,13 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 pb-8">
         <Link
           href="/elon-musk-bitcoin-energy"
-          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent/40 sm:flex-row sm:items-center"
+          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2 sm:flex-row sm:items-center"
         >
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
               Feature · Energy &amp; the grid
             </p>
-            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight transition-colors group-hover:text-accent-soft sm:text-3xl">
               Elon Musk, Tesla &amp; the Bitcoin Energy Question
             </h2>
             <p className="mt-2 max-w-xl text-muted">
@@ -213,13 +213,13 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 pb-8">
         <Link
           href="/ross-ulbricht-silk-road-bitcoin"
-          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent/40 sm:flex-row sm:items-center"
+          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2 sm:flex-row sm:items-center"
         >
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
               Feature · Origins &amp; the base layer
             </p>
-            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight transition-colors group-hover:text-accent-soft sm:text-3xl">
               Ross Ulbricht, Silk Road &amp; the seized Bitcoin
             </h2>
             <p className="mt-2 max-w-xl text-muted">
@@ -246,7 +246,7 @@ export default function Home() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
               Story · Milam County
             </p>
-            <h3 className="mt-2 font-display text-xl font-semibold leading-snug">
+            <h3 className="mt-2 font-display text-xl font-semibold leading-snug transition-colors group-hover:text-accent-soft">
               The Rockdale Story
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">
@@ -265,7 +265,7 @@ export default function Home() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
               Voices of Texas Bitcoin · No. 1
             </p>
-            <h3 className="mt-2 font-display text-xl font-semibold leading-snug">
+            <h3 className="mt-2 font-display text-xl font-semibold leading-snug transition-colors group-hover:text-accent-soft">
               Doctor Bitcoin
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">
@@ -284,7 +284,7 @@ export default function Home() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
               Interactive · The money law
             </p>
-            <h3 className="mt-2 font-display text-xl font-semibold leading-snug">
+            <h3 className="mt-2 font-display text-xl font-semibold leading-snug transition-colors group-hover:text-accent-soft">
               The Texas Bitcoin Law Timeline
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">
@@ -303,13 +303,13 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 pb-8">
         <Link
           href="/events"
-          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors hover:border-accent/40 sm:flex-row sm:items-center"
+          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2 sm:flex-row sm:items-center"
         >
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
               Community
             </p>
-            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight transition-colors group-hover:text-accent-soft sm:text-3xl">
               Every Texas Bitcoin meetup &amp; conference
             </h2>
             <p className="mt-2 max-w-xl text-muted">
