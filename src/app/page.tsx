@@ -54,9 +54,10 @@ export default function Home() {
       <section className="relative overflow-hidden border-b border-border">
         <LoneStar className="pointer-events-none absolute -right-20 -top-24 h-[26rem] w-[26rem] text-accent/[0.05]" />
         <div className="mx-auto max-w-6xl px-5 pb-20 pt-20 sm:pt-28">
-          <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-accent">
-            <LoneStar className="h-3.5 w-3.5" />
+          <p className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-accent">
+            <LoneStar className="h-3.5 w-3.5 shrink-0 drop-shadow-[0_0_10px_rgba(247,147,26,0.5)]" />
             Howdy, folks — the authority on Bitcoin in Texas
+            <span className="hidden h-px w-16 bg-gradient-to-r from-border to-transparent sm:inline-block" />
           </p>
           <h1 className="mt-5 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
             Where Bitcoin meets the{" "}
