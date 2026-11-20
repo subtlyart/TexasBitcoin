@@ -358,15 +358,24 @@ export default function Home() {
       </section>
 
       {/* Sign-off — Big Tex tips his hat */}
-      <section className="mx-auto max-w-6xl px-5 pb-16 pt-10">
-        <div className="flex flex-col items-center gap-3 text-center">
-          <LoneStar className="h-5 w-5 text-accent" />
-          <p className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
-            This is Bitcoin country.
-          </p>
-          <p className="text-sm text-muted">
-            Y&apos;all come back now — we keep the record fresh.
-          </p>
+      <section className="mx-auto max-w-6xl px-5 pb-20 pt-12">
+        <div className="relative overflow-hidden rounded-2xl border border-border bg-gradient-to-b from-surface to-background px-6 py-16 text-center">
+          <LoneStar className="pointer-events-none absolute -bottom-16 -left-14 h-60 w-60 text-accent/[0.04]" />
+          <LoneStar className="pointer-events-none absolute -top-16 -right-14 h-60 w-60 text-accent/[0.04]" />
+          <div className="relative flex flex-col items-center gap-5">
+            <div className="flex w-full max-w-xs items-center gap-4">
+              <span className="h-px flex-1 bg-gradient-to-r from-transparent to-border" />
+              <LoneStar className="h-7 w-7 shrink-0 text-accent drop-shadow-[0_0_14px_rgba(247,147,26,0.45)]" />
+              <span className="h-px flex-1 bg-gradient-to-l from-transparent to-border" />
+            </div>
+            <p className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+              This is <span className="text-accent">Bitcoin country</span>.
+            </p>
+            <p className="max-w-md text-sm leading-relaxed text-muted">
+              Y&apos;all come back now — we keep the record fresh, sourced, and
+              plain as day.
+            </p>
+          </div>
         </div>
       </section>
     </>
