@@ -115,11 +115,16 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
-          {layers.map((l) => {
+          {layers.map((l, i) => {
             const Icon = l.icon;
             return (
               <div key={l.title} className="bg-surface p-7 transition-colors hover:bg-surface-2">
-                <Icon className="h-6 w-6 text-accent" strokeWidth={1.5} />
+                <div className="flex items-center justify-between">
+                  <Icon className="h-6 w-6 text-accent" strokeWidth={1.5} />
+                  <span className="font-display text-sm font-semibold tabular-nums text-muted-2">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
                 <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
                   {l.kicker}
                 </p>
