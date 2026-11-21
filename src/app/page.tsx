@@ -161,84 +161,84 @@ export default function Home() {
         </Link>
       </section>
 
-      {/* Mining map teaser */}
+      {/* Feature well — a lead data asset flanked by two features */}
       <section className="mx-auto max-w-6xl px-5 pb-8">
-        <Link
-          href="/bitcoin-mining-map-texas"
-          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2 sm:flex-row sm:items-center"
-        >
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-              Data asset · Interactive
-            </p>
-            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight transition-colors group-hover:text-accent-soft sm:text-3xl">
-              The Texas Bitcoin Mining Map
-            </h2>
-            <p className="mt-2 max-w-xl text-muted">
-              Every major mine in the state — mapped, sized, and sourced. Drag
-              the timeline from 2019 and watch gigawatts bloom across Texas,
-              from Rockdale&apos;s 700 MW flagship to the sites now feeding AI.
-            </p>
-          </div>
-          <span className="inline-flex shrink-0 items-center gap-2 font-medium text-accent-soft">
-            Explore the map
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </span>
-        </Link>
-      </section>
+        <div className="grid gap-5 sm:grid-cols-2">
+          {/* Lead — the mining map */}
+          <Link
+            href="/bitcoin-mining-map-texas"
+            className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-surface to-background p-8 transition-colors duration-300 hover:border-accent/40 sm:row-span-2"
+          >
+            <LoneStar className="pointer-events-none absolute -bottom-12 -right-10 h-56 w-56 text-accent/[0.05] transition-transform duration-500 group-hover:rotate-12" />
+            <div className="relative">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+                Data asset · Interactive
+              </p>
+              <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight transition-colors group-hover:text-accent-soft sm:text-3xl">
+                The Texas Bitcoin Mining Map
+              </h2>
+              <p className="mt-3 max-w-md text-muted">
+                Every major mine in the state — mapped, sized, and sourced. Drag
+                the timeline from 2019 and watch gigawatts bloom across Texas,
+                from Rockdale&apos;s 700 MW flagship to the sites now feeding AI.
+              </p>
+            </div>
+            <span className="relative mt-8 inline-flex items-center gap-2 font-medium text-accent-soft">
+              Explore the map
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </span>
+          </Link>
 
-      {/* Musk / energy feature */}
-      <section className="mx-auto max-w-6xl px-5 pb-8">
-        <Link
-          href="/elon-musk-bitcoin-energy"
-          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2 sm:flex-row sm:items-center"
-        >
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-              Feature · Energy &amp; the grid
-            </p>
-            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight transition-colors group-hover:text-accent-soft sm:text-3xl">
-              Elon Musk, Tesla &amp; the Bitcoin Energy Question
-            </h2>
-            <p className="mt-2 max-w-xl text-muted">
-              The man who called Bitcoin mining a fossil-fuel problem in 2021
-              built the biggest new load in tech. From Tesla&apos;s $1.5B
-              treasury bet to xAI&apos;s gigawatts, the reversal — and how it
-              lands on the Texas grid. Sourced to the SEC filings.
-            </p>
-          </div>
-          <span className="inline-flex shrink-0 items-center gap-2 font-medium text-accent-soft">
-            Read the feature
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </span>
-        </Link>
-      </section>
+          {/* Musk / energy feature */}
+          <Link
+            href="/elon-musk-bitcoin-energy"
+            className="group flex flex-col justify-between rounded-2xl border border-border bg-surface p-7 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2"
+          >
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+                Feature · Energy &amp; the grid
+              </p>
+              <h3 className="mt-2 font-display text-xl font-semibold leading-snug tracking-tight transition-colors group-hover:text-accent-soft">
+                Elon Musk, Tesla &amp; the Bitcoin Energy Question
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                The man who called Bitcoin mining a fossil-fuel problem in 2021
+                built the biggest new load in tech. From Tesla&apos;s $1.5B
+                treasury bet to xAI&apos;s gigawatts — and how it lands on the
+                Texas grid. Sourced to the SEC filings.
+              </p>
+            </div>
+            <span className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-accent-soft">
+              Read the feature
+              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </span>
+          </Link>
 
-      {/* Ulbricht / origins feature */}
-      <section className="mx-auto max-w-6xl px-5 pb-8">
-        <Link
-          href="/ross-ulbricht-silk-road-bitcoin"
-          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2 sm:flex-row sm:items-center"
-        >
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-              Feature · Origins &amp; the base layer
-            </p>
-            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight transition-colors group-hover:text-accent-soft sm:text-3xl">
-              Ross Ulbricht, Silk Road &amp; the seized Bitcoin
-            </h2>
-            <p className="mt-2 max-w-xl text-muted">
-              An Austin physics kid built the marketplace that gave Bitcoin
-              something to do — and it cost him two life sentences. The sourced
-              ledger of the seized coins, the January 2025 pardon, and the
-              September 2026 speech in Dallas.
-            </p>
-          </div>
-          <span className="inline-flex shrink-0 items-center gap-2 font-medium text-accent-soft">
-            Read the feature
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </span>
-        </Link>
+          {/* Ulbricht / origins feature */}
+          <Link
+            href="/ross-ulbricht-silk-road-bitcoin"
+            className="group flex flex-col justify-between rounded-2xl border border-border bg-surface p-7 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2"
+          >
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+                Feature · Origins &amp; the base layer
+              </p>
+              <h3 className="mt-2 font-display text-xl font-semibold leading-snug tracking-tight transition-colors group-hover:text-accent-soft">
+                Ross Ulbricht, Silk Road &amp; the seized Bitcoin
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                An Austin physics kid built the marketplace that gave Bitcoin
+                something to do — and it cost him two life sentences. The sourced
+                ledger of the seized coins, the January 2025 pardon, and the
+                September 2026 speech in Dallas.
+              </p>
+            </div>
+            <span className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-accent-soft">
+              Read the feature
+              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+            </span>
+          </Link>
+        </div>
       </section>
 
       {/* Stories & the law */}
