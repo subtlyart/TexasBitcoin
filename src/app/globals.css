@@ -25,7 +25,7 @@
   --color-accent-soft: var(--accent-soft);
   --color-star: var(--star);
   --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-display: var(--font-newsreader), ui-serif, Georgia, serif;
 }
 
 * {

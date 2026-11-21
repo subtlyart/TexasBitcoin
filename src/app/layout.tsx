@@ -1,6 +1,6 @@
 import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
-import { Geist, Fraunces } from "next/font/google";
+import { Geist, Newsreader } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { site } from "@/lib/site";
@@ -14,9 +14,9 @@ const geist = Geist({
   display: "swap",
 });
 
-const fraunces = Fraunces({
+const newsreader = Newsreader({
   subsets: ["latin"],
-  variable: "--font-fraunces",
+  variable: "--font-newsreader",
   display: "swap",
   axes: ["opsz"],
 });
@@ -94,7 +94,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${geist.variable} ${fraunces.variable}`}>
+    <html lang="en" className={`${geist.variable} ${newsreader.variable}`}>
       <body>
         <script
           type="application/ld+json"
