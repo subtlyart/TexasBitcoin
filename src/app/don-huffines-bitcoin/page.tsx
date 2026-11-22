@@ -497,7 +497,8 @@ export default function DonHuffinesBitcoinPage() {
           <p>
             As of October 26, 2026: nearly three months in office, zero public words
             on the reserve, three clocks running. The custody award, overdue
-            against its own target, is the near one. Unofficial November 3 returns place Sarah Eckhardt ahead of Huffines
+            against its own target, is the near one. Unofficial November 3 returns place{" "}
+            <Link href="/sarah-eckhardt-bitcoin">Sarah Eckhardt</Link> ahead of Huffines
             for the full term; the result has not been certified. December 31
             is the statutory report, due under the sitting comptroller. The political authors of
             the reserve are chronicled in{" "}
