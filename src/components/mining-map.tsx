@@ -84,6 +84,7 @@ export function MiningMap() {
   const [year, setYear] = useState(2026);
   const [playing, setPlaying] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>("riot-rockdale");
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
@@ -200,6 +201,7 @@ export function MiningMap() {
           const isAnnounced = st === "announced";
           const r = pinRadius(site.mw);
           const isSelected = selectedId === site.id;
+          const isHovered = hoveredId === site.id;
           return (
             <g
               key={site.id}
@@ -227,15 +229,19 @@ export function MiningMap() {
                 cy={y}
                 r={r}
                 fill={color}
-                fillOpacity={isAnnounced ? 0.14 : 0.28}
+                fillOpacity={isAnnounced ? (isHovered ? 0.24 : 0.14) : isHovered ? 0.42 : 0.28}
                 stroke={color}
-                strokeWidth="1.5"
+                strokeWidth={isHovered ? 2.5 : 1.5}
                 strokeDasharray={isAnnounced ? "4 2.5" : undefined}
                 tabIndex={on ? 0 : -1}
                 role="button"
                 aria-label={`${site.name}, ${site.mwLabel}, online ${site.yearOnline}`}
-                className="cursor-pointer outline-none focus-visible:stroke-[3]"
+                className="cursor-pointer outline-none transition-[stroke-width] focus-visible:stroke-[3]"
                 onClick={() => setSelectedId(site.id)}
+                onMouseEnter={() => setHoveredId(site.id)}
+                onMouseLeave={() => setHoveredId((h) => (h === site.id ? null : h))}
+                onFocus={() => setHoveredId(site.id)}
+                onBlur={() => setHoveredId((h) => (h === site.id ? null : h))}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
                     e.preventDefault();
@@ -244,7 +250,7 @@ export function MiningMap() {
                 }}
               />
               <circle cx={x} cy={y} r="2.2" fill={color} pointerEvents="none" />
-              {isSelected && on && (
+              {isSelected && on && !isHovered && (
                 <text
                   x={x}
                   y={y - r - 6}
@@ -260,6 +266,43 @@ export function MiningMap() {
             </g>
           );
         })}
+
+        {/* Hover / focus preview — floats above the pointed-at pin */}
+        {(() => {
+          const site = miningSites.find((s) => s.id === hoveredId);
+          if (!site || site.yearOnline > year) return null;
+          const [x, y] = px(site.lat, site.lng);
+          const r = pinRadius(site.mw);
+          const st = statusAt(site, year);
+          const color = STATUS_COLORS[st];
+          const name = site.name;
+          const sub = `${site.mwLabel} · ${STATUS_LABELS[st]}`;
+          const w = Math.max(name.length * 6.3, sub.length * 5.3) + 20;
+          const h = 34;
+          const bx = Math.max(4, Math.min(x - w / 2, 700 - w - 4));
+          const above = y - r - 10 - h;
+          const by = above < 2 ? y + r + 10 : above;
+          return (
+            <g pointerEvents="none">
+              <rect
+                x={bx}
+                y={by}
+                width={w}
+                height={h}
+                rx={6}
+                fill="var(--background)"
+                stroke={color}
+                strokeOpacity={0.55}
+              />
+              <text x={bx + 10} y={by + 15} fontSize="11" fontWeight="600" fill="var(--foreground)">
+                {name}
+              </text>
+              <text x={bx + 10} y={by + 28} fontSize="10" fill={color}>
+                {sub}
+              </text>
+            </g>
+          );
+        })()}
       </svg>
 
       {/* Legend */}
