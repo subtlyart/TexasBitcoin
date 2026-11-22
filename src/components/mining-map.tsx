@@ -108,6 +108,22 @@ export function MiningMap() {
     [year]
   );
   const shownMw = visible.reduce((sum, s) => sum + s.mw, 0);
+
+  // Cumulative capacity online by year — the "gigawatts bloom" curve.
+  const mwByYear = useMemo(() => {
+    const out: { year: number; mw: number }[] = [];
+    for (let y = YEAR_MIN; y <= YEAR_MAX; y++) {
+      out.push({
+        year: y,
+        mw: miningSites
+          .filter((s) => s.yearOnline <= y)
+          .reduce((sum, s) => sum + s.mw, 0),
+      });
+    }
+    return out;
+  }, []);
+  const maxMw = mwByYear[mwByYear.length - 1].mw || 1;
+
   const selected = miningSites.find((s) => s.id === selectedId) ?? null;
   const selectedVisible = selected && selected.yearOnline <= year;
 
@@ -156,6 +172,75 @@ export function MiningMap() {
             {shownMw.toLocaleString()} MW shown
           </span>
         </div>
+      </div>
+
+      {/* Capacity-over-time sparkline — the growth curve under the timeline */}
+      <div className="mt-4">
+        <div className="mb-1 flex items-baseline justify-between text-[10px] uppercase tracking-[0.14em] text-muted-2">
+          <span>Total capacity online</span>
+          <span className="tabular-nums">
+            {(maxMw / 1000).toLocaleString(undefined, {
+              maximumFractionDigits: 1,
+            })}{" "}
+            GW by {YEAR_MAX}
+          </span>
+        </div>
+        <svg
+          viewBox="0 0 700 48"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+          className="h-12 w-full"
+        >
+          {(() => {
+            const W = 700;
+            const H = 48;
+            const PAD_T = 5;
+            const sx = (yr: number) =>
+              ((yr - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * W;
+            const sy = (mw: number) => PAD_T + (H - PAD_T) * (1 - mw / maxMw);
+            const line = (pts: { year: number; mw: number }[]) =>
+              pts
+                .map(
+                  (p, i) =>
+                    `${i ? "L" : "M"}${sx(p.year).toFixed(1)} ${sy(p.mw).toFixed(1)}`
+                )
+                .join(" ");
+            const upto = mwByYear.filter((p) => p.year <= year);
+            const curr = upto[upto.length - 1];
+            const area =
+              `M${sx(YEAR_MIN).toFixed(1)} ${H} ` +
+              upto
+                .map((p) => `L${sx(p.year).toFixed(1)} ${sy(p.mw).toFixed(1)}`)
+                .join(" ") +
+              ` L${sx(curr.year).toFixed(1)} ${H} Z`;
+            return (
+              <>
+                {/* full curve, faint — the whole arc of the story */}
+                <path
+                  d={line(mwByYear)}
+                  fill="none"
+                  stroke="var(--border)"
+                  strokeWidth="1.5"
+                />
+                {/* filled growth up to the current year */}
+                <path d={area} fill="var(--accent)" fillOpacity={0.14} />
+                <path
+                  d={line(upto)}
+                  fill="none"
+                  stroke="var(--accent)"
+                  strokeWidth="2"
+                  strokeLinejoin="round"
+                />
+                <circle
+                  cx={sx(curr.year)}
+                  cy={sy(curr.mw)}
+                  r="3"
+                  fill="var(--accent)"
+                />
+              </>
+            );
+          })()}
+        </svg>
       </div>
 
       {/* The map */}
