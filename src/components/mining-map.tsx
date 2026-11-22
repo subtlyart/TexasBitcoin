@@ -127,19 +127,25 @@ export function MiningMap() {
         >
           {playing ? <Pause className="h-4 w-4" /> : <Play className="ml-0.5 h-4 w-4" />}
         </button>
-        <input
-          type="range"
-          min={YEAR_MIN}
-          max={YEAR_MAX}
-          step={1}
-          value={year}
-          onChange={(e) => {
-            setPlaying(false);
-            setYear(Number(e.target.value));
-          }}
-          aria-label="Map year"
-          className="h-1.5 min-w-40 flex-1 cursor-pointer appearance-none rounded-full bg-surface-2 accent-[#f7931a]"
-        />
+        <div className="flex min-w-40 flex-1 flex-col gap-1">
+          <input
+            type="range"
+            min={YEAR_MIN}
+            max={YEAR_MAX}
+            step={1}
+            value={year}
+            onChange={(e) => {
+              setPlaying(false);
+              setYear(Number(e.target.value));
+            }}
+            aria-label="Map year"
+            className="h-1.5 w-full cursor-pointer appearance-none rounded-full bg-surface-2 accent-[#f7931a]"
+          />
+          <div className="flex justify-between text-[10px] tabular-nums text-muted-2">
+            <span>{YEAR_MIN}</span>
+            <span>{YEAR_MAX}</span>
+          </div>
+        </div>
         <div className="flex items-baseline gap-3">
           <span className="font-display text-3xl font-semibold tabular-nums text-accent">
             {year}
@@ -168,13 +174,15 @@ export function MiningMap() {
 
         {CITIES.map((c) => {
           const [x, y] = px(c.lat, c.lng);
+          // Keep edge-of-map labels (e.g. El Paso) from clipping on the viewBox.
+          const anchor = x < 40 ? "start" : x > 660 ? "end" : "middle";
           return (
             <g key={c.name} aria-hidden="true">
               <circle cx={x} cy={y} r="2" fill="var(--muted-2)" />
               <text
                 x={x}
                 y={y + 14}
-                textAnchor="middle"
+                textAnchor={anchor}
                 fontSize="10"
                 fill="var(--muted-2)"
               >
