@@ -373,7 +373,7 @@ export default function CustodyPage() {
           <p className="mt-4 text-sm leading-relaxed text-muted-2">
             <strong>November 3, 2026 general election — unofficial returns.</strong>{" "}
             At 100% of polling locations reporting (November 4, 4:59 p.m.),
-            Sarah Eckhardt (D) led Don Huffines (R) for comptroller 5,014,496
+            <Link href="/sarah-eckhardt-bitcoin">Sarah Eckhardt</Link> (D) led Don Huffines (R) for comptroller 5,014,496
             (51.30%) to 4,511,185 (46.15%). These are not certified results,
             but unless certification reverses them the office — and with it
             custody of the reserve, the open procurement, and the advisory
