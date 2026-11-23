@@ -51,7 +51,7 @@ verticals are reachable from body copy, not the nav – see `SEAM.md`.
 
 ### Figures
 
-Twenty-two pages carry original SVG figures – around 70 in total – drawn from the
+Forty-eight pages carry original SVG figures – around 120 in total – drawn from the
 same data files that drive the prose (`src/lib/*.ts`). They are theme-aware,
 animate only where `prefers-reduced-motion` allows, and are built as chapter
 illustrations rather than decoration.
