@@ -4,6 +4,7 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
+import { ReadingProgress } from "@/components/reading-progress";
 
 export const metadata: Metadata = {
   title: "The History of Bitcoin in Texas",
@@ -364,6 +365,7 @@ export default function HistoryPage() {
 
   return (
     <>
+      <ReadingProgress />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLd(articleJsonLd) }}
