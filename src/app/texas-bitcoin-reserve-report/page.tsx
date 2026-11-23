@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "Who has to file the first report?",
-    a: "Comptroller Don Huffines, sworn in August 1, 2026. Unofficial November 3, 2026 returns show Sarah Eckhardt (D) ahead for the term beginning January 2027, so the first report falls in a lame-duck window before any handover.",
+    a: "Comptroller Don Huffines, sworn in August 1, 2026. Sarah Eckhardt (D) defeated him on November 3, 2026 for the term beginning January 2027 (certification due by December 7), so the first report falls in a lame-duck window before any handover.",
   },
   {
     q: "Where is the Texas Bitcoin reserve report published?",
@@ -115,7 +115,7 @@ export default function ReserveReportPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-11-19",
-    dateModified: "2026-11-19",
+    dateModified: "2026-11-23",
   };
 
   const faqJsonLd = {
@@ -235,8 +235,8 @@ export default function ReserveReportPage() {
             </li>
             <li>
               Comptroller Don Huffines, sworn in August 1, 2026, owes the first
-              report; unofficial November 3 returns show Sarah Eckhardt ahead for
-              the term beginning January 2027.<C n={9} /><C n={10} />
+              report; Sarah Eckhardt defeated him on November 3, 2026 for
+              the term beginning January 2027, with certification due by December 7.<C n={9} /><C n={10} />
             </li>
             <li>
               As of November 19, 2026, the Comptroller&apos;s newsroom has posted
@@ -327,10 +327,10 @@ export default function ReserveReportPage() {
           <p>
             The duty runs with the office. <Link href="/don-huffines-bitcoin">Don Huffines</Link>,
             sworn in as Comptroller on <strong>August 1, 2026</strong>, owes the
-            first report.<C n={9} /> The timing is unusual: unofficial November 3,
-            2026 returns, at 100% of polling locations reporting, showed{" "}
-            <strong>Sarah Eckhardt (D) ahead of Huffines</strong> for the full
-            term that begins in January 2027 — results not yet certified.<C n={10} />{" "}
+            first report.<C n={9} /> The timing is unusual: on November 3,
+            2026, at 100% of polling locations reporting,{" "}
+            <strong>Sarah Eckhardt (D) defeated Huffines</strong> for the full
+            term that begins in January 2027 — county canvasses complete, statewide certification due by December 7.<C n={10} />{" "}
             So the first statutory account of the reserve is due in a{" "}
             <strong>lame-duck window</strong>, from an appointed incumbent who
             appears to have lost the office, roughly two weeks before the{" "}

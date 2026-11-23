@@ -187,7 +187,7 @@ export default function LoisKolkhorstBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-13",
-    dateModified: "2026-11-09",
+    dateModified: "2026-11-23",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Lois Kolkhorst" },
@@ -247,7 +247,7 @@ export default function LoisKolkhorstBitcoinPage() {
             Lois Kolkhorst: The Senator Who Wrote the Brake
           </h1>
           <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
-            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Lois Kolkhorst (R) led Erica Gillum (D) 196,125 (54.30%) to 165,093 (45.70%) in Senate District 18. These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={26} />
+            <strong>November 3, 2026 general election.</strong> Lois Kolkhorst (R) defeated Erica Gillum (D) 196,125 (54.30%) to 165,093 (45.70%) in Senate District 18 (100% of polling locations reporting). County canvasses are complete; the statewide canvass that certifies the result runs November 21–December 7, 2026. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={26} />
           </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Every other page in this cluster is someone who moved the asset
@@ -567,8 +567,8 @@ export default function LoisKolkhorstBitcoinPage() {
           <p>
             As of September 2026: SB 1751 is dead, SB 1929 and SB 6 are law,
             and the large-load question has outgrown Bitcoin. Kolkhorst
-            advanced from the March 3, 2026 Republican primary and led
-            Democrat Erica Gillum in unofficial November 3 returns for
+            advanced from the March 3, 2026 Republican primary and defeated
+            Democrat Erica Gillum on November 3, 2026 for
             Senate District 18.<C n={26} /> The 90th Legislature convenes January 12, 2027
             with AI data centers, not miners, as the load the grid is
             arguing about, and with the one senator who tried to cap a load

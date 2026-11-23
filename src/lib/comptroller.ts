@@ -24,7 +24,7 @@
 // posts (due December 31, 2026), and when HB 1056's transactional currency
 // goes live (May 1, 2027).
 
-export const COMPTROLLER_LAST_VERIFIED = "November 19, 2026";
+export const COMPTROLLER_LAST_VERIFIED = "November 23, 2026";
 
 export interface ComptrollerSource {
   id: number;
@@ -79,7 +79,7 @@ export interface ComptrollerStatusRow {
 
 export const comptrollerStatus: ComptrollerStatusRow[] = [
   { label: "The office", value: "Comptroller of Public Accounts - the state's chief financial officer, tax collector, revenue estimator, and treasurer, with the Texas Treasury Safekeeping Trust Company under it", sourceIds: [5] },
-  { label: "Holder", value: "Don Huffines since August 1, 2026, by appointment to Kelly Hancock's unexpired term; Sarah Eckhardt led him in unofficial November 3 returns, but he remains in office pending the January 2027 term", sourceIds: [14, 33] },
+  { label: "Holder", value: "Don Huffines since August 1, 2026, by appointment to Kelly Hancock's unexpired term; Sarah Eckhardt defeated him on November 3, 2026 (statewide certification due by December 7), but he remains in office pending the January 2027 term", sourceIds: [14, 33] },
   { label: "Custody of the reserve", value: "By statute: SB 21 § 403.703 places the Strategic Bitcoin Reserve in the comptroller's custody, outside the treasury, as Fund 1018 held by the Trust Company", sourceIds: [1, 3] },
   { label: "What it holds", value: "$10 million in the iShares Bitcoin Trust, bought in two ~$5 million tranches on November 20 and December 15, 2025, as an explicit placeholder for directly held Bitcoin", sourceIds: [8, 9] },
   { label: "The committee", value: "The comptroller chairs the five-member advisory committee by office and appointed its four outside members on May 28, 2026", sourceIds: [1, 10] },
@@ -190,7 +190,7 @@ export const comptrollerTimeline: ComptrollerEvent[] = [
     dateLabel: "November 3 → December 31, 2026",
     title: "The ballot and the report",
     detail:
-      "Unofficial November 3 returns at 100% of polling locations reporting: Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%). Huffines remains the appointed comptroller pending the January 2027 term; the first SB 21 biennial report is due under the sitting comptroller's name by December 31.",
+      "On November 3, 2026, at 100% of polling locations reporting, Sarah Eckhardt (D) defeated Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%). County canvasses are complete, with statewide certification due by December 7. Huffines remains the appointed comptroller pending the January 2027 term; the first SB 21 biennial report is due under the sitting comptroller's name by December 31.",
     kind: "watch",
     sourceIds: [30, 1, 33],
   },

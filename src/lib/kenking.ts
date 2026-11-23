@@ -22,7 +22,7 @@
 // general election and when House State Affairs files its interim report
 // on data centers and SB 6 implementation.
 
-export const KENKING_LAST_VERIFIED = "November 9, 2026";
+export const KENKING_LAST_VERIFIED = "November 23, 2026";
 
 export interface KenKingSource {
   id: number;
@@ -172,15 +172,15 @@ export const kenKingTimeline: KenKingEvent[] = [
     dateLabel: "August 2026",
     title: "The second hearing, the letter, and the landowners",
     detail:
-      "On August 19 the committee takes public testimony on data centers and 765-kV transmission for a full day; King frames the fight as \"really a routing issue\" and warns that many proposals \"erode private property rights.\" On August 24 he writes ERCOT and the PUC calling the transmission-line application process flawed and inviting them to help draft \"legislative guardrails\" for data centers: \"West Texas and the Permian Basin need power, but not built on the backs of thousands of farmers and ranchers.\" After a 53.9% primary in March, King led Heather Wallace 36,488 to 10,259 in the November 3 general election, according to unofficial Secretary of State returns with 100% of polling locations reporting.",
+      "On August 19 the committee takes public testimony on data centers and 765-kV transmission for a full day; King frames the fight as \"really a routing issue\" and warns that many proposals \"erode private property rights.\" On August 24 he writes ERCOT and the PUC calling the transmission-line application process flawed and inviting them to help draft \"legislative guardrails\" for data centers: \"West Texas and the Permian Basin need power, but not built on the backs of thousands of farmers and ranchers.\" After a 53.9% primary in March, King defeated Heather Wallace 36,488 to 10,259 in the November 3, 2026 general election, at 100% of polling locations reporting; county canvasses are complete, with statewide certification due by December 7.",
     kind: "watch",
     sourceIds: [29, 30, 31, 4, 35, 37, 38],
   },
   {
     date: "2026-11-03",
     dateLabel: "November 3, 2026",
-    title: "Unofficial general-election returns",
-    detail: "At 100% of polling locations reporting, unofficial Secretary of State returns show Ken King (R) led Heather Wallace (D) in House District 88, 36,488 (78.05%) to 10,259 (21.95%). The result is not certified.",
+    title: "General-election returns",
+    detail: "At 100% of polling locations reporting, Ken King (R) defeated Heather Wallace (D) in House District 88, 36,488 (78.05%) to 10,259 (21.95%). County canvasses are complete; statewide certification is due by December 7, 2026.",
     kind: "watch",
     sourceIds: [38],
   },

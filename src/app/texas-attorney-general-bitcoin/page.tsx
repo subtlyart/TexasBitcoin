@@ -18,7 +18,7 @@ const pageUrl = `${site.url}/texas-attorney-general-bitcoin`;
 export const metadata: Metadata = {
   title: "The Texas Attorney General and Bitcoin: One Suit, No Opinions",
   description:
-    "The Texas Attorney General's office and Bitcoin, 2015–2026, sourced: the eighteen-state suit against the SEC filed November 14, 2024 and stayed since April 2025; the Celsius, Voyager, and Binance.US bankruptcy objections signed for the State Securities Board; the May 2025 ruling ordering the PUC to release the miners' registration data, and the PUC's suit against the office; the one coalition letter signed and the ones skipped; zero formal opinions on virtual currency in eleven years; zero enforcement actions or kiosk suits while Texans lost $56.8 million to kiosk fraud in 2025 and peer states sued; and the November 3, 2026 handover.",
+    "The Texas Attorney General's office and Bitcoin, 2015–2026, sourced: the eighteen-state suit against the SEC filed November 14, 2024 and stayed since April 2025; the Celsius, Voyager, and Binance.US bankruptcy objections signed for the State Securities Board; the May 2025 ruling ordering the PUC to release the miners' registration data, and the PUC's suit against the office; the one coalition letter signed and the ones skipped; zero formal opinions on virtual currency in eleven years; zero enforcement actions or kiosk suits while Texans lost $56.8 million to kiosk fraud in 2025 and peer states sued; and the November 3, 2026 handover to Democrat Nathan Johnson.",
   alternates: { canonical: pageUrl },
   openGraph: {
     images: ogImages("The Texas Attorney General and Bitcoin: One Suit, No Opinions"),
@@ -168,7 +168,7 @@ export default function TexasAttorneyGeneralBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-25",
-    dateModified: "2026-11-09",
+    dateModified: "2026-11-23",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "GovernmentOrganization", name: "Office of the Attorney General of Texas" },
@@ -227,7 +227,7 @@ export default function TexasAttorneyGeneralBitcoinPage() {
             The Texas Attorney General and Bitcoin: One Suit, No Opinions
           </h1>
           <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
-            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Nathan Johnson (D) led Mayes Middleton (R) 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={33} />
+            <strong>November 3, 2026 general election.</strong> Nathan Johnson (D) defeated Mayes Middleton (R) 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%) (100% of polling locations reporting). County canvasses are complete; the statewide canvass that certifies the result runs November 21–December 7, 2026. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={33} />
           </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Every other institution on this site has a position on the
@@ -243,7 +243,7 @@ export default function TexasAttorneyGeneralBitcoinPage() {
             against the miners, and never issued an opinion on what it is
             or sued anyone for stealing it. In a state that lost more than
             a billion dollars to crypto fraud last year, that is the
-            record, and unofficial November 3 returns point to Nathan Johnson as the next occupant; Ken Paxton remains in office pending the January 2027 handover.
+            record, and on November 3, 2026 Nathan Johnson was elected the next occupant; Ken Paxton remains in office pending the January 2027 handover.
           </p>
           <p className="mt-4 text-sm text-muted-2">
             By {site.name} · Published September 25, 2026 · Updated{" "}
@@ -612,7 +612,7 @@ export default function TexasAttorneyGeneralBitcoinPage() {
             one records case pending since June 2025, one coalition letter
             signed, no opinion, no enforcement action, and an occupant
             leaving for a U.S. Senate race.<C n={5} /><C n={15} />
-            <C n={16} /><C n={29} /> Unofficial November 3 returns show Nathan Johnson ahead of Mayes Middleton;
+            <C n={16} /><C n={29} /> On November 3, 2026 Nathan Johnson defeated Mayes Middleton (statewide certification due by December 7);
             Paxton remains in office pending the January 2027 handover. Both
             candidates voted for the reserve, and neither stated a position
             on the kiosks, the SEC suit, or the miners&apos; data.<C n={31} /><C n={32} /><C n={33} /> They are on{" "}

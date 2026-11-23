@@ -119,12 +119,15 @@ ELECTION-2026.md               # Nov 3 / Dec 31 same-day update playbook, intern
 ## Watchlist
 
 - SB 21 reserve: custodian award (RFP 908-26-1778WS closed July 10; late-August
-  execution target missed, no award as of the November 19 re-verify), then the
+  execution target missed, no award as of the November 23 re-verify), then the
   first statutory report (due 31 Dec). Stamps live in `src/lib/custody.ts`,
   `reserve.ts`, `hancock.ts`, `huffines.ts`.
-- November 3, 2026 general election – returns are in and the people pages carry
-  them as **unofficial** (Eckhardt over Huffines for comptroller, Johnson over
-  Middleton for AG, the tracked incumbents re-elected). The statewide canvass
-  window is November 21 – December 7; flip the pages from "leading/unofficial"
-  to "elected" once it completes, per the pass staged in `ELECTION-2026.md`.
+- November 3, 2026 general election – **results published**: the people pages
+  state Eckhardt defeated Huffines (comptroller), Johnson defeated Middleton
+  (AG), and the tracked incumbents (Schwertner, Kolkhorst, Ken King) were
+  re-elected; Mizani took Capriglione's HD-98. County canvasses are complete;
+  the pages note that final statewide certification (the Governor's canvass,
+  November 21 – December 7, 2026) is still pending. **Next:** once the canvass
+  is certified, drop the "certification pending" caveats and cite the official
+  canvass, per `ELECTION-2026.md`.
 - 2027 session bills – `/texas-bitcoin-bills-2027`; pre-filing opened November 9.

@@ -22,7 +22,7 @@
 // attorney general general election and when the 90th Legislature files
 // large-load bills (from November 9, 2026).
 
-export const JOHNSON_LAST_VERIFIED = "November 9, 2026";
+export const JOHNSON_LAST_VERIFIED = "November 23, 2026";
 
 export interface JohnsonSource {
   id: number;
@@ -185,8 +185,8 @@ export const johnsonTimeline: JohnsonEvent[] = [
   {
     date: "2026-11-03",
     dateLabel: "November 3, 2026",
-    title: "Unofficial general-election returns",
-    detail: "At 100% of polling locations reporting, unofficial Secretary of State returns show Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). The result is not certified.",
+    title: "General-election returns",
+    detail: "At 100% of polling locations reporting, Nathan Johnson (D) defeated Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). County canvasses are complete; statewide certification is due by December 7, 2026.",
     kind: "watch",
     sourceIds: [26],
   },

@@ -19,7 +19,7 @@
 // (from November 9, 2026), and after the North American Blockchain Summit
 // (November 18–19, 2026).
 
-export const CAPRIGLIONE_LAST_VERIFIED = "November 9, 2026";
+export const CAPRIGLIONE_LAST_VERIFIED = "November 23, 2026";
 
 export interface CapriglioneSource {
   id: number;
@@ -198,8 +198,8 @@ export const capriglioneTimeline: CapriglioneEvent[] = [
   {
     date: "2026-11-03",
     dateLabel: "November 3, 2026",
-    title: "Unofficial general-election returns",
-    detail: "At 100% of polling locations reporting, unofficial Secretary of State returns show Armin Mizani (R) led Cate Brennan (D) in House District 98, 51,794 (59.92%) to 34,645 (40.08%). The result is not certified.",
+    title: "General-election returns",
+    detail: "At 100% of polling locations reporting, Armin Mizani (R) defeated Cate Brennan (D) in House District 98, 51,794 (59.92%) to 34,645 (40.08%). County canvasses are complete; statewide certification is due by December 7, 2026.",
     kind: "watch",
     sourceIds: [31],
   },
