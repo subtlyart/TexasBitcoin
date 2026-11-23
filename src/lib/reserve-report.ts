@@ -12,7 +12,7 @@
 // page's dateModified together. When the report posts, flip reportStatus's
 // "Published" row and add the filing to the sources.
 
-export const REPORT_LAST_VERIFIED = "November 19, 2026";
+export const REPORT_LAST_VERIFIED = "November 23, 2026";
 
 // The statutory deadline and the measuring date it points back to.
 export const REPORT_DUE_ISO = "2026-12-31";
@@ -95,7 +95,7 @@ export interface ReportStatusRow {
 export const reportStatus: ReportStatusRow[] = [
   { label: "Statutory deadline", value: "December 31, 2026 — the first report required under SB 21 § 403.708, due by December 31 of each even-numbered year", sourceIds: [1] },
   { label: "Published", value: "Not yet. As of November 19, 2026, the Comptroller's newsroom has posted no Strategic Bitcoin Reserve report", sourceIds: [11] },
-  { label: "Who owes it", value: "Comptroller Don Huffines, sworn in August 1, 2026. Unofficial November 3 returns show Sarah Eckhardt (D) ahead for the term that begins in January 2027, so the first report falls in a lame-duck window", sourceIds: [9, 10] },
+  { label: "Who owes it", value: "Comptroller Don Huffines, sworn in August 1, 2026. Sarah Eckhardt (D) defeated him on November 3, 2026 for the term that begins in January 2027, so the first report falls in a lame-duck window", sourceIds: [9, 10] },
   { label: "Where it goes", value: "Published on the Comptroller's website and submitted to the Legislature, which convenes January 12, 2027 — about two weeks after the report is due", sourceIds: [1, 12] },
   { label: "Measuring date", value: "The last day of the preceding state fiscal biennium — August 31, 2025 — on which the reserve held no Bitcoin, the first purchase coming November 20, 2025", sourceIds: [3, 4] },
   { label: "Custody at report time", value: "Still an ETF placeholder on the current record: $10 million in the iShares Bitcoin Trust, with RFP 908-26-1778WS unawarded as of November 19, 2026", sourceIds: [8, 11] },

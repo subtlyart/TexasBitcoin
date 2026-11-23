@@ -10,7 +10,7 @@
 // and the page's dateModified together. The reserve page's status panel links
 // here; keep the two consistent.
 
-export const CUSTODY_LAST_VERIFIED = "November 19, 2026";
+export const CUSTODY_LAST_VERIFIED = "November 23, 2026";
 
 export interface CustodySource {
   id: number;

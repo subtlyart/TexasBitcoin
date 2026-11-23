@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "What is the state of the 2026 attorney general race?",
-    a: "Middleton won the March 3, 2026 Republican primary with 39.1% and the May 26 runoff over Chip Roy with 55.2%, funded by more than $15 million of his own money by the primary and $5.2 million more in loans by July. Unofficial November 3 returns at 100% of polling locations reporting show Nathan Johnson ahead of Middleton. ReconMR's September poll had Middleton 45, Johnson 44. Neither nominee has taken a position on the crypto-kiosk scams that cost Texans $56.8 million in 2025.",
+    a: "Middleton won the March 3, 2026 Republican primary with 39.1% and the May 26 runoff over Chip Roy with 55.2%, funded by more than $15 million of his own money by the primary and $5.2 million more in loans by July. On November 3, 2026, at 100% of polling locations reporting, Nathan Johnson defeated Middleton; county canvasses are complete, with statewide certification due by December 7. ReconMR's September poll had Middleton 45, Johnson 44. Neither nominee has taken a position on the crypto-kiosk scams that cost Texans $56.8 million in 2025.",
   },
 ];
 
@@ -181,7 +181,7 @@ export default function MayesMiddletonBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-25",
-    dateModified: "2026-11-09",
+    dateModified: "2026-11-23",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Mayes Middleton" },
@@ -241,10 +241,10 @@ export default function MayesMiddletonBitcoinPage() {
             Mayes Middleton: The Votes Without the Words
           </h1>
           <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
-            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Nathan Johnson (D) led Mayes Middleton (R) 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={38} />
+            <strong>November 3, 2026 general election.</strong> Nathan Johnson (D) defeated Mayes Middleton (R) 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%) (100% of polling locations reporting). County canvasses are complete; the statewide canvass that certifies the result runs November 21–December 7, 2026. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={38} />
           </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
-            Unofficial November 3 returns point to Nathan Johnson as the next lawyer who decides whether
+            The November 3, 2026 result makes Nathan Johnson the next lawyer who decides whether
             the state sues the crypto-kiosk operators its neighbors have
             sued, who defends the reserve if it is challenged, and who
             speaks for Texas when the states take on the federal
@@ -320,8 +320,8 @@ export default function MayesMiddletonBitcoinPage() {
             </li>
             <li>
               He won the May 26, 2026 runoff 55.2% to 44.8% after lending
-              his campaign more than $15 million, and trailed Nathan Johnson
-              in unofficial November 3 returns.<C n={30} /><C n={29} /><C n={38} />
+              his campaign more than $15 million, and lost to Nathan Johnson
+              on November 3, 2026.<C n={30} /><C n={29} /><C n={38} />
             </li>
           </ul>
         </div>
@@ -536,11 +536,11 @@ export default function MayesMiddletonBitcoinPage() {
 
           <h2>Where does the Middleton record stand today?</h2>
           <p>
-            As of September 2026: the Republican nominee for Attorney
-            General, behind Nathan Johnson in unofficial November 3 returns, holding Senate District 11
-            through the campaign.<C n={33} /><C n={7} /> The reserve he
+            As of November 23, 2026: the Republican who lost the Attorney
+            General race to Nathan Johnson on November 3, 2026, holding Senate District 11
+            with a term running to 2028.<C n={33} /><C n={7} /> The reserve he
             voted for twice is in the hands of Comptroller{" "}
-            <Link href="/don-huffines-bitcoin">Don Huffines</Link>, who also trailed in unofficial returns. The office he seeks, and what it has and has not
+            <Link href="/don-huffines-bitcoin">Don Huffines</Link>, who was also defeated on November 3, 2026. The office he sought, and what it has and has not
             done with the asset in eleven years, is on{" "}
             <Link href="/texas-attorney-general-bitcoin">
               the Texas Attorney General and Bitcoin

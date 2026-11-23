@@ -18,14 +18,14 @@ const PAGE_TITLE = "Sarah Eckhardt and Bitcoin: The Senator Who Voted for the Re
 export const metadata: Metadata = {
   title: PAGE_TITLE,
   description:
-    "Sarah Eckhardt's Bitcoin record, sourced: the Texas senator from District 14 who voted yea on Senate Bill 21 (March 6, 2025) creating the Texas Strategic Bitcoin Reserve, then told the Star-Telegram that state funds should go to traditional infrastructure rather than high-risk speculative assets. Unofficial November 3, 2026 Secretary of State returns put her ahead of Comptroller Don Huffines. Not certified.",
+    "Sarah Eckhardt's Bitcoin record, sourced: the Texas senator from District 14 who voted yea on Senate Bill 21 (March 6, 2025) creating the Texas Strategic Bitcoin Reserve, then told the Star-Telegram that state funds should go to traditional infrastructure rather than high-risk speculative assets. On November 3, 2026 she defeated Comptroller Don Huffines to become comptroller-elect; county canvasses are complete, with statewide certification due by December 7.",
   alternates: { canonical: pageUrl },
   openGraph: {
     images: ogImages(PAGE_TITLE, { kicker: "People" }),
     type: "article",
     title: PAGE_TITLE,
     description:
-      "A yea on the Texas Strategic Bitcoin Reserve, then a voter-guide answer that treats crypto as a speculative asset for state funds. Unofficial November 3 returns put her ahead for the office that holds it. Sourced.",
+      "A yea on the Texas Strategic Bitcoin Reserve, then a voter-guide answer that treats crypto as a speculative asset for state funds. On November 3, 2026 she won the office that holds it. Sourced.",
     url: pageUrl,
   },
 };
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Who is Sarah Eckhardt?",
-    a: "Sarah Eckhardt is the Democratic Texas senator from District 14, sworn in July 31, 2020. She is from Austin. She was a Travis County attorney, commissioner, and county judge before the Senate. Unofficial November 3, 2026 Secretary of State returns put her ahead of Comptroller Don Huffines for the term beginning January 2027. Those returns are not certified.",
+    a: "Sarah Eckhardt is the Democratic Texas senator from District 14, sworn in July 31, 2020. She is from Austin. She was a Travis County attorney, commissioner, and county judge before the Senate. On November 3, 2026 she defeated Comptroller Don Huffines for the term beginning January 2027, making her comptroller-elect; the result awaits statewide certification, due by December 7.",
   },
   {
     q: "Did Sarah Eckhardt vote for the Texas Bitcoin reserve?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "Did Sarah Eckhardt win the 2026 Texas comptroller election?",
-    a: "Unofficial November 3, 2026 Secretary of State returns at 100% of polling locations reporting show Sarah Eckhardt (D) 5,014,496 (51.30%) and Don Huffines (R) 4,511,185 (46.15%). The Texan called the race election night. The returns are not certified. Huffines remains the appointed comptroller until the January 2027 term.",
+    a: "Yes. On November 3, 2026, at 100% of polling locations reporting, Sarah Eckhardt (D) defeated Don Huffines (R) 5,014,496 (51.30%) to 4,511,185 (46.15%); The Texan called the race election night. County canvasses are complete; the statewide canvass that certifies the result runs November 21–December 7, 2026. Huffines remains the appointed comptroller until the January 2027 term.",
   },
   {
     q: "Will Sarah Eckhardt control the Texas Bitcoin reserve?",
@@ -190,7 +190,7 @@ function EckhardtReturnsFigure() {
         className="h-auto w-full min-w-[640px]"
         viewBox="0 0 810 250"
         role="img"
-        aria-label="Unofficial November 3, 2026 Secretary of State returns for Texas comptroller at 100 percent of polling locations reporting"
+        aria-label="November 3, 2026 Secretary of State returns for Texas comptroller at 100 percent of polling locations reporting; county canvasses complete, statewide certification pending"
       >
         <text
           x="28"
@@ -200,7 +200,7 @@ function EckhardtReturnsFigure() {
           letterSpacing="2"
           fill="var(--accent)"
         >
-          UNOFFICIAL RETURNS · COMPTROLLER OF PUBLIC ACCOUNTS · NOV. 3, 2026
+          ELECTION RETURNS · COMPTROLLER OF PUBLIC ACCOUNTS · NOV. 3, 2026
         </text>
         <text
           x="278"
@@ -281,8 +281,8 @@ function EckhardtReturnsFigure() {
           textAnchor="middle"
           fill="var(--muted-2)"
         >
-          Texas Secretary of State, 100% of polling locations reporting, November 4, 2026,
-          4:59 p.m. Not certified.
+          Texas Secretary of State, 100% of polling locations reporting. County
+          canvasses complete; statewide certification due by December 7, 2026.
         </text>
         <text
           x="405"
@@ -296,9 +296,10 @@ function EckhardtReturnsFigure() {
         </text>
       </svg>
       <figcaption className="mt-3 text-xs leading-relaxed text-muted-2">
-        Unofficial returns, not a canvass. The names and totals are the Secretary
-        of State&apos;s table. The percentages are computed from those four
-        numbers. Huffines remains in office by appointment until January 2027.
+        County-canvassed returns, pending the statewide canvass. The names and
+        totals are the Secretary of State&apos;s table. The percentages are
+        computed from those four numbers. Huffines remains in office by
+        appointment until January 2027.
       </figcaption>
     </figure>
   );
@@ -312,7 +313,7 @@ export default function SarahEckhardtBitcoinPage() {
     citation: citations(eckhardtSources),
     headline: PAGE_TITLE,
     description:
-      "The sourced Bitcoin record of Sarah Eckhardt: a yea on Senate Bill 21, a voter-guide answer that treats crypto as a speculative asset for state funds, and unofficial November 3, 2026 returns that put her ahead for the office that holds the Texas Strategic Bitcoin Reserve.",
+      "The sourced Bitcoin record of Sarah Eckhardt: a yea on Senate Bill 21, a voter-guide answer that treats crypto as a speculative asset for state funds, and the November 3, 2026 election she won for the office that holds the Texas Strategic Bitcoin Reserve.",
     author: {
       "@type": "Organization",
       name: site.name,
@@ -327,7 +328,7 @@ export default function SarahEckhardtBitcoinPage() {
     },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-11-22",
-    dateModified: "2026-11-22",
+    dateModified: "2026-11-23",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Sarah Eckhardt" },
@@ -385,11 +386,11 @@ export default function SarahEckhardtBitcoinPage() {
             Sarah Eckhardt and Bitcoin: The Senator Who Voted for the Reserve
           </h1>
           <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
-            <strong>November 3, 2026 general election — unofficial returns.</strong>{" "}
-            At 100% of polling locations reporting (November 4, 4:59 p.m.), Sarah
-            Eckhardt (D) led Don Huffines (R) 5,014,496 (51.30%) to 4,511,185
+            <strong>November 3, 2026 general election.</strong>{" "}
+            Sarah Eckhardt (D) defeated Don Huffines (R) 5,014,496 (51.30%) to 4,511,185
             (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and
-            Shehla Faizi (G) 63,817 (0.65%). These are not certified results.{" "}
+            Shehla Faizi (G) 63,817 (0.65%) (100% of polling locations reporting).
+            County canvasses are complete; the statewide canvass that certifies the result runs November 21–December 7, 2026.{" "}
             <a
               href="https://electionresults.sos.state.tx.us/results.html"
               className="underline"
@@ -402,8 +403,8 @@ export default function SarahEckhardtBitcoinPage() {
             A senator voted yea on the bill that built a state Bitcoin reserve.
             Eleven months later the same person, running for the office that
             holds it, told a voter guide that Texas should put public money in
-            roads and people, not high-risk speculative assets. Unofficial
-            November 3 returns put her ahead for that office. This is the
+            roads and people, not high-risk speculative assets. On November 3,
+            2026 she won that office. This is the
             sourced record of Sarah Eckhardt and Bitcoin — the vote, the
             sentence, and the handover that has not happened yet.
           </p>
@@ -422,9 +423,9 @@ export default function SarahEckhardtBitcoinPage() {
             on Senate Bill 21 on March 6, 2025, creating the Texas Strategic
             Bitcoin Reserve. In February 2026 she told the Star-Telegram that
             state funds should go to traditional infrastructure rather than
-            high-risk speculative assets. Unofficial November 3, 2026 Secretary
-            of State returns put her ahead of Comptroller Don Huffines 5,014,496
-            to 4,511,185, not certified.
+            high-risk speculative assets. On November 3, 2026 she defeated
+            Comptroller Don Huffines 5,014,496 to 4,511,185; county canvasses are
+            complete, with statewide certification due by December 7.
           </p>
         </div>
 
@@ -455,9 +456,9 @@ export default function SarahEckhardtBitcoinPage() {
               assets.&rdquo;<C n={6} />
             </li>
             <li>
-              Unofficial November 3, 2026 Secretary of State returns at 100% of
+              November 3, 2026 Secretary of State returns at 100% of
               polling locations reporting: Eckhardt 5,014,496 (51.30%), Huffines
-              4,511,185 (46.15%). Not certified.<C n={7} />
+              4,511,185 (46.15%). County canvasses complete; statewide certification due by December 7.<C n={7} />
             </li>
             <li>
               The Texan called the race election night and wrote that Eckhardt
@@ -525,9 +526,9 @@ export default function SarahEckhardtBitcoinPage() {
             own page records a Travis County attorney, a commissioner
             representing about 300,000 people, and a county judge representing
             about 1.3 million before that oath.<C n={4} />
-            <C n={5} /> Unofficial November 3 returns put her ahead of{" "}
+            <C n={5} /> On November 3, 2026 she defeated{" "}
             <Link href="/don-huffines-bitcoin">Don Huffines</Link> for the
-            full term beginning January 2027. The office that would then hold
+            full term beginning January 2027 (certification due by December 7). The office that would then hold
             the reserve is on{" "}
             <Link href="/texas-comptroller-bitcoin">
               the Texas Comptroller and Bitcoin
@@ -618,8 +619,9 @@ export default function SarahEckhardtBitcoinPage() {
             The matching counterweight the other way: she did not vote no.
           </p>
           <p>
-            What she has not done is take the oath. Unofficial returns are
-            not a canvass. The Texan called the race on election night and
+            What she has not done is take the oath. County canvasses are
+            complete, but the statewide canvass that certifies the result is
+            still pending. The Texan called the race on election night and
             wrote that she will be sworn in in January 2027.<C n={8} /> Until
             that day,{" "}
             <Link href="/don-huffines-bitcoin">Don Huffines</Link> remains
@@ -631,12 +633,12 @@ export default function SarahEckhardtBitcoinPage() {
 
           <h2>Where does the Eckhardt record stand today?</h2>
           <p>
-            Two sourced acts and an unofficial lead. The vote is in the
+            Two sourced acts and a win at the polls. The vote is in the
             Journal. The sentence is in the voter guide. The totals are on
             the Secretary of State&apos;s table, 100% of polling locations
-            reporting, not certified.<C n={7} /> The next entry is the oath,
-            or a certified canvass that reverses the count, or the first
-            word she speaks as comptroller about the reserve. Until then she
+            reporting; county canvasses complete, statewide certification
+            pending.<C n={7} /> The next entry is the oath, the certifying
+            canvass, or the first word she speaks as comptroller about the reserve. Until then she
             is the senator who voted for the fund she may soon have to
             manage — and the candidate who told voters not to treat that
             kind of asset as the place for state money.
@@ -666,7 +668,7 @@ export default function SarahEckhardtBitcoinPage() {
             enrolled text of SB 21 for what the comptroller&apos;s office
             controls; the Texas Senate and the Legislative Reference Library
             for the bio; the Star-Telegram questionnaire, body re-read, for
-            her own words; the Secretary of State unofficial returns for the
+            her own words; the Secretary of State returns for the
             November 3 totals; The Texan for the election-night call. This is
             a research and reference article, not financial, investment, or
             legal advice.

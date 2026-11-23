@@ -18,7 +18,7 @@
 // when she takes the oath, and when she first speaks as comptroller
 // about the reserve or the custody award.
 
-export const ECKHARDT_LAST_VERIFIED = "November 22, 2026";
+export const ECKHARDT_LAST_VERIFIED = "November 23, 2026";
 
 export interface EckhardtSource {
   id: number;
@@ -137,9 +137,9 @@ export const eckhardtTimeline: EckhardtEvent[] = [
   {
     date: "2026-11-03",
     dateLabel: "November 3, 2026",
-    title: "The general — unofficial",
+    title: "The general",
     detail:
-      "Unofficial Secretary of State returns at 100% of polling locations reporting (November 4, 4:59 p.m.): Sarah Eckhardt (D) 5,014,496 (51.30%); Don Huffines (R) 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) 185,187 (1.89%); Shehla Faizi (G) 63,817 (0.65%). The Texan called the race election night. The returns are not certified. Huffines remains comptroller by appointment until the January 2027 term.",
+      "Secretary of State returns at 100% of polling locations reporting: Sarah Eckhardt (D) 5,014,496 (51.30%); Don Huffines (R) 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) 185,187 (1.89%); Shehla Faizi (G) 63,817 (0.65%). The Texan called the race election night; county canvasses are complete, with statewide certification due by December 7. Huffines remains comptroller by appointment until the January 2027 term.",
     kind: "watch",
     sourceIds: [7, 8, 9],
   },

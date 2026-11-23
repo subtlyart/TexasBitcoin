@@ -16,7 +16,7 @@
 // general (SD-5), when the 90th Legislature files reserve bills (from
 // November 9, 2026), and when the first SB 21 biennial report posts.
 
-export const SCHWERTNER_LAST_VERIFIED = "November 9, 2026";
+export const SCHWERTNER_LAST_VERIFIED = "November 23, 2026";
 
 export interface SchwertnerSource {
   id: number;
@@ -172,7 +172,7 @@ export const schwertnerTimeline: SchwertnerEvent[] = [
     dateLabel: "November 3, 2026",
     title: "The ballot",
     detail:
-      "Unofficial November 3 returns at 100% of polling locations reporting: Charles Schwertner (R) led Paul Thomasson (D) in Senate District 5, 197,912 (53.30%) to 173,380 (46.70%). The 90th Legislature convenes January 12, 2027; the election has not been certified.",
+      "On November 3, 2026, at 100% of polling locations reporting, Charles Schwertner (R) defeated Paul Thomasson (D) in Senate District 5, 197,912 (53.30%) to 173,380 (46.70%). The 90th Legislature convenes January 12, 2027; county canvasses are complete, with statewide certification due by December 7.",
     kind: "watch",
     sourceIds: [20, 24, 25],
   },

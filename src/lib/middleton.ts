@@ -19,7 +19,7 @@
 // Verified September 25, 2026. Re-verify after the November 3, 2026
 // general election and if he states a position on digital assets.
 
-export const MIDDLETON_LAST_VERIFIED = "November 9, 2026";
+export const MIDDLETON_LAST_VERIFIED = "November 23, 2026";
 
 export interface MiddletonSource {
   id: number;
@@ -178,7 +178,7 @@ export const middletonTimeline: MiddletonEvent[] = [
     dateLabel: "November 3, 2026",
     title: "The ballot",
     detail:
-      "Unofficial November 3 returns at 100% of polling locations reporting: Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). Paxton remains attorney general pending the January 2027 handover.",
+      "On November 3, 2026, at 100% of polling locations reporting, Nathan Johnson (D) defeated Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). County canvasses are complete, with statewide certification due by December 7. Paxton remains attorney general pending the January 2027 handover.",
     kind: "watch",
     sourceIds: [2, 37, 38],
   },
