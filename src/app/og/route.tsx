@@ -29,11 +29,22 @@ function titleFontSize(title: string): number {
   return 42;
 }
 
+function wingAccent(kicker: string): string {
+  const k = kicker.toLowerCase();
+  if (k.includes("law") || k.includes("policy") || k.includes("reserve")) return "#60a5fa";
+  if (k.includes("enforcement") || k.includes("case")) return "#f87171";
+  if (k.includes("grid") || k.includes("mining") || k.includes("ercot")) return "#34d399";
+  if (k.includes("history") || k.includes("place")) return "#d8b06a";
+  return "#f7931a";
+}
+
 export function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const rawTitle = (searchParams.get("title") ?? "").trim();
   const title = rawTitle.slice(0, 160);
   const kicker = (searchParams.get("kicker") ?? "").trim().slice(0, 48);
+  const stat = (searchParams.get("stat") ?? "").trim().slice(0, 48);
+  const accent = wingAccent(kicker);
 
   return new ImageResponse(
     (
@@ -62,21 +73,38 @@ export function GET(request: Request) {
         </svg>
 
         {/* Brand lockup */}
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <svg viewBox="0 0 24 24" width={36} height={36}>
-            <path d={STAR_PATH} fill="#f7931a" />
-          </svg>
-          <div
-            style={{
-              fontSize: 28,
-              fontWeight: 700,
-              letterSpacing: 6,
-              textTransform: "uppercase",
-              color: "#f7931a",
-            }}
-          >
-            TexasBitcoin
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+            <svg viewBox="0 0 24 24" width={36} height={36}>
+              <path d={STAR_PATH} fill={accent} />
+            </svg>
+            <div
+              style={{
+                fontSize: 28,
+                fontWeight: 700,
+                letterSpacing: 6,
+                textTransform: "uppercase",
+                color: accent,
+              }}
+            >
+              TexasBitcoin
+            </div>
           </div>
+          {stat ? (
+            <div
+              style={{
+                fontSize: 22,
+                fontWeight: 600,
+                color: "#f3eee3",
+                background: "rgba(255, 255, 255, 0.06)",
+                border: `1px solid ${accent}`,
+                borderRadius: 999,
+                padding: "8px 20px",
+              }}
+            >
+              {stat}
+            </div>
+          ) : null}
         </div>
 
         {/* Headline block */}
