@@ -19,7 +19,7 @@
 // Verified September 24, 2026. Re-verify if Hegar speaks on the reserve,
 // and after the November 3, 2026 comptroller election.
 
-export const HEGAR_LAST_VERIFIED = "November 9, 2026";
+export const HEGAR_LAST_VERIFIED = "November 23, 2026";
 
 export interface HegarSource {
   id: number;

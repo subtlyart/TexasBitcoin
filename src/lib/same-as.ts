@@ -29,6 +29,7 @@ export const SAME_AS: Record<string, string[]> = {
   "Glenn Hegar": ["https://en.wikipedia.org/wiki/Glenn_Hegar"],
   "Kelly Hancock": ["https://en.wikipedia.org/wiki/Kelly_Hancock"],
   "Don Huffines": ["https://en.wikipedia.org/wiki/Don_Huffines"],
+  "Sarah Eckhardt": ["https://en.wikipedia.org/wiki/Sarah_Eckhardt"],
   "Charles Schwertner": ["https://en.wikipedia.org/wiki/Charles_Schwertner"],
   "Mayes Middleton": ["https://en.wikipedia.org/wiki/Mayes_Middleton"],
   "Elon Musk": ["https://en.wikipedia.org/wiki/Elon_Musk"],

@@ -126,18 +126,59 @@ body {
   transform: rotate(45deg);
 }
 .prose-tx blockquote {
+  position: relative;
   border-left: 2px solid var(--accent);
-  padding-left: 1.1rem;
-  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  margin: 2.5rem 0;
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
   font-style: italic;
   color: color-mix(in srgb, var(--foreground) 92%, transparent);
+  color: #f3eee3;
+}
+/* A designed opening mark lifts the quote into a proper pull quote. */
+.prose-tx blockquote::before {
+  content: "\201C";
+  position: absolute;
+  left: 1.1rem;
+  top: -1.5rem;
+  font-size: 2.75rem;
+  line-height: 1;
+  font-style: normal;
+  color: color-mix(in srgb, var(--accent) 42%, transparent);
+  pointer-events: none;
 }
 .prose-tx sup a {
   text-decoration: none;
   font-size: 0.7em;
   padding: 0 1px;
+}
+
+/* A clicked citation jumps to its source — flash it so the eye lands. */
+.prose-tx li[id] {
+  border-radius: 6px;
+}
+.prose-tx li[id]:target {
+  animation: cite-flash 2s ease-out;
+}
+@keyframes cite-flash {
+  0%,
+  12% {
+    background: color-mix(in srgb, var(--accent) 20%, transparent);
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 20%, transparent);
+  }
+  100% {
+    background: transparent;
+    box-shadow: 0 0 0 6px transparent;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .prose-tx li[id]:target {
+    animation: none;
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 18%, transparent);
+  }
 }
 
 /* Mining map — pins bloom in as the timeline advances */

@@ -7,6 +7,7 @@ import { ogImages } from "@/lib/og";
 import { LAW_LAST_VERIFIED, lawMilestones, lawSources } from "@/lib/law-timeline";
 import { LawTimeline } from "@/components/law-timeline";
 import { SeamMark } from "@/components/seam-mark";
+import { ReadingProgress } from "@/components/reading-progress";
 
 export const metadata: Metadata = {
   title: "The Texas Bitcoin Law Timeline",
@@ -363,6 +364,7 @@ export default function LawTimelinePage() {
 
   return (
     <>
+      <ReadingProgress />
       {[articleJsonLd, faqJsonLd, breadcrumbJsonLd].map((schema, i) => (
         <script
           key={i}

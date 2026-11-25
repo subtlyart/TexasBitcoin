@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Who is the Texas Comptroller now?",
-    a: "Don Huffines, sworn in August 1, 2026 after Governor Abbott appointed him to the unexpired term of Kelly Hancock, who had served as acting comptroller since Glenn Hegar left for Texas A&M on July 1, 2025. Unofficial November 3 returns show Sarah Eckhardt leading Huffines for the full term beginning January 2027; he remains the appointed incumbent until the handover. Custody of the reserve passes with the office under SB 21.",
+    a: "Don Huffines, sworn in August 1, 2026 after Governor Abbott appointed him to the unexpired term of Kelly Hancock, who had served as acting comptroller since Glenn Hegar left for Texas A&M on July 1, 2025. On November 3, 2026 Sarah Eckhardt (D) defeated Huffines for the full term beginning January 2027 — county canvasses are complete, with statewide certification due by December 7, 2026; he remains the appointed incumbent until the handover. Custody of the reserve passes with the office under SB 21.",
   },
   {
     q: "Does Texas accept Bitcoin for taxes?",
@@ -161,7 +161,7 @@ export default function TexasComptrollerBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-30",
-    dateModified: "2026-11-19",
+    dateModified: "2026-11-23",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "GovernmentOrganization", name: "Texas Comptroller of Public Accounts" },
@@ -220,7 +220,7 @@ export default function TexasComptrollerBitcoinPage() {
             The Texas Comptroller and Bitcoin: The Office That Holds It
           </h1>
           <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
-            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Sarah Eckhardt (D) led Don Huffines (R) 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={33} />
+            <strong>November 3, 2026 general election.</strong> Sarah Eckhardt (D) defeated Don Huffines (R) 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%) (100% of polling locations reporting). County canvasses are complete; the statewide canvass that certifies the result runs November 21–December 7, 2026. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={33} />
           </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             Every other institution on this site regulates, studies, sues,
@@ -602,11 +602,11 @@ export default function TexasComptrollerBitcoinPage() {
 
           <h2>Where does the office stand today?</h2>
           <p>
-            As of November 19, 2026: $10 million in an ETF, a committee of
+            As of November 23, 2026: $10 million in an ETF, a committee of
             five, a custody solicitation closed since July with no
             award, a legal-tender clause for gold in force, the{" "}
             <Link href="/texas-bitcoin-reserve-report">first biennial report</Link>{" "}
-            due in six weeks, and unofficial returns showing Sarah Eckhardt ahead of the appointed comptroller Don Huffines for the January 2027 term.<C n={9} /><C n={10} /><C n={11} /><C n={22} /><C n={33} />
+            due in six weeks, and the November 3, 2026 election of Sarah Eckhardt over the appointed comptroller Don Huffines for the January 2027 term (statewide certification due by December 7).<C n={9} /><C n={10} /><C n={11} /><C n={22} /><C n={33} />
             The 90th Legislature convenes January 12, 2027 with the
             office&apos;s first report on its desk and the question the
             appropriation left open – whether $10 million was the seed or

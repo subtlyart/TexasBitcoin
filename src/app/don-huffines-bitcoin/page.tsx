@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "Was Don Huffines elected comptroller?",
-    a: "No. He holds the office by gubernatorial appointment to an unexpired term. Unofficial November 3 returns at 100% of polling locations reporting show Sarah Eckhardt leading him for the full term beginning January 2027. He remains the incumbent pending the handover; the first SB 21 reserve report is due December 31, 2026 under the sitting comptroller.",
+    a: "No. He holds the office by gubernatorial appointment to an unexpired term. On November 3, 2026, Sarah Eckhardt (D) defeated him for the full term beginning January 2027, at 100% of polling locations reporting; county canvasses are complete and the statewide canvass that certifies the result runs November 21–December 7, 2026. He remains the appointed incumbent pending the January 2027 handover; the first SB 21 reserve report is due December 31, 2026 under the sitting comptroller.",
   },
 ];
 
@@ -166,7 +166,7 @@ export default function DonHuffinesBitcoinPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-09-01",
-    dateModified: "2026-11-09",
+    dateModified: "2026-11-23",
     about: aboutGraph([
       { "@type": "Thing", name: "Bitcoin" },
       { "@type": "Person", name: "Don Huffines" },
@@ -224,7 +224,7 @@ export default function DonHuffinesBitcoinPage() {
             Don Huffines: The Citadel Candidate Gets the Keys
           </h1>
           <aside className="mt-5 rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-muted">
-            <strong>November 3, 2026 general election — unofficial returns.</strong> At 100% of polling locations reporting (November 4, 4:59 p.m.), Sarah Eckhardt (D) led Don Huffines (R) 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%). These are not certified results. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={21} />
+            <strong>November 3, 2026 general election.</strong> Sarah Eckhardt (D) defeated Don Huffines (R) 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%) (100% of polling locations reporting). County canvasses are complete; the statewide canvass that certifies the result runs November 21–December 7, 2026. <a href="https://electionresults.sos.state.tx.us/results.html" className="underline">Texas Secretary of State results</a>.<C n={21} />
           </aside>
           <p className="mt-5 text-lg leading-relaxed text-muted">
             In January 2022 a long-shot candidate for governor published a
@@ -295,8 +295,9 @@ export default function DonHuffinesBitcoinPage() {
               administration is due by December 31, 2026.<C n={5} />
             </li>
             <li>
-              Unofficial November 3 returns show Sarah Eckhardt ahead of Huffines
-              for the full term beginning January 2027. He remains in office
+              On November 3, 2026 Sarah Eckhardt defeated Huffines for the full
+              term beginning January 2027; county canvasses are complete, with
+              statewide certification due by December 7. He remains in office
               by appointment pending the handover.<C n={21} />
             </li>
           </ul>
@@ -495,10 +496,12 @@ export default function DonHuffinesBitcoinPage() {
 
           <h2>Where does the Huffines record stand today?</h2>
           <p>
-            As of October 26, 2026: nearly three months in office, zero public words
+            As of November 23, 2026: over three months in office, zero public words
             on the reserve, three clocks running. The custody award, overdue
-            against its own target, is the near one. Unofficial November 3 returns place Sarah Eckhardt ahead of Huffines
-            for the full term; the result has not been certified. December 31
+            against its own target, is the near one. On November 3, 2026{" "}
+            <Link href="/sarah-eckhardt-bitcoin">Sarah Eckhardt</Link> defeated Huffines
+            for the full term; county canvasses are complete, with final statewide
+            certification due by December 7, 2026. December 31
             is the statutory report, due under the sitting comptroller. The political authors of
             the reserve are chronicled in{" "}
             <Link href="/greg-abbott-bitcoin">Greg Abbott and Bitcoin</Link>{" "}

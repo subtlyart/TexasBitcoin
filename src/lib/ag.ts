@@ -23,7 +23,7 @@
 // election, when the office changes hands for the first time since 2015,
 // and if the E.D. Ky. case or the PUC records suit produces a ruling.
 
-export const AG_LAST_VERIFIED = "November 9, 2026";
+export const AG_LAST_VERIFIED = "November 23, 2026";
 
 export interface AgSource {
   id: number;
@@ -169,7 +169,7 @@ export const agTimeline: AgEvent[] = [
     dateLabel: "September → November 2026",
     title: "The handover",
     detail:
-      "The Attorney General is running for the U.S. Senate on a platform that added a crypto plank \"in recent months\" and names the CLARITY Act; his office's crypto record is unchanged by it. Unofficial November 3 returns at 100% of polling locations reporting: Nathan Johnson (D) led Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). Ken Paxton remains the incumbent pending the January 2027 handover; the Kentucky case and the PUC case pass to his successor.",
+      "The Attorney General is running for the U.S. Senate on a platform that added a crypto plank \"in recent months\" and names the CLARITY Act; his office's crypto record is unchanged by it. On November 3, 2026, at 100% of polling locations reporting, Nathan Johnson (D) defeated Mayes Middleton (R), 5,133,629 (52.38%) to 4,502,442 (45.94%); Tom Oxford (L) received 165,550 (1.69%). County canvasses are complete, with statewide certification due by December 7. Ken Paxton remains the incumbent pending the January 2027 handover; the Kentucky case and the PUC case pass to his successor.",
     kind: "watch",
     sourceIds: [29, 30, 31, 32, 33],
   },

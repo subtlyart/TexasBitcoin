@@ -12,11 +12,13 @@
 // The honest counterweight: since taking office he has said nothing about
 // it, and the custody window closed on his watch with no award.
 //
-// Verified October 26, 2026. Re-verify when the custodian is named, after
-// the November 3, 2026 general (Huffines vs. Eckhardt), and when the first
-// SB 21 biennial report posts (due by December 31, 2026).
+// Verified November 23, 2026. The November 3, 2026 general is settled: Eckhardt
+// defeated Huffines; county canvasses are complete, statewide certification due
+// by December 7, 2026. Re-verify when the custodian is named, when the statewide
+// canvass is certified, and when the first SB 21 biennial report posts (due by
+// December 31, 2026).
 
-export const HUFFINES_LAST_VERIFIED = "November 9, 2026";
+export const HUFFINES_LAST_VERIFIED = "November 23, 2026";
 
 export interface HuffinesSource {
   id: number;
@@ -151,8 +153,8 @@ export const huffinesTimeline: HuffinesEvent[] = [
     dateLabel: "November 3, 2026",
     title: "The general",
     detail:
-      "Unofficial November 3 returns at 100% of polling locations reporting: Sarah Eckhardt (D) led Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%). Huffines remains comptroller by appointment pending the January 2027 term; the reserve's manager lost the lead for a full term.",
-    kind: "watch",
+      "On November 3, 2026, at 100% of polling locations reporting, Sarah Eckhardt (D) defeated Don Huffines (R), 5,014,496 (51.30%) to 4,511,185 (46.15%); V. Alonzo Echavarria-Garza (L) received 185,187 (1.89%) and Shehla Faizi (G) 63,817 (0.65%). County canvasses are complete; statewide certification is due by December 7, 2026. Huffines remains comptroller by appointment pending the January 2027 term; the reserve's manager lost the office he was appointed to run.",
+    kind: "office",
     sourceIds: [19, 20, 21],
   },
   {

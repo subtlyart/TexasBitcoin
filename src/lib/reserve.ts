@@ -8,7 +8,7 @@
 // Re-verify whenever the Comptroller acts, reports, or names the fifth committee
 // member — and bump RESERVE_LAST_VERIFIED and the page's dateModified together.
 
-export const RESERVE_LAST_VERIFIED = "November 19, 2026";
+export const RESERVE_LAST_VERIFIED = "November 23, 2026";
 
 export interface ReserveSource {
   id: number;

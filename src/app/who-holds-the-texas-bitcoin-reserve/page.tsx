@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "Who legally controls the Texas Strategic Bitcoin Reserve?",
-    a: "The Texas Comptroller of Public Accounts manages the reserve as a dedicated fund (Fund 1018) held outside the state treasury, guided by a five-member advisory committee the Comptroller chairs. Since August 1, 2026 that Comptroller is Don Huffines, appointed after Kelly Hancock resigned — but he holds the office only to the unexpired term. Unofficial November 3, 2026 returns at 100% of polling locations reporting show Sarah Eckhardt leading him 51.30% to 46.15% for the full term beginning January 2027, so custody of the reserve, the open procurement, and the committee chairmanship all change hands unless certified results reverse the count. The custody procurement runs through the Comptroller on behalf of the Texas Treasury Safekeeping Trust Company, the state's investment arm.",
+    a: "The Texas Comptroller of Public Accounts manages the reserve as a dedicated fund (Fund 1018) held outside the state treasury, guided by a five-member advisory committee the Comptroller chairs. Since August 1, 2026 that Comptroller is Don Huffines, appointed after Kelly Hancock resigned — but he holds the office only to the unexpired term. On November 3, 2026, at 100% of polling locations reporting, Sarah Eckhardt (D) defeated him 51.30% to 46.15% for the full term beginning January 2027, so custody of the reserve, the open procurement, and the committee chairmanship all change hands in January 2027; county canvasses are complete, with final statewide certification due by December 7, 2026. The custody procurement runs through the Comptroller on behalf of the Texas Treasury Safekeeping Trust Company, the state's investment arm.",
   },
   {
     q: "How will the public see what the reserve holds?",
@@ -305,7 +305,7 @@ export default function CustodyPage() {
     publisher: { "@type": "Organization", name: site.name, url: site.url, logo: { "@type": "ImageObject", url: site.logo } },
     mainEntityOfPage: pageUrl,
     datePublished: "2026-08-30",
-    dateModified: "2026-11-19",
+    dateModified: "2026-11-23",
   };
 
   const faqJsonLd = {
@@ -371,11 +371,11 @@ export default function CustodyPage() {
             Who holds the Texas Bitcoin reserve?
           </h1>
           <p className="mt-4 text-sm leading-relaxed text-muted-2">
-            <strong>November 3, 2026 general election — unofficial returns.</strong>{" "}
-            At 100% of polling locations reporting (November 4, 4:59 p.m.),
-            Sarah Eckhardt (D) led Don Huffines (R) for comptroller 5,014,496
-            (51.30%) to 4,511,185 (46.15%). These are not certified results,
-            but unless certification reverses them the office — and with it
+            <strong>November 3, 2026 general election.</strong>{" "}
+            <Link href="/sarah-eckhardt-bitcoin">Sarah Eckhardt</Link> (D) defeated Don Huffines (R) for comptroller 5,014,496
+            (51.30%) to 4,511,185 (46.15%), at 100% of polling locations reporting.
+            County canvasses are complete; the statewide canvass that certifies
+            the result runs November 21–December 7, 2026. With it the office — and
             custody of the reserve, the open procurement, and the advisory
             committee chairmanship — changes hands in January 2027.{" "}
             <a

@@ -28,18 +28,22 @@ source. Where the record cuts against the thesis, the page says so (the
 
 ## What's on the site
 
-Roughly 65 routes, organised into wings:
+Around 80 routes (77 standalone pages plus the homepage, the hidden `/the-seam`,
+and the case tracker's generated per-case and per-district pages), organised
+into wings:
 
 | Wing | Pages |
 |---|---|
-| **History** | `/history-of-bitcoin-in-texas` (cornerstone), `/texas-crypto-archive`, `/early-bitcoin-merchants-texas`, `/central-texas-gun-works-bitcoin`, `/rockdale-texas-bitcoin`, `/ross-ulbricht-silk-road-bitcoin` |
-| **Law & policy** | `/what-texas-law-says-about-bitcoin`, `/texas-bitcoin-law-timeline`, `/texas-strategic-bitcoin-reserve`, `/who-holds-the-texas-bitcoin-reserve`, `/texas-gold-vs-bitcoin`, `/texas-bitcoin-bills-that-died`, `/texas-bitcoin-bills-2027`, `/bitcoin-estate-planning-texas` |
-| **Enforcement** | `/texas-bitcoin-case-tracker` (+ per-case and per-district pages), `/texas-crypto-enforcement-report` |
-| **The grid** | `/bitcoin-mining-ercot`, `/bitcoin-mining-map-texas`, `/texas-bitcoin-miners-ai-pivot`, `/elon-musk-bitcoin-energy` |
-| **People – office** | `/greg-abbott-bitcoin`, `/dan-patrick-bitcoin`, `/ted-cruz-bitcoin`, `/kelly-hancock-bitcoin`, `/don-huffines-bitcoin`, `/glenn-hegar-bitcoin` |
+| **History & places** | `/history-of-bitcoin-in-texas` (cornerstone), `/texas-crypto-archive`, `/early-bitcoin-merchants-texas`, `/central-texas-gun-works-bitcoin`, `/rockdale-texas-bitcoin`, `/fort-worth-bitcoin`, `/ross-ulbricht-silk-road-bitcoin` |
+| **Law & policy** | `/what-texas-law-says-about-bitcoin`, `/texas-bitcoin-law-timeline`, `/texas-strategic-bitcoin-reserve`, `/texas-bitcoin-reserve-game-theory`, `/who-holds-the-texas-bitcoin-reserve`, `/texas-bitcoin-reserve-report`, `/texas-gold-vs-bitcoin`, `/texas-bitcoin-bills-that-died`, `/texas-bitcoin-bills-2027`, `/bitcoin-estate-planning-texas` |
+| **Enforcement** | `/texas-bitcoin-case-tracker` (+ per-case and per-district pages), `/texas-crypto-enforcement-report`, `/texas-crypto-kiosk-scams` |
+| **The grid** | `/bitcoin-mining-ercot`, `/bitcoin-mining-map-texas`, `/bitcoin-mining-calculator-texas`, `/texas-bitcoin-miners-ai-pivot`, `/elon-musk-bitcoin-energy`, `/did-bitcoin-mining-cause-the-2021-blackout`, `/rented-hashrate-cloud-mining`, `/bitcoin-energy-engineering-texas` |
+| **Base layer & frontier** | `/run-a-bitcoin-node-texas`, `/bitcoin-frontier-stack-texas` |
+| **People – office** | `/greg-abbott-bitcoin`, `/dan-patrick-bitcoin`, `/ted-cruz-bitcoin`, `/kelly-hancock-bitcoin`, `/don-huffines-bitcoin`, `/sarah-eckhardt-bitcoin`, `/glenn-hegar-bitcoin` |
 | **People – Legislature** | `/charles-schwertner-bitcoin`, `/angela-paxton-bitcoin`, `/giovanni-capriglione-bitcoin`, `/ken-king-bitcoin`, `/phil-king-bitcoin`, `/lois-kolkhorst-bitcoin`, `/mayes-middleton-bitcoin`, `/nathan-johnson-bitcoin`, `/tan-parker-bitcoin` |
-| **Institutions** | `/texas-comptroller-bitcoin`, `/texas-attorney-general-bitcoin`, `/texas-department-of-banking-bitcoin`, `/texas-state-securities-board-bitcoin`, `/texas-public-utility-commission-bitcoin`, `/ercot-bitcoin`, `/texas-blockchain-council` · companies: `/riot-platforms-bitcoin`, `/mara-holdings-bitcoin`, `/core-scientific-bitcoin`, `/cipher-mining-bitcoin`, `/bitdeer-bitcoin`, `/lancium-bitcoin` |
-| **Builders & culture** | `/jimmy-song-bitcoin`, `/lee-bratcher-bitcoin`, `/parker-lewis-bitcoin`, `/karin-kusano-bitcoin`, `/satoshi-nakamoto-institute`, `/doctor-bitcoin`, `/doctor-bitcoin-interviews`, `/events`, `/invest-in-texas-bitcoin`, `/texas-bitcoin-resources` |
+| **Institutions** | `/texas-comptroller-bitcoin`, `/texas-attorney-general-bitcoin`, `/texas-department-of-banking-bitcoin`, `/texas-state-securities-board-bitcoin`, `/texas-public-utility-commission-bitcoin`, `/ercot-bitcoin`, `/texas-blockchain-council` · companies: `/riot-platforms-bitcoin`, `/mara-holdings-bitcoin`, `/core-scientific-bitcoin`, `/cipher-mining-bitcoin`, `/bitdeer-bitcoin`, `/lancium-bitcoin`, `/galaxy-digital-bitcoin`, `/hut-8-bitcoin` |
+| **Builders & culture** | `/jimmy-song-bitcoin`, `/lee-bratcher-bitcoin`, `/parker-lewis-bitcoin`, `/pierre-rochard-bitcoin`, `/karin-kusano-bitcoin`, `/satoshi-nakamoto-institute`, `/doctor-bitcoin`, `/doctor-bitcoin-interviews`, `/events`, `/invest-in-texas-bitcoin`, `/texas-bitcoin-resources` |
+| **Reference & entry** | `/start-here`, `/texas-bitcoin-glossary` |
 | **Trust layer** | `/about` (editorial standards), `/disclaimer` |
 
 Header nav is deliberately minimal (History, Events). The mining and law
@@ -47,7 +51,7 @@ verticals are reachable from body copy, not the nav – see `SEAM.md`.
 
 ### Figures
 
-Twenty-two pages carry original SVG figures – around 70 in total – drawn from the
+Forty-eight pages carry original SVG figures – around 120 in total – drawn from the
 same data files that drive the prose (`src/lib/*.ts`). They are theme-aware,
 animate only where `prefers-reduced-motion` allows, and are built as chapter
 illustrations rather than decoration.
@@ -115,9 +119,15 @@ ELECTION-2026.md               # Nov 3 / Dec 31 same-day update playbook, intern
 ## Watchlist
 
 - SB 21 reserve: custodian award (RFP 908-26-1778WS closed July 10; late-August
-  execution target missed, no award as of September 29), then the first
-  statutory report (31 Dec). Stamps live in `src/lib/custody.ts`, `reserve.ts`,
-  `hancock.ts`, `huffines.ts`.
-- November 3 general election – candidates tracked on the people pages;
-  the same-day edit is staged in `ELECTION-2026.md`.
-- 2027 session bills – `/texas-bitcoin-bills-2027`.
+  execution target missed, no award as of the November 23 re-verify), then the
+  first statutory report (due 31 Dec). Stamps live in `src/lib/custody.ts`,
+  `reserve.ts`, `hancock.ts`, `huffines.ts`.
+- November 3, 2026 general election – **results published**: the people pages
+  state Eckhardt defeated Huffines (comptroller), Johnson defeated Middleton
+  (AG), and the tracked incumbents (Schwertner, Kolkhorst, Ken King) were
+  re-elected; Mizani took Capriglione's HD-98. County canvasses are complete;
+  the pages note that final statewide certification (the Governor's canvass,
+  November 21 – December 7, 2026) is still pending. **Next:** once the canvass
+  is certified, drop the "certification pending" caveats and cite the official
+  canvass, per `ELECTION-2026.md`.
+- 2027 session bills – `/texas-bitcoin-bills-2027`; pre-filing opened November 9.

@@ -19,7 +19,7 @@
 // general (SD-18) and when the 90th Legislature files large-load and
 // mining bills (from November 9, 2026).
 
-export const KOLKHORST_LAST_VERIFIED = "November 9, 2026";
+export const KOLKHORST_LAST_VERIFIED = "November 23, 2026";
 
 export interface KolkhorstSource {
   id: number;
@@ -176,7 +176,7 @@ export const kolkhorstTimeline: KolkhorstEvent[] = [
     dateLabel: "November 3, 2026",
     title: "The ballot",
     detail:
-      "Unofficial November 3 returns at 100% of polling locations reporting: Lois Kolkhorst (R) led Erica Gillum (D) in Senate District 18, 196,125 (54.30%) to 165,093 (45.70%). The 90th Legislature convenes January 12, 2027 with the large-load question reopened by AI data centers; the election has not been certified.",
+      "On November 3, 2026, at 100% of polling locations reporting, Lois Kolkhorst (R) defeated Erica Gillum (D) in Senate District 18, 196,125 (54.30%) to 165,093 (45.70%). The 90th Legislature convenes January 12, 2027 with the large-load question reopened by AI data centers; county canvasses are complete, with statewide certification due by December 7.",
     kind: "after",
     sourceIds: [24, 1, 25, 26],
   },
