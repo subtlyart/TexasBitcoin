@@ -14,10 +14,11 @@ import type { Metadata } from "next";
  */
 export function ogImages(
   title: string,
-  opts: { kicker?: string } = {}
+  opts: { kicker?: string; stat?: string } = {}
 ): NonNullable<NonNullable<Metadata["openGraph"]>["images"]> {
   const params = new URLSearchParams({ title });
   if (opts.kicker) params.set("kicker", opts.kicker);
+  if (opts.stat) params.set("stat", opts.stat);
   return [
     {
       url: `/og?${params.toString()}`,
