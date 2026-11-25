@@ -8,6 +8,8 @@ import { LAW_LAST_VERIFIED, lawMilestones, lawSources } from "@/lib/law-timeline
 import { LawTimeline } from "@/components/law-timeline";
 import { SeamMark } from "@/components/seam-mark";
 import { ReadingProgress } from "@/components/reading-progress";
+import { ReadingRail } from "@/components/reading-rail";
+import { MobileReadingBar } from "@/components/mobile-reading-bar";
 
 export const metadata: Metadata = {
   title: "The Texas Bitcoin Law Timeline",
@@ -15,7 +17,10 @@ export const metadata: Metadata = {
     "The interactive timeline of Bitcoin law in Texas — from the 2014 'not money' memo to the 2025 Strategic Bitcoin Reserve, every bill and memo verified.",
   alternates: { canonical: `${site.url}/texas-bitcoin-law-timeline` },
   openGraph: {
-    images: ogImages("The Texas Bitcoin Law Timeline"),
+    images: ogImages("The Texas Bitcoin Law Timeline", {
+      kicker: "Law & policy",
+      stat: "2014 – 2026",
+    }),
     type: "article",
     title: "The Texas Bitcoin Law Timeline",
     description:
@@ -373,7 +378,9 @@ export default function LawTimelinePage() {
         />
       ))}
 
-      <article className="mx-auto max-w-4xl px-5 py-16">
+      <div className="mx-auto max-w-6xl px-5 py-16 xl:grid xl:grid-cols-[minmax(0,1fr)_220px] xl:gap-12">
+        <article className="mx-auto w-full max-w-4xl">
+          <MobileReadingBar />
         <nav className="text-xs text-muted-2">
           <Link href="/" className="hover:text-accent-soft">
             Home
@@ -712,6 +719,8 @@ export default function LawTimelinePage() {
           </ol>
         </section>
       </article>
+      <ReadingRail wing="Law & policy" />
+      </div>
     </>
   );
 }

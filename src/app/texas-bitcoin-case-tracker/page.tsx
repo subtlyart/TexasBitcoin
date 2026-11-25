@@ -22,7 +22,10 @@ export const metadata: Metadata = {
   description: `Every federal § 1960 and crypto prosecution in Texas's four federal districts — ${trackerStats.case_count} cases from public DOJ releases, updated nightly.`,
   alternates: { canonical: pageUrl },
   openGraph: {
-    images: ogImages("Texas Bitcoin Case Tracker"),
+    images: ogImages("Texas Bitcoin Case Tracker", {
+      kicker: "Enforcement",
+      stat: `${trackerStats.case_count} Federal Cases`,
+    }),
     type: "article",
     title: "Texas Bitcoin Case Tracker",
     description: `Every federal § 1960 and crypto prosecution in Texas on one filterable page — ${trackerStats.case_count} cases across all four federal districts, sourced to the DOJ record and updated nightly.`,
