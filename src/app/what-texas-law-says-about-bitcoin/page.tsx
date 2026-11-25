@@ -4,6 +4,8 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
+import { ReadingRail } from "@/components/reading-rail";
+import { MobileReadingBar } from "@/components/mobile-reading-bar";
 
 const pageUrl = `${site.url}/what-texas-law-says-about-bitcoin`;
 
@@ -16,7 +18,10 @@ export const metadata: Metadata = {
     "Is Bitcoin legal in Texas? Yes — to buy, sell, hold, and mine, with no state license to sell your own coin. What the statutes and the § 1960 seam say.",
   alternates: { canonical: pageUrl },
   openGraph: {
-    images: ogImages("What Texas Law Actually Says About Bitcoin"),
+    images: ogImages("What Texas Law Actually Says About Bitcoin", {
+      kicker: "Law & policy",
+      stat: "Memo 1037 · § 1960",
+    }),
     type: "article",
     title: "What Texas Law Actually Says About Bitcoin",
     description:
@@ -347,7 +352,9 @@ export default function TexasLawPage() {
         />
       ))}
 
-      <article className="mx-auto max-w-4xl px-5 py-16">
+      <div className="mx-auto max-w-6xl px-5 py-16 xl:grid xl:grid-cols-[minmax(0,1fr)_220px] xl:gap-12">
+        <article className="mx-auto w-full max-w-4xl">
+          <MobileReadingBar />
         <nav className="text-xs text-muted-2">
           <Link href="/" className="hover:text-accent-soft">
             Home
@@ -589,6 +596,8 @@ export default function TexasLawPage() {
           </ol>
         </section>
       </article>
+      <ReadingRail wing="Law & policy" />
+      </div>
     </>
   );
 }

@@ -5,6 +5,8 @@ import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { ReadingProgress } from "@/components/reading-progress";
+import { ReadingRail } from "@/components/reading-rail";
+import { MobileReadingBar } from "@/components/mobile-reading-bar";
 
 export const metadata: Metadata = {
   title: "The History of Bitcoin in Texas",
@@ -12,7 +14,10 @@ export const metadata: Metadata = {
     "How a 2014 banking memo, China's mining ban, an idled aluminum smelter, and a 2025 state reserve made Texas the capital of Bitcoin — sourced.",
   alternates: { canonical: `${site.url}/history-of-bitcoin-in-texas` },
   openGraph: {
-    images: ogImages("The History of Bitcoin in Texas"),
+    images: ogImages("The History of Bitcoin in Texas", {
+      kicker: "History & places",
+      stat: "2014 → 2025",
+    }),
     type: "article",
     title: "The History of Bitcoin in Texas",
     description:
@@ -379,7 +384,9 @@ export default function HistoryPage() {
         dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbJsonLd) }}
       />
 
-      <article className="mx-auto max-w-3xl px-5 py-16">
+      <div className="mx-auto max-w-6xl px-5 py-16 xl:grid xl:grid-cols-[minmax(0,1fr)_220px] xl:gap-12">
+        <article className="mx-auto w-full max-w-4xl">
+          <MobileReadingBar />
         <nav className="text-xs text-muted-2">
           <Link href="/" className="hover:text-accent-soft">
             Home
@@ -851,6 +858,8 @@ export default function HistoryPage() {
           </ol>
         </div>
       </article>
+      <ReadingRail wing="History & places" />
+      </div>
     </>
   );
 }
