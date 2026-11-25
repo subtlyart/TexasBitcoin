@@ -4,6 +4,8 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
+import { ReadingRail } from "@/components/reading-rail";
+import { MobileReadingBar } from "@/components/mobile-reading-bar";
 
 // DISCRETION: sitemap-only, like the Exposure Map. Indexed and in llms.txt,
 // but no inbound links from the shell or sibling pages — this page builds
@@ -133,7 +135,9 @@ export default function ErcotMiningPage() {
         />
       ))}
 
-      <article className="mx-auto max-w-4xl px-5 py-16">
+      <div className="mx-auto max-w-6xl px-5 py-16 xl:grid xl:grid-cols-[minmax(0,1fr)_220px] xl:gap-12">
+        <article className="mx-auto w-full max-w-4xl">
+          <MobileReadingBar />
         <nav className="text-xs text-muted-2">
           <Link href="/" className="hover:text-accent-soft">
             Home
@@ -402,6 +406,8 @@ export default function ErcotMiningPage() {
           </ol>
         </section>
       </article>
+      <ReadingRail wing="The grid" />
+      </div>
     </>
   );
 }

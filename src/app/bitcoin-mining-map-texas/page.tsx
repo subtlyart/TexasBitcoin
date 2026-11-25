@@ -4,6 +4,8 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
+import { ReadingRail } from "@/components/reading-rail";
+import { MobileReadingBar } from "@/components/mobile-reading-bar";
 import {
   MAP_LAST_VERIFIED,
   STATUS_LABELS,
@@ -20,7 +22,10 @@ export const metadata: Metadata = {
     "The interactive, sourced map of industrial Bitcoin mining in Texas — Riot Rockdale, Corsicana, MARA Granbury, and the West Texas sites now turning to AI.",
   alternates: { canonical: `${site.url}/bitcoin-mining-map-texas` },
   openGraph: {
-    images: ogImages("Texas Bitcoin Mining Map"),
+    images: ogImages("Texas Bitcoin Mining Map", {
+      kicker: "The grid",
+      stat: "Rockdale · Granbury",
+    }),
     type: "article",
     title: "Texas Bitcoin Mining Map",
     description:
@@ -362,7 +367,9 @@ export default function MiningMapPage() {
         )
       )}
 
-      <article className="mx-auto max-w-4xl px-5 py-16">
+      <div className="mx-auto max-w-6xl px-5 py-16 xl:grid xl:grid-cols-[minmax(0,1fr)_220px] xl:gap-12">
+        <article className="mx-auto w-full max-w-4xl">
+          <MobileReadingBar />
         <nav className="text-xs text-muted-2">
           <Link href="/" className="hover:text-accent-soft">
             Home
@@ -703,6 +710,8 @@ export default function MiningMapPage() {
           </ol>
         </section>
       </article>
+      <ReadingRail wing="The grid" />
+      </div>
     </>
   );
 }
