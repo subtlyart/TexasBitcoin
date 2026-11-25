@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Printer } from "lucide-react";
 import { siteIndex } from "@/lib/site-index";
 
 interface HeadingItem {
@@ -99,6 +100,17 @@ export function ReadingRail({ wing }: { wing?: string }) {
             </ul>
           </div>
         )}
+
+        <div className="pt-2">
+          <button
+            type="button"
+            onClick={() => window.print()}
+            className="inline-flex items-center gap-1.5 rounded-md border border-border bg-surface px-2.5 py-1.5 text-[11px] text-muted transition-colors hover:bg-surface-2 hover:text-foreground"
+          >
+            <Printer className="h-3.5 w-3.5" />
+            Print / Save PDF
+          </button>
+        </div>
       </div>
     </aside>
   );

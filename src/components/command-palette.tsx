@@ -5,9 +5,24 @@ import { useRouter } from "next/navigation";
 import { Search, X } from "lucide-react";
 import { siteIndex, type SiteIndexEntry } from "@/lib/site-index";
 
+const WINGS = [
+  "All",
+  "History & places",
+  "Law & policy",
+  "Enforcement",
+  "The grid",
+  "Base layer & frontier",
+  "People — office",
+  "People — Legislature",
+  "Institutions",
+  "Builders & culture",
+  "Reference",
+];
+
 export function CommandPalette() {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
+  const [wingFilter, setWingFilter] = useState("All");
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
@@ -45,14 +60,18 @@ export function CommandPalette() {
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return siteIndex.slice(0, 12);
-    return siteIndex
+    const pool =
+      wingFilter === "All"
+        ? siteIndex
+        : siteIndex.filter((item) => item.wing === wingFilter);
+    if (!q) return pool.slice(0, 14);
+    return pool
       .filter((item) => {
         const hay = `${item.title} ${item.wing} ${item.keywords ?? ""}`.toLowerCase();
         return hay.includes(q);
       })
       .slice(0, 14);
-  }, [query]);
+  }, [query, wingFilter]);
 
   function navigate(entry: SiteIndexEntry) {
     setOpen(false);
@@ -121,6 +140,26 @@ export function CommandPalette() {
               >
                 <X className="h-4 w-4" />
               </button>
+            </div>
+
+            <div className="flex gap-1.5 overflow-x-auto border-b border-border px-3 py-2">
+              {WINGS.map((w) => (
+                <button
+                  key={w}
+                  type="button"
+                  onClick={() => {
+                    setWingFilter(w);
+                    setActive(0);
+                  }}
+                  className={`shrink-0 rounded-full px-2.5 py-1 text-[11px] font-medium transition-colors ${
+                    wingFilter === w
+                      ? "bg-accent text-[#1a1206]"
+                      : "bg-surface-2 text-muted hover:text-foreground"
+                  }`}
+                >
+                  {w}
+                </button>
+              ))}
             </div>
 
             <div className="max-h-80 overflow-y-auto p-1.5">
