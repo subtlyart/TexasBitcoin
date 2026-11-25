@@ -17,7 +17,10 @@ export const metadata: Metadata = {
     "How ERCOT actually treats Bitcoin miners — the energy-only market, demand response and ancillary services, 4CP, the Large Flexible Load rules, SB 6's kill switch, and the honest fights over it. The market companion to the Texas mining map.",
   alternates: { canonical: pageUrl },
   openGraph: {
-    images: ogImages("Bitcoin Mining and ERCOT: How the Texas Grid Treats Miners"),
+    images: ogImages("Bitcoin Mining and ERCOT: How the Texas Grid Treats Miners", {
+      kicker: "The grid",
+      stat: "54B kWh LFL · SB 6",
+    }),
     type: "article",
     title: "Bitcoin Mining and ERCOT: How the Texas Grid Treats Miners",
     description:
