@@ -4,6 +4,7 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
+import { ReadingRail } from "@/components/reading-rail";
 import {
   RESERVE_LAST_VERIFIED,
   reserveSources,
@@ -19,7 +20,10 @@ export const metadata: Metadata = {
     "How the Texas Strategic Bitcoin Reserve works and where it stands — SB 21, the $10M appropriation, the $500B floor, and the road to direct custody.",
   alternates: { canonical: pageUrl },
   openGraph: {
-    images: ogImages("The Texas Strategic Bitcoin Reserve"),
+    images: ogImages("The Texas Strategic Bitcoin Reserve", {
+      kicker: "Law & policy",
+      stat: "SB 21 · $10M",
+    }),
     type: "article",
     title: "The Texas Strategic Bitcoin Reserve",
     description:
@@ -358,7 +362,8 @@ export default function ReservePage() {
         />
       ))}
 
-      <article className="mx-auto max-w-4xl px-5 py-16">
+      <div className="mx-auto max-w-6xl px-5 py-16 xl:grid xl:grid-cols-[minmax(0,1fr)_220px] xl:gap-12">
+        <article className="mx-auto w-full max-w-4xl">
         <nav className="text-xs text-muted-2">
           <Link href="/" className="hover:text-accent-soft">
             Home
@@ -762,6 +767,8 @@ export default function ReservePage() {
           </ol>
         </section>
       </article>
+      <ReadingRail wing="Law & policy" />
+      </div>
     </>
   );
 }
