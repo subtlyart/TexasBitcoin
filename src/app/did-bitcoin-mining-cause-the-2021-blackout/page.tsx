@@ -4,6 +4,8 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
+import { ReadingRail } from "@/components/reading-rail";
+import { MobileReadingBar } from "@/components/mobile-reading-bar";
 
 const pageUrl = `${site.url}/did-bitcoin-mining-cause-the-2021-blackout`;
 
@@ -13,7 +15,10 @@ export const metadata: Metadata = {
     "No. Winter Storm Uri was February 2021. FERC and NERC attributed the outages to frozen generation and fuel, and ERCOT shed 20,000 MW. The industrial Texas mining fleet mostly came online after. A $175,000-an-hour Bitdeer figure is from an April 9, 2023 New York Times article and is not assigned to Uri here.",
   alternates: { canonical: pageUrl },
   openGraph: {
-    images: ogImages("Did Bitcoin Mining Cause the 2021 Blackout?"),
+    images: ogImages("Did Bitcoin Mining Cause the 2021 Blackout?", {
+      kicker: "The grid",
+      stat: "Feb 2021 · 20,000 MW",
+    }),
     type: "article",
     title: "Did Bitcoin Mining Cause the 2021 Blackout?",
     description:
@@ -169,7 +174,9 @@ export default function UriPage() {
         />
       ))}
 
-      <article className="mx-auto max-w-3xl px-5 py-16">
+      <div className="mx-auto max-w-6xl px-5 py-16 xl:grid xl:grid-cols-[minmax(0,1fr)_220px] xl:gap-12">
+        <article className="mx-auto w-full max-w-4xl">
+          <MobileReadingBar />
         <nav className="text-xs text-muted-2">
           <Link href="/" className="hover:text-accent-soft">
             Home
@@ -415,6 +422,8 @@ export default function UriPage() {
           </ol>
         </div>
       </article>
+      <ReadingRail wing="The grid" />
+      </div>
     </>
   );
 }

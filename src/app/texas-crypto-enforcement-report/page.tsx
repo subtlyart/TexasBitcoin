@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { ogImages } from "@/lib/og";
+import { ReadingRail } from "@/components/reading-rail";
+import { MobileReadingBar } from "@/components/mobile-reading-bar";
 import {
   enforcementReport as r,
   formatUsd,
@@ -19,7 +21,10 @@ export const metadata: Metadata = {
   description: `What ${r.caseCount} DOJ cases say about federal crypto enforcement in Texas: the acceleration from ${r.firstYear} to a ${r.peakYear.year} peak of ${r.peakYear.cases} announced cases, ${formatUsd(r.totalForfeituresUsd)} in announced forfeitures, the money-laundering and unlicensed-transmission core, and which of the four federal districts carries the docket. Computed from the case tracker's dataset on every refresh.`,
   alternates: { canonical: pageUrl },
   openGraph: {
-    images: ogImages("The Enforcement Ledger: Crypto Prosecutions in Texas"),
+    images: ogImages("The Enforcement Ledger: Crypto Prosecutions in Texas", {
+      kicker: "Enforcement",
+      stat: `${r.caseCount} DOJ Cases`,
+    }),
     type: "article",
     title: "The Enforcement Ledger: Crypto Prosecutions in Texas",
     description:
@@ -386,7 +391,9 @@ export default function EnforcementReportPage() {
         />
       ))}
 
-      <article className="mx-auto max-w-4xl px-5 py-16">
+      <div className="mx-auto max-w-6xl px-5 py-16 xl:grid xl:grid-cols-[minmax(0,1fr)_220px] xl:gap-12">
+        <article className="mx-auto w-full max-w-4xl">
+          <MobileReadingBar />
         <nav className="text-xs text-muted-2">
           <Link href="/" className="hover:text-accent-soft">
             Home
@@ -706,6 +713,8 @@ export default function EnforcementReportPage() {
           </ol>
         </section>
       </article>
+      <ReadingRail wing="Enforcement" />
+      </div>
     </>
   );
 }
