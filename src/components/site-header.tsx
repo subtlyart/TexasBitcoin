@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { nav } from "@/lib/site";
 import { LoneStar } from "./lone-star";
+import { CommandPalette } from "./command-palette";
+import { ThemeToggle } from "./theme-toggle";
 
 export function SiteHeader() {
   return (
@@ -22,6 +24,10 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
+          <div className="ml-1 flex items-center gap-1 border-l border-border pl-2">
+            <CommandPalette />
+            <ThemeToggle />
+          </div>
         </nav>
       </div>
     </header>

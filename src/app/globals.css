@@ -13,6 +13,19 @@
   --star: #d8b06a;
 }
 
+html[data-theme="light"] {
+  --background: #faf7f0;
+  --surface: #f2ede2;
+  --surface-2: #e8e1d3;
+  --foreground: #171410;
+  --muted: #5c5448;
+  --muted-2: #847a6a;
+  --border: #dfd7c8;
+  --accent: #c96a00;
+  --accent-soft: #a85500;
+  --star: #9a7228;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-surface: var(--surface);
@@ -61,7 +74,7 @@ body {
 }
 .prose-tx p {
   margin: 1.15rem 0;
-  color: #e4dfd3;
+  color: color-mix(in srgb, var(--foreground) 88%, transparent);
 }
 .prose-tx h2 {
   font-family: var(--font-display);
@@ -88,7 +101,7 @@ body {
   text-decoration-color: var(--accent);
 }
 .prose-tx strong {
-  color: #fbf7ee;
+  color: var(--foreground);
   font-weight: 600;
 }
 .prose-tx ul {
@@ -100,7 +113,7 @@ body {
   position: relative;
   padding-left: 1.1rem;
   margin: 0.5rem 0;
-  color: #e4dfd3;
+  color: color-mix(in srgb, var(--foreground) 88%, transparent);
 }
 .prose-tx ul li::before {
   content: "";
@@ -119,7 +132,7 @@ body {
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-style: italic;
-  color: #efe9dc;
+  color: color-mix(in srgb, var(--foreground) 92%, transparent);
 }
 .prose-tx sup a {
   text-decoration: none;
@@ -153,5 +166,31 @@ body {
   }
   .mining-pin-halo {
     animation: none;
+  }
+}
+
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+  .prose-tx p,
+  .prose-tx ul li,
+  .prose-tx blockquote,
+  .prose-tx h2,
+  .prose-tx h3 {
+    color: #111111 !important;
+  }
+  .prose-tx a {
+    color: #111111 !important;
+    text-decoration: underline;
+  }
+  svg {
+    break-inside: avoid;
   }
 }
