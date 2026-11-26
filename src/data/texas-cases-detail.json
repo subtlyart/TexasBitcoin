@@ -1,6 +1,331 @@
 {
-  "generated_at": "2026-11-09T23:05:00Z",
+  "generated_at": "2026-11-26T09:17:14Z",
   "cases": {
+    "93a6010b-7c95-4b6c-9856-5e7b62cbeaad": {
+      "metadata": {
+        "district_office": "Northern District of Texas",
+        "usa_name": "Ryan Raybould",
+        "event_type": "indictment",
+        "judge_name": null,
+        "judge_title": null,
+        "case_number": null,
+        "max_penalty_text": "a maximum of 20 years in federal prison each count of wire fraud and concealment money laundering. Weeks faces an additional 10 years in federal prison for engaging in a monetary transaction in criminally derived property count.",
+        "sentence_summary": "Christopher and Raquelle Judge were sentenced to a combined 78 months in federal prison for a fraud conspiracy involving more than $4 million in unfinished custom home projects.",
+        "crypto_assets": null
+      },
+      "participants": [
+        {
+          "name": "Ryan Raybould",
+          "role": "prosecutor",
+          "title": "U.S. Attorney",
+          "organization": "U.S. Attorney's Office, Northern District of Texas",
+          "location": "Northern District of Texas",
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Todd Blanche",
+          "role": "law enforcement official",
+          "title": "Attorney General",
+          "organization": "U.S. Department of Justice",
+          "location": null,
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Eric Shen",
+          "role": "law enforcement official",
+          "title": "Inspector in Charge, Criminal Investigations Group",
+          "organization": "U.S. Postal Inspection Service",
+          "location": null,
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Damien Moran",
+          "role": "defendant",
+          "title": null,
+          "organization": null,
+          "location": "Dallas",
+          "age": null,
+          "nationality": null,
+          "status": "indicted"
+        },
+        {
+          "name": "Christopher Judge",
+          "role": "defendant",
+          "title": null,
+          "organization": null,
+          "location": null,
+          "age": null,
+          "nationality": null,
+          "status": "sentenced"
+        },
+        {
+          "name": "Raquelle Judge",
+          "role": "defendant",
+          "title": null,
+          "organization": null,
+          "location": null,
+          "age": null,
+          "nationality": null,
+          "status": "sentenced"
+        },
+        {
+          "name": "Jamarius Micah Walker",
+          "role": "defendant",
+          "title": null,
+          "organization": null,
+          "location": "Georgia",
+          "age": null,
+          "nationality": null,
+          "status": "indicted"
+        },
+        {
+          "name": "Tyrone Gates III",
+          "role": "defendant",
+          "title": null,
+          "organization": null,
+          "location": "Georgia",
+          "age": null,
+          "nationality": null,
+          "status": "indicted"
+        },
+        {
+          "name": "Akeem Weeks",
+          "role": "defendant",
+          "title": null,
+          "organization": null,
+          "location": "Georgia",
+          "age": null,
+          "nationality": null,
+          "status": "indicted"
+        },
+        {
+          "name": "Douglas B. Brasher",
+          "role": "prosecutor",
+          "title": "Assistant U.S. Attorney",
+          "organization": "U.S. Attorney's Office, Northern District of Texas",
+          "location": "Northern District of Texas",
+          "age": null,
+          "nationality": null,
+          "status": null
+        },
+        {
+          "name": "Edward E. Emokpae",
+          "role": "prosecutor",
+          "title": "Trial Attorney",
+          "organization": "Criminal Division's White Collar and Corporate Enforcement Section",
+          "location": null,
+          "age": null,
+          "nationality": null,
+          "status": null
+        }
+      ],
+      "agencies": [
+        {
+          "agency_name": "U.S. Postal Inspection Service",
+          "abbreviation": "USPIS",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": "Eric Shen",
+          "contribution": "Conducted the investigation; law enforcement and security arm of the U.S. Postal Service committed to identifying and bringing to justice those who exploit postal and financial networks"
+        },
+        {
+          "agency_name": "U.S. Marshals Service",
+          "abbreviation": "USMS",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Conducted the investigation"
+        },
+        {
+          "agency_name": "Federal Communications Commission",
+          "abbreviation": "FCC",
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Conducted the investigation"
+        },
+        {
+          "agency_name": "Georgia Department of Corrections, Office of Professional Standards",
+          "abbreviation": null,
+          "role": "investigation",
+          "office_location": null,
+          "agents_mentioned": null,
+          "contribution": "Conducted the investigation"
+        },
+        {
+          "agency_name": "U.S. Attorney's Office for the Northern District of Texas",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": "Dallas, Northern District of Texas",
+          "agents_mentioned": "Ryan Raybould, Douglas B. Brasher",
+          "contribution": "Prosecuting the case; U.S. Attorney Ryan Raybould announced the action and Assistant U.S. Attorney Douglas B. Brasher is prosecuting"
+        },
+        {
+          "agency_name": "U.S. Department of Justice, Criminal Division, White Collar and Corporate Enforcement Section",
+          "abbreviation": null,
+          "role": "prosecution",
+          "office_location": null,
+          "agents_mentioned": "Edward E. Emokpae, Todd Blanche",
+          "contribution": "Trial Attorney Edward E. Emokpae is prosecuting the case; Attorney General Todd Blanche announced action against scams"
+        }
+      ],
+      "charges": [
+        {
+          "charge_description": "Precious metals fraud scheme targeting elderly victims",
+          "statute": null,
+          "severity": null,
+          "max_penalty": null,
+          "fine_amount": null,
+          "defendant": "Damien Moran",
+          "status": "indicted"
+        },
+        {
+          "charge_description": "Fraud conspiracy involving more than $4 million in unfinished custom home projects",
+          "statute": null,
+          "severity": null,
+          "max_penalty": null,
+          "fine_amount": null,
+          "defendant": "Christopher Judge",
+          "status": "sentenced"
+        },
+        {
+          "charge_description": "Fraud conspiracy involving more than $4 million in unfinished custom home projects",
+          "statute": null,
+          "severity": null,
+          "max_penalty": null,
+          "fine_amount": null,
+          "defendant": "Raquelle Judge",
+          "status": "sentenced"
+        },
+        {
+          "charge_description": "Wire fraud",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "20 years in prison per count",
+          "fine_amount": null,
+          "defendant": "Jamarius Micah Walker",
+          "status": "indicted"
+        },
+        {
+          "charge_description": "Money laundering by concealment",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "20 years in prison per count",
+          "fine_amount": null,
+          "defendant": "Jamarius Micah Walker",
+          "status": "indicted"
+        },
+        {
+          "charge_description": "Wire fraud",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "20 years in prison per count",
+          "fine_amount": null,
+          "defendant": "Tyrone Gates III",
+          "status": "indicted"
+        },
+        {
+          "charge_description": "Money laundering by concealment",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "20 years in prison per count",
+          "fine_amount": null,
+          "defendant": "Tyrone Gates III",
+          "status": "indicted"
+        },
+        {
+          "charge_description": "Wire fraud",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "20 years in prison per count",
+          "fine_amount": null,
+          "defendant": "Akeem Weeks",
+          "status": "indicted"
+        },
+        {
+          "charge_description": "Money laundering by concealment",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "20 years in prison per count",
+          "fine_amount": null,
+          "defendant": "Akeem Weeks",
+          "status": "indicted"
+        },
+        {
+          "charge_description": "Engaging in a monetary transaction in criminally derived property",
+          "statute": null,
+          "severity": null,
+          "max_penalty": "10 years in prison",
+          "fine_amount": null,
+          "defendant": "Akeem Weeks",
+          "status": "indicted"
+        }
+      ],
+      "financial_actions": [
+        {
+          "action_type": "fraud scheme",
+          "amount": "$8 million",
+          "currency": "USD",
+          "description": "Precious metals scam targeting elderly victims, selling precious metals at inflated prices without disclosing markups",
+          "asset_type": "precious metals",
+          "defendant": "Damien Moran",
+          "status": "indicted"
+        },
+        {
+          "action_type": "fraud scheme",
+          "amount": "more than $4 million",
+          "currency": "USD",
+          "description": "Fraud conspiracy involving unfinished custom home projects",
+          "asset_type": "property",
+          "defendant": "Christopher and Raquelle Judge",
+          "status": "sentenced"
+        },
+        {
+          "action_type": "forfeiture",
+          "amount": null,
+          "currency": null,
+          "description": "Forfeiture of cryptocurrency, bank and payment-platform accounts, and a money judgment sought in jury duty scam",
+          "asset_type": "cryptocurrency",
+          "defendant": "Jamarius Micah Walker, Tyrone Gates III, Akeem Weeks",
+          "status": "pending"
+        },
+        {
+          "action_type": "fraud scheme",
+          "amount": "approximately $1,000,000",
+          "currency": "USD",
+          "description": "Jury duty scam proceeds obtained from victims via cryptocurrency payments",
+          "asset_type": "cryptocurrency",
+          "defendant": "Jamarius Micah Walker, Tyrone Gates III, Akeem Weeks",
+          "status": "alleged"
+        }
+      ],
+      "quotes": [
+        {
+          "quote_text": "Cyber-enabled fraud has become one of the most pervasive threats facing the American public, costing victims billions of dollars and undermining trust in essential institutions. As alleged, these defendants conducted a sophisticated impersonation scheme from correctional facilities, using spoofed phone numbers, fake court documents, and cryptocurrency transactions to victimize people in North Texas and across the country. This prosecution reflects this office's commitment to aggressively pursuing scammers wherever they operate and ensuring that anyone who targets Main Street America will face the full force of federal law.",
+          "speaker_name": "Ryan Raybould",
+          "speaker_title": "U.S. Attorney",
+          "speaker_organization": "U.S. Attorney's Office, Northern District of Texas",
+          "quote_type": "statement",
+          "context": "Announcing the Justice Department's crackdown on scammers and the prosecution of the jury duty scam defendants",
+          "significance": "Frames the prosecution as part of a broader federal commitment to combating cyber-enabled fraud and describes the alleged scheme conducted from correctional facilities"
+        },
+        {
+          "quote_text": "These indictments underscore the tragic impact of fraud networks that steal money from unsuspecting victims. Working closely with our law enforcement partners, the U.S. Postal Inspection Service is committed to identifying and bringing to justice those who target Americans and attempt to exploit our postal and financial networks.",
+          "speaker_name": "Eric Shen",
+          "speaker_title": "Inspector in Charge, Criminal Investigations Group",
+          "speaker_organization": "U.S. Postal Inspection Service",
+          "quote_type": "statement",
+          "context": "Commenting on the indictments and fraud networks as part of the scam surge announcement",
+          "significance": "Highlights the law enforcement partnership and commitment to prosecuting those who exploit postal and financial networks"
+        }
+      ]
+    },
     "9cc296c9-f161-4827-82db-376571ce3692": {
       "metadata": {
         "district_office": "Southern District of Texas",

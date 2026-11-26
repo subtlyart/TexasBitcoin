@@ -1,11 +1,33 @@
 {
   "stats": {
-    "case_count": 157,
+    "case_count": 158,
     "total_forfeitures_usd": 255275850.44,
     "districts_active": 4,
-    "generated_at": "2026-11-09T23:05:00Z"
+    "generated_at": "2026-11-26T09:17:14Z"
   },
   "cases": [
+    {
+      "id": "93a6010b-7c95-4b6c-9856-5e7b62cbeaad",
+      "title": "U.S. Attorney for the Northern District of Texas announces contribution to protecting Americans from fraud in largest-ever crackdown on scammers",
+      "date": "2026-11-24",
+      "district": "Northern District of Texas",
+      "summary": "United States Attorney Ryan Raybould joined Attorney General Todd Blanche and other law enforcement officials in announcing decisive action against foreign and domestic scams. The Justice Department’s historic surge in resources to protect Americans from criminal scam networks and online fraud follows President Trump’s Executive Order 14390 directing a government-wide crackdown.",
+      "statutes": [],
+      "forfeiture_usd": 0,
+      "themes": [
+        "caller-id_spoofing_and_identity_technology_misuse",
+        "construction/contractor_fraud",
+        "crime_committed_from_correctional_facilities",
+        "cryptocurrency",
+        "doj_anti-scam_surge_/_executive_order_14390",
+        "elder_fraud",
+        "interagency_law_enforcement_cooperation",
+        "jury_duty_scam_/_government_impersonation",
+        "money_laundering",
+        "wire_fraud"
+      ],
+      "doj_url": "https://www.justice.gov/usao-ndtx/pr/us-attorney-northern-district-texas-announces-contribution-protecting-americans-fraud"
+    },
     {
       "id": "9cc296c9-f161-4827-82db-376571ce3692",
       "title": "Harlingen couple sentenced in multimillion-dollar Medicare fraud scheme",
