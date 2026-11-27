@@ -5,6 +5,7 @@ import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { ReadingRail } from "@/components/reading-rail";
+import { SourcePacket } from "@/components/source-packet";
 import {
   RESERVE_LAST_VERIFIED,
   reserveSources,
@@ -521,6 +522,20 @@ export default function ReservePage() {
             ))}
           </ol>
         </section>
+
+        <SourcePacket
+          claim="Senate Bill 21 created the reserve. Governor Abbott signed it June 20, 2025, effective immediately."
+          items={[
+            {
+              label: "SB 21 (89R) — enrolled text",
+              href: "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00021F.htm",
+            },
+            {
+              label: "SB 21 — bill history",
+              href: "https://capitol.texas.gov/BillLookup/History.aspx?LegSess=89R&Bill=SB21",
+            },
+          ]}
+        />
 
         <div className="prose-tx mt-12">
           <h2>What is the Texas Strategic Bitcoin Reserve?</h2>

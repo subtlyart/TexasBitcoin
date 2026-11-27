@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import { Pause, Play } from "lucide-react";
 import {
   miningSites,
+  siteLaw,
   STATUS_LABELS,
   YEAR_MAX,
   YEAR_MIN,
@@ -417,6 +419,15 @@ export function MiningMap() {
             {selected.mwLabel} · {STATUS_LABELS[statusAt(selected, year)]}
           </p>
           <p className="mt-2 text-sm leading-relaxed text-muted">{selected.story}</p>
+          {siteLaw[selected.id] && (
+            <p className="mt-3 border-t border-border pt-3 text-sm leading-relaxed text-muted">
+              <span className="font-medium text-foreground">{siteLaw[selected.id].rule}.</span>{" "}
+              {siteLaw[selected.id].note}{" "}
+              <Link href={siteLaw[selected.id].href} className="font-medium text-accent-soft underline decoration-accent/40 underline-offset-2 hover:decoration-accent">
+                The rule, explained
+              </Link>
+            </p>
+          )}
         </figcaption>
       )}
     </figure>
