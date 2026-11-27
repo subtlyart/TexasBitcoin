@@ -6,6 +6,14 @@ import { Monogram } from "@/components/monogram";
 import { SeamMark } from "@/components/seam-mark";
 import { site } from "@/lib/site";
 
+/* Shared card and label treatments. Surfaces come from theme tokens so
+   light mode stays cream instead of the dark #131210 fill. */
+const cardClass =
+  "group rounded-2xl border border-foreground/[0.06] border-l-2 border-l-accent bg-card p-7 transition-colors duration-300 hover:border-accent/40 hover:border-l-accent hover:bg-card-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+const kickerClass = "text-xs font-semibold uppercase tracking-widest text-muted";
+const focusRing =
+  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+
 const layers = [
   {
     icon: Cpu,
@@ -53,26 +61,22 @@ export default function Home() {
       />
       {/* Hero — warm mesh stays under the type. Headline copy is unchanged. */}
       <section className="relative overflow-hidden border-b border-border bg-background">
-        <div aria-hidden className="pointer-events-none absolute inset-0">
-          <div className="hero-wash-brown absolute -left-16 top-[-4rem] h-72 w-72 rounded-full blur-3xl" />
-          <div className="absolute right-[-3rem] top-8 h-80 w-[28rem] rounded-full bg-accent/[0.07] blur-3xl" />
-          <div className="hero-wash-ink absolute bottom-[-4rem] left-1/3 h-48 w-[28rem] rounded-full blur-3xl" />
-        </div>
+        <div aria-hidden className="hero-mesh pointer-events-none absolute inset-0" />
         <LoneStar className="pointer-events-none absolute -right-20 -top-24 h-[26rem] w-[26rem] text-accent/[0.05]" />
         <div className="relative mx-auto max-w-6xl px-5 pb-20 pt-20 sm:pt-28">
-          <p className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-accent">
+          <p className="flex items-center gap-3 text-xs font-semibold uppercase tracking-widest text-accent">
             <span className="flex h-7 w-7 items-center justify-center rounded-md border border-foreground/10 bg-background/40 text-accent">
               <Monogram className="h-4 w-4" />
             </span>
             Howdy, folks — the authority on Bitcoin in Texas
-            <span className="hidden h-px w-16 bg-gradient-to-r from-border to-transparent sm:inline-block" />
           </p>
-          <h1 className="mt-5 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
+          <span className="mt-4 block h-px w-16 bg-accent" aria-hidden />
+          <h1 className="mt-5 max-w-3xl font-display text-4xl font-semibold leading-[1.08] tracking-tight sm:text-6xl">
             Where Bitcoin meets the{" "}
             <span className="text-accent">physical world</span> — and the{" "}
             <span className="text-accent">financial future</span>.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
             Texas is the one place where Bitcoin&apos;s two frontiers are happening
             at once: the physical — energy, the grid, and the largest mines in
             North America — and the financial — the money law, a state reserve,
@@ -83,14 +87,14 @@ export default function Home() {
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Link
               href="/history-of-bitcoin-in-texas"
-              className="group inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-semibold text-[#1a1206] transition-colors hover:bg-accent-soft"
+              className={`group inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-semibold text-[#1a1206] transition duration-200 hover:scale-[1.01] hover:opacity-90 ${focusRing}`}
             >
               Read the History of Bitcoin in Texas
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </Link>
             <a
               href="#coverage"
-              className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 font-medium text-foreground transition-colors hover:border-accent/50 hover:text-accent-soft"
+              className={`inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 font-medium text-foreground transition-colors hover:border-accent/50 hover:text-accent-soft ${focusRing}`}
             >
               Have a look around
             </a>
@@ -123,35 +127,35 @@ export default function Home() {
             it honest.
           </p>
         </div>
-        <div className="mt-12 grid gap-4 sm:grid-cols-2">
+        {/* One fence line runs through every number so 01–04 read as a sequence. */}
+        <ol className="relative mt-12 space-y-4">
+          <span
+            aria-hidden
+            className="absolute bottom-10 left-[1.3rem] top-8 w-px bg-accent/40"
+          />
           {layers.map((l, i) => {
             const Icon = l.icon;
             return (
-              <div
+              <li
                 key={l.title}
-                className="group flex gap-5 rounded-2xl border border-foreground/[0.06] bg-background p-7 transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
+                className={`${cardClass} relative flex gap-5`}
               >
-                {/* Numbered spine: serif index + thin orange rail */}
-                <div className="flex w-10 shrink-0 flex-col items-center">
-                  <span className="font-display text-3xl font-semibold tabular-nums leading-none tracking-tight text-foreground/80">
+                <div className="relative z-10 flex w-11 shrink-0 flex-col items-center pt-0.5">
+                  <span className="bg-card px-0.5 font-display text-3xl font-semibold tabular-nums leading-none tracking-[0.12em] text-foreground/85">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="mt-3 w-px flex-1 bg-gradient-to-b from-accent to-accent/0" />
+                  <span className="mt-3 h-1.5 w-1.5 rotate-45 bg-accent" aria-hidden />
                 </div>
                 <div>
-                  <div className="flex items-center gap-2 text-muted-2">
-                    <Icon className="h-4 w-4 text-accent" strokeWidth={1.5} />
-                  </div>
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
-                    {l.kicker}
-                  </p>
+                  <Icon className="h-4 w-4 text-accent" strokeWidth={1.5} />
+                  <p className={`mt-3 ${kickerClass}`}>{l.kicker}</p>
                   <h3 className="mt-2 font-display text-xl font-semibold">{l.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted">{l.body}</p>
+                  <p className="mt-2 text-sm leading-7 text-muted">{l.body}</p>
                 </div>
-              </div>
+              </li>
             );
           })}
-        </div>
+        </ol>
         </div>
       </section>
 
@@ -160,16 +164,16 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-5 py-10">
         <Link
           href="/history-of-bitcoin-in-texas"
-          className="group relative block overflow-hidden rounded-2xl border border-foreground/[0.06] border-l-accent bg-surface p-8 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2 sm:p-12"
+          className={`${cardClass} relative block overflow-hidden sm:p-12`}
         >
           <LoneStar className="pointer-events-none absolute -bottom-12 -right-10 h-64 w-64 text-accent/[0.06] transition-transform duration-500 group-hover:rotate-12" />
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+          <p className={kickerClass}>
             Cornerstone · The definitive account
           </p>
           <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight tracking-tight transition-colors group-hover:text-accent-soft sm:text-4xl">
             The History of Bitcoin in Texas
           </h2>
-          <p className="mt-4 max-w-2xl text-muted">
+          <p className="mt-4 max-w-2xl leading-7 text-muted">
             How a 2014 banking memo, a Chinese mining ban, an old aluminum
             smelter, and a 2025 state reserve made Texas the center of gravity
             for hard money — told end to end, with every claim sourced.
@@ -189,17 +193,17 @@ export default function Home() {
           {/* Lead — the mining map */}
           <Link
             href="/bitcoin-mining-map-texas"
-            className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-foreground/[0.06] bg-background p-8 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2 sm:row-span-2"
+            className={`${cardClass} relative flex flex-col justify-between overflow-hidden sm:row-span-2`}
           >
             <LoneStar className="pointer-events-none absolute -bottom-12 -right-10 h-56 w-56 text-accent/[0.05] transition-transform duration-500 group-hover:rotate-12" />
             <div className="relative">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+              <p className={kickerClass}>
                 Data asset · Interactive
               </p>
               <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight transition-colors group-hover:text-accent-soft sm:text-3xl">
                 The Texas Bitcoin Mining Map
               </h2>
-              <p className="mt-3 max-w-md text-muted">
+              <p className="mt-3 max-w-md leading-7 text-muted">
                 Every major mine in the state — mapped, sized, and sourced. Drag
                 the timeline from 2019 and watch gigawatts bloom across Texas,
                 from Rockdale&apos;s 700 MW flagship to the sites now feeding AI.
@@ -214,10 +218,10 @@ export default function Home() {
           {/* Musk / energy feature */}
           <Link
             href="/elon-musk-bitcoin-energy"
-            className="group flex flex-col justify-between rounded-2xl border border-foreground/[0.06] bg-background p-7 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
+            className={`${cardClass} flex flex-col justify-between`}
           >
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+              <p className={kickerClass}>
                 Feature · Energy &amp; the grid
               </p>
               <h3 className="mt-2 font-display text-xl font-semibold leading-snug tracking-tight transition-colors group-hover:text-accent-soft">
@@ -239,10 +243,10 @@ export default function Home() {
           {/* Ulbricht / origins feature */}
           <Link
             href="/ross-ulbricht-silk-road-bitcoin"
-            className="group flex flex-col justify-between rounded-2xl border border-foreground/[0.06] bg-background p-7 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
+            className={`${cardClass} flex flex-col justify-between`}
           >
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+              <p className={kickerClass}>
                 Feature · Origins &amp; the base layer
               </p>
               <h3 className="mt-2 font-display text-xl font-semibold leading-snug tracking-tight transition-colors group-hover:text-accent-soft">
@@ -270,9 +274,9 @@ export default function Home() {
         <div className="grid gap-4 sm:grid-cols-3">
           <Link
             href="/rockdale-texas-bitcoin"
-            className="group rounded-2xl border border-foreground/[0.06] bg-surface p-7 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
+            className={cardClass}
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+            <p className={kickerClass}>
               Story · Milam County
             </p>
             <h3 className="mt-2 font-display text-xl font-semibold leading-snug transition-colors group-hover:text-accent-soft">
@@ -289,9 +293,9 @@ export default function Home() {
           </Link>
           <Link
             href="/doctor-bitcoin"
-            className="group rounded-2xl border border-foreground/[0.06] bg-surface p-7 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
+            className={cardClass}
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+            <p className={kickerClass}>
               Voices of Texas Bitcoin · No. 1
             </p>
             <h3 className="mt-2 font-display text-xl font-semibold leading-snug transition-colors group-hover:text-accent-soft">
@@ -308,9 +312,9 @@ export default function Home() {
           </Link>
           <Link
             href="/texas-bitcoin-law-timeline"
-            className="group flex flex-col rounded-2xl border border-foreground/[0.06] bg-surface p-7 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
+            className={`${cardClass} flex flex-col`}
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+            <p className={kickerClass}>
               Interactive · The money law
             </p>
             <h3 className="mt-2 font-display text-xl font-semibold leading-snug transition-colors group-hover:text-accent-soft">
@@ -334,10 +338,10 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-5 py-10">
         <Link
           href="/events"
-          className="group flex flex-col justify-between gap-4 rounded-2xl border border-foreground/[0.06] bg-background p-8 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2 sm:flex-row sm:items-center"
+          className={`${cardClass} flex flex-col justify-between gap-4 sm:flex-row sm:items-center`}
         >
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+            <p className={kickerClass}>
               Community
             </p>
             <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight transition-colors group-hover:text-accent-soft sm:text-3xl">
@@ -360,29 +364,29 @@ export default function Home() {
       {/* Reference desk — quiet links to the deeper record */}
       <section className="bg-background">
         <div className="mx-auto max-w-6xl px-5 py-10">
-        <div className="rounded-2xl border border-foreground/[0.06] bg-surface p-6 text-sm text-muted">
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+        <div className="rounded-2xl border border-foreground/[0.06] border-l-2 border-l-accent bg-card p-7 text-sm leading-7 text-muted">
+          <p className={kickerClass}>
             The reference desk
           </p>
-          <p className="mt-2 leading-relaxed">
+          <p className="mt-3 leading-7">
             Straight to the record:{" "}
             <Link
               href="/what-texas-law-says-about-bitcoin"
-              className="text-foreground underline decoration-accent/30 underline-offset-4 hover:text-accent-soft"
+              className={`text-foreground underline decoration-accent/30 underline-offset-4 hover:text-accent-soft ${focusRing} rounded-sm`}
             >
               what Texas law actually says about Bitcoin
             </Link>
             , the{" "}
             <Link
               href="/texas-strategic-bitcoin-reserve"
-              className="text-foreground underline decoration-accent/30 underline-offset-4 hover:text-accent-soft"
+              className={`text-foreground underline decoration-accent/30 underline-offset-4 hover:text-accent-soft ${focusRing} rounded-sm`}
             >
               Texas Strategic Bitcoin Reserve
             </Link>
             , and the{" "}
             <Link
               href="/texas-bitcoin-case-tracker"
-              className="text-foreground underline decoration-accent/30 underline-offset-4 hover:text-accent-soft"
+              className={`text-foreground underline decoration-accent/30 underline-offset-4 hover:text-accent-soft ${focusRing} rounded-sm`}
             >
               federal § 1960 case tracker
             </Link>
@@ -404,9 +408,11 @@ export default function Home() {
               <LoneStar className="h-7 w-7 shrink-0 text-accent drop-shadow-[0_0_14px_rgba(247,147,26,0.45)]" />
               <span className="h-px flex-1 bg-gradient-to-l from-transparent to-border" />
             </div>
-            <p className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+            <span className="h-px w-24 bg-accent/70" aria-hidden />
+            <p className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">
               This is <span className="text-accent">Bitcoin country</span>.
             </p>
+            <span className="h-px w-16 bg-accent/40" aria-hidden />
             <p className="max-w-md text-sm leading-relaxed text-muted">
               Y&apos;all come back now — we keep the record fresh, sourced, and
               plain as day.
