@@ -5,6 +5,7 @@ import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { SeamMark } from "@/components/seam-mark";
+import { SourcePacket } from "@/components/source-packet";
 
 export const metadata: Metadata = {
   title: "Rockdale: From Alcoa Smelter to Bitcoin Mine",
@@ -310,6 +311,20 @@ export default function RockdalePage() {
         </div>
 
         <RockdaleTimeline />
+
+        <SourcePacket
+          claim="The smelter stopped, and the wires stayed. Alcoa curtailed Rockdale in 2008; Riot bought the mine Whinstone built on that land in 2021."
+          items={[
+            {
+              label: "Alcoa, September 30, 2008 — curtailment of the remaining Rockdale capacity (SEC exhibit)",
+              href: "https://www.sec.gov/Archives/edgar/data/4281/000119312508205949/dex99.htm",
+            },
+            {
+              label: "Riot, May 26, 2021 — completion of the Whinstone acquisition",
+              href: "https://www.globenewswire.com/en/news-release/2021/05/26/2236906/0/en/Riot-Blockchain-Completes-Acquisition-of-Whinstone-US-Creating-Leading-North-American-Bitcoin-Mining-Company.html",
+            },
+          ]}
+        />
 
         <div className="prose-tx mt-10">
           <p>

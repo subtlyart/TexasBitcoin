@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Zap, Scale, Layers, Cpu } from "lucide-react";
 import { LoneStar } from "@/components/lone-star";
 import { Monogram } from "@/components/monogram";
+import { OpenSearch } from "@/components/open-search";
 import { SeamMark } from "@/components/seam-mark";
 import { site } from "@/lib/site";
 
@@ -108,7 +109,11 @@ export default function Home() {
               Start here
               <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
             </Link>{" "}
-            — the plain-English way in.
+            — the plain-English way in. Looking for a name, a bill, or a mine?{" "}
+            <OpenSearch className="font-medium text-accent-soft underline decoration-accent/40 underline-offset-2 hover:decoration-accent">
+              Search the record
+            </OpenSearch>
+            .
           </p>
         </div>
       </section>

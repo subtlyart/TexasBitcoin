@@ -318,3 +318,66 @@ export const YEAR_MIN = 2019;
 // 2027 reaches the announced coastal megasite (MARA Matagorda's first power);
 // the map defaults to the present and treats the final year as the horizon.
 export const YEAR_MAX = 2027;
+
+export interface SiteLaw {
+  /** The rule this site actually sits under — not a company profile. */
+  rule: string;
+  note: string;
+  href: string;
+}
+
+const flexibleLoad: SiteLaw = {
+  rule: "ERCOT Large Flexible Load",
+  note: "ERCOT treats crypto-mining load as a Large Flexible Load, not firm load, and mines can register as Controllable Load Resources. Senate Bill 1751 tried to cap that demand-response share in 2023 and died in the House.",
+  href: "/ercot-bitcoin",
+};
+
+const largeLoad: SiteLaw = {
+  rule: "SB 6 large-load interconnection",
+  note: "Senate Bill 6 (89R) set interconnection and curtailment rules for loads over 75 MW. Campuses still in the queue, or energized as AI load after 2025, sit in that regime rather than the 2022 flexible-mining cohort.",
+  href: "/ercot-bitcoin",
+};
+
+/**
+ * One legal hook per pin. Shared where the record is the same rule;
+ * specific only where this site's own sources draw a distinction.
+ */
+export const siteLaw: Record<string, SiteLaw> = {
+  "riot-rockdale": {
+    rule: "ERCOT demand response",
+    note: "The public case of a mine as a grid asset: in August 2023 ERCOT paid Riot $31.7 million in power credits to curtail Rockdale, more than the bitcoin mined there that month.",
+    href: "/ercot-bitcoin",
+  },
+  "bitdeer-rockdale": flexibleLoad,
+  "cipher-odessa": flexibleLoad,
+  "hut8-king-mountain": flexibleLoad,
+  "layer1-ward": {
+    rule: "ERCOT price-responsive load",
+    note: "Before the Large Flexible Load category had a name, Layer1 was already selling power back to the grid when prices spiked — the pattern later mines registered into.",
+    href: "/ercot-bitcoin",
+  },
+  "mara-granbury": {
+    rule: "ERCOT Large Flexible Load",
+    note: "Behind-the-meter at Wolf Hollow, and still an ERCOT flexible load. The fight that is actually in court is local: Hood County residents suing over cooling-fan noise, not a state mining license.",
+    href: "/ercot-bitcoin",
+  },
+  "corz-denton": {
+    rule: "Pre-2022 base load",
+    note: "Denton's existing megawatts were energized before March 2022. Core Scientific's own account puts that load on the oldest pathway, outside the 2026 Batch Zero queue.",
+    href: "/core-scientific-bitcoin",
+  },
+  "riot-corsicana": {
+    rule: "ERCOT-approved large load",
+    note: "A full gigawatt is approved at Corsicana. Further mining expansion stopped in 2025 while the remaining capacity was evaluated for AI, which pulls the unused share toward the SB 6 interconnection rules.",
+    href: "/ercot-bitcoin",
+  },
+  "cipher-black-pearl": largeLoad,
+  "galaxy-helios": largeLoad,
+  "hut8-beacon-point": largeLoad,
+  "cipher-barber-lake": largeLoad,
+  "mara-matagorda": {
+    rule: "Large-load queue audit",
+    note: "Up to 2 GW, not yet energized. The August 2026 audit of ERCOT's interconnection queue is the test this kind of announced campus has to pass before it is a load.",
+    href: "/ercot-bitcoin",
+  },
+};

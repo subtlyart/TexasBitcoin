@@ -7,6 +7,7 @@ import { ogImages } from "@/lib/og";
 import { ReadingProgress } from "@/components/reading-progress";
 import { ReadingRail } from "@/components/reading-rail";
 import { MobileReadingBar } from "@/components/mobile-reading-bar";
+import { SourcePacket } from "@/components/source-packet";
 
 export const metadata: Metadata = {
   title: "The History of Bitcoin in Texas",
@@ -467,6 +468,20 @@ export default function HistoryPage() {
             </li>
           </ul>
         </div>
+
+        <SourcePacket
+          claim="April 3, 2014 — Supervisory Memorandum 1037 said Bitcoin is not money under the Texas Money Services Act."
+          items={[
+            {
+              label: "Supervisory Memorandum 1037, original text (April 3, 2014)",
+              href: "http://business.cch.com/BANKD/sm1037-04042014.pdf",
+            },
+            {
+              label: "Department of Banking press release the same day",
+              href: "https://www.dob.texas.gov/sites/default/files/files/news/press-releases/2014/04-03-14pr.pdf",
+            },
+          ]}
+        />
 
         <div className="prose-tx mt-10">
           <p>

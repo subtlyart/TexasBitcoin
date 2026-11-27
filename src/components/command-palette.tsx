@@ -48,8 +48,17 @@ export function CommandPalette() {
         setOpen(false);
       }
     }
+    function onOpen() {
+      setQuery("");
+      setActive(0);
+      setOpen(true);
+    }
     window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
+    window.addEventListener("tx-open-search", onOpen);
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("tx-open-search", onOpen);
+    };
   }, []);
 
   useEffect(() => {
