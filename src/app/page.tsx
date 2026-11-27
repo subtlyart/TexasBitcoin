@@ -2,6 +2,7 @@ import { jsonLd } from "@/lib/json-ld";
 import Link from "next/link";
 import { ArrowRight, Zap, Scale, Layers, Cpu } from "lucide-react";
 import { LoneStar } from "@/components/lone-star";
+import { Monogram } from "@/components/monogram";
 import { SeamMark } from "@/components/seam-mark";
 import { site } from "@/lib/site";
 
@@ -50,12 +51,19 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLd(webPageJsonLd) }}
       />
-      {/* Hero */}
-      <section className="relative overflow-hidden border-b border-border">
+      {/* Hero — warm mesh stays under the type. Headline copy is unchanged. */}
+      <section className="relative overflow-hidden border-b border-border bg-background">
+        <div aria-hidden className="pointer-events-none absolute inset-0">
+          <div className="hero-wash-brown absolute -left-16 top-[-4rem] h-72 w-72 rounded-full blur-3xl" />
+          <div className="absolute right-[-3rem] top-8 h-80 w-[28rem] rounded-full bg-accent/[0.07] blur-3xl" />
+          <div className="hero-wash-ink absolute bottom-[-4rem] left-1/3 h-48 w-[28rem] rounded-full blur-3xl" />
+        </div>
         <LoneStar className="pointer-events-none absolute -right-20 -top-24 h-[26rem] w-[26rem] text-accent/[0.05]" />
-        <div className="mx-auto max-w-6xl px-5 pb-20 pt-20 sm:pt-28">
+        <div className="relative mx-auto max-w-6xl px-5 pb-20 pt-20 sm:pt-28">
           <p className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-accent">
-            <LoneStar className="h-3.5 w-3.5 shrink-0 drop-shadow-[0_0_10px_rgba(247,147,26,0.5)]" />
+            <span className="flex h-7 w-7 items-center justify-center rounded-md border border-foreground/10 bg-background/40 text-accent">
+              <Monogram className="h-4 w-4" />
+            </span>
             Howdy, folks — the authority on Bitcoin in Texas
             <span className="hidden h-px w-16 bg-gradient-to-r from-border to-transparent sm:inline-block" />
           </p>
@@ -102,7 +110,8 @@ export default function Home() {
       </section>
 
       {/* The layered thesis */}
-      <section id="coverage" className="mx-auto max-w-6xl scroll-mt-20 px-5 py-20">
+      <section id="coverage" className="scroll-mt-20 border-b border-border bg-surface">
+        <div className="mx-auto max-w-6xl px-5 py-20">
         <div className="max-w-2xl">
           <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
             One stack, anchored in Texas
@@ -114,33 +123,44 @@ export default function Home() {
             it honest.
           </p>
         </div>
-        <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
+        <div className="mt-12 grid gap-4 sm:grid-cols-2">
           {layers.map((l, i) => {
             const Icon = l.icon;
             return (
-              <div key={l.title} className="bg-surface p-7 transition-colors hover:bg-surface-2">
-                <div className="flex items-center justify-between">
-                  <Icon className="h-6 w-6 text-accent" strokeWidth={1.5} />
-                  <span className="font-display text-sm font-semibold tabular-nums text-muted-2">
+              <div
+                key={l.title}
+                className="group flex gap-5 rounded-2xl border border-foreground/[0.06] bg-background p-7 transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
+              >
+                {/* Numbered spine: serif index + thin orange rail */}
+                <div className="flex w-10 shrink-0 flex-col items-center">
+                  <span className="font-display text-3xl font-semibold tabular-nums leading-none tracking-tight text-foreground/80">
                     {String(i + 1).padStart(2, "0")}
                   </span>
+                  <span className="mt-3 w-px flex-1 bg-gradient-to-b from-accent to-accent/0" />
                 </div>
-                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
-                  {l.kicker}
-                </p>
-                <h3 className="mt-2 font-display text-xl font-semibold">{l.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{l.body}</p>
+                <div>
+                  <div className="flex items-center gap-2 text-muted-2">
+                    <Icon className="h-4 w-4 text-accent" strokeWidth={1.5} />
+                  </div>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-accent">
+                    {l.kicker}
+                  </p>
+                  <h3 className="mt-2 font-display text-xl font-semibold">{l.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">{l.body}</p>
+                </div>
               </div>
             );
           })}
         </div>
+        </div>
       </section>
 
       {/* Cornerstone feature */}
-      <section className="mx-auto max-w-6xl px-5 pb-8">
+      <section className="bg-background">
+        <div className="mx-auto max-w-6xl px-5 py-10">
         <Link
           href="/history-of-bitcoin-in-texas"
-          className="group relative block overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-surface to-background p-8 transition-colors duration-300 hover:border-accent/40 sm:p-12"
+          className="group relative block overflow-hidden rounded-2xl border border-foreground/[0.06] border-l-accent bg-surface p-8 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2 sm:p-12"
         >
           <LoneStar className="pointer-events-none absolute -bottom-12 -right-10 h-64 w-64 text-accent/[0.06] transition-transform duration-500 group-hover:rotate-12" />
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
@@ -159,15 +179,17 @@ export default function Home() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </span>
         </Link>
+        </div>
       </section>
 
       {/* Feature well — a lead data asset flanked by two features */}
-      <section className="mx-auto max-w-6xl px-5 pb-8">
+      <section className="border-y border-border bg-surface">
+        <div className="mx-auto max-w-6xl px-5 py-10">
         <div className="grid gap-5 sm:grid-cols-2">
           {/* Lead — the mining map */}
           <Link
             href="/bitcoin-mining-map-texas"
-            className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-surface to-background p-8 transition-colors duration-300 hover:border-accent/40 sm:row-span-2"
+            className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-foreground/[0.06] bg-background p-8 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2 sm:row-span-2"
           >
             <LoneStar className="pointer-events-none absolute -bottom-12 -right-10 h-56 w-56 text-accent/[0.05] transition-transform duration-500 group-hover:rotate-12" />
             <div className="relative">
@@ -183,7 +205,7 @@ export default function Home() {
                 from Rockdale&apos;s 700 MW flagship to the sites now feeding AI.
               </p>
             </div>
-            <span className="relative mt-8 inline-flex items-center gap-2 font-medium text-accent-soft">
+            <span className="relative mt-8 inline-flex w-fit items-center gap-2 rounded-md border border-accent/30 bg-accent/10 px-3 py-1.5 text-sm font-medium text-accent-soft transition-colors group-hover:border-accent/50 group-hover:bg-accent/15">
               Explore the map
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </span>
@@ -192,7 +214,7 @@ export default function Home() {
           {/* Musk / energy feature */}
           <Link
             href="/elon-musk-bitcoin-energy"
-            className="group flex flex-col justify-between rounded-2xl border border-border bg-surface p-7 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2"
+            className="group flex flex-col justify-between rounded-2xl border border-foreground/[0.06] bg-background p-7 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
           >
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
@@ -217,7 +239,7 @@ export default function Home() {
           {/* Ulbricht / origins feature */}
           <Link
             href="/ross-ulbricht-silk-road-bitcoin"
-            className="group flex flex-col justify-between rounded-2xl border border-border bg-surface p-7 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2"
+            className="group flex flex-col justify-between rounded-2xl border border-foreground/[0.06] bg-background p-7 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
           >
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
@@ -239,14 +261,16 @@ export default function Home() {
             </span>
           </Link>
         </div>
+        </div>
       </section>
 
       {/* Stories & the law */}
-      <section className="mx-auto max-w-6xl px-5 pb-8">
-        <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-3">
+      <section className="bg-background">
+        <div className="mx-auto max-w-6xl px-5 py-10">
+        <div className="grid gap-4 sm:grid-cols-3">
           <Link
             href="/rockdale-texas-bitcoin"
-            className="group bg-surface p-7 transition-colors hover:bg-surface-2"
+            className="group rounded-2xl border border-foreground/[0.06] bg-surface p-7 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
           >
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
               Story · Milam County
@@ -265,7 +289,7 @@ export default function Home() {
           </Link>
           <Link
             href="/doctor-bitcoin"
-            className="group bg-surface p-7 transition-colors hover:bg-surface-2"
+            className="group rounded-2xl border border-foreground/[0.06] bg-surface p-7 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
           >
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
               Voices of Texas Bitcoin · No. 1
@@ -284,7 +308,7 @@ export default function Home() {
           </Link>
           <Link
             href="/texas-bitcoin-law-timeline"
-            className="group bg-surface p-7 transition-colors hover:bg-surface-2"
+            className="group flex flex-col rounded-2xl border border-foreground/[0.06] bg-surface p-7 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2"
           >
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
               Interactive · The money law
@@ -296,19 +320,21 @@ export default function Home() {
               Every law, memo, and failed bill from the 2014 &ldquo;not
               money&rdquo; memo to the 2025 Strategic Bitcoin Reserve.
             </p>
-            <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-accent-soft">
+            <span className="mt-5 inline-flex w-fit items-center gap-2 rounded-md border border-accent/30 bg-accent/10 px-3 py-1.5 text-sm font-medium text-accent-soft transition-colors group-hover:border-accent/50">
               Scroll the timeline
               <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
             </span>
           </Link>
         </div>
+        </div>
       </section>
 
       {/* Events teaser */}
-      <section className="mx-auto max-w-6xl px-5 pb-8">
+      <section className="border-y border-border bg-surface">
+        <div className="mx-auto max-w-6xl px-5 py-10">
         <Link
           href="/events"
-          className="group flex flex-col justify-between gap-4 rounded-2xl border border-border bg-surface p-8 transition-colors duration-300 hover:border-accent/40 hover:bg-surface-2 sm:flex-row sm:items-center"
+          className="group flex flex-col justify-between gap-4 rounded-2xl border border-foreground/[0.06] bg-background p-8 shadow-[inset_3px_0_0_0_var(--accent)] transition-colors duration-300 hover:border-accent/30 hover:bg-surface-2 sm:flex-row sm:items-center"
         >
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
@@ -328,11 +354,13 @@ export default function Home() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </span>
         </Link>
+        </div>
       </section>
 
       {/* Reference desk — quiet links to the deeper record */}
-      <section className="mx-auto max-w-6xl px-5 pb-8">
-        <div className="rounded-2xl border border-border bg-surface p-6 text-sm text-muted">
+      <section className="bg-background">
+        <div className="mx-auto max-w-6xl px-5 py-10">
+        <div className="rounded-2xl border border-foreground/[0.06] bg-surface p-6 text-sm text-muted">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
             The reference desk
           </p>
@@ -361,11 +389,13 @@ export default function Home() {
             .
           </p>
         </div>
+        </div>
       </section>
 
       {/* Sign-off — Big Tex tips his hat */}
-      <section className="mx-auto max-w-6xl px-5 pb-20 pt-12">
-        <div className="relative overflow-hidden rounded-2xl border border-border bg-gradient-to-b from-surface to-background px-6 py-16 text-center">
+      <section className="border-t border-border bg-surface">
+        <div className="mx-auto max-w-6xl px-5 py-16">
+        <div className="relative overflow-hidden rounded-2xl border border-foreground/[0.06] bg-background px-6 py-16 text-center">
           <LoneStar className="pointer-events-none absolute -bottom-16 -left-14 h-60 w-60 text-accent/[0.04]" />
           <LoneStar className="pointer-events-none absolute -top-16 -right-14 h-60 w-60 text-accent/[0.04]" />
           <div className="relative flex flex-col items-center gap-5">
@@ -382,6 +412,7 @@ export default function Home() {
               plain as day.
             </p>
           </div>
+        </div>
         </div>
       </section>
     </>
