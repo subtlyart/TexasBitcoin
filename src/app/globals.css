@@ -66,6 +66,25 @@ body {
   font-family: var(--font-display);
 }
 
+/* Hero mesh. Hard-coded warm browns would muddy the cream light theme,
+   so the washes swap with the theme instead of using raw hex in JSX. */
+.hero-wash-brown {
+  background: #4a3420;
+  opacity: 0.28;
+}
+.hero-wash-ink {
+  background: #2a2118;
+  opacity: 0.4;
+}
+html[data-theme="light"] .hero-wash-brown {
+  background: #e6d3b4;
+  opacity: 0.7;
+}
+html[data-theme="light"] .hero-wash-ink {
+  background: #efe6d6;
+  opacity: 0.9;
+}
+
 /* Editorial prose for the cornerstone article */
 .prose-tx {
   color: var(--foreground);

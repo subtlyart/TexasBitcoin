@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
-import { LoneStar } from "./lone-star";
+import { Monogram } from "./monogram";
 
 export function SiteFooter() {
   return (
@@ -8,8 +8,10 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-5 py-12">
         <div className="flex flex-col gap-8 md:flex-row md:justify-between">
           <div className="max-w-sm">
-            <div className="flex items-center gap-2">
-              <LoneStar className="h-5 w-5 text-accent" />
+            <div className="flex items-center gap-2.5">
+              <span className="flex h-8 w-8 items-center justify-center rounded-md border border-foreground/10 bg-background text-accent">
+                <Monogram className="h-5 w-5" />
+              </span>
               <span className="font-display text-base font-semibold">
                 Texas<span className="text-accent">Bitcoin</span>
               </span>
