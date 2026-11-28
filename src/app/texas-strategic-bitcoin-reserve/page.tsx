@@ -677,6 +677,21 @@ export default function ReservePage() {
 
             <ReserveStatesFigure />
 
+          <SourcePacket
+            claim="The custody award is still open. These are the two documents to re-read."
+            note="As of the November 19, 2026 read, the Comptroller had posted no custodian, and the solicitation mirror showed no award. Re-check both before treating the question as closed."
+            items={[
+              {
+                label: "ESBD — RFP 908-26-1778WS, custody and liquidity services (posted May 7, 2026; responses due July 10, 2026)",
+                href: "https://www.txsmartbuy.gov/esbd/908-26-1778WS",
+              },
+              {
+                label: "Comptroller — advisory committee named and the custody RFP opened (May 28, 2026)",
+                href: "https://comptroller.texas.gov/about/media-center/news/20260528-acting-texas-comptroller-kelly-hancock-names-strategic-bitcoin-reserve-advisory-committee-members-1778774749224",
+              },
+            ]}
+          />
+
           <h2>What comes next for the reserve?</h2>
           <p>
             The near-term story is <strong>custody</strong> — and it is at the
