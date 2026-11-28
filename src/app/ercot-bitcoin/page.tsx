@@ -645,6 +645,33 @@ export default function ErcotBitcoinPage() {
             no, and the mines&apos; business model needs answered yes.
           </p>
 
+          <h2>Which sites are the evidence?</h2>
+          <p>
+            Three pins on{" "}
+            <Link href="/bitcoin-mining-map-texas">the mining map</Link>{" "}
+            are the places this page&apos;s rules actually land.
+          </p>
+          <ul>
+            <li>
+              <Link href="/rockdale-texas-bitcoin">Riot Rockdale</Link> is
+              the August 2023 curtailment: more than 95% off at the peaks,
+              $31.7 million in credits, of which about $7 million was
+              ERCOT&apos;s.<C n={16} /><C n={17} />
+            </li>
+            <li>
+              <Link href="/core-scientific-bitcoin">Core Scientific Denton</Link>{" "}
+              is the pre-2022 base load. On the company&apos;s own account,
+              the existing megawatts were energized before March 2022 and
+              sit outside Batch Zero.
+            </li>
+            <li>
+              <Link href="/mara-holdings-bitcoin">MARA Matagorda</Link> is
+              the queue the audit is for: up to 2 GW, announced, not yet
+              energized, the sort of campus the August 2026 review exists
+              to test.<C n={37} />
+            </li>
+          </ul>
+
           <h2>Where does ERCOT stand today?</h2>
           <p>
             As of September 2026: a record peak three months old, a queue

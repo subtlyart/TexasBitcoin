@@ -5,9 +5,12 @@
 export function SourcePacket({
   claim,
   items,
+  note,
 }: {
   claim: string;
   items: { label: string; href: string }[];
+  /** Set when the documents are the ones to re-read, not a settled fact. */
+  note?: string;
 }) {
   return (
     <aside className="mt-8 rounded-2xl border border-foreground/[0.06] border-l-2 border-l-accent bg-card p-5 sm:p-6">
@@ -33,6 +36,7 @@ export function SourcePacket({
           );
         })}
       </ul>
+      {note ? <p className="mt-3 text-sm leading-relaxed text-muted">{note}</p> : null}
     </aside>
   );
 }
