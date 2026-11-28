@@ -100,6 +100,7 @@ export const siteIndex: SiteIndexEntry[] = [
 
   // Reference
   { title: "Start Here", href: "/start-here", wing: "Reference" },
+  { title: "Buy and Hold Bitcoin in Texas", href: "/buy-and-hold-bitcoin-texas", wing: "Reference", keywords: "dca self-custody not advice" },
   { title: "Texas Bitcoin Glossary", href: "/texas-bitcoin-glossary", wing: "Reference" },
   { title: "About & Editorial Standards", href: "/about", wing: "Reference" },
   { title: "Disclaimer", href: "/disclaimer", wing: "Reference" },

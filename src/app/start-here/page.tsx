@@ -9,6 +9,7 @@ import {
   Zap,
   Scale,
   Layers,
+  KeyRound,
 } from "lucide-react";
 import { site } from "@/lib/site";
 import { ogImages } from "@/lib/og";
@@ -63,6 +64,13 @@ const doors = [
     body: "From the 2014 memo that said Bitcoin isn't “money” to a funded state reserve, Texas keeps drawing the lines. The timeline tracks every move.",
     href: "/texas-bitcoin-law-timeline",
     cta: "Open the law timeline",
+  },
+  {
+    icon: KeyRound,
+    title: "I want to hold the coin",
+    body: "The products around Bitcoin are built to take the coin. The practice is a fixed buy, and then keeping what you bought. Not advice — a way to read the pitches.",
+    href: "/buy-and-hold-bitcoin-texas",
+    cta: "Read the hold",
   },
 ];
 
@@ -217,7 +225,7 @@ export default function StartHerePage() {
           </h2>
         </div>
         <p className="mt-2 max-w-2xl text-sm text-muted">
-          Four doors into the same story. There&apos;s no wrong one — they all
+          Five doors into the same story. There&apos;s no wrong one — they all
           connect.
         </p>
         <div className="mt-7 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
