@@ -5,6 +5,7 @@ import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
 import { ogImages } from "@/lib/og";
 import { ReadingRail } from "@/components/reading-rail";
+import { CiteLine } from "@/components/cite-line";
 import { SourcePacket } from "@/components/source-packet";
 import {
   RESERVE_LAST_VERIFIED,
@@ -391,6 +392,11 @@ export default function ReservePage() {
             By {site.name} · Published August 9, 2026 · Updated{" "}
             {RESERVE_LAST_VERIFIED}
           </p>
+          <CiteLine
+            title="The Texas Strategic Bitcoin Reserve"
+            updated={RESERVE_LAST_VERIFIED}
+            url={pageUrl}
+          />
         </header>
 
         {/* Direct Answer — self-contained, extractable */}
@@ -679,7 +685,7 @@ export default function ReservePage() {
 
           <SourcePacket
             claim="The custody award is still open. These are the two documents to re-read."
-            note="As of the November 19, 2026 read, the Comptroller had posted no custodian, and the solicitation mirror showed no award. Re-check both before treating the question as closed."
+            note="Re-read November 27, 2026. The ESBD page lists the solicitation as Closed, last modified July 10, 2026, and its Awards section says “No awards available.” The Comptroller’s news list, through the November 25, 2026 release, still has no custodian announcement. The last Bitcoin release is the May 28, 2026 advisory-committee notice. Re-check both before treating the question as closed."
             items={[
               {
                 label: "ESBD — RFP 908-26-1778WS, custody and liquidity services (posted May 7, 2026; responses due July 10, 2026)",

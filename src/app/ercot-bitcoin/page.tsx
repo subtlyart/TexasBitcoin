@@ -1,6 +1,7 @@
 import { jsonLd } from "@/lib/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CiteLine } from "@/components/cite-line";
 import { InstitutionsBlock } from "@/components/institutions-block";
 import { site } from "@/lib/site";
 import { citations } from "@/lib/citation";
@@ -245,6 +246,11 @@ export default function ErcotBitcoinPage() {
             By {site.name} · Published September 26, 2026 · Updated{" "}
             {ERCOT_LAST_VERIFIED}
           </p>
+          <CiteLine
+            title="ERCOT and Bitcoin: The Load It Counts as a Resource"
+            updated={ERCOT_LAST_VERIFIED}
+            url={pageUrl}
+          />
         </header>
 
         {/* Direct Answer - self-contained, extractable */}

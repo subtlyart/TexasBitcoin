@@ -7,6 +7,7 @@ import { ogImages } from "@/lib/og";
 import { ReadingProgress } from "@/components/reading-progress";
 import { ReadingRail } from "@/components/reading-rail";
 import { MobileReadingBar } from "@/components/mobile-reading-bar";
+import { CiteLine } from "@/components/cite-line";
 import { SourcePacket } from "@/components/source-packet";
 
 export const metadata: Metadata = {
@@ -410,6 +411,11 @@ export default function HistoryPage() {
           <p className="mt-4 text-sm text-muted-2">
             By {site.name} · Published June 28, 2026 · Updated September 5, 2026
           </p>
+          <CiteLine
+            title="The History of Bitcoin in Texas"
+            updated="September 5, 2026"
+            url={`${site.url}/history-of-bitcoin-in-texas`}
+          />
         </header>
 
         {/* Direct Answer — self-contained, extractable */}
