@@ -13,6 +13,7 @@ import {
   miningSites,
   miningSources,
 } from "@/lib/mining-sites";
+import { CiteLine } from "@/components/cite-line";
 import { MiningMap } from "@/components/mining-map";
 import { SeamMark } from "@/components/seam-mark";
 
@@ -393,6 +394,11 @@ export default function MiningMapPage() {
             By {site.name} · Published July 22, 2026 · Updated{" "}
             {MAP_LAST_VERIFIED}
           </p>
+          <CiteLine
+            title="The Texas Bitcoin Mining Map"
+            updated={MAP_LAST_VERIFIED}
+            url={`${site.url}/bitcoin-mining-map-texas`}
+          />
         </header>
 
         {/* Direct Answer — self-contained, extractable */}
